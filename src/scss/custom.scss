@@ -38,6 +38,16 @@
 			color: $linked;
 		}
 	}
+	&.instagram-link:hover {
+		.fa {
+			color: $instagram;
+		}
+	}
+	&.youtube-link:hover {
+		.fa {
+			color: $youtube;
+		}
+	}
 }
 
 .three-row {
@@ -231,6 +241,7 @@
 
 .pre-sale {
 	position: relative;
+	overflow: hidden;
 	.main-image {
 		position: absolute;
 		left: 0;
@@ -279,6 +290,23 @@
 					margin-top: 10px;
 				}
 			}
+		}
+	}
+}
+
+.socials-block {
+	padding: 34px 0 54px;
+	.title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.items {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 120px;
+		.item {
+			font-size: 60px;
+			text-align: center;
 		}
 	}
 }

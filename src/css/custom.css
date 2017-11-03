@@ -77,6 +77,12 @@ blockquote p, q p {
 .socials-link.linked-link:hover .fa {
   color: #1178B2; }
 
+.socials-link.instagram-link:hover .fa {
+  color: #4c68d7; }
+
+.socials-link.youtube-link:hover .fa {
+  color: #cc181e; }
+
 .three-row {
   display: flex;
   flex-wrap: wrap; }
@@ -243,7 +249,8 @@ blockquote p, q p {
         display: inline-block; }
 
 .pre-sale {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .pre-sale .main-image {
     position: absolute;
     left: 0;
@@ -283,3 +290,16 @@ blockquote p, q p {
           line-height: 1.1;
           font-size: 13px;
           margin-top: 10px; }
+
+.socials-block {
+  padding: 34px 0 54px; }
+  .socials-block .title {
+    text-align: center;
+    margin-bottom: 40px; }
+  .socials-block .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px; }
+    .socials-block .items .item {
+      font-size: 60px;
+      text-align: center; }
