@@ -4,6 +4,9 @@
 
 .button {
   padding: 10px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  text-align: center; }
+  .button.active {
+    background: red; }
   .button:last-of-type {
     margin-right: 0; }

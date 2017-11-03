@@ -5,6 +5,10 @@
 .button {
 	padding: 10px;
 	margin-right: 20px;
+	text-align: center;
+	&.active {
+		background: red;
+	}
 	&:last-of-type {
 		margin-right: 0;
 	}
