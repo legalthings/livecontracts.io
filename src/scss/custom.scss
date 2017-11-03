@@ -1,0 +1,19 @@
+//@import "reset";
+//@import "mixins";
+@import "buttons";
+//TODO: in git ignore. Make sure to compile it on the end
+@import "../../node_modules/nik-reset/reset.scss";
+
+#page-body {
+	padding-top: 0;
+}
+.top-section {
+	position: relative;
+	.top-section__content {
+		text-align: center;
+		@include center();
+		.buttons {
+			margin-top: 50px;
+		}
+	}
+}
