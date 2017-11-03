@@ -241,3 +241,45 @@ blockquote p, q p {
         margin-right: 0; }
       .announce .blocks .blocks__block .blocks__title {
         display: inline-block; }
+
+.pre-sale {
+  position: relative; }
+  .pre-sale .main-image {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .pre-sale .pre-sale__content {
+    position: relative;
+    display: flex;
+    padding: 50px 150px; }
+    .pre-sale .pre-sale__content .get-block {
+      align-self: center; }
+      .pre-sale .pre-sale__content .get-block img {
+        min-width: 130px;
+        border: 1px solid red;
+        margin-bottom: 10px; }
+      .pre-sale .pre-sale__content .get-block .button {
+        border: 1px solid red; }
+    .pre-sale .pre-sale__content .details {
+      margin-left: 100px; }
+      .pre-sale .pre-sale__content .details .progress {
+        margin: 10px 0;
+        max-width: 370px; }
+        .pre-sale .pre-sale__content .details .progress .progress__content {
+          display: flex; }
+          .pre-sale .pre-sale__content .details .progress .progress__content .total-sold {
+            margin-left: auto; }
+        .pre-sale .pre-sale__content .details .progress svg {
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          border: 1px solid #000; }
+      .pre-sale .pre-sale__content .details p {
+        margin: 0;
+        color: #000;
+        font-weight: 400; }
+        .pre-sale .pre-sale__content .details p.additional {
+          font-weight: 300;
+          line-height: 1.1;
+          font-size: 13px;
+          margin-top: 10px; }

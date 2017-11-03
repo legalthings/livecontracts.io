@@ -229,3 +229,56 @@
 	}
 }
 
+.pre-sale {
+	position: relative;
+	.main-image {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.pre-sale__content {
+		position: relative;
+		display: flex;
+		padding: 50px 150px;
+		.get-block {
+			align-self: center;
+			img {
+				min-width: 130px;
+				border: 1px solid red;
+				margin-bottom: 10px;
+			}
+			.button {
+				border: 1px solid red;
+			}
+		}
+		.details {
+			margin-left: 100px;
+			.progress {
+				margin: 10px 0;
+				max-width: 370px;
+				.progress__content {
+					display: flex;
+					.total-sold {
+						margin-left: auto;
+					}
+				}
+				svg {
+					@include border-radius(5px);
+					border: 1px solid $black;
+				}
+			}
+
+			p {
+				margin: 0;
+				color: $black;
+				font-weight: 400;
+				&.additional {
+					font-weight: 300;
+					line-height: 1.1;
+					font-size: 13px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}
