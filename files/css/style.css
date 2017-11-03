@@ -5389,3 +5389,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 
 /* YOUR CUSTOM CSS */
+
+.portfolio-container .isotope-item .isotope-item__title {
+	margin: 10px 0;
+}

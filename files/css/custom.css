@@ -20,10 +20,10 @@ a,
 #single-pagination ul li a:hover,
 .toggle-title:hover .toggle-name,
 .pricing-table.accent-table .pricing-price .price-unit,
-.widget ul:not(.socialmedia-widget):not(.product-list) li a:hover { 
-	color: #33bfd0; 
-	}
-	
+.widget ul:not(.socialmedia-widget):not(.product-list) li a:hover {
+	color: #33bfd0;
+}
+
 #page-loader .loader-figure,
 #smart-nav ul li.current-menu-item a, #smart-nav ul li.current-menu-item a span,
 .sr-button.button-5:hover,
@@ -35,13 +35,13 @@ hr.colored,
 .inline-video .inline-iframe-container .close-inline-video:hover,
 .accent-pricing .pricing-table.accent-table, .text-light .accent-pricing .pricing-table.accent-table,
 .accent-pricing .pricing-table.plain, .text-light .accent-pricing .pricing-table.plain,
-.tagcloud > a:hover { 
-	border-color: #33bfd0; 
-	}
-	
+.tagcloud > a:hover {
+	border-color: #33bfd0;
+}
+
 input[type=submit]:hover, input[type=button]:hover, button:hover,
 #menu .responsive-nav-toggle:hover .hamburger,
-#menu .responsive-nav-toggle:hover .hamburger:before, 
+#menu .responsive-nav-toggle:hover .hamburger:before,
 #menu .responsive-nav-toggle:hover .hamburger:after,
 #smart-nav ul li.current-menu-item a, #smart-nav ul li.current-menu-item a span,
 #header-search a#close-search:hover:before, #header-search a#close-search:hover:after,
@@ -57,9 +57,9 @@ input[type=submit]:hover, input[type=button]:hover, button:hover,
 .text-light .sr-button.button-5:hover,
 hr.colored,
 .tabs-button ul.tab-nav li.active a, .vertical-tabs ul.tab-nav li.active a,
-.accent-pricing .pricing-table.plain, .text-light .accent-pricing .pricing-table.plain { 
-	background-color: #33bfd0; 
-	}
+.accent-pricing .pricing-table.plain, .text-light .accent-pricing .pricing-table.plain {
+	background-color: #33bfd0;
+}
 
 .colored,
 nav#main-nav ul li ul > li a:hover, nav#main-nav ul li ul > li.current-menu-item > a,
@@ -67,24 +67,20 @@ nav#main-nav ul li ul > li a:hover, nav#main-nav ul li ul > li.current-menu-item
 #header-search a#show-search:hover,
 #header-language .header-language-content ul.lang-select li a:hover,
 header.small-header #header-search a#show-search:hover,
-header.small-header.header-dark:not(.mega-hover) #header-search a#show-search:hover { 
-	color: #33bfd0 !important; 
-	}
-	
+header.small-header.header-dark:not(.mega-hover) #header-search a#show-search:hover {
+	color: #33bfd0 !important;
+}
+
 nav#main-nav > ul > li > a.button-style:hover:before,
 header #menu .responsive-nav-toggle:hover .hamburger, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger,
-header #menu .responsive-nav-toggle:hover .hamburger:before, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:before, 
-header #menu .responsive-nav-toggle:hover .hamburger:after, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:after { 
-	background-color: #33bfd0 !important; 
-	}
-	
-hr.zigzag.colored {
-  	background: repeat-x url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="6px" viewBox="0 0 12 6" enable-background="new 0 0 12 6" xml:space="preserve"><polygon points="6,3.5 0,0 0,1.208 6,4.708 12,1.208 12,0" fill="%2333bfd0"/></svg>');
-	}
-	
-	
-	
+header #menu .responsive-nav-toggle:hover .hamburger:before, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:before,
+header #menu .responsive-nav-toggle:hover .hamburger:after, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:after {
+	background-color: #33bfd0 !important;
+}
 
+hr.zigzag.colored {
+	background: repeat-x url('data:image/svg+xml;utf-8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="6px" viewBox="0 0 12 6" enable-background="new 0 0 12 6" xml:space="preserve"><polygon points="6,3.5 0,0 0,1.208 6,4.708 12,1.208 12,0" fill="%2333bfd0"/></svg>');
+}
 
 /* -----------------------------------------------------------------------------------
 	
@@ -104,9 +100,9 @@ nav#main-nav ul li ul > li > a,
 .subtitle-1,
 .tp-caption.sudo-caption.subtitle-1,
 .widget-recent-posts span {
-	font-family: 'Lato'; 
-	}
-	
+	font-family: 'Lato';
+}
+
 h1, h2, h3, h4, h5, h6,
 .tp-caption.sudo-caption,
 label,
@@ -132,17 +128,15 @@ footer #backtotop,
 .pricing-table .pricing-price .price-unit,
 .sr-counter .counter-value,
 .widget ul:not(.socialmedia-widget):not(.product-list) li a {
-	font-family: 'Montserrat'; 
-	}
-	
+	font-family: 'Montserrat';
+}
+
 .subtitle-2,
 .tp-caption.sudo-caption.subtitle-2,
 blockquote,
 #shop-single .product-rating a.review-link {
-	font-family: 'Lora'; 
-	}
-
-
+	font-family: 'Lora';
+}
 
 /* -----------------------------------------------------------------------------------
 	
@@ -157,287 +151,322 @@ blockquote,
 body {
 	font-weight: 300;
 	letter-spacing: 0.02em;
-	font-size: 15px; 
+	font-size: 15px;
 	line-height: 24px;
-	}
-	
+}
+
 .subtitle-1,
-.tp-caption.sudo-caption.subtitle-1 { 
-	font-weight: 300; 
-	letter-spacing: 0.03em; 
-	}
-	.subtitle-1 b, .subtitle-1 strong, .tp-caption.sudo-caption.subtitle-1 strong { font-weight: 400; }
-	
+.tp-caption.sudo-caption.subtitle-1 {
+	font-weight: 300;
+	letter-spacing: 0.03em;
+}
+
+.subtitle-1 b, .subtitle-1 strong, .tp-caption.sudo-caption.subtitle-1 strong {
+	font-weight: 400;
+}
+
 input[type=text], input[type=password], input[type=email], textarea {
 	font-weight: 300;
 	font-size: 14px;
-	}
-	
+}
+
 input[type=submit] {
 	font-weight: 700;
 	font-size: 11px;
-	letter-spacing: 0.1em; 
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	}	
-	
+}
+
 nav#main-nav ul li ul > li > a {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 11px;
 	letter-spacing: 0.05em;
-	}	
-	
+}
+
 .sr-button {
 	font-weight: 700;
-	letter-spacing: 0.1em; 
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	}
-	
+}
+
 .inline-video::after {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 22px;
-	letter-spacing: 0.1em; 
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	}
-	
+}
+
 .shop-grid .shop-item .product-media .add-to-cart-overlay a {
 	font-weight: 700;
-	font-size: 11px; 
-	line-height: 20px; 
-	letter-spacing: 0.1em; 
+	font-size: 11px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	}
+}
 
 .comments .time {
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 15px;
-	}	
+}
 
 .widget-recent-posts span {
 	font-weight: 300;
 	font-size: 12px;
 	line-height: 15px;
-	}	
+}
+
 /* - - -       FONT 1 (Lato)       - - - */
 
-
-	
 /* - - -       FONT 2 (Montserrat)       - - - */
 h1, h2, h3, h4, h5, h6,
 .tp-caption.sudo-caption {
 	font-weight: 400;
 	letter-spacing: -0.02em;
-	}
-	h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .tp-caption.sudo-caption strong { font-weight: 700; }
+}
 
-h1 { font-size: 72px; line-height: 86px; }
-h2 { font-size: 48px; line-height: 60px; }
-h3 { font-size: 34px; line-height: 46px; }
-h4 { font-size: 24px; line-height: 34px; }
-h5 { font-size: 17px; line-height: 26px; }
-h6 { font-size: 13px; line-height: 20px; }
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong, .tp-caption.sudo-caption strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 72px;
+	line-height: 86px;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 60px;
+}
+
+h3 {
+	font-size: 34px;
+	line-height: 46px;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 34px;
+}
+
+h5 {
+	font-size: 17px;
+	line-height: 26px;
+}
+
+h6 {
+	font-size: 13px;
+	line-height: 20px;
+}
 
 label {
 	font-weight: 400;
 	font-size: 14px;
 	letter-spacing: -0.02em;
-	}
+}
 
 select {
 	font-size: 14px;
 	font-weight: 300;
-	}
-	
+}
+
 table thead th {
 	font-weight: 400;
 	letter-spacing: -0.02em;
-	font-size: 13px; 
+	font-size: 13px;
 	line-height: 20px;
-	}
-	
+}
+
 strong, b, dt {
 	font-weight: 600;
-	}
+}
 
 i, dfn, em {
 	font-style: italic;
-	}
-	
+}
+
 strong i, b i, dt i, strong em, b em, dt em {
 	font-style: italic;
 	font-weight: 700;
-	}
+}
 
 blockquote cite {
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 20px;
 	font-style: normal;
-	}
+}
 
 pre, code {
 	font-size: 12px;
 	line-height: 16px;
-	}
+}
 
 small {
 	font-size: 10px;
 	line-height: 17px;
 	font-weight: 400;
-	}
-	small b, small strong { font-weight: 700; }
-	
+}
+
+small b, small strong {
+	font-weight: 700;
+}
+
 #menu .open-nav {
 	font-weight: 400;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.13em;
-	}
-	
+}
+
 nav#main-nav > ul > li > a {
 	font-weight: 400;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.13em;
-	}
-		
+}
+
 nav#main-nav .mega-menu-content ul li.mega-menu-title > a {
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 12px;
 	letter-spacing: 0.1em;
-	}
+}
 
 #header-search .header-search-content input[type=text] {
 	font-weight: 700;
 	font-size: 42px;
 	text-transform: uppercase;
-	}
-	
+}
+
 #header-cart .cart-items li .cart-item-name {
 	font-size: 11px;
 	line-height: 17px;
-	}
-	
+}
+
 #header-cart .cart-items li .cart-item-price, #header-cart .cart-items li .cart-item-quantity {
 	font-size: 11px;
 	line-height: 17px;
 	font-weight: 700;
-	}
-	
+}
+
 #header-cart .cart-total .cart-total-amount {
 	font-weight: 700;
 	font-size: 16px;
-	}
+}
 
 #header-language a#show-language {
 	font-weight: 400;
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	}
-	
+}
+
 #header-language .header-language-content ul.lang-select li a {
 	font-weight: 400;
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	}
-	
+}
+
 footer #backtotop {
 	font-weight: 400;
 	font-size: 11px;
-	}
-	
+}
+
 .filter li a {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 26px;
 	letter-spacing: 0.04em;
-	}
+}
 
 .blog-item .blog-content .post-category {
 	font-size: 11px;
-	}
-	
+}
+
 .blog-item .blog-content .post-meta li {
 	font-size: 10px;
 	line-height: 17px;
 	font-weight: 400;
 	letter-spacing: 0;
-	}
-	
+}
+
 .comments .comment-reply-link {
 	font-weight: 400;
 	font-size: 11px;
 	line-height: 17px;
-	text-transform: uppercase; 
+	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	}
-	
-.thumb-overlay .overlay-caption .caption-sub { 
+}
+
+.thumb-overlay .overlay-caption .caption-sub {
 	font-size: 11px;
-	}
-	
+}
+
 .widget ul:not(.socialmedia-widget) li a {
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 20px;
 	letter-spacing: 0.04em;
-	}
-	
+}
+
 .product-media .onsale {
 	font-weight: 400;
 	font-size: 10px;
 	line-height: 17px;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
-	}
-	
+}
+
 .product-price {
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 18px;
-	}
-	
+}
+
 .sr-counter .counter-value {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	}
-	
+}
+
 .pricing-table .pricing-price .price-unit {
 	font-weight: 400;
 	font-size: 26px;
 	line-height: 36px;
-	}
+}
+
 /* - - -       FONT 2 (Montserrat)       - - - */
 
-
-
-/* - - -       FONT 3 (Lora)       - - - */	
+/* - - -       FONT 3 (Lora)       - - - */
 .subtitle-2,
-.tp-caption.sudo-caption.subtitle-2 { 
-	font-weight: 400; 
+.tp-caption.sudo-caption.subtitle-2 {
+	font-weight: 400;
 	font-style: italic;
-	letter-spacing: 0.03em; 
-	}
-	.subtitle-2 b, .subtitle-2 strong, .tp-caption.sudo-caption.subtitle-2 strong { font-weight: 700; }
-	
+	letter-spacing: 0.03em;
+}
+
+.subtitle-2 b, .subtitle-2 strong, .tp-caption.sudo-caption.subtitle-2 strong {
+	font-weight: 700;
+}
+
 blockquote {
 	font-weight: 400;
 	font-style: italic;
-	font-size: 26px; 
+	font-size: 26px;
 	line-height: 34px;
 	letter-spacing: 0.03em;
-	}
-	
+}
+
 #shop-single .product-rating a.review-link {
-	font-weight: 400; 
+	font-weight: 400;
 	font-size: 12px;
 	font-style: italic;
-	letter-spacing: 0.03em; 
-	}
-/* - - -       FONT 3 (Lora)       - - - */		
+	letter-spacing: 0.03em;
+}
+
+/* - - -       FONT 3 (Lora)       - - - */
+
