@@ -61,9 +61,35 @@ blockquote p, q p {
   left: 0;
   top: 0; }
 
+.socials-link .fa {
+  -webkit-transition: 0.3s color;
+  -moz-transition: 0.3s color;
+  -o-transition: 0.3s color;
+  transition: 0.3s color;
+  color: #696969; }
+
+.socials-link.facebook-link:hover .fa {
+  color: #4469AF; }
+
+.socials-link.twitter-link:hover .fa {
+  color: #2AA2EF; }
+
+.socials-link.linked-link:hover .fa {
+  color: #1178B2; }
+
+.three-row {
+  display: flex;
+  flex-wrap: wrap; }
+  .three-row .three-row__element {
+    width: 31.333333%;
+    margin-right: 3%; }
+    .three-row .three-row__element:nth-of-type(3n) {
+      margin-right: 0; }
+    .three-row .three-row__element:nth-last-child(-n+3) {
+      margin-bottom: 0; }
+
 .top-section {
-  position: relative;
-  margin-bottom: 27px; }
+  position: relative; }
   .top-section .top-section__content {
     text-align: center;
     -moz-transform: translate(-50%, -50%);
@@ -78,9 +104,14 @@ blockquote p, q p {
       margin-top: 50px; }
 
 .text-section {
+  background: red;
   text-align: center;
-  padding: 0 60px;
+  padding: 40px 60px 30px;
   margin-bottom: 45px; }
+  .text-section .buttons {
+    margin-top: 20px; }
+    .text-section .buttons .button {
+      background: purple; }
 
 .box-section {
   padding: 0 60px;
@@ -88,66 +119,59 @@ blockquote p, q p {
   .box-section .title {
     text-align: center;
     margin-bottom: 35px; }
-  .box-section .boxes {
-    display: flex;
-    flex-wrap: wrap; }
-    .box-section .boxes .boxes__box {
-      margin: 0 3% 50px 0;
-      position: relative;
-      width: 31.333333%; }
-      .box-section .boxes .boxes__box:nth-of-type(3n) {
-        margin-right: 0; }
-      .box-section .boxes .boxes__box:nth-last-child(-n+3) {
-        margin-bottom: 0; }
-      .box-section .boxes .boxes__box:hover {
-        cursor: pointer; }
-        .box-section .boxes .boxes__box:hover .boxes__title {
-          opacity: 0; }
-        .box-section .boxes .boxes__box:hover .hover-effect {
-          max-height: 100%; }
-      .box-section .boxes .boxes__box .hover-effect {
-        display: block;
+  .box-section .boxes .boxes__box {
+    margin-bottom: 50px;
+    position: relative; }
+    .box-section .boxes .boxes__box:hover {
+      cursor: pointer; }
+      .box-section .boxes .boxes__box:hover .boxes__title {
+        opacity: 0; }
+      .box-section .boxes .boxes__box:hover .hover-effect {
+        max-height: 100%; }
+    .box-section .boxes .boxes__box .hover-effect {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      max-height: 0;
+      -webkit-transition: 0.3s max-height;
+      -moz-transition: 0.3s max-height;
+      -o-transition: 0.3s max-height;
+      transition: 0.3s max-height;
+      overflow: hidden; }
+      .box-section .boxes .boxes__box .hover-effect .buttons {
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        max-height: 0;
-        -webkit-transition: 0.3s max-height;
-        -moz-transition: 0.3s max-height;
-        -o-transition: 0.3s max-height;
-        transition: 0.3s max-height;
-        overflow: hidden; }
-        .box-section .boxes .boxes__box .hover-effect .buttons {
-          position: absolute;
-          bottom: 20px;
-          width: 100%; }
-          .box-section .boxes .boxes__box .hover-effect .buttons .button {
-            border: 1px solid #fff;
-            color: #fff;
-            opacity: .8;
-            -webkit-transition: 0.3s opacity;
-            -moz-transition: 0.3s opacity;
-            -o-transition: 0.3s opacity;
-            transition: 0.3s opacity; }
-            .box-section .boxes .boxes__box .hover-effect .buttons .button:hover {
-              opacity: 1; }
-      .box-section .boxes .boxes__box .boxes__title {
-        opacity: 1;
-        position: absolute;
-        bottom: -30px;
-        left: 0;
-        -webkit-transition: 0.3s opacity;
-        -moz-transition: 0.3s opacity;
-        -o-transition: 0.3s opacity;
-        transition: 0.3s opacity; }
-      .box-section .boxes .boxes__box img {
+        bottom: 20px;
         width: 100%; }
+        .box-section .boxes .boxes__box .hover-effect .buttons .button {
+          border: 1px solid #fff;
+          color: #fff;
+          opacity: .8;
+          -webkit-transition: 0.3s opacity;
+          -moz-transition: 0.3s opacity;
+          -o-transition: 0.3s opacity;
+          transition: 0.3s opacity; }
+          .box-section .boxes .boxes__box .hover-effect .buttons .button:hover {
+            opacity: 1; }
+    .box-section .boxes .boxes__box .boxes__title {
+      opacity: 1;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      -webkit-transition: 0.3s opacity;
+      -moz-transition: 0.3s opacity;
+      -o-transition: 0.3s opacity;
+      transition: 0.3s opacity; }
+    .box-section .boxes .boxes__box img {
+      width: 100%; }
 
 .quote-section {
   max-height: 180px;
   height: 100%;
+  overflow: hidden;
   display: block;
   position: relative; }
   .quote-section .quote-section__content {
@@ -165,3 +189,33 @@ blockquote p, q p {
       text-align: center; }
     .quote-section .quote-section__content .subtitle {
       text-align: right; }
+
+.team-section {
+  padding: 45px 0; }
+  .team-section .title {
+    text-align: center;
+    margin-bottom: 50px; }
+  .team-section .team {
+    padding: 0 105px; }
+  .team-section .team-member {
+    margin-bottom: 30px; }
+    .team-section .team-member img {
+      display: block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      margin: 0 auto 15px; }
+    .team-section .team-member .team-member__content {
+      max-width: 200px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex; }
+      .team-section .team-member .team-member__content .team-member__who .name {
+        margin-bottom: 10px; }
+      .team-section .team-member .team-member__content .team-member__who .position, .team-section .team-member .team-member__content .team-member__who .name {
+        line-height: 1; }
+      .team-section .team-member .team-member__content .team-member__links {
+        margin-left: auto;
+        align-self: center; }
+        .team-section .team-member .team-member__content .team-member__links .fa {
+          font-size: 20px; }
