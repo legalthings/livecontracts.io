@@ -98,6 +98,7 @@ blockquote p, q p {
   position: relative; }
   .top-section .top-section__content {
     text-align: center;
+    width: 100%;
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -217,12 +218,16 @@ blockquote p, q p {
       margin: 0 auto;
       display: flex; }
       .team-section .team-member .team-member__content .team-member__who .name {
-        margin-bottom: 10px; }
+        margin-bottom: 5px; }
       .team-section .team-member .team-member__content .team-member__who .position, .team-section .team-member .team-member__content .team-member__who .name {
         line-height: 1; }
       .team-section .team-member .team-member__content .team-member__links {
         margin-left: auto;
         align-self: center; }
+        .team-section .team-member .team-member__content .team-member__links .socials-link {
+          margin-right: 10px; }
+          .team-section .team-member .team-member__content .team-member__links .socials-link:last-of-type {
+            margin-right: 0; }
         .team-section .team-member .team-member__content .team-member__links .fa {
           font-size: 20px; }
 
@@ -246,7 +251,7 @@ blockquote p, q p {
       .announce .blocks .blocks__block:last-of-type {
         margin-right: 0; }
       .announce .blocks .blocks__block .blocks__title {
-        display: inline-block; }
+        display: block; }
 
 .pre-sale {
   position: relative;

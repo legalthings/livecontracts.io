@@ -70,6 +70,7 @@
 	position: relative;
 	.top-section__content {
 		text-align: center;
+		width: 100%;
 		@include center();
 		.buttons {
 			margin-top: 50px;
@@ -192,7 +193,7 @@
 			display: flex;
 			.team-member__who {
 				.name {
-					margin-bottom: 10px;
+					margin-bottom: 5px;
 				}
 				.position, .name {
 					line-height: 1;
@@ -201,6 +202,13 @@
 			.team-member__links {
 				margin-left: auto;
 				align-self: center;
+				.socials-link {
+					margin-right: 10px;
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}
+
 				.fa {
 					font-size: 20px;
 				}
@@ -233,7 +241,7 @@
 				margin-right: 0;
 			}
 			.blocks__title {
-				display: inline-block;
+				display: block;
 			}
 		}
 	}
@@ -310,6 +318,7 @@
 		}
 	}
 }
+
 .subscribe-form {
 	padding: 30px 0 45px;
 	background: black;
@@ -344,6 +353,7 @@
 
 	}
 }
+
 .footer {
 	padding: 35px 65px;
 	display: flex;
