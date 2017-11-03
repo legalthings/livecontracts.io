@@ -199,3 +199,33 @@
 	}
 }
 
+.timeline {
+	padding: 40px 0 25px;
+	.title {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+}
+
+.announce {
+	padding: 35px 0 50px;
+	.title {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.blocks {
+		display: flex;
+		padding: 0 50px;
+		.blocks__block {
+			text-align: center;
+			margin-right: 30px;
+			&:last-of-type {
+				margin-right: 0;
+			}
+			.blocks__title {
+				display: inline-block;
+			}
+		}
+	}
+}
+

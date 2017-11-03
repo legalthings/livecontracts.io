@@ -219,3 +219,25 @@ blockquote p, q p {
         align-self: center; }
         .team-section .team-member .team-member__content .team-member__links .fa {
           font-size: 20px; }
+
+.timeline {
+  padding: 40px 0 25px; }
+  .timeline .title {
+    text-align: center;
+    margin-bottom: 15px; }
+
+.announce {
+  padding: 35px 0 50px; }
+  .announce .title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .announce .blocks {
+    display: flex;
+    padding: 0 50px; }
+    .announce .blocks .blocks__block {
+      text-align: center;
+      margin-right: 30px; }
+      .announce .blocks .blocks__block:last-of-type {
+        margin-right: 0; }
+      .announce .blocks .blocks__block .blocks__title {
+        display: inline-block; }
