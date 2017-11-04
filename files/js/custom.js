@@ -16,12 +16,13 @@ function populateExploreBlock() {
 				block.append('' +
 					'<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">' +
 
+					//TODO: if we want to return hover, then should add thumb-overlay overlay-effect-1 to text-light
 					'<div class="blog-media">' +
-					'					<a href="portfolio-single-custom.html" class="thumb-overlay overlay-effect-1 text-light"> ' +
+					'					<a href="portfolio-single-custom.html" class="text-light"> ' +
 					'<img src='+ data.img + ' alt="SEO IMG NAME">' +
 					'<div class="overlay-caption hidden-on-start">' +
-					'<h6 class="caption-sub portfolio-category subtitle-2">'+ data.hover_title +'</h6>' +
-					'<h4 class="caption-name portfolio-name uppercase">' + data.hover_subtitle + '</h4>' +
+					'<h6 class="caption-sub portfolio-category subtitle-2"></h6>' +
+					'<h4 class="caption-name portfolio-name uppercase"></h4>' +
 					'</div>' +
 					'</a>' +
 					'</div>' +

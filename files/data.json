@@ -1,18 +1,14 @@
 [
 	{
 		"category": "Travel",
-		"hover_title": "Hello",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "World!",
 		"date": "28.11.08",
 		"title": "Waterfalls of Iceland",
 		"intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
 	},
 	{
 		"category": "Hello",
-		"hover_title": "Test",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "Test1!",
 		"date": "28.12.08",
 		"title": "No waterfalls of Iceland",
 		"intro": "Here we can set some custom text"
@@ -20,25 +16,19 @@
 	{
 		"category": "World",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_title": "Custom",
-		"hover_subitle": "Custom1!",
 		"date": "28.12.10",
 		"title": "Apple iPhone X",
 		"intro": "Or don't set any text at all"
 	},
 	{
 		"category": "Hello again, brother",
-		"hover_title": "Custom 22",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "Custom666!",
 		"date": "28.12.11",
 		"title": "Mountains",
 		"intro": "We rule our life!"
 	},
 	{
 		"category": "Travel",
-		"hover_title": "Hello",
-		"hover_subitle": "World!",
 		"img" : "files/uploads/600x400-light.jpg",
 		"date": "28.11.08",
 		"title": "Waterfalls of Iceland",
@@ -46,27 +36,21 @@
 	},
 	{
 		"category": "Hello",
-		"hover_title": "Test",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "Test1!",
 		"date": "28.12.08",
 		"title": "Waterfalls of Iceland",
 		"intro": "Here we can set some custom text"
 	},
 	{
 		"category": "World",
-		"hover_title": "Custom",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "Custom1!",
 		"date": "28.12.10",
 		"title": "Apple iPhone X",
 		"intro": "Or don't set any text at all"
 	},
 	{
 		"category": "Hello again, brother",
-		"hover_title": "Custom 22",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_subitle": "Custom666!",
 		"date": "28.12.11",
 		"title": "Mountains",
 		"intro": "We rule our life!"
@@ -74,8 +58,6 @@
 	{
 		"category": "World",
 		"img" : "files/uploads/600x400-light.jpg",
-		"hover_title": "Custom",
-		"hover_subitle": "Custom1!",
 		"date": "28.12.10",
 		"title": "Apple iPhone X",
 		"intro": "Or don't set any text at all"
