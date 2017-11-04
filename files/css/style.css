@@ -8534,10 +8534,10 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	top: -90px !important;
 }
 
-#header .header-inner {
-	display: flex;
-	justify-content: center;
-}
+/*#header .header-inner {*/
+	/*display: flex;*/
+	/*justify-content: center;*/
+/*}*/
 
 #header.custom-visible {
 	top: 0 !important;
