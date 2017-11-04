@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	populateExploreBlock();
 	manipulatingHeader();
+	loadTokens();
 })
 
 //Function that populate blocks in "Explore".
@@ -12,8 +13,8 @@ function populateExploreBlock() {
 		url: "files/data.json",
 		success: function (result) {
 			// data = JSON.parse(result)
-
-			result.map(function (data) {
+			var tokens = result[0].explore
+			tokens.map(function (data) {
 
 				block.append('' +
 					'<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">' +
@@ -62,13 +63,28 @@ function manipulatingHeader() {
 		var scrollFromTop = $(document).scrollTop();
 
 		if (scrollFromTop > topBlockHeight) {
-			console.log(scrollFromTop)
-            header.addClass('custom-visible')
+			header.addClass('custom-visible')
 		}
 		else {
 			header.removeClass('custom-visible')
 		}
 	})
 
+}
 
+//loading data about tokens status
+
+function loadTokens() {
+	var currentTokens = $('#current-tokens-sold');
+	var allTokens = $('#all-tokens');
+	$.ajax({
+		url: "files/data.json",
+		success: function (result) {
+			var tokens = result[0].tokens;
+			$('.progress-active').attr('data-perc', (tokens.current / tokens.total) * 100)
+
+			currentTokens.html(tokens.current)
+			allTokens.html(tokens.total);
+		}
+	})
 }

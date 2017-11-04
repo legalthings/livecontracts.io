@@ -1,65 +1,76 @@
 [
 	{
-		"category": "Travel",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.11.08",
-		"title": "Waterfalls of Iceland",
-		"intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
-	},
-	{
-		"category": "Hello",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.08",
-		"title": "No waterfalls of Iceland",
-		"intro": "Here we can set some custom text"
-	},
-	{
-		"category": "World",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.10",
-		"title": "Apple iPhone X",
-		"intro": "Or don't set any text at all"
-	},
-	{
-		"category": "Hello again, brother",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.11",
-		"title": "Mountains",
-		"intro": "We rule our life!"
-	},
-	{
-		"category": "Travel",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.11.08",
-		"title": "Waterfalls of Iceland",
-		"intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
-	},
-	{
-		"category": "Hello",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.08",
-		"title": "Waterfalls of Iceland",
-		"intro": "Here we can set some custom text"
-	},
-	{
-		"category": "World",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.10",
-		"title": "Apple iPhone X",
-		"intro": "Or don't set any text at all"
-	},
-	{
-		"category": "Hello again, brother",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.11",
-		"title": "Mountains",
-		"intro": "We rule our life!"
-	},
-	{
-		"category": "World",
-		"img" : "files/uploads/600x400-light.jpg",
-		"date": "28.12.10",
-		"title": "Apple iPhone X",
-		"intro": "Or don't set any text at all"
+		"explore": [
+			{
+				"category": "Travel",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.11.08",
+				"title": "Waterfalls of Iceland",
+				"intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
+			},
+			{
+				"category": "Hello",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.08",
+				"title": "No waterfalls of Iceland",
+				"intro": "Here we can set some custom text"
+			},
+			{
+				"category": "World",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.10",
+				"title": "Apple iPhone X",
+				"intro": "Or don't set any text at all"
+			},
+			{
+				"category": "Hello again, brother",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.11",
+				"title": "Mountains",
+				"intro": "We rule our life!"
+			},
+			{
+				"category": "Travel",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.11.08",
+				"title": "Waterfalls of Iceland",
+				"intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
+			},
+			{
+				"category": "Hello",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.08",
+				"title": "Waterfalls of Iceland",
+				"intro": "Here we can set some custom text"
+			},
+			{
+				"category": "World",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.10",
+				"title": "Apple iPhone X",
+				"intro": "Or don't set any text at all"
+			},
+			{
+				"category": "Hello again, brother",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.11",
+				"title": "Mountains",
+				"intro": "We rule our life!"
+			},
+			{
+				"category": "World",
+				"img": "files/uploads/600x400-light.jpg",
+				"date": "28.12.10",
+				"title": "Apple iPhone X",
+				"intro": "Or don't set any text at all"
+			}
+		],
+		"tokens" : {
+			"total": 10000,
+			"current": 2323
+		}
 	}
 ]
+
+
+

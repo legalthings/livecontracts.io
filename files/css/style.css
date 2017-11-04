@@ -8413,6 +8413,17 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .portfolio-container .isotope-item .isotope-item__title {
 	margin: 10px 0;
 }
+.progress-bar-item {
+	margin-top: 40px;
+}
+.progress-bar-item .progress-name {
+	display: flex;
+	margin: 10px 0;
+}
+
+.progress-bar-item .progress-name .progress-end {
+	margin-left: auto;
+}
 
 .timeline-block {
 	background: black;
@@ -8522,10 +8533,19 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 #header {
 	top: -90px !important;
 }
+
 #header .header-inner {
 	display: flex;
 	justify-content: center;
 }
+
 #header.custom-visible {
 	top: 0 !important;
+}
+
+.progress-active .tooltip {
+	width: 85px;
+	margin-right: -35%;
+	font-weight: 600;
+	/*opacity: 1 !important;*/
 }
