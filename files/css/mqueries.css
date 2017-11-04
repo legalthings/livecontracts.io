@@ -1354,4 +1354,12 @@ Smartphones
 		text-indent: 0px !important;
 	}
 
-} 
+}
+
+/* custom media */
+
+@media only screen and (max-width: 960px) {
+	#page-body {
+		padding-top: 0;
+	}
+}

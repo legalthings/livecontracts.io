@@ -5390,6 +5390,10 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 /* YOUR CUSTOM CSS */
 
+#page-body {
+	padding-top: 0;
+}
+
 .portfolio-container .isotope-item .isotope-item__title {
 	margin: 10px 0;
 }
