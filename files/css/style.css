@@ -8413,9 +8413,11 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .portfolio-container .isotope-item .isotope-item__title {
 	margin: 10px 0;
 }
+
 .progress-bar-item {
 	margin-top: 40px;
 }
+
 .progress-bar-item .progress-name {
 	display: flex;
 	margin: 10px 0;
@@ -8486,6 +8488,14 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	background: black;
 }
 
+.digitaze-block {
+	background: #242038;
+}
+
+.digitaze-block h2, .digitaze-block h5 {
+	color: #fff;
+}
+
 .blackBackgroundBlock h2, .blackBackgroundBlock h5 {
 	color: #fff;
 }
@@ -8532,11 +8542,12 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 #header {
 	top: -90px !important;
+	border-bottom: none !important;
 }
 
 /*#header .header-inner {*/
-	/*display: flex;*/
-	/*justify-content: center;*/
+/*display: flex;*/
+/*justify-content: center;*/
 /*}*/
 
 #header.custom-visible {
@@ -8548,4 +8559,39 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	margin-right: -35%;
 	font-weight: 600;
 	/*opacity: 1 !important;*/
+}
+
+.hero-full .icon-box .icon-box-icon {
+	margin-top: 15px;
+}
+
+.hero-full .sr-button {
+	margin-right: 15px;
+}
+
+.hero-full .sr-button:last-of-type {
+	margin-right: 0;
+}
+
+#main-nav ul {
+	display: flex;
+}
+nav#main-nav ul li {
+	display: block;
+	margin: 0;
+}
+
+nav#main-nav ul li a {
+	padding: 30px 10px;
+}
+
+#main-nav ul li:not(:last-of-type) {
+	background: #242038;
+}
+
+header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > ul > li > a:after {
+	background: transparent !important;
+}
+header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > ul > li:not(:last-of-type) > a {
+	color: #fff !important;
 }
