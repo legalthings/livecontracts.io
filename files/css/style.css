@@ -8561,12 +8561,31 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	/*opacity: 1 !important;*/
 }
 
+.hero-full .icon-box .ion {
+	font-size: 70px;
+	margin-top: -8px;
+}
+.hero-full .icon-box {
+	overflow: visible;
+	height: 50px;
+}
 .hero-full .icon-box .icon-box-icon {
-	margin-top: 15px;
+	margin-top: 0;
+	color: #9867CF;
+}
+.hero-full .icon-box h5 {
+	color: #9867CF;
+	margin: 0;
 }
 
-.hero-full .sr-button {
+#hero .sr-button {
 	margin-right: 15px;
+	background: #231D39;
+	color: #597FD9;
+}
+#hero .sr-button:hover {
+	background: #fff;
+	color: #507DEC;
 }
 
 .hero-full .sr-button:last-of-type {
