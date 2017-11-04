@@ -1363,3 +1363,67 @@ Smartphones
 		padding-top: 0;
 	}
 }
+
+@media (orientation: portrait) {
+	.timeline-block {
+		height: 600px;
+		position: relative;
+	}
+
+	.timeline {
+		height: 100%;
+	}
+
+	.timeline:after {
+		border: 2px solid #fff;
+		left: calc(50%);
+		width: 0;
+		top: 0;
+		height: 100%;
+	}
+
+	.timeline .event {
+		left: 50% !important;
+		margin-left: 0;
+		transform: translateX(-50%);
+		top: auto;
+		height: 25px;
+		width: 25px;
+	}
+
+	.timeline .event:after {
+		width: 23px;
+		height: 23px;
+		top: 0;
+		left: 2px;
+	}
+
+	.timeline .event .date, .timeline .event .description {
+		position: absolute;
+		width: 100px;
+		top: 50%;
+		transform: translateY(-50%);
+		padding-left: 30px;
+	}
+
+	.timeline .event .date {
+		left: -75px;
+		padding: 0;
+		width: 70px;
+		top: 50%;
+		transform: translateY(-50%);
+		margin: 0;
+	}
+
+	.timeline .event:first-of-type {
+		bottom: 10%;
+	}
+
+	.timeline .event:nth-of-type(2) {
+		bottom: 60%;
+	}
+
+	.timeline .event:nth-of-type(3) {
+		bottom: 80%;
+	}
+}
