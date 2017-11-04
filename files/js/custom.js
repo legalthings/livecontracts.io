@@ -1,7 +1,9 @@
 $(document).ready(function () {
 	populateExploreBlock();
+	manipulatingHeader();
 })
 
+//Function that populate blocks in "Explore".
 function populateExploreBlock() {
 
 	var block = $('#blog-grid');
@@ -19,7 +21,7 @@ function populateExploreBlock() {
 					//TODO: if we want to return hover, then should add thumb-overlay overlay-effect-1 to text-light
 					'<div class="blog-media">' +
 					'					<a href="portfolio-single-custom.html" class="text-light"> ' +
-					'<img src='+ data.img + ' alt="SEO IMG NAME">' +
+					'<img src=' + data.img + ' alt="SEO IMG NAME">' +
 					'<div class="overlay-caption hidden-on-start">' +
 					'<h6 class="caption-sub portfolio-category subtitle-2"></h6>' +
 					'<h4 class="caption-name portfolio-name uppercase"></h4>' +
@@ -36,7 +38,7 @@ function populateExploreBlock() {
 					data.intro +
 					'</p>' +
 					'<ul class="blog-meta">' +
-					'<li class="post-date">'+ data.date +'</li>' +
+					'<li class="post-date">' + data.date + '</li>' +
 					'<li class="post-comments"><i class="fa fa-comments"></i> 3</li>' +
 					'</ul>' +
 					'</div>' +
@@ -48,3 +50,25 @@ function populateExploreBlock() {
 
 }
 
+//Show/hide header
+function manipulatingHeader() {
+	var header = $('#header');
+	var topBlockHeight = $('#hero').height();
+
+	$(window).resize(function () {
+		topBlockHeight = $('#hero').height();
+	})
+	$(window).scroll(function () {
+		var scrollFromTop = $(document).scrollTop();
+
+		if (scrollFromTop > topBlockHeight) {
+			console.log(scrollFromTop)
+            header.addClass('custom-visible')
+		}
+		else {
+			header.removeClass('custom-visible')
+		}
+	})
+
+
+}

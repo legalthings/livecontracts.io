@@ -8518,3 +8518,14 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 }
+
+#header {
+	top: -90px !important;
+}
+#header .header-inner {
+	display: flex;
+	justify-content: center;
+}
+#header.custom-visible {
+	top: 0 !important;
+}
