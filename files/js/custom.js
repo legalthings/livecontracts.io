@@ -6,6 +6,7 @@ $(window).load(function () {
 			enable: true
 		}
 	});
+
 });
 
 $(document).ready(function () {
@@ -15,6 +16,9 @@ $(document).ready(function () {
 	wizardInit();
 	closePopup();
 	scrollToBlock();
+
+
+
 });
 
 
@@ -112,10 +116,24 @@ function loadTokens() {
 	})
 }
 
+
+
+
+var sfw;
+var next_loading = false;
+
+
 //init of wizard steps
 function wizardInit() {
-	$("#wizard").stepFormWizard();
 
+	$("#wizard").stepFormWizard({
+		height: 'auto',
+		onNext : function () {
+			if($("span:contains('3')").parents('.sf-active')) {
+				console.log(123)
+			}
+		}
+	});
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
 		$('.popup-wizard').removeClass('popup-hide')
@@ -129,3 +147,6 @@ function closePopup() {
 		$(this).parent().addClass('popup-hide')
 	})
 }
+
+
+

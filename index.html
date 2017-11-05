@@ -44,7 +44,7 @@
 </head>
 
 <body>
-
+<div id="books"></div>
 <!-- PAGELOADER -->
 
 <div class="popup popup-wizard popup-hide">
@@ -53,16 +53,27 @@
 		<i class="ion ion-3x ion-close-round"></i>
 	</a>
 	<div class="popup__content">
-		<form id="wizard">
+		<div id="wizard">
 			<fieldset>
 				Step one. Follow my lead!
 			</fieldset>
 			<fieldset>
 				Step one. Follow my lead!
 			</fieldset>
+
 			<fieldset>
-				Step one. Follow my lead!
+				<form id="wizard-form" class="checkform sendemail" action="php/contact-send.php" method="post">
+					<div class="form-row">
+						<label for="text">Text <abbr title="required" class="required">*</abbr></label>
+						<input name="name" id="text" class="name req" value="" type="text"/>
+					</div>
+					<div class="form-row submit-row">
+						<input name="submit" class="submit" value="Skip" type="submit"/>
+					</div>
+				</form>
 			</fieldset>
+
+
 			<fieldset>
 				Step one. Follow my lead!
 			</fieldset>
@@ -72,10 +83,9 @@
 			<fieldset>
 				Last one. Fenita!
 			</fieldset>
-		</form>
+		</div>
 	</div>
 </div>
-
 
 
 <!-- PAGE CONTENT -->
@@ -147,7 +157,8 @@
 			<div class="spacer-small"></div>
 
 			<p class="hero__buttons">
-				<a href="#discover" class="js-scrollToBlock sr-button button-1 button-icon-text button-medium circled">
+				<a href="#discover"
+				   class="js-scrollToBlock sr-button button-1 button-icon-text button-medium circled">
 					<i class="fa fa-chevron-down"></i>
 					Discover
 				</a>
@@ -172,7 +183,8 @@
 
 					<h2 class="align-center"><strong>Digitize any agreement as finite state machine</strong></h2>
 					<h5 class="subtitle-1 align-center">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu
+						pharetra
 						nec,
 						mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus,
 						tortor sed
@@ -182,7 +194,8 @@
 						vehicula eu
 						diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate
 						justo
-						hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem
+						hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet
+						sem
 						sit amet
 						orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare
 						accumsan,
@@ -502,8 +515,11 @@
 								<br>
 								pre-sale period: 1 to 30 nov 2017
 							</h4>
-							<p>More LTO tokens will become available after the pre-sale. During upcoming sales LegalThings will offer tokens
-								at a price of at least 0.001 BTC / LTO. The exact amount that will be put in circulation is undecided at
+							<p>More LTO tokens will become available after the pre-sale. During upcoming sales
+								LegalThings will offer tokens
+								at a price of at least 0.001 BTC / LTO. The exact amount that will be put in
+								circulation
+								is undecided at
 								the moment. <a href="#">Read more</a></p>
 						</div>
 					</div>
@@ -553,7 +569,8 @@
 				<h2><strong>Stay in touch</strong></h2>
 				<div class="spacer-mini"></div>
 				<form action="#" method="post" id="newsletter-widget-form">
-					<input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your Email Adress">
+					<input type="email" id="newsletter-email" name="newsletter-email"
+					       placeholder="Your Email Adress">
 					<input type="submit" id="newsletter-submit" value="Sign Up">
 				</form>
 			</div>
@@ -591,7 +608,8 @@
 <script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
 <script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 <script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript"
+        src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
 <script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
 <script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>
