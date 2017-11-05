@@ -1364,6 +1364,31 @@ Smartphones
 	}
 }
 
+@media only screen and (max-width: 768px) {
+	.tokensSale-section .one-third {
+		min-height: 250px !important;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.hero__buttons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.hero__buttons .sr-button {
+		margin-bottom: 20px;
+	}
+
+	.legalThings-block {
+		flex-wrap: wrap;
+	}
+
+	.legalThings-block .column {
+		margin:0 0 20px 0 !important;
+	}
+}
+
 @media (orientation: portrait) {
 	.timeline-block {
 		height: 600px;
