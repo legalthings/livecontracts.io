@@ -14,7 +14,23 @@ $(document).ready(function () {
 	loadTokens();
 	wizardInit();
 	closePopup();
+	scrollToBlock();
 });
+
+
+//function for smooth scroll to block
+
+function scrollToBlock() {
+	$('.js-scrollToBlock').on('click', function (e) {
+		e.preventDefault();
+		// console.log($(this).attr('href'))
+		var blockOffset = $($(this).attr('href')).offset().top;
+
+		$('html, body').animate({
+			scrollTop: blockOffset - 96
+		}, 2000);
+	})
+}
 
 //Function that populate blocks in "Explore".
 function populateExploreBlock() {
@@ -50,10 +66,6 @@ function populateExploreBlock() {
 					'<p>' +
 					data.intro +
 					'</p>' +
-					'<ul class="blog-meta">' +
-					'<li class="post-date">' + data.date + '</li>' +
-					'<li class="post-comments"><i class="fa fa-comments"></i> 3</li>' +
-					'</ul>' +
 					'</div>' +
 					'</div>'
 				);
@@ -104,7 +116,7 @@ function loadTokens() {
 function wizardInit() {
 	$("#wizard").stepFormWizard();
 
-	$(".js-open-wizard").on('click', function(e){
+	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
 		$('.popup-wizard').removeClass('popup-hide')
 	})

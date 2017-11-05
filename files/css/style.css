@@ -8530,10 +8530,15 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	position: relative;
 }
 
+.tokensSale-section .sr-button.button-1:hover {
+	background: #242038;
+}
+
 .tokensSale-section .column.one-third .isotope-item {
 	position: absolute;
 	left: 50%;
 	top: 50%;
+	width: 100%;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
@@ -8586,9 +8591,12 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	background: #fff;
 	color: #231D39;
 }
-#hero .sr-button:last-of-type {
 
+#hero .sr-button:last-of-type:hover {
+	background: #242038;
+	color: #507DEC;
 }
+
 #hero .sr-button:hover {
 	background: #fff;
 	color: #507DEC;
@@ -8657,13 +8665,16 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	height: 300px;
 	max-width: 70%;
 }
+
 .popup .popup__close .ion {
 	display: block;
 	transition: .3s all;
 }
+
 .popup .popup__close:hover .ion {
 	transform: rotate(360deg);
 }
+
 .popup.popup-hide {
 	top: -100%;
 }
@@ -8684,9 +8695,11 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .sf-wizard.sf-t2 .sf-nav li {
 	background: #242038;
 }
+
 #wizard-box.sf-t2 .sf-btn:hover {
 	background: #473f71;
 }
+
 #wizard-box.sf-t2 .sf-btn {
 	font-family: 'Lato';
 	font-weight: 700;
@@ -8710,4 +8723,57 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .sf-wizard.sf-t2 .sf-nav li.sf-active,
 .sf-wizard.sf-t2.sf-nomob .sf-nav li.sf-nav-link:not(.sf-nav-step-disabled):not(.sf-nav-unlink):hover {
 	background: #473f71;
+}
+
+.subscribe-block {
+	background: #231D39;
+}
+
+footer.footer-dark {
+	background: #000;
+	border: none;
+	color: #fff;
+}
+
+#footer .wrapper {
+	display: flex;
+	align-items: center;
+}
+
+#footer .footer-menu {
+	margin-left: auto;
+}
+
+#footer .footer-menu a {
+	color: #fff;
+	padding: 0 10px;
+	position: relative;
+}
+#footer .footer-menu a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -10px;
+	left: 10px;
+	width: 0;
+	transition: .3s width;
+	background: #fff;
+	height: 1px;
+}
+
+#footer .footer-menu a:hover:after {
+	width: calc(100% - 20px);
+}
+
+
+#footer .copyright {
+	border: none;
+}
+
+#footer .copyright small {
+	color: #fff;
+}
+
+#footer .footer-menu a:first-of-type {
+	border-right: 1px solid #fff;
 }
