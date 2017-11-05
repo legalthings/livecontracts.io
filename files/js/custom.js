@@ -102,13 +102,10 @@ function loadTokens() {
 
 //init of wizard steps
 function wizardInit() {
-	$("#wizard").stepFormWizard({
-		theme: 'circle' // sea, sky, simple, circle, sun
-	});
+	$("#wizard").stepFormWizard();
 
 	$(".js-open-wizard").on('click', function(e){
 		e.preventDefault();
-		console.log(21312312)
 		$('.popup-wizard').removeClass('popup-hide')
 	})
 }

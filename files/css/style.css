@@ -8637,7 +8637,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	font-size: 30px;
+	/*font-size: 30px;*/
 	color: #000;
 	z-index: 10;
 	transition: .3s all;
@@ -8668,6 +8668,38 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .sf-wizard .sf-nav {
 	transform: none !important;
 }
+
 .sf-wizard .sf-nav-step {
 	margin-top: 0 !important;
+}
+
+.sf-wizard.sf-t2 .sf-nav li {
+	background: #242038;
+}
+#wizard-box.sf-t2 .sf-btn:hover {
+	background: #473f71;
+}
+#wizard-box.sf-t2 .sf-btn {
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 22px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-align: center;
+	background: #1a1a1a;
+	color: #ffffff;
+	height: auto;
+	display: inline-block;
+	border-radius: 50px;
+	padding: 15px 40px;
+	transition: all 0.2s ease;
+	max-width: 100%;
+	margin: 2px 0 3px 0;
+	margin-right: 0px;
+}
+
+.sf-wizard.sf-t2 .sf-nav li.sf-active,
+.sf-wizard.sf-t2.sf-nomob .sf-nav li.sf-nav-link:not(.sf-nav-step-disabled):not(.sf-nav-unlink):hover {
+	background: #473f71;
 }
