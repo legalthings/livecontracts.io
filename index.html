@@ -28,6 +28,13 @@
 	<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>
 	<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>
 
+
+	<!-- Step Form Wizard plugin -->
+	<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">
+
+	<!-- nicer scroll in steps -->
+	<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">
+
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="files/uploads/favicon.png"/>
 
@@ -39,6 +46,28 @@
 <body>
 
 <!-- PAGELOADER -->
+
+<div class="popup popup-wizard popup-hide">
+	<div class="overlay"></div>
+	<a href="#" class="popup__close">
+		<i class="fa fa-close"></i>
+	</a>
+	<div class="popup__content">
+		<form id="wizard" action="">
+			<fieldset>
+				Step one. Follow my lead!
+			</fieldset>
+			<fieldset>
+				Step two. Here we go!
+			</fieldset>
+			<fieldset>
+				Last one. Fenita!
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+
 
 <!-- PAGE CONTENT -->
 <div id="page-content">
@@ -113,7 +142,7 @@
 					<i class="fa fa-chevron-down"></i>
 					Explore
 				</a>
-				<a href="#" class="sr-button button-1 button-icon-text button-medium circled">
+				<a href="#" class="sr-button button-1 button-icon-text button-medium circled js-open-wizard">
 					<i class="fa fa-file-pdf-o"></i>
 					Demo
 				</a>
@@ -562,6 +591,9 @@
 <script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>
 <script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>
 <script type="text/javascript" src="files/js/script.js"></script>
+<script src="files/js/step-form-wizard.min.js"></script>
+<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
 <script type="text/javascript" src="files/js/custom.js"></script>
 <!-- SCRIPTS -->
 

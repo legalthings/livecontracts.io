@@ -1,8 +1,20 @@
+$(window).load(function () {
+	/* only if you want use mcustom scrollbar */
+	$(".sf-step").mCustomScrollbar({
+		theme: "dark-3",
+		scrollButtons: {
+			enable: true
+		}
+	});
+});
+
 $(document).ready(function () {
 	populateExploreBlock();
 	manipulatingHeader();
 	loadTokens();
-})
+	wizardInit();
+	closePopup();
+});
 
 //Function that populate blocks in "Explore".
 function populateExploreBlock() {
@@ -73,7 +85,6 @@ function manipulatingHeader() {
 }
 
 //loading data about tokens status
-
 function loadTokens() {
 	var currentTokens = $('#current-tokens-sold');
 	var allTokens = $('#all-tokens');
@@ -86,5 +97,26 @@ function loadTokens() {
 			currentTokens.html(tokens.current)
 			allTokens.html(tokens.total);
 		}
+	})
+}
+
+//init of wizard steps
+function wizardInit() {
+	$("#wizard").stepFormWizard({
+		theme: 'circle' // sea, sky, simple, circle, sun
+	});
+
+	$(".js-open-wizard").on('click', function(e){
+		e.preventDefault();
+		console.log(21312312)
+		$('.popup-wizard').removeClass('popup-hide')
+	})
+}
+
+//function for close popup
+function closePopup() {
+	$('.popup__close').on('click', function (e) {
+		e.preventDefault();
+		$(this).parent().addClass('popup-hide')
 	})
 }
