@@ -16,13 +16,13 @@ $(document).ready(function () {
 	wizardInit();
 	closePopup();
 	scrollToBlock();
-
-
-	$('.sf-controls').append('' +
-		'<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="skipStep()" href="#">SKIP</a>'
-	);
-
 });
+
+// Global variables leave here, pls
+
+var sfw;
+var next_loading = false;
+
 
 
 //function for smooth scroll to block
@@ -119,21 +119,19 @@ function loadTokens() {
 	})
 }
 
-var sfw;
-var next_loading = false;
 
 //init of wizard steps
 function wizardInit() {
 
-
-
-
-
+	//added skip button for wizard control
+	$('.sf-controls').append('' +
+		'<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="skipStep()" href="#">SKIP</a>'
+	);
 
 	sfw = $("#wizard").stepFormWizard({
 		height: 'auto',
-		onPrev: function (from, data) {
-			console.log(from)
+		onPrev: function (from) {
+			console.log(from);
 			if (from === 3) {
 				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
 			}
@@ -172,26 +170,9 @@ function wizardInit() {
 					"data": data
 				};
 
-
 				$.ajax(settings).done(function (response) {
 					console.log(response);
 				});
-
-
-				// $.ajax({
-				// 	type: "POST",
-				// 	url: "https://requestb.in/14yxwj81.php",
-				// 	data: $('#text').val(), // serializes the form's elements.
-				// 	success: function(data)
-				// 	{
-				// 		alert(data); // show response from the php script.
-				// 		sfw.addSpinner('next', false);  // remove spinner
-				// 		next_loading = false; // allow next step
-				// 		sfw.next(false, {done: true}) // go to next step, additional data will be in next callback
-				// 	}
-				//
-				// });
-
 
 				return false;
 			}
