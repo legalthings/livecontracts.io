@@ -18,6 +18,9 @@ $(document).ready(function () {
 	scrollToBlock();
 
 
+	$('.sf-controls').append('' +
+		'<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="skipStep()" href="#">SKIP</a>'
+	);
 
 });
 
@@ -116,29 +119,112 @@ function loadTokens() {
 	})
 }
 
-
-
-
 var sfw;
 var next_loading = false;
-
 
 //init of wizard steps
 function wizardInit() {
 
-	$("#wizard").stepFormWizard({
+
+
+
+
+
+	sfw = $("#wizard").stepFormWizard({
 		height: 'auto',
-		onNext : function () {
-			if($("span:contains('3')").parents('.sf-active')) {
-				console.log(123)
+		onPrev: function (from, data) {
+			console.log(from)
+			if (from === 3) {
+				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
+			}
+			else {
+				$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
+			}
+		},
+		onNext: function (from, data) {
+			if (from === 1) {
+				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
+			}
+			if (from === 2) {
+				$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
+
+				if (next_loading) { // test if ajax is executing
+					return false;
+				}
+				if (data !== undefined && data.done) { // if ajax is done, than data.done is set to true
+					return true;
+				}
+				sfw.addSpinner('next'); // add spinner to next button
+				next_loading = true; // to prevent stack of ajax requests if user hasn't patience
+
+				var settings = {
+					"async": true,
+					"crossDomain": true,
+					"url": "http://mockbin.com/request?foo=bar&foo=baz",
+					"method": "POST",
+					"headers": {
+						"cookie": "foo=bar; bar=baz",
+						"accept": "application/json",
+						"content-type": "application/json",
+						"x-pretty-print": "2"
+					},
+					"processData": false,
+					"data": data
+				};
+
+
+				$.ajax(settings).done(function (response) {
+					console.log(response);
+				});
+
+
+				// $.ajax({
+				// 	type: "POST",
+				// 	url: "https://requestb.in/14yxwj81.php",
+				// 	data: $('#text').val(), // serializes the form's elements.
+				// 	success: function(data)
+				// 	{
+				// 		alert(data); // show response from the php script.
+				// 		sfw.addSpinner('next', false);  // remove spinner
+				// 		next_loading = false; // allow next step
+				// 		sfw.next(false, {done: true}) // go to next step, additional data will be in next callback
+				// 	}
+				//
+				// });
+
+
+				return false;
 			}
 		}
 	});
+
+	// sfw.activeNext(false); // disable next button
+
+	$("#wizard").on('keyup', '#text', function () {
+		if ($(this).val() != "") {
+			sfw.activeNext(true);
+		} else {
+			$('#wizard-box.sf-t2 .sf-btn.skip-btn').on('click', function () {
+
+			})
+			sfw.activeNext(false); // disable next button
+			sfw.activeStep(1, false); // deactive next step
+		}
+	})
+
+
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
 		$('.popup-wizard').removeClass('popup-hide')
 	})
 }
+
+function skipStep() {
+	next_loading = false; // allow next step
+	sfw.next(false, {done: true}) // go to next step, additional data will be in next callback
+	return false
+}
+
 
 //function for close popup
 function closePopup() {
@@ -147,6 +233,12 @@ function closePopup() {
 		$(this).parent().addClass('popup-hide')
 	})
 }
+
+
+
+
+
+
 
 
 
