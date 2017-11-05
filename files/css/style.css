@@ -8717,6 +8717,27 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	line-height: 1;
 }
 
+.popup-wizard .socials ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	margin: 20px 0 0 0;
+}
+.popup-wizard .socials ul li {
+	margin-top: 0;
+}
+.popup-wizard .socials ul li a {
+	color: #231D39;
+	font-size: 24px;
+	transition: .3s all;
+}
+ 
+.popup-wizard .socials ul li a:hover {
+	color: #473f71;
+}
+
+
+
 .sf-wizard .sf-nav-step {
 	margin-top: 0 !important;
 }
