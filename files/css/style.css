@@ -8545,11 +8545,6 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	border-bottom: none !important;
 }
 
-/*#header .header-inner {*/
-/*display: flex;*/
-/*justify-content: center;*/
-/*}*/
-
 #header.custom-visible {
 	top: 0 !important;
 }
@@ -8587,6 +8582,13 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	color: #597FD9;
 }
 
+#hero .sr-button:last-of-type {
+	background: #fff;
+	color: #231D39;
+}
+#hero .sr-button:last-of-type {
+
+}
 #hero .sr-button:hover {
 	background: #fff;
 	color: #507DEC;
@@ -8609,7 +8611,7 @@ nav#main-nav ul li a {
 	padding: 30px 10px;
 }
 
-#main-nav ul li:not(:last-of-type) {
+#main-nav ul li:last-of-type {
 	background: #242038;
 }
 
@@ -8617,7 +8619,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	background: transparent !important;
 }
 
-header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > ul > li:not(:last-of-type) > a {
+header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > ul > li:last-of-type > a {
 	color: #fff !important;
 }
 
@@ -8630,7 +8632,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	height: 100%;
 	background: #fff;
 	transition: .3s top;
-	z-index: 10;
+	z-index: 1510;
 }
 
 .popup .popup__close {
@@ -8640,7 +8642,6 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	/*font-size: 30px;*/
 	color: #000;
 	z-index: 10;
-	transition: .3s all;
 }
 
 .popup .popup__content {
@@ -8656,11 +8657,13 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	height: 300px;
 	max-width: 70%;
 }
-
-.popup .popup__close:hover {
+.popup .popup__close .ion {
+	display: block;
+	transition: .3s all;
+}
+.popup .popup__close:hover .ion {
 	transform: rotate(360deg);
 }
-
 .popup.popup-hide {
 	top: -100%;
 }
@@ -8671,6 +8674,11 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 .sf-wizard .sf-nav-step {
 	margin-top: 0 !important;
+}
+
+.sf-wizard.sf-t2 .sf-nav-top .sf-nav-step.sf-active::after {
+	border-color: #473f71;
+	bottom: -12px;
 }
 
 .sf-wizard.sf-t2 .sf-nav li {
