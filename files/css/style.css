@@ -8635,6 +8635,10 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	color: #fff !important;
 }
 
+#hero {
+	background-color: #120F16 !important;
+}
+
 .popup {
 	position: fixed;
 	display: block;

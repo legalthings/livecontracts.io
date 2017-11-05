@@ -16,9 +16,7 @@ $(document).ready(function () {
 	wizardInit();
 	closePopup();
 	scrollToBlock();
-	appendSkipWizardButton()
-
-
+	appendSkipWizardButton();
 });
 
 //added skip button for wizard control
