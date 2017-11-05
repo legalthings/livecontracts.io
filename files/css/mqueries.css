@@ -1358,6 +1358,29 @@ Smartphones
 
 /* custom media */
 
+@media only screen and (max-width: 1024px) {
+	#menu #main-nav {
+		padding: 0;
+		width: 100%;
+	}
+	#main-nav ul {
+		flex-wrap: wrap;
+	}
+	#main-nav ul li {
+		background: transparent !important;
+	}
+
+	#menu.menu-is-open nav#main-nav ul li a:not(.button-style) {
+		width: 100%;
+	}
+	#menu.menu-is-open nav#main-nav ul li a:not(.button-style):hover {
+		color: white !important;
+		background: #242038 !important;
+
+	}
+
+
+}
 @media only screen and (max-width: 960px) {
 	#page-body {
 		padding-top: 0;
@@ -1391,6 +1414,27 @@ Smartphones
 
 	.legalThings-block .column {
 		margin:0 0 20px 0 !important;
+	}
+
+	.popup-wizard .sf-t2 .sf-nav li {
+		height: 34px;
+		line-height: 34px;
+	}
+	.popup-wizard .sf-t2 .sf-nav-top {
+		height: 50px;
+	}
+	#wizard-box.sf-t2 .sf-btn.skip-btn.visible {
+		margin-right: 5px;
+	}
+	#wizard-box.sf-t2 .sf-btn {
+		padding: 15px 20px;
+	}
+	.popup-wizard .sf-t2 .sf-nav-smmob .sf-nav li {
+		padding: 0 17px;
+	}
+	.popup-wizard .sf-t2 .sf-nav-number {
+		top: -8px;
+		font-size: 28px;
 	}
 }
 
@@ -1455,5 +1499,16 @@ Smartphones
 
 	.timeline .event:nth-of-type(3) {
 		bottom: 80%;
+	}
+
+	.tokensSale-section .column.one-third {
+		display: none;
+	}
+	.tokensSale-section .column.two-third {
+		margin-top: 20px !important;
+	}
+	.tokensSale-section .hidden {
+		display: block;
+		margin-top: 20px;
 	}
 }

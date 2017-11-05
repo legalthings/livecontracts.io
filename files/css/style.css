@@ -8534,6 +8534,10 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	background: #242038;
 }
 
+.tokensSale-section .hidden {
+	display: none;
+}
+
 .tokensSale-section .column.one-third .isotope-item {
 	position: absolute;
 	left: 50%;

@@ -16,14 +16,22 @@ $(document).ready(function () {
 	wizardInit();
 	closePopup();
 	scrollToBlock();
+	appendSkipWizardButton()
+
+
 });
+
+//added skip button for wizard control
+function appendSkipWizardButton() {
+	$('.sf-controls').append('' +
+		'<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="skipStep()" href="#">SKIP</a>'
+	);
+}
 
 // Global variables leave here, pls
 
 var sfw;
 var next_loading = false;
-
-
 
 //function for smooth scroll to block
 
@@ -120,13 +128,10 @@ function loadTokens() {
 }
 
 
+
+
 //init of wizard steps
 function wizardInit() {
-
-	//added skip button for wizard control
-	$('.sf-controls').append('' +
-		'<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="skipStep()" href="#">SKIP</a>'
-	);
 
 	sfw = $("#wizard").stepFormWizard({
 		height: 'auto',
