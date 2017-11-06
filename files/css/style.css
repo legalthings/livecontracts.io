@@ -8675,7 +8675,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 .sf-viewport, .sf-step {
-	min-height: 200px !important;
+	min-height: 100% !important;
 	height: 100% !important;
 }
 
@@ -8769,6 +8769,11 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .digitaze-block .sr-button.read-more-button:hover {
 	background: #1a1a1a;
 	color: #fff;
+}
+
+
+#wizard {
+	height: 75%;
 }
 
 #wizard-box.sf-t2 .sf-btn:hover {
