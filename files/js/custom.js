@@ -230,6 +230,7 @@ function wizardInit() {
 
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
+		$('html').addClass('lock')
 		$('.popup-wizard').removeClass('popup-hide')
 	})
 }
@@ -245,6 +246,7 @@ function skipStep() {
 function closePopup() {
 	$('.popup__close').on('click', function (e) {
 		e.preventDefault();
+		$('html').addClass('lock');
 		$(this).parent().addClass('popup-hide')
 	})
 }

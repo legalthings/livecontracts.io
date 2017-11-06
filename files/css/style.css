@@ -8671,8 +8671,8 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .popup .popup__content .sf-wizard {
 	width: 100%;
 	height: 300px;
-	max-width: 85%;
-	height: 75%;
+	max-width: 95%;
+	height: 80%;
 }
 
 #wizard {
@@ -8866,6 +8866,7 @@ footer.footer-dark {
 
 #footer .footer-menu a:hover:after {
 	width: calc(100% - 20px);
+	width: calc(100% - 20px);
 }
 
 #footer .copyright {
@@ -8878,4 +8879,8 @@ footer.footer-dark {
 
 #footer .footer-menu a:first-of-type {
 	border-right: 1px solid #fff;
+}
+
+html.lock {
+	overflow: hidden;
 }
