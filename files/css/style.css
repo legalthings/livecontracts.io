@@ -8671,7 +8671,12 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .popup .popup__content .sf-wizard {
 	width: 100%;
 	height: 300px;
-	max-width: 75%;
+	max-width: 85%;
+	height: 75%;
+}
+
+#wizard {
+	height: 75%;
 }
 
 .sf-viewport, .sf-step {
@@ -8772,9 +8777,6 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 
-#wizard {
-	height: 75%;
-}
 
 #wizard-box.sf-t2 .sf-btn:hover {
 	background: #473f71;
