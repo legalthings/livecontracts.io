@@ -1526,9 +1526,12 @@ Smartphones
 	}
 }
 
-/
-/
-arnold code
+@media only screen and (max-height: 400px) {
+	#wizard {
+		height: 65%;
+	}
+}
+/*arnold code*/
 
 @media only screen and (max-height: 600px) {
 	#page-title {
