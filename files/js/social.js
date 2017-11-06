@@ -1,6 +1,5 @@
-var $ = require('jquery');
 
-module.exports.init = function () {
+(function () {
     $('.social a[data-target]').click(function (e) {
         e.preventDefault();
 
@@ -27,4 +26,4 @@ module.exports.init = function () {
         }
 
     });
-}
+})();

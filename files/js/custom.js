@@ -17,7 +17,37 @@ $(document).ready(function () {
 	closePopup();
 	scrollToBlock();
 	appendSkipWizardButton();
+	bindingWizardsTabs();
 });
+
+//function for same tabs in Wizard on 4 and 5 steps
+
+function bindingWizardsTabs() {
+
+	var bitcoinTab = $('.bitcoin-tab')
+	var bitcoinContent = $('.bitcoin-content')
+
+	var ethererumTab = $('.ethererum-tab')
+	var ethererumContent = $('.ethererum-content')
+
+	$('.tab-nav li').on('click', function () {
+		if ($(this).hasClass('bitcoin-tab')) {
+			bitcoinTab.addClass('active')
+			bitcoinContent.addClass('active')
+
+			ethererumTab.removeClass('active')
+			ethererumContent.removeClass('active')
+		}
+		if ($(this).hasClass('ethererum-tab')) {
+			bitcoinTab.removeClass('active')
+			bitcoinContent.removeClass('active')
+
+			ethererumTab.addClass('active')
+			ethererumContent.addClass('active')
+		}
+	})
+
+}
 
 //added skip button for wizard control
 function appendSkipWizardButton() {
@@ -126,13 +156,10 @@ function loadTokens() {
 }
 
 
-
-
 //init of wizard steps
 function wizardInit() {
 
 	sfw = $("#wizard").stepFormWizard({
-		height: 'auto',
 		onPrev: function (from) {
 			console.log(from);
 			if (from === 3) {
@@ -143,12 +170,16 @@ function wizardInit() {
 			}
 		},
 		onNext: function (from, data) {
+			$('#text').val('');
+
 			if (from === 1) {
 				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
 			}
 			if (from === 2) {
 				$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
+			}
 
+			if ($('#text').val() != "") {
 				if (next_loading) { // test if ajax is executing
 					return false;
 				}
@@ -184,17 +215,17 @@ function wizardInit() {
 
 	// sfw.activeNext(false); // disable next button
 
-	$("#wizard").on('keyup', '#text', function () {
-		if ($(this).val() != "") {
-			sfw.activeNext(true);
-		} else {
-			$('#wizard-box.sf-t2 .sf-btn.skip-btn').on('click', function () {
-
-			})
-			sfw.activeNext(false); // disable next button
-			sfw.activeStep(1, false); // deactive next step
-		}
-	})
+	// $("#wizard").on('keyup', '#text', function () {
+	// 	if ($(this).val() != "") {
+	// 		sfw.activeNext(true);
+	// 	} else {
+	// 		$('#wizard-box.sf-t2 .sf-btn.skip-btn').on('click', function () {
+	//
+	// 		})
+	// 		// sfw.activeNext(false); // disable next button
+	// 		// sfw.activeStep(1, false); // deactive next step
+	// 	}
+	// })
 
 
 	$(".js-open-wizard").on('click', function (e) {
