@@ -246,7 +246,7 @@ function skipStep() {
 function closePopup() {
 	$('.popup__close').on('click', function (e) {
 		e.preventDefault();
-		$('html').addClass('lock');
+		$('html').removeClass('lock');
 		$(this).parent().addClass('popup-hide')
 	})
 }

@@ -1399,7 +1399,7 @@ Smartphones
 
 @media only screen and (max-width: 480px) {
 	.popup .popup__content .sf-wizard {
-		max-width: 80%;
+		/*max-width: 80%;*/
 	}
 }
 
@@ -1523,6 +1523,18 @@ Smartphones
 	.tokensSale-section .hidden {
 		display: block;
 		margin-top: 20px;
+	}
+}
+
+
+@media only screen and (min-height: 800px) {
+	#wizard {
+		height: 90%;
+	}
+}
+@media only screen and (min-height: 700px) {
+	#wizard {
+		height: 85%;
 	}
 }
 
