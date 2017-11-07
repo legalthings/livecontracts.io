@@ -8429,9 +8429,6 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 .timeline-block {
 	background: black;
-}
-
-.timeline-block {
 	padding: 30px 0 20px;
 }
 
@@ -8442,7 +8439,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .timeline {
 	position: relative;
 	height: 120px;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .timeline:after {
@@ -8461,6 +8458,63 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	top: calc(50% - 30px);
 	margin-left: -125px;
 	z-index: 1;
+}
+
+.timeline .event .hover-block {
+	opacity: 0;
+	background: red;
+	left: 50%;
+	top: -300%;
+	right: 0;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: .3s all;
+	background: #fff;
+	border-radius: 10px;
+}
+.arrow_box {
+	position: relative;
+	background: #fff;
+	border: 4px solid #fff;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 5px;
+	margin-left: -5px;
+}
+.arrow_box:before {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+
+
+
+
+.timeline .event .hover-block * {
+	color: #1a1a1a;
+}
+
+.timeline .event:hover {
+	cursor: pointer;
+}
+.timeline .event:hover .hover-block {
+	opacity: 1;
+	top: -100%;
 }
 
 .timeline .event:after {
@@ -8485,7 +8539,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 .blackBackgroundBlock {
-	background: black;
+	background: #1a1a1a;
 }
 
 .digitaze-block {
@@ -8939,3 +8993,4 @@ html.lock {
 .error.show {
     opacity: 1;
 }
+

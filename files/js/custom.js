@@ -211,7 +211,7 @@ function wizardInit() {
 							$(e.target).hasClass('sf-nav-step') ||
 							$(e.target).hasClass('prev-btn'))) {
 						errorOnInput(data);
-
+ 
 					}
 					else {
 						next_loading = false; // allow next step
@@ -222,7 +222,7 @@ function wizardInit() {
 						return false
 					}
 				})
-			} 
+			}
 		},
 
 	});
