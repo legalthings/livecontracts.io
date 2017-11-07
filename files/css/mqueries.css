@@ -1485,6 +1485,32 @@ Smartphones
 		margin: 0;
 	}
 
+	.timeline .event:first-of-type {
+		bottom: 10%;
+	}
+
+	.timeline .event:nth-of-type(2) {
+		bottom: 60%;
+	}
+
+	.timeline .event:nth-of-type(3) {
+		bottom: 80%;
+	}
+
+	.tokensSale-section .column.one-third {
+		display: none;
+	}
+
+	.tokensSale-section .column.two-third {
+		margin-top: 20px !important;
+	}
+
+	.tokensSale-section .hidden {
+		display: block;
+		margin-top: 20px;
+	}
+
+
 	.timeline .event:hover .hover-block {
 		top: 30px;
 	}
@@ -1506,34 +1532,6 @@ Smartphones
 	.timeline .event .hover-block:after {
 		display: none;
 	}
-
-}
-
-.timeline .event:first-of-type {
-	bottom: 10%;
-}
-
-.timeline .event:nth-of-type(2) {
-	bottom: 60%;
-}
-
-.timeline .event:nth-of-type(3) {
-	bottom: 80%;
-}
-
-.tokensSale-section .column.one-third {
-	display: none;
-}
-
-.tokensSale-section .column.two-third {
-	margin-top: 20px !important;
-}
-
-.tokensSale-section .hidden {
-	display: block;
-	margin-top: 20px;
-}
-
 }
 
 @media only screen and (min-height: 800px) {
