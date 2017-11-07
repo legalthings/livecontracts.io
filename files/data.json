@@ -14,7 +14,7 @@
 				"date": "28.12.08",
 				"title": "No waterfalls of Iceland",
 				"intro": "Here we can set some custom text"
-			},
+			}, 
 			{
 				"category": "World",
 				"img": "files/uploads/600x400-light.jpg",
@@ -71,6 +71,3 @@
 		}
 	}
 ]
-
-
-

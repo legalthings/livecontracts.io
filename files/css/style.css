@@ -2,28 +2,28 @@
 
 
 
-		! ! !    R E A D   T H I S    ! ! ! 
+		! ! !    R E A D   T H I S    ! ! !
 		-----------------
-		
-		It's recomended to use/create a custom css file (ore place them at the end of this file) 
+
+		It's recomended to use/create a custom css file (ore place them at the end of this file)
 		to do you customizations in order to easily update the main css files without loosing your changes
-				
-		
-		
+
+
+
 		COLORS
 		----
 		black (headings,backgrounds)				#1a1a1a
 		default text color (body)					#696969
-		light text color							#9c9c9c	
-		light border 								#e0e0e0			 
+		light text color							#9c9c9c
+		light border 								#e0e0e0
 		light background (footer,boxed,...)			#f5f6f7
-		
+
 		-- FOR DARK BACKGROUND
 		white 										#ffffff
 		dark text color 							#c9c9c9
 		dark (light) text color 					#8c8c8c
 		dark border 								#3d3d3d
-		
+
 		main color									#33bfd0
 
 
@@ -54,7 +54,7 @@
 	22. WIDGETS
 	23. REVOLUTION SLIDER (sudo navigation + sudo layers)
 	24. CUSTOM STYLE
-	
+
 ----------------------------------------------------------------------------------- */
 
 /*----------------------------------------------
@@ -8513,7 +8513,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 .customRowElements.socialsBlock .column {
-	width: 20%;
+	width: auto !important;
 }
 
 .customRowElements .column {
@@ -8537,7 +8537,9 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .tokensSale-section .hidden {
 	display: none;
 }
-
+.tokensSale-section .column.two-third .col-content  {
+    overflow: visible;
+}
 .tokensSale-section .column.one-third .isotope-item {
 	position: absolute;
 	left: 50%;
@@ -8560,9 +8562,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 .progress-active .tooltip {
 	width: 85px;
-	margin-right: -35%;
-	font-weight: 600;
-	/*opacity: 1 !important;*/
+    margin-right: -42.5px
 }
 
 .hero-full .icon-box .ion {
@@ -8835,6 +8835,11 @@ footer.footer-dark {
 	background: #000;
 	border: none;
 	color: #fff;
+}
+
+
+#newsletter-email:focus {
+    border-color: transparent;
 }
 
 #footer .wrapper {
