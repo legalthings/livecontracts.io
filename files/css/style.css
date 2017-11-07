@@ -8656,7 +8656,6 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	position: absolute;
 	right: 20px;
 	top: 20px;
-	/*font-size: 30px;*/
 	color: #000;
 	z-index: 10;
 }
@@ -8828,7 +8827,18 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .sf-wizard.sf-t2.sf-nomob .sf-nav li.sf-nav-link:not(.sf-nav-step-disabled):not(.sf-nav-unlink):hover {
 	background: #473f71;
 }
+.cf:before, .cf:after {
+	content: " ";
+	display: table; }
 
+.cf:after {
+	clear: both; }
+
+.f_left {
+	float: left; }
+
+.f_right {
+	float: right; }
 .subscribe-block {
 	background: #231D39;
 }
@@ -8890,4 +8900,17 @@ footer.footer-dark {
 
 html.lock {
 	overflow: hidden;
+}
+
+
+.legalThings-block .column-section {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+.legalThings-block .column-section .image {
+    margin-right: 40px;
+    min-width: 100px;
 }

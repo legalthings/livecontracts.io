@@ -1111,6 +1111,17 @@ Smartphones
     .legalThings-block .tabs .tab-container {
         margin-top: 80px !important;
     }
+    .legalThings-block .column-section {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .legalThings-block .column-section .image {
+        margin-bottom: 20px;
+        margin-right: 0
+}
+
 }
 
 @media only screen and (max-width: 640px) {
