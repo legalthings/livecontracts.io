@@ -8472,11 +8472,13 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	background: #fff;
 	border-radius: 10px;
 }
+
 .arrow_box {
 	position: relative;
 	background: #fff;
 	border: 4px solid #fff;
 }
+
 .arrow_box:after, .arrow_box:before {
 	top: 100%;
 	left: 50%;
@@ -8494,16 +8496,13 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	border-width: 5px;
 	margin-left: -5px;
 }
+
 .arrow_box:before {
 	border-color: rgba(255, 255, 255, 0);
 	border-top-color: #fff;
 	border-width: 12px;
 	margin-left: -12px;
 }
-
-
-
-
 
 .timeline .event .hover-block * {
 	color: #1a1a1a;
@@ -8512,9 +8511,12 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .timeline .event:hover {
 	cursor: pointer;
 }
-.timeline .event:hover .hover-block {
-	opacity: 1;
-	top: -100%;
+
+@media (orientation: landscape) {
+	.timeline .event:hover .hover-block {
+		opacity: 1;
+		top: -100%;
+	}
 }
 
 .timeline .event:after {
@@ -8528,6 +8530,10 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	top: calc(50% - 19px);
 	left: calc(50% - 10px);
 	z-index: 2;
+}
+
+.timeline .event .hover-block.open {
+	opacity: 1;
 }
 
 .timeline .event .date {
@@ -8551,9 +8557,9 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 .digitaze-block p {
-    margin-top: 16px;
-    font-size: 17px;
-    line-height: 26px;
+	margin-top: 16px;
+	font-size: 17px;
+	line-height: 26px;
 }
 
 .blackBackgroundBlock h2, .blackBackgroundBlock h5 {
@@ -8597,9 +8603,11 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 .tokensSale-section .hidden {
 	display: none;
 }
-.tokensSale-section .column.two-third .col-content  {
-    overflow: visible;
+
+.tokensSale-section .column.two-third .col-content {
+	overflow: visible;
 }
+
 .tokensSale-section .column.one-third .isotope-item {
 	position: absolute;
 	left: 50%;
@@ -8622,7 +8630,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 .progress-active .tooltip {
 	width: 85px;
-    margin-right: -42.5px
+	margin-right: -42.5px
 }
 
 .hero-full .icon-box .ion {
@@ -8708,7 +8716,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	height: 100%;
 	background: #fff;
 	transition: .3s top, .3s opacity;
-    opacity: 1;
+	opacity: 1;
 	z-index: 1510;
 }
 
@@ -8759,7 +8767,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 .popup.popup-hide {
 	top: -100%;
-    opacity: 0;
+	opacity: 0;
 }
 
 .sf-wizard .sf-nav {
@@ -8837,8 +8845,6 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	color: #fff;
 }
 
-
-
 #wizard-box.sf-t2 .sf-btn:hover {
 	background: #473f71;
 }
@@ -8887,18 +8893,24 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .sf-wizard.sf-t2.sf-nomob .sf-nav li.sf-nav-link:not(.sf-nav-step-disabled):not(.sf-nav-unlink):hover {
 	background: #473f71;
 }
+
 .cf:before, .cf:after {
 	content: " ";
-	display: table; }
+	display: table;
+}
 
 .cf:after {
-	clear: both; }
+	clear: both;
+}
 
 .f_left {
-	float: left; }
+	float: left;
+}
 
 .f_right {
-	float: right; }
+	float: right;
+}
+
 .subscribe-block {
 	background: #231D39;
 }
@@ -8909,9 +8921,8 @@ footer.footer-dark {
 	color: #fff;
 }
 
-
 #newsletter-email:focus {
-    border-color: transparent;
+	border-color: transparent;
 }
 
 #footer .wrapper {
@@ -8962,35 +8973,34 @@ html.lock {
 	overflow: hidden;
 }
 
-
 .legalThings-block .column-section {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: center;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
 }
- 
+
 .legalThings-block .column-section .image {
-    margin-right: 40px;
-    min-width: 100px;
+	margin-right: 40px;
+	min-width: 100px;
 }
 
 .error {
-    color: #ff0000;
-    margin-top: 5px;
-    opacity: 0;
-    font-size: 12px;
-    font-weight: bold;
-    transition: .3s opacity;
+	color: #ff0000;
+	margin-top: 5px;
+	opacity: 0;
+	font-size: 12px;
+	font-weight: bold;
+	transition: .3s opacity;
 
 }
 
 .error-input {
-    border: 1px solid #ff0000 !important;
-    color: #ff0000;
+	border: 1px solid #ff0000 !important;
+	color: #ff0000;
 }
 
 .error.show {
-    opacity: 1;
+	opacity: 1;
 }
 

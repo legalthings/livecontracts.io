@@ -10,6 +10,7 @@ $(window).load(function () {
 });
 
 $(document).ready(function () {
+	eventForMobileTooltip();
 	populateExploreBlock();
 	manipulatingHeader();
 	loadTokens();
@@ -19,6 +20,18 @@ $(document).ready(function () {
 	appendSkipWizardButton();
 	bindingWizardsTabs();
 });
+
+
+
+//function for showing tooltips on timeline on mobile
+
+function eventForMobileTooltip() {
+	if(window.innerHeight > window.innerWidth){
+		$('.timeline .event').on('click', function () {
+			$(this).find('.hover-block').toggleClass('open')
+		})
+	}
+}
 
 //function for same tabs in Wizard on 4 and 5 steps
 
@@ -211,7 +224,7 @@ function wizardInit() {
 							$(e.target).hasClass('sf-nav-step') ||
 							$(e.target).hasClass('prev-btn'))) {
 						errorOnInput(data);
- 
+
 					}
 					else {
 						next_loading = false; // allow next step

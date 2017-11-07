@@ -1511,9 +1511,6 @@ Smartphones
 	}
 
 
-	.timeline .event:hover .hover-block {
-		top: 30px;
-	}
 	.timeline .event .hover-block {
 		top: 30px;
 		transform: none;
@@ -1523,6 +1520,10 @@ Smartphones
 		left: auto;
 		height: 50px;
 		border: 1px solid #000000;
+	}
+	.timeline .event .hover-block.open {
+		top: 30px;
+		opacity: 1;
 	}
 
 	.timeline .event .hover-block:before {
