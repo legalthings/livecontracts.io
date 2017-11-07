@@ -8492,8 +8492,14 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	background: #242038;
 }
 
-.digitaze-block h2, .digitaze-block h5 {
+.digitaze-block h2, .digitaze-block h5, .digitaze-block p {
 	color: #fff;
+}
+
+.digitaze-block p {
+    margin-top: 16px;
+    font-size: 17px;
+    line-height: 26px;
 }
 
 .blackBackgroundBlock h2, .blackBackgroundBlock h5 {
@@ -8690,7 +8696,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 #blog-grid .post-category {
-	color: #242038
+	color: #9867CF;
 }
 
 .popup .popup__close:hover .ion {
