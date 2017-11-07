@@ -60,6 +60,7 @@ function appendSkipWizardButton() {
 
 var sfw;
 var next_loading = false;
+var waves_server = 'https://waves.legalthings.io';
 
 //function for smooth scroll to block
 
@@ -144,13 +145,16 @@ function loadTokens() {
 	var currentTokens = $('#current-tokens-sold');
 	var allTokens = $('#all-tokens');
 	$.ajax({
-		url: "files/data.json",
+		url: waves_server + "/api/balance",
 		success: function (result) {
-			var tokens = result[0].tokens;
-			$('.progress-active').attr('data-perc', (tokens.current / tokens.total) * 100)
 
-			currentTokens.html(tokens.current)
-			allTokens.html(tokens.total);
+			var total = parseInt(result.phases.presale.limit) / 100000000;
+			var sold = total - (result.balance / 100000000);
+
+			$('.progress-active').attr('data-perc', (sold / total) * 100);
+
+			currentTokens.html(sold);
+			allTokens.html(total);
 		}
 	})
 }
