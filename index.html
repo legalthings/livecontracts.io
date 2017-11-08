@@ -28,17 +28,17 @@
 	<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all"/>
 	<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>
 	<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>
-
-
+	
+	
 	<!-- Step Form Wizard plugin -->
 	<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">
-
+	
 	<!-- nicer scroll in steps -->
 	<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">
-
+	
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="files/uploads/favicon.png"/>
-
+	
 	<!-- DOCUMENT TITLE -->
 	<title>LegalThings One &middot; Platform for Live Contracts</title>
 
@@ -696,25 +696,33 @@
                 </fieldset>
 
                 <fieldset>
-                    <p>
-                        Doing any transaction on the Waves platform requires WAVES tokens. To facilitate the purchase of LTO, we can send you a small amount
-                        of WAVES.
-                    </p>
+					<div id="faucet-container">
+						<p>
+							Doing any transaction on the Waves platform requires WAVES tokens. To facilitate the purchase of LTO, we can send you a small amount
+							of WAVES.
+						</p>
 
-                    <p>
-                        Please enter your Waves public wallet address to receive 0.003 WAVES.
-                    </p>
+						<p>
+							Please enter your Waves public wallet address to receive 0.003 WAVES.
+						</p>
 
-                    <form id="wizard-form" class="checkform sendemail" action="php/contact-send.php" method="post">
-                        <div class="form-row">
-                            <input name="name" placeholder="WAVES public wallet address" id="text" class="name req" value="" type="text" />
-                        </div>
-                    </form>
-
+						<div id="wizard-form">
+							<div class="form-row" style="display: flex">
+								<input placeholder="WAVES public wallet address" id="faucet-recipient" type="text"/>
+								<a href="#" class="sr-button button-1" style="margin: 0; padding: 8px 40px;" id="faucet-retrieve-btn">
+									Retrieve
+								</a>
+							</div>
+						</div>
+					</div>
+					
+					<p id="faucet-success" style="display: none; color: green">Successfully sent waves to the given address. You can view the transaction <a id="faucet-success-link" href="#" target="_blank">here</a> (might take a minute to appear).</p>
+					<p id="faucet-failed" style="display: none; color: red">Failed to send waves to the given address. Please make sure that the address is valid.</a></p>
+					
                     <p>You can find your Waves wallet address on <a href="https://waveswallet.io/" target="waveswallet">waveswallet.io</a> in the top of the screen.</p>
-
+					
                     <figure>
-                        <img src="img/screens/wallet-address.png" alt="Wallet address">
+						<img src="img/screens/wallet-address.png" alt="Wallet address">
                     </figure>
                 </fieldset>
 

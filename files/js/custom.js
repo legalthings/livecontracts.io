@@ -148,49 +148,6 @@ function loadTokens() {
 
 //init of wizard steps
 function wizardInit() {
-	var server = "https://private-anon-a04cf432bf-legalwaves.apiary-mock.com/api";
-
-
-	function errorOnInput(data) {
-		sfw.activeNext(false); // disable next button
-		// sfw.activeStep(1, false); // deactivate next step
-
-		if ($('#text').val() != "") {
-			if (next_loading) { // test if ajax is executing
-				return false;
-			}
-			if (data !== undefined && data.done) { // if ajax is done, than data.done is set to true
-				return true;
-			}
-
-			sfw.addSpinner('next'); // add spinner to next button
-			next_loading = true; // to prevent stack of ajax requests if user hasn't patience
-			$.ajax({
-				url: server,
-				success: function () {
-					$('#text-error.error').removeClass('show');
-					$('#text').removeClass('error-input');
-					sfw.addSpinner('next', false); // remove spinner
-					next_loading = false; // allow next step
-
-					sfw.activeNext(true); // disable next button
-					sfw.next(false, {done: true}) // go to next step, additional data will be in next callback
-					$('#text').val('')
-					$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
-
-				}
-			});
-			return false;
-		}
-		else {
-			sfw.activeNext(false); // disable next button
-			// sfw.activeStep(1, false);
-			$('#text-error.error').addClass('show');
-			$('#text').addClass('error-input');
-			return false
-		}
-	}
-
 	sfw = $("#wizard").stepFormWizard({
 		onPrev: function (from) {
 			if (from === 3) {
@@ -211,39 +168,51 @@ function wizardInit() {
 						// sfw.activeStep(1, false); // deactivate next step
 					}
 				})
+			} else {
+				sfw.activeNext(true);
 			}
-			if (step === 2) {
-
-				sfw.activeNext(false); // disable next button
-				// sfw.activeStep(1, false); // deactivate next step
-
-				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
-				$(document).on('click', function (e) {
-
-					if (!($(e.target).hasClass('skip-btn') ||
-							$(e.target).hasClass('sf-nav-step') ||
-							$(e.target).hasClass('prev-btn'))) {
-						errorOnInput(data);
-
-					}
-					else {
-						next_loading = false; // allow next step
-						sfw.next(false, {done: true}) // go to next step, additional data will be in next callback
-						sfw.activeNext(true); // disable next button
-						// sfw.activeStep(2, true); // deactivate next step
-						$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
-						return false
-					}
-				})
-			}
-		},
-
+		}
 	});
 
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
 		$('html').addClass('lock')
 		$('.popup-wizard').removeClass('popup-hide')
+	})
+
+	$("#faucet-retrieve-btn").on('click', function (e) {
+		e.preventDefault();
+		var $recipient = $('#faucet-recipient');
+		var address = $recipient.val();
+
+		if (!address) {
+			return;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: waves_server + "/api/faucet",
+			data: JSON.stringify({ recipient: address }),
+			contentType: "application/json; charset=utf-8",
+			dataType: "json",
+			success: function (result) {
+				if (!result || !result.id) {
+					// something went wrong
+					$('#faucet-failed').show();
+					$('#faucet-success').hide();
+					return;
+				}
+
+				$('#faucet-failed').hide();
+				$('#faucet-success').show();
+				$('#faucet-success-link').attr('href', 'https://wavesexplorer.com/tx/' + result.id);
+				$('#faucet-container').hide();
+			},
+			error: function () {
+				$('#faucet-failed').show();
+				$('#faucet-success').hide();
+			}
+		})
 	})
 }
 
