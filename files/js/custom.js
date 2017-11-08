@@ -168,11 +168,10 @@ function wizardInit() {
 						// sfw.activeStep(1, false); // deactivate next step
 					}
 				})
+			} else {
+				sfw.activeNext(true);
 			}
-			if (step === 2) {
-			}
-		},
-
+		}
 	});
 
 	$(".js-open-wizard").on('click', function (e) {
