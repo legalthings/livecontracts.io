@@ -8737,7 +8737,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 .popup .popup__content .sf-wizard {
-	width: 100%;
+	width: 1000px;
 	height: 300px;
 	max-width: 95%;
 	height: 80%;
@@ -8797,7 +8797,13 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 .popup-wizard fieldset {
-	line-height: 1;
+	line-height: 1.4;
+    font-size: 16px;
+}
+
+.popup-wizard fieldset .small {
+    font-size: 12px;
+    color: #aaa;
 }
 
 .popup-wizard .socials ul {
@@ -8819,6 +8825,24 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 .popup-wizard .socials ul li a:hover {
 	color: #473f71;
+}
+
+.popup-wizard figure {
+    text-align: right;
+    margin: 15px 0;
+}
+.popup-wizard figure img {
+    width: 450px;
+    max-width: 80%;
+}
+
+.popup-wizard form + * {
+    margin-top: 80px;
+}
+
+.popup-wizard img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 .sf-wizard .sf-nav-step {
