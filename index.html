@@ -650,9 +650,11 @@
             <strong>Stay in touch</strong>
           </h2>
           <div class="spacer-mini"></div>
-          <form action="#" method="post" id="newsletter-widget-form">
-            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Your Email Adress">
+          <form id="newsletter-widget-form">
+            <input type="email" id="newsletter-email" name="email" placeholder="Your Email Adress">
             <input type="submit" id="newsletter-submit" value="Sign Up">
+            <p id="newsletter-error" style="color: red; display: none"></p>
+            <p id="newsletter-success" style="color: lightgreen; display: none">You have been successfully subscribed to the newsletter.</p>
           </form>
         </div>
         <div class="spacer-small"></div>
@@ -1043,6 +1045,7 @@
   <script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>
   <script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>
   <script type="text/javascript" src="files/js/script.js"></script>
+  <script type="text/javascript" src="files/js/jquery.ajaxchimp.min.js"></script>
   <script src="files/js/social.js"></script>
   <script src="files/js/step-form-wizard.min.js"></script>
   <script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>

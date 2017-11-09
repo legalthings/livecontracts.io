@@ -18,6 +18,7 @@ $(document).ready(function () {
   closePopup();
   scrollToBlock();
   bindingWizardsTabs();
+  initSubscribeMailChimp();
 });
 
 
@@ -109,19 +110,19 @@ function populateExploreBlock() {
   explore.forEach(function (data) {
     block.append([
       '<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
-        '<div class="blog-media">',
-          '<a href="' + data.link + '" target="_blank" class="text-light">',
-            '<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
-            '<h6 class="caption-sub portfolio-category subtitle-2"></h6>',
-            '<h4 class="caption-name portfolio-name uppercase"></h4>',
-          '</a>',
-        '</div>',
-        '<div class="blog-desc align-center">',
-          '<div class="blog-headline">',
-            '<h5 class="post-name"><a href="' + data.link + '" target="_blank"><strong>' + data.title + '</strong></a></h5>',
-          '</div>',
-          '<p>' + data.intro + '</p>',
-        '</div>',
+      '<div class="blog-media">',
+      '<a href="' + data.link + '" target="_blank" class="text-light">',
+      '<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
+      '<h6 class="caption-sub portfolio-category subtitle-2"></h6>',
+      '<h4 class="caption-name portfolio-name uppercase"></h4>',
+      '</a>',
+      '</div>',
+      '<div class="blog-desc align-center">',
+      '<div class="blog-headline">',
+      '<h5 class="post-name"><a href="' + data.link + '" target="_blank"><strong>' + data.title + '</strong></a></h5>',
+      '</div>',
+      '<p>' + data.intro + '</p>',
+      '</div>',
       '</div>'
     ].join(''));
   })
@@ -258,3 +259,30 @@ Number.prototype.formatMoney = function (c, d, t) {
         ? d + Math.abs(n - i).toFixed(c).slice(2)
         : "");
 };
+
+function initSubscribeMailChimp() {
+  var form = $('#newsletter-widget-form');
+
+  if (form.length) {
+    form.ajaxChimp({
+      callback: mailchimpCallback,
+      url: 'https://legalthings.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=6d17a10ae2'
+    });
+  }
+
+  // callback function when the form submitted, show the notification box
+  function mailchimpCallback(resp) {
+    var $error = $('#newsletter-error');
+    var $success = $('#newsletter-success');
+    $error.hide();
+    $success.hide();
+
+    if (resp.result === 'error') {
+      $error.show().html(resp.msg);
+      $success.hide();
+    } else {
+      $error.hide();
+      $success.show();
+    }
+  }
+}

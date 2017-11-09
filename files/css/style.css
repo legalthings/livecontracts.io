@@ -9047,23 +9047,3 @@ html.lock {
 	margin-right: 40px;
 	min-width: 100px;
 }
-
-.error {
-	color: #ff0000;
-	margin-top: 5px;
-	opacity: 0;
-	font-size: 12px;
-	font-weight: bold;
-	transition: .3s opacity;
-
-}
-
-.error-input {
-	border: 1px solid #ff0000 !important;
-	color: #ff0000;
-}
-
-.error.show {
-	opacity: 1;
-}
-
