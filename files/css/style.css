@@ -8805,8 +8805,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 .popup-hide {
-	top: -100%;
-	opacity: 0;
+	display: none;
 }
 
 .sf-wizard .sf-nav {
