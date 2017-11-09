@@ -85,76 +85,45 @@ function scrollToBlock() {
 function populateExploreBlock() {
   var explore = [
     {
-      "category": "Travel",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.11.08",
-      "title": "Waterfalls of Iceland",
-      "intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
+      "link": "documents/contract-as-automaton.pdf",
+      "img": "img/explore/contract-as-automaton.png",
+      "title": "Contract as Automaton",
+      "intro": "We show that the fundamental legal structure of a well-written financial contract follows a statetransition logic that can be formalized mathematically as a finite-state machine (also known as a finitestate automaton)."
     },
     {
-      "category": "Hello",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.08",
-      "title": "No waterfalls of Iceland",
-      "intro": "Here we can set some custom text"
+      "link": "https://www.linkedin.com/pulse/three-common-misconceptions-smart-contracts-olivier-rikken/",
+      "img": "img/explore/common-misconceptions-smartcontracts.png",
+      "title": "Three common misconceptions about smart contracts",
+      "intro": "Besides cryptocurrencies, one of the most promising developments on blockchain is the use of smart contracts. The concept of smart contracts was first described by Nick Szabo in 1994 in his paper “Smart Contracts”. He describes smart contracts as ‘a computerized transaction protocol that executes the terms of a contract’."
     },
     {
-      "category": "World",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.10",
-      "title": "Apple iPhone X",
-      "intro": "Or don't set any text at all"
-    },
-    {
-      "category": "Hello again, brother",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.11",
-      "title": "Mountains",
-      "intro": "We rule our life!"
-    },
-    {
-      "category": "Travel",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.11.08",
-      "title": "Waterfalls of Iceland",
-      "intro": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious but the Little."
-    },
-    {
-      "category": "Hello",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.08",
-      "title": "Waterfalls of Iceland",
-      "intro": "Here we can set some custom text"
-    },
-    {
-      "category": "World",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.10",
-      "title": "Apple iPhone X",
-      "intro": "Or don't set any text at all"
-    },
-    {
-      "category": "Hello again, brother",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.11",
-      "title": "Mountains",
-      "intro": "We rule our life!"
-    },
-    {
-      "category": "World",
-      "img": "files/uploads/600x400-light.jpg",
-      "date": "28.12.10",
-      "title": "Apple iPhone X",
-      "intro": "Or don't set any text at all"
+      "link": "documents/livecontracts-at-codex.pdf",
+      "img": "img/explore/livecontracts-at-codex.png",
+      "title": "Introducing Live Contracts @ Stanford CodeX",
+      "intro": "A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
     }
   ];
 
   var block = $('#blog-grid');
 
   explore.forEach(function (data) {
-    block.append('' + '<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">' +
-      //TODO: if we want to return hover, then should add thumb-overlay overlay-effect-1 to text-light
-      '<div class="blog-media">' + '					<a href="portfolio-single-custom.html" class="text-light"> ' + '<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">' + '<h6 class="caption-sub portfolio-category subtitle-2"></h6>' + '<h4 class="caption-name portfolio-name uppercase"></h4>' + '</div>' + '</a>' + '</div>' + '<div class="blog-desc align-center">' + '<div class="blog-headline">' + '<h6 class="post-category uppercase">' + data.category + '</h6>' + '<h5 class="post-name"><a href="blog-single-custom1.html"><strong>' + data.title + '</strong></a></h5>' + '</div>' + '<p>' + data.intro + '</p>' + '</div>' + '</div>');
+    block.append([
+      '<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
+        '<div class="blog-media">',
+          '<a href="' + data.link + '" target="_blank" class="text-light">',
+            '<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
+            '<h6 class="caption-sub portfolio-category subtitle-2"></h6>',
+            '<h4 class="caption-name portfolio-name uppercase"></h4>',
+          '</a>',
+        '</div>',
+        '<div class="blog-desc align-center">',
+          '<div class="blog-headline">',
+            '<h5 class="post-name"><a href="' + data.link + '" target="_blank"><strong>' + data.title + '</strong></a></h5>',
+          '</div>',
+          '<p>' + data.intro + '</p>',
+        '</div>',
+      '</div>'
+    ].join(''));
   })
 }
 
