@@ -7228,6 +7228,18 @@ div .socialmedia-widget:first-child {
 	content: "\f09a";
 }
 
+.socialmedia-widget li.reddit a:before, .socialmedia-widget li.reddit a:after {
+	content: "\f1a1";
+}
+
+.socialmedia-widget li.slack a:before, .socialmedia-widget li.slack a:after {
+	content: "\f198";
+}
+
+.socialmedia-widget li.telegram a:before, .socialmedia-widget li.telegram a:after {
+	content: "\f2c6";
+}
+
 .socialmedia-widget li.twitter a:before, .socialmedia-widget li.twitter a:after {
 	content: "\f099"
 }
