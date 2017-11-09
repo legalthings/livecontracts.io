@@ -8641,8 +8641,8 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 .progress-active .tooltip {
-	width: 85px;
-	margin-right: -42.5px
+	width: 200px;
+	margin-right: -135px
 }
 
 .hero-full .icon-box .ion {

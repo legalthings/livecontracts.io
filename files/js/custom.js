@@ -158,11 +158,12 @@ function loadTokens() {
 
       var total = parseInt(result.phases.presale.limit) / 100000000;
       var sold = total - (result.balance / 100000000);
+      var cap = 10000000;
 
-      $('.progress-active').attr('data-perc', (sold / total) * 100);
+      $('.progress-active').attr('data-perc', (sold / cap) * 100);
 
       currentTokens.html(sold.formatMoney(0, '.', ','));
-      allTokens.html(total.formatMoney(0, '.', ','));
+      allTokens.html(cap.formatMoney(0, '.', ','));
     }
   })
 }
