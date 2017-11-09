@@ -210,7 +210,7 @@ function wizardInit() {
   $(".js-open-wizard").on('click', function (e) {
     e.preventDefault();
     $('html').addClass('lock')
-    $('.popup-wizard').removeClass('popup-hide')
+    $('.popup-container').removeClass('popup-hide')
   })
 
   $("#faucet-retrieve-btn").on('click', function (e) {
@@ -255,7 +255,7 @@ function closePopup() {
   $('.popup__close, .sf-btn-finish').on('click', function (e) {
     e.preventDefault();
     $('html').removeClass('lock');
-    $(this).closest('.popup').addClass('popup-hide')
+    $(this).closest('.popup-container').addClass('popup-hide')
   })
 }
 
