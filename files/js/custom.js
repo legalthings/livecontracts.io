@@ -17,7 +17,6 @@ $(document).ready(function () {
 	wizardInit();
 	closePopup();
 	scrollToBlock();
-	appendSkipWizardButton();
 	bindingWizardsTabs();
 });
 
@@ -60,11 +59,6 @@ function bindingWizardsTabs() {
 		}
 	})
 
-}
-
-//added skip button for wizard control
-function appendSkipWizardButton() {
-	$('.sf-controls').append('' + '<a class="skip-btn sf-right sf-btn sf-btn-next" onclick="" href="#">SKIP</a>');
 }
 
 // Global variables leave here, pls
@@ -150,27 +144,9 @@ function loadTokens() {
 function wizardInit() {
 	sfw = $("#wizard").stepFormWizard({
 		onPrev: function (from) {
-			if (from === 3) {
-				$('#wizard-box.sf-t2 .sf-btn.skip-btn').addClass('visible');
-			} else {
-				$('#wizard-box.sf-t2 .sf-btn.skip-btn').removeClass('visible');
-			}
 		},
 		onSlideChanged: function (step, data) {
-			if (step === 1) {
-				$(document).on('click', function (e) {
-
-					if (!($(e.target).hasClass('skip-btn') ||
-							$(e.target).hasClass('sf-nav-step') ||
-							$(e.target).hasClass('prev-btn'))) {
-
-						sfw.activeNext(false); // disable next button
-						// sfw.activeStep(1, false); // deactivate next step
-					}
-				})
-			} else {
-				sfw.activeNext(true);
-			}
+			sfw.activeNext(true);
 		}
 	});
 
@@ -219,10 +195,10 @@ function wizardInit() {
 
 //function for close popup
 function closePopup() {
-	$('.popup__close').on('click', function (e) {
+	$('.popup__close, .sf-btn-finish').on('click', function (e) {
 		e.preventDefault();
 		$('html').removeClass('lock');
-		$(this).parent().addClass('popup-hide')
+		$(this).closest('.popup').addClass('popup-hide')
 	})
 }
 
