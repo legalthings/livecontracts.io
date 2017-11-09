@@ -211,6 +211,8 @@ function wizardInit() {
     e.preventDefault();
     $('html').addClass('lock')
     $('.popup-container').removeClass('popup-hide')
+    $('.popup-backdrop').removeClass('popup-hide')
+    $('.popup').removeClass('popup-hide')
   })
 
   $("#faucet-retrieve-btn").on('click', function (e) {
@@ -255,7 +257,9 @@ function closePopup() {
   $('.popup__close, .sf-btn-finish').on('click', function (e) {
     e.preventDefault();
     $('html').removeClass('lock');
-    $(this).closest('.popup-container').addClass('popup-hide')
+    $('.popup-container').addClass('popup-hide')
+    $('.popup-backdrop').addClass('popup-hide')
+    $('.popup').addClass('popup-hide')
   })
 }
 
