@@ -19,6 +19,7 @@ $(document).ready(function () {
   scrollToBlock();
   bindingWizardsTabs();
   initSubscribeMailChimp();
+  initTimer();
 });
 
 
@@ -99,7 +100,7 @@ function populateExploreBlock() {
     },
     {
       "link": "documents/livecontracts-at-codex.pdf",
-      "img": "img/explore/livecontracts-at-codex.png",
+      "img": "img/explore/livecontracts-at-codex.jpg",
       "title": "Introducing Live Contracts @ Stanford CodeX",
       "intro": "A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
     }
@@ -286,4 +287,27 @@ function initSubscribeMailChimp() {
       $success.show();
     }
   }
+}
+
+function initTimer() {
+  var time = $('.count-down');
+
+  if (!time || !time.length) {
+    return;
+  }
+
+  var endDate = new Date(time.data("end-date"));
+  time.countdown({
+    date: endDate,
+    render: function (data) {
+      $(this.el).html('<div class="cd-row"><div><h1>' + data.days
+        + '</h1><p>days</p></div><div><h1>'
+        + this.leadingZeros(data.hours, 2)
+        + '</h1><p>hrs</p></div></div><div class="cd-row"><div><h1>'
+        + this.leadingZeros(data.min, 2)
+        + '</h1><p>min</p></div><div><h1>'
+        + this.leadingZeros(data.sec, 2)
+        + '</h1><p>sec</p></div></div>');
+    }
+  });
 }

@@ -9046,3 +9046,79 @@ html.lock {
 	margin-right: 40px;
 	min-width: 100px;
 }
+
+
+/* Counter */
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-ExtraLight.woff") format("woff"),
+	url("../fonts/montserrat/Montserrat-ExtraLight.woff2") format("woff2"),
+	url("../fonts/montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-Medium.woff") format("woff"),
+	url("../fonts/montserrat/Montserrat-Medium.woff2") format("woff2"),
+	url("../fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"),
+	url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+	url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+.count-down {
+	text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.count-down > div > div {
+		display: inline-block;
+		padding: 20px;
+	}
+
+	.count-down h1 {
+		font-size: 47px;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	.count-down {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+}
+
+.count-down h1 {
+	line-height: 1;
+}
+
+.count-down p {
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 1.35;
+}
+
+.count-down > div > div {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+.count-down > .cd-row {
+	display: inline-block;
+}
+
+.p-t-b-15 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
