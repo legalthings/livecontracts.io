@@ -100,7 +100,7 @@ function populateExploreBlock() {
     },
     {
       "link": "documents/livecontracts-at-codex.pdf",
-      "img": "img/explore/livecontracts-at-codex.jpg",
+      "img": "img/explore/livecontracts-at-codex.png",
       "title": "Introducing Live Contracts @ Stanford CodeX",
       "intro": "A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
     }
