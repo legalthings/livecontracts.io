@@ -7242,6 +7242,10 @@ div .socialmedia-widget:first-child {
 	content: "\f1a1";
 }
 
+.socialmedia-widget li.medium a:before, .socialmedia-widget li.medium a:after {
+	content: "\f23a";
+}
+
 .socialmedia-widget li.slack a:before, .socialmedia-widget li.slack a:after {
 	content: "\f198";
 }
@@ -8451,11 +8455,12 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 .timeline-block {
 	background: black;
-	padding: 30px 0 20px;
+	padding: 80px 0 40px;
 }
 
 .timeline-block .title {
 	color: #fff;
+	margin-bottom: 10px;
 }
 
 .timeline {
@@ -8643,7 +8648,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 #header {
 	top: -90px !important;
-	border-bottom: none !important;
+	border-bottom: 1px solid rgba(0, 0, 0, .10) !important;
 }
 
 #header.custom-visible {
