@@ -1363,6 +1363,12 @@ Smartphones
 	.legalThings-block .tabs .tab-container {
 		margin-top: 40px !important;
 	}
+	.main-ThreeColumnsBlock { 
+		padding: 0 20px;
+	}
+	.main-ThreeColumnsBlock .column:first-child {
+		margin-left: 0;
+	}
 }
 
 @media only screen and (max-width: 480px) {
