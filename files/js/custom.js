@@ -58,7 +58,6 @@ function showingQuotes() {
 	var block = $('.top-quotes-block').offset().top - 60;
 	
 	if (block < $(document).scrollTop()) {
-		console.log("dick")
 		$('.first-quote').animateCss('hinge', function () {
 			$('.first-quote').addClass('animated hinge').css('display', 'none');
 			$('.second-quote').animateCss('bounceInRight', function () {
@@ -72,8 +71,6 @@ function showingQuotes() {
 		var block = $('.top-quotes-block').offset().top - 60;
 		
 		if (block < $(document).scrollTop()) {
-			console.log(block)
-			console.log($(document).scrollTop())
 			if (!($('.first-quote').hasClass('animated'))) {
 				$('html, body').addClass('lock');
 				$('.first-quote').animateCss('hinge', function () {
