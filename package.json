@@ -1,0 +1,27 @@
+{
+  "name": "old",
+  "version": "1.0.0",
+  "description": "[![screenshot-www livecontracts io-2017-11-10-14-08-57-495](https://user-images.githubusercontent.com/100821/32659853-bf5d630a-c620-11e7-8884-931825663aaf.png)](https://www.livecontracts.io)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/legalthings/smartcontracts-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/legalthings/smartcontracts-website/issues"
+  },
+  "homepage": "https://github.com/legalthings/smartcontracts-website#readme",
+  "dependencies": {
+    "compress": "^0.99.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^1.0.3"
+  }
+}

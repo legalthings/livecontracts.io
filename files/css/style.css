@@ -8453,52 +8453,52 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	margin-left: auto;
 }
 
-.timeline-block {
-	background: black;
-	padding: 80px 0 40px;
-}
+/*.timeline-block {*/
+	/*background: black;*/
+	/*padding: 80px 0 40px;*/
+/*}*/
 
-.timeline-block .title {
-	color: #fff;
-	margin-bottom: 10px;
-}
+/*.timeline-block .title {*/
+	/*color: #fff;*/
+	/*margin-bottom: 10px;*/
+/*}*/
 
-.timeline {
-	position: relative;
-	height: 120px;
-	overflow: visible;
-}
+/*.timeline {*/
+	/*position: relative;*/
+	/*height: 120px;*/
+	/*overflow: visible;*/
+/*}*/
 
-.timeline:after {
-	display: block;
-	content: " ";
-	border: 4px solid white;
-	position: absolute;
-	top: calc(50% + 2px);
-	width: 100%;
-}
+/*.timeline:after {*/
+	/*display: block;*/
+	/*content: " ";*/
+	/*border: 4px solid white;*/
+	/*position: absolute;*/
+	/*top: calc(50% + 2px);*/
+	/*width: 100%;*/
+/*}*/
 
-.timeline .event {
-	position: absolute;
-	text-align: center;
-	width: 250px;
-	top: calc(50% - 30px);
-	margin-left: -125px;
-	z-index: 1;
-}
+/*.timeline .event {*/
+	/*position: absolute;*/
+	/*text-align: center;*/
+	/*width: 250px;*/
+	/*top: calc(50% - 30px);*/
+	/*margin-left: -125px;*/
+	/*z-index: 1;*/
+/*}*/
 
-.timeline .event .hover-block {
-	opacity: 0;
-	background: red;
-	left: 50%;
-	top: -300%;
-	right: 0;
-	position: absolute;
-	transform: translateX(-50%);
-	transition: .3s all;
-	background: #fff;
-	border-radius: 10px;
-}
+/*.timeline .event .hover-block {*/
+	/*opacity: 0;*/
+	/*background: red;*/
+	/*left: 50%;*/
+	/*top: -300%;*/
+	/*right: 0;*/
+	/*position: absolute;*/
+	/*transform: translateX(-50%);*/
+	/*transition: .3s all;*/
+	/*background: #fff;*/
+	/*border-radius: 10px;*/
+/*}*/
 
 .arrow_box {
 	position: relative;
@@ -8531,45 +8531,45 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	margin-left: -12px;
 }
 
-.timeline .event .hover-block * {
-	color: #1a1a1a;
-}
+/*.timeline .event .hover-block * {*/
+	/*color: #1a1a1a;*/
+/*}*/
 
-.timeline .event:hover {
-	cursor: pointer;
-}
+/*.timeline .event:hover {*/
+	/*cursor: pointer;*/
+/*}*/
 
-@media (orientation: landscape) {
-	.timeline .event:hover .hover-block {
-		opacity: 1;
-		top: -100%;
-	}
-}
+/*@media (orientation: landscape) {*/
+	/*.timeline .event:hover .hover-block {*/
+		/*opacity: 1;*/
+		/*top: -100%;*/
+	/*}*/
+/*}*/
 
-.timeline .event:after {
-	content: " ";
-	position: absolute;
-	border-radius: 50%;
-	border: 1px solid #000;
-	background-color: #fff;
-	width: 20px;
-	height: 20px;
-	top: calc(50% - 19px);
-	left: calc(50% - 10px);
-	z-index: 2;
-}
+/*.timeline .event:after {*/
+	/*content: " ";*/
+	/*position: absolute;*/
+	/*border-radius: 50%;*/
+	/*border: 1px solid #000;*/
+	/*background-color: #fff;*/
+	/*width: 20px;*/
+	/*height: 20px;*/
+	/*top: calc(50% - 19px);*/
+	/*left: calc(50% - 10px);*/
+	/*z-index: 2;*/
+/*}*/
 
-.timeline .event .hover-block.open {
-	opacity: 1;
-}
+/*.timeline .event .hover-block.open {*/
+	/*opacity: 1;*/
+/*}*/
 
-.timeline .event .date {
-	margin-top: 35px;
-}
+/*.timeline .event .date {*/
+	/*margin-top: 35px;*/
+/*}*/
 
-.timeline .event .date, .timeline .event .description {
-	color: #fff;
-}
+/*.timeline .event .date, .timeline .event .description {*/
+	/*color: #fff;*/
+/*}*/
 
 .blackBackgroundBlock {
 	background: #1a1a1a;
@@ -9136,4 +9136,161 @@ html.lock {
 .p-t-b-15 {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+
+/* New timeline */
+
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+.timeline {
+	display: flex;
+	margin: 0 auto;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 700px;
+	position: relative;
+}
+.timeline__content-title {
+	font-weight: normal;
+	font-size: 66px;
+	margin: -10px 0 0 0;
+	transition: .4s;
+	padding: 0 10px;
+	box-sizing: border-box;
+	font-family: "Pathway Gothic One", sans-serif;
+	color: #fff;
+}
+.timeline__content-desc {
+	margin: 0;
+	font-size: 15px;
+	box-sizing: border-box;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: Cardo;
+	font-weight: normal;
+	line-height: 25px;
+}
+.timeline:before {
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	margin-left: -1px;
+	content: "";
+	background: rgba(255, 255, 255, 0.07);
+}
+
+.timeline-item {
+	padding: 40px 0;
+	opacity: .3;
+	filter: blur(2px);
+	transition: .5s;
+	box-sizing: border-box;
+	width: calc(50% - 40px);
+	display: flex;
+	position: relative;
+	transform: translateY(-80px);
+}
+.timeline-item:before {
+	content: attr(data-text);
+	letter-spacing: 3px;
+	width: 100%;
+	position: absolute;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 13px;
+	font-family: "Pathway Gothic One", sans-serif;
+	border-left: 2px solid rgba(255, 255, 255, 0.5);
+	top: 70%;
+	margin-top: -5px;
+	padding-left: 15px;
+	opacity: 0;
+	right: calc(-100% - 56px);
+}
+.timeline-item:nth-child(even) {
+	align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+	right: auto;
+	text-align: right;
+	left: calc(-100% - 56px);
+	padding-left: 0;
+	border-left: none;
+	border-right: 2px solid rgba(255, 255, 255, 0.5);
+	padding-right: 15px;
+}
+.timeline-item--active {
+	opacity: 1;
+	transform: translateY(0);
+	filter: blur(0px);
+}
+.timeline-item--active:before {
+	top: 50%;
+	transition: .3s all .2s;
+	opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+	margin: -50px 0 20px 0;
+}
+
+.timeline__img {
+	max-width: 100%;
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+.timeline-container {
+	width: 100%;
+	position: relative;
+	padding: 80px 0;
+	transition: .3s ease 0s;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.timeline-container:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(99, 99, 99, 0.8);
+	content: "";
+}
+.timeline-header {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 80px;
+	position: relative;
+}
+.timeline-header__title {
+	color: #fff;
+	font-size: 46px;
+	font-family: Cardo;
+	font-weight: normal;
+	margin: 0;
+}
+.timeline-header__subtitle {
+	color: rgba(255, 255, 255, 0.5);
+	font-family: "Pathway Gothic One", sans-serif;
+	font-size: 16px;
+	letter-spacing: 5px;
+	margin: 10px 0 0 0;
+	font-weight: normal;
+}
+@media only screen and (max-width: 767px) {
+	.timeline:before {
+		left: 40px;
+	}
+	.timeline-item {
+		align-self: baseline !important;
+		width: 100%;
+		padding: 0 30px 150px 80px;
+	}
+	.timeline-item:before {
+		left: 10px !important;
+		padding: 0 !important;
+		top: 50px;
+		text-align: center !important;
+		width: 60px;
+		border: none !important;
+	}
+	.timeline-item:last-child {
+		padding-bottom: 40px;
+	}
 }
