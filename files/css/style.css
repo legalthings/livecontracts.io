@@ -9294,3 +9294,11 @@ html.lock {
 		padding-bottom: 40px;
 	}
 }
+
+.top-quotes-block .second-quote {
+	display: none;
+}
+.top-quotes-block .second-quote.animated {
+	display: block;
+}
+

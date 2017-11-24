@@ -28,6 +28,7 @@ gulp.task('minify-js', function () {
 
 gulp.task('compress-css', function () {
 	return gulp.src([
+		'files/css/animate.css',
 		'files/css/style.css',
 		'files/css/font-awesome.min.css',
 		'files/css/ionicons.css',
