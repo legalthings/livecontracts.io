@@ -152,20 +152,25 @@ function populateExploreBlock() {
     {
       "link": "documents/contract-as-automaton.pdf",
       "img": "img/explore/contract-as-automaton.png",
-      "title": "Contract as Automaton",
-      "intro": "We show that the fundamental legal structure of a well-written financial contract follows a statetransition logic that can be formalized mathematically as a finite-state machine (also known as a finitestate automaton)."
+      "title": "Live Contracts — What’s all the fuss about?",
+      "intro": "We show that the fundamental legal structure of a well-written financial contract follows a " +
+      "statetransition logic that can be formalized mathematically as a finite-state machine (also known as a " +
+      "finitestate automaton)."
     },
     {
-      "link": "https://www.linkedin.com/pulse/three-common-misconceptions-smart-contracts-olivier-rikken/",
-      "img": "img/explore/common-misconceptions-smartcontracts.png",
+      "link": "https://medium.com/@rick_42072/live-contracts-whats-all-the-fuss-about-62b167d9a4d4",
+      "img": "img/three_common.jpg",
       "title": "Three common misconceptions about smart contracts",
-      "intro": "Besides cryptocurrencies, one of the most promising developments on blockchain is the use of smart contracts. The concept of smart contracts was first described by Nick Szabo in 1994 in his paper “Smart Contracts”. He describes smart contracts as ‘a computerized transaction protocol that executes the terms of a contract’."
+      "intro": "Picture this. A contract or law visualized in such a way that it is understandable for humans and " +
+      "computers. Not only the rules that you are agreeing upon in the contract, but also the consequences behind " +
+      "those rules. With our solution Live Contracts, we enable equality of rights for all parties involved."
     },
     {
       "link": "documents/livecontracts-at-codex.pdf",
       "img": "img/explore/livecontracts-at-codex.png",
       "title": "Introducing Live Contracts @ Stanford CodeX",
-      "intro": "A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
+      "intro": "A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs" +
+      " Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
     }
   ];
 

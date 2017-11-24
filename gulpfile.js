@@ -3,6 +3,9 @@ var concat = require('gulp-concat');
 var minify = require('gulp-minify');
 var concatCss = require('gulp-concat-css');
 var cleanCSS = require('gulp-clean-css');
+var runSequence = require('run-sequence');
+var del = require('del');
+
 
 gulp.task('minify-css', function () {
 	return gulp.src('files/dist/*.css')
@@ -10,7 +13,7 @@ gulp.task('minify-css', function () {
 		.pipe(gulp.dest('files/dist'));
 });
 
-gulp.task('minif', function () {
+gulp.task('minify-js', function () {
 	gulp.src('./files/dist/*.js')
 		.pipe(minify({
 			ext: {
@@ -41,7 +44,7 @@ gulp.task('compress-css', function () {
 		.pipe(gulp.dest('files/dist/'));
 });
 
-gulp.task('compress', function () {
+gulp.task('compress-js', function () {
 	return gulp.src(
 		[
 			'files/js/jquery-2.1.4.min.js',
@@ -75,4 +78,15 @@ gulp.task('compress', function () {
 		])
 		.pipe(concat('compress.js'))
 		.pipe(gulp.dest('./files/dist'));
+});
+
+gulp.task('clean:dist', function() {
+	return del.sync('files/dist');
+});
+
+
+gulp.task('default', function (callback) {
+	runSequence('clean:dist', ['compress-js','compress-css', 'minify-js', 'minify-css'],
+		callback
+	)
 });
