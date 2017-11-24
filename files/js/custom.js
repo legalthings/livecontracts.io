@@ -160,7 +160,7 @@ function populateExploreBlock() {
     {
       "link": "https://medium.com/@rick_42072/live-contracts-whats-all-the-fuss-about-62b167d9a4d4",
       "img": "img/three_common.jpg",
-      "title": "Three common misconceptions about smart contracts",
+      "title": "Live Contracts — What’s all the fuss about?",
       "intro": "Picture this. A contract or law visualized in such a way that it is understandable for humans and " +
       "computers. Not only the rules that you are agreeing upon in the contract, but also the consequences behind " +
       "those rules. With our solution Live Contracts, we enable equality of rights for all parties involved."
