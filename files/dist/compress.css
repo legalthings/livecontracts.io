@@ -9159,7 +9159,8 @@ div .progress-bar-item:first-child {
 }
 
 .team-member {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  outline: 1px solid #eee;
 }
 
 /*	Alerts
@@ -11669,10 +11670,39 @@ html.lock {
 
 .top-quotes-block .second-quote {
   display: none;
+  margin-top: 0 !important;
 }
 
 .top-quotes-block .second-quote.animated {
   display: block;
+}
+
+.main-ThreeColumnsBlock {
+  padding: 60px 0;
+  background: #231D39;
+}
+
+.main-ThreeColumnsBlock h2.align-center {
+  margin-bottom: 80px;
+}
+
+.main-ThreeColumnsBlock .column:first-child {
+  margin-left: 0;
+}
+
+.main-ThreeColumnsBlock * {
+  color: #fff;
+}
+
+#blog-grid .post-name {
+  display: flex;
+  margin-bottom: 5px;
+  min-height: 52px;
+  justify-content: center;
+}
+
+#blog-grid p {
+  margin-top: 0;
 }
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -21108,7 +21138,7 @@ Smartphones
   }
 
   .main-ThreeColumnsBlock {
-    padding: 0 20px;
+    padding: 40px 20px;
   }
 
   .main-ThreeColumnsBlock .column:first-child {

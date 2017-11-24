@@ -1497,28 +1497,25 @@ function showingQuotes() {
 	var block = $('.top-quotes-block').offset().top - 60;
 	
 	if (block < $(document).scrollTop()) {
-		console.log("dick")
-		$('.first-quote').animateCss('hinge', function () {
-			$('.first-quote').addClass('animated hinge').css('display', 'none');
-			$('.second-quote').animateCss('bounceInRight', function () {
-				$('.second-quote').addClass('animated bounceInRight');
+		$('.first-quote').animateCss('fadeOut', function () {
+			$('.first-quote').addClass('animated fadeOut').css('display', 'none');
+			$('.second-quote').animateCss('fadeIn', function () {
+				$('.second-quote').addClass('animated fadeIn');
 			})
 		})
 	}
 	
 	
 	$(window).scroll(function () {
-		var block = $('.top-quotes-block').offset().top - 60;
+		var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height()/3;
 		
 		if (block < $(document).scrollTop()) {
-			console.log(block)
-			console.log($(document).scrollTop())
 			if (!($('.first-quote').hasClass('animated'))) {
 				$('html, body').addClass('lock');
-				$('.first-quote').animateCss('hinge', function () {
-					$('.first-quote').addClass('animated hinge').css('display', 'none');
-					$('.second-quote').animateCss('bounceInRight', function () {
-						$('.second-quote').addClass('animated bounceInRight');
+				$('.first-quote').animateCss('fadeOut', function () {
+					$('.first-quote').addClass('animated fadeOut').css('display', 'none');
+					$('.second-quote').animateCss('fadeIn', function () {
+						$('.second-quote').addClass('animated fadeIn');
 						$('html, body').removeClass('lock');
 					})
 				});
@@ -1684,7 +1681,7 @@ function populateExploreBlock() {
 		block.append([
 			'<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
 			'<div class="blog-media">',
-			'<a href="' + data.link + '" target="_blank" class="text-light">',
+			'<a href="' + data.link + '" target="_blank" class="text-light blog-image">',
 			'<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
 			'<h6 class="caption-sub portfolio-category subtitle-2"></h6>',
 			'<h4 class="caption-name portfolio-name uppercase"></h4>',
