@@ -77,10 +77,11 @@ function scrollToBlock() {
     // console.log($(this).attr('href'))
     var blockOffset = $($(this).attr('href')).offset().top;
 
-    $('html, body').animate({
+    $('html, body').animate({ 
       scrollTop: blockOffset - 96
     }, 2000);
   })
+ 
 }
 
 //Function that populate blocks in "Explore".
