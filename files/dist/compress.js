@@ -1493,11 +1493,26 @@ $.fn.extend({
 });
 
 function showingQuotes() {
+	
+	var block = $('.top-quotes-block').offset().top - 60;
+	
+	if (block < $(document).scrollTop()) {
+		console.log("dick")
+		$('.first-quote').animateCss('hinge', function () {
+			$('.first-quote').addClass('animated hinge').css('display', 'none');
+			$('.second-quote').animateCss('bounceInRight', function () {
+				$('.second-quote').addClass('animated bounceInRight');
+			})
+		})
+	}
+	
+	
 	$(window).scroll(function () {
-		console.log(1)
 		var block = $('.top-quotes-block').offset().top - 60;
-		console.log(block)
-		if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
+		
+		if (block < $(document).scrollTop()) {
+			console.log(block)
+			console.log($(document).scrollTop())
 			if (!($('.first-quote').hasClass('animated'))) {
 				$('html, body').addClass('lock');
 				$('.first-quote').animateCss('hinge', function () {

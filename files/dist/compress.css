@@ -11637,14 +11637,12 @@ html.lock {
   font-weight: normal;
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 767px) {
   .timeline-item .timeline__content-desc {
     position: static;
     max-width: 100%;
   }
-}
 
-@media only screen and (max-width: 767px) {
   .timeline:before {
     left: 40px;
   }
