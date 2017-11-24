@@ -58,7 +58,7 @@ function showingQuotes() {
 		console.log(1)
 		var block = $('.top-quotes-block').offset().top - 60;
 		console.log(block)
-		if (block < $(document).scrollTop()) {
+		if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
 			if (!($('.first-quote').hasClass('animated'))) {
 				$('html, body').addClass('lock');
 				$('.first-quote').animateCss('hinge', function () {

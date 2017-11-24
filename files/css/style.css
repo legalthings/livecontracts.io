@@ -9160,6 +9160,21 @@ html.lock {
 	font-family: "Pathway Gothic One", sans-serif;
 	color: #fff;
 }
+
+.timeline__content {
+	position: relative;
+}
+.timeline-item:nth-of-type(even) .timeline__content-desc {
+	right: auto;
+	left: calc(-100% - 80px);
+}
+.timeline__content-desc {
+	position: absolute;
+	right: calc(-100% - 80px);
+	top: 60px;
+	max-width: 310px;
+}
+
 .timeline__content-desc {
 	margin: 0;
 	font-size: 15px;
@@ -9274,6 +9289,12 @@ html.lock {
 	font-weight: normal;
 }
 @media only screen and (max-width: 767px) {
+	.timeline-item .timeline__content-desc {
+		position: static;
+		max-width: 100%;
+	}
+
+
 	.timeline:before {
 		left: 40px;
 	}
