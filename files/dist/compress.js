@@ -1480,11 +1480,8 @@ $.fn.extend({
 
 
 function showingQuotes() {
-	alert('updated');
-	
-	
 	$(window).scroll(function () {
-		
+		 
 		var block_1 = $('.first-quote')
 		var block_2 = $('.second-quote')
 		var block_3;

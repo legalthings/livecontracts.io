@@ -221,7 +221,7 @@ function populateExploreBlock() {
 			"computers. Not only the rules that you are agreeing upon in the contract, but also the consequences behind " +
 			"those rules. With our solution Live Contracts, we enable equality of rights for all parties involved."
 		},
-		{
+		{ 
 			"link": "documents/livecontracts-at-codex.pdf",
 			"img": "img/explore/livecontracts-at-codex.png",
 			"title": "Introducing Live Contracts @ Stanford CodeX",
