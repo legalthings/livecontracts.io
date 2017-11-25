@@ -1492,15 +1492,15 @@ function showingQuotes() {
 			block_3 = $('.third-quote')
 		}
 		
-		if (block_1.offset().top < ($(document).scrollTop() + 160)) {
+		if (block_1.offset().top < ($(document).scrollTop() + 60 + block_1.height())) {
 			block_1.addClass('animated fadeIn');
 		}
-		if (block_2.offset().top < ($(document).scrollTop() +160)) {
+		if (block_2.offset().top < ($(document).scrollTop() +60+ block_1.height())) {
 			block_2.addClass('animated fadeIn');
 		}
 		
 		if(block_3) {
-			if (block_3.offset().top < ($(document).scrollTop() +160)) {
+			if (block_3.offset().top < ($(document).scrollTop() +60+ block_1.height())) {
 				block_3.addClass('animated fadeIn');
 			}
 		}
