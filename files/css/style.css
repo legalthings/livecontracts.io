@@ -9337,9 +9337,9 @@ html.lock {
 .top-quotes-block {
 	/*height: 370px;*/
 }
-.top-quotes-block .flex-row {
-	display: flex;
-}
+/*.top-quotes-block .flex-row {*/
+	/*display: flex;*/
+/*}*/
 
 .top-quotes-block .quote {
 	opacity: 0;

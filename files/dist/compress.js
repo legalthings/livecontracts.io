@@ -1478,21 +1478,46 @@ $.fn.extend({
 	}
 });
 
+
 function showingQuotes() {
 	
+	
 	$(window).scroll(function () {
-		var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height() / 3;
-		if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
-			if (!($('.top-quotes-block .quote').hasClass('animated'))) {
-				
-				$( ".top-quotes-block .quote").each(function( index, value )
-				{
-					
-					$(value).addClass('animated fadeIn');
-				});
-				
+		
+		var block_1 = $('.first-quote')
+		var block_2 = $('.second-quote')
+		var block_3;
+		
+		if($('.third-quote').length) {
+			block_3 = $('.third-quote')
+		}
+		
+		if (block_1.offset().top < ($(document).scrollTop() + 160)) {
+			block_1.addClass('animated fadeIn');
+		}
+		if (block_2.offset().top < ($(document).scrollTop() +160)) {
+			block_2.addClass('animated fadeIn');
+		}
+		
+		if(block_3) {
+			if (block_3.offset().top < ($(document).scrollTop() +160)) {
+				block_3.addClass('animated fadeIn');
 			}
 		}
+		
+		
+		// var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height() / 3;
+		
+		
+		// if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
+		// 	if (!($('.top-quotes-block .quote').hasClass('animated'))) {
+		//
+		// 		$( ".top-quotes-block .quote").each(function( index, value )
+		// 		{
+		// 			$(value).addClass('animated fadeIn');
+		// 		});
+		// 	}
+		// }
 	});
 }
 
