@@ -11678,6 +11678,10 @@ html.lock {
   }
 }
 
+.top-quotes-block {
+  height: 370px;
+}
+
 .top-quotes-block .second-quote {
   display: none;
   margin-top: 0 !important;
