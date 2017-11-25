@@ -11636,7 +11636,7 @@ html.lock {
 }
 
 @media only screen and (max-width: 480px) {
-  .timeline-header__title {
+  .timeline__content-title {
     font-size: 32px !important;
   }
 

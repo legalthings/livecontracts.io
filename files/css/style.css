@@ -9252,7 +9252,7 @@ html.lock {
 .timeline-container {
 	width: 100%;
 	position: relative;
-	padding: 80px 0; 
+	padding: 80px 0;
 	transition: .3s ease 0s;
 	background-attachment: fixed;
 	background-size: cover;
@@ -9302,7 +9302,7 @@ html.lock {
 }
 
 @media only screen and (max-width: 480px) {
-	.timeline-header__title {
+	.timeline__content-title {
 		font-size: 32px !important;
 	}
 
