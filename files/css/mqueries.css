@@ -1314,9 +1314,11 @@ Smartphones
 	.count-down-wrap {
 		width: 100% !important;
 	}
+
 	.count-down .cd-row div {
 		padding: 0 10px !important;
 	}
+
 	.count-down .cd-row h1 {
 		font-size: 38px;
 	}
@@ -1353,6 +1355,15 @@ Smartphones
 	#page-body {
 		padding-top: 0;
 	}
+
+	.serving-companies .column-section {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.serving-companies .column-section .column {
+		width: auto !important;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -1363,9 +1374,11 @@ Smartphones
 	.legalThings-block .tabs .tab-container {
 		margin-top: 40px !important;
 	}
+
 	.main-ThreeColumnsBlock {
 		padding: 40px 20px;
 	}
+
 	.main-ThreeColumnsBlock .column:first-child {
 		margin-left: 0;
 	}
@@ -1373,6 +1386,22 @@ Smartphones
 	.top-quotes-block .flex-row {
 		flex-wrap: wrap;
 	}
+
+	.serving-companies .column-section {
+		flex-wrap: wrap;
+		margin-top: 0 !important; 
+	}
+	.serving-companies .column-section {
+	}
+
+	.serving-companies .column-section .column {
+		width: 33% !important;
+		margin-top: 0 !important;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+	}
+
 }
 
 @media only screen and (max-width: 480px) {
