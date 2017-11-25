@@ -44,23 +44,15 @@ function showingQuotes() {
 	$(window).scroll(function () {
 		var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height() / 3;
 		if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
-			if (!($('.first-quote').hasClass('animated'))) {
-				$('.first-quote').animateCss('fadeOut', function () {
-					$('.first-quote').addClass('animated fadeOut').css('display', 'none');
-					$('.second-quote').animateCss('fadeIn', function () {
-						$('.second-quote').addClass('animated fadeIn');
-					})
+			if (!($('.top-quotes-block .quote').hasClass('animated'))) {
+				
+				$( ".top-quotes-block .quote").each(function( index, value )
+				{
+					
+					$(value).addClass('animated fadeIn');
 				});
+				
 			}
-			
-			// if (block > $(document).scrollTop()) {
-			// 	$('.second-quote').animateCss('fadeOut', function () {
-			// 		$('.second-quote').addClass('animated fadeOut').css('display', 'none');
-			// 		$('.first-quote').animateCss('fadeIn', function () {
-			// 			$('.second-quote').addClass('animated fadeIn');
-			// 		})
-			// 	})
-			// }
 		}
 	});
 }

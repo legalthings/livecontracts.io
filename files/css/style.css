@@ -9335,17 +9335,17 @@ html.lock {
 }
 
 .top-quotes-block {
-	height: 370px;
+	/*height: 370px;*/
+}
+.top-quotes-block .flex-row {
+	display: flex;
 }
 
-.top-quotes-block .second-quote {
-	display: none;
-	margin-top: 0 !important;
+.top-quotes-block .quote {
+	opacity: 0;
+	margin-top: 0;
 }
 
-.top-quotes-block .second-quote.animated {
-	display: block;
-}
 
 .main-ThreeColumnsBlock {
 	padding: 60px 0;
