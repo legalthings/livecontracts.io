@@ -91,7 +91,7 @@ function timelineInit() {
 				img: ".timeline__img"
 			};
 			selectors.item.eq(0).addClass(selectors.activeClass);
-			selectors.id.css(
+			$("#timeline-background").css(
 				"background-image",
 				"url(" +
 				selectors.item
@@ -110,7 +110,7 @@ function timelineInit() {
 					var that = $(this);
 					if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
 						selectors.item.removeClass(selectors.activeClass);
-						selectors.id.css(
+						$("#timeline-background").css(
 							"background-image",
 							"url(" +
 							selectors.item
@@ -121,7 +121,7 @@ function timelineInit() {
 						);
 						selectors.item.last().addClass(selectors.activeClass);
 					} else if (pos <= max - 40 && pos >= min) {
-						selectors.id.css(
+						$("#timeline-background").css(
 							"background-image",
 							"url(" +
 							$(this)
@@ -221,7 +221,7 @@ function populateExploreBlock() {
 			"computers. Not only the rules that you are agreeing upon in the contract, but also the consequences behind " +
 			"those rules. With our solution Live Contracts, we enable equality of rights for all parties involved."
 		},
-		{ 
+		{
 			"link": "documents/livecontracts-at-codex.pdf",
 			"img": "img/explore/livecontracts-at-codex.png",
 			"title": "Introducing Live Contracts @ Stanford CodeX",

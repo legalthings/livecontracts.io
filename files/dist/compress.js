@@ -1481,7 +1481,7 @@ $.fn.extend({
 
 function showingQuotes() {
 	$(window).scroll(function () {
-		 
+		
 		var block_1 = $('.first-quote')
 		var block_2 = $('.second-quote')
 		var block_3;
@@ -1530,7 +1530,7 @@ function timelineInit() {
 				img: ".timeline__img"
 			};
 			selectors.item.eq(0).addClass(selectors.activeClass);
-			selectors.id.css(
+			$("#timeline-background").css(
 				"background-image",
 				"url(" +
 				selectors.item
@@ -1549,7 +1549,7 @@ function timelineInit() {
 					var that = $(this);
 					if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
 						selectors.item.removeClass(selectors.activeClass);
-						selectors.id.css(
+						$("#timeline-background").css(
 							"background-image",
 							"url(" +
 							selectors.item
@@ -1560,7 +1560,7 @@ function timelineInit() {
 						);
 						selectors.item.last().addClass(selectors.activeClass);
 					} else if (pos <= max - 40 && pos >= min) {
-						selectors.id.css(
+						$("#timeline-background").css(
 							"background-image",
 							"url(" +
 							$(this)
