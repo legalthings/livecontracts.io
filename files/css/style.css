@@ -9348,7 +9348,7 @@ html.lock {
 }
 
 .top-quotes-block .quote {
-	opacity: 1;
+	opacity: 0;
 	margin-top: 0;
 }
 
