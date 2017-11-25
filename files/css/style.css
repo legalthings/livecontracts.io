@@ -9252,7 +9252,7 @@ html.lock {
 .timeline-container {
 	width: 100%;
 	position: relative;
-	padding: 80px 0;
+	padding: 80px 0; 
 	transition: .3s ease 0s;
 	background-attachment: fixed;
 	background-size: cover;
@@ -9287,14 +9287,14 @@ html.lock {
 .timeline-header__title {
 	color: #fff;
 	font-size: 46px;
-	font-family: Cardo;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin: 0;
 }
 
 .timeline-header__subtitle {
 	color: rgba(255, 255, 255, 0.5);
-	font-family: "Pathway Gothic One", sans-serif;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	letter-spacing: 5px;
 	margin: 10px 0 0 0;
