@@ -4563,6 +4563,10 @@ div .column-section:first-child {
 	margin-left: 40px;
 }
 
+.no-left-margin.column-section .column:first-child {
+	margin-left: 0;
+}
+
 .wrapper .column-section .column:first-child, .wrapper-small .column-section .column:first-child {
 	margin-left: 0px;
 }
@@ -9343,16 +9347,8 @@ html.lock {
 	}
 }
 
-.top-quotes-block {
-	/*height: 370px;*/
-}
-
-/*.top-quotes-block .flex-row {*/
-/*display: flex;*/
-/*}*/
-
 .top-quotes-block .quote {
-	opacity: 0;
+	opacity: 1;
 	margin-top: 0;
 }
 
@@ -9382,4 +9378,12 @@ html.lock {
 
 #blog-grid p {
 	margin-top: 0;
+}
+
+.icon-align-right .icon-box-content {
+	float: left;
+}
+
+.icon-align-right .icon-box-icon {
+	float: right;
 }

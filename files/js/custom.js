@@ -20,7 +20,9 @@ $(document).ready(function () {
 	initSubscribeMailChimp();
 	initTimer();
 	timelineInit();
-	showingQuotes();
+	// if ($(".quote").length) {
+	// 	showingQuotes();
+	// }
 });
 
 
@@ -41,10 +43,13 @@ $.fn.extend({
 
 
 function showingQuotes() {
+	
+	
+	
 	$(window).scroll(function () {
 		
-		var block_1 = $('.first-quote')
-		var block_2 = $('.second-quote')
+		var block_1 = $('.first-quote');
+		var block_2 = $('.second-quote');
 		var block_3;
 		if ($('.third-quote').length) {
 			block_3 = $('.third-quote')

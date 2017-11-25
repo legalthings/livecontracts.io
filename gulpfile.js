@@ -65,7 +65,7 @@ gulp.task('compress-js', function () {
 			//
 			'files/js/jquery.isotope.min.js',
 			'files/js/jquery.imagesloaded.min.js',
-			// 'files/js/jquery.owl.carousel.js',
+			'files/js/jquery.owl.carousel.js',
 			// 'files/js/jquery.lightcase.min.js',
 			//
 			'files/js/script.js',
