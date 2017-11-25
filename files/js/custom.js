@@ -41,6 +41,7 @@ $.fn.extend({
 
 
 function showingQuotes() {
+	alert('updated');
 	
 	
 	$(window).scroll(function () {
@@ -48,7 +49,6 @@ function showingQuotes() {
 		var block_1 = $('.first-quote')
 		var block_2 = $('.second-quote')
 		var block_3;
-		
 		if($('.third-quote').length) {
 			block_3 = $('.third-quote')
 		}
@@ -56,12 +56,12 @@ function showingQuotes() {
 		if (block_1.offset().top < ($(document).scrollTop() + 60 + block_1.height())) {
 			block_1.addClass('animated fadeIn');
 		}
-		if (block_2.offset().top < ($(document).scrollTop() +60+ block_1.height())) {
+		if (block_2.offset().top < ($(document).scrollTop() +60+ block_2.height())) {
 			block_2.addClass('animated fadeIn');
 		}
 		
 		if(block_3) {
-			if (block_3.offset().top < ($(document).scrollTop() +60+ block_1.height())) {
+			if (block_3.offset().top < ($(document).scrollTop() +60+ block_3.height())) {
 				block_3.addClass('animated fadeIn');
 			}
 		}
