@@ -21288,6 +21288,14 @@ Smartphones
     margin-bottom: 20px;
     margin-right: 0;
   }
+
+  .top-quotes-block .quote:before {
+    display: none;
+  }
+
+  .top-quotes-block .quote {
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 640px) {

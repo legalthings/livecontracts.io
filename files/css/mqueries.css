@@ -1413,11 +1413,17 @@ Smartphones
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		justify-content: center;
-	}
+	}  
 
 	.legalThings-block .column-section .image {
 		margin-bottom: 20px;
 		margin-right: 0
+	}
+	.top-quotes-block .quote:before {
+		display: none;
+	}
+	.top-quotes-block .quote {
+		padding: 0;
 	}
 
 }
