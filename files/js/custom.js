@@ -50,10 +50,10 @@ function test() {
 			if (scrollTop <= main) {
 				quote[i].classList.remove('quoteActive');
 				quote[0].classList.add('quoteActive');
-			} else if (scrollTop <= (main + 100)) {
+			} else if (scrollTop <= (main + 200)) {
 				quote[i].classList.remove('quoteActive');
 				quote[1].classList.add('quoteActive');
-			} else if (scrollTop <= (main + 200)) {
+			} else if (scrollTop <= (main + 400)) {
 				quote[i].classList.remove('quoteActive');
 				quote[2].classList.add('quoteActive');
 			}
