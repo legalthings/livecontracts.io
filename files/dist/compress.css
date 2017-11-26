@@ -11750,6 +11750,9 @@ html.lock {
 
 .customers-section .portfolio-media {
   position: relative;
+  -webkit-box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 27px 1px rgba(0,0,0,0.75);
 }
 
 .customers-section .portfolio-desc * {
@@ -11766,6 +11769,12 @@ html.lock {
 
 .customers-section.inverse-color .portfolio-desc * {
   color: #231D39;
+}
+
+.customers-section.inverse-color .portfolio-media {
+  -webkit-box-shadow: 0px 0px 27px 1px rgba(255,255,255,0.75);
+  -moz-box-shadow: 0px 0px 27px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 27px 1px rgba(255,255,255,0.75);
 }
 
 .customers-section.inverse-color .portfolio-desc {
