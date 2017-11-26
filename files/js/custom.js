@@ -96,7 +96,7 @@ function timelineInit() {
 					min = $(this).offset().top;
 					max = $(this).height() + $(this).offset().top;
 					var that = $(this);
-					if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+					if (i == itemLength - 2 && pos > min + $(this).height() / 6) {
 						selectors.item.removeClass(selectors.activeClass);
 						$("#timeline-background").css(
 							"background-image",
