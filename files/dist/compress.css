@@ -11761,10 +11761,20 @@ html.lock {
 
 .customers-section .portfolio-desc {
   position: absolute;
-  background: #231D39;
   opacity: 1;
-  padding: 20px;
   bottom: 0;
+}
+
+.customers-section .portfolio-desc .portfolio-category {
+  background: rgba(35, 29, 57, 0.8);
+  padding: 10px 20px;
+  opacity: 1;
+}
+
+.customers-section .portfolio-desc .portfolio-name {
+  background: #231D39;
+  padding: 10px 20px;
+  margin-top: 0;
 }
 
 .customers-section.inverse-color .portfolio-desc * {
@@ -11779,10 +11789,20 @@ html.lock {
 
 .customers-section.inverse-color .portfolio-desc {
   position: absolute;
-  background: #fff;
   opacity: 1;
-  padding: 20px;
   bottom: 0;
+}
+
+.customers-section.inverse-color .portfolio-desc .portfolio-category {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  opacity: 1;
+}
+
+.customers-section.inverse-color .portfolio-desc .portfolio-name {
+  background: #fff;
+  padding: 10px 20px;
+  margin-top: 0;
 }
 
 .customers-section.inverse-color {
