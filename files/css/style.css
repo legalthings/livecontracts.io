@@ -1701,10 +1701,11 @@ nav#main-nav .mega-menu-content ul li.mega-menu-title > a:after {
 	transform: translateY(6px) rotate(0deg);
 }
 
-header #menu .responsive-nav-toggle:hover .hamburger, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger,
+header #menu .responsive-nav-toggle:hover .hamburger,
+header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger,
 header #menu .responsive-nav-toggle:hover .hamburger:before, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:before,
 header #menu .responsive-nav-toggle:hover .hamburger:after, header #menu.menu-is-open .responsive-nav-toggle:hover .hamburger:after {
-	background-color: #33bfd0 !important;
+	background-color: #9067C6 !important;
 }
 
 /* Smart nav */
@@ -9416,9 +9417,9 @@ html.lock {
 
 .customers-section .portfolio-media {
 	position: relative;
-	-webkit-box-shadow: 8px 8px 3px 0px rgba(0,0,0,0.2);
-	-moz-box-shadow: 8px 8px 3px 0px rgba(0,0,0,0.2);
-	box-shadow: 8px 8px 3px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .customers-section .portfolio-desc * {
@@ -9438,10 +9439,11 @@ html.lock {
 }
 
 .customers-section.inverse-color .portfolio-media {
-	-webkit-box-shadow: 8px 8px 3px 0px rgba(0,0,0,1);
-	-moz-box-shadow: 8px 8px 3px 0px rgba(0,0,0,1);
-	box-shadow: 8px 8px 3px 0px rgba(0,0,0,1);
+	-webkit-box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 1);
+	box-shadow: 8px 8px 3px 0px rgba(0, 0, 0, 1);
 }
+
 .customers-section.inverse-color .portfolio-desc {
 	position: absolute;
 	background: #fff;
@@ -9468,3 +9470,4 @@ html.lock {
 	display: flex;
 	justify-content: space-around;
 }
+
