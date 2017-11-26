@@ -20,10 +20,49 @@ $(document).ready(function () {
 	initSubscribeMailChimp();
 	initTimer();
 	timelineInit();
-	if ($(".quote").length) {
-		showingQuotes();
-	}
+	// if ($(".quote").length) {
+	// 	showingQuotes();
+	// }
+	
+	
+	test();
 });
+
+function test() {
+	
+	// $(window).scroll(function () {
+	// 	if ((parent.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) &&
+	// 		((parent.offset().top + parent.height()) > ($(document).scrollTop() + 60 + $(window).height() / 2))
+	// 	) {
+	
+	var quote = document.getElementsByClassName('quote');
+	quote[0].classList.add('quoteActive');
+	
+	for (let i = 0; i < quote.length; i++) {
+		window.addEventListener('scroll', function () {
+			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			var parent = $('.top-quotes-block');
+			var main = parent.offset().top - (parent.height() / 2);
+			
+			console.log('hello ' + scrollTop)
+			console.log('main ' + main)
+			
+			if (scrollTop <= main) {
+				quote[i].classList.remove('quoteActive');
+				quote[0].classList.add('quoteActive');
+			} else if (scrollTop <= (main + 100)) {
+				quote[i].classList.remove('quoteActive');
+				quote[1].classList.add('quoteActive');
+			} else if (scrollTop <= (main + 200)) {
+				quote[i].classList.remove('quoteActive');
+				quote[2].classList.add('quoteActive');
+			}
+		})
+	}
+	// }
+	// });
+	
+}
 
 
 // animation for quotes
@@ -66,6 +105,7 @@ function showingQuotes() {
 		}
 		
 	});
+	
 	function propperOrder() {
 		block_1.animateCss('fadeIn', function () {
 			block_1.addClass('animated fadeIn');

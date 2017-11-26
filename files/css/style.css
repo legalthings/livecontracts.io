@@ -9357,15 +9357,20 @@ html.lock {
 }
 
 .top-quotes-block .quote {
+	position: absolute;
 	opacity: 0;
 	margin-top: 0;
-	position: absolute;
 	left: 50%;
 	top: 50%;
+	transition: .3s all;
 	margin: 0;
 	min-width: 200px;
 	transform: translate(-50%, -50%);
 	width: 100%;
+}
+
+.quote.quoteActive {
+	opacity: 1;
 }
 
 .main-ThreeColumnsBlock {
@@ -9407,6 +9412,34 @@ html.lock {
 .customers-section {
 	padding: 40px 0;
 	margin-top: 0;
+}
+
+.customers-section .portfolio-media {
+	position: relative;
+}
+
+.customers-section .portfolio-desc * {
+	color: #fff;
+}
+
+.customers-section .portfolio-desc {
+	position: absolute;
+	background: #231D39;
+	opacity: 1;
+	padding: 20px;
+	bottom: 0;
+}
+
+.customers-section.inverse-color .portfolio-desc * {
+	color: #231D39;
+}
+
+.customers-section.inverse-color .portfolio-desc {
+	position: absolute;
+	background: #fff;
+	opacity: 1;
+	padding: 20px;
+	bottom: 0;
 }
 
 .customers-section.inverse-color {
