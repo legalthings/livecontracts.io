@@ -11803,6 +11803,23 @@ html.lock {
   display: flex;
   justify-content: space-around;
 }
+
+#customers-page #hero.hero-full {
+  min-height: 30vh !important;
+  height: 30vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#customers-page #hero.hero-full #page-title {
+  position: static;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0 !important;
+  max-width: 100%;
+  transform: none;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

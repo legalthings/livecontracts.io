@@ -9471,3 +9471,19 @@ html.lock {
 	justify-content: space-around;
 }
 
+#customers-page #hero.hero-full {
+	min-height: 30vh !important;
+	height: 30vh !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#customers-page #hero.hero-full #page-title {
+	position: static;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0 !important;
+	max-width: 100%;
+	transform: none;
+}
