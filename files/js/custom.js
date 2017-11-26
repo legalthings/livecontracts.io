@@ -30,11 +30,6 @@ $(document).ready(function () {
 
 function test() {
 	
-	// $(window).scroll(function () {
-	// 	if ((parent.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) &&
-	// 		((parent.offset().top + parent.height()) > ($(document).scrollTop() + 60 + $(window).height() / 2))
-	// 	) {
-	
 	var quote = document.getElementsByClassName('quote');
 	quote[0].classList.add('quoteActive');
 	
