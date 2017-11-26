@@ -4689,8 +4689,6 @@ function showingQuotes() {
 		}
 		else {
 			if (block_1) {
-				console.log(1)
-				
 				if (block_1.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
 					block_1.animateCss('fadeOut', function () {
 						block_1.addClass('animated fadeOut');
@@ -4700,7 +4698,6 @@ function showingQuotes() {
 				}
 			}
 			if (block_2) {
-				console.log(2)
 				if (block_2.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
 					block_2.animateCss('fadeOut', function () {
 						block_2.addClass('animated fadeOut');

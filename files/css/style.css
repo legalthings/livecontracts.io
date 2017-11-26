@@ -9387,3 +9387,27 @@ html.lock {
 .icon-align-right .icon-box-icon {
 	float: right;
 }
+
+.customers-section {
+	padding: 40px 0;
+	margin-top: 0;
+}
+
+.customers-section.inverse-color {
+	background: #231D39;
+}
+
+.customers-section.inverse-color * {
+	color: #fff;
+}
+
+.serving-companies .column-section .column {
+	width: auto !important;
+	float: none !important;
+	margin: auto;
+}
+
+.serving-companies .column-section {
+	display: flex;
+	justify-content: space-around;
+}

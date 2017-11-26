@@ -11721,6 +11721,30 @@ html.lock {
 .icon-align-right .icon-box-icon {
   float: right;
 }
+
+.customers-section {
+  padding: 40px 0;
+  margin-top: 0;
+}
+
+.customers-section.inverse-color {
+  background: #231D39;
+}
+
+.customers-section.inverse-color * {
+  color: #fff;
+}
+
+.serving-companies .column-section .column {
+  width: auto !important;
+  float: none !important;
+  margin: auto;
+}
+
+.serving-companies .column-section {
+  display: flex;
+  justify-content: space-around;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -21178,13 +21202,12 @@ Smartphones
   .serving-companies .column-section {
     flex-wrap: wrap;
     margin-top: 0 !important;
+    justify-content: center;
   }
 
-
-
   .serving-companies .column-section .column {
-    width: 33% !important;
     margin-top: 0 !important;
+    width: 100% !important;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;

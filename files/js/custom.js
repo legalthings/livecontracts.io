@@ -112,7 +112,7 @@ function showingQuotes() {
 					});
 					block_2.removeClass('animated fadeIn');
 				}
-			} 
+			}
 			if (block_3) {
 				if (block_3.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
 					block_2.animateCss('fadeIn', function () {
