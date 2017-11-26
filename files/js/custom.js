@@ -43,9 +43,11 @@ $.fn.extend({
 
 
 function showingQuotes() {
+	var parent = $('.top-quotes-block');
 	var block_1,
 		block_2,
 		block_3;
+	
 	if ($('.first-quote').length) {
 		block_1 = $('.first-quote')
 	}
@@ -55,42 +57,41 @@ function showingQuotes() {
 	if ($('.third-quote').length) {
 		block_3 = $('.third-quote')
 	}
-	var parent = $('.top-quotes-block');
 	
 	$(window).scroll(function () {
-		
 		if ((parent.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) &&
 			((parent.offset().top + parent.height()) > ($(document).scrollTop() + 60 + $(window).height() / 2))
 		) {
 			propperOrder();
 		}
 		
-		function propperOrder() {
-			block_1.animateCss('fadeIn', function () {
-				block_1.addClass('animated fadeIn');
-				$(window).ready(function () {
-					$(this).one('scroll', function () {
-						block_1.animateCss('fadeOut', function () {
-							block_1.addClass('animated fadeOut').removeClass('fadeIn');
-						});
-						block_2.animateCss('fadeIn', function () {
-							block_2.addClass('animated fadeIn');
-							$(window).ready(function () {
-								$(this).one('scroll', function () {
-									block_3.animateCss('fadeIn', function () {
-										block_3.addClass('animated fadeIn');
-									});
-									block_2.animateCss('fadeOut', function () {
-										block_2.addClass('animated fadeOut').removeClass('fadeIn');
-									});
-								})
+	});
+	function propperOrder() {
+		block_1.animateCss('fadeIn', function () {
+			block_1.addClass('animated fadeIn');
+			$(window).ready(function () {
+				$(this).one('scroll', function () {
+					block_1.animateCss('fadeOut', function () {
+						block_1.addClass('animated fadeOut').removeClass('fadeIn');
+					});
+					block_2.animateCss('fadeIn', function () {
+						block_2.addClass('animated fadeIn');
+						$(window).ready(function () {
+							$(this).one('scroll', function () {
+								block_3.animateCss('fadeIn', function () {
+									block_3.addClass('animated fadeIn');
+								});
+								block_2.animateCss('fadeOut', function () {
+									block_2.addClass('animated fadeOut').removeClass('fadeIn');
+								});
 							})
-						});
-					})
+						})
+					});
 				})
 			})
-		}
-	});
+		})
+	}
+	
 }
 
 
