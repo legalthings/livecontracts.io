@@ -4634,7 +4634,7 @@ function test() {
 		window.addEventListener('scroll', function () {
 			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 			var parent = $('.top-quotes-block');
-			var main = parent.offset().top - (parent.height() / 1.5);
+			var main = parent.offset().top - (parent.height());
 			
 			console.log('hello ' + scrollTop)
 			console.log('main ' + main)
