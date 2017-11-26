@@ -4635,100 +4635,129 @@ $.fn.extend({
 
 
 function showingQuotes() {
-	
+	var block_1,
+		block_2,
+		block_3;
+	if ($('.first-quote').length) {
+		block_1 = $('.first-quote')
+	}
+	if ($('.second-quote').length) {
+		block_2 = $('.second-quote')
+	}
+	if ($('.third-quote').length) {
+		block_3 = $('.third-quote')
+	}
+	var parent = $('.top-quotes-block');
 	
 	$(window).scroll(function () {
 		
-		var block_1,
-			block_2,
-			block_3;
-		
-		var parent = $('.top-quotes-block');
-		
-		
-		if ($('.first-quote').length) {
-			block_1 = $('.first-quote')
+		if ((parent.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) &&
+			((parent.offset().top + parent.height()) > ($(document).scrollTop() + 60 + $(window).height() / 2))
+		) {
+			propperOrder();
 		}
-		if ($('.second-quote').length) {
-			block_2 = $('.second-quote')
-		}
-		if ($('.third-quote').length) {
-			block_3 = $('.third-quote')
-		}
-		if ($(document).scrollTop() < (parent.offset().top + parent.height())) {
-			if (block_1) {
-				if (block_1.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					if (!(block_1.hasClass('animated'))) {
-						block_1.animateCss('fadeIn', function () {
-							block_1.addClass('animated fadeIn');
+		
+		function propperOrder() {
+			block_1.animateCss('fadeIn', function () {
+				block_1.addClass('animated fadeIn');
+				$(window).ready(function () {
+					$(this).one('scroll', function () {
+						block_1.animateCss('fadeOut', function () {
+							block_1.addClass('animated fadeOut').removeClass('fadeIn');
 						});
-					}
-				}
-			}
-			if (block_2) {
-				if (block_2.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					if (!(block_2.hasClass('animated'))) {
 						block_2.animateCss('fadeIn', function () {
 							block_2.addClass('animated fadeIn');
+							$(window).ready(function () {
+								$(this).one('scroll', function () {
+									block_3.animateCss('fadeIn', function () {
+										block_3.addClass('animated fadeIn');
+									});
+									block_2.animateCss('fadeOut', function () {
+										block_2.addClass('animated fadeOut').removeClass('fadeIn');
+									});
+								})
+							})
 						});
-					}
-					block_1.removeClass('animated fadeIn');
-				}
-			}
-			if (block_3) {
-				if (block_3.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					if (!(block_3.hasClass('animated'))) {
-						block_3.animateCss('fadeIn', function () {
-							block_3.addClass('animated fadeIn');
-						});
-					}
-					block_1.removeClass('animated fadeIn');
-					block_2.removeClass('animated fadeIn');
-				}
-			}
+					})
+				})
+			})
 		}
-		else {
-			if (block_1) {
-				if (block_1.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					block_1.animateCss('fadeOut', function () {
-						block_1.addClass('animated fadeOut');
-					});
-					block_2.removeClass('animated fadeIn');
-					block_3.removeClass('animated fadeIn');
-				}
-			}
-			if (block_2) {
-				if (block_2.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					block_2.animateCss('fadeOut', function () {
-						block_2.addClass('animated fadeOut');
-					});
-					block_2.removeClass('animated fadeIn');
-				}
-			}
-			if (block_3) {
-				if (block_3.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
-					block_2.animateCss('fadeIn', function () {
-						block_2.addClass('animated fadeIn');
-					});
-				}
-			}
-		}
-		
-		
-		// var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height() / 3;
-		
-		
-		// if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
-		// 	if (!($('.top-quotes-block .quote').hasClass('animated'))) {
-		//
-		// 		$( ".top-quotes-block .quote").each(function( index, value )
-		// 		{
-		// 			$(value).addClass('animated fadeIn');
-		// 		});
-		// 	}
-		// }
 	});
 }
+
+
+// if ($(document).scrollTop() < (parent.offset().top + parent.height())) {
+// 	if (block_1) {
+// 		if (block_1.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			if (!(block_1.hasClass('animated'))) {
+// 				block_1.animateCss('fadeIn', function () {
+// 					block_1.addClass('animated fadeIn');
+// 				});
+// 			}
+// 		}
+// 	}
+// 	if (block_2) {
+// 		if (block_2.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			if (!(block_2.hasClass('animated'))) {
+// 				block_2.animateCss('fadeIn', function () {
+// 					block_2.addClass('animated fadeIn');
+// 				});
+// 			}
+// 			block_1.removeClass('animated fadeIn');
+// 		}
+// 	}
+// 	if (block_3) {
+// 		if (block_3.offset().top < ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			if (!(block_3.hasClass('animated'))) {
+// 				block_3.animateCss('fadeIn', function () {
+// 					block_3.addClass('animated fadeIn');
+// 				});
+// 			}
+// 			block_1.removeClass('animated fadeIn');
+// 			block_2.removeClass('animated fadeIn');
+// 		}
+// 	}
+// }
+// else {
+// 	if (block_1) {
+// 		if (block_1.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			block_1.animateCss('fadeOut', function () {
+// 				block_1.addClass('animated fadeOut');
+// 			});
+// 			block_2.removeClass('animated fadeIn');
+// 			block_3.removeClass('animated fadeIn');
+// 		}
+// 	}
+// 	if (block_2) {
+// 		if (block_2.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			block_2.animateCss('fadeOut', function () {
+// 				block_2.addClass('animated fadeOut');
+// 			});
+// 			block_2.removeClass('animated fadeIn');
+// 		}
+// 	}
+// 	if (block_3) {
+// 		if (block_3.offset().top > ($(document).scrollTop() + 60 + $(window).height() / 2)) {
+// 			block_2.animateCss('fadeIn', function () {
+// 				block_2.addClass('animated fadeIn');
+// 			});
+// 		}
+// 	}
+// }
+
+
+// var block = $('.top-quotes-block').offset().top - 60 - $('.top-quotes-block').height() / 3;
+
+
+// if (block < $(document).scrollTop() && (block + $('.top-quotes-block').height()) > $(document).scrollTop()) {
+// 	if (!($('.top-quotes-block .quote').hasClass('animated'))) {
+//
+// 		$( ".top-quotes-block .quote").each(function( index, value )
+// 		{
+// 			$(value).addClass('animated fadeIn');
+// 		});
+// 	}
+// }
 
 //function for timeline init and animation
 
