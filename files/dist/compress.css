@@ -11850,9 +11850,21 @@ html.lock {
   transform: none;
 }
 
+.block-button__hover .serving-companies .column-section:nth-of-type(1) {
+  margin-top: 0;
+}
+
 .block-button__hover {
   position: relative;
+  margin-top: 0;
   transition: .3s all;
+}
+
+.block-button__hover .serving-companies .column {
+  /*height: 175px;*/
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .block-button__hover .serving-companies {
