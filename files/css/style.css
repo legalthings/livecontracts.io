@@ -9553,6 +9553,7 @@ html.lock {
 	opacity: 0;
 	background: #231D39;
 	color: #597FD9;
+	min-width: 150px;
 }
 
 .block-button__hover:hover .sr-button {
