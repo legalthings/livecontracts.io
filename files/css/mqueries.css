@@ -1349,6 +1349,17 @@ Smartphones
 		color: white !important;
 		background: #242038 !important;
 	}
+
+	.block-button__hover .sr-button {
+		opacity: 1;
+	}
+	.block-button__hover .serving-companies {
+		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+		-webkit-filter: url(#blur-filter);
+		filter: url(#blur-filter);
+		-webkit-filter: blur(3px);
+		filter: blur(3px);
+	}
 }
 
 @media only screen and (max-width: 960px) {
