@@ -14,6 +14,7 @@ $(document).ready(function () {
 	manipulatingHeader();
 	loadTokens();
 	wizardInit();
+	openWishlistPopup();
 	closePopup();
 	scrollToBlock();
 	bindingWizardsTabs();
@@ -25,6 +26,22 @@ $(document).ready(function () {
 	}
 });
 
+//opening Wishlist popup
+function openWishlistPopup() {
+	$('.js-open-wishlistPopup').on('click', function (e) {
+		e.preventDefault();
+		$('html').addClass('lock');
+		$('.popup.js-wishlist-popup').removeClass('popup-hide');
+		$('.popup__close').on('click', function (e) {
+			e.preventDefault();
+			$('html').removeClass('lock');
+			$('.popup.js-wishlist-popup').addClass('popup-hide')
+		})
+	})
+}
+
+
+//function for animating quotes on scroll
 function quotesAnimation() {
 	
 	var quote = document.getElementsByClassName('quote');

@@ -7033,12 +7033,12 @@ div .progress-bar-item:first-child {
 }
 
 .team-image img {
-    filter: grayscale(40%);
-    transition: filter 1s;
+	filter: grayscale(40%);
+	transition: filter 1s;
 }
 
 .team-image:hover img {
-    filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 /*	Alerts
@@ -8053,22 +8053,6 @@ div .socialmedia-widget:first-child {
 	color: #8c8c8c;
 }
 
-/*	Newsletter
-------------------------------------------------*/
-#newsletter-email {
-	width: 280px;
-	max-width: calc(100% - 100px);
-}
-
-#newsletter-submit {
-	position: relative;
-	left: -6px;
-	padding-left: 0;
-	padding-right: 0;
-	width: 70px;
-	margin: 0;
-}
-
 /*	Search Widget
 ------------------------------------------------*/
 #searchform {
@@ -8608,11 +8592,15 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	color: #fff;
 }
 
-.blackBackgroundBlock #newsletter-submit {
+.blackBackgroundBlock #newsletter-submit, #newsletter-modal-widget-form .submit-form {
 	line-height: 24px;
 	color: #1a1a1a;
 	background: #fff;
 	border-left: 1px solid #1a1a1a;
+}
+
+#newsletter-modal-widget-form .submit-form {
+	border: 1px solid #1a1a1a;
 }
 
 .customRowElements {
@@ -9517,4 +9505,97 @@ html.lock {
 	transform: none;
 }
 
+.block-button__hover .serving-companies .column-section:nth-of-type(1) {
+	margin-top: 0;
+}
 
+.block-button__hover {
+	position: relative;
+	margin-top: 0;
+	transition: .3s all;
+}
+
+.block-button__hover .serving-companies .column {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.block-button__hover .serving-companies {
+	transition: .3s all;
+	position: relative;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.block-button__hover:hover .serving-companies {
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+	-webkit-filter: url(#blur-filter);
+	filter: url(#blur-filter);
+	-webkit-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.block-button__hover .sr-button:hover {
+	background: #fff;
+	color: #507DEC;
+	border: 1px solid #507DEC;
+}
+
+.block-button__hover .sr-button {
+	position: absolute;
+	left: 50%;
+	z-index: 1000;
+	transition: .3s all;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	background: #231D39;
+	color: #597FD9;
+	min-width: 150px;
+}
+
+.block-button__hover:hover .sr-button {
+	opacity: 1;
+}
+
+.blur-svg {
+	display: none;
+}
+
+.overlay, .block-button__hover .sr-button {
+	opacity: 0;
+}
+
+.popup.js-wishlist-popup .popup__content {
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	max-width: 400px;
+	padding: 0 20px;
+}
+
+.popup.js-wishlist-popup {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: -1px;
+}
+
+/*	Newsletter
+------------------------------------------------*/
+#newsletter-email, #newsletter-modal-widget-form .input-form {
+	width: 280px;
+	max-width: calc(100% - 100px);
+}
+
+#newsletter-submit, #newsletter-modal-widget-form .submit-form {
+	position: relative;
+	left: -6px;
+	padding-left: 0;
+	padding-right: 0;
+	width: 70px;
+	margin: 0;
+}

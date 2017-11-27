@@ -8,9 +8,9 @@ var del = require('del');
 
 
 gulp.task('minify-css', function () {
-	return gulp.src('files/dist/*.css')
-		.pipe(cleanCSS({compatibility: 'ie8'}))
-		.pipe(gulp.dest('files/dist'));
+	return gulp.src('./files/dist/*.css')
+		.pipe(cleanCSS())
+		.pipe(gulp.dest('./files/dist'));
 });
 
 gulp.task('minify-js', function () {
@@ -81,13 +81,13 @@ gulp.task('compress-js', function () {
 		.pipe(gulp.dest('./files/dist'));
 });
 
-gulp.task('clean:dist', function() {
+gulp.task('clean:dist', function () {
 	return del.sync('files/dist');
 });
 
 
 gulp.task('default', function (callback) {
-	runSequence('clean:dist', ['compress-js','compress-css', 'minify-js', 'minify-css'],
+	runSequence('clean:dist', 'compress-js', 'compress-css', 'minify-css', 'minify-js',
 		callback
 	)
 });
