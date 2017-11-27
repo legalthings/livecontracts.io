@@ -9593,7 +9593,7 @@ html.lock {
 #newsletter-email, #newsletter-modal-widget-form .input-form {
 	width: 280px;
 	max-width: calc(100% - 100px);
-}
+} 
 
 #newsletter-submit, #newsletter-modal-widget-form .submit-form {
 	position: relative;
