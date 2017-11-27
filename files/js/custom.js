@@ -236,26 +236,36 @@ function populateExploreBlock() {
 		}
 	];
 	
+	$('.populate-block .loading .fa').addClass('spinning')
 	var block = $('#blog-grid');
+	var count = explore.length;
 	
-	explore.forEach(function (data) {
+	block.css('opacity', "0");
+	
+	$.each(explore, function (key, value) {
 		block.append([
 			'<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
 			'<div class="blog-media">',
-			'<a href="' + data.link + '" target="_blank" class="text-light blog-image">',
-			'<img src=' + data.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
+			'<a href="' + value.link + '" target="_blank" class="text-light blog-image">',
+			'<img src=' + value.img + ' alt="SEO IMG NAME">' + '<div class="overlay-caption hidden-on-start">',
 			'<h6 class="caption-sub portfolio-category subtitle-2"></h6>',
 			'<h4 class="caption-name portfolio-name uppercase"></h4>',
 			'</a>',
 			'</div>',
 			'<div class="blog-desc align-center">',
 			'<div class="blog-headline">',
-			'<h5 class="post-name"><a href="' + data.link + '" target="_blank"><strong>' + data.title + '</strong></a></h5>',
+			'<h5 class="post-name"><a href="' + value.link + '" target="_blank"><strong>' + value.title + '</strong></a></h5>',
 			'</div>',
-			'<p>' + data.intro + '</p>',
+			'<p>' + value.intro + '</p>',
 			'</div>',
 			'</div>'
 		].join(''));
+		if (key + 1 === count) {
+			setTimeout(function () {
+				$('.populate-block .loading').addClass('close');
+				block.css('opacity', "1");
+			}, 3000)
+		}
 	})
 }
 

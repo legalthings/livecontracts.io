@@ -9603,3 +9603,42 @@ html.lock {
 	width: 70px;
 	margin: 0;
 }
+
+.populate-block {
+	position: relative;
+}
+
+.populate-block #blog-grid {
+	transition: .3s all;
+}
+
+.populate-block .loading {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	z-index: 10;
+}
+
+.populate-block .loading .fa.spinning {
+	transform: rotate(3000deg);
+}
+
+.populate-block .loading .fa {
+	font-size: 48px;
+	transition: 14s transform, .3s opacity;
+	color: #9067c6;
+	opacity: 1;
+}
+
+.populate-block .loading.close {
+	opacity: 0;
+	z-index: -1;
+}
+
+
