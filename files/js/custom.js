@@ -19,6 +19,7 @@ $(document).ready(function () {
 	scrollToBlock();
 	bindingWizardsTabs();
 	initSubscribeMailChimp();
+	initModalSubscribeMailChimp();
 	initTimer();
 	timelineInit();
 	if ($(".quote").length) {
@@ -418,6 +419,34 @@ function initSubscribeMailChimp() {
 		}
 	}
 }
+
+function initModalSubscribeMailChimp() {
+	var form = $('#newsletter-widget-form');
+	
+	if (form.length) {
+		form.ajaxChimp({
+			callback: mailchimpCallback,
+			url: 'https://legalthings.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=6d17a10ae2'
+		});
+	}
+	
+	// callback function when the form submitted, show the notification box
+	function mailchimpCallback(resp) {
+		var $error = $('#modal-newsletter-error');
+		var $success = $('#modal-newsletter-success');
+		$error.hide();
+		$success.hide();
+		
+		if (resp.result === 'error') {
+			$error.show().html(resp.msg);
+			$success.hide();
+		} else {
+			$error.hide();
+			$success.show();
+		}
+	}
+}
+
 
 function initTimer() {
 	var time = $('.count-down');
