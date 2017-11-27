@@ -109,7 +109,7 @@ function timelineInit() {
 			var itemLength = selectors.item.length;
 			$(window).scroll(function () {
 				var max, min;
-				var pos = $(this).scrollTop() + 96;
+				var pos = $(this).scrollTop() + 150;
 				selectors.item.each(function (i) {
 					min = $(this).offset().top;
 					max = $(this).height() + $(this).offset().top;
@@ -126,7 +126,7 @@ function timelineInit() {
 							")"
 						);
 						selectors.item.last().addClass(selectors.activeClass);
-					} else if (pos <= max - 40 && pos >= min) {
+					} else if (pos <= max && pos >= min) {
 						$("#timeline-background").css(
 							"background-image",
 							"url(" +
