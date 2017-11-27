@@ -7032,6 +7032,15 @@ div .progress-bar-item:first-child {
 	outline: 1px solid #eee;
 }
 
+.team-image img {
+    filter: grayscale(40%);
+    transition: filter 1s;
+}
+
+.team-image:hover img {
+    filter: grayscale(0%);
+}
+
 /*	Alerts
 ------------------------------------------------*/
 div[class*='alert-'] {
