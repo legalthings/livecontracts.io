@@ -9541,11 +9541,17 @@ html.lock {
 
 #customers-page .serving-companies img {
     width: 200px;
-    padding: 0 10px;
 }
 
 #customers-page .spacer-small + .spacer-small {
     border-top: 1px solid #231d39;
+}
+
+@media (max-width: 768px) {
+    #customers-page .serving-companies,
+    #customers-page .spacer-small + .spacer-small {
+        display: none;
+    }
 }
 
 .block-button__hover .serving-companies .column-section:nth-of-type(1) {
