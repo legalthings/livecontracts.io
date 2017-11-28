@@ -9609,7 +9609,9 @@ html.lock {
 }
 
 .populate-block #blog-grid {
-	transition: .3s all;
+	/*transition: .3s all;*/
+	/*opacity: 0;*/
+	/*min-height: 510px;*/
 }
 
 .populate-block .loading {

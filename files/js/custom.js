@@ -10,7 +10,7 @@ $(window).load(function () {
 
 $(document).ready(function () {
 	eventForMobileTooltip();
-	populateExploreBlock();
+	// populateExploreBlock();
 	manipulatingHeader();
 	loadTokens();
 	wizardInit();
@@ -209,6 +209,7 @@ function scrollToBlock() {
 }
 
 //Function that populate blocks in "Explore".
+
 function populateExploreBlock() {
 	var explore = [
 		{
@@ -240,7 +241,6 @@ function populateExploreBlock() {
 	var block = $('#blog-grid');
 	var count = explore.length;
 	
-	block.css('opacity', "0");
 	
 	$.each(explore, function (key, value) {
 		block.append([
