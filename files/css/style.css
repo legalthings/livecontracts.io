@@ -8592,17 +8592,6 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 	color: #fff;
 }
 
-.blackBackgroundBlock #newsletter-submit, #newsletter-modal-widget-form .submit-form {
-	line-height: 24px;
-	color: #1a1a1a;
-	background: #fff;
-	border-left: 1px solid #1a1a1a;
-}
-
-#newsletter-modal-widget-form .submit-form {
-	border: 1px solid #1a1a1a;
-}
-
 .customRowElements {
 	display: flex;
 	justify-content: space-between;
@@ -9020,10 +9009,6 @@ footer.footer-dark {
 	background: #000;
 	border: none;
 	color: #fff;
-}
-
-#newsletter-email:focus {
-	border-color: transparent;
 }
 
 #footer .wrapper {
@@ -9639,18 +9624,43 @@ html.lock {
 
 /*	Newsletter
 ------------------------------------------------*/
-#newsletter-email, #newsletter-modal-widget-form .input-form {
+.newsletter-email:focus {
+	border-color: transparent;
+}
+
+.newsletter-email, .newsletter-form .newsletter-email {
 	width: 280px;
 	max-width: calc(100% - 100px);
 }
 
-#newsletter-submit, #newsletter-modal-widget-form .submit-form {
+.newsletter-submit, .newsletter-form .newsletter-submit {
 	position: relative;
 	left: -6px;
 	padding-left: 0;
 	padding-right: 0;
 	width: 70px;
 	margin: 0;
+}
+
+.newsletter-submit {
+	line-height: 24px;
+	color: #1a1a1a;
+	background: #fff;
+	border-left: 1px solid #1a1a1a;
+}
+
+.newsletter-form .newsletter-submit {
+	border: 1px solid #1a1a1a;
+}
+
+.newsletter-success {
+	color: green;
+	display: none;
+}
+
+.newsletter-error {
+	color: red;
+	display: none;
 }
 
 .populate-block {

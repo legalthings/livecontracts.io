@@ -845,13 +845,13 @@
 			<strong>Stay informed</strong>
 		</h2>
 		<div class="spacer-mini"></div>
-		<form id="newsletter-widget-form">
-			<input type="email" id="newsletter-email" name="email" placeholder="Your Email Adress">
-			<input type="submit" id="newsletter-submit" value="Sign Up">
-			<p id="modal-newsletter-error" style="color: red; display: none"></p>
-			<p id="modal-newsletter-success" style="color: lightgreen; display: none">You have been successfully
-				subscribed to
-				the tokensale.</p>
+		<form class="newsletter-form" novalidate="true">
+			<input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Adress">
+			<input type="submit" class="newsletter-submit" value="Sign Up">
+			<p class="newsletter-error"></p>
+			<p class="newsletter-success">
+				You have been successfully registered to join the tokensale.
+			</p>
 		</form>
 	</div>
 	<div class="spacer-big"></div>
@@ -891,12 +891,13 @@
 			As whitelisted member you'll receive an <strong>additional 60%</strong> during the pre-sale. Please sign up
 			to qualify. Membership will be assigned based on the order of registration.
 		</p>
-		<form id="newsletter-modal-widget-form" novalidate="true">
-			<input type="email" class="input-form" id="modal-newsletter-email" name="EMAIL" placeholder="Your Email Adress">
-			<input type="submit" class="submit-form id=" modal-newsletter-submit" value="Sign Up">
-			<p id="newsletter-error" style="color: red; display: none"></p>
-			<p id="newsletter-success" style="color: lightgreen; display: none">You have been successfully registered to
-				join the tokensale.</p>
+		<form class="newsletter-form" novalidate="true">
+			<input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Adress">
+			<input type="submit" class="newsletter-submit" value="Sign Up">
+			<p class="newsletter-error"></p>
+			<p class="newsletter-success">
+				You have been successfully registered to join the tokensale.
+			</p>
 		</form>
 	</div>
 </div>
