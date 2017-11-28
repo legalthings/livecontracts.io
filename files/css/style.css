@@ -9159,8 +9159,8 @@ html.lock {
 
 .timeline__content-title {
 	font-weight: normal;
-	font-size: 46px;
-	margin: -10px 0 0 0;
+    font-size: 32px;
+    margin: -50px -2px 0 0;
 	transition: .4s;
 	padding: 0 10px;
 	box-sizing: border-box;
@@ -9169,7 +9169,7 @@ html.lock {
 }
 
 .timeline__content-desc {
-	margin: 0;
+	margin: 20px 0 0 0;
 	font-size: 15px;
 	box-sizing: border-box;
 	color: rgba(255, 255, 255, 0.7);
@@ -9247,7 +9247,8 @@ html.lock {
 }
 
 .timeline-item--active .timeline__content-title {
-	margin: -40px 0 20px 0;
+	margin: 20px 0 20px 0;
+	font-size: 32px;
 }
 
 .timeline__img {
@@ -9292,7 +9293,7 @@ html.lock {
 
 .timeline-header__title {
 	color: #fff;
-	font-size: 46px;
+	font-size: 32px;
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin: 0;
@@ -9323,6 +9324,7 @@ html.lock {
 	.timeline-item .timeline__content-desc {
 		position: static;
 		max-width: 100%;
+		margin: 20px 0 0 0;
 	}
 
 	.timeline:before {
@@ -9349,7 +9351,6 @@ html.lock {
 	}
 
     .timeline-item--active .timeline__content-title {
-	    margin: -25px 0 20px 0;
     }
 }
 
