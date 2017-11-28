@@ -20,7 +20,7 @@ gulp.task('minify-js', function () {
 				src: '.min.js',
 				min: '.js'
 			},
-			exclude: ['tasks'],
+			exclude: ['tasks'], 
 			ignoreFiles: ['.combo.js', '-min.js']
 		}))
 		.pipe(gulp.dest('./files/dist'))
