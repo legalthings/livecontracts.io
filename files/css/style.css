@@ -9711,3 +9711,16 @@ html.lock {
 }
 
 
+.token-usage-table {
+	min-width: 768px;
+	overflow-x: scroll;
+}
+
+.token-usage-table thead tr {
+	border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.token-usage-table .fa {
+	margin-right: 10px;
+	color: #9067c6;
+}

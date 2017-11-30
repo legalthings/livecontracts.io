@@ -479,7 +479,6 @@ function stripeCheckoutInit() {
 				// this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
 				// based on <num_tokens> * $0.25
 				amount: 2000,
-				 
 				bitcoin: false,
 				allowRememberMe: false
 			});
