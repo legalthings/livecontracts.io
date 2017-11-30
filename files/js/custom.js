@@ -9,6 +9,9 @@ $(window).load(function () {
 });
 
 $(document).ready(function () {
+	if ($(".quote").length > 0) {
+		quotesAnimation();
+	}
 	eventForMobileTooltip();
 	// populateExploreBlock();
 	manipulatingHeader();
@@ -22,9 +25,7 @@ $(document).ready(function () {
 	initTimer();
 	timelineInit();
 	stripeCheckoutInit();
-	if ($(".quote").length) {
-		quotesAnimation();
-	}
+	
 });
 
 //opening Wishlist popup
@@ -42,6 +43,7 @@ function openWishlistPopup() {
 }
 
 
+//function for animating quotes on scroll
 //function for animating quotes on scroll
 function quotesAnimation() {
 	
@@ -464,27 +466,30 @@ function stripeCheckoutInit() {
 			// pass token.id and email to the server
 		}
 	});
-
-	document.getElementById('checkout-presale').addEventListener('click', function (e) {
-		// Open Checkout with further options:
-		handler.open({
-			name: 'LTO Pre-sale',
-			description: 'Purchase LTO tokens',
-			zipCode: false,
-			currency: 'usd',
-
-			// this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
-			// based on <num_tokens> * $0.25
-			amount: 2000,
-			
-			bitcoin: false,
-			allowRememberMe: false
+	
+	if ($('#checkout-presale').length) {
+		document.getElementById('checkout-presale').addEventListener('click', function (e) {
+			// Open Checkout with further options:
+			handler.open({
+				name: 'LTO Pre-sale',
+				description: 'Purchase LTO tokens',
+				zipCode: false,
+				currency: 'usd',
+				
+				// this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
+				// based on <num_tokens> * $0.25
+				amount: 2000,
+				 
+				bitcoin: false,
+				allowRememberMe: false
+			});
+			e.preventDefault();
 		});
-		e.preventDefault();
-	});
-
+	}
+	
+	
 	// Close Checkout on page navigation:
-	window.addEventListener('popstate', function() {
+	window.addEventListener('popstate', function () {
 		handler.close();
 	});
 }
