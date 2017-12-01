@@ -23,7 +23,7 @@ var chart = bb.generate({
 		]
 	},
 	"legend": {
-		"contents": { 
+		"contents": {
 			"bindto": "#pie-legend",
 			"template": "<span style='color:#fff;padding:5px;background-color:{=COLOR}'>{=TITLE}</span>"
 		}
