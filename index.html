@@ -38,6 +38,7 @@
 	<!-- nicer scroll in steps -->
 	<!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
 	<link rel="stylesheet" href="files/dist/compress.css">
+	<link rel="stylesheet" href="http://naver.github.io/billboard.js/release/latest/dist/billboard.css">
 	<!-- FAVICON -->
 	<link rel="shortcut icon" href="img/favicon.png"/>
 
@@ -307,6 +308,7 @@
 				</div>
 			</div>
 		</div>
+	</section>
 </div>
 <!-- END .wrapper -->
 
@@ -732,17 +734,21 @@
 		<div class="column one-half">
 			<h3>LTO Token</h3>
 			<p>
-				The LTO token is a License token. Companies and governments need tokens to use the platform and create, run and interact with Live Contracts.
+				The LTO token is a License token. Companies and governments need tokens to use the platform and create, run and
+				interact with Live Contracts.
 			</p>
 			<p>
-				Token holders are able to use the platform for as long as they hold the tokens. Tokens can be resold to make them available for someone else to utilize or hold the tokens for later use.
+				Token holders are able to use the platform for as long as they hold the tokens. Tokens can be resold to make
+				them available for someone else to utilize or hold the tokens for later use.
 			</p>
 			<p>
-				You can find a full description of LTO token and functionality <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">here</a>.
+				You can find a full description of LTO token and functionality <a
+					href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">here</a>.
 			</p>
 		</div>
 		<div class="column one-half last-col">
-			<canvas id="pie"></canvas>
+			<div id="pie"></div>
+			<div id="pie-legend"></div>
 		</div>
 	</div>
 	<div class="spacer-medium"></div>
@@ -830,11 +836,15 @@
 	<div class="column one-half last-col">
 		<strong>License pricing</strong><br>
 		<p>
-			License prices as indicated are based on fair market value for an average annual license. Less tokens are needed for licenses when user base grows. Excess tokens can be sold on Waves directly.
+			License prices as indicated are based on fair market value for an average annual license. Less tokens are needed
+			for licenses when user base grows. Excess tokens can be sold on Waves directly.
 		</p>
 		<p>
 			<strong>Example:</strong><br>
-			Company X buys 100,000 LTO to run it’s own customizable install. When the popularity of the platform grows, the LTO price will increase. LegalThings One will be stabalize the price for the service by decreasing the required number of tokens needed to run a service. In this case the price for a customizable install is decreased to 20,000 LTO. In this case Company X can sell its excess 80,000 LTO tokens on the exchange and can still run it’s platform.
+			Company X buys 100,000 LTO to run it’s own customizable install. When the popularity of the platform grows, the
+			LTO price will increase. LegalThings One will be stabalize the price for the service by decreasing the required
+			number of tokens needed to run a service. In this case the price for a customizable install is decreased to 20,000
+			LTO. In this case Company X can sell its excess 80,000 LTO tokens on the exchange and can still run it’s platform.
 		</p>
 	</div>
 </div>
@@ -906,9 +916,6 @@
 		</div>
 	</div>
 </div>
-
-
-<div class="spacer-medium"></div>
 
 <h2 class="align-center">
 	<strong>Social</strong>
@@ -1385,6 +1392,9 @@
 
 <!-- SCRIPTS -->
 <script src="files/dist/compress.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://naver.github.io/billboard.js/release/latest/dist/billboard.js"></script>
+<script src="./files/js/chart.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <!-- This needs to be loaded from their site, not locally -->
 
