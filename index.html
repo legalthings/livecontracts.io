@@ -1013,12 +1013,8 @@
 	</div>
 </div>
 <div class="popup-container popup-hide">
-	<div class="popup-backdrop popup-hide"></div>
 	<div class="popup popup-wizard popup-hide">
 		<div class="overlay"></div>
-		<a href="#" class="popup__close">
-			<i class="ion ion-3x ion-close-round"></i>
-		</a>
 		<div class="popup__content">
 			<div id="wizard">
 				<fieldset>
@@ -1058,6 +1054,17 @@
 						DEX, go ahead and skip this guide. The LTO token can be found under 'LegalThings One' with id
 						<code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
 					</p>
+
+					<p>
+						It is also possible to purchase LTO with fiat money. In that case you can skip the rest of the steps.
+						<br>
+						<input type="text" id="checkout-presale-amount" placeholder="Number of LTO">
+						<a href="#"><img id="checkout-presale-creditcard" src="img/payment/creditcard.png" alt="Creditcard" style="height: 60px"></a>
+						<!-- <a href="#"><img id="checkout-presale-ideal" src="img/payment/ideal.png" alt="Ideal" style="height: 60px"></a> -->
+					</p>
+
+					<p id="checkout-presale-success" style="display: none; color: green">Successfully purchased LTOs. See your inbox for a receipt.</p>
+					<p id="checkout-presale-failed" style="display: none; color: red">Failed to purchase LTOs. Something went wrong.</a></p>
 
 					<p class="align-right">
 						<strong>&mdash; Team LegalThings One</strong>
@@ -1405,7 +1412,7 @@
 
 <!-- SCRIPTS -->
 
-
+<button class="js-open-wizard">foo</button>
 </body>
 
 </html>
