@@ -37,6 +37,7 @@ gulp.task('compress-css', function () {
 		// 'files/revolution/css/navigation.css',
 		'files/css/owl.carousel.css',
 		'files/css/lightcase.css',
+		'files/css/billboard.css',
 		'files/css/mqueries.css',
 		'files/css/step-form-wizard-all.css',
 		'files/css/jquery.mCustomScrollbar.min.css',
@@ -75,7 +76,10 @@ gulp.task('compress-js', function () {
 			//
 			'files/js/step-form-wizard.min.js',
 			'files/js/jquery.mCustomScrollbar.concat.min.js',
+			'files/js/d3.js',
 			'files/js/custom.js',
+			'files/js/billboard.js',
+			'files/js/chart.js',
 		])
 		.pipe(concat('compress.js'))
 		.pipe(gulp.dest('./files/dist'));
