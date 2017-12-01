@@ -1,35 +1,33 @@
 var ctx = $('#pie');
 var chartColors = {
-	color_1: '#9867cf',
-	color_2: '#507dec',
-	color_3: '#000',
-	color_4: '#231d39',
-	color_5: '#9067c6',
-	
+	color_1: '#6e1b84',
+	color_2: '#9867cf',
+	color_3: '#9fbfff',
+	color_4: '#507dec',
+
 };
 var myPieChart = new Chart(ctx, {
 	type: 'pie',
 	data: {
 		datasets: [
 			{
-				data: [10, 15, 14, 1, 60],
+				data: [10000000, 18000000, 2000000, 60000000],
 				backgroundColor: [
 					chartColors.color_1,
 					chartColors.color_2,
 					chartColors.color_3,
 					chartColors.color_4,
-					chartColors.color_5,
-				]
+				],
+				borderWidth: [0, 0, 0, 0]
 			}
 		],
-		
+
 		// These labels appear in the legend and in the tooltips when hovering different arcs
 		labels: [
-			"Pre-sale",
 			"Company reserve",
-			"Team and advisers",
+			"Team and advisors",
 			"Bounty program",
-			"Market"
+			"Public sale"
 		]
 	},
 	options: {
@@ -37,7 +35,17 @@ var myPieChart = new Chart(ctx, {
 			display: false,
 			position: 'bottom',
 		},
+		cutoutPercentage: 50,
+		tooltips: {
+			callbacks: {
+				label: function(tooltipItem, data) {
+					var value = data.datasets[0].data[tooltipItem.index];
+					if (parseInt(value) >= 1000) {
+						value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+					}
+					return data.labels[tooltipItem.index] + ': ' + value;
+				}
+			}
+		}
 	}
 });
-
-
