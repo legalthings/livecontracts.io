@@ -25,8 +25,10 @@ $(document).ready(function () {
 	initTimer();
 	timelineInit();
 	stripeCheckoutInit();
-	
 });
+
+//init for pie chart
+
 
 //opening Wishlist popup
 function openWishlistPopup() {

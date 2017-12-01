@@ -9710,17 +9710,26 @@ html.lock {
 	z-index: -1;
 }
 
-
 .token-usage-table {
 	min-width: 768px;
 	overflow-x: scroll;
 }
 
 .token-usage-table thead tr {
-	border-bottom: 1px solid rgba(0,0,0,.12);
+	border-bottom: 1px solid rgba(0, 0, 0, .12);
 }
 
 .token-usage-table .fa {
 	margin-right: 10px;
 	color: #9067c6;
+}
+
+.pie-chart-section.column-section .column:first-child {
+	margin-left: 0;
+}
+.pie-chart-section {
+	background: #231d39;
+}
+.pie-chart-section * {
+	color: #fff;
 }

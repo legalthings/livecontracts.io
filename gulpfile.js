@@ -75,7 +75,9 @@ gulp.task('compress-js', function () {
 			//
 			'files/js/step-form-wizard.min.js',
 			'files/js/jquery.mCustomScrollbar.concat.min.js',
-			'files/js/custom.js'
+			'files/js/custom.js',
+			'files/js/Chart.bundle.js',
+			'files/js/pie.js',
 		])
 		.pipe(concat('compress.js'))
 		.pipe(gulp.dest('./files/dist'));
