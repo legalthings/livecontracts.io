@@ -48,16 +48,16 @@ function openWishlistPopup() {
 //function for animating quotes on scroll
 //function for animating quotes on scroll
 function quotesAnimation() {
-	
+
 	var quote = document.getElementsByClassName('quote');
 	quote[0].classList.add('quoteActive');
-	
+
 	for (let i = 0; i < quote.length; i++) {
 		window.addEventListener('scroll', function () {
 			var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 			var parent = $('.top-quotes-block');
 			var main = parent.offset().top - (parent.height());
-			
+
 			if (scrollTop <= main) {
 				quote[i].classList.remove('quoteActive');
 				quote[0].classList.add('quoteActive');
@@ -70,7 +70,7 @@ function quotesAnimation() {
 			}
 		})
 	}
-	
+
 }
 
 
@@ -146,9 +146,9 @@ function timelineInit() {
 			});
 		};
 	})(jQuery);
-	
+
 	$("#timeline-1").timeline();
-	
+
 }
 
 
@@ -165,30 +165,30 @@ function eventForMobileTooltip() {
 //function for same tabs in Wizard on 4 and 5 steps
 
 function bindingWizardsTabs() {
-	
+
 	var bitcoinTab = $('.bitcoin-tab')
 	var bitcoinContent = $('.bitcoin-content')
-	
+
 	var ethererumTab = $('.ethererum-tab')
 	var ethererumContent = $('.ethererum-content')
-	
+
 	$('.tab-nav li').on('click', function () {
 		if ($(this).hasClass('bitcoin-tab')) {
 			bitcoinTab.addClass('active')
 			bitcoinContent.addClass('active')
-			
+
 			ethererumTab.removeClass('active')
 			ethererumContent.removeClass('active')
 		}
 		if ($(this).hasClass('ethererum-tab')) {
 			bitcoinTab.removeClass('active')
 			bitcoinContent.removeClass('active')
-			
+
 			ethererumTab.addClass('active')
 			ethererumContent.addClass('active')
 		}
 	})
-	
+
 }
 
 // Global variables leave here, pls
@@ -204,12 +204,12 @@ function scrollToBlock() {
 		e.preventDefault();
 		// console.log($(this).attr('href'))
 		var blockOffset = $($(this).attr('href')).offset().top;
-		
+
 		$('html, body').animate({
 			scrollTop: blockOffset - 96
 		}, 2000);
 	})
-	
+
 }
 
 //Function that populate blocks in "Explore".
@@ -240,12 +240,12 @@ function populateExploreBlock() {
 			" Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
 		}
 	];
-	
+
 	$('.populate-block .loading .fa').addClass('spinning')
 	var block = $('#blog-grid');
 	var count = explore.length;
-	
-	
+
+
 	$.each(explore, function (key, value) {
 		block.append([
 			'<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
@@ -278,20 +278,20 @@ function manipulatingHeader() {
 	var header = $('#header');
 	var topBlockHeight = $('#hero').height();
 	var new_offset = 100;
-	
+
 	$(window).resize(function () {
 		topBlockHeight = $('#hero').height();
 	});
 	$(window).scroll(function () {
 		var scrollFromTop = $(document).scrollTop();
-		
+
 		if (scrollFromTop > new_offset) {
 			header.addClass('custom-visible')
 		} else {
 			header.removeClass('custom-visible')
 		}
 	})
-	
+
 }
 
 //loading data about tokens status
@@ -301,13 +301,13 @@ function loadTokens() {
 	$.ajax({
 		url: waves_server + "/api/balance",
 		success: function (result) {
-			
+
 			var total = parseInt(result.phases.presale.limit) / 100000000;
 			var sold = total - (result.balance / 100000000);
 			var cap = 10000000;
-			
+
 			$('.progress-active').attr('data-perc', (sold / cap) * 100);
-			
+
 			currentTokens.html(sold.formatMoney(0, '.', ','));
 			allTokens.html(cap.formatMoney(0, '.', ','));
 		}
@@ -323,7 +323,7 @@ function wizardInit() {
 			sfw.activeNext(true);
 		}
 	});
-	
+
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
 		$('html').addClass('lock')
@@ -331,16 +331,16 @@ function wizardInit() {
 		$('.popup-backdrop').removeClass('popup-hide')
 		$('.popup').removeClass('popup-hide')
 	})
-	
+
 	$("#faucet-retrieve-btn").on('click', function (e) {
 		e.preventDefault();
 		var $recipient = $('#faucet-recipient');
 		var address = $recipient.val();
-		
+
 		if (!address) {
 			return;
 		}
-		
+
 		$.ajax({
 			type: "POST",
 			url: waves_server + "/api/faucet",
@@ -354,7 +354,7 @@ function wizardInit() {
 					$('#faucet-success').hide();
 					return;
 				}
-				
+
 				$('#faucet-failed').hide();
 				$('#faucet-success').show();
 				$('#faucet-success-link').attr('href', 'https://wavesexplorer.com/tx/' + result.id);
@@ -409,20 +409,20 @@ Number.prototype.formatMoney = function (c, d, t) {
 
 function initSubscribeMailChimp() {
 	var $form = null;
-	
+
 	$('.newsletter-form').submit(function (e) {
 		e.preventDefault();
 		$form = $(this);
 	});
-	
+
 	$('.newsletter-form').ajaxChimp({
 		callback: function (resp) {
 			var $error = $form.find('.newsletter-error');
 			var $success = $form.find('.newsletter-success');
-			
+
 			$error.hide();
 			$success.hide();
-			
+
 			if (resp.result === 'error') {
 				$error.show().html(resp.msg);
 				$success.hide();
@@ -438,11 +438,11 @@ function initSubscribeMailChimp() {
 
 function initTimer() {
 	var time = $('.count-down');
-	
+
 	if (!time || !time.length) {
 		return;
 	}
-	
+
 	var endDate = new Date(time.data("end-date"));
 	time.countdown({
 		date: endDate,
@@ -468,7 +468,7 @@ function stripeCheckoutInit() {
 			// pass token.id and email to the server
 		}
 	});
-	
+
 	if ($('#checkout-presale').length) {
 		document.getElementById('checkout-presale').addEventListener('click', function (e) {
 			// Open Checkout with further options:
@@ -477,7 +477,7 @@ function stripeCheckoutInit() {
 				description: 'Purchase LTO tokens',
 				zipCode: false,
 				currency: 'usd',
-				
+
 				// this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
 				// based on <num_tokens> * $0.25
 				amount: 2000,
@@ -487,8 +487,8 @@ function stripeCheckoutInit() {
 			e.preventDefault();
 		});
 	}
-	
-	
+
+
 	// Close Checkout on page navigation:
 	window.addEventListener('popstate', function () {
 		handler.close();
