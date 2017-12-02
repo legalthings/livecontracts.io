@@ -1,11 +1,11 @@
 var chart = bb.generate({
 	"data": {
 		"columns": [
+			["Pre sale", 10000000],
 			["Company reserve", 10000000],
 			["Team and advisors", 18000000],
 			["Bounty program", 2000000],
-			["Public sale", 60000000],
-			["Pre sale", 10000000],
+			["Public sale", 60000000]
 		],
 		"type": "donut",
 		"onclick": function (d, i) {
@@ -17,11 +17,11 @@ var chart = bb.generate({
 	},
 	"color": {
 		"pattern": [
+			"#C424FD",
 			"#6e1b84",
 			"#9867cf",
 			"#9fbfff",
-			"#507dec",
-			"#C424FD"
+			"#507dec"
 		]
 	},
 	"legend": {
