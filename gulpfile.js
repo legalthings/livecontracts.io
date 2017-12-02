@@ -44,7 +44,7 @@ gulp.task('compress-css', function () {
 	])
 		.pipe(concatCss("compress.css"))
 		.pipe(gulp.dest('files/dist/'));
-});
+}); 
 
 gulp.task('compress-js', function () {
 	return gulp.src(
@@ -79,7 +79,7 @@ gulp.task('compress-js', function () {
 			'files/js/d3.js',
 			'files/js/custom.js',
 			'files/js/billboard.js',
-			// 'files/js/chart.js',
+			'files/js/chart.js',
 		])
 		.pipe(concat('compress.js'))
 		.pipe(gulp.dest('./files/dist'));
