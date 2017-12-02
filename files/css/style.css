@@ -9770,10 +9770,31 @@ html.lock {
 	opacity: 1;
 }
 
-#pie-legend {
+.pie-chart-section .column.one-half.last-col #pie svg {
+	/*width: 480px !important;*/
+}
+
+.pie-chart-section .column.one-half.last-col {
+	position: relative;
+}
+
+#pie-legend .legend-item {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+#pie-legend {
+	margin-top: 10px;
+}
+
+#pie-legend .color {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-right: 10px;
 }
 
 .bb-legend-item {
