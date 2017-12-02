@@ -44,7 +44,7 @@ gulp.task('compress-css', function () {
 	])
 		.pipe(concatCss("compress.css"))
 		.pipe(gulp.dest('files/dist/'));
-});
+}); 
 
 gulp.task('compress-js', function () {
 	return gulp.src(
