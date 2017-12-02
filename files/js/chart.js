@@ -23,9 +23,11 @@ var chart = bb.generate({
 		]
 	},
 	"legend": {
+		"show": false,
+		"position": "right",
 		"contents": {
 			"bindto": "#pie-legend",
-			"template": "<span style='color:#fff;padding:5px;background-color:{=COLOR}'>{=TITLE}</span>"
+			"template": "<span style='color:#fff;padding:5px;background-color:{=COLOR}'>{=TITLE} {=DATA}</span>"
 		}
 	},
 	"tooltip": {
