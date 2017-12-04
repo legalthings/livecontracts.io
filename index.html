@@ -2,1474 +2,1336 @@
 <html class="no-js" lang="en-US">
 
 <head>
+    <!-- DEFAULT META TAGS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- CSS -->
+    <!--<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css"-->
+    <!--media="all"-->
+    <!--/>-->
+    <!--<link rel="stylesheet" id="revolution-slider-layer-css" href="files/revolution/css/layers.css" type="text/css"-->
+    <!--media="all"-->
+    <!--/>-->
+    <!--<link rel="stylesheet" id="revolution-slider-nav-css" href="files/revolution/css/navigation.css" type="text/css"-->
+    <!--media="all"-->
+    <!--/>-->
+    <!--<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>-->
+    <!--<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>-->
+    <!-- Step Form Wizard plugin -->
+    <!--<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">-->
+    <!-- nicer scroll in steps -->
+    <!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
+    <link rel="stylesheet" href="files/dist/compress.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <!-- DOCUMENT TITLE -->
+    <title>LegalThings One &middot; Platform for Live Contracts</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
 
-	<!-- DEFAULT META TAGS -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
 
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
-
-	<!-- CSS -->
-	<!--<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css"-->
-	<!--media="all"-->
-	<!--/>-->
-	<!--<link rel="stylesheet" id="revolution-slider-layer-css" href="files/revolution/css/layers.css" type="text/css"-->
-	<!--media="all"-->
-	<!--/>-->
-	<!--<link rel="stylesheet" id="revolution-slider-nav-css" href="files/revolution/css/navigation.css" type="text/css"-->
-	<!--media="all"-->
-	<!--/>-->
-	<!--<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>-->
-	<!--<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>-->
-
-
-	<!-- Step Form Wizard plugin -->
-	<!--<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">-->
-
-	<!-- nicer scroll in steps -->
-	<!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
-	<link rel="stylesheet" href="files/dist/compress.css">
-	<!-- FAVICON -->
-	<link rel="shortcut icon" href="img/favicon.png"/>
-
-	<!-- DOCUMENT TITLE -->
-	<title>LegalThings One &middot; Platform for Live Contracts</title>
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-
-		gtag('js', new Date());
-		gtag('config', 'UA-62115237-2');
-	</script>
-
+    gtag('js', new Date());
+    gtag('config', 'UA-62115237-2');
+    </script>
 </head>
 
 <body>
-<!-- PAGE CONTENT -->
-<div id="page-content">
-
-	<!-- HEADER -->
-	<header id="header" class="header-bordered header-transparent transparent-light">
-		<div class="header-inner clearfix">
-
-			<!--LOGO-->
-			<div id="logo" class="left-float">
-				<a href="index.html">
-					<img id="scroll-logo" src="img/logo/icon-purple.png"
-					     srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
-					<img id="dark-logo" src="img/logo/icon-dark-purple.png"
-					     srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
-					     alt="Logo Dark">
-					<img id="light-logo" src="img/logo/icon-white.png"
-					     srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
-				</a>
-			</div>
-
-			<!-- MAIN NAVIGATION -->
-			<div id="menu" class="right-float clearfix">
-				<a href="#" class="responsive-nav-toggle">
-					<span class="hamburger"></span>
-				</a>
-				<div class="menu-inner">
-					<nav id="main-nav">
-						<ul>
-							<li class="">
-								<a href="#discover" class="js-scrollToBlock">Discover</a>
-							</li>
-							<li class="">
-								<a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
-							</li>
-							<li class="">
-								<a href="#lto-presale" class="js-scrollToBlock">Join the pre-sale</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<!-- END .menu-inner -->
-			</div>
-			<!-- END #menu -->
-		</div>
-		<!-- END .header-inner -->
-	</header>
-	<!-- HERO  -->
-	<section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
-
-		<div id="page-title" class="wrapper align-left">
-			<h1>LegalThings One</h1>
-			<h3 class="subtitle-1">
-				A fair legal system for everyone
-			</h3>
-			<div class="spacer-small"></div>
-			<div class="icon-box">
-				<div class="icon-box-icon">
-					<i class="ion ion-5x ion-ribbon-b"></i>
-				</div>
-				<div class="icon-box-content">
-					<h5 class="">Winner of the Blockathon by the</h5>
-					<h5 class="">Dutch Ministry of Justice and Security</h5>
-				</div>
-			</div>
-			<div class="spacer-small"></div>
-			<div class="spacer-small"></div>
-
-			<p class="hero__buttons">
-				<a href="#discover" class="js-scrollToBlock sr-button button-1 button-icon-text button-medium circled">
-					<i class="fa fa-chevron-down"></i>
-					Discover
-				</a>
-				<a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-					Demo
-				</a>
-				<a href="#lto-presale" class="sr-button button-1  button-medium circled js-scrollToBlock">
-					Pre-sale
-				</a>
-			</p>
-
-			<div class="count-down-wrap" style="width: 540px; margin-top: 50px;">
-				<h4 style="text-align: center">Pre-sale starts in</h4>
-				<div class="count-down p-t-b-15" data-end-date="Dec 6, 2017 00:00:00"></div>
-			</div>
-		</div>
-		<!-- END #page-title -->
-
-	</section>
-	<!-- HERO -->
-
-	<!-- PAGEBODY -->
-	<section id="page-body">
-
-		<div>
-			<!--<div class="digitaze-block">-->
-			<!--<div class="spacer-big"></div>-->
-			<!--<div class="wrapper">-->
-
-			<!--<h2 class="align-center">-->
-			<!--<strong>Digitize any agreement as finite state machine</strong>-->
-			<!--</h2>-->
-			<!--<p class="subtitle-1 align-center">-->
-			<!--A-->
-			<!--<strong>Live Contract</strong> is an agreement that is formalized as Finite State Machine ("FSM"). We-->
-			<!--believe this-->
-			<!--method is superior to formalizing an agreement in a natural language (-->
-			<!--<em>paper contracts</em>) or in a programming language (-->
-			<!--<em>smart contracts-->
-			<!--</em>). An FSM may be represented as a simple flowchart. This makes it easily-->
-			<!--<strong>understandable by both humans and computers</strong>. Using Live Contracts is great for-->
-			<!--<strong>organizations and governments</strong>, as it allows automate procedures, simplify communication and-->
-			<!--reduce-->
-			<!--costs. It's also great for-->
-			<!--<strong>consumers and citizens</strong> as it makes them self-reliant, rather than having to choose between-->
-			<!--relying-->
-			<!--on lawyers or blindly trusting organizations and governments.-->
-			<!--</p>-->
-			<!--<p class="align-center">-->
-			<!--<a href="https://medium.com/@livecontracts/live-contracts-bringing-justice-through-blockchain-b06696386cf4"-->
-			<!--target="_blank"-->
-			<!--class="sr-button button-medium read-more-button button-1 circled">-->
-			<!--Read more-->
-			<!--</a>-->
-			<!--</p>-->
-			<!--</div>-->
-			<!--<div class="spacer-big"></div>-->
-
-			<!--</div>-->
-			<div class="main-ThreeColumnsBlock">
-				<div class="column-section wrapper clearfix">
-					<div class="column one-third testimonial">
-						<div class="testimonial-image"><img src="img/independence.png" alt="Independence"></div>
-						<h5 class="testimonial-name">Independence</h5>
-						<div class="testimonial-content">
-							We enable people to participate in the legal system without the need to rely on lawyers or blindly
-							trusting organizations and governments.
-						</div>
-					</div>
-					<div class="column one-third testimonial">
-						<div class="testimonial-image"><img src="img/efficiency.png" alt="Efficiency"></div>
-						<h5 class="testimonial-name">Efficiency</h5>
-						<div class="testimonial-content">
-							Live Contracts allow automation of agreements and laws, without giving full control to the machines.
-						</div>
-					</div>
-					<div class="column one-third last-col testimonial">
-						<div class="testimonial-image"><img src="img/mitigating-fraud.png" alt="Mitigating fraud"></div>
-						<h5 class="testimonial-name">Mitigating fraud</h5>
-						<div class="testimonial-content">
-							By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing
-							bureaucracy.
-						</div>
-					</div> <!-- END .column-section -->
-				</div>
-			</div>
-
-
-			<div class="spacer-medium"></div>
-
-			<div class="wrapper" id="discover">
-				<h2 class="align-center">
-					<strong>Discover LegalThings One</strong>
-				</h2>
-			</div>
-			<!-- END .fullwidth-section -->
-
-			<div class="spacer-small"></div>
-
-			<div class="fullwidth-content populate-block wrapper align-center">
-				<!--<div class="loading">-->
-				<!--<i class="fa fa-cog" aria-hidden="true"></i>-->
-				<!--</div>-->
-				<div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
-					<div class="isotope-item blog-item">
-						<div class="blog-media">
-							<a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-								<img src="./img/explore/contract-as-automaton.png">
-							</a>
-						</div>
-						<div class="blog-desc align-center">
-							<div class="blog-headline">
-								<h5 class="post-name">
-									<a href="./documents/contract-as-automaton.pdf" target="_blank">
-										<strong>Contract as Automaton</strong>
-									</a>
-								</h5>
-							</div>
-							<p>
-								We show that the fundamental legal structure of a well-written financial contract follows a
-								statetransition logic that can be formalized mathematically as a finite-state machine (also known as a
-								finitestate automaton). <em>By Mark D. Flood and Oliver R. Goodenough</em>
-							</p>
-						</div>
-					</div>
-					<div class="isotope-item blog-item">
-						<div class="blog-media">
-							<a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
-							   target="_blank" class="text-light blog-image">
-								<img src="./img/power-to-the-people.jpg">
-							</a>
-						</div>
-						<div class="blog-desc align-center">
-							<div class="blog-headline">
-								<h5 class="post-name">
-									<a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
-									   target="_blank">
-										<strong>Live Contracts — What’s all the fuss about?</strong>
-									</a>
-								</h5>
-							</div>
-							<p>
-								Picture this. A contract or law visualized in such a way that it is understandable for humans and
-								computers. Not only the rules that you are agreeing upon in the contract, but also the consequences
-								behind those rules. With our solution Live Contracts, we enable equality of rights for all parties
-								involved.
-							</p>
-							<div class="spacer-medium"></div>
-							<a href="https://medium.com/legalthingsone" class="sr-button button-1  button-medium circled">
-								More articles
-							</a>
-						</div>
-					</div>
-					<div class="isotope-item blog-item">
-						<div class="blog-media">
-							<a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
-							   target="_blank" class="text-light blog-image">
-								<img src="./img/explore/livecontracts-at-codex.png">
-							</a>
-						</div>
-						<div class="blog-desc align-center">
-							<div class="blog-headline">
-								<h5 class="post-name">
-									<a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
-									   target="_blank">
-										<strong>Introducing Live Contracts @ Stanford CodeX</strong>
-									</a>
-								</h5>
-							</div>
-							<p>
-								A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live
-								Contracts and stores information in a provable, immutable way on a public decentralized storage.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-<!-- END .wrapper -->
-
-<!--<div class="spacer-small"></div>-->
-
-<div class="spacer-small"></div>
-<div class="fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">
-	<div class="fullwidth-content wrapper-small align-center quotes-element">
-		<div class="nav-light" data-dots="true">
-			<div class="flex-row">
-				<blockquote class="quote first-quote">
-					He who controls the past controls the future. He who controls the present controls the past.
-				</blockquote>
-				<blockquote class="quote second-quote">
-					Law is on the side of those with the deepest pockets and with friends in the highest places.
-				</blockquote>
-				<blockquote class="quote third-quote">
-					Most people think bureaucracy is a bad thing, but in fact bureaucracy is our best defence against fraud and
-					favoritism.
-				</blockquote>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END .fullwidth-section -->
-
-<div class="spacer-medium"></div>
-
-<div class="wrapper" id="team">
-
-	<h2 class="align-center">
-		<strong>Meet the Team</strong>
-	</h2>
-	<div class="spacer-medium"></div>
-	<div class="column-section clearfix">
-		<div class="column one-third team-member align-center">
-			<a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-				<img src="img/team/arnold-daniels.png" alt="Arnold Daniels - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Arnold Daniels</strong>
-				</h5>
-				<h6 class="subtitle-2">Founder &amp; Software Architect</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/jasny" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third team-member align-center">
-			<a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-				<img src="img/team/rick-schmitz.png" alt="Rick Schmitz - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Rick Schmitz</strong>
-				</h5>
-				<h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third last-col team-member align-center">
-			<a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-				<img src="img/team/martijn-migchelsen.png" alt="Martijn Migchelsen - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Martijn Migchelsen</strong>
-				</h5>
-				<h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="column-section clearfix">
-		<div class="column one-third team-member align-center">
-			<a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-				<img src="img/team/sven-stam.png" alt="Sven Stam - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Sven Stam</strong>
-				</h5>
-				<h6 class="subtitle-2">CTO</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/sven4ask" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third team-member align-center">
-			<div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-				<img src="img/team/moesjarraf-jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
-			</div>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Moesjarraf Jahangier</strong>
-				</h5>
-				<h6 class="subtitle-2">Full-stack Developer</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/moesjarraf" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third last-col team-member align-center">
-			<a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-				<img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Diederick Cardon</strong>
-				</h5>
-				<h6 class="subtitle-2">Legal Expert</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="column-section clearfix">
-		<div class="column one-third team-member align-center">
-			<a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
-				<img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Yevhen Horbachov</strong>
-				</h5>
-				<h6 class="subtitle-2">Frontend Developer</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/KillaBee1985" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third team-member align-center">
-			<a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-				<img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Martijn Broersma</strong>
-				</h5>
-				<h6 class="subtitle-2">Head of Operations</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="column one-third last-col team-member align-center">
-			<a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-				<img src="img/team/sarfaraaz-jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
-			</a>
-			<div class="team-content">
-				<h5 class="team-name uppercase">
-					<strong>Sarfaraaz Jahangier</strong>
-				</h5>
-				<h6 class="subtitle-2">Developer</h6>
-				<ul class="socialmedia-widget hover-fade-1">
-					<li class="linkedin">
-						<a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
-					</li>
-					<li class="github">
-						<a href="https://github.com/Sarfaraaz" target="_blank"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- END .wrapper -->
-
-<div class="spacer-big"></div>
-
-<div class="custom-wrap timeline-block" id="timeline">
-	<!--<h2 class="align-center title">-->
-	<!--Timeline-->
-	<!--</h2>-->
-	<div id="timeline-background"></div>
-	<div class="timeline-container" id="timeline-1">
-		<div class="timeline-header">
-			<h2 class="align-center">
-				<strong>Timeline</strong>
-			</h2>
-			<h3 class="timeline-header__subtitle">Past, present and future</h3>
-		</div>
-		<div class="timeline">
-			<div class="timeline-item" data-text="Launch of LegalThings">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/start-legalthings.jpg" alt="The launch &mdash; with salmon and champaign"/>
-					<h2 class="timeline__content-title">May 2014</h2>
-					<p class="timeline__content-desc">
-						Started in 2014 as platform to create, share and sign contracts in a digital way. After the success of
-						our first company FIRM24.com, we believed that DTM (Document Transaction Management) would be the next
-						big thing after ERP and CRM-systems.
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="LegalThings v1.0">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/legalthings-v1.jpg" alt="Pushing the last commits while driving to the client"/>
-					<h2 class="timeline__content-title">May 2015</h2>
-					<p class="timeline__content-desc">
-						We released the first full version of the LegalThings platform. This version included the document and
-						form builder, a document management system, advanced user and permission managment and signing.<br><br>
-						<em>Pushing the last commits while driving to our first client.</em>
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="Introduction of LegalFlow">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/legalflow.jpg" alt="Explaining how a process can be defined as Finite State Machine"/>
-					<h2 class="timeline__content-title">Jan 2016</h2>
-					<p class="timeline__content-desc">
-						For FIRM24 we created software to run the procedures behind an incorporation. Other customers were also
-						interested in these digitized procedures. We did a small pivot, now focusing on digitizing the
-						contracts as finite state machine, rather than just signing.
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="Use of Bitcoin blockchain">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/bitcoin.jpg" alt="Looking at a hash"/>
-					<h2 class="timeline__content-title">Sep 2016</h2>
-					<p class="timeline__content-desc">
-						We explored methods of providing proof of signed documents. Other parties relied on trust and
-						certifications, we wanted a better way. We started using the Bitcoin blockchain for proof of existence.
-						In this way, we silently introduced the blockchain with hundreds of businesses.
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="Proof of concept on Ethereum">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/ethereum.jpg" alt="Working on registering states on Ethereum"/>
-					<h2 class="timeline__content-title">May 2017</h2>
-					<p class="timeline__content-desc">
-						We experimented with Ethereum Smart Contracts. We found out that it could only be used for
-						self-enforcing
-						agreements. Inherent constraints make them unusable for legally binding contracts.<br>
-						Instead, we found a much better solution in using our FSM in combination with the blockchain.
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="Winner hackaton Ministry of Justice">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/winner-blockaton.jpg" alt="Team with Dutch Minister of Justice, Stef Blok"/>
-					<h2 class="timeline__content-title">Sep 2017</h2>
-					<p class="timeline__content-desc">
-						During the blockchain hackaton organized by the Dutch ministry of Justice, we
-						demonstrated that a whole law can be digitized as FSM and be stored on the blockchain. This won us the
-						first prize, which included the assigned to create the first digitized Dutch law on the blockchain.
-					</p>
-				</div>
-			</div>
-			<div class="timeline-item" data-text="LTO pre-sale">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/coins.jpg"/>
-					<h2 class="timeline__content-title">6 Dec 2017</h2>
-					<p class="timeline__content-desc">
-						Our token pre-sale starts on the 6th of December. For 24 hours, the pre-sale is open only for members.
-						You can register to be whitelisted and participate in this members-only pre-sale. After the whitelist
-						pre-sale, we'll continue with a public pre-sale.
-					</p>
-				</div>
-			</div>
-
-			<div class="timeline-item" data-text="LTO beta platform">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/beta-platform.jpg"/>
-					<h2 class="timeline__content-title">Dec 2017</h2>
-					<p class="timeline__content-desc">
-						We'll launch the LegalThings One platform as beta. All token holders will be able to use the platform.
-						New content, like (live) model contracts will be added over the coming months.
-					</p>
-				</div>
-			</div>
-
-			<div class="timeline-item" data-text="LTO token sale">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/coins.jpg"/>
-					<h2 class="timeline__content-title">Mar 2018</h2>
-					<p class="timeline__content-desc">
-						All tokens represent the full capacity of the LegalThings One platform. During this sale we'll sell
-						licenses (represented by LTO tokens) for the platform.
-					</p>
-				</div>
-			</div>
-
-			<div class="timeline-item" data-text="Publication of open standards">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/opensource.jpg"/>
-					<h2 class="timeline__content-title">Apr 2018</h2>
-					<p class="timeline__content-desc">
-						We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run
-						Live Contracts will be available under the MIT license. This will allow third parties to create
-						applications to create and run Live Contracts, without relying on LegalThings One.
-					</p>
-				</div>
-			</div>
-
-			<div class="timeline-item" data-text="Start of test trials">
-				<div class="timeline__content">
-					<img class="timeline__img"
-					     src="img/timeline/testtrails.jpg"/>
-					<h2 class="timeline__content-title">2019</h2>
-					<p class="timeline__content-desc">
-						To set precedence of the legality of data stored in the blockchain, we'll initiate trials in several
-						countries. The following countries are candidates for these trials; the United Kingdom, the United
-						States, India, Russia and the Netherlands.
-					</p>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</div>
-
-<div class="column-section block-button__hover wrapper" id="customers">
-	<a class="sr-button button-medium button-1 circled"
-	   href="./customers.html">
-		See our customers
-	</a>
-
-	<div class="logo serving-companies text-dark wrapper">
-		<div class="spacer-medium"></div>
-
-		<div class="column-section no-left-margin wrapper clearfix">
-			<div class="column one-fourth">
-				<img src="img/logo_1.jpg" alt="social">
-			</div>
-			<div class="column one-fourth">
-				<img src="img/logo_2.png" alt="social">
-			</div>
-			<div class="column one-fourth">
-				<img src="img/logo_3.png" alt="social">
-			</div>
-			<div class="column one-fourth last-col">
-				<img class="greyscaled-image" src="img/logo_4.png" alt="social">
-			</div>
-		</div>
-		<div class="column-section no-left-margin wrapper clearfix">
-			<div class="column one-fourth">
-				<img src="img/logo_5.png" alt="social">
-			</div>
-			<div class="column one-fourth">
-				<img src="img/logo_6.png" alt="social">
-			</div>
-			<div class="column one-fourth">
-				<img src="img/logo_7.png" alt="social">
-			</div>
-			<div class="column one-fourth last-col">
-				<img src="img/logo_8.png" alt="social">
-			</div>
-		</div>
-
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-		     class="blur-svg">
-			<defs>
-				<filter id="blur-filter">
-					<feGaussianBlur stdDeviation="3"></feGaussianBlur>
-				</filter>
-			</defs>
-		</svg>
-
-		<div class="overlay"></div>
-
-		<div class="spacer-medium"></div>
-	</div>
-</div>
-
-
-<div class="pie-chart-section text-light blackBackgroundBlock" id="token-distribution">
-	<div class="spacer-medium"></div>
-	<div class="wrapper column-section">
-		<h2 class="align-center">
-			<strong>
-				Token distribution
-			</strong>
-		</h2>
-
-		<div class="spacer-small"></div>
-
-		<div class="column one-half">
-			<h3>LTO Token</h3>
-			<p>
-				The LTO token represents a license. Companies and governments need these tokens to use the platform and create,
-				run and interact with Live Contracts.
-			</p>
-			<p>
-				Token holders are able to use the platform and the network as long as they hold the tokens. The license is
-				transferable. LTO tokens may be resold to
-				any interrested party by any means.
-			</p>
-            <h5>Why are we releasing tokens for an existing platform?</h5>
-            <p>
-                We are convinced that Live Contracts can change the world for the better. To do so it needs mass scale
-                adoption. Tokenizing the license serves as insentive for early adopters that help us in making this a reality.
-            </p>
-            <p>
-                In the long term, we envision a self-sustaining crypto-economy, with ownerless data, build around open-source
-                software. Releasing this token is a first step towards that vision.
-            </p>
-			<p>
-				Please read the full description of <a
-					href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">LTO token and functionality</a>.
-			</p>
-		</div>
-		<div class="column one-half last-col">
-			<div id="pie"></div>
-			<div id="pie-legend">
-				<div class="legend-item">
-					<span class="color" style="background: #C424FD"></span>
-					Pre-sale : 10,000,000
-				</div>
-				<div class="legend-item">
-					<span class="color" style="background: #6e1b84"></span>
-					Company reserve : 10,000,000
-				</div>
-				<div class="legend-item">
-					<span class="color" style="background: #9867cf"></span>
-					Team and advisors : 18,000,000
-				</div>
-				<div class="legend-item">
-					<span class="color" style="background: #9fbfff"></span>
-					Bounty program : 2,000,000
-				</div>
-				<div class="legend-item">
-					<span class="color" style="background: #507dec"></span>
-					Public sale : 60,000,000
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="spacer-medium"></div>
-</div>
-
-<div class="spacer-big"></div>
-
-<h2 class="align-center" id="token-usage">
-	<strong>Token usage</strong>
+    <!-- PAGE CONTENT -->
+    <div id="page-content">
+        <!-- HEADER -->
+        <header id="header" class="header-bordered header-transparent transparent-light">
+            <div class="header-inner clearfix">
+                <!--LOGO-->
+                <div id="logo" class="left-float">
+                    <a href="index.html">
+                    <img id="scroll-logo" src="img/logo/icon-purple.png"
+                         srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
+                    <img id="dark-logo" src="img/logo/icon-dark-purple.png"
+                         srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
+                         alt="Logo Dark">
+                    <img id="light-logo" src="img/logo/icon-white.png"
+                         srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
+                </a>
+                </div>
+                <!-- MAIN NAVIGATION -->
+                <div id="menu" class="right-float clearfix">
+                    <a href="#" class="responsive-nav-toggle">
+                    <span class="hamburger"></span>
+                </a>
+                    <div class="menu-inner">
+                        <nav id="main-nav">
+                            <ul>
+                                <li class="">
+                                    <a href="#discover" class="js-scrollToBlock">Discover</a>
+                                </li>
+                                <li class="">
+                                    <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
+                                </li>
+                                <li class="">
+                                    <a href="#lto-presale" class="js-scrollToBlock">Join the pre-sale</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- END .menu-inner -->
+                </div>
+                <!-- END #menu -->
+            </div>
+            <!-- END .header-inner -->
+        </header>
+        <!-- HERO  -->
+        <section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
+            <div id="page-title" class="wrapper align-left">
+                <h1>LegalThings One</h1>
+                <h3 class="subtitle-1">
+                A fair legal system for everyone
+            </h3>
+                <div class="spacer-small"></div>
+                <div class="icon-box">
+                    <div class="icon-box-icon">
+                        <i class="ion ion-5x ion-ribbon-b"></i>
+                    </div>
+                    <div class="icon-box-content">
+                        <h5 class="">Winner of the Blockathon by the</h5>
+                        <h5 class="">Dutch Ministry of Justice and Security</h5>
+                    </div>
+                </div>
+                <div class="spacer-small"></div>
+                <div class="spacer-small"></div>
+                <p class="hero__buttons">
+                    <a href="#discover" class="js-scrollToBlock sr-button button-1 button-icon-text button-medium circled">
+                    <i class="fa fa-chevron-down"></i>
+                    Discover
+                </a>
+                    <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
+                    Demo
+                </a>
+                    <a href="#lto-presale" class="sr-button button-1  button-medium circled js-scrollToBlock">
+                    Pre-sale
+                </a>
+                </p>
+                <div class="count-down-wrap" style="width: 540px; margin-top: 50px;">
+                    <h4 style="text-align: center">Pre-sale starts in</h4>
+                    <div class="count-down p-t-b-15" data-end-date="Dec 6, 2017 00:00:00"></div>
+                </div>
+            </div>
+            <!-- END #page-title -->
+        </section>
+        <!-- HERO -->
+        <!-- PAGEBODY -->
+        <section id="page-body">
+            <div>
+                <!--<div class="digitaze-block">-->
+                <!--<div class="spacer-big"></div>-->
+                <!--<div class="wrapper">-->
+                <!--<h2 class="align-center">-->
+                <!--<strong>Digitize any agreement as finite state machine</strong>-->
+                <!--</h2>-->
+                <!--<p class="subtitle-1 align-center">-->
+                <!--A-->
+                <!--<strong>Live Contract</strong> is an agreement that is formalized as Finite State Machine ("FSM"). We-->
+                <!--believe this-->
+                <!--method is superior to formalizing an agreement in a natural language (-->
+                <!--<em>paper contracts</em>) or in a programming language (-->
+                <!--<em>smart contracts-->
+                <!--</em>). An FSM may be represented as a simple flowchart. This makes it easily-->
+                <!--<strong>understandable by both humans and computers</strong>. Using Live Contracts is great for-->
+                <!--<strong>organizations and governments</strong>, as it allows automate procedures, simplify communication and-->
+                <!--reduce-->
+                <!--costs. It's also great for-->
+                <!--<strong>consumers and citizens</strong> as it makes them self-reliant, rather than having to choose between-->
+                <!--relying-->
+                <!--on lawyers or blindly trusting organizations and governments.-->
+                <!--</p>-->
+                <!--<p class="align-center">-->
+                <!--<a href="https://medium.com/@livecontracts/live-contracts-bringing-justice-through-blockchain-b06696386cf4"-->
+                <!--target="_blank"-->
+                <!--class="sr-button button-medium read-more-button button-1 circled">-->
+                <!--Read more-->
+                <!--</a>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--<div class="spacer-big"></div>-->
+                <!--</div>-->
+                <div class="main-ThreeColumnsBlock">
+                    <div class="column-section wrapper clearfix">
+                        <div class="column one-third testimonial">
+                            <div class="testimonial-image"><img src="img/independence.png" alt="Independence"></div>
+                            <h5 class="testimonial-name">Independence</h5>
+                            <div class="testimonial-content">
+                                We enable people to participate in the legal system without the need to rely on lawyers or blindly trusting organizations and governments.
+                            </div>
+                            <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wishlistPopup">Join the pre-sale
+                            </a>
+                        </div>
+                        <div class="column one-third testimonial">
+                            <div class="testimonial-image"><img src="img/efficiency.png" alt="Efficiency"></div>
+                            <h5 class="testimonial-name">Efficiency</h5>
+                            <div class="testimonial-content">
+                                Live Contracts allow automation of agreements and laws, without giving full control to the machines.
+                            </div>
+                            <br/>
+                            <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wishlistPopup">Join the pre-sale
+                            </a>
+                        </div>
+                        <div class="column one-third last-col testimonial">
+                            <div class="testimonial-image"><img src="img/mitigating-fraud.png" alt="Mitigating fraud"></div>
+                            <h5 class="testimonial-name">Mitigating fraud</h5>
+                            <div class="testimonial-content">
+                                By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing bureaucracy.
+                            </div>
+                            <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wishlistPopup">Join the pre-sale
+                            </a>
+                        </div>
+                        <!-- END .column-section -->
+                    </div>
+                </div>
+                <div class="spacer-medium"></div>
+                <div class="wrapper" id="discover">
+                    <h2 class="align-center">
+                    <strong>Discover LegalThings One</strong>
+                </h2>
+                </div>
+                <!-- END .fullwidth-section -->
+                <div class="spacer-small"></div>
+                <div class="fullwidth-content populate-block wrapper align-center">
+                    <!--<div class="loading">-->
+                    <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
+                    <!--</div>-->
+                    <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
+                        <div class="isotope-item blog-item">
+                            <div class="blog-media">
+                                <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
+                                <img src="./img/explore/contract-as-automaton.png">
+                            </a>
+                            </div>
+                            <div class="blog-desc align-center">
+                                <div class="blog-headline">
+                                    <h5 class="post-name">
+                                    <a href="./documents/contract-as-automaton.pdf" target="_blank">
+                                        <strong>Contract as Automaton</strong>
+                                    </a>
+                                </h5>
+                                </div>
+                                <p>
+                                    We show that the fundamental legal structure of a well-written financial contract follows a statetransition logic that can be formalized mathematically as a finite-state machine (also known as a finitestate automaton). <em>By Mark D. Flood and Oliver R. Goodenough</em>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="isotope-item blog-item">
+                            <div class="blog-media">
+                                <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157" target="_blank" class="text-light blog-image">
+                                <img src="./img/power-to-the-people.jpg">
+                            </a>
+                            </div>
+                            <div class="blog-desc align-center">
+                                <div class="blog-headline">
+                                    <h5 class="post-name">
+                                    <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
+                                       target="_blank">
+                                        <strong>Live Contracts — What’s all the fuss about?</strong>
+                                    </a>
+                                </h5>
+                                </div>
+                                <p>
+                                    Picture this. A contract or law visualized in such a way that it is understandable for humans and computers. Not only the rules that you are agreeing upon in the contract, but also the consequences behind those rules. With our solution Live Contracts, we enable equality of rights for all parties involved.
+                                </p>
+                                <div class="spacer-medium"></div>
+                            </div>
+                        </div>
+                        <div class="isotope-item blog-item">
+                            <div class="blog-media">
+                                <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5" target="_blank" class="text-light blog-image">
+                                <img src="./img/explore/livecontracts-at-codex.png">
+                            </a>
+                            </div>
+                            <div class="blog-desc align-center">
+                                <div class="blog-headline">
+                                    <h5 class="post-name">
+                                    <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
+                                       target="_blank">
+                                        <strong>Introducing Live Contracts @ Stanford CodeX</strong>
+                                    </a>
+                                </h5>
+                                </div>
+                                <p>
+                                    A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://medium.com/legalthingsone" class="sr-button inline button-1 button-medium circled ">
+                                More articles
+                            </a>
+                    <a href="" class="sr-button inline button-1  button-medium circled js-open-wishlistPopup">Join the pre-sale</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END .wrapper -->
+    <!--<div class="spacer-small"></div>-->
+    <div class="spacer-small"></div>
+    <div class="fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">
+        <div class="fullwidth-content wrapper-small align-center quotes-element">
+            <div class="nav-light" data-dots="true">
+                <div class="flex-row">
+                    <blockquote class="quote first-quote">
+                        He who controls the past controls the future. He who controls the present controls the past.
+                    </blockquote>
+                    <blockquote class="quote second-quote">
+                        Law is on the side of those with the deepest pockets and with friends in the highest places.
+                    </blockquote>
+                    <blockquote class="quote third-quote">
+                        Most people think bureaucracy is a bad thing, but in fact bureaucracy is our best defence against fraud and favoritism.
+                    </blockquote>
+                </div>
+                <div class="spacer-medium"></div>
+                <a href="" class="sr-button button-1  button-medium circled js-open-wishlistPopup">Join the pre-sale</a>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-medium"></div>
+    <div class="wrapper">
+        <h2 class="align-center">
+        <strong>Meet the Team</strong>
+    </h2>
+        <div class="spacer-medium"></div>
+        <div class="column-section clearfix">
+            <div class="column one-third team-member align-center">
+                <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
+                <img src="img/team/arnold-daniels.png" alt="Arnold Daniels - LegalThings">
+            </a>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Arnold Daniels</strong>
+                </h5>
+                    <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/jasny" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column one-third team-member align-center">
+                <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
+                <img src="img/team/rick-schmitz.png" alt="Rick Schmitz - LegalThings">
+            </a>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Rick Schmitz</strong>
+                </h5>
+                    <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column one-third last-col team-member align-center">
+                <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
+                <img src="img/team/martijn-migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+            </a>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Martijn Migchelsen</strong>
+                </h5>
+                    <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="column-section clearfix">
+            <div class="column one-third team-member align-center">
+                <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
+                <img src="img/team/sven-stam.png" alt="Sven Stam - LegalThings">
+            </a>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Sven Stam</strong>
+                </h5>
+                    <h6 class="subtitle-2">CTO</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
+                        </li>
+                        <li class="github">
+                            <a href="https://github.com/sven4ask" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column one-third team-member align-center">
+                <div href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
+                    <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+                </div>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Peter van Leersum</strong>
+                </h5>
+                    <h6 class="subtitle-2">ADVISOR</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="link">
+                            <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="column one-third last-col team-member align-center">
+                <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
+                <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+            </a>
+                <div class="team-content">
+                    <h5 class="team-name uppercase">
+                    <strong>Pim Volkers</strong>
+                </h5>
+                    <h6 class="subtitle-2">ADVISOR</h6>
+                    <ul class="socialmedia-widget hover-fade-1">
+                        <li class="linkedin">
+                            <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <div class="column-section clearfix">
+                <div class="column one-third team-member align-center">
+                    <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
+                        <img src="img/team/moesjarraf-jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+                    </div>
+                    <div class="team-content">
+                        <h5 class="team-name uppercase">
+                    <strong>Moesjarraf Jahangier</strong>
+                </h5>
+                        <h6 class="subtitle-2">Full-stack Developer</h6>
+                        <ul class="socialmedia-widget hover-fade-1">
+                            <li class="linkedin">
+                                <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
+                            </li>
+                            <li class="github">
+                                <a href="https://github.com/moesjarraf" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column one-third team-member align-center">
+                    <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
+                <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+            </a>
+                    <div class="team-content">
+                        <h5 class="team-name uppercase">
+                    <strong>Diederick Cardon</strong>
+                </h5>
+                        <h6 class="subtitle-2">Legal Expert</h6>
+                        <ul class="socialmedia-widget hover-fade-1">
+                            <li class="linkedin">
+                                <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column one-third last-col team-member align-center">
+                    <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
+                <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
+            </a>
+                    <div class="team-content">
+                        <h5 class="team-name uppercase">
+                    <strong>Yevhen Horbachov</strong>
+                </h5>
+                        <h6 class="subtitle-2">Frontend Developer</h6>
+                        <ul class="socialmedia-widget hover-fade-1">
+                            <li class="linkedin">
+                                <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
+                            </li>
+                            <li class="github">
+                                <a href="https://github.com/KillaBee1985" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="column-section clearfix">
+                <div class="column one-third team-member align-center">
+                    <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+                <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
+            </a>
+                    <div class="team-content">
+                        <h5 class="team-name uppercase">
+                    <strong>Martijn Broersma</strong>
+                </h5>
+                        <h6 class="subtitle-2">Head of Operations</h6>
+                        <ul class="socialmedia-widget hover-fade-1">
+                            <li class="linkedin">
+                                <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column one-third last-col team-member align-center">
+                    <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
+                <img src="img/team/sarfaraaz-jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+            </a>
+                    <div class="team-content">
+                        <h5 class="team-name uppercase">
+                    <strong>Sarfaraaz Jahangier</strong>
+                </h5>
+                        <h6 class="subtitle-2">Developer</h6>
+                        <ul class="socialmedia-widget hover-fade-1">
+                            <li class="linkedin">
+                                <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
+                            </li>
+                            <li class="github">
+                                <a href="https://github.com/Sarfaraaz" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-medium"></div>
+        <a id="show-more" class="sr-button float button-9  button-medium circled">More team members</a>
+        <div class="spacer-medium"></div>
+        <a href="#lto-presale" class="sr-button float button-1  button-medium circled js-open-wishlistPopup">Join the pre-sale</a>
+    </div>
+    <!-- END .wrapper -->
+    <div class="spacer-big"></div>
+    <div class="custom-wrap timeline-block">
+        <!--<h2 class="align-center title">-->
+        <!--Timeline-->
+        <!--</h2>-->
+        <div id="timeline-background"></div>
+        <div class="timeline-container" id="timeline-1">
+            <div class="timeline-header">
+                <h2 class="align-center">
+                <strong>Timeline</strong>
+            </h2>
+                <h3 class="timeline-header__subtitle">Past, present and future</h3>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-text="Launch of LegalThings">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/start-legalthings.jpg" alt="The launch &mdash; with salmon and champaign" />
+                        <h2 class="timeline__content-title">May 2014</h2>
+                        <p class="timeline__content-desc">
+                            Started in 2014 as platform to create, share and sign contracts in a digital way. After the success of our first company FIRM24.com, we believed that DTM (Document Transaction Management) would be the next big thing after ERP and CRM-systems.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="LegalThings v1.0">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/legalthings-v1.jpg" alt="Pushing the last commits while driving to the client" />
+                        <h2 class="timeline__content-title">May 2015</h2>
+                        <p class="timeline__content-desc">
+                            We released the first full version of the LegalThings platform. This version included the document and form builder, a document management system, advanced user and permission managment and signing.
+                            <br>
+                            <br>
+                            <em>Pushing the last commits while driving to our first client.</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Introduction of LegalFlow">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/legalflow.jpg" alt="Explaining how a process can be defined as Finite State Machine" />
+                        <h2 class="timeline__content-title">Jan 2016</h2>
+                        <p class="timeline__content-desc">
+                            For FIRM24 we created software to run the procedures behind an incorporation. Other customers were also interested in these digitized procedures. We did a small pivot, now focusing on digitizing the contracts as finite state machine, rather than just signing.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Use of Bitcoin blockchain">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/bitcoin.jpg" alt="Looking at a hash" />
+                        <h2 class="timeline__content-title">Sep 2016</h2>
+                        <p class="timeline__content-desc">
+                            We explored methods of providing proof of signed documents. Other parties relied on trust and certifications, we wanted a better way. We started using the Bitcoin blockchain for proof of existence. In this way, we silently introduced the blockchain with hundreds of businesses.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Proof of concept on Ethereum">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/ethereum.jpg" alt="Working on registering states on Ethereum" />
+                        <h2 class="timeline__content-title">May 2017</h2>
+                        <p class="timeline__content-desc">
+                            We experimented with Ethereum Smart Contracts. We found out that it could only be used for self-enforcing agreements. Inherent constraints make them unusable for legally binding contracts.
+                            <br> Instead, we found a much better solution in using our FSM in combination with the blockchain.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Winner hackaton Ministry of Justice">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/winner-blockaton.jpg" alt="Team with Dutch Minister of Justice, Stef Blok" />
+                        <h2 class="timeline__content-title">Sep 2017</h2>
+                        <p class="timeline__content-desc">
+                            During the blockchain hackaton organized by the Dutch ministry of Justice, we demonstrated that a whole law can be digitized as FSM and be stored on the blockchain. This won us the first prize, which included the assigned to create the first digitized Dutch law on the blockchain.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="LTO pre-sale">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/coins.jpg" />
+                        <h2 class="timeline__content-title">6 Dec 2017</h2>
+                        <p class="timeline__content-desc">
+                            Our token pre-sale starts on the 6th of December. For 24 hours, the pre-sale is open only for members. You can register to be whitelisted and participate in this members-only pre-sale. After the whitelist pre-sale, we'll continue with a public pre-sale.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="LTO beta platform">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/beta-platform.jpg" />
+                        <h2 class="timeline__content-title">Dec 2017</h2>
+                        <p class="timeline__content-desc">
+                            We'll launch the LegalThings One platform as beta. All token holders will be able to use the platform. New content, like (live) model contracts will be added over the coming months.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="LTO token sale">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/coins.jpg" />
+                        <h2 class="timeline__content-title">Mar 2018</h2>
+                        <p class="timeline__content-desc">
+                            All tokens represent the full capacity of the LegalThings One platform. During this sale we'll sell licenses (represented by LTO tokens) for the platform.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Publication of open standards">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/opensource.jpg" />
+                        <h2 class="timeline__content-title">Apr 2018</h2>
+                        <p class="timeline__content-desc">
+                            We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run Live Contracts will be available under the MIT license. This will allow third parties to create applications to create and run Live Contracts, without relying on LegalThings One.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-text="Start of test trials">
+                    <div class="timeline__content">
+                        <img class="timeline__img" src="img/timeline/testtrails.jpg" />
+                        <h2 class="timeline__content-title">2019</h2>
+                        <p class="timeline__content-desc">
+                            To set precedence of the legality of data stored in the blockchain, we'll initiate trials in several countries. The following countries are candidates for these trials; the United Kingdom, the United States, India, Russia and the Netherlands.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-section block-button__hover wrapper">
+        <a class="sr-button button-medium button-1 circled" href="./customers.html">
+        See our customers
+    </a>
+        <div class="logo serving-companies text-dark wrapper">
+            <div class="spacer-medium"></div>
+            <div class="column-section no-left-margin wrapper clearfix">
+                <div class="column one-fourth">
+                    <img src="img/logo_1.jpg" alt="social">
+                </div>
+                <div class="column one-fourth">
+                    <img src="img/logo_2.png" alt="social">
+                </div>
+                <div class="column one-fourth">
+                    <img src="img/logo_3.png" alt="social">
+                </div>
+                <div class="column one-fourth last-col">
+                    <img class="greyscaled-image" src="img/logo_4.png" alt="social">
+                </div>
+            </div>
+            <div class="column-section no-left-margin wrapper clearfix">
+                <div class="column one-fourth">
+                    <img src="img/logo_5.png" alt="social">
+                </div>
+                <div class="column one-fourth">
+                    <img src="img/logo_6.png" alt="social">
+                </div>
+                <div class="column one-fourth">
+                    <img src="img/logo_7.png" alt="social">
+                </div>
+                <div class="column one-fourth last-col">
+                    <img src="img/logo_8.png" alt="social">
+                </div>
+            </div>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg">
+                <defs>
+                    <filter id="blur-filter">
+                        <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                    </filter>
+                </defs>
+            </svg>
+            <div class="overlay"></div>
+            <div class="spacer-medium"></div>
+        </div>
+    </div>
+    <div class="pie-chart-section text-light blackBackgroundBlock">
+        <div class="spacer-medium"></div>
+        <div class="wrapper column-section">
+            <h2 class="align-center">
+            <strong>
+                Token distribution
+            </strong>
+        </h2>
+            <div class="spacer-small"></div>
+            <div class="column one-half">
+                <h3>LTO Token</h3>
+                <p>
+                    The LTO token represents a license. Companies and governments need these tokens to use the platform and create, run and interact with Live Contracts.
+                </p>
+                <p>
+                    Token holders are able to use the platform and the network as long as they hold the tokens. The license is transferable. LTO tokens may be resold to any interrested party by any means.
+                </p>
+                <p>
+                    Please read the full description of <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">LTO token and functionality</a>.
+                </p>
+                <div class="spacer-medium"></div>
+            </div>
+            <div class="column one-half last-col">
+                <div id="pie"></div>
+                <div id="pie-legend">
+                    <div class="legend-item">
+                        <span class="color" style="background: #C424FD"></span> Pre-sale : 10,000,000
+                    </div>
+                    <div class="legend-item">
+                        <span class="color" style="background: #6e1b84"></span> Company reserve : 10,000,000
+                    </div>
+                    <div class="legend-item">
+                        <span class="color" style="background: #9867cf"></span> Team and advisors : 18,000,000
+                    </div>
+                    <div class="legend-item">
+                        <span class="color" style="background: #9fbfff"></span> Bounty program : 2,000,000
+                    </div>
+                    <div class="legend-item">
+                        <span class="color" style="background: #507dec"></span> Public sale : 60,000,000
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer-medium"></div>
+    </div>
+    <div class="spacer-big"></div>
+    <h2 class="align-center">
+    <strong>Token usage</strong>
 </h2>
-<div class="spacer-small"></div>
-<div class="wrapper">
-	<div class="column one-half">
-		<table class="token-usage-table">
-			<thead>
-			<tr>
-				<th>Service</th>
-				<th>Required licence</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>
-					<i class="fa fa-id-card-o"></i>
-					<div class="tooltip">
-						User
-						<span class="tooltiptext">
-							1 user on a LegalThings One environment is allowed per 500 LTO
-						</span>
-					</div>
-				</td>
-				<td>500 LTO</td>
-			</tr>
-			<tr>
-				<td>
-					<i class="fa fa-play-circle"></i>
-					<div class="tooltip">
-						Create Live Contracts (5 per week)
-						<span class="tooltiptext">
-							Create up to 5 Live Contracts per week per 1000 LTO
-						</span>
-					</div>
-				</td>
-				<td>1,000 LTO</td>
-			</tr>
-			<tr>
-				<td>
-					<i class="fa fa-retweet"></i>
-					<div class="tooltip">
-						Live Contract interactions (250 per week)
-						<span class="tooltiptext">
-							Perform up to 250 interactions with Live Contracts per week per 1000 LTO
-						</span>
-					</div>
-				</td>
-				<td>1,000 LTO</td>
-			</tr>
-			<tr>
-				<td>
-					<i class="fa fa-file-text"></i>
-					<div class="tooltip">
-						Live Contracts pre-package
-						<span class="tooltiptext">
-							Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
-						</span>
-					</div>
-				</td>
-				<td>10,000 LTO</td>
-			</tr>
-			<tr>
-				<td>
-					<i class="fa fa-building"></i>
-					<div class="tooltip">
-						Full node with whitelabled environment
-						<span class="tooltiptext">
-							Run a single full node with a whitelabled LegalThings One environment
-						</span>
-					</div>
-				</td>
-				<td>100,000 LTO</td>
-			</tr>
-			</tbody>
-		</table>
-	</div>
-	<div class="column one-half last-col">
-		<strong>Token distribution</strong><br>
-		<p>
-			Tokens are immediately available upon purchase. Excess tokens may be sold on Waves Decentralized Exchange (DEX).
-		</p>
-		<strong>License pricing</strong><br>
-		<p>
-			License prices are based on fair market value. The supply LTO tokens is fixed and represents 100% of the capacity
-			of LegalThings One. The capacity will scale up with the demand.
-			As the capacity grows, less tokens are required for the same usage.
-		</p>
-		<p>
-			<strong>Example:</strong><br>
-			Acme Inc buys 100,000 LTO to run it’s own whitelabled environment. When the popularity of the platform grows, the
-			LTO price increases. LegalThings One will be stabalize the price for the service by decreasing the required number
-			of tokens needed to run a service. In this example the price for a whitelabled environment is decreased to 80,000
-			LTO. In this case Acme Inc can sell its excess 20,000 LTO tokens and can still run its platform at the same
-			capacity.
-		</p>
-	</div>
-</div>
+    <div class="spacer-small"></div>
+    <div class="wrapper">
+        <div class="column one-half">
+            <table class="token-usage-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Required licence</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <i class="fa fa-id-card-o"></i>
+                            <div class="tooltip">
+                                User
+                                <span class="tooltiptext">
+                            1 user on a LegalThings One environment is allowed per 500 LTO
+                        </span>
+                            </div>
+                        </td>
+                        <td>500 LTO</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-play-circle"></i>
+                            <div class="tooltip">
+                                Create Live Contracts (5 per week)
+                                <span class="tooltiptext">
+                            Create and run up to 5 Live Contracts per week per 1000 LTO
+                        </span>
+                            </div>
+                        </td>
+                        <td>1000 LTO</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-retweet"></i>
+                            <div class="tooltip">
+                                Live Contract interactions (250 per week)
+                                <span class="tooltiptext">
+                            Perform up to 250 interactions with Live Contracts per week per 1000 LTO
+                        </span>
+                            </div>
+                        </td>
+                        <td>1000 LTO</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-file-text"></i>
+                            <div class="tooltip">
+                                Live Contracts pre-package
+                                <span class="tooltiptext">
+                            Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
+                        </span>
+                            </div>
+                        </td>
+                        <td>10,000 LTO</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <i class="fa fa-building"></i>
+                            <div class="tooltip">
+                                Full node with whitelabled environment
+                                <span class="tooltiptext">
+                            Run a single full node with a whitelabled LegalThings One environment
+                        </span>
+                            </div>
+                        </td>
+                        <td>100,000 LTO</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="column one-half last-col">
+            <strong>Token distribution</strong>
+            <p>
+                Tokens are immediately available upon purchase. Excess tokens may be sold on Waves Decentralized Exchange (DEX).
+            </p>
+            <br>
+            <strong>License pricing</strong>
+            <p>
+                License prices are based on fair market value. The supply LTO tokens is fixed and represents 100% of the capacity of LegalThings One. The capacity will scale up with the demand. As the capacity grows, less tokens are required for the same usage.
+            </p>
+            <br>
+            <strong>Example</strong> 
+            <p>
+                Acme Inc buys 100,000 LTO to run it’s own whitelabled environment. When the popularity of the platform grows, the LTO price increases. LegalThings One will be stabalize the price for the service by decreasing the required number of tokens needed to run a service. In this example the price for a whitelabled environment is decreased to 80,000 LTO. In this case Acme Inc can sell its excess 20,000 LTO tokens and can still run its platform at the same capacity.
+            </p>
+        </div>
+    </div>
+    <div class="spacer-medium"></div>
+    <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section" data-parallax-image="img/qubic-bg.jpg">
+        <div class="wrapper">
+            <div class="column-section fullwidth-content  adapt-height clearfix">
+                <div class="column one-third">
+                    <div class="isotope-item blog-item">
+                        <div class="blog-media align-center">
+                            <img src="img/logo/icon-white.png">
+                        </div>
+                        <div class="blog-desc align-center">
+                            <a href="#" class="sr-button button-medium js-open-wishlistPopup button-1 circled">
+                            Get whitelisted
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column two-third last-col" style="background: none; min-height: 635px;">
+                    <div class="col-content" style="margin-top: 0px;">
+                        <h2>
+                        <strong>LTO pre-sale</strong>
+                    </h2>
+                        <!--<div class="progress-bar-item big-bar">
+                        <div class="progress-bar">
+                            <div class="progress-active progress-bar__element" data-perc="">
+                                <span class="tooltip" style="">
+                                    <span id="current-tokens-sold">
 
-
-<div class="spacer-medium"></div>
-
-<div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section"
-     data-parallax-image="img/qubic-bg.jpg">
-	<div class="wrapper">
-
-		<div class="column-section fullwidth-content  adapt-height clearfix">
-			<div class="column one-third">
-				<div class="isotope-item blog-item">
-					<div class="blog-media align-center">
-						<img src="img/logo/icon-white.png">
-
-					</div>
-					<div class="blog-desc align-center">
-						<a href="#" class="sr-button button-medium js-open-wishlistPopup button-1 circled">
-							Get whitelisted
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="column two-third last-col" style="background: none; min-height: 635px;">
-				<div class="col-content" style="margin-top: 0px;">
-					<h2>
-						<strong>LTO pre-sale</strong>
-					</h2>
-
-					<!--<div class="progress-bar-item big-bar">
-						<div class="progress-bar">
-							<div class="progress-active progress-bar__element" data-perc="">
-								<span class="tooltip" style="">
-									<span id="current-tokens-sold">
-
-									</span> LTO sold
-								</span>
-							</div>
-						</div>
-						<h6 class="progress-name">
-							<span class="progress-start">
-								0
-							</span>
-							<span id="all-tokens" class="progress-end">
-								10,000
-							</span>
-						</h6>
-					</div>-->
-
-					<p>
-						<b>Price</b>: $0.25 / LTO
-						<br>
-						<b>Whitelist bonus</b>: 60% additional tokens
-						<br>
-						<b>Accepted currency</b>: USD, EUR, BTC, LTC and ETH
-						<br>
-						<b>Pre-sale starts</b>: December 6th 2017
-					</p>
-
-					<div class="hidden align-center">
-						<a href="#" class="sr-button button-medium js-open-wishlistPopup button-1 circled">
-							Get whitelisted
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="spacer-big"></div>
-
-<h2 class="align-center" id="social">
-	<strong>Social</strong>
+                                    </span> LTO sold
+                                </span>
+                            </div>
+                        </div>
+                        <h6 class="progress-name">
+                            <span class="progress-start">
+                                0
+                            </span>
+                            <span id="all-tokens" class="progress-end">
+                                10,000
+                            </span>
+                        </h6>
+                    </div>-->
+                        <p>
+                            <b>Price</b>: $0.25 / LTO
+                            <br>
+                            <b>Whitelist bonus</b>: 60% additional tokens
+                            <br>
+                            <b>Accepted currency</b>: USD, EUR, BTC, LTC and ETH
+                            <br>
+                            <b>Pre-sale starts</b>: December 6th 2017
+                        </p>
+                        <div class="hidden align-center">
+                            <a href="#" class="sr-button button-medium js-open-wishlistPopup button-1 circled">
+                            Get whitelisted
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="spacer-big"></div>
+    <h2 class="align-center">
+    <strong>Social</strong>
 </h2>
-<div class="column-section align-center customRowElements wrapper socialsBlock">
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="github">
-				<a href="https://github.com/legalthings" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="reddit">
-				<a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="linkedin">
-				<a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="twitter">
-				<a href="https://twitter.com/livecontracts" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="medium">
-				<a href="https://medium.com/legalthingsone" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="slack">
-				<a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ"
-				   target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-	<div class="column one-fifth">
-		<ul class="socialmedia-widget size-huge hover-fade-1">
-			<li class="telegram">
-				<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<div class="spacer-big"></div>
-
-
-<div id="register" class="blackBackgroundBlock subscribe-block">
-	<div class="spacer-big"></div>
-	<div class="wrapper align-center">
-		<h2>
-			<strong>Stay informed</strong>
-		</h2>
-		<div class="spacer-mini"></div>
-		<form class="newsletter-form" novalidate="true">
-			<input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Address">
-			<input type="submit" class="newsletter-submit" value="Sign Up">
-			<p class="newsletter-error"></p>
-			<p class="newsletter-success">
-				You have been successfully registered to join the tokensale.
-			</p>
-		</form>
-	</div>
-	<div class="spacer-big"></div>
-</div>
-
-<!--<div class="spacer-medium"></div>-->
-
-</section>
-<!-- PAGEBODY -->
-
-
-<!-- FOOTER -->
-<footer id="footer" class="footer-dark text-light">
-	<div class="wrapper">
-		<div class="copyright">
-			<small>(c) 2017 LegalThings</small>
-		</div>
-		<div class="footer-menu">
-			<!-- <a href="documents/terms-and-conditions.pdf" target="_blank">terms and conditions</a> -->
-		</div>
-	</div>
-
-</footer>
-<!-- FOOTER -->
-
-</div>
-<!-- END #page-content -->
-<!-- PAGE CONTENT -->
-
-<div class="popup js-wishlist-popup popup-hide">
-	<div class="overlay"></div>
-	<a href="#" class="popup__close">
-		<i class="ion ion-3x ion-close-round"></i>
-	</a>
-	<div class="popup__content">
-		<p>
-			As whitelisted member you'll receive an <strong>additional 60%</strong> during the pre-sale. Please sign up
-			to qualify. Membership will be assigned based on the order of registration.
-		</p>
-		<form class="newsletter-form" novalidate="true">
-			<input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Adress">
-			<input type="submit" class="newsletter-submit" value="Sign Up">
-			<p class="newsletter-error"></p>
-			<p class="newsletter-success">
-				You have been successfully registered to join the tokensale.
-			</p>
-		</form>
-	</div>
-</div>
-<div class="popup-container popup-hide">
-	<div class="popup-backdrop popup-hide"></div>
-	<div class="popup popup-wizard popup-hide">
-		<div class="overlay"></div>
-		<a href="#" class="popup__close">
-			<i class="ion ion-3x ion-close-round"></i>
-		</a>
-		<div class="popup__content">
-			<div id="wizard">
-				<fieldset>
-					<p>
-						The
-						<strong>LegalThings One token (LTO)</strong> is a license that grants you the right to use the LegalThings
-						One platform
-						and gives you access to copyrighted content (like legal templates). There are 100 million LTO, representing
-						100% of the available capacity of the LegalThings One platform. The amount of LTO you hold determines the
-						percentage
-						of capacity that will be awarded to you.
-					</p>
-
-					<p>
-						While the LegalThings One platform is in Alpha state*, the functionality of the platform is limited.
-						LegalThings allows everybody
-						access to the Alpha, whether they hold LTO or not. Once the platform reaches Beta state, platform capacity
-						will be
-						awarded exclusively to LTO holders.
-					</p>
-
-					<p>
-						During the pre-sale a total of 10 million LTO tokens are sold by LegalThings via the
-						<strong>Waves Decentralized Exchange</strong>. With the Waves DEX we've chosen to use a mature and tested
-						platform,
-						dedicated to trading crypto-tokens, rather than creating our own solution. This means you can
-						safely purchase LTO through this platform tokens, and they. will become available to you immediately.
-					</p>
-
-					<p>
-						Please make sure you read the
-						<a href="documents/terms-and-conditions.pdf" target="_blank">Terms & Conditions</a> for all the details.
-						<em>(Really, go and read it.)</em>
-					<p>
-						In the next steps, we'll guide you through the process of purchasing LTO. If you're already familiar with
-						the Waves
-						DEX, go ahead and skip this guide. The LTO token can be found under 'LegalThings One' with id
-						<code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
-					</p>
-
-					<p class="align-right">
-						<strong>&mdash; Team LegalThings One</strong>
-					</p>
-
-					<p class="small">
-						* LegalThings has an enterprise environment in production. This is similar to, but seperate from, the
-						LegalThings One platform.
-						Once the LegalThings One platform is production ready, we'll start planning an implementation of the
-						enterprise environment.
-					</p>
-				</fieldset>
-				<fieldset>
-					<ol class="steps">
-						<li>
-							Visit
-							<a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
-							<figure>
-								<img src="img/screens/1-create-new-account.png" alt="Waves wallet - Create new account">
-							</figure>
-						</li>
-						<li>
-							Press
-							<strong>New account</strong>
-						</li>
-						<li>
-							If you see the
-							<em>NEW ACCOUNT - NOTICE</em>, read the notice and than press
-							<strong>I UNDERSTAND</strong>.
-							<figure>
-								<img src="img/screens/2-register-account.png" alt="Waves wallet - Register an account">
-							</figure>
-						</li>
-						<li>
-							Copy the
-							<strong>wallet seed</strong> to a piece of paper and keep it save.
-							<em>Note that anyone who has access to your wallet seed, can take the cryptocurrency and LTO tokens from
-								your
-								wallet.
-							</em>
-						</li>
-						<li>
-							Fill out the name, password and repeat the password.
-						</li>
-						<li>
-							Press
-							<strong>Register</strong>.
-						</li>
-					</ol>
-				</fieldset>
-
-				<fieldset>
-					<div id="faucet-container">
-						<p>
-							Doing any transaction on the Waves platform requires WAVES tokens. To facilitate the purchase of LTO, we
-							can send you a small
-							amount of WAVES.
-						</p>
-
-						<p>
-							Please enter your Waves public wallet address to receive 0.003 WAVES.
-						</p>
-
-						<div id="wizard-form">
-							<div class="form-row" style="display: flex">
-								<input placeholder="WAVES public wallet address" id="faucet-recipient" type="text"/>
-								<a href="#" class="sr-button button-1" style="margin: 0; padding: 8px 40px;" id="faucet-retrieve-btn">
-									Retrieve
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<p id="faucet-success" style="display: none; color: green">Successfully sent waves to the given address. You
-						can view the transaction
-						<a id="faucet-success-link" href="#" target="_blank">here</a> (might take a minute to appear).</p>
-					<p id="faucet-failed" style="display: none; color: red">Failed to send waves to the given address. Please make
-						sure that the address is valid.</a>
-					</p>
-
-					<p>You can find your Waves wallet address on
-						<a href="https://waveswallet.io/" target="waveswallet">waveswallet.io</a> in the top of the screen.</p>
-
-					<figure>
-						<img src="img/screens/wallet-address.png" alt="Wallet address">
-					</figure>
-				</fieldset>
-
-
-				<fieldset>
-					<div class="tabs">
-						<ul class="tab-nav clearfix">
-							<li class="active bitcoin-tab">
-								<h6 class="tab-name uppercase">
-									<a href="tab1">Bitcoin (BTC)</a>
-								</h6>
-							</li>
-							<li class="ethererum-tab">
-								<h6 class="tab-name uppercase">
-									<a href="tab2">Ethererum (ETH)</a>
-								</h6>
-							</li>
-						</ul>
-						<div class="tab-container clearfix">
-							<div class="tab-content tab1 active bitcoin-content">
-								<ol class="steps">
-									<li>
-										Visit
-										<a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
-										<em>(login if needed)</em>
-										<figure>
-											<img src="img/screens/3a-wallet-overview-btc.png" alt="Waves wallet - Dashboard BTC">
-										</figure>
-									</li>
-									<li>
-										Locate the
-										<em>Bitcoin</em> balance on the dashboard and press
-										<strong>DEPOSIT</strong>.
-										<figure>
-											<img src="img/screens/4-deposit-btc.png" alt="Waves wallet - Dashboard BTC">
-										</figure>
-									</li>
-									<li>
-										Fill out the amount of BTC you want to transfer to
-										<em>your</em> wallet.
-									</li>
-									<li>
-										Scan the QR code in your Bitcoin wallet app.
-										<br> &nbsp;&nbsp;&nbsp;OR
-										<br> Transfer the amount of BTC to the Bitcoin address displayed in the screen.
-									</li>
-									<li>
-										Wait up to 60 minutes for your transaction to be processed and confirmed.
-									</li>
-								</ol>
-							</div>
-							<!-- END .tab-content -->
-
-							<div class="tab-content tab2 ethererum-content">
-								<ol class="steps">
-									<li>
-										Visit
-										<a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
-										<em>(login if needed)</em>
-										<figure>
-											<img src="img/screens/3b-wallet-overview-eth.png" alt="Waves wallet - Dashboard ETC">
-										</figure>
-									</li>
-									<li>
-										Locate the
-										<em>Ethereum</em> balance on the dashboard and press
-										<strong>DEPOSIT</strong>.
-										<figure>
-											<img src="img/screens/5-deposit-eth.png" alt="Waves wallet - Deposit BTC">
-										</figure>
-									</li>
-									<li>
-										Scan the QR code in your Ethereum wallet app.
-										<br> &nbsp;&nbsp;&nbsp;OR
-										<br> Transfer the amount of ETH to the Ethereum address displayed in the screen.
-									</li>
-									<li>
-										Wait up to 5 minutes for your transaction to be processed and confirmed.
-									</li>
-								</ol>
-							</div>
-							<!-- END .tab-content -->
-
-						</div>
-						<!-- END .tab-container -->
-					</div>
-				</fieldset>
-				<fieldset>
-					<div class="tabs">
-						<ul class="tab-nav clearfix">
-							<li class="active bitcoin-tab">
-								<h6 class="tab-name uppercase">
-									<a href="tab4">Bitcoin (BTC)</a>
-								</h6>
-							</li>
-							<li class="ethererum-tab">
-								<h6 class="tab-name uppercase">
-									<a href="tab5">Ethererum (ETH)</a>
-								</h6>
-							</li>
-						</ul>
-						<div class="tab-container clearfix">
-							<div class="tab-content tab4 active bitcoin-content">
-								<ol class="steps">
-									<li>
-										Press the
-										<strong>Decentral exchange button</strong> in the top navbar
-										<img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
-										<figure>
-											<img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
-										</figure>
-									</li>
-									<li>
-										Click on the input field to select a token and enter
-										<code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
-										<figure>
-											<img src="img/screens/6c-dex-lto-btc.png" alt="Waves wallet - DEX close up">
-										</figure>
-									</li>
-									<li>
-										Make sure you've now selected the following pair
-										<strong>LegalThings One/BTC</strong>
-									</li>
-									<li>
-										Locate the
-										<em>LegalThings One sell orders</em> table and press on the top sell order of the list.
-										<figure>
-											<img src="img/screens/6d-dex-lto-btc.png" alt="Waves wallet - DEX buy">
-										</figure>
-									</li>
-									<li>
-										Fill out the amount of LTO you want to purchase and press
-										<strong>BUY</strong>.
-									</li>
-								</ol>
-							</div>
-							<!-- END .tab-content -->
-
-							<div class="tab-content tab5 ethererum-content">
-								<ol class="steps">
-									<li>
-										Press the
-										<strong>Decentral exchange button</strong> in the top navbar
-										<img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
-										<figure>
-											<img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
-										</figure>
-									</li>
-									<li>
-										Click on the input field to select a token and enter
-										<code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
-										<figure>
-											<img src="img/screens/7b-dex-lto-eth.png" alt="Waves wallet - DEX ETH">
-										</figure>
-									</li>
-									<li>
-										Click on the other input field to select a token and enter
-										<strong>ethereum</strong> (<code>474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu</code>).
-										<figure>
-											<img src="img/screens/7c-dex-lto-eth.png" alt="Waves wallet - DEX close up">
-										</figure>
-									</li>
-									<li>
-										Make sure you've now selected the following pair
-										<strong>LegalThings One/ETH</strong>
-									</li>
-									<li>
-										Locate the
-										<em>LegalThings One sell orders</em> table and press on the top sell order of the list.
-										<figure>
-											<img src="img/screens/7d-dex-lto-eth.png" alt="Waves wallet - DEX buy">
-										</figure>
-									</li>
-									<li>
-										Fill out the amount of LTO you want to purchase and press
-										<strong>BUY</strong>.
-									</li>
-								</ol>
-							</div>
-							<!-- END .tab-content -->
-
-							<!-- END .tab-content -->
-						</div>
-						<!-- END .tab-container -->
-					</div>
-				</fieldset>
-				<fieldset>
-					<img src="img/win.gif" title="Winner" class="center">
-
-					<h3>Share it!</h3>
-					<div class="socials">
-						<ul>
-							<li class="social">
-								<a href="#" data-target="twitter">
-									<i class="fa fa-twitter" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li class="social">
-								<a href="#" data-target="facebook">
-									<i class="fa fa-facebook" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li class="social">
-								<a href="#" data-target="googleplus">
-									<i class="fa fa-google-plus" aria-hidden="true"></i>
-								</a>
-							</li>
-							<li class="social">
-								<a href="#" data-target="linkedin">
-									<i class="fa fa-linkedin" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</fieldset>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- SCRIPTS -->
-<script src="files/dist/compress.min.js"></script>
-<script src="https://checkout.stripe.com/checkout.js"></script>
-<!-- This needs to be loaded from their site, not locally -->
-
-<!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.visible.min.js"></script>-->
-
-
-<!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>-->
-
-<!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
-<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
-<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
-<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
-
-<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
-<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/tweenMax.js"></script>-->
-
-
-<!--<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>-->
-
-
-<!--<script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>-->
-
-
-<!--<script type="text/javascript" src="files/js/script.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.ajaxchimp.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/jquery.countdown.min.js"></script>-->
-<!--<script src="files/js/social.js"></script>-->
-<!--<script src="files/js/step-form-wizard.min.js"></script>-->
-<!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
-<!--<script type="text/javascript" src="files/js/custom.js"></script>-->
-
-
-<!-- SCRIPTS -->
-
-
+    <div class="column-section align-center customRowElements wrapper socialsBlock">
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="github">
+                    <a href="https://github.com/legalthings" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="reddit">
+                    <a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="linkedin">
+                    <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="twitter">
+                    <a href="https://twitter.com/livecontracts" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="medium">
+                    <a href="https://medium.com/legalthingsone" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="slack">
+                    <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="column one-fifth">
+            <ul class="socialmedia-widget size-huge hover-fade-1">
+                <li class="telegram">
+                    <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="spacer-big"></div>
+    <div id="register" class="blackBackgroundBlock subscribe-block">
+        <div class="spacer-big"></div>
+        <div class="wrapper align-center">
+            <h2>
+            <strong>Stay informed</strong>
+        </h2>
+            <div class="spacer-mini"></div>
+            <form class="newsletter-form" novalidate="true">
+                <input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Address">
+                <input type="submit" class="newsletter-submit" value="Sign Up">
+                <p class="newsletter-error"></p>
+                <p class="newsletter-success">
+                    You have been successfully registered to join the tokensale.
+                </p>
+            </form>
+        </div>
+        <div class="spacer-big"></div>
+    </div>
+    <!--<div class="spacer-medium"></div>-->
+    </section>
+    <!-- PAGEBODY -->
+    <!-- FOOTER -->
+    <footer id="footer" class="footer-dark text-light">
+        <div class="wrapper">
+            <div class="copyright">
+                <small>(c) 2017 LegalThings</small>
+            </div>
+            <div class="footer-menu">
+                <!-- <a href="documents/terms-and-conditions.pdf" target="_blank">terms and conditions</a> -->
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    </div>
+    <!-- END #page-content -->
+    <!-- PAGE CONTENT -->
+    <div class="popup js-wishlist-popup popup-hide">
+        <div class="overlay"></div>
+        <a href="#" class="popup__close">
+        <i class="ion ion-3x ion-close-round"></i>
+    </a>
+        <div class="popup__content">
+            <p>
+                As whitelisted member you'll receive an <strong>additional 60%</strong> during the pre-sale. Please sign up to qualify. Membership will be assigned based on the order of registration.
+            </p>
+            <form class="newsletter-form" novalidate="true">
+                <input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Adress">
+                <input type="submit" class="newsletter-submit" value="Sign Up">
+                <p class="newsletter-error"></p>
+                <p class="newsletter-success">
+                    You have been successfully registered to join the tokensale.
+                </p>
+            </form>
+        </div>
+    </div>
+    <div class="popup-container popup-hide">
+        <div class="popup-backdrop popup-hide"></div>
+        <div class="popup popup-wizard popup-hide">
+            <div class="overlay"></div>
+            <a href="#" class="popup__close">
+            <i class="ion ion-3x ion-close-round"></i>
+        </a>
+            <div class="popup__content">
+                <div id="wizard">
+                    <fieldset>
+                        <p>
+                            The
+                            <strong>LegalThings One token (LTO)</strong> is a license that grants you the right to use the LegalThings One platform and gives you access to copyrighted content (like legal templates). There are 100 million LTO, representing 100% of the available capacity of the LegalThings One platform. The amount of LTO you hold determines the percentage of capacity that will be awarded to you.
+                        </p>
+                        <p>
+                            While the LegalThings One platform is in Alpha state*, the functionality of the platform is limited. LegalThings allows everybody access to the Alpha, whether they hold LTO or not. Once the platform reaches Beta state, platform capacity will be awarded exclusively to LTO holders.
+                        </p>
+                        <p>
+                            During the pre-sale a total of 10 million LTO tokens are sold by LegalThings via the
+                            <strong>Waves Decentralized Exchange</strong>. With the Waves DEX we've chosen to use a mature and tested platform, dedicated to trading crypto-tokens, rather than creating our own solution. This means you can safely purchase LTO through this platform tokens, and they. will become available to you immediately.
+                        </p>
+                        <p>
+                            Please make sure you read the
+                            <a href="documents/terms-and-conditions.pdf" target="_blank">Terms & Conditions</a> for all the details.
+                            <em>(Really, go and read it.)</em>
+                            <p>
+                                In the next steps, we'll guide you through the process of purchasing LTO. If you're already familiar with the Waves DEX, go ahead and skip this guide. The LTO token can be found under 'LegalThings One' with id
+                                <code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
+                            </p>
+                            <p class="align-right">
+                                <strong>&mdash; Team LegalThings One</strong>
+                            </p>
+                            <p class="small">
+                                * LegalThings has an enterprise environment in production. This is similar to, but seperate from, the LegalThings One platform. Once the LegalThings One platform is production ready, we'll start planning an implementation of the enterprise environment.
+                            </p>
+                    </fieldset>
+                    <fieldset>
+                        <ol class="steps">
+                            <li>
+                                Visit
+                                <a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
+                                <figure>
+                                    <img src="img/screens/1-create-new-account.png" alt="Waves wallet - Create new account">
+                                </figure>
+                            </li>
+                            <li>
+                                Press
+                                <strong>New account</strong>
+                            </li>
+                            <li>
+                                If you see the
+                                <em>NEW ACCOUNT - NOTICE</em>, read the notice and than press
+                                <strong>I UNDERSTAND</strong>.
+                                <figure>
+                                    <img src="img/screens/2-register-account.png" alt="Waves wallet - Register an account">
+                                </figure>
+                            </li>
+                            <li>
+                                Copy the
+                                <strong>wallet seed</strong> to a piece of paper and keep it save.
+                                <em>Note that anyone who has access to your wallet seed, can take the cryptocurrency and LTO tokens from
+                                your
+                                wallet.
+                            </em>
+                            </li>
+                            <li>
+                                Fill out the name, password and repeat the password.
+                            </li>
+                            <li>
+                                Press
+                                <strong>Register</strong>.
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <fieldset>
+                        <div id="faucet-container">
+                            <p>
+                                Doing any transaction on the Waves platform requires WAVES tokens. To facilitate the purchase of LTO, we can send you a small amount of WAVES.
+                            </p>
+                            <p>
+                                Please enter your Waves public wallet address to receive 0.003 WAVES.
+                            </p>
+                            <div id="wizard-form">
+                                <div class="form-row" style="display: flex">
+                                    <input placeholder="WAVES public wallet address" id="faucet-recipient" type="text" />
+                                    <a href="#" class="sr-button button-1" style="margin: 0; padding: 8px 40px;" id="faucet-retrieve-btn">
+                                    Retrieve
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="faucet-success" style="display: none; color: green">Successfully sent waves to the given address. You can view the transaction
+                            <a id="faucet-success-link" href="#" target="_blank">here</a> (might take a minute to appear).</p>
+                        <p id="faucet-failed" style="display: none; color: red">Failed to send waves to the given address. Please make sure that the address is valid.</a>
+                        </p>
+                        <p>You can find your Waves wallet address on
+                            <a href="https://waveswallet.io/" target="waveswallet">waveswallet.io</a> in the top of the screen.</p>
+                        <figure>
+                            <img src="img/screens/wallet-address.png" alt="Wallet address">
+                        </figure>
+                    </fieldset>
+                    <fieldset>
+                        <div class="tabs">
+                            <ul class="tab-nav clearfix">
+                                <li class="active bitcoin-tab">
+                                    <h6 class="tab-name uppercase">
+                                    <a href="tab1">Bitcoin (BTC)</a>
+                                </h6>
+                                </li>
+                                <li class="ethererum-tab">
+                                    <h6 class="tab-name uppercase">
+                                    <a href="tab2">Ethererum (ETH)</a>
+                                </h6>
+                                </li>
+                            </ul>
+                            <div class="tab-container clearfix">
+                                <div class="tab-content tab1 active bitcoin-content">
+                                    <ol class="steps">
+                                        <li>
+                                            Visit
+                                            <a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
+                                            <em>(login if needed)</em>
+                                            <figure>
+                                                <img src="img/screens/3a-wallet-overview-btc.png" alt="Waves wallet - Dashboard BTC">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Locate the
+                                            <em>Bitcoin</em> balance on the dashboard and press
+                                            <strong>DEPOSIT</strong>.
+                                            <figure>
+                                                <img src="img/screens/4-deposit-btc.png" alt="Waves wallet - Dashboard BTC">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Fill out the amount of BTC you want to transfer to
+                                            <em>your</em> wallet.
+                                        </li>
+                                        <li>
+                                            Scan the QR code in your Bitcoin wallet app.
+                                            <br> &nbsp;&nbsp;&nbsp;OR
+                                            <br> Transfer the amount of BTC to the Bitcoin address displayed in the screen.
+                                        </li>
+                                        <li>
+                                            Wait up to 60 minutes for your transaction to be processed and confirmed.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!-- END .tab-content -->
+                                <div class="tab-content tab2 ethererum-content">
+                                    <ol class="steps">
+                                        <li>
+                                            Visit
+                                            <a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
+                                            <em>(login if needed)</em>
+                                            <figure>
+                                                <img src="img/screens/3b-wallet-overview-eth.png" alt="Waves wallet - Dashboard ETC">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Locate the
+                                            <em>Ethereum</em> balance on the dashboard and press
+                                            <strong>DEPOSIT</strong>.
+                                            <figure>
+                                                <img src="img/screens/5-deposit-eth.png" alt="Waves wallet - Deposit BTC">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Scan the QR code in your Ethereum wallet app.
+                                            <br> &nbsp;&nbsp;&nbsp;OR
+                                            <br> Transfer the amount of ETH to the Ethereum address displayed in the screen.
+                                        </li>
+                                        <li>
+                                            Wait up to 5 minutes for your transaction to be processed and confirmed.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!-- END .tab-content -->
+                            </div>
+                            <!-- END .tab-container -->
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="tabs">
+                            <ul class="tab-nav clearfix">
+                                <li class="active bitcoin-tab">
+                                    <h6 class="tab-name uppercase">
+                                    <a href="tab4">Bitcoin (BTC)</a>
+                                </h6>
+                                </li>
+                                <li class="ethererum-tab">
+                                    <h6 class="tab-name uppercase">
+                                    <a href="tab5">Ethererum (ETH)</a>
+                                </h6>
+                                </li>
+                            </ul>
+                            <div class="tab-container clearfix">
+                                <div class="tab-content tab4 active bitcoin-content">
+                                    <ol class="steps">
+                                        <li>
+                                            Press the
+                                            <strong>Decentral exchange button</strong> in the top navbar
+                                            <img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
+                                            <figure>
+                                                <img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Click on the input field to select a token and enter
+                                            <code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
+                                            <figure>
+                                                <img src="img/screens/6c-dex-lto-btc.png" alt="Waves wallet - DEX close up">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Make sure you've now selected the following pair
+                                            <strong>LegalThings One/BTC</strong>
+                                        </li>
+                                        <li>
+                                            Locate the
+                                            <em>LegalThings One sell orders</em> table and press on the top sell order of the list.
+                                            <figure>
+                                                <img src="img/screens/6d-dex-lto-btc.png" alt="Waves wallet - DEX buy">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Fill out the amount of LTO you want to purchase and press
+                                            <strong>BUY</strong>.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!-- END .tab-content -->
+                                <div class="tab-content tab5 ethererum-content">
+                                    <ol class="steps">
+                                        <li>
+                                            Press the
+                                            <strong>Decentral exchange button</strong> in the top navbar
+                                            <img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
+                                            <figure>
+                                                <img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Click on the input field to select a token and enter
+                                            <code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
+                                            <figure>
+                                                <img src="img/screens/7b-dex-lto-eth.png" alt="Waves wallet - DEX ETH">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Click on the other input field to select a token and enter
+                                            <strong>ethereum</strong> (<code>474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu</code>).
+                                            <figure>
+                                                <img src="img/screens/7c-dex-lto-eth.png" alt="Waves wallet - DEX close up">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Make sure you've now selected the following pair
+                                            <strong>LegalThings One/ETH</strong>
+                                        </li>
+                                        <li>
+                                            Locate the
+                                            <em>LegalThings One sell orders</em> table and press on the top sell order of the list.
+                                            <figure>
+                                                <img src="img/screens/7d-dex-lto-eth.png" alt="Waves wallet - DEX buy">
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            Fill out the amount of LTO you want to purchase and press
+                                            <strong>BUY</strong>.
+                                        </li>
+                                    </ol>
+                                </div>
+                                <!-- END .tab-content -->
+                                <!-- END .tab-content -->
+                            </div>
+                            <!-- END .tab-container -->
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <img src="img/win.gif" title="Winner" class="center">
+                        <h3>Share it!</h3>
+                        <div class="socials">
+                            <ul>
+                                <li class="social">
+                                    <a href="#" data-target="twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#" data-target="facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#" data-target="googleplus">
+                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                                <li class="social">
+                                    <a href="#" data-target="linkedin">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="files/dist/compress.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <!-- This needs to be loaded from their site, not locally -->
+    <!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.visible.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/tweenMax.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/script.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.ajaxchimp.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/jquery.countdown.min.js"></script>-->
+    <!--<script src="files/js/social.js"></script>-->
+    <!--<script src="files/js/step-form-wizard.min.js"></script>-->
+    <!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+    <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
+    <!-- SCRIPTS -->
 </body>
 
 </html>

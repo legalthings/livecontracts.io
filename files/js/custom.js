@@ -9,9 +9,26 @@ $(window).load(function () {
 });
 
 $(document).ready(function () {
+	var isShowingMore = false;
+
 	if ($(".quote").length > 0) {
 		quotesAnimation();
 	}
+
+
+	$('#show-more').click(function() {
+		if(!isShowingMore) {
+			isShowingMore = true;
+			$('.show-more').slideDown(500);
+			$('#show-more').text('Less team members');
+		}
+		else {
+			isShowingMore = false;
+			$('.show-more').slideUp(500);
+			$('#show-more').text('More team members');
+		}
+	});
+
 	eventForMobileTooltip();
 	// populateExploreBlock();
 	manipulatingHeader();
@@ -26,6 +43,8 @@ $(document).ready(function () {
 	timelineInit();
 	stripeCheckoutInit();
 });
+
+
 
 //init for pie chart
 

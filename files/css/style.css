@@ -227,16 +227,8 @@ h1 b, h2 b, h3 b, h4 b, h5 b, h6 b, h1 strong, h2 strong, h3 strong, h4 strong, 
 }
 
 /* Headers Spacing */
-div h1, div h2, div h3, div h4 {
+div h1, div h2, div h3, div h4, div h5, div h6 {
 	margin-top: 40px;
-}
-
-div h5, div h6 {
-    margin-top: 20px;
-}
-
-div h5 + p, div h6 + p {
-    margin-top: 10px;
 }
 
 i + h1, i + h2, i + h3, i + h4, i + h5, i + h6 {
@@ -5995,11 +5987,40 @@ p.meta-row .meta-label {
 .text-light .sr-button.button-6 {
 	border: 2px solid rgba(255, 255, 255, .2);
 	color: #ffffff;
+
 }
 
 .text-light .sr-button.button-6:hover {
 	border-color: #33bfd0;
 	background: transparent;
+}
+
+.sr-button.button-7 {
+	background: #1a1a1;
+	color: #ffffff;
+}
+
+.sr-button.button-7:hover {
+	background: #33bfd0;
+	color: #ffffff;
+}
+
+.sr-button.button-8 {
+	background-color: #231d39;
+	border: 2px solid #fff !important;
+}
+
+.sr-button.button-8:hover {
+	background-color: #33bfb0;
+	border: 2px solid #33bfb0 !important;
+}
+
+.sr-button.button-9 {
+	color: #aaaaaa;
+	background: none;
+}
+
+.sr-button.button-9:hover {
 }
 
 .sr-button.rounded {
@@ -6009,6 +6030,20 @@ p.meta-row .meta-label {
 .sr-button.circled {
 	border-radius: 50px;
 }
+
+.sr-button.inline {
+	display: inline-block;
+}
+
+.sr-button.float {
+	max-width: 200px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+
+
 
 /* Icon-Text Button */
 .button-icon-text {
@@ -6849,6 +6884,7 @@ div .progress-bar-item:first-child {
 
 .testimonial-content {
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .testimonial-content blockquote {
@@ -6856,7 +6892,7 @@ div .progress-bar-item:first-child {
 	line-height: 26px;
 	color: #696969;
 	margin: 0;
-	padding: 30px 20px 0 20px;
+	padding: 30px 0px 20px 20px;
 }
 
 .text-light .testimonial-content blockquote {
@@ -7048,6 +7084,13 @@ div .progress-bar-item:first-child {
 .team-image:hover img {
 	filter: grayscale(0%);
 }
+
+.show-more { 
+	margin-top: 40px !important;
+	display: none;
+}
+
+
 
 /*	Alerts
 ------------------------------------------------*/
@@ -7306,6 +7349,10 @@ div .socialmedia-widget:first-child {
 }
 
 .socialmedia-widget li.linkedin a:before, .socialmedia-widget li.linkedin a:after {
+	content: "\f0e1";
+}
+
+.socialmedia-widget li.link a:before, .socialmedia-widget li.link a:after {
 	content: "\f0e1";
 }
 
@@ -7743,6 +7790,12 @@ div .socialmedia-widget:first-child {
 }
 
 .socialmedia-widget.hover-fade-3 li.linkedin a:hover:before {
+	background: #81d3fd;
+	border-color: #81d3fd;
+	color: #ffffff;
+}
+
+.socialmedia-widget.hover-fade-3 li.link a:hover:before {
 	background: #81d3fd;
 	border-color: #81d3fd;
 	color: #ffffff;
