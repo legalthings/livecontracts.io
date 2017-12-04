@@ -298,6 +298,11 @@ h5 + h5, h5 + h6, h6 + h5, h6 + h6 {
 	font-weight: 700;
 }
 
+.subtitle-2.advisor {
+        color: #fff;
+        background: #9067c6;    
+}
+
 .error-404 {
 	font-size: 124px;
 	line-height: 140px;
