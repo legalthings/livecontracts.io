@@ -5874,11 +5874,13 @@ p.meta-row .meta-label {
 
 .sr-button.button-1 {
 	background: #1a1a1a;
+	border: 2px solid #1a1a1a;
 	color: #ffffff;
 }
 
 .sr-button.button-1:hover {
-	background: #33bfd0;
+	background: #9067c6;
+	border: 2px solid #9067c6;
 	color: #ffffff;
 }
 
@@ -5888,12 +5890,12 @@ p.meta-row .meta-label {
 }
 
 .text-light .sr-button.button-1:hover {
-	background: #33bfd0;
+	background: transparent;
 	color: #ffffff;
 }
 
 .sr-button.button-2 {
-	background: #33bfd0;
+	background: #9067c6;
 	color: #ffffff;
 }
 
@@ -5952,24 +5954,24 @@ p.meta-row .meta-label {
 
 .sr-button.button-5 {
 	background: transparent;
-	border: 2px solid rgba(0, 0, 0, .2);
+	border: 2px solid rgba(0, 0, 0, 1);
 	color: #1a1a1a;
 }
 
 .sr-button.button-5:hover {
-	background: #33bfd0;
-	border-color: #33bfd0;
+	background: #9067c6;
+	border-color: #9067c6;
 	color: #ffffff;
 }
 
 .text-light .sr-button.button-5 {
-	border: 2px solid rgba(255, 255, 255, .2);
+	border: 2px solid rgba(255, 255, 255, 1);
 	color: #ffffff;
 }
 
 .text-light .sr-button.button-5:hover {
-	background: #33bfd0;
-	border-color: #33bfd0;
+	background: #9067c6;
+	border-color: #9067c6;
 	color: #ffffff;
 }
 
@@ -6011,16 +6013,28 @@ p.meta-row .meta-label {
 }
 
 .sr-button.button-8:hover {
-	background-color: #33bfb0;
-	border: 2px solid #33bfb0 !important;
+	background-color: #9067c6;
+	border: 2px solid #9067c6 !important;
 }
 
 .sr-button.button-9 {
 	color: #aaaaaa;
+	font-size: 
 	background: none;
 }
 
 .sr-button.button-9:hover {
+}
+
+.sr-button.button-10 {
+	color: #1a1a1a;
+	background-color: transparent;
+	border: 2px solid #1a1a1a;
+}
+
+.sr-button.button-10:hover {
+	color: #9067c6;
+	border: 2px solid #9067c6;
 }
 
 .sr-button.rounded {
@@ -7353,7 +7367,7 @@ div .socialmedia-widget:first-child {
 }
 
 .socialmedia-widget li.link a:before, .socialmedia-widget li.link a:after {
-	content: "\f0e1";
+	content: "\f0c1";
 }
 
 .socialmedia-widget li.rss a:before, .socialmedia-widget li.rss a:after {
