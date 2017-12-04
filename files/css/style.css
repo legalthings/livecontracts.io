@@ -497,7 +497,7 @@ label {
 }
 
 label abbr {
-	color: #33bfd0;
+	color: #9067c6;
 	text-decoration: none;
 }
 
@@ -514,6 +514,10 @@ form {
 form .form-row {
 	margin-top: 20px;
 	position: relative;
+}
+
+form h4 {
+        margin-bottom: 20px;
 }
 
 form .form-row.one-half:nth-child(2), form .form-row.two-third:nth-child(2),
