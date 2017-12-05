@@ -8946,7 +8946,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	margin-bottom: 10px;
 }
 
-.popup-wizard #wizard-form input[type="text"] {
+.popup-wizard #wizard-form input {
 	padding: 0 10px;
 	height: 40px;
 	max-width: 100%;
@@ -9891,4 +9891,10 @@ html.lock {
 
 .bb-legend-item {
 	text-align: center;
+}
+
+/* FORM VALIDATION WITH PARSLEY */
+
+.parsley-required {
+	color: red;
 }
