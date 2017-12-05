@@ -1062,18 +1062,19 @@
                         <fieldset>
                             <div class="row">
                                 <h4>Select amount of tokens</h4>
-                                <div class="form-row column one-fifth">
-                                    <div id="wizard-form" class="wrapper-small">
-                                        <input type="number" id="number" name="amount" value="" step="500" min="500" max="500000">
+                                <div class="form-row column one-fourth">
+                                    <div id="wizard-form" class="wrapper-medium">
+                                        <input type="number" id="number" name="amount" value="100" step="500" min="500" max="500000">
+                                        <div id="amount-LTO">LTO</div>
                                     </div>
                                 </div>
-                                <div class="form-row column one-fifth">
+                                <div class="form-row column one-fourth">
                                     <div id="price-per-token-times">x</div>
-                                    <div id="price-per-token">$0,25</div>
+                                    <div id="price-per-token">€0,21</div>
                                 </div>
 
-                                <div class="form-row column one-third">
-                                    <div id="wizard-form" class="wrapper-small">
+                                <div class="form-row column one-fourth">
+                                    <div id="wizard-form" class="wrapper-big">
                                         <input type="number" id="number" name="amount" value="" step="500" min="500" max="500000">
                                         <select id="currency-choice">
                                             <option value="EUR">EUR</option>
@@ -1094,8 +1095,10 @@
                                     <div>
                                         Total amount of tokens: <span id="amount-total">0</span>
                                     </div>
+
                                 </div>
-                            </div>                          
+                            </div>  
+                            <div class="spacer-medium"></div>                        
                             
                             <table class="token-usage-table">
                                 <thead>
