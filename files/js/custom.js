@@ -9,6 +9,8 @@ $(window).load(function () {
 });
 
 var wavesWallet = null;
+var ltoRates = {};
+var bonusRate = 0.6;
 
 $(document).ready(function () {
 	var isShowingMore = false;
@@ -19,6 +21,21 @@ $(document).ready(function () {
 
 	$('#wallet').on('change', function(newValue) {
 		validateWavesAddress(newValue.target.value);
+	});
+
+	 $("#lto-amount").on("keypress blur",function (event) {
+        $(this).val($(this).val().replace(/[^0-9\.]/g,''));
+        if ((event.which != 8 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
+	        event.preventDefault();
+        }
+    });
+
+	$('#lto-amount').on('input', function (newValue) {
+		calculateRate();
+	});
+
+	$('#price-currency').on('change', function (newValue) {
+		calculateRate();
 	});
 
 
@@ -50,9 +67,9 @@ $(document).ready(function () {
 	stripeCheckoutInit();
   initWalletChoice();
   createWavesWallet();
-  getRates();
   handlePayment();
 });
+
 
 //init for pie chart
 
@@ -131,10 +148,45 @@ function getRates() {
   $.ajax({
     url: waves_server + "/api/rates",
     success: function (result) {
-			console.log(result);
+		ltoRates = result;
+
+		$.each(ltoRates, function (i, item) {
+		    $('#price-currency').append($('<option>', { 
+		        value: item.currency,
+		        text : item.currency 
+		    }));
+		});
+
+		$('#price').val('0');
+		calculateRate();
     }
   });
 }
+
+function calculateRate() {
+	if (!ltoRates.length) {
+		return;
+	}
+
+	var selectedCurrency = $('#price-currency').val();
+	var ltoAmount = $('#lto-amount').val();
+
+	if (ltoAmount === '') {
+		return;
+	}
+
+	var currentCurrency = ltoRates.find(r => r.currency === selectedCurrency);
+	var bonusTokens = parseFloat(ltoAmount * 0.6).toFixed(6);
+	var totalLtos = parseFloat(parseInt(ltoAmount) + parseFloat(bonusTokens)).toFixed(6);
+
+	if (currentCurrency) {
+		var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate));
+		$('#price').val(total);
+		$('#amount-bonus').html(bonusTokens);
+		$('#amount-total').html(totalLtos);
+	}
+}
+
 
 function handlePayment() {
 	$('#pay').click(function() {
@@ -163,7 +215,6 @@ function handlePayment() {
       contentType: "application/json",
       dataType: "json",
       success: function (result) {
-				console.log(result);
         $('#pay').attr("disabled",false);
 
         window.location.href = result.transaction.external_payment_url;
@@ -534,13 +585,19 @@ function wizardInit() {
 	sfw = $("#wizard").stepFormWizard({
     markPrevSteps: true,
     onNext: function(i) {
-    	loadCheckoutInformation();
+      loadCheckoutInformation();
       return $("#wizard").parsley().validate('block' + i);
     },
     onFinish: function() {
       return $("#wizard").parsley().validate();
+    },
+    onSlideChanged: function(to, data) {
+      // if we transition to token selection step, fetch the rates and start calculation
+      if (to === 1) {
+      	getRates();
+      }
     }
-	});
+});
 
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();

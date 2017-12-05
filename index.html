@@ -1064,39 +1064,29 @@
                         <fieldset>
                             <div class="row">
                                 <h4>Select amount of tokens</h4>
-                                <div class="form-row column one-fourth">
-                                    <div id="wizard-form" class="wrapper-medium">
-                                        <input type="number" id="number-lto" name="number-lto" value="100" step="500" min="500" max="500000">
-                                        <div id="amount-LTO">LTO</div>
-                                    </div>
-                                </div>
-                                <div class="form-row column one-fourth">
-                                    <div id="price-per-token-times">x</div>
-                                    <div id="price-per-token">0,21</div>
+                                <div class="lto-pricing">
+                                    <input type="text" id="lto-amount" name="number-lto">
+                                    <span>LTO</span>
                                 </div>
 
-                                <div class="form-row column one-fourth">
-                                    <div id="wizard-form" class="wrapper-big">
-                                        <input type="number" id="price" name="price" value="" step="500" min="500" max="500000">
-                                        <select id="currency-choice">
-                                            <option value="EUR">EUR</option>
-                                            <option value="USD">USD</option>
-                                            <option value="BTC">BTC</option>
-                                            <option value="ETH">ETH</option>
-                                        </select>
-                                    </div>
-
+                                <div class="lto-pricing">
+                                    <input type="text" id="price" name="price" readonly>
+                                    <select name="price-currency" id="price-currency">
+                                    </select>
                                 </div>
-                                 <div class="form-row column one-last">                                    
+
+                                <div class="clear"></div>
+
+                                 <div class="lto-pricing-total">                                    
                                     <label for="amount">Number of LTO tokens
                                         <abbr title="required" class="required">*</abbr>
                                     </label>
-                                    <div>
+                                    <p>
                                         60% bonus tokens: <span id="amount-bonus">0</span>
-                                    </div>
-                                    <div>
-                                        Total amount of tokens: <span id="amount-total">0</span>
-                                    </div>
+                                    </p>
+                                    <p class="accent-color">
+                                        <strong>Total amount of tokens: <span id="amount-total">0</span></strong>
+                                    </p>
 
                                 </div>
                             </div>  
