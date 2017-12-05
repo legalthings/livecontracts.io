@@ -1033,8 +1033,8 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <label for="billing-adress">Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-adress" name="billing-adress" value="" placeholder="Street address">
+                                        <label for="billing-address">Address <abbr title="required" class="required">*</abbr></label>
+                                        <input type="text" id="billing-address" name="billing-address" value="" placeholder="Street address">
                                     </div>
 
                                     <div class="form-row column one-half">
@@ -1064,7 +1064,7 @@
                                 <h4>Select amount of tokens</h4>
                                 <div class="form-row column one-fifth">
                                     <div id="wizard-form" class="wrapper-small">
-                                        <input type="number" id="number" name="amount" value="" step="500" min="500" max="500000">
+                                        <input type="number" id="number-lto" name="number-lto" value="" step="500" min="500" max="500000">
                                     </div>
                                 </div>
                                 <div class="form-row column one-fifth">
@@ -1204,7 +1204,15 @@
                         </fieldset>
                         <fieldset>
                             <div id="checkout-container">
+                                <select id="payment-choice">
+                                    <option value="creditcard">Credit Card</option>
+                                    <option value="ideal">iDeal</option>
+                                </select>
+                                <br/>
 
+                                Amount: <span id="total-currency"></span> <span id="total-amount"></span>
+
+                                <input type="button" id="pay" name="pay" value="Betaal">
                             </div>
                         </fieldset>
                         <fieldset>
