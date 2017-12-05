@@ -194,9 +194,9 @@ function handlePayment() {
 
 		var user = collectUserInfo();
 		var organization = convertUserToOrg(user);
-    var amount = $('#number-lto').val();
+    var amount = $('#lto-amount').val();
     var wallet = $('#wallet').val();
-    var currency = $('#currency-choice').val();
+    var currency = $('#price-currency').val();
 
 		var data = {};
 		data.user = user;
@@ -256,8 +256,10 @@ function convertUserToOrg(user) {
 
 function getPaymentProvider(currency) {
 
-	if (currency === "EUR" || currency == "USD") {
-		return $('payment-choice').val();
+	if (currency === "EUR") {
+    return 'ideal_EUR';
+  }) else if (currency === "USD") {
+		return 'ideal_USD';
 	}
 
 	return 'ltc';
