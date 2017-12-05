@@ -17,6 +17,10 @@ $(document).ready(function () {
 		quotesAnimation();
 	}
 
+	$('#wallet').on('change', function(newValue) {
+		validateWavesAddress(newValue.target.value);
+	});
+
 
 	$('#show-more').click(function() {
 		if(!isShowingMore) {
@@ -48,10 +52,7 @@ $(document).ready(function () {
   createWavesWallet();
 });
 
-
-
 //init for pie chart
-
 
 //opening Wishlist popup
 function openWishlistPopup() {
@@ -393,14 +394,37 @@ function loadTokens() {
 	})
 }
 
+//loading data about tokens status
+function validateWavesAddress(address) {
+	$('#wallet').parsley().removeError('required');
+
+	if (!address || !address.length) {
+		return;
+	}
+
+	$.ajax({
+		url: waves_server + `/api/wallet/${address}/validate`,
+		success: function (result) {
+			if (!result.valid) {
+				$('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
+			} else {
+				$('#wallet').parsley().removeError('required');
+			}
+		}
+	})
+}
+
+
 //init of wizard steps
 function wizardInit() {
 	sfw = $("#wizard").stepFormWizard({
-		onPrev: function (from) {
-		},
-		onSlideChanged: function (step, data) {
-			sfw.activeNext(true);
-		}
+    markPrevSteps: true,
+    onNext: function(i) {
+      return $("#wizard").parsley().validate('block' + i);
+    },
+    onFinish: function() {
+      return $("#wizard").parsley().validate();
+    }
 	});
 
 	$(".js-open-wizard").on('click', function (e) {
