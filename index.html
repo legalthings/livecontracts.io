@@ -83,7 +83,7 @@
                                         <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
                                     </li>
                                     <li class="">
-                                        <a href="#lto-presale" class="js-open-wishlistPopup">Join the pre-sale</a>
+                                        <a href="#lto-presale" class="js-open-wizard">Join the pre-sale</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -183,7 +183,7 @@
                                     Live Contracts allow automation of agreements and laws, without giving full control to the machines.
                                 </div>
                                 <br/>
-                                <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wishlistPopup">Join the pre-sale
+                                <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wizard">Join the pre-sale
                                 </a>
                             </div>
                             <div class="column one-third last-col testimonial">
@@ -1055,8 +1055,81 @@
                                     </div>
 
                                     <div class="clear"></div>
+                                    <div class="spacer-medium"></div>
                                 </div> <!-- END .billing-details -->	
                             </div>
+                        </fieldset>
+                        <fieldset>
+                            <div id="wizard-form" class="wrapper-small">
+                                <div class="form-row">
+                                    <label for="amount">Number of LTO tokens <abbr title="required" class="required">*</abbr></label>
+                                    <input type="number" id="amount" name="amount" value="" step="500" min="500" max="500000">
+                                </div>
+                                
+                                <div>
+                                    60% bonus tokens: <span id="amount-bonus">0</span>
+                                </div>
+                                
+                                <div>
+                                    Total amount of tokens: <span id="amount-total">0</span>
+                                </div>
+                            </div>                            
+                            
+                            <table class="token-usage-table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-id-card-o"></i>
+                                            <div class="tooltip">
+                                                User
+                                            </div>
+                                        </td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-play-circle"></i>
+                                            <div class="tooltip">
+                                                Create Live Contracts
+                                            </div>
+                                        </td>
+                                        <td>0 per week</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-retweet"></i>
+                                            <div class="tooltip">
+                                                Live Contract interactions
+                                            </div>
+                                        </td>
+                                        <td>0 per week</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-file-text"></i>
+                                            <div class="tooltip">
+                                                Live Contracts pre-package
+                                            </div>
+                                        </td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <i class="fa fa-building"></i>
+                                            <div class="tooltip">
+                                                Full node with whitelabled environment
+                                            </div>
+                                        </td>
+                                        <td>0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </fieldset>
                         <fieldset>
                             <div id="faucet-container">
@@ -1079,198 +1152,13 @@
                                     </div>
 
                                     <div class="form-row" id="enter wallet">
-                                        <label for="billing-adress">Wallet Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-adress" name="billing-adress" value="" placeholder="Waves wallet public address">
+                                        <label for="wallet">Wallet Address <abbr title="required" class="required">*</abbr></label>
+                                        <input type="text" id="wallet" name="wallet" value="" placeholder="Waves wallet public address">
                                     </div>
                                 </div>
-                            </div>
-                            <p id="faucet-success" style="display: none; color: green">Successfully sent waves to the given address. You can view the transaction
-                                <a id="faucet-success-link" href="#" target="_blank">here</a> (might take a minute to appear).</p>
-                            <p id="faucet-failed" style="display: none; color: red">Failed to send waves to the given address. Please make sure that the address is valid.</a>
-                            </p>
-                            <p>You can find your Waves wallet address on
-                                <a href="https://waveswallet.io/" target="waveswallet">waveswallet.io</a> in the top of the screen.</p>
-                            <figure>
-                                <img src="img/screens/wallet-address.png" alt="Wallet address">
-                            </figure>
-                        </fieldset>
-                        <fieldset>
-                            <div class="tabs">
-                                <ul class="tab-nav clearfix">
-                                    <li class="active bitcoin-tab">
-                                        <h6 class="tab-name uppercase">
-                                            <a href="tab1">Bitcoin (BTC)</a>
-                                        </h6>
-                                    </li>
-                                    <li class="ethererum-tab">
-                                        <h6 class="tab-name uppercase">
-                                            <a href="tab2">Ethererum (ETH)</a>
-                                        </h6>
-                                    </li>
-                                </ul>
-                                <div class="tab-container clearfix">
-                                    <div class="tab-content tab1 active bitcoin-content">
-                                        <ol class="steps">
-                                            <li>
-                                                Visit
-                                                <a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
-                                                <em>(login if needed)</em>
-                                                <figure>
-                                                    <img src="img/screens/3a-wallet-overview-btc.png" alt="Waves wallet - Dashboard BTC">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Locate the
-                                                <em>Bitcoin</em> balance on the dashboard and press
-                                                <strong>DEPOSIT</strong>.
-                                                <figure>
-                                                    <img src="img/screens/4-deposit-btc.png" alt="Waves wallet - Dashboard BTC">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Fill out the amount of BTC you want to transfer to
-                                                <em>your</em> wallet.
-                                            </li>
-                                            <li>
-                                                Scan the QR code in your Bitcoin wallet app.
-                                                <br> &nbsp;&nbsp;&nbsp;OR
-                                                <br> Transfer the amount of BTC to the Bitcoin address displayed in the screen.
-                                            </li>
-                                            <li>
-                                                Wait up to 60 minutes for your transaction to be processed and confirmed.
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <!-- END .tab-content -->
-                                    <div class="tab-content tab2 ethererum-content">
-                                        <ol class="steps">
-                                            <li>
-                                                Visit
-                                                <a href="https://waveswallet.io/" title="Waves wallet" target="waveswallet">waveswallet.io</a>
-                                                <em>(login if needed)</em>
-                                                <figure>
-                                                    <img src="img/screens/3b-wallet-overview-eth.png" alt="Waves wallet - Dashboard ETC">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Locate the
-                                                <em>Ethereum</em> balance on the dashboard and press
-                                                <strong>DEPOSIT</strong>.
-                                                <figure>
-                                                    <img src="img/screens/5-deposit-eth.png" alt="Waves wallet - Deposit BTC">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Scan the QR code in your Ethereum wallet app.
-                                                <br> &nbsp;&nbsp;&nbsp;OR
-                                                <br> Transfer the amount of ETH to the Ethereum address displayed in the screen.
-                                            </li>
-                                            <li>
-                                                Wait up to 5 minutes for your transaction to be processed and confirmed.
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <!-- END .tab-content -->
-                                </div>
-                                <!-- END .tab-container -->
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div class="tabs">
-                                <ul class="tab-nav clearfix">
-                                    <li class="active bitcoin-tab">
-                                        <h6 class="tab-name uppercase">
-                                            <a href="tab4">Bitcoin (BTC)</a>
-                                        </h6>
-                                    </li>
-                                    <li class="ethererum-tab">
-                                        <h6 class="tab-name uppercase">
-                                            <a href="tab5">Ethererum (ETH)</a>
-                                        </h6>
-                                    </li>
-                                </ul>
-                                <div class="tab-container clearfix">
-                                    <div class="tab-content tab4 active bitcoin-content">
-                                        <ol class="steps">
-                                            <li>
-                                                Press the
-                                                <strong>Decentral exchange button</strong> in the top navbar
-                                                <img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
-                                                <figure>
-                                                    <img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Click on the input field to select a token and enter
-                                                <code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
-                                                <figure>
-                                                    <img src="img/screens/6c-dex-lto-btc.png" alt="Waves wallet - DEX close up">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Make sure you've now selected the following pair
-                                                <strong>LegalThings One/BTC</strong>
-                                            </li>
-                                            <li>
-                                                Locate the
-                                                <em>LegalThings One sell orders</em> table and press on the top sell order of the list.
-                                                <figure>
-                                                    <img src="img/screens/6d-dex-lto-btc.png" alt="Waves wallet - DEX buy">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Fill out the amount of LTO you want to purchase and press
-                                                <strong>BUY</strong>.
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <!-- END .tab-content -->
-                                    <div class="tab-content tab5 ethererum-content">
-                                        <ol class="steps">
-                                            <li>
-                                                Press the
-                                                <strong>Decentral exchange button</strong> in the top navbar
-                                                <img src="img/waves-dex-icon.png" alt="Waves DEX icon">.
-                                                <figure>
-                                                    <img src="img/screens/6b-dex-lto-btc.png" alt="Waves wallet - DEX">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Click on the input field to select a token and enter
-                                                <code>HPCVtLLrKZ9pK9E1AhK1bdmZsc9uiKauZjpqq5HzH3Lp</code>.
-                                                <figure>
-                                                    <img src="img/screens/7b-dex-lto-eth.png" alt="Waves wallet - DEX ETH">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Click on the other input field to select a token and enter
-                                                <strong>ethereum</strong> (<code>474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu</code>).
-                                                <figure>
-                                                    <img src="img/screens/7c-dex-lto-eth.png" alt="Waves wallet - DEX close up">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Make sure you've now selected the following pair
-                                                <strong>LegalThings One/ETH</strong>
-                                            </li>
-                                            <li>
-                                                Locate the
-                                                <em>LegalThings One sell orders</em> table and press on the top sell order of the list.
-                                                <figure>
-                                                    <img src="img/screens/7d-dex-lto-eth.png" alt="Waves wallet - DEX buy">
-                                                </figure>
-                                            </li>
-                                            <li>
-                                                Fill out the amount of LTO you want to purchase and press
-                                                <strong>BUY</strong>.
-                                            </li>
-                                        </ol>
-                                    </div>
-                                    <!-- END .tab-content -->
-                                    <!-- END .tab-content -->
-                                </div>
-                                <!-- END .tab-container -->
-                            </div>
                         </fieldset>
                         <fieldset>
                             <img src="img/win.gif" title="Winner" class="center">
