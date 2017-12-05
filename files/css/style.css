@@ -524,9 +524,14 @@ form {
 	margin-top: 30px;
 }
 
-form .form-row {
+form .form-row-1 {
 	margin-top: 20px;
-	position: relative;
+	display: inline-block;
+}
+
+form .form-row-2 {
+	margin-top: 20px;
+	display: inline-block;
 }
 
 form h4 {
@@ -561,6 +566,15 @@ input[type=text].check-error, input[type=password].check-error, input[type=email
 .form-note {
 	display: none;
 }
+
+
+/* form currency selector */
+
+#currency-choice {
+	width: 50px;
+}
+
+
 
 /* Table
 ---------------------------------------- */
@@ -8952,6 +8966,40 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	max-width: 100%;
 }
 
+.popup-wizard #wizard-form input[type="number"] {
+	padding: 0 10px;
+	height: 44px;
+	max-width: 100%;
+	min-width: 100px;
+	border: 1px solid #e0e0e0;
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#price-per-token {
+	color: #473f71;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+}
+
+#price-per-token-times {
+	color: #696969;
+	margin-top: 12px;
+	font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+}
+
+#currency-choice {
+	min-width: 40px;
+}
+
+.token-input-label {
+}
+
 .popup-wizard #wizard-form .form-row.submit-row {
 	text-align: right;
 }
@@ -9009,6 +9057,8 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 	display: block;
 	margin: 0 auto;
 }
+
+
 
 .sf-wizard .sf-nav-step {
 	margin-top: 0 !important;
@@ -9103,6 +9153,8 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 .subscribe-block {
 	background: #231D39;
 }
+
+
 
 footer.footer-dark {
 	background: #000;

@@ -507,7 +507,7 @@
             <div class="spacer-medium"></div>
             <div class="align-center">
                 <a id="show-more" class="sr-button inline button-10 button-medium circled">More team members</a>
-                <a class="sr-button inline button-1 button-medium circled js-open-wishlistPopup">Join the pre-sale</a>
+                <a class="sr-button inline button-1 button-medium circled js-open-wizard">Join the pre-sale</a>
             </div>
         </div>
         <!-- END .wrapper -->
@@ -1060,20 +1060,42 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div id="wizard-form" class="wrapper-small">
-                                <div class="form-row">
-                                    <label for="amount">Number of LTO tokens <abbr title="required" class="required">*</abbr></label>
-                                    <input type="number" id="amount" name="amount" value="" step="500" min="500" max="500000">
+                            <div class="row">
+                                <h4>Select amount of tokens</h4>
+                                <div class="form-row column one-fifth">
+                                    <div id="wizard-form" class="wrapper-small">
+                                        <input type="number" id="number" name="amount" value="" step="500" min="500" max="500000">
+                                    </div>
                                 </div>
-                                
-                                <div>
-                                    60% bonus tokens: <span id="amount-bonus">0</span>
+                                <div class="form-row column one-fifth">
+                                    <div id="price-per-token-times">x</div>
+                                    <div id="price-per-token">$0,25</div>
                                 </div>
-                                
-                                <div>
-                                    Total amount of tokens: <span id="amount-total">0</span>
+
+                                <div class="form-row column one-third">
+                                    <div id="wizard-form" class="wrapper-small">
+                                        <input type="number" id="number" name="amount" value="" step="500" min="500" max="500000">
+                                        <select id="currency-choice">
+                                            <option value="EUR">EUR</option>
+                                            <option value="USD">USD</option>
+                                            <option value="BTC">BTC</option>
+                                            <option value="ETH">ETH</option>
+                                        </select>
+                                    </div>
+
                                 </div>
-                            </div>                            
+                                 <div class="form-row column one-last">                                    
+                                    <label for="amount">Number of LTO tokens
+                                        <abbr title="required" class="required">*</abbr>
+                                    </label>
+                                    <div>
+                                        60% bonus tokens: <span id="amount-bonus">0</span>
+                                    </div>
+                                    <div>
+                                        Total amount of tokens: <span id="amount-total">0</span>
+                                    </div>
+                                </div>
+                            </div>                          
                             
                             <table class="token-usage-table">
                                 <thead>
@@ -1219,6 +1241,7 @@
         </div>
         <!-- SCRIPTS -->
         <script src="files/dist/compress.min.js"></script>
+        <script src="files/js/custom.js"></script>
         <script src="https://checkout.stripe.com/checkout.js"></script>
         <!-- This needs to be loaded from their site, not locally -->
         <!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
