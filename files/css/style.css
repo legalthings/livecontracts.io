@@ -10015,6 +10015,24 @@ html.lock {
 	text-align: center;
 }
 
+/*	Thank You Page
+------------------------------------------------*/
+
+.thank-you {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+.wrapper-extra-small {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.wrapper-extra-small {
+	max-width: calc(100% - 80px);
+}
+
 /* FORM VALIDATION WITH PARSLEY */
 
 .parsley-required {
