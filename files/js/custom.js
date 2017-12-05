@@ -46,6 +46,8 @@ $(document).ready(function () {
 	stripeCheckoutInit();
   initWalletChoice();
   createWavesWallet();
+  getRates();
+  handlePayment();
 });
 
 
@@ -122,6 +124,89 @@ function createWavesWallet() {
       }
     });
 	});
+}
+
+function getRates() {
+  $.ajax({
+    url: waves_server + "/api/rates",
+    success: function (result) {
+			console.log(result);
+    }
+  });
+}
+
+function handlePayment() {
+	$('#pay').click(function() {
+    $('#pay').attr("disabled","disabled");
+
+		var user = collectUserInfo();
+		var organization = convertUserToOrg(user);
+    var amount = $('#number-lto').val();
+    var wallet = $('#wallet').val();
+    var currency = $('#currency-choice').val();
+
+		var data = {};
+		data.user = user;
+		data.organization = organization;
+		data.return_url = 'https://livecontracts.io/paid';
+		data.notify_url = waves_server + '/api/payment/notify';
+		data.quantity = amount;
+		data.wallet = wallet;
+		data.currency = currency;
+		data.payment_identifier = getPaymentProvider(currency);
+
+    $.ajax({
+      url: waves_server + "/api/payment/start",
+      type: "POST",
+      data: data,
+      success: function (result) {
+				console.log(result);
+        $('#pay').attr("disabled",false);
+
+        window.location.href = result.transaction.external_payment_url;
+      }
+    });
+	})
+}
+
+function collectUserInfo() {
+	var user = {};
+	user.first_name = $('#billing-firstname').val();
+	user.last_name = $('#billing-lastname').val();
+	user.email = $('#billing-email').val();
+	user.company = $('#billing-company').val();
+	user.address = $('#billing-address').val();
+	user.postcode = $('#billing-postcode').val();
+	user.city = $('#billing-city').val();
+	user.country = $('#billing-country').val();
+
+	return user;
+}
+
+function convertUserToOrg(user) {
+
+	var address = {};
+	address.street = user.address;
+	address.postcode = user.postcode;
+	address.city = user.city;
+	address.country = user.country;
+
+	var organization = {};
+	organization.id = user.email;
+ 	organization.name = user.company == "" ? user.first_name + " " + user.last_name : user.company;
+ 	organization.email = user.email;
+ 	organization.address = address;
+
+ 	return organization;
+}
+
+function getPaymentProvider(currency) {
+
+	if (currency === "EUR" || currency == "USD") {
+		return $('payment-choice').val();
+	}
+
+	return 'coinpaypents';
 }
 
 //function for animating quotes on scroll
