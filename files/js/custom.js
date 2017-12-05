@@ -176,11 +176,11 @@ function calculateRate() {
 	}
 
 	var currentCurrency = ltoRates.find(r => r.currency === selectedCurrency);
-	var bonusTokens = parseFloat(ltoAmount * 0.6).toFixed(6);
-	var totalLtos = parseFloat(parseInt(ltoAmount) + parseFloat(bonusTokens)).toFixed(6);
+	var bonusTokens = Math.ceil(parseFloat(ltoAmount * 0.6));
+	var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
 
 	if (currentCurrency) {
-		var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate));
+		var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(6);
 		$('#price').val(total);
 		$('#amount-bonus').html(bonusTokens);
 		$('#amount-total').html(totalLtos);
