@@ -605,7 +605,11 @@ function wizardInit() {
     onSlideChanged: function(to, data) {
       // if we transition to token selection step, fetch the rates and start calculation
       if (to === 1) {
-      	getRates();
+      	var myOpts = document.getElementById('price-currency').options;
+
+      	if (!myOpts.length) {
+      	  getRates();
+	    }
       }
     }
 });
