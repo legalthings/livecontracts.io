@@ -8979,7 +8979,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 #price-per-token {
 	color: #473f71;
-	margin-top: 10px;
+	margin-top: 14px;
 	font-size: 20px;
 	font-weight: 600;
 	display: inline-block;
@@ -8987,17 +8987,31 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 #price-per-token-times {
 	color: #696969;
-	margin-top: 12px;
+	margin-top: 18px;
 	font-size: 20px;
 	font-weight: 300;
 	display: inline-block;
 }
 
 #currency-choice {
-	min-width: 40px;
+	padding: 0 10px;
+    height: 44px;
+    max-width: 100%;
+    min-width: 60px;
+    border: 1px solid #e0e0e0;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 12px;
 }
 
 .token-input-label {
+}
+
+#amount-LTO {
+	width: 50px;
+	display: inline-block;
 }
 
 .popup-wizard #wizard-form .form-row.submit-row {
