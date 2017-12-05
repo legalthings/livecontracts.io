@@ -17,6 +17,10 @@ $(document).ready(function () {
 		quotesAnimation();
 	}
 
+	$('#wallet').on('change', function(newValue) {
+		validateWavesAddress(newValue.target.value);
+	});
+
 
 	$('#show-more').click(function() {
 		if(!isShowingMore) {
@@ -50,10 +54,7 @@ $(document).ready(function () {
   handlePayment();
 });
 
-
-
 //init for pie chart
-
 
 //opening Wishlist popup
 function openWishlistPopup() {
@@ -206,7 +207,34 @@ function getPaymentProvider(currency) {
 		return $('payment-choice').val();
 	}
 
-	return 'coinpaypents';
+	return 'coinpayments';
+}
+
+function loadCheckoutInformation() {
+
+	var user = collectUserInfo();
+
+	if (user.company == "") {
+    $('#checkout-company').hide();
+	} else {
+    $('#checkout-company').show();
+    $('#checkout-company').html(user.company);
+	}
+
+  $('#checkout-name').html(user.first_name + " " + user.last_name);
+	$('#checkout-email').html(user.email);
+  $('#checkout-address').html(user.address);
+  $('#checkout-city').html(user.postcode + ", " + user.city);
+  $('#checkout-country').html(user.country);
+  $('#checkout-wallet').html($('#wallet').val());
+
+  var tokens = $('#number-lto').val();
+  var price = $('#price').val();
+
+  $('#checkout-tokens').html("<strong>" + tokens + "</strong>");
+  $('#checkout-bonus').html("<strong>" + (tokens * 0.60) + "</strong>");
+  $('#checkout-total-tokens').html("<strong>" + (tokens * 1.60) + "</strong>");
+  $('#checkout-total-price').html("<strong>" + price + "</strong>");
 }
 
 //function for animating quotes on scroll
@@ -478,14 +506,38 @@ function loadTokens() {
 	})
 }
 
+//loading data about tokens status
+function validateWavesAddress(address) {
+	$('#wallet').parsley().removeError('required');
+
+	if (!address || !address.length) {
+		return;
+	}
+
+	$.ajax({
+		url: waves_server + `/api/wallet/${address}/validate`,
+		success: function (result) {
+			if (!result.valid) {
+				$('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
+			} else {
+				$('#wallet').parsley().removeError('required');
+			}
+		}
+	})
+}
+
+
 //init of wizard steps
 function wizardInit() {
 	sfw = $("#wizard").stepFormWizard({
-		onPrev: function (from) {
-		},
-		onSlideChanged: function (step, data) {
-			sfw.activeNext(true);
-		}
+    markPrevSteps: true,
+    onNext: function(i) {
+    	loadCheckoutInformation();
+      return $("#wizard").parsley().validate('block' + i);
+    },
+    onFinish: function() {
+      return $("#wizard").parsley().validate();
+    }
 	});
 
 	$(".js-open-wizard").on('click', function (e) {
