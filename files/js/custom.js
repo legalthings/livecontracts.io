@@ -201,7 +201,7 @@ function handlePayment() {
 		var data = {};
 		data.user = user;
 		data.organization = organization;
-		data.return_url = 'https://livecontracts.io/paid';
+		data.return_url = 'https://livecontracts.io/thankyou.html';
 		data.notify_url = waves_server + '/api/payment/notify';
 		data.quantity = parseInt(amount);
 		data.wallet = wallet;
@@ -260,7 +260,7 @@ function getPaymentProvider(currency) {
 		return $('payment-choice').val();
 	}
 
-	return 'coinpayments';
+	return 'ltc';
 }
 
 function loadCheckoutInformation() {
@@ -289,9 +289,16 @@ function loadCheckoutInformation() {
 
 
   $('#checkout-tokens').html("<strong>" + tokens + "</strong>");
+
   $('#checkout-bonus').html("<strong>" + bonusTokens + "</strong>");
   $('#checkout-total-tokens').html("<strong>" + totalTokens + "</strong>");
   $('#checkout-total-price').html("<strong>" + price + " " + currency + "</strong>");
+  var currency = $('#currency-choice').val();
+  if (currency == "EUR" || currency == "USD") {
+    $('#payment-choice').show();
+  } else {
+    $('#payment-choice').hide();
+	}
 }
 
 //function for animating quotes on scroll
