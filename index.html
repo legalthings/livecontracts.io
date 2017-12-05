@@ -1035,8 +1035,8 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <label for="billing-adress">Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-adress" name="billing-adress" required data-parsley-group="block0" placeholder="Street address">
+                                        <label for="billing-address">Address <abbr title="required" class="required">*</abbr></label>
+                                        <input type="text" id="billing-address" name="billing-address" value="" placeholder="Street address">
                                     </div>
 
                                     <div class="form-row column one-half">
@@ -1062,20 +1062,45 @@
                             </div>
                         </fieldset>
                         <fieldset>
-                            <div id="wizard-form" class="wrapper-small">
-                                <div class="form-row">
-                                    <label for="amount">Number of LTO tokens <abbr title="required" class="required">*</abbr></label>
-                                    <input type="number" id="amount" name="amount" step="500" min="500" max="500000" required data-parsley-group="block1">
+                            <div class="row">
+                                <h4>Select amount of tokens</h4>
+                                <div class="form-row column one-fourth">
+                                    <div id="wizard-form" class="wrapper-medium">
+                                        <input type="number" id="number-lto" name="number-lto" value="100" step="500" min="500" max="500000">
+                                        <div id="amount-LTO">LTO</div>
+                                    </div>
                                 </div>
-                                
-                                <div>
-                                    60% bonus tokens: <span id="amount-bonus">0</span>
+                                <div class="form-row column one-fourth">
+                                    <div id="price-per-token-times">x</div>
+                                    <div id="price-per-token">0,21</div>
                                 </div>
-                                
-                                <div>
-                                    Total amount of tokens: <span id="amount-total">0</span>
+
+                                <div class="form-row column one-fourth">
+                                    <div id="wizard-form" class="wrapper-big">
+                                        <input type="number" id="price" name="price" value="" step="500" min="500" max="500000">
+                                        <select id="currency-choice">
+                                            <option value="EUR">EUR</option>
+                                            <option value="USD">USD</option>
+                                            <option value="BTC">BTC</option>
+                                            <option value="ETH">ETH</option>
+                                        </select>
+                                    </div>
+
                                 </div>
-                            </div>                            
+                                 <div class="form-row column one-last">                                    
+                                    <label for="amount">Number of LTO tokens
+                                        <abbr title="required" class="required">*</abbr>
+                                    </label>
+                                    <div>
+                                        60% bonus tokens: <span id="amount-bonus">0</span>
+                                    </div>
+                                    <div>
+                                        Total amount of tokens: <span id="amount-total">0</span>
+                                    </div>
+
+                                </div>
+                            </div>  
+                            <div class="spacer-medium"></div>                        
                             
                             <table class="token-usage-table">
                                 <thead>
@@ -1184,19 +1209,20 @@
                         </fieldset>
                         <fieldset>
                             <div id="checkout-container">
-                                <h4>Checkout Summery</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit, lectus non interdum ultricies, ante urna aliquam diam, id tempus tortor ante sit amet magna.</p>
+                                <h4>Checkout Summary</h4>
+                                <p>Check if information you provided is correct. Please make sure have you filled in the right Waves Wallet address, because we cannot refund once the payment has been completed.</p>
                             </div>
                             <div class="your-checkout-details">
                                 <div class="column one-half">
                                     <div class="your-billing-details">
                                         <ul>
                                             <li><strong>Your billing address</strong></li>
-                                            <li>Folkert Brokking</li>
-                                            <li>folkert.brokking@gmail.com</li>
-                                            <li>Tweede Boomdwarsstraat 6B</li>
-                                            <li>1015 LK, Amsterdam</li>
-                                            <li>The Netherlands</li>
+                                            <li id="checkout-company">Johns Company</li>
+                                            <li id="checkout-name">John Doe</li>
+                                            <li id="checkout-email">john@doe.com</li>
+                                            <li id="checkout-address">Street 1B</li>
+                                            <li id="checkout-city">1000 AA, Amsterdam</li>
+                                            <li id="checkout-country">The Netherlands</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1204,19 +1230,27 @@
                                     <div class="your-token-details">
                                         <ul>
                                             <li><strong>Your wallet address</strong></li>
-                                            <li>p7RpViFJXXXFAKEADDRESSXXXZjNZ1NKd</li>
+                                            <li id="checkout-wallet">p7RpViFJXXXFAKEADDRESSXXXZjNZ1NKd</li>
                                         </ul>
                                         <ul>
                                             <li><strong>Token amount</strong></li>
-                                            <li>Your amount of tokens: <div class="price-align-right"><strong>500.000</strong></div></li>
-                                            <li>Whitelist bonus (60%): <div class="price-align-right"><strong>300.000</strong></div></li>
+                                            <li>Your amount of tokens: <div class="price-align-right" id="checkout-tokens"><strong>500.000</strong></div></li>
+                                            <li>Whitelist bonus (60%): <div class="price-align-right" id="checkout-bonus"><strong>300.000</strong></div></li>
                                             <li><hr></li>
-                                            <li>Your total amount of tokens: <div class="price-align-right"><strong>800.000</strong></div></li>
-                                            <li>Your total price: <div class="price-align-right"><strong>€10.500.000</strong></div></li>
+                                            <li>Your total amount of tokens: <div class="price-align-right" id="checkout-total-tokens"><strong>800.000</strong></div></li>
+                                            <li>Your total price: <div class="price-align-right" id="checkout-total-price"><strong>10.500.000</strong></div></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div style="clear:both"></div>
+
+                                <select id="payment-choice">
+                                    <option value="creditcard">Credit Card</option>
+                                    <option value="ideal">iDeal</option>
+                                </select>
+                                <br/>
+
+                                <input type="button" id="pay" name="pay" value="Pay">
                             </div>
                         </fieldset>
                         <fieldset>
