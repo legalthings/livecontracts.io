@@ -1151,14 +1151,39 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-row" id="enter wallet">
+                                    <div class="form-row" id="enter-wallet">
                                         <label for="wallet">Wallet Address <abbr title="required" class="required">*</abbr></label>
                                         <input type="text" id="wallet" name="wallet" value="" placeholder="Waves wallet public address">
+                                    </div>
+
+                                    <div class="form-row" id="create-wallet">
+                                        <label for="wallet">Wallet Address <abbr title="required" class="required">*</abbr></label>
+                                        <div id="generated-address">
+                                            <p>This feature involves the creation of a new account on Waves platform.</p>
+                                            <p>This SEED is extremely important and must be kept in safe place, since it's the only way to recover your account in case of lost, corrupted data or hardware failure.</p>
+                                            <p>Your SEED will also allow you to IMPORT your account to other devices (therefore, allow no one to reach it).</p>
+                                            <p>Download you SEED by clicking the download button below</p>
+                                            <p><b>Waves Wallet Address:</b> <span id="wallet-address"></span></p>
+                                            <input type="hidden" id="wallet" name="wallet" value=""><br/>
+                                            <b>Seed:</b>
+                                            <textarea id="seed" name="seed"></textarea>
+                                            <a id="download-seed" href="#">
+                                                <input type="button" name="download-seed" value="Download Seed">
+                                            </a>
+                                        </div>
+                                        <div id="generate-address">
+                                            <p>Click the button bellow to create a Waves wallet. You will receive a seed and wallet address.</p>
+
+                                            <input type="button" id="create-waves-wallet" name="create-waves-wallet" value="Create wallet">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </fieldset>
                         <fieldset>
+                            <div id="checkout-container">
+
+                            </div>
                         </fieldset>
                         <fieldset>
                             <img src="img/win.gif" title="Winner" class="center">
