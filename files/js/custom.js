@@ -151,7 +151,7 @@ function handlePayment() {
 		data.organization = organization;
 		data.return_url = 'https://livecontracts.io/paid';
 		data.notify_url = waves_server + '/api/payment/notify';
-		data.quantity = amount;
+		data.quantity = parseInt(amount);
 		data.wallet = wallet;
 		data.currency = currency;
 		data.payment_identifier = getPaymentProvider(currency);
@@ -159,7 +159,9 @@ function handlePayment() {
     $.ajax({
       url: waves_server + "/api/payment/start",
       type: "POST",
-      data: data,
+      data: JSON.stringify(data),
+      contentType: "application/json",
+      dataType: "json",
       success: function (result) {
 				console.log(result);
         $('#pay').attr("disabled",false);
