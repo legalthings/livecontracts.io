@@ -10043,6 +10043,7 @@ html.lock {
 
 .lto-pricing {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 32px;
 	margin-bottom: 16px;
 }
@@ -10083,6 +10084,20 @@ html.lock {
 
 .lto-pricing-total p {
 	margin: 0px;
+}
+
+.lto-pricing #rates-message {
+	font-size: 13px;
+	padding: 8px 0px;
+	display: block;
+	opacity: 0px;
+	transform: translateY(-5px);
+	transition: 333ms ease-in-out;
+}
+
+.lto-pricing #rates-message.visible {
+	transform: translateY(5px);
+	opacity: 1;
 }
 
 .accent-color {
