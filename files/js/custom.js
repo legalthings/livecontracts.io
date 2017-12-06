@@ -64,7 +64,6 @@ $(document).ready(function () {
   initSubscribeMailChimp();
   initTimer();
   timelineInit();
-  stripeCheckoutInit();
   initWalletChoice();
   createWavesWallet();
   handlePayment();
@@ -212,16 +211,18 @@ function handlePayment() {
     var amount = $('#lto-amount').val();
     var wallet = $('#wallet').val();
     var currency = $('#price-currency').val();
+    var provider = getPaymentProvider($('#payment-choice').val(), currency);
+    var price = $('#price').val();
 
-    var data = {};
-    data.user = user;
-    data.organization = organization;
-    data.return_url = 'https://livecontracts.io/thankyou.html';
-    data.notify_url = waves_server + '/api/payment/notify';
-    data.quantity = parseInt(amount);
-    data.wallet = wallet;
-    data.currency = currency;
-    data.provider = getPaymentProvider(currency);
+		var data = {};
+		data.user = user;
+		data.organization = organization;
+		data.return_url = 'https://livecontracts.io/thankyou.html';
+		data.notify_url = waves_server + '/api/payment/notify';
+		data.quantity = parseInt(amount);
+		data.wallet = wallet;
+		data.currency = currency;
+		data.provider = provider;
 
     var validWallet = checkWalletAddress(wallet, function(err, validWallet) {
 
@@ -231,9 +232,19 @@ function handlePayment() {
         return;
       }
 
-      $('#error-payment').hide();
+	  $('#error-payment').hide();
+	  
+	  if (provider === 'creditcard') {
+		stripeCheckout(data, price);
+	  } else {
+		  startPayment(data);
+	  }
+		});
+	})
+}
 
-      $.ajax({
+function startPayment(data) {
+	$.ajax({
         url: waves_server + "/api/payment/start",
         type: "POST",
         data: JSON.stringify(data),
@@ -242,16 +253,34 @@ function handlePayment() {
         success: function (result) {
           $('#pay').attr("disabled",false);
 
-          window.location.href = result.transaction.external_payment_url;
+			if (!result.transaction.id) {
+				$('#error-payment').html('Failed to complete transaction, please contact us on one of our social channels.');
+				$('#error-payment').show();
+			}
+
+		  if (result.transaction.external_payment_url) {
+			  window.location.href = result.transaction.external_payment_url;
+		  } else {
+			  window.location.href = data.return_url;
+		  }
         },
         error: function(XMLHttpRequest, textStatus, errorThrown) {
           $('#error-payment').html('Failed to complete transaction, please contact us on one of our social channels.');
           $('#error-payment').show();
         }
       });
-    });
-  })
 }
+
+  function getPaymentProvider(provider, currency) {
+    const prov = provider.toLowerCase().trim();
+    const cur = currency.toLowerCase().trim();
+
+    if (['usd', 'eur'].indexOf(cur) === -1) {
+      return 'crypto';
+	}
+	
+	return prov;
+  }
 
 function collectUserInfo() {
   var user = {};
@@ -284,15 +313,6 @@ function convertUserToOrg(user) {
   return organization;
 }
 
-function getPaymentProvider(currency) {
-
-  if (currency === "EUR" || currency === "USD") {
-    return 'ideal';
-  }
-
-  return 'crypto';
-}
-
 function loadCheckoutInformation() {
 
   var user = collectUserInfo();
@@ -317,13 +337,11 @@ function loadCheckoutInformation() {
   var price = $('#price').val();
   var currency = $('#price-currency').val();
 
-
   $('#checkout-tokens').html("<strong>" + tokens + "</strong>");
-
   $('#checkout-bonus').html("<strong>" + bonusTokens + "</strong>");
   $('#checkout-total-tokens').html("<strong>" + totalTokens + "</strong>");
   $('#checkout-total-price').html("<strong>" + price + " " + currency + "</strong>");
-  var currency = $('#currency-choice').val();
+
   if (currency == "EUR" || currency == "USD") {
     $('#payment-choice').show();
   } else {
@@ -711,117 +729,131 @@ function closePopup() {
   })
 }
 
-Number.prototype.formatMoney = function (c, d, t) {
+Number.prototype.formatMoney = function(c, d, t) {
   var n = this,
-  c = isNaN(c = Math.abs(c))
-  ? 2
-  : c,
-  d = d == undefined
-  ? "."
-  : d,
-  t = t == undefined
-  ? ","
-  : t,
-  s = n < 0
-  ? "-"
-  : "",
-  i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
-  j = (j = i.length) > 3
-  ? j % 3
-  : 0;
+    c = isNaN(c = Math.abs(c))
+      ? 2
+      : c,
+    d = d == undefined
+      ? "."
+      : d,
+    t = t == undefined
+      ? ","
+      : t,
+    s = n < 0
+      ? "-"
+      : "",
+    i = String(parseInt(n = Math.abs(Number(n) || 0).toFixed(c))),
+    j = (j = i.length) > 3
+      ? j % 3
+      : 0;
   return s + (
     j
-    ? i.substr(0, j) + t
-    : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (
+      ? i.substr(0, j) + t
+      : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (
     c
-    ? d + Math.abs(n - i).toFixed(c).slice(2)
-    : "");
-  };
+      ? d + Math.abs(n - i).toFixed(c).slice(2)
+      : "");
+};
 
-  function initSubscribeMailChimp() {
-    var $form = null;
+function initSubscribeMailChimp() {
+  var $form = null;
 
-    $('.newsletter-form').submit(function (e) {
-      e.preventDefault();
-      $form = $(this);
-    });
-
-    $('.newsletter-form').ajaxChimp({
-      callback: function (resp) {
-        var $error = $form.find('.newsletter-error');
-        var $success = $form.find('.newsletter-success');
-
-        $error.hide();
-        $success.hide();
-
-        if (resp.result === 'error') {
-          $error.show().html(resp.msg);
-          $success.hide();
-        } else {
-          $error.hide();
-          $success.show();
-        }
-      },
-      url: 'https://legalthings.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=6d17a10ae2'
-    });
-  }
-
-
-  function initTimer() {
-    var time = $('.count-down');
-
-    if (!time || !time.length) {
-      return;
-    }
-
-    var endDate = new Date(time.data("end-date"));
-    time.countdown({
-      date: endDate,
-      render: function (data) {
-        $(this.el).html('<div class="cd-row"><div><h1>' + data.days
-          + '</h1><p>days</p></div><div><h1>'
-          + this.leadingZeros(data.hours, 2)
-          + '</h1><p>hrs</p></div></div><div class="cd-row"><div><h1>'
-          + this.leadingZeros(data.min, 2)
-          + '</h1><p>min</p></div><div><h1>'
-          + this.leadingZeros(data.sec, 2)
-          + '</h1><p>sec</p></div></div>');
-      }
-    });
-  }
-
-  function stripeCheckoutInit() {
-    var handler = StripeCheckout.configure({
-      key: 'pk_test_Vvo4uuQl1pb1DF7hJj4hDhHP',
-      image: 'https://s3-eu-west-1.amazonaws.com/livecontracts/img/logo/icon-purple.png',
-      locale: 'auto',
-      token: function (token) {
-      // pass token.id and email to the server
-    }
+  $('.newsletter-form').submit(function(e) {
+    e.preventDefault();
+    $form = $(this);
   });
 
-    if ($('#checkout-presale').length) {
-      document.getElementById('checkout-presale').addEventListener('click', function (e) {
-      // Open Checkout with further options:
-      handler.open({
-        name: 'LTO Pre-sale',
-        description: 'Purchase LTO tokens',
-        zipCode: false,
-        currency: 'usd',
+  $('.newsletter-form').ajaxChimp({
+    callback: function(resp) {
+      var $error = $form.find('.newsletter-error');
+      var $success = $form.find('.newsletter-success');
 
-        // this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
-        // based on <num_tokens> * $0.25
-        amount: 2000,
-        bitcoin: false,
-        allowRememberMe: false
-      });
-      e.preventDefault();
-    });
-    }
+      $error.hide();
+      $success.hide();
 
-
-  // Close Checkout on page navigation:
-  window.addEventListener('popstate', function () {
-    handler.close();
+      if (resp.result === 'error') {
+        $error.show().html(resp.msg);
+        $success.hide();
+      } else {
+        $error.hide();
+        $success.show();
+      }
+    },
+    url: 'https://legalthings.us17.list-manage.com/subscribe/post?u=1508bdb96b4379a9aeb07c6e8&amp;id=6d17a10ae2'
   });
 }
+
+function stripeCheckout(data, price) {
+  if (!price || price <= 0 || isNaN(price)) {
+    return;
+  }
+
+  var handler = StripeCheckout.configure({
+    name: 'LTO Pre-sale',
+    key: 'pk_test_Vvo4uuQl1pb1DF7hJj4hDhHP',
+    image: 'https://s3-eu-west-1.amazonaws.com/livecontracts/img/logo/icon-purple.png',
+    description: 'Purchase LTO tokens',
+    zipCode: false,
+    bitcoin: false,
+    allowRememberMe: false,
+    amount: price * 100, // in cents
+    email: data.user.email,
+    currency: data.currency || 'USD'
+  });
+
+  handler.open({
+    token: function(token) {
+      data.user.creditcard = {token: token.id};
+      startPayment(data);
+    }
+  });
+}
+
+function initTimer() {
+  var time = $('.count-down');
+
+  if (!time || !time.length) {
+    return;
+  }
+
+  var endDate = new Date(time.data("end-date"));
+  time.countdown({
+    date: endDate,
+    render: function(data) {
+      $(this.el).html('<div class="cd-row"><div><h1>' + data.days
+        + '</h1><p>days</p></div><div><h1>'
+        + this.leadingZeros(data.hours, 2)
+        + '</h1><p>hrs</p></div></div><div class="cd-row"><div><h1>'
+        + this.leadingZeros(data.min, 2)
+        + '</h1><p>min</p></div><div><h1>'
+        + this.leadingZeros(data.sec, 2)
+        + '</h1><p>sec</p></div></div>');
+    }
+  });
+}
+
+if ($('#checkout-presale').length) {
+  document.getElementById('checkout-presale').addEventListener('click', function(e) {
+    // Open Checkout with further options:
+    handler.open({
+      name: 'LTO Pre-sale',
+      description: 'Purchase LTO tokens',
+      zipCode: false,
+      currency: 'usd',
+
+      // this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
+      // based on <num_tokens> * $0.25
+      amount: 2000,
+      bitcoin: false,
+      allowRememberMe: false
+    });
+    e.preventDefault();
+  });
+}
+
+
+// Close Checkout on page navigation:
+window.addEventListener('popstate', function() {
+  handler.close();
+});
