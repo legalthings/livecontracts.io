@@ -268,7 +268,7 @@ function startPayment(data) {
           $('#error-payment').html('Failed to complete transaction, please contact us on one of our social channels.');
           $('#error-payment').show();
         }
-      });master
+      });
 }
 
   function getPaymentProvider(provider, currency) {
