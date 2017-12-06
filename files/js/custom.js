@@ -791,7 +791,7 @@ function stripeCheckout(data, price) {
 
   var handler = StripeCheckout.configure({
     name: 'LTO Pre-sale',
-    key: 'pk_test_Vvo4uuQl1pb1DF7hJj4hDhHP',
+    key: 'pk_live_8R8FrtJRBHzJ6Fqet7pK4Fa1',
     image: 'https://s3-eu-west-1.amazonaws.com/livecontracts/img/logo/icon-purple.png',
     description: 'Purchase LTO tokens',
     zipCode: false,
