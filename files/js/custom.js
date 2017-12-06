@@ -603,7 +603,7 @@ function validateWavesAddress(address) {
 //init of wizard steps
 function wizardInit() {
 	sfw = $("#wizard").stepFormWizard({
-    markPrevSteps: true,
+	markPrevSteps: true,
     onNext: function(i) {
       loadCheckoutInformation();
       return $("#wizard").parsley().validate('block' + i);

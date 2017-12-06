@@ -10088,3 +10088,7 @@ html.lock {
 .accent-color {
 	color: #9067c6;
 }
+
+.sf-btn-finish {
+	display: none !important;
+}
