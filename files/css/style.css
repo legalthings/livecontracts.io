@@ -8959,7 +8959,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 .popup-wizard #wizard-form label {
-	margin-bottom: 10px;
+	margin-top: 16px;
 }
 
 .popup-wizard #wizard-form input {
@@ -10037,7 +10037,7 @@ html.lock {
 
 /* FORM VALIDATION WITH PARSLEY */
 
-.parsley-required {
+.parsley-required, .parsley-type, .parsley-range {
 	color: red;
 }
 
@@ -10095,4 +10095,15 @@ html.lock {
 
 #error-payment {
 	color: red;
+}
+
+.parsley-errors-list {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	list-style: none;
+}
+
+.lto-pricing .parsley-errors-list {
+	position: absolute;
 }
