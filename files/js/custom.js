@@ -215,18 +215,33 @@ function handlePayment() {
 		data.currency = currency;
 		data.payment_identifier = getPaymentProvider(currency);
 
-    $.ajax({
-      url: waves_server + "/api/payment/start",
-      type: "POST",
-      data: JSON.stringify(data),
-      contentType: "application/json",
-      dataType: "json",
-      success: function (result) {
-        $('#pay').attr("disabled",false);
+		var validWallet = checkWalletAddress(wallet, function(err, validWallet) {
 
-        window.location.href = result.transaction.external_payment_url;
+      if (!validWallet) {
+        $('#error-payment').html('Invalid waves wallet address entered please correct it in previous step');
+        $('#error-payment').show();
+        return;
       }
-    });
+
+      $('#error-payment').hide();
+
+      $.ajax({
+        url: waves_server + "/api/payment/start",
+        type: "POST",
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        dataType: "json",
+        success: function (result) {
+          $('#pay').attr("disabled",false);
+
+          window.location.href = result.transaction.external_payment_url;
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+          $('#error-payment').html('Failed to complete transaction, please contact us on one of our social channels.');
+          $('#error-payment').show();
+        }
+      });
+		});
 	})
 }
 
@@ -587,14 +602,23 @@ function validateWavesAddress(address) {
 		return;
 	}
 
-	$.ajax({
-		url: waves_server + `/api/wallet/${address}/validate`,
-		success: function (result) {
-			if (!result.valid) {
-				$('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
-			} else {
-				$('#wallet').parsley().removeError('required');
-			}
+	checkWalletAddress((address), function(err, valid){
+    if (!valid) {
+      $('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
+    } else {
+      $('#wallet').parsley().removeError('required');
+    }
+	});
+}
+
+function checkWalletAddress(address, callback) {
+  $.ajax({
+    url: waves_server + `/api/wallet/${address}/validate`,
+    success: function (result) {
+      callback(null, result.valid)
+    },
+    error: function (req, status, err) {
+    	callback(err);
 		}
 	})
 }
@@ -622,6 +646,8 @@ function wizardInit() {
       }
     }
 });
+
+	$('#error-payment').hide();
 
 	$(".js-open-wizard").on('click', function (e) {
 		e.preventDefault();
