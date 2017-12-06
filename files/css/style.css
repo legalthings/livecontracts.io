@@ -10051,17 +10051,23 @@ html.lock {
 	height: 52px;
 	width: 225px;
 	max-width: 100%;
-	border: 2px solid black;
+	border: 1px solid black;
 	font-size: 24px;
 	display: inline-block;
+        vertical-align: 0;
 }
 
 .lto-pricing select {
 	height: 52px;
 	max-width: 225px;
-	border: 2px solid black;
+	border: 1px solid black;
 	font-size: 24px;
 	display: inline-block;
+        vertical-align: bottom;
+        font-weight: 200;
+}
+.lto-pricing select option {
+        font-weight: 200;
 }
 
 .lto-pricing span {

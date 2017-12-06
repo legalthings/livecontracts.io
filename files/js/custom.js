@@ -180,11 +180,18 @@ function calculateRate() {
 	var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
 
 	if (currentCurrency) {
-		var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(6);
+                var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR' ? 0 : 6; 
+		var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(decimals);
 		$('#price').val(total);
 		$('#amount-bonus').html(bonusTokens);
 		$('#amount-total').html(totalLtos);
 	}
+        
+        $('#amount-users').text(Math.floor(ltoAmount / 500));
+        $('#amount-contracts').text(Math.floor(ltoAmount / 1000) * 5);
+        $('#amount-interactions').text(Math.floor(ltoAmount / 1000) * 250);
+        $('#amount-packages').text(Math.min(Math.floor(ltoAmount / 10000), 4));
+        $('#amount-nodes').text(ltoAmount > 100000 ? 1 : 0);
 }
 
 
@@ -257,9 +264,9 @@ function convertUserToOrg(user) {
 function getPaymentProvider(currency) {
 
 	if (currency === "EUR") {
-    return 'ideal_EUR';
-  }) else if (currency === "USD") {
-		return 'ideal_USD';
+                return 'ideal_EUR';
+        } else if (currency === "USD") {
+                return 'ideal_USD';
 	}
 
 	return 'ltc';
