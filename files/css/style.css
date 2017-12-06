@@ -10092,3 +10092,7 @@ html.lock {
 .sf-btn-finish {
 	display: none !important;
 }
+
+#error-payment {
+	color: red;
+}
