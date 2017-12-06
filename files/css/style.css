@@ -744,6 +744,8 @@ ul li:first-child, ol li:first-child {
 /* Others
 ---------------------------------------- */
 p {
+	font-family: 'Lato';
+	letter-spacing: -0.02em;
 	margin-top: 20px;
 }
 
@@ -10037,4 +10039,56 @@ html.lock {
 
 .parsley-required {
 	color: red;
+}
+
+.lto-pricing {
+	display: inline-block;
+	margin-right: 32px;
+	margin-bottom: 16px;
+}
+
+.lto-pricing input {
+	height: 52px;
+	width: 225px;
+	max-width: 100%;
+	border: 1px solid black;
+	font-size: 24px;
+	display: inline-block;
+        vertical-align: 0;
+}
+
+.lto-pricing select {
+	height: 52px;
+	max-width: 225px;
+	border: 1px solid black;
+	font-size: 24px;
+	display: inline-block;
+        vertical-align: bottom;
+        font-weight: 200;
+}
+.lto-pricing select option {
+        font-weight: 200;
+}
+
+.lto-pricing span {
+	font-size: 24px;
+	color: black;
+}
+
+.lto-pricing-total {
+	margin-top: 16px;
+	border: 1px dotted #9067c6;
+	padding: 16px;
+}
+
+.lto-pricing-total p {
+	margin: 0px;
+}
+
+.accent-color {
+	color: #9067c6;
+}
+
+.sf-btn-finish {
+	display: none !important;
 }

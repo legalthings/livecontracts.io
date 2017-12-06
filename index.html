@@ -1003,9 +1003,6 @@
             <div class="popup-backdrop popup-hide"></div>
             <div class="popup popup-wizard popup-hide">
                 <div class="overlay"></div>
-                <a href="#" class="popup__close">
-                    <i class="ion ion-3x ion-close-round"></i>
-                </a>
                 <div class="popup__content">
                     <form id="wizard">
                         <fieldset>
@@ -1036,7 +1033,7 @@
 
                                     <div class="form-row">
                                         <label for="billing-address">Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-address" name="billing-address" value="" placeholder="Street address">
+                                        <input type="text" id="billing-address" name="billing-address" value="" required data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half">
@@ -1064,43 +1061,30 @@
                         <fieldset>
                             <div class="row">
                                 <h4>Select amount of tokens</h4>
-                                <div class="form-row column one-fourth">
-                                    <div id="wizard-form" class="wrapper-medium">
-                                        <input type="number" id="number-lto" name="number-lto" value="100" step="500" min="500" max="500000">
-                                        <div id="amount-LTO">LTO</div>
-                                    </div>
-                                </div>
-                                <div class="form-row column one-fourth">
-                                    <div id="price-per-token-times">x</div>
-                                    <div id="price-per-token">0,21</div>
+                                <div class="lto-pricing">
+                                    <input type="text" id="lto-amount" name="number-lto">
+                                    <span>LTO</span>
                                 </div>
 
-                                <div class="form-row column one-fourth">
-                                    <div id="wizard-form" class="wrapper-big">
-                                        <input type="number" id="price" name="price" value="" step="500" min="500" max="500000">
-                                        <select id="currency-choice">
-                                            <option value="EUR">EUR</option>
-                                            <option value="USD">USD</option>
-                                            <option value="BTC">BTC</option>
-                                            <option value="ETH">ETH</option>
-                                        </select>
-                                    </div>
-
+                                <div class="lto-pricing">
+                                    <input type="text" id="price" name="price" readonly>
+                                    <select name="price-currency" id="price-currency">
+                                    </select>
                                 </div>
-                                 <div class="form-row column one-last">                                    
-                                    <label for="amount">Number of LTO tokens
-                                        <abbr title="required" class="required">*</abbr>
-                                    </label>
-                                    <div>
+
+                                <div class="clear"></div>
+
+                                 <div class="lto-pricing-total">                                    
+                                    <p>
                                         60% bonus tokens: <span id="amount-bonus">0</span>
-                                    </div>
-                                    <div>
-                                        Total amount of tokens: <span id="amount-total">0</span>
-                                    </div>
+                                    </p>
+                                    <p class="accent-color">
+                                        <strong>Total amount of tokens: <span id="amount-total">0</span></strong>
+                                    </p>
 
                                 </div>
                             </div>  
-                            <div class="spacer-medium"></div>                        
+                            <div class="spacer-small"></div>                        
                             
                             <table class="token-usage-table">
                                 <thead>
@@ -1112,48 +1096,38 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <i class="fa fa-id-card-o"></i>
-                                            <div class="tooltip">
-                                                User
-                                            </div>
+                                            <i class="fa fa-fw fa-id-card-o"></i>
+                                            Users
                                         </td>
-                                        <td>0</td>
+                                        <td><span id="amount-users"></span></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <i class="fa fa-play-circle"></i>
-                                            <div class="tooltip">
-                                                Create Live Contracts
-                                            </div>
+                                            <i class="fa fa-fw fa-play-circle"></i>
+                                            Create Live Contracts
                                         </td>
-                                        <td>0 per week</td>
+                                        <td><span id="amount-contracts"></span> per week</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <i class="fa fa-retweet"></i>
-                                            <div class="tooltip">
-                                                Live Contract interactions
-                                            </div>
+                                            <i class="fa fa-fw fa-retweet"></i>
+                                            Live Contract interactions
                                         </td>
-                                        <td>0 per week</td>
+                                        <td><span id="amount-interactions"></span> per week</td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <i class="fa fa-file-text"></i>
-                                            <div class="tooltip">
-                                                Live Contracts pre-package
-                                            </div>
+                                            <i class="fa fa-fw fa-file-text"></i>
+                                            Live Contracts pre-packages
                                         </td>
-                                        <td>0</td>
+                                        <td><span id="amount-packages"></span></td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <i class="fa fa-building"></i>
-                                            <div class="tooltip">
-                                                Full node with whitelabled environment
-                                            </div>
+                                            <i class="fa fa-fw fa-building"></i>
+                                            Full node with whitelabled environment
                                         </td>
-                                        <td>0</td>
+                                        <td><span id="amount-nodes"></span></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1251,34 +1225,6 @@
                                 <br/>
 
                                 <input type="button" id="pay" name="pay" value="Pay">
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <img src="img/win.gif" title="Winner" class="center">
-                            <h3>Share it!</h3>
-                            <div class="socials">
-                                <ul>
-                                    <li class="social">
-                                        <a href="#" data-target="twitter">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social">
-                                        <a href="#" data-target="facebook">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social">
-                                        <a href="#" data-target="googleplus">
-                                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social">
-                                        <a href="#" data-target="linkedin">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </fieldset>
                     </form>
