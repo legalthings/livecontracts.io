@@ -246,6 +246,10 @@ function handlePayment() {
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
   	  } else {
+        if (data.currency == "USD") {
+          data.currency = "EUR";
+        }
+        
   		  startPayment(data);
   	  }
 		});
