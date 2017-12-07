@@ -12,6 +12,7 @@ var wavesWallet = null;
 var ltoRates = {};
 var bonusRate = 0.6;
 var paymentOptions = [
+  { value: "creditcard", text: "Credit Card" },
   { value: "ideal", text: "iDeal" }
 ];
 
@@ -246,10 +247,6 @@ function handlePayment() {
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
   	  } else {
-        if (data.currency == "USD") {
-          data.currency = "EUR";
-        }
-        
   		  startPayment(data);
   	  }
 		});
@@ -733,8 +730,8 @@ function wizardInit() {
 
         $("#pay").appendTo(".sf-controls").addClass('visible');
 
-        if (currency === "USD") $("#payment-unavailable").css('display', 'block');
-        else $("#payment-unavailable").css('display', 'none');
+        // if (currency === "USD") $("#payment-unavailable").css('display', 'block');
+        // else $("#payment-unavailable").css('display', 'none');
       }
     }
   });
