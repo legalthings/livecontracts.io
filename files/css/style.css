@@ -10164,13 +10164,27 @@ html.lock {
 
 #pay {
 	opacity: 0;
+	display: none !important;
 }
 
 #pay.visible {
 	opacity: 1;
+	display: block !important;
 }
 
 #pay:disabled {
   background: grey !important;
   cursor: not-allowed;
+}
+
+.next-btn.disabled {
+	pointer-events: none;
+	cursor: not-allowed;
+  background: grey !important;
+}
+
+.span-seed-msg {
+	float: right;
+  margin-top: 15px;
+  margin-right: 8px;
 }
