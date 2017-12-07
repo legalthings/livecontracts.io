@@ -1041,25 +1041,25 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <label for="billing-address">Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-address" name="billing-address" value="" required data-parsley-group="block0">
+                                        <label for="billing-address">Address</label>
+                                        <input type="text" id="billing-address" name="billing-address" value="" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half">
-                                        <label for="billing-postcode">Postcode / Zip <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-postcode" name="billing-postcode" required data-parsley-group="block0">
+                                        <label for="billing-postcode">Postcode / Zip</label>
+                                        <input type="text" id="billing-postcode" name="billing-postcode" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half last-col">
-                                        <label for="billing-city">City / Town <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-city" name="billing-city" required data-parsley-group="block0">
+                                        <label for="billing-city">City / Town</label>
+                                        <input type="text" id="billing-city" name="billing-city" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
 
                                     <div class="form-row">
-                                        <label for="billing-country">Country <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-country" name="billing-country" required data-parsley-group="block0">
+                                        <label for="billing-country">Country</label>
+                                        <input type="text" id="billing-country" name="billing-country" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
@@ -1230,14 +1230,9 @@
                                 <div style="clear:both"></div>
 
                                 <input type="checkbox" id="toc-agreement">I agree with the <a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
-
-                                <select id="payment-choice">
-                                    <option value="creditcard">Credit Card</option>
-                                    <option value="ideal">iDeal</option>
-                                </select>
-                                <br/>
-
-                                <input type="button" id="pay" name="pay" value="Pay" disabled="disabled">
+                                <br>
+                                <select id="payment-choice"></select>
+                                <input type="button" id="pay" class="sf-right sf-btn" name="pay" value="Pay" disabled="disabled">
                             </div>
                         </fieldset>
                     </form>
