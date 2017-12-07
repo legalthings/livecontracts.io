@@ -10188,3 +10188,7 @@ html.lock {
   margin-top: 15px;
   margin-right: 8px;
 }
+
+#payment-unavailable {
+	display: none;
+}
