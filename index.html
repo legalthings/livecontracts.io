@@ -48,6 +48,15 @@
             gtag('js', new Date());
             gtag('config', 'UA-62115237-2');
         </script>
+
+        <!-- Intercom -->
+        <script>
+          window.intercomSettings = {
+              app_id: 'g247sp2q'
+          };
+
+          (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g247sp2q';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+        </script>
     </head>
 
     <body>
@@ -83,7 +92,7 @@
                                         <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
                                     </li>
                                     <li class="">
-                                        <a href="#lto-presale" class="js-open-wizard">Join the pre-sale</a>
+                                        <a href="#lto-presale" class="js-open-wizard">Buy LTO Tokens</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -121,7 +130,7 @@
                             Demo
                         </a>
                         <a class="sr-button button-1  button-medium circled js-open-wizard">
-                            Join the pre-sale
+                            Buy LTO Tokens
                         </a>
                     </p>
                     <div class="count-down-wrap" style="width: 540px; margin-top: 50px;">
@@ -183,7 +192,7 @@
                                     Live Contracts allow automation of agreements and laws without giving full control to the machines.
                                 </div>
                                 <br/>
-                                <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wizard">Join the pre-sale
+                                <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wizard">Buy LTO Tokens
                                 </a>
                             </div>
                             <div class="column one-third last-col testimonial">
@@ -333,7 +342,7 @@
                         <a href="https://medium.com/legalthingsone" class="sr-button inline button-10 button-medium circled " target="_blank">
                             More articles
                         </a>
-                        <a href="" class="sr-button inline button-1  button-medium circled js-open-wizard">Join the pre-sale</a>
+                        <a href="" class="sr-button inline button-1  button-medium circled js-open-wizard">Buy LTO Tokens</a>
                     </div>
                     <div class="spacer-small"></div>
                 </div>
@@ -569,7 +578,7 @@
             <div class="spacer-medium"></div>
             <div class="align-center">
                 <a id="show-more" class="sr-button inline button-10 button-medium circled">More team members</a>
-                <a class="sr-button inline button-1 button-medium circled js-open-wizard">Join the pre-sale</a>
+                <a class="sr-button inline button-1 button-medium circled js-open-wizard">Buy LTO Tokens</a>
             </div>
         </div>
         <!-- END .wrapper -->
@@ -790,7 +799,7 @@
                     </div>
                     <div class="text-light align-center">
                         <div class="spacer-medium"></div>
-                        <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">Join the pre-sale</a>
+                        <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">Buy LTO Tokens</a>
                     </div>
                 </div>
             </div>
@@ -901,7 +910,7 @@
                             <div class="spacer-mini"></div>
                             <div class="blog-desc align-center">
                                 <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
-                                    Join the pre-sale
+                                    Buy LTO Tokens
                                 </a>
                             </div>
                         </div>
@@ -916,7 +925,7 @@
                                 <div class="progress-active progress-bar__element" data-perc="">
                                     <span class="tooltip" style="">
                                         <span id="current-tokens-sold">
-    
+
                                         </span> LTO sold
                                     </span>
                                 </div>
@@ -941,7 +950,7 @@
                             </p>
                             <div class="hidden align-center">
                                 <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
-                                    Join the pre-sale
+                                    Buy LTO Tokens
                                 </a>
                             </div>
                         </div>
@@ -1093,49 +1102,49 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <label for="billing-address">Address <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-address" name="billing-address" value="" required data-parsley-group="block0">
+                                        <label for="billing-address">Address</label>
+                                        <input type="text" id="billing-address" name="billing-address" value="" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half">
-                                        <label for="billing-postcode">Postcode / Zip <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-postcode" name="billing-postcode" required data-parsley-group="block0">
+                                        <label for="billing-postcode">Postcode / Zip</label>
+                                        <input type="text" id="billing-postcode" name="billing-postcode" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half last-col">
-                                        <label for="billing-city">City / Town <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-city" name="billing-city" required data-parsley-group="block0">
+                                        <label for="billing-city">City / Town</label>
+                                        <input type="text" id="billing-city" name="billing-city" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
 
                                     <div class="form-row">
-                                        <label for="billing-country">Country <abbr title="required" class="required">*</abbr></label>
-                                        <input type="text" id="billing-country" name="billing-country" required data-parsley-group="block0">
+                                        <label for="billing-country">Country</label>
+                                        <input type="text" id="billing-country" name="billing-country" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
                                     <div class="spacer-medium"></div>
-                                </div> <!-- END .billing-details -->	
+                                </div> <!-- END .billing-details -->
                             </div>
                         </fieldset>
                         <fieldset>
                             <div class="row">
                                 <h4>Select amount of tokens</h4>
                                 <div class="lto-pricing">
-                                    <input type="text" id="lto-amount" name="number-lto">
+                                    <input type="text" id="lto-amount" name="number-lto" data-parsley-group="block1" data-parsley-range="[500, 5000000]">
                                     <span>LTO</span>
                                 </div>
 
                                 <div class="lto-pricing">
                                     <input type="text" id="price" name="price" readonly>
-                                    <select name="price-currency" id="price-currency">
-                                    </select>
+                                    <select name="price-currency" id="price-currency"></select>
+                                    <span id="rates-message"></span>
                                 </div>
 
                                 <div class="clear"></div>
 
-                                 <div class="lto-pricing-total">                                    
+                                 <div class="lto-pricing-total">
                                     <p>
                                         60% bonus tokens: <span id="amount-bonus">0</span>
                                     </p>
@@ -1144,9 +1153,9 @@
                                     </p>
 
                                 </div>
-                            </div>  
-                            <div class="spacer-small"></div>                        
-                            
+                            </div>
+                            <div class="spacer-small"></div>
+
                             <table class="token-usage-table">
                                 <thead>
                                     <tr>
@@ -1201,7 +1210,7 @@
                                     If you don't have a Waves wallet, you'll get the option to create one upon checking out.
                                 </p>
                                 <p>
-                            
+
                                 </p>
                                 <div id="wizard-form">
                                     <div class="form-row">
@@ -1246,6 +1255,8 @@
                             <div id="checkout-container">
                                 <h4>Checkout Summary</h4>
                                 <p>Check if information you provided is correct. Please make sure have you filled in the right Waves Wallet address, because we cannot refund once the payment has been completed.</p>
+                                <div id="error-payment">Test error</div>
+                                <div id="progress-bar" class="progress-line"></div>
                             </div>
                             <div class="your-checkout-details">
                                 <div class="column one-half">
@@ -1279,13 +1290,12 @@
                                 </div>
                                 <div style="clear:both"></div>
 
-                                <select id="payment-choice">
-                                    <option value="creditcard">Credit Card</option>
-                                    <option value="ideal">iDeal</option>
-                                </select>
-                                <br/>
-
-                                <input type="button" id="pay" name="pay" value="Pay">
+                                <input type="checkbox" id="toc-agreement">I agree with the <a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
+                                <br>
+                                <select id="payment-choice"></select>
+                                <br>
+                                <span id="payment-unavailable" class="parsley-required">Paying with a credit card is not possible at this moment.<br>Please choose another payment method or come back later.</span>
+                                <input type="button" id="pay" class="sf-right sf-btn" name="pay" value="Buy LTO Tokens" disabled="disabled">
                             </div>
                         </fieldset>
                     </form>
@@ -1322,5 +1332,4 @@
         <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
         <!-- SCRIPTS -->
     </body>
-
 </html>
