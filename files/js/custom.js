@@ -691,6 +691,10 @@ function wizardInit() {
       return $("#wizard").parsley().validate();
     },
     onSlideChanged: function(to, data) {
+        $('.next-btn').removeClass('disabled');
+        
+        if ($('.sf-controls').find('span').length) $('.sf-controls').find('span').remove();
+
       // if we transition to token selection step, fetch the rates and start calculation
       if (to === 1) {
         var myOpts = document.getElementById('price-currency').options;
