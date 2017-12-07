@@ -10,7 +10,7 @@ $(window).load(function () {
 
 var wavesWallet = null;
 var ltoRates = {};
-var bonusRate = 0.6;
+var bonusRate = 0;
 var paymentOptions = [
   { value: "creditcard", text: "Credit Card" },
   { value: "ideal", text: "iDeal" }
@@ -618,6 +618,11 @@ function loadTokens() {
   $.ajax({
     url: waves_server + "/api/balance",
     success: function (result) {
+      if (result.phases && result.phases.bonus) {
+        bonusRate = result.phases.bonus;
+      } else {
+        $('#bonus-tokens-msg').css('display', 'none');
+      }
 
       var total = parseInt(result.phases.presale.limit) / 100000000;
       var sold = total - (result.balance / 100000000);
