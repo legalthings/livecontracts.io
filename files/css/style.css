@@ -402,6 +402,11 @@ input[type=text], input[type=password], input[type=email] {
 	max-width: calc(100% - 22px);
 }
 
+button[disabled], input[type=submit][disabled], input[type=button][disabled],
+button[disabled]:hover, input[type=submit][disabled]:hover, input[type=button][disabled]:hover {
+    background-color: #888;
+}
+
 textarea {
 	width: 100%;
 	min-height: 100px;
