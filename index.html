@@ -1136,7 +1136,7 @@
                                     <span>LTO</span>
                                 </div>
 
-                                <div class="lto-pricing">
+                                <div id="price-currency-container" class="lto-pricing">
                                     <input type="text" id="price" name="price" readonly>
                                     <select name="price-currency" id="price-currency"></select>
                                     <span id="rates-message"></span>
@@ -1292,7 +1292,9 @@
 
                                 <input type="checkbox" id="toc-agreement">I agree with the <a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
                                 <br>
-                                <select id="payment-choice"></select>
+                                <div id="payment-container">
+                                    <select id="payment-choice"></select>
+                                </div>
                                 <br>
                                 <span id="payment-unavailable" class="parsley-required">Paying with a credit card is not possible at this moment.<br>Please choose another payment method or come back later.</span>
                                 <input type="button" id="pay" class="sf-right sf-btn" name="pay" value="Buy LTO Tokens" disabled="disabled">
