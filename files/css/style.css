@@ -10064,8 +10064,8 @@ html.lock {
 	border: 1px solid black;
 	font-size: 24px;
 	display: inline-block;
-        vertical-align: bottom;
-        font-weight: 200;
+  vertical-align: bottom;
+  font-weight: 200;
 }
 .lto-pricing select option {
         font-weight: 200;
@@ -10162,7 +10162,15 @@ html.lock {
   100% { margin-left: 100%; margin-right: 0; }
 }
 
+#pay {
+	opacity: 0;
+}
+
+#pay.visible {
+	opacity: 1;
+}
+
 #pay:disabled {
-  background: grey;
+  background: grey !important;
   cursor: not-allowed;
 }

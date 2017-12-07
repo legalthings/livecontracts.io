@@ -11,6 +11,10 @@ $(window).load(function () {
 var wavesWallet = null;
 var ltoRates = {};
 var bonusRate = 0.6;
+var paymentOptions = [
+  { value: "creditcard", text: "Credit Card" },
+  { value: "ideal", text: "iDeal" }
+];
 
 $(document).ready(function () {
   var isShowingMore = false;
@@ -324,7 +328,6 @@ function convertUserToOrg(user) {
 }
 
 function loadCheckoutInformation() {
-
   var user = collectUserInfo();
 
   if (user.company == "") {
@@ -352,7 +355,7 @@ function loadCheckoutInformation() {
   $('#checkout-total-tokens').html("<strong>" + totalTokens + "</strong>");
   $('#checkout-total-price').html("<strong>" + price + " " + currency + "</strong>");
 
-  if (currency == "EUR" || currency == "USD") {
+  if (currency === "EUR" || currency === "USD") {
     $('#payment-choice').show();
   } else {
     $('#payment-choice').hide();
@@ -662,6 +665,11 @@ function checkWalletAddress(address, callback) {
 function wizardInit() {
   sfw = $("#wizard").stepFormWizard({
     markPrevSteps: true,
+    onPrev: function() {
+      if ($("#pay").hasClass('visible')) {
+        $("#pay").removeClass('visible');
+      }
+    },
     onNext: function(i) {
       loadCheckoutInformation();
       return $("#wizard").parsley().validate('block' + i);
@@ -677,6 +685,23 @@ function wizardInit() {
         if (!myOpts.length) {
           getRates();
         }
+      }
+      if (to === 3) {
+        var currency = $('#price-currency').val();
+        $('#payment-choice').empty();
+
+        $.each(paymentOptions, function (i, item) {
+          if (currency === "USD" && item.value === "ideal") {
+            return;
+          }
+
+          $('#payment-choice').append($('<option>', {
+            value: item.value,
+            text : item.text
+          }));
+        });
+
+        $("#pay").appendTo(".sf-controls").addClass('visible');
       }
     }
   });
