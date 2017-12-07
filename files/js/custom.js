@@ -12,7 +12,6 @@ var wavesWallet = null;
 var ltoRates = {};
 var bonusRate = 0.6;
 var paymentOptions = [
-  { value: "creditcard", text: "Credit Card" },
   { value: "ideal", text: "iDeal" }
 ];
 
@@ -705,7 +704,7 @@ function wizardInit() {
       }
 
       if (to === 2) {
-        disableNextToDownloadSeed();
+        if ($('#wallet-choice').val() !== 'yes') disableNextToDownloadSeed();
 
         $('#wallet-choice').on('change', function(event) {
           if (event.target.value !== 'yes') {
@@ -722,10 +721,6 @@ function wizardInit() {
         $('#payment-choice').empty();
 
         $.each(paymentOptions, function (i, item) {
-          if (currency === "USD" && item.value === "ideal") {
-            return;
-          }
-
           $('#payment-choice').append($('<option>', {
             value: item.value,
             text : item.text
@@ -733,6 +728,9 @@ function wizardInit() {
         });
 
         $("#pay").appendTo(".sf-controls").addClass('visible');
+
+        if (currency === "USD") $("#payment-unavailable").css('display', 'block');
+        else $("#payment-unavailable").css('display', 'none');
       }
     }
   });
