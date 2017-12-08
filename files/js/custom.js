@@ -246,7 +246,12 @@ function handlePayment() {
 
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
-  	  } else {
+  	  } else if (provider == 'ideal') {
+        if (data.currency == "USD") {
+          data.currency = "EUR";
+        }
+        startPayment(data);
+      } else {
   		  startPayment(data);
   	  }
 		});
