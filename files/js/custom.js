@@ -148,7 +148,7 @@ function createWavesWallet() {
         $('#wallet').val(result.address);
         $('#seed').html(result.seed);
         $('#wallet-address').html(result.address);
-        $('#download-seed').attr('href','data:application/octet-stream;charset=utf-8;base64,' + result.base64);
+        $('#download-seed').attr('href','data:application/octet-stream;charset=utf-8;base64,' + result.base64).attr("download", "waves-wallet.txt");;
         showCreateWallet();
       }
     });
@@ -246,7 +246,12 @@ function handlePayment() {
 
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
-  	  } else {
+  	  } else if (provider == 'ideal') {
+        if (data.currency == "USD") {
+          data.currency = "EUR";
+        }
+        startPayment(data);
+      } else {
   		  startPayment(data);
   	  }
 		});
