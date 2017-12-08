@@ -10198,7 +10198,7 @@ html.lock {
     position: fixed;
 	top: 0;
 	height: 50px;
-	padding-top: 20px;
+	padding: 10px;
 	text-align: center;
 	z-index: 1000;
 	width: 100%;
