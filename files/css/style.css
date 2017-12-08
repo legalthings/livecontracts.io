@@ -300,7 +300,7 @@ h5 + h5, h5 + h6, h6 + h5, h6 + h6 {
 
 .subtitle-2.advisor {
         color: #fff;
-        background: #9067c6;    
+        background: #9067c6;
 }
 
 .error-404 {
@@ -6052,7 +6052,7 @@ p.meta-row .meta-label {
 
 .sr-button.button-9 {
 	color: #aaaaaa;
-	font-size: 
+	font-size:
 	background: none;
 }
 
@@ -7132,7 +7132,7 @@ div .progress-bar-item:first-child {
 	filter: grayscale(0%);
 }
 
-.show-more { 
+.show-more {
 	margin-top: 40px !important;
 	display: none;
 }
@@ -10191,4 +10191,15 @@ html.lock {
 
 #payment-unavailable {
 	display: none;
+}
+
+.noscript {
+    background-color: #fff;
+    position: fixed;
+	top: 0;
+	height: 50px;
+	padding-top: 20px;
+	text-align: center;
+	z-index: 1000;
+	width: 100%;
 }
