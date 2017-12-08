@@ -10092,10 +10092,11 @@ html.lock {
 	opacity: 0px;
 	transform: translateY(-5px);
 	transition: 333ms ease-in-out;
+	position: absolute;
 }
 
 .lto-pricing #rates-message.visible {
-	transform: translateY(5px);
+	transform: translateY(0px);
 	opacity: 1;
 }
 

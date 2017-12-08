@@ -40,6 +40,7 @@ $(document).ready(function () {
 
   $('#price-currency').on('change', function (newValue) {
     calculateRate();
+    loadCheckoutInformation();
   });
 
   $('#toc-agreement').on('click', function(event) {
@@ -345,7 +346,7 @@ function loadCheckoutInformation() {
   $('#checkout-name').html(user.first_name + " " + user.last_name);
   $('#checkout-email').html(user.email);
   $('#checkout-address').html(user.address);
-  $('#checkout-city').html(user.postcode + ", " + user.city);
+  if (user.postcode) $('#checkout-city').html(user.postcode + ", " + user.city);
   $('#checkout-country').html(user.country);
   $('#checkout-wallet').html($('#wallet').val());
 
@@ -715,13 +716,14 @@ function wizardInit() {
       }
     },
     onNext: function(i) {
-      loadCheckoutInformation();
       return $("#wizard").parsley().validate('block' + i);
     },
     onFinish: function() {
       return $("#wizard").parsley().validate();
     },
     onSlideChanged: function(to, data) {
+    	loadCheckoutInformation();
+    	
         $('.next-btn').removeClass('disabled');
         
         if ($('.sf-controls').find('span').length) $('.sf-controls').find('span').remove();
@@ -729,6 +731,7 @@ function wizardInit() {
       // if we transition to token selection step, fetch the rates and start calculation
       if (to === 1) {
         var myOpts = document.getElementById('price-currency').options;
+        $('#price-currency').appendTo('#price-currency-container');
 
         if (!myOpts.length) {
           getRates();
@@ -763,6 +766,8 @@ function wizardInit() {
 
         // if (currency === "USD") $("#payment-unavailable").css('display', 'block');
         // else $("#payment-unavailable").css('display', 'none');
+
+        $('#price-currency').prependTo('#payment-container');
       }
     }
   });
