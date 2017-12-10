@@ -148,7 +148,7 @@ function createWavesWallet() {
         $('#wallet').val(result.address);
         $('#seed').html(result.seed);
         $('#wallet-address').html(result.address);
-        $('#download-seed').attr('href','data:application/octet-stream;charset=utf-8;base64,' + result.base64);
+        $('#download-seed').attr('href','data:application/octet-stream;charset=utf-8;base64,' + result.base64).attr("download", "waves-wallet.txt");;
         showCreateWallet();
       }
     });
@@ -246,7 +246,12 @@ function handlePayment() {
 
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
-  	  } else {
+  	  } else if (provider == 'ideal') {
+        if (data.currency == "USD") {
+          data.currency = "EUR";
+        }
+        startPayment(data);
+      } else {
   		  startPayment(data);
   	  }
 		});
@@ -612,29 +617,55 @@ function manipulatingHeader() {
 }
 
 //loading data about tokens status
+// function loadTokens() {
+// 	var currentTokens = $('#current-tokens-sold');
+// 	var allTokens = $('#all-tokens');
+// 	$.ajax({
+// 		url: waves_server + "/api/balance",
+// 		success: function (result) {
+// 			var totalTokens = 100000000;
+// 			var presaleLimit = 10000000;
+// 			var tokensLeft = result.balance / 100000000;
+
+// 			// var total = 
+// 			var sold = total - (result.balance / 100000000);
+// 			var cap = 10000000;
+
+// 			$('.progress-active').attr('data-perc', (sold / cap) * 100);
+
+// 			currentTokens.html(sold.formatMoney(0, '.', ','));
+// 			allTokens.html(cap.formatMoney(0, '.', ','));
+// 		}
+// 	})
+// }
+
+//loading data about tokens status
 function loadTokens() {
-  var currentTokens = $('#current-tokens-sold');
-  var allTokens = $('#all-tokens');
+	var currentTokens = $('#current-tokens-sold');
+	var allTokens = $('#all-tokens');
+	
   $.ajax({
-    url: waves_server + "/api/balance",
-    success: function (result) {
+		url: waves_server + "/api/balance",
+		success: function (result) {
       if (result.phases && result.phases.bonus) {
         bonusRate = result.phases.bonus;
       } else {
         $('#bonus-tokens-msg').css('display', 'none');
       }
 
-      var total = parseInt(result.phases.presale.limit) / 100000000;
-      var sold = total - (result.balance / 100000000);
-      var cap = 10000000;
+			var cap = 10000000;
+			var presaleLimit = parseFloat(result.phases.presale.limit / 1000000000, 10);
+			var presaleAvailable = parseFloat(result.balance / 100000000, 10);
+			var sold = presaleLimit - presaleAvailable;
 
-      $('.progress-active').attr('data-perc', (sold / cap) * 100);
+			$('.progress-active').attr('data-perc', (sold / presaleLimit) * 100);
 
       currentTokens.html(sold.formatMoney(0, '.', ','));
       allTokens.html(cap.formatMoney(0, '.', ','));
     }
   })
 }
+
 
 //loading data about tokens status
 function validateWavesAddress(address) {
