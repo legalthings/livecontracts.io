@@ -10202,3 +10202,11 @@ html.lock {
 	z-index: 1000;
 	width: 100%;
 }
+
+.bonus-tokens-msg {
+	display: none;
+}
+
+#checkout-bonus, #checkout-total-tokens {
+	display: none;
+}
