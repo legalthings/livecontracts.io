@@ -1109,24 +1109,24 @@
                                     </div>
 
                                     <div class="form-row">
-                                        <label for="billing-address">Address</label>
+                                        <label for="billing-address">Address <abbr title="required" class="required address-required-labels">*</abbr></label>
                                         <input type="text" id="billing-address" name="billing-address" value="" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half">
-                                        <label for="billing-postcode">Postcode / Zip</label>
+                                        <label for="billing-postcode">Postcode / Zip <abbr title="required" class="required address-required-labels">*</abbr></label>
                                         <input type="text" id="billing-postcode" name="billing-postcode" data-parsley-group="block0">
                                     </div>
 
                                     <div class="form-row column one-half last-col">
-                                        <label for="billing-city">City / Town</label>
+                                        <label for="billing-city">City / Town <abbr title="required" class="required address-required-labels">*</abbr></label>
                                         <input type="text" id="billing-city" name="billing-city" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
 
-                                    <div class="form-row">
-                                        <label for="billing-country">Country</label>
+                                    <div class="form-row column one-half">
+                                        <label for="billing-country">Country <abbr title="required" class="required address-required-labels">*</abbr></label>
                                         <select id="billing-country" name="billing-country" data-parsley-group="block0">
                                             <option value=""></option>
                                         	<option value="AF">Afghanistan</option>
@@ -1379,6 +1379,11 @@
                                         	<option value="ZM">Zambia</option>
                                         	<option value="ZW">Zimbabwe</option>
                                         </select>
+                                    </div>
+
+                                    <div id="billing-vat-container" class="form-row column one-half last-col">
+                                        <label for="billing-city">VAT <abbr title="required" class="required address-required-labels">*</abbr></label>
+                                        <input type="text" id="billing-vat" name="billing-vat" data-parsley-group="block0">
                                     </div>
 
                                     <div class="clear"></div>
