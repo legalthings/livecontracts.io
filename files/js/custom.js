@@ -119,10 +119,8 @@ function changeBillingAddress(required) {
 function changeVAT(selectedCountry, required) {
   if (vatCountries.indexOf(selectedCountry) > -1) {
     $('#billing-vat-container').css('display', 'block');
-    $('#billing-vat').attr('required', 'required');
   } else {
     $('#billing-vat-container').css('display', 'none');
-    $('#billing-vat').removeAttr('required', 'required');
   }
 }
 
