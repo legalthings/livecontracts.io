@@ -10210,3 +10210,11 @@ html.lock {
 #checkout-bonus, #checkout-total-tokens {
 	display: none;
 }
+
+#billing-vat-container {
+	display: none;
+}
+
+.address-required-labels {
+	display: none;
+}

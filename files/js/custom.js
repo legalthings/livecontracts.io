@@ -1,3 +1,12 @@
+var vatCountries = [];
+var wavesWallet = null;
+var ltoRates = {};
+var bonusRate = 0;
+var paymentOptions = [
+  { value: "creditcard", text: "Credit Card" },
+  { value: "ideal", text: "iDeal" }
+];
+
 $(window).load(function () {
   /* only if you want use mcustom scrollbar */
   $(".sf-step").mCustomScrollbar({
@@ -7,14 +16,6 @@ $(window).load(function () {
     }
   });
 });
-
-var wavesWallet = null;
-var ltoRates = {};
-var bonusRate = 0;
-var paymentOptions = [
-  { value: "creditcard", text: "Credit Card" },
-  { value: "ideal", text: "iDeal" }
-];
 
 $(document).ready(function () {
   var isShowingMore = false;
@@ -50,6 +51,22 @@ $(document).ready(function () {
     }
   });
 
+  $('#billing-company').on('change', function(newValue) {
+    if (newValue.target.value.length && newValue.target.value.length > 0) {
+      changeBillingAddress(true);
+    } else {
+      changeBillingAddress(false);
+    }
+  });
+
+  $('#billing-country').on('change', function(newValue) {
+    if (newValue.target.value) {
+      changeVAT(newValue.target.value, true);
+    } else {
+      changeVAT(newValue.target.value, false);
+    }
+  });
+
 
   $('#show-more').click(function() {
     if(!isShowingMore) {
@@ -80,6 +97,32 @@ $(document).ready(function () {
   createWavesWallet();
   handlePayment();
 });
+
+function changeBillingAddress(required) {
+  if (required) {
+    $('#billing-address').attr('required', 'required');
+    $('#billing-postcode').attr('required', 'required');
+    $('#billing-city').attr('required', 'required');
+    $('#billing-country').attr('required', 'required');
+
+    $('.address-required-labels').css('display', 'inline-block');
+  } else {
+    $('#billing-address').removeAttr('required');
+    $('#billing-postcode').removeAttr('required');
+    $('#billing-city').removeAttr('required');
+    $('#billing-country').removeAttr('required');
+
+    $('.address-required-labels').css('display', 'none');
+  }
+}
+
+function changeVAT(selectedCountry, required) {
+  if (vatCountries.indexOf(selectedCountry) > -1) {
+    $('#billing-vat-container').css('display', 'block');
+  } else {
+    $('#billing-vat-container').css('display', 'none');
+  }
+}
 
 
 //init for pie chart
@@ -152,6 +195,19 @@ function createWavesWallet() {
         showCreateWallet();
       }
     });
+  });
+}
+
+function getVATCountries() {
+  if (vatCountries && vatCountries.length > 0) {
+    return;
+  }
+
+  $.ajax({
+    url: waves_server + "/api/countries",
+    success: function (result) {
+      vatCountries = result;
+    }
   });
 }
 
@@ -772,6 +828,8 @@ function wizardInit() {
       }
     }
   });
+
+  getVATCountries();
 
   $('#error-payment').hide();
 
