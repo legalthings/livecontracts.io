@@ -367,6 +367,7 @@ function collectUserInfo() {
   user.postcode = $('#billing-postcode').val();
   user.city = $('#billing-city').val();
   user.country = $('#billing-country').val();
+  user.vat_number = $('#billing-vat').val();
 
   return user;
 }
@@ -384,6 +385,7 @@ function convertUserToOrg(user) {
   organization.name = user.company == "" ? user.first_name + " " + user.last_name : user.company;
   organization.email = user.email;
   organization.address = address;
+  organization.vat_number = user.vat_number;
 
   return organization;
 }
