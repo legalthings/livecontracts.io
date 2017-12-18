@@ -20,6 +20,34 @@ $(window).load(function () {
 $(document).ready(function () {
   var isShowingMore = false;
 
+  var files = [
+    '4-traders.png',
+    'advocatenblad.png',
+    'advocatie.png',
+    'blockchainadvisor.png',
+    'dutch-it-channel.png',
+    'emerce.png',
+    'enterprise-times.png',
+    'markt-technik.png',
+    'metro.png',
+    'nrc.png',
+    'public-technology.png',
+    'quote.png',
+    'tahawul-tech.png',
+    'vastgoedmarkt.png',
+    'fd.png'
+  ].sort();
+
+  $('#media-logos').append('<div class="media-slider">');
+
+  for (var i = 0; i < files.length; i++) {
+    if (i % 5 === 0) {
+      $('.media-slider').append('<br/>');
+    }
+
+    $('.media-slider').append('<img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i] + '">');
+  }
+
   if ($(".quote").length > 0) {
     quotesAnimation();
   }
@@ -685,7 +713,7 @@ function manipulatingHeader() {
 // 			var presaleLimit = 10000000;
 // 			var tokensLeft = result.balance / 100000000;
 
-// 			// var total = 
+// 			// var total =
 // 			var sold = total - (result.balance / 100000000);
 // 			var cap = 10000000;
 
@@ -701,7 +729,7 @@ function manipulatingHeader() {
 function loadTokens() {
 	var currentTokens = $('#current-tokens-sold');
 	var allTokens = $('#all-tokens');
-	
+
   $.ajax({
 		url: waves_server + "/api/balance",
 		success: function (result) {
@@ -787,7 +815,7 @@ function wizardInit() {
     },
     onSlideChanged: function(to, data) {
         $('.next-btn').removeClass('disabled');
-        
+
         if ($('.sf-controls').find('span').length) $('.sf-controls').find('span').remove();
 
       // if we transition to token selection step, fetch the rates and start calculation

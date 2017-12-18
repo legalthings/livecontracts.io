@@ -9888,6 +9888,7 @@ html.lock {
 
 .populate-block {
 	position: relative;
+	padding: 64px;
 }
 
 .populate-block #blog-grid {
@@ -10217,4 +10218,19 @@ html.lock {
 
 .address-required-labels {
 	display: none;
+}
+
+.socialsBlock {
+  position: fixed;
+  width: 64px;
+  top: 25%;
+  z-index: 10000;
+}
+
+.socialsBlock .socialmedia-widget li {
+	margin-bottom: 16px;
+}
+
+.socialsBlock .socialmedia-widget li a {
+	color: #9867cf;
 }
