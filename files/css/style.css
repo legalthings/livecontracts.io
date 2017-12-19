@@ -10224,6 +10224,8 @@ html.lock {
   position: fixed;
   width: 64px;
   top: 25%;
+  right: 20px;
+  padding: 0px;
   z-index: 2000;
 }
 
@@ -10231,15 +10233,37 @@ html.lock {
 	margin-bottom: 16px;
 }
 
+.socialsBlock .socialmedia-widget li:last-child {
+	margin-bottom: 0px;
+}
+
 .socialsBlock .socialmedia-widget li a {
-	color: #9867cf;
+  background: #9867d0;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
+  padding: 0px !important;
+}
+
+.socialsBlock .socialmedia-widget a:before,
+.socialsBlock .socialmedia-widget a:after {
+  color: white;
+  position: relative;
+  font-size: 32px;
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 649px) {
 	.socialsBlock {
 	  position: relative;
-	  width: auto;
+	  width: 100% !important;
+	  max-width: 100% !important;
 	  top: 0;
+	  right: 0;
 	  z-index: 0;
+	}
+
+	.socialsBlock .socialmedia-widget {
+	  padding: 32px;
 	}
 }
