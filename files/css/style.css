@@ -9888,7 +9888,6 @@ html.lock {
 
 .populate-block {
 	position: relative;
-	padding: 64px;
 }
 
 .populate-block #blog-grid {
@@ -10218,8 +10217,4 @@ html.lock {
 
 .address-required-labels {
 	display: none;
-}
-
-.slick-slide {
-	margin: 16px;
 }
