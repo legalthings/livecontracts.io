@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   var files = [
     {url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
-    {url: 'http://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
+    {url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
     {url: 'http://www.advocatie.nl/lexoo-legalthings-signrequest-naar-finale-legal-tech-startup-awards', img: 'advocatie.png'},
     {url: 'http://www.blockchainadvisormag.com/2017/12/16/ethereum-competitor-legalthings-to-digitise-law-on-blockchain-for-the-dutch-district-attorneys-office/', img: 'blockchainadvisor.png'},
     {url: 'https://dutchitchannel.nl/590090/merin-en-legalthings-lanceren-blockchain-toepassing-in-vastgoed.html', img: 'dutch-it-channel.png'},
@@ -33,7 +33,7 @@ $(document).ready(function () {
     {url: 'https://www.nrc.nl/nieuws/2017/11/14/niet-alle-digitale-beursgangen-zijn-slecht-14017947-a1581143', img: 'nrc.png'}, 
     {url: 'https://www.publictechnology.net/articles/news/dutch-government-trial-blockchain-based-digital-law', img: 'public-technology.png'},
     {url: 'http://www.quotenet.nl/Nieuws/Amsterdamse-startup-gaat-Ethereum-slopen-Ether-is-een-scam-208104', img: 'quote.png'},
-    {url: 'http://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
+    {url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
     {url: 'http://www.vastgoedmarkt.nl/data-en-technologie/nieuws/2017/12/merin-zet-stap-blockchain-101128261', img: 'vastgoedmarkt.png'},
     {url: 'https://fd.nl/morgen/1171136/legaltech-minder-maatpak-meer-confectie', img: 'fd.png'}
   ].sort();
