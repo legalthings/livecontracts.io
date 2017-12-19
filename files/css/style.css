@@ -10267,3 +10267,15 @@ html.lock {
 	  padding: 32px;
 	}
 }
+
+.media-slider a {
+	display: inline-block;
+}
+
+.media-slider a img {
+	transition: 333ms ease-in-out;
+}
+
+.media-slider a:hover img {
+	filter: grayscale(0%) !important;
+}
