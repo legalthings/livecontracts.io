@@ -10224,7 +10224,7 @@ html.lock {
   position: fixed;
   width: 64px;
   top: 25%;
-  z-index: 10000;
+  z-index: 2000;
 }
 
 .socialsBlock .socialmedia-widget li {
@@ -10233,4 +10233,13 @@ html.lock {
 
 .socialsBlock .socialmedia-widget li a {
 	color: #9867cf;
+}
+
+@media only screen and (max-width: 649px) {
+	.socialsBlock {
+	  position: relative;
+	  width: auto;
+	  top: 0;
+	  z-index: 0;
+	}
 }
