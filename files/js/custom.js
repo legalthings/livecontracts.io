@@ -742,13 +742,6 @@ function manipulatingHeader() {
 // 	})
 // }
 
-//FAQ foldout
-function faqfoldout() {
-      $('.collapsible').collapsible({
-          defaultOpen: 'section1'
-      });
-}
-
 
 //loading data about tokens status
 function loadTokens() {
