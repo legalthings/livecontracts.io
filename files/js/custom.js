@@ -17,6 +17,16 @@ $(window).load(function () {
   });
 });
 
+function collapseFaq(id) {
+  var collapseBlock = '#' + id + '-section';
+
+  $('.faq-content').hide();
+  $(collapseBlock).show();
+
+  $('.faq-category').removeClass('active');
+  $('#' + id).addClass('active');
+}
+
 $(document).ready(function () {
   var isShowingMore = false;
 
@@ -47,6 +57,13 @@ $(document).ready(function () {
 
     $('.media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
   }
+
+  collapseFaq('about-lto');
+
+  $('.faq-category').click(function(e) {
+     var id = e.target.id;
+    collapseFaq(id);
+  });
 
   if ($(".quote").length > 0) {
     quotesAnimation();
@@ -724,6 +741,14 @@ function manipulatingHeader() {
 // 		}
 // 	})
 // }
+
+//FAQ foldout
+function faqfoldout() {
+      $('.collapsible').collapsible({
+          defaultOpen: 'section1'
+      });
+}
+
 
 //loading data about tokens status
 function loadTokens() {
