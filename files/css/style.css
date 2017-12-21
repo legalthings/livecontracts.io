@@ -10223,10 +10223,18 @@ html.lock {
 .socialsBlock {
   position: fixed;
   width: 64px;
-  top: 25%;
-  right: 20px;
+	bottom: 89px;
+  right: 36px;
   padding: 0px;
   z-index: 2000;
+}
+
+.socialsBlock h2 {
+	display: none;
+}
+
+.socialsBlock .spacer-big {
+	display: none;
 }
 
 .socialsBlock .socialmedia-widget li {
@@ -10258,13 +10266,21 @@ html.lock {
 	  position: relative;
 	  width: 100% !important;
 	  max-width: 100% !important;
-	  top: 0;
+	  bottom: 0;
 	  right: 0;
 	  z-index: 0;
 	}
 
+	.socialsBlock .spacer-big {
+		display: block
+	}
+
 	.socialsBlock .socialmedia-widget {
 	  padding: 32px;
+	}
+
+	.socialsBlock h2 {
+		display: block;
 	}
 }
 

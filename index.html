@@ -51,11 +51,17 @@
 
         <!-- Intercom -->
         <script>
+          var alignment = 'right';
+
+          if (window.innerWidth < 599) {
+            alignment = 'left';
+          } else {
+            alignment = 'right';
+          }
+
           window.intercomSettings = {
             app_id: 'g247sp2q',
-            alignment: 'left',
-            horizontal_padding: 20,
-            vertical_padding: 20
+            alignment: alignment
           };
 
           (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g247sp2q';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
@@ -1332,30 +1338,33 @@
             </div>
             <div class="spacer-big"></div>
         </div>
-        <div class="align-center customRowElements socialsBlock">
+        <div class="align-center socialsBlock">
+            <div class="spacer-big"></div>
+            <h2><strong>Social</strong></h2>
             <ul class="socialmedia-widget size-huge hover-fade-1">
                 <li class="github">
                     <a href="https://github.com/legalthings" target="_blank"></a>
                 </li>
-                <li class="reddit">
+<!--                 <li class="reddit">
                     <a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
-                </li>
-                <li class="linkedin">
+                </li> -->
+<!--                 <li class="linkedin">
                     <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-                </li>
+                </li> -->
                 <li class="twitter">
                     <a href="https://twitter.com/livecontracts" target="_blank"></a>
                 </li>
-                <li class="medium">
+<!--                 <li class="medium">
                     <a href="https://medium.com/legalthingsone" target="_blank"></a>
-                </li>
-                <li class="slack">
+                </li> -->
+<!--                 <li class="slack">
                     <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
-                </li>
+                </li> -->
                 <li class="telegram">
                     <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
                 </li>
             </ul>
+            <div class="spacer-big"></div>
         </div>
         <!--<div class="spacer-medium"></div>-->
         <!-- PAGEBODY -->
