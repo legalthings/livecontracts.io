@@ -10295,3 +10295,62 @@ html.lock {
 .media-slider a:hover img {
 	filter: grayscale(0%) !important;
 }
+
+/*  FAQ
+------------------------------------------------*/
+
+.faq {
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.faq-category {
+	font-family: 'lato';
+	margin-bottom: 16px;
+	color: #ddd;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+
+.faq-category.active {
+	color: #9067c6;
+	font-weight: 900;
+}
+
+.faq-category.active:after {
+	font-family: FontAwesome;
+	margin-left: 16px;
+	color: #9067c6;
+	content: "\f0da";
+}
+
+.faq-content {
+	transition: 333ms ease-in-out;
+	transform: translateX(-15px);
+	height: 0px;
+	opacity: 0;
+}
+
+.faq-content .collapsible {
+	display: none;
+}
+
+.faq-content.visible {
+	transform: translateX(0px);
+	height: auto;
+	opacity: 1;
+}
+
+.faq-content.visible .collapsible {
+	display: block;
+}
+
+.faq-content .collapsible .content {
+	margin-bottom: 16px;
+}
+
+.faq-content ul {
+  list-style: square;
+  margin-left: 30px;
+}

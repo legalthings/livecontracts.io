@@ -7,6 +7,8 @@ var paymentOptions = [
   { value: "ideal", text: "iDeal" }
 ];
 
+var currentCollapsedFaq = '';
+
 $(window).load(function () {
   /* only if you want use mcustom scrollbar */
   $(".sf-step").mCustomScrollbar({
@@ -16,6 +18,25 @@ $(window).load(function () {
     }
   });
 });
+
+function collapseFaq(id) {
+  if (currentCollapsedFaq === id) {
+    return;
+  }
+
+  currentCollapsedFaq = id;
+
+  var collapseBlock = '#' + id + '-section';
+
+  $('.faq-content').removeClass('visible');
+
+  setTimeout(function() {
+    $(collapseBlock).addClass('visible');
+  }, 500);
+
+  $('.faq-category').removeClass('active');
+  $('#' + id).addClass('active');
+}
 
 $(document).ready(function () {
   var isShowingMore = false;
@@ -47,6 +68,13 @@ $(document).ready(function () {
 
     $('.media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
   }
+
+  collapseFaq('about-lto');
+
+  $('.faq-category').click(function(e) {
+     var id = e.target.id;
+    collapseFaq(id);
+  });
 
   if ($(".quote").length > 0) {
     quotesAnimation();
@@ -724,6 +752,7 @@ function manipulatingHeader() {
 // 		}
 // 	})
 // }
+
 
 //loading data about tokens status
 function loadTokens() {
