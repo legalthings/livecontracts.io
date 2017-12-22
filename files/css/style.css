@@ -10296,13 +10296,12 @@ html.lock {
 	filter: grayscale(0%) !important;
 }
 
-/*  FAQ 
+/*  FAQ
 ------------------------------------------------*/
 
 .faq {
 	margin: 0 auto;
 	margin-top: 20px;
-	display: block;
 }
 
 .faq-category {
@@ -10327,6 +10326,31 @@ html.lock {
 }
 
 .faq-content {
+	transition: 333ms ease-in-out;
+	transform: translateX(-15px);
+	height: 0px;
+	opacity: 0;
+}
+
+.faq-content .collapsible {
 	display: none;
 }
 
+.faq-content.visible {
+	transform: translateX(0px);
+	height: auto;
+	opacity: 1;
+}
+
+.faq-content.visible .collapsible {
+	display: block;
+}
+
+.faq-content .collapsible .content {
+	margin-bottom: 16px;
+}
+
+.faq-content ul {
+  list-style: square;
+  margin-left: 30px;
+}

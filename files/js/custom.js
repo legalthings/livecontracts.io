@@ -7,6 +7,8 @@ var paymentOptions = [
   { value: "ideal", text: "iDeal" }
 ];
 
+var currentCollapsedFaq = '';
+
 $(window).load(function () {
   /* only if you want use mcustom scrollbar */
   $(".sf-step").mCustomScrollbar({
@@ -18,10 +20,19 @@ $(window).load(function () {
 });
 
 function collapseFaq(id) {
+  if (currentCollapsedFaq === id) {
+    return;
+  }
+
+  currentCollapsedFaq = id;
+
   var collapseBlock = '#' + id + '-section';
 
-  $('.faq-content').hide();
-  $(collapseBlock).show();
+  $('.faq-content').removeClass('visible');
+
+  setTimeout(function() {
+    $(collapseBlock).addClass('visible');
+  }, 500);
 
   $('.faq-category').removeClass('active');
   $('#' + id).addClass('active');
