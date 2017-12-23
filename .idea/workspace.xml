@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ea4e2ffa-7c82-4558-959e-e48e81be7ea9" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
       <change beforePath="$PROJECT_DIR$/files/dist/compress.css" afterPath="$PROJECT_DIR$/files/dist/compress.css" />
       <change beforePath="$PROJECT_DIR$/files/dist/compress.js" afterPath="$PROJECT_DIR$/files/dist/compress.js" />
       <change beforePath="$PROJECT_DIR$/files/dist/compress.min.js" afterPath="$PROJECT_DIR$/files/dist/compress.min.js" />
       <change beforePath="$PROJECT_DIR$/files/js/custom.js" afterPath="$PROJECT_DIR$/files/js/custom.js" />
+=======
+    <list default="true" id="fefddea4-67f4-4e13-a5fa-aeadbe5ed384" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> mobile fix
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +36,29 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="index_pr.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index_pr.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
               <caret line="186" column="41" lean-forward="false" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="41" />
+=======
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="9898" column="0" lean-forward="false" selection-start-line="9898" selection-start-column="0" selection-end-line="9898" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+>>>>>>> mobile fix
               <folding />
             </state>
           </provider>
@@ -77,8 +101,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/files/css/style.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/index_pr.html" />
         <option value="$PROJECT_DIR$/files/js/custom.js" />
+=======
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> mobile fix
       </list>
     </option>
   </component>
@@ -175,17 +203,26 @@
       <created>1513897228629</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1513897228629</updated>
       <workItem from="1513897233884" duration="582000" />
       <workItem from="1513897935925" duration="5000" />
       <workItem from="1513897966262" duration="6000" />
       <workItem from="1514010830674" duration="595000" />
       <workItem from="1514015137677" duration="725000" />
+=======
+      <updated>1513895276730</updated>
+      <workItem from="1513895278285" duration="1054000" />
+>>>>>>> mobile fix
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="1919000" />
+=======
+    <option name="totallyTimeSpent" value="1054000" />
+>>>>>>> mobile fix
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="6" />
@@ -198,8 +235,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+>>>>>>> mobile fix
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -321,6 +362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="20">
           <caret line="9880" column="14" lean-forward="false" selection-start-line="9880" selection-start-column="14" selection-end-line="9880" selection-end-column="14" />
         </state>
@@ -330,12 +372,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="402">
+          <caret line="9898" column="0" lean-forward="false" selection-start-line="9898" selection-start-column="0" selection-end-line="9898" selection-end-column="0" />
+          <folding />
+>>>>>>> mobile fix
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
+<<<<<<< HEAD
           <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
@@ -352,6 +400,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="186" column="41" lean-forward="false" selection-start-line="186" selection-start-column="31" selection-end-line="186" selection-end-column="41" />
+=======
+          <caret line="3" column="5" lean-forward="false" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+>>>>>>> mobile fix
           <folding />
         </state>
       </provider>
