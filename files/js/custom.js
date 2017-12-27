@@ -44,10 +44,14 @@ $(document).ready(function () {
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
     { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
+    { url: 'https://appdevelopermagazine.com/5755/2017/12/14/Blockchain-tech-to-help-digitize-Dutch-government-legislation/', img: 'app-developer-magazine.png' },
     { url: 'http://www.advocatie.nl/lexoo-legalthings-signrequest-naar-finale-legal-tech-startup-awards', img: 'advocatie.png'},
     { url: 'http://www.blockchainadvisormag.com/2017/12/16/ethereum-competitor-legalthings-to-digitise-law-on-blockchain-for-the-dutch-district-attorneys-office/', img: 'blockchainadvisor.png'},
+    { url: 'https://btcmanager.com/dutch-ministry-justice-commissions-digitizes-law-blockchain/', img: 'btc-manager.png' },
+    { url: 'https://contactlessintelligence.com/2017/12/20/dutch-tech-disruptor-releases-contract-of-the-future/', img: 'contactless-intelligence.png' },
     { url: 'https://dutchitchannel.nl/590090/merin-en-legalthings-lanceren-blockchain-toepassing-in-vastgoed.html', img: 'dutch-it-channel.png'},
     { url: 'https://www.emerce.nl/wire/legalthings-lanceert-succesvolle-token-sale-nederland-nederlandse-ethereumconcurrent-digitaliseert-wet-regelgeving-via-blockchain', img: 'emerce.png'},
+    { url: 'https://mini.eastday.com/a/171220141936829.html', img: 'english-eastday.png' },
     { url: 'https://www.enterprisetimes.co.uk/2017/12/18/dutch-justice-seeks-to-digitize-on-legalthings-blockchain/', img: 'enterprise-times.png'},
     { url: 'http://www.elektroniknet.de/markt-technik/kommunikation/legalthings-digitalisiert-hollaendisches-gesetzgebung-148902.html', img: 'markt-technik.png'},
     { url: 'https://www.metronieuws.nl/xl/digitaal/2017/02/digitale-handtekening-dat-kan-veilig-met-blockchain', img: 'metro.png'},
@@ -56,7 +60,10 @@ $(document).ready(function () {
     { url: 'http://www.quotenet.nl/Nieuws/Amsterdamse-startup-gaat-Ethereum-slopen-Ether-is-een-scam-208104', img: 'quote.png'},
     { url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
     { url: 'http://www.vastgoedmarkt.nl/data-en-technologie/nieuws/2017/12/merin-zet-stap-blockchain-101128261', img: 'vastgoedmarkt.png'},
-    { url: 'https://fd.nl/morgen/1171136/legaltech-minder-maatpak-meer-confectie', img: 'fd.png'}
+    { url: 'https://fd.nl/morgen/1171136/legaltech-minder-maatpak-meer-confectie', img: 'fd.png'},
+    { url: 'https://www.jinse.com/blockchain/116008.html', img: 'jinse.png' },
+    { url: 'http://www.jpm.cn/article-48120-1.html', img: 'jpm.png' },
+    { url: 'http://link.law.com/public/11641586', img: 'law.png' }
   ];
 
   $('#media-logos').append('<div class="media-slider">');
