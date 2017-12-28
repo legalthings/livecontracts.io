@@ -10356,3 +10356,8 @@ html.lock {
 .purpleSection {
   background: #231d39
 }
+
+.serving-companies img {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
