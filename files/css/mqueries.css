@@ -1378,9 +1378,9 @@ Smartphones
 }
 
 @media only screen and (max-width: 768px) {
-	.tokensSale-section .one-third {
+	/*.tokensSale-section .one-third {
 		min-height: 250px !important;
-	}
+	}*/
 
 	.legalThings-block .tabs .tab-container {
 		margin-top: 40px !important;
@@ -1552,9 +1552,9 @@ Smartphones
 	/*.timeline .event:nth-of-type(3) {*/
 	/*bottom: 80%;*/
 	/*}*/
-	.tokensSale-section .column.one-third {
+	/*.tokensSale-section .column.one-third {
 		display: none;
-	}
+	}*/
 
 	.tokensSale-section .column.two-third {
 		margin-top: 20px !important;
