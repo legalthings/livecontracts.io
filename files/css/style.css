@@ -9888,7 +9888,7 @@ html.lock {
 
 .populate-block {
 	position: relative;
-	padding: 64px;
+	/*padding: 64px;*/
 }
 
 .populate-block #blog-grid {

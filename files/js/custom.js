@@ -343,9 +343,7 @@ function calculateRate() {
     return;
   }
   
-  var currentCurrency = ltoRates.find(r = > r.currency === selectedCurrency
-)
-  ;
+  var currentCurrency = ltoRates.find(r => r.currency === selectedCurrency);
   var bonusTokens = Math.ceil(parseFloat(ltoAmount * bonusRate));
   var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
   
