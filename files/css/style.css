@@ -9874,6 +9874,9 @@ html.lock {
   position: relative;
   /*padding: 64px;*/
 }
+.press-block.populate-block {
+  padding: 64px;
+}
 
 .populate-block #blog-grid {
   /*transition: .3s all;*/
