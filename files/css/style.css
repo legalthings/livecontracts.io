@@ -6711,9 +6711,6 @@ div .toggle-item:first-child {
 
 /*  Skills
 ------------------------------------------------*/
-.progress-bar-item {
-  margin-top: 20px;
-}
 
 .progress-bar-item .progress-name {
   margin-bottom: 4px;
@@ -7391,20 +7388,6 @@ div .socialmedia-widget:first-child {
 
 .align-right .socialmedia-widget.size-big li {
   margin-left: 25px;
-  margin-right: 0px;
-}
-
-.socialmedia-widget.size-huge li {
-  margin-right: 30px;
-}
-
-.align-center .socialmedia-widget.size-huge li {
-  margin-right: -5px;
-  padding: 0 25px;
-}
-
-.align-right .socialmedia-widget.size-huge li {
-  margin-left: 30px;
   margin-right: 0px;
 }
 
@@ -8385,10 +8368,6 @@ header.header-transparent.header-bordered + #hero #page-title, header.header-sty
   margin-top: 90px;
 }
 
-#hero #page-title.title-adapt:not(.title-top):not(.title-bottom) {
-  top: 90px;
-}
-
 header.header-transparent + #page-body .fullwidth-section:first-child::before {
   height: 90px;
 }
@@ -8412,10 +8391,6 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 
 .portfolio-container .isotope-item .isotope-item__title {
   margin: 10px 0;
-}
-
-.progress-bar-item {
-  margin-top: 55px;
 }
 
 .progress-bar-item .progress-name {
@@ -10072,7 +10047,7 @@ html.lock {
   position: fixed;
   width: 64px;
   bottom: 89px;
-  right: 36px;
+  right: 20px;
   padding: 0px;
   z-index: 2000;
 }
@@ -10109,10 +10084,19 @@ html.lock {
   margin-top: 2px;
 }
 
+
+.socialsBlock.row-section {
+  padding: 0px;
+}
+
+.socialsBlock.purpleSection {
+  background: transparent;
+}
+
 @media only screen and (max-width: 649px) {
   .socialsBlock {
     position: relative;
-    width: 100% !important;
+    width: auto !important;
     max-width: 100% !important;
     bottom: 0;
     right: 0;
@@ -10130,6 +10114,14 @@ html.lock {
   .socialsBlock h2 {
     display: block;
   }
+
+  .socialsBlock.row-section {
+    padding: 32px 16px 32px 16px;
+  }
+
+  .socialsBlock.purpleSection {
+    background: #231d39;
+  }
 }
 
 .media-slider a {
@@ -10144,8 +10136,7 @@ html.lock {
   filter: grayscale(0%) !important;
 }
 
-/*  FAQ
-------------------------------------------------*/
+/* FAQ */
 
 .faq {
   margin: 0 auto;
@@ -10214,4 +10205,10 @@ html.lock {
 .serving-companies img {
     filter: grayscale(100%);
     opacity: 0.7;
+}
+
+/* Section */
+
+.row-section {
+  padding: 64px;
 }
