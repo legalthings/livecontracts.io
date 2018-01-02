@@ -764,7 +764,7 @@ function manipulatingHeader() {
 //loading data about tokens status
 function loadTokens() {
 	var currentTokens = $('.current-tokens-sold');
-	var allTokens = $('#all-tokens');
+	var allTokens = $('.progress-end');
 
   $.ajax({
 		url: waves_server + "/api/balance",
