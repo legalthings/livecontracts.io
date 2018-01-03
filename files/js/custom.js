@@ -780,7 +780,7 @@ function loadTokens() {
 			var presaleLimit = parseFloat(result.phases.presale.limit / 1000000000, 10);
 			var presaleAvailable = parseFloat(result.balance / 100000000, 10);
 			var sold = presaleLimit - presaleAvailable;
-
+ 
 			$('.progress-active').attr('data-perc', (sold / presaleLimit) * 100);
 
       currentTokens.html(sold.formatMoney(0, '.', ','));
