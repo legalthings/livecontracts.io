@@ -1378,9 +1378,9 @@ Smartphones
 }
 
 @media only screen and (max-width: 768px) {
-	.tokensSale-section .one-third {
+	/*.tokensSale-section .one-third {
 		min-height: 250px !important;
-	}
+	}*/
 
 	.legalThings-block .tabs .tab-container {
 		margin-top: 40px !important;
@@ -1483,20 +1483,6 @@ Smartphones
 		top: -8px;
 		font-size: 28px;
 	}
-
-	.socialsBlock {
-		max-width: calc(100% - 20px);
-		width: calc(100% - 20px);
-	}
-
-	.socialsBlock .column li {
-		padding: 0 10px !important;
-	}
-
-	.socialsBlock .column li a {
-		font-size: 30px;
-		line-height: 30px;
-	}
 }
 
 @media (orientation: portrait) {
@@ -1552,9 +1538,9 @@ Smartphones
 	/*.timeline .event:nth-of-type(3) {*/
 	/*bottom: 80%;*/
 	/*}*/
-	.tokensSale-section .column.one-third {
+	/*.tokensSale-section .column.one-third {
 		display: none;
-	}
+	}*/
 
 	.tokensSale-section .column.two-third {
 		margin-top: 20px !important;
@@ -1614,6 +1600,10 @@ Smartphones
 }
 
 @media only screen and (max-width: 400px) {
+	body {
+		font-size: 15px !important;
+	}
+
 	h1 {
 		font-size: 32px;
 	}
@@ -1633,7 +1623,13 @@ Smartphones
 	}
 
 	p {
-		font-size: 12px;
+		font-size: 15px;
 		line-height: 130%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.row-section {
+		padding: 32px 16px 32px 16px;
 	}
 }
