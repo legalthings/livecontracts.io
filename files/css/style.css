@@ -153,7 +153,7 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.02em;
-  font-size: 18px !important;
+  font-size: 16px !important;
   line-height: 26px;
   color: #696969;
   text-align: left;
@@ -1024,7 +1024,7 @@ aside.sidebar .sidebar-content {
 }
 
 .text-light {
-  color: rgba(255, 255, 255, .80);
+  color: #fff;
 }
 
 .colored {
@@ -6725,8 +6725,8 @@ div .toggle-item:first-child {
 }
 
 .progress-bar-item.big-bar .progress-bar {
-  height: 10px;
-  border-radius: 2px;
+  height: 20px;
+  border-radius: 20px;
 }
 
 .text-light .progress-bar-item .progress-bar {
@@ -6741,7 +6741,8 @@ div .toggle-item:first-child {
 }
 
 .progress-bar-item.big-bar .progress-bar .progress-active {
-  border-radius: 2px;
+  border-radius: 20px;
+  height: 20px;
 }
 
 .text-light .progress-bar-item .progress-bar .progress-active {
@@ -6755,7 +6756,7 @@ div .toggle-item:first-child {
   line-height: 10px;
   line-height: 5px;
   padding: 8px 0 6px 0;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   color: #1a1a1a;
   font-weight: 400;
@@ -8653,12 +8654,12 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
   border-color: white;
 }
 
-#hero .sr-button:first-of-type, .parallax-section .sr-button:first-of-type {
+#hero .sr-button:first-of-type {
   background: #9867d0;
   color: white;
 }
 
-#hero .sr-button:first-of-type:hover, .parallax-section .sr-button:first-of-type:hover {
+#hero .sr-button:first-of-type:hover {
   background: white;
   color: black
 }
@@ -10210,5 +10211,22 @@ html.lock {
 /* Section */
 
 .row-section {
-  padding: 64px;
+  padding: 64px 0px 64px 0px;
+}
+
+.sale-header {
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.sale-focusText {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.count-down h1 {
+  font-size: 24px;
 }
