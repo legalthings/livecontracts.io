@@ -325,7 +325,6 @@ h1 a, h2 a, h3 a, h4 a, h6 a {
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
   color: #33bfd0;
-  text-decoration: underline;
 }
 
 /* Forms
@@ -6982,12 +6981,23 @@ div .toggle-item:first-child {
 }
 
 .team-image img {
-  filter: grayscale(40%);
-  transition: filter 1s;
+  transition: 123ms ease-in-out;
+  display: block;
 }
 
-.team-image:hover img {
-  filter: grayscale(0%);
+.team-image img.two {
+  height: 0px;
+  opacity: 0;
+}
+
+.team-image:hover img.one {
+  height: 0px;
+  opacity: 0;
+}
+
+.team-image:hover img.two {
+  height: auto;
+  opacity: 1;
 }
 
 .show-more {
@@ -9455,8 +9465,16 @@ html.lock {
   margin-bottom: 16px;
   min-height: 52px;
   justify-content: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
+}
+
+#blog-grid .post-name a {
+  color: black;
+}
+
+#blog-grid .post-name a:hover {
+  color: #33bfd0;
 }
 
 #blog-grid p {
