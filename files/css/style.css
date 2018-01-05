@@ -10248,3 +10248,13 @@ html.lock {
 .count-down h1 {
   font-size: 24px;
 }
+
+.menu-inner, .flag-section {
+  display: inline-block;
+  max-height: 50px;
+}
+
+.flag-section {
+  vertical-align: bottom;
+  line-height: 2.5;
+}
