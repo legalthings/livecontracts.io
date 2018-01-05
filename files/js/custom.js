@@ -172,7 +172,7 @@ function redirectUserToLocalSite() {
 
   if (currentPage === '' && userLang.indexOf('pt') > -1 && !wasRedirected) {
     localStorage.setItem("wasRedirectedToLocale", true);
-    window.location.href = 'index_pr.html';
+    window.location.href = 'br';
   }
 }
 
