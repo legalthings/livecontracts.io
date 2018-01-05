@@ -22071,7 +22071,7 @@ function calculateRate() {
   var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
 
   if (currentCurrency) {
-    var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR' ? 2 : 6;
+    var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR'|| currentCurrency.currency === 'BRL' ? 2 : 6;
     var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(decimals);
     $('#price').val(total);
     $('#amount-bonus').html(bonusTokens);
@@ -22097,6 +22097,10 @@ function handlePayment() {
     var provider = getPaymentProvider($('#payment-choice').val(), currency);
     var price = $('#price').val();
 
+    if (currency == 'BRL') {
+      provider = 'creditcard';
+    }
+
 		var data = {};
 		data.user = user;
 		data.organization = organization;
@@ -22116,10 +22120,11 @@ function handlePayment() {
 
   	  $('#error-payment').hide();
 
+
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
   	  } else if (provider == 'ideal') {
-        if (data.currency == "USD") {
+        if (data.currency == "USD" || data.currency == "BRL") {
           data.currency = "EUR";
         }
         startPayment(data);
