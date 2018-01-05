@@ -21920,12 +21920,12 @@ function redirectUserToLocalSite() {
   var userLang = navigator.language || navigator.userLanguage;
   var wasRedirected = localStorage.getItem('wasRedirectedToLocale');
 
-  var currentUrl = window.location.href.split('/');
+  var currentUrl = window.location.pathname.split('/');
   var currentPage = currentUrl[currentUrl.length - 1];
 
-  if (currentPage === 'index.html' && userLang.indexOf('pt') > -1 && !wasRedirected) {
+  if (currentPage === '' && userLang.indexOf('pt') > -1 && !wasRedirected) {
     localStorage.setItem("wasRedirectedToLocale", true);
-    window.location.href = 'index_pr.html';
+    window.location.href = 'br';
   }
 }
 
