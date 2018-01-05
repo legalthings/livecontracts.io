@@ -41,6 +41,8 @@ function collapseFaq(id) {
 $(document).ready(function () {
   var isShowingMore = false;
 
+  redirectUserToLocalSite();
+
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
     { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
@@ -160,6 +162,19 @@ $(document).ready(function () {
   createWavesWallet();
   handlePayment();
 });
+
+function redirectUserToLocalSite() {
+  var userLang = navigator.language || navigator.userLanguage;
+  var wasRedirected = localStorage.getItem('wasRedirectedToLocale');
+
+  var currentUrl = window.location.href.split('/');
+  var currentPage = currentUrl[currentUrl.length - 1];
+
+  if (currentPage === 'index.html' && userLang.indexOf('pt') > -1 && !wasRedirected) {
+    localStorage.setItem("wasRedirectedToLocale", true);
+    window.location.href = 'index_pr.html';
+  }
+}
 
 function changeBillingAddress(required) {
   if (required) {
