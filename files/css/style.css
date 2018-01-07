@@ -6980,23 +6980,32 @@ div .toggle-item:first-child {
   outline: 1px solid #eee;
 }
 
-.team-image img {
-  transition: 123ms ease-in-out;
+.team-image {
+  position: relative;
   display: block;
 }
 
+.team-image img {
+  transition: 123ms ease-in-out;
+  display: block;
+  transition: opacity 0.5s;
+}
+
+.team-image img.one {
+  opacity: 1;
+}
+
 .team-image img.two {
-  height: 0px;
   opacity: 0;
+  position: absolute;
+  top: 0;
 }
 
 .team-image:hover img.one {
-  height: 0px;
   opacity: 0;
 }
 
 .team-image:hover img.two {
-  height: auto;
   opacity: 1;
 }
 
