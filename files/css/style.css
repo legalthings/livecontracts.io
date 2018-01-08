@@ -10035,6 +10035,14 @@ html.lock {
   display: none;
 }
 
+#payment-choice {
+  width: 150px;
+}
+
+.waves-attention {
+  margin-top: 5px;
+}
+
 .noscript {
     background-color: #fff;
     position: fixed;

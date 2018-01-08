@@ -1772,14 +1772,15 @@
             </fieldset>
             <fieldset>
               <div id="faucet-container">
+                <h4>Waves wallet</h4>
                 <p>
-                  LTO tokens are Waves assets. Waves is a blockchain, similar to Bitcoin and Ethereum. To hold Waves assets, you need a <strong>wallet</strong> at <a href="https://waveswallet.io" target="_blank">waveswallet.io</a>. If you don't have a Waves wallet, you'll get the option to create one upon checking out.
+                  LTO tokens are Waves assets. Waves is a blockchain, similar to Bitcoin and Ethereum. To hold Waves assets, you need a <strong>wallet</strong> at <a href="https://waveswallet.io" target="_blank">waveswallet.io</a>. If you don't have a Waves wallet, you'll get the option to create one upon checking out. A Waves wallet on an exchanges like Tidex, Bittrex or Binance do not accept LTO tokens. In that case create a new Waves wallet.
                 </p>
                 <p>
                 </p>
                 <div id="wizard-form">
                   <div class="form-row">
-                    <label for="billing-adress">Do you have an existing Waves Wallet?</label>
+                    <label for="billing-adress">Do you have an existing Waves wallet?</label>
                     <select id="wallet-choice">
                       <option value="no">No</option>
                       <option value="yes">Yes</option>
@@ -1791,6 +1792,7 @@
                       <abbr title="required" class="required">*</abbr>
                     </label>
                     <input type="text" id="wallet" name="wallet" required data-parsley-group="block2">
+                    <div class="waves-attention"><b>Attention:</b> Make sure the given Waves wallet address is not on an exchange like Tidex, Bittrex or Binance, this will cause your LTO tokens to become inaccessible.</div>
                   </div>
                   <div class="form-row" id="create-wallet">
                     <label for="wallet">Wallet Address
@@ -1798,10 +1800,10 @@
                     </label>
                     <div id="generated-address">
                       <p>This feature involves the creation of a new account on Waves platform.</p>
-                      <p>This SEED is extremely important and must be kept in safe place, since it's the only way to recover your account in case of lost, corrupted data or hardware failure.</p>
+                      <p><b>This SEED is extremely important and must be kept in safe place, since it's the only way to recover your account in case of lost, corrupted data or hardware failure.</b></p>
                       <p>Your SEED will also allow you to IMPORT your account to other devices (therefore, allow no one to access it).</p>
                       <p>Download your SEED by clicking the download button below</p>
-                      <p><b>Waves Wallet Address:</b> <span id="wallet-address"></span></p>
+                      <p><b>Waves wallet Address:</b> <span id="wallet-address"></span></p>
                       <input type="hidden" id="wallet" name="wallet" value="">
                       <br/>
                       <b>Seed:</b>
@@ -1821,7 +1823,7 @@
             <fieldset>
               <div id="checkout-container">
                 <h4>Checkout Summary</h4>
-                <p>Check if information you provided is correct. Please make sure have you filled in the right Waves Wallet address, because we cannot refund once the payment has been completed.</p>
+                <p>Check if information you provided is correct. Please make sure have you filled in the right Waves wallet address, because we cannot refund once the payment has been completed.</p>
                 <div id="error-payment">Test error</div>
                 <div id="progress-bar" class="progress-line"></div>
               </div>

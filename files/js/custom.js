@@ -820,7 +820,7 @@ function validateWavesAddress(address) {
 
   checkWalletAddress((address), function(err, valid){
     if (!valid) {
-      $('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
+      $('#wallet').parsley().addError('required', { message: 'Invalid Waves wallet address', updateClass: true });
     } else {
       $('#wallet').parsley().removeError('required');
     }
