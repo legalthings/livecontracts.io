@@ -1350,6 +1350,18 @@ Smartphones
 		background: #242038 !important;
 	}
 
+    #menu .menu-inner {
+        max-height: unset;
+    }
+
+    .flag-section {
+      vertical-align: bottom;
+      margin-top: 18px;
+      margin-bottom: 15px;
+      position: absolute;
+      left: 70px;
+    }
+
 	.block-button__hover .sr-button {
 		opacity: 1;
 	}
