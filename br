@@ -176,8 +176,7 @@
           <h5 class="">da Justiça e Segurança da Holanda</h5>
         </div>
       </div>
-      <div class="spacer-small"></div>
-      <div class="spacer-small"></div>
+      <div class="spacer-medium"></div>
       <p class="hero__buttons">
         <a class="sr-button button-1 button-medium circled js-open-wizard">
             Compre tokens LTO
@@ -189,6 +188,12 @@
             Leia FAQ
         </a>
       </p>
+      <div class="spacer-medium"></div>
+      <div class="count-down-wrap">
+          <h3><strong>Pre-sale data final</strong></h3>
+          <div class="spacer-small"></div>
+          <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
+      </div>
     </div>
     <!-- END #page-title -->
   </section>
