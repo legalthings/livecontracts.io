@@ -41,86 +41,106 @@
   <script>
   window.dataLayer = window.dataLayer || [];
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
+function gtag() {
+  dataLayer.push(arguments);
+}
 
-  gtag('js', new Date());
-  gtag('config', 'UA-62115237-2');
-  </script>
+gtag("js", new Date());
+gtag("config", "UA-62115237-2");
+</script>
   <!-- Intercom -->
   <script>
-  var alignment = 'right';
+  var alignment = "right";
 
-  if (window.innerWidth < 599) {
-    alignment = 'left';
+if (window.innerWidth < 599) {
+  alignment = "left";
+} else {
+  alignment = "right";
+}
+
+window.intercomSettings = {
+  app_id: "g247sp2q",
+  alignment: alignment
+};
+
+(function() {
+  var w = window;
+  var ic = w.Intercom;
+  if (typeof ic === "function") {
+    ic("reattach_activator");
+    ic("update", intercomSettings);
   } else {
-    alignment = 'right';
+    var d = document;
+    var i = function() {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function(args) {
+      i.q.push(args);
+    };
+    w.Intercom = i;
+
+    function l() {
+      var s = d.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://widget.intercom.io/widget/g247sp2q";
+      var x = d.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    }
+
+    if (w.attachEvent) {
+      w.attachEvent("onload", l);
+    } else {
+      w.addEventListener("load", l, false);
+    }
   }
-
-  window.intercomSettings = {
-    app_id: 'g247sp2q',
-    alignment: alignment
-  };
-
-  (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
-      ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
-      i.q = [];
-      i.c = function(args) { i.q.push(args) };
-      w.Intercom = i;
-
-      function l() { var s = d.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://widget.intercom.io/widget/g247sp2q'; var x = d.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
-  </script>
+})();
+</script>
 </head>
 
 <body>
   <!-- PAGE CONTENT -->
   <div id="page-content">
     <noscript>
-      <div class="noscript">
-        <p>This site requires Javascript to work, please enable Javascript in your browser or use a browser with Javascript support.
-          <br> See <a href="https://www.enable-javascript.com/">here</a> for help.</p>
-      </div>
-    </noscript>
+    <div class="noscript">
+      <p>This site requires Javascript to work, please enable Javascript in your browser or use a browser with
+        Javascript support.
+        <br> See <a href="https://www.enable-javascript.com/">here</a> for help.</p>
+    </div>
+  </noscript>
     <!-- HEADER -->
     <header id="header" class="header-bordered header-transparent transparent-light">
       <div class="header-inner clearfix">
         <!--LOGO-->
         <div id="logo" class="left-float">
           <a href="index.html">
-              <img id="scroll-logo" src="img/logo/icon-purple.png"
-                 srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
-              <img id="dark-logo" src="img/logo/icon-dark-purple.png"
-                 srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
-                 alt="Logo Dark">
-              <img id="light-logo" src="img/logo/icon-white.png"
-                 srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
-            </a>
+          <img id="scroll-logo" src="img/logo/icon-purple.png"
+               srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
+          <img id="dark-logo" src="img/logo/icon-dark-purple.png"
+               srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
+               alt="Logo Dark">
+          <img id="light-logo" src="img/logo/icon-white.png"
+               srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
+        </a>
         </div>
         <!-- MAIN NAVIGATION -->
         <div id="menu" class="right-float clearfix">
           <a href="#" class="responsive-nav-toggle">
-              <span class="hamburger"></span>
-          </a>
-          <div class="flag-section">
-            <a href="br"><img src="img/flags/br.png"></nav></a>
-          </div>
+          <span class="hamburger"></span>
+        </a>
           <div class="menu-inner">
             <nav id="main-nav">
               <ul>
                 <li class="">
-                  <a href="#lto-presale" class="js-scrollToBlock">Token info</a>
+                  <a href="#token-info" class="js-scrollToBlock">Token info</a>
                 </li>
                 <li class="">
                   <a href="#faq" class="js-scrollToBlock">FAQ</a>
                 </li>
                 <!-- <li class="">
-                    <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
-                  </li> -->
+                  <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
+                </li> -->
                 <li class="">
                   <a href="#lto-presale" class="js-open-wizard">Buy LTO Tokens</a>
                 </li>
@@ -138,8 +158,8 @@
       <div id="page-title" class="wrapper align-left">
         <h1>LegalThings One</h1>
         <h3 class="subtitle-1">
-            A fair legal system for everyone
-          </h3>
+        A fair legal system for everyone
+      </h3>
         <div class="spacer-small"></div>
         <div class="icon-box">
           <div class="icon-box-icon">
@@ -150,26 +170,47 @@
             <h5>Dutch Ministry of Justice and Security</h5>
           </div>
         </div>
-        <div class="spacer-medium"></div>
+        <div class="spacer-small"></div>
         <p class="hero__buttons">
           <a class="sr-button button-1 button-medium circled js-open-wizard">
-              Buy LTO Tokens
-            </a>
-          <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Token info
-            </a>
+          Buy LTO Tokens
+        </a>
+          <a href="#token-info" class="js-scrollToBlock sr-button button-1 button-medium circled">
+          Token info
+        </a>
           <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Read FAQ
-            </a>
+          Read FAQ
+        </a>
           <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-              Demo
-            </a> -->
+            Demo
+          </a> -->
         </p>
-        <div class="spacer-medium"></div>
-        <div class="count-down-wrap">
-            <h3><strong>Pre-sale ends in</strong></h3>
-            <div class="spacer-small"></div>
-            <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
+        <div class="count-down-wrap" style="width: 540px; margin-top: 50px;">
+          <h4 style="text-align: center">Pre-sale ends in</h4>
+          <div class="count-down p-t-b-15" data-end-date="Jan 20, 2018 12:00:00"></div>
+        </div>
+        <div style="max-width: 540px; margin-top: 24px;">
+          <h4 style="text-align: center">Pre-sale tokens sold</h4>
+          <div class="spacer-small"></div>
+          <div class="progress-bar-item big-bar">
+            <div class="progress-bar">
+              <div class="progress-active progress-bar__element" data-perc="">
+                <span class="tooltip" style="">
+                    <span class="current-tokens-sold">
+
+                    </span> LTO sold
+                </span>
+              </div>
+            </div>
+            <h6 class="progress-name">
+                <span class="progress-start">
+                  0
+                </span>
+            <span id="all-tokens" class="progress-end">
+
+                </span>
+          </h6>
+          </div>
         </div>
       </div>
       <!-- END #page-title -->
@@ -214,71 +255,75 @@
           <div class="wrapper clearfix">
             <div class="column one-third">
               <div class="align-center">
-                <img style="width:80px" src="img/independence.png" alt="Independence">
-                <h5>Independence</h5>
-                <p>
-                  We enable people to participate in the legal system without the need to rely on lawyers or blindly trusting organizations and governments.
-                </p>
+                <img src="img/independence.png" alt="Independence">
               </div>
+              <h5>Independence</h5>
+              <p>
+                We enable people to participate in the legal system without the need to rely on lawyers or blindly trusting organizations and governments.
+              </p>
             </div>
             <div class="column one-third">
               <div class="align-center">
-                <img style="width:80px" src="img/efficiency.png" alt="Efficiency">
-                <h5>Efficiency</h5>
-                <p>Live Contracts allow automation of agreements and laws without giving full control to the machines.</p>
+                <img src="img/efficiency.png" alt="Efficiency">
               </div>
+              <h5>Efficiency</h5>
+              <p>Live Contracts allow automation of agreements and laws without giving full control to the machines.</p>
             </div>
             <div class="column one-third last-col">
               <div class="align-center">
-                <img style="width:80px" src="img/mitigating-fraud.png" alt="Mitigating fraud">
-                <h5>Mitigating fraud</h5>
-                <p>By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing bureaucracy.</p>
+                <img src="img/mitigating-fraud.png" alt="Mitigating fraud">
               </div>
+              <h5>Mitigating fraud</h5>
+              <p>
+                By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing bureaucracy.
+              </p>
             </div>
           </div>
-          <div class="align-center clearfix" style="margin-top: 32px">
+          <div class="align-center clearfix" style="margin-top: 16px">
             <a href="#lto-presale" class="sr-button button-1 button-medium circled js-open-wizard">Buy LTO Tokens</a>
           </div>
         </div>
         <div id="discover" class="wrapper row-section">
           <h2 class="align-center">
-            <strong>Discover LegalThings One</strong>
-          </h2>
+          <strong>Discover LegalThings One</strong>
+        </h2>
           <div class="spacer-medium"></div>
           <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157" target="_blank" class="text-light blog-image">
-                    <img src="./img/power-to-the-people.jpg">
-                  </a>
+                <img src="./img/power-to-the-people.jpg">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
-                         target="_blank">
-                        <strong>Live Contracts — What's all the fuss about?</strong>
-                      </a>
-                    </h5>
+                  <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
+                     target="_blank">
+                    <strong>Live Contracts — What's all the fuss about?</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
-                  Picture this. A contract or law visualized in such a way that it is understandable for both computers and humans. Not only the rules that you are agreeing upon in a contract, but also the consequences behind those rules. With Live Contracts, we enable equality of rights for all parties involved.
+                  Picture this. A contract or law visualized in such a way that it is understandable for both computers and humans. Not only the rules that you are agreeing upon in a contract, but also the consequences behind those rules. With Live Contracts, we enable
+                  equality of rights for all parties involved.
                 </p>
               </div>
             </div>
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/livecontracts-whitepaper.png">
-                  </a>
+                <img src="./img/explore/livecontracts-whitepaper.png">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi" target="_blank">
-                        <strong>LegalThings One &mdash; Technical Whitepaper</strong>
-                      </a>
-                    </h5>
+                  <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+                     target="_blank">
+                    <strong>LegalThings One &mdash; Technical Whitepaper</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
                   The LegalThings One Whitepaper gives an indepth description of the technical concepts behinds LegalThings One. Reading this paper requires some knowlegde of computer engineering.
@@ -288,17 +333,17 @@
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/presentation_stanford.jpg">
-                  </a>
+                <img src="./img/explore/presentation_stanford.png">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
-                         target="_blank">
-                        <strong>Introducing Live Contracts @ Stanford CodeX</strong>
-                      </a>
-                    </h5>
+                  <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
+                     target="_blank">
+                    <strong>Introducing Live Contracts @ Stanford CodeX</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
                   A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage.
@@ -310,55 +355,58 @@
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/checkout-summery.png">
-                  </a>
+                <img src="./img/explore/checkout-summery.png">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371" target="_blank">
-                        <strong>Buying tokens on the LegalThings One platform</strong>
-                      </a>
-                    </h5>
+                  <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
+                     target="_blank">
+                    <strong>Buying tokens on the LegalThings One platform</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
-                  For users that want to buy LTO we have set up a 4-step process. LegalThings One has chosen the Waves platform for storing, trading, managing and issuing digital assets. You can buy LTO by iDEAL, credit cards and different cryptocurrencies: Bitcoin, Bitcoin Cash, Ether, Ripple, Litecoin, Monero and Dash.
+                  For users that want to buy LTO we have set up a 4-step process. LegalThings One has chosen the Waves platform for storing, trading, managing and issuing digital assets. You can buy LTO by iDEAL, credit cards and different cryptocurrencies: Bitcoin, Bitcoin
+                  Cash, Ether, Ripple, Litecoin, Monero and Dash.
                 </p>
               </div>
             </div>
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/smartorlivecontracts.png">
-                  </a>
+                <img src="./img/explore/smartorlivecontracts.png">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
-                         target="_blank">
-                        <strong>3 limitations of a self-enforcing agreement</strong>
-                      </a>
-                    </h5>
+                  <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
+                     target="_blank">
+                    <strong>3 limitations of a self-enforcing agreement</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
-                  Since a smart contract is also self-executing, there is no possibility for any party to breach the the agreement. This means that there is no need for a trusted third party, no bankers, no lawyers, no judges. Right? Well yes, you can accomplish this, but it does mean some serious limitations.
+                  Since a smart contract is also self-executing, there is no possibility for any party to breach the the agreement. This means that there is no need for a trusted third party, no bankers, no lawyers, no judges. Right? Well yes, you can accomplish this,
+                  but it does mean some serious limitations.
                 </p>
               </div>
             </div>
             <div class="isotope-item blog-item">
               <div class="blog-media">
                 <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/contract-as-automaton.png">
-                  </a>
+                <img src="./img/explore/contract-as-automaton.png">
+              </a>
               </div>
-              <div class="blog-desc align-center">
+              <div class="blog-desc">
                 <div class="blog-headline">
                   <h5 class="post-name">
-                      <a href="./documents/contract-as-automaton.pdf" target="_blank">
-                        <strong>Contract as Automaton</strong>
-                      </a>
-                    </h5>
+                  <a href="./documents/contract-as-automaton.pdf" target="_blank">
+                    <strong>Contract as Automaton</strong>
+                  </a>
+                </h5>
                 </div>
                 <p>
                   "We show that the fundamental legal structure of a well-written financial contract follows a state-transition logic that can be formalized mathematically as a finite-state machine (also known as a finitestate automaton)."
@@ -369,8 +417,8 @@
           </div>
           <div class="align-center">
             <a href="https://medium.com/legalthingsone" class="sr-button inline button-1-ghost button-medium circled " target="_blank">
-                More articles
-              </a>
+            More articles
+          </a>
             <a href="" class="sr-button inline button-1 button-medium circled js-open-wizard">Buy LTO Tokens</a>
           </div>
         </div>
@@ -396,19 +444,18 @@
     </div>
     <div class="wrapper row-section">
       <h2 class="align-center">
-        <strong>Meet the Team</strong>
-      </h2>
+    <strong>Meet the Team</strong>
+  </h2>
       <div class="spacer-medium"></div>
       <div class="column-section clearfix">
         <div class="column one-third team-member align-center">
           <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-            <img class="one" src="img/team/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
-            <img class="two" src="img/team/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
-          </a>
+        <img src="img/team/arnold-daniels.png" alt="Arnold Daniels - LegalThings">
+      </a>
           <div class="team-content">
             <h5 class="team-name uppercase">
-              <strong>Arnold Daniels</strong>
-            </h5>
+          <strong>Arnold Daniels</strong>
+        </h5>
             <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
             <ul class="socialmedia-widget hover-fade-1">
               <li class="linkedin">
@@ -422,13 +469,12 @@
         </div>
         <div class="column one-third team-member align-center">
           <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-            <img class="one" src="img/team/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
-            <img class="two" src="img/team/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
-          </a>
+        <img src="img/team/rick-schmitz.png" alt="Rick Schmitz - LegalThings">
+      </a>
           <div class="team-content">
             <h5 class="team-name uppercase">
-              <strong>Rick Schmitz</strong>
-            </h5>
+          <strong>Rick Schmitz</strong>
+        </h5>
             <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
             <ul class="socialmedia-widget hover-fade-1">
               <li class="linkedin">
@@ -439,13 +485,12 @@
         </div>
         <div class="column one-third last-col team-member align-center">
           <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-            <img class="one" src="img/team/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
-            <img class="two" src="img/team/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
-          </a>
+        <img src="img/team/martijn-migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+      </a>
           <div class="team-content">
             <h5 class="team-name uppercase">
-              <strong>Martijn Migchelsen</strong>
-            </h5>
+          <strong>Martijn Migchelsen</strong>
+        </h5>
             <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
             <ul class="socialmedia-widget hover-fade-1">
               <li class="linkedin">
@@ -457,30 +502,13 @@
       </div>
       <div class="column-section clearfix">
         <div class="column one-third team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
-            <img src="img/team/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Lisa Kate Palmer</strong>
-            </h5>
-            <h6 class="subtitle-2">Product Development Manager</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column one-third team-member align-center">
           <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-            <img class="one" src="img/team/sven_stam.png" alt="Sven Stam - LegalThings">
-            <img class="two" src="img/team/sven_stam_b.png" alt="Sven Stam - LegalThings">
-          </a>
+        <img src="img/team/sven-stam.png" alt="Sven Stam - LegalThings">
+      </a>
           <div class="team-content">
             <h5 class="team-name uppercase">
-              <strong>Sven Stam</strong>
-            </h5>
+          <strong>Sven Stam</strong>
+        </h5>
             <h6 class="subtitle-2">CTO</h6>
             <ul class="socialmedia-widget hover-fade-1">
               <li class="linkedin">
@@ -492,18 +520,34 @@
             </ul>
           </div>
         </div>
-        <div class="column one-third last-col team-member align-center">
-          <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
-            <img src="img/team/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
-          </a>
+        <div class="column one-third team-member align-center">
+          <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
+        <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+      </a>
           <div class="team-content">
             <h5 class="team-name uppercase">
-              <strong>Sabine van Bilderbeek</strong>
-            </h5>
-            <h6 class="subtitle-2">Manager Operations</h6>
+          <strong>Pim Volkers</strong>
+        </h5>
+            <h6 class="subtitle-2 advisor">ADVISOR</h6>
             <ul class="socialmedia-widget hover-fade-1">
               <li class="linkedin">
-                <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column one-third last-col team-member align-center">
+          <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
+        <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+      </a>
+          <div class="team-content">
+            <h5 class="team-name uppercase">
+          <strong>Peter van Leersum</strong>
+        </h5>
+            <h6 class="subtitle-2 advisor">ADVISOR</h6>
+            <ul class="socialmedia-widget hover-fade-1">
+              <li class="link">
+                <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
               </li>
             </ul>
           </div>
@@ -512,65 +556,13 @@
       <div class="show-more">
         <div class="column-section clearfix">
           <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-              <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Martijn Broersma</strong>
-              </h5>
-              <h6 class="subtitle-2">Head of Operations</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
-              <img src="img/team/rick_ross.png" alt="Rick Ros - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Rick Ros</strong>
-              </h5>
-              <h6 class="subtitle-2">Head of Sales</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column one-third last-col team-member align-center">
-            <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-              <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Diederick Cardon</strong>
-              </h5>
-              <h6 class="subtitle-2">Legal Chief</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
             <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-              <img class="one" src="img/team/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
-              <img class="two" src="img/team/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
+              <img src="img/team/moesjarraf-jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
             </div>
             <div class="team-content">
               <h5 class="team-name uppercase">
-                <strong>Moesjarraf Jahangier</strong>
-              </h5>
+            <strong>Moesjarraf Jahangier</strong>
+          </h5>
               <h6 class="subtitle-2">Full-stack Developer</h6>
               <ul class="socialmedia-widget hover-fade-1">
                 <li class="linkedin">
@@ -582,15 +574,30 @@
               </ul>
             </div>
           </div>
-
           <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
-              <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
-            </a>
+            <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
+          <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+        </a>
             <div class="team-content">
               <h5 class="team-name uppercase">
-                <strong>Yevhen Horbachov</strong>
-              </h5>
+            <strong>Diederick Cardon</strong>
+          </h5>
+              <h6 class="subtitle-2">Legal Expert</h6>
+              <ul class="socialmedia-widget hover-fade-1">
+                <li class="linkedin">
+                  <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="column one-third last-col team-member align-center">
+            <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
+          <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
+        </a>
+            <div class="team-content">
+              <h5 class="team-name uppercase">
+            <strong>Yevhen Horbachov</strong>
+          </h5>
               <h6 class="subtitle-2">Frontend Developer</h6>
               <ul class="socialmedia-widget hover-fade-1">
                 <li class="linkedin">
@@ -602,57 +609,32 @@
               </ul>
             </div>
           </div>
-
-          <div class="column one-third last-col team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
-              <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Jurre Wolsink</strong>
-              </h5>
-              <h6 class="subtitle-2">Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/jurrew27" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-
         <div class="column-section clearfix">
           <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
-              <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
-            </a>
+            <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+          <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
+        </a>
             <div class="team-content">
               <h5 class="team-name uppercase">
-                <strong>Mitchel Kerckhaert</strong>
-              </h5>
-              <h6 class="subtitle-2">Developer</h6>
+            <strong>Martijn Broersma</strong>
+          </h5>
+              <h6 class="subtitle-2">Head of Operations</h6>
               <ul class="socialmedia-widget hover-fade-1">
                 <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
+                  <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
                 </li>
               </ul>
             </div>
           </div>
-
-          <div class="column one-third team-member align-center">
+          <div class="column one-third last-col team-member align-center">
             <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-              <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
-            </a>
+          <img src="img/team/sarfaraaz-jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+        </a>
             <div class="team-content">
               <h5 class="team-name uppercase">
-                <strong>Sarfaraaz Jahangier</strong>
-              </h5>
+            <strong>Sarfaraaz Jahangier</strong>
+          </h5>
               <h6 class="subtitle-2">Developer</h6>
               <ul class="socialmedia-widget hover-fade-1">
                 <li class="linkedin">
@@ -660,85 +642,6 @@
                 </li>
                 <li class="github">
                   <a href="https://github.com/Sarfaraaz" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="column one-third last-col team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
-              <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
-              <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Michael Nieveld</strong>
-              </h5>
-              <h6 class="subtitle-2">Legal & Tax</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer-medium"></div>
-        <h2 class="align-center"><strong>Advisors</strong></h2>
-
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
-              <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Pim Volkers</strong>
-              </h5>
-              <h6 class="subtitle-2 advisor">ADVISOR</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="column one-third last-col team-member align-center">
-            <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
-              <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Peter van Leersum</strong>
-              </h5>
-              <h6 class="subtitle-2 advisor">ADVISOR</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="link">
-                  <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer-medium"></div>
-        <h2 class="align-center"><strong>Partners</strong></h2>
-
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
-              <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Marcus Camargo</strong>
-              </h5>
-              <h6 class="subtitle-2">Partner in Brazil</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
                 </li>
               </ul>
             </div>
@@ -760,8 +663,8 @@
       <div class="timeline-container text-light" id="timeline-1">
         <div class="timeline-header">
           <h2 class="align-center">
-            <strong>Timeline</strong>
-          </h2>
+        <strong>Timeline</strong>
+      </h2>
           <h3 class="timeline-header__subtitle">Past, present and future</h3>
         </div>
         <div class="timeline">
@@ -791,7 +694,8 @@
               <img class="timeline__img" src="img/timeline/legalflow.jpg" alt="Explaining how a process can be defined as Finite State Machine" />
               <h2 class="timeline__content-title">Jan 2016</h2>
               <p class="timeline__content-desc">
-                For FIRM24 we had created software to run the procedures behind an incorporation. Other customers were also interested in these digitized procedures. We did a small pivot, now focusing on digitizing the contracts as finite state machine, rather than just signing.
+                For FIRM24 we had created software to run the procedures behind an incorporation. Other customers were also interested in these digitized procedures. We did a small pivot, now focusing on digitizing the contracts as finite state machine, rather than just
+                signing.
               </p>
             </div>
           </div>
@@ -819,7 +723,8 @@
               <img class="timeline__img" src="img/timeline/winner-blockaton.jpg" alt="Team with Dutch Minister of Justice, Stef Blok" />
               <h2 class="timeline__content-title">Sep 2017</h2>
               <p class="timeline__content-desc">
-                During the blockchain hackaton organized by the Dutch ministry of Justice and Security, we demonstrated that a whole law can be digitized as a FSM and stored on the blockchain. This won us the first prize in the event which included the assignment to create the first digitized Dutch law on the blockchain.
+                During the blockchain hackaton organized by the Dutch ministry of Justice and Security, we demonstrated that a whole law can be digitized as a FSM and stored on the blockchain. This won us the first prize in the event which included the assignment to
+                create the first digitized Dutch law on the blockchain.
               </p>
             </div>
           </div>
@@ -855,7 +760,8 @@
               <img class="timeline__img" src="img/timeline/opensource.jpg" />
               <h2 class="timeline__content-title">Q4 2018</h2>
               <p class="timeline__content-desc">
-                We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run Live Contracts will be available under the MIT license. This will allow third-parties to to create and run Live Contracts without relying on LegalThings One.
+                We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run Live Contracts will be available under the MIT license. This will allow third-parties to to create and run Live Contracts without relying on LegalThings
+                One.
               </p>
             </div>
           </div>
@@ -873,8 +779,8 @@
     </div>
     <div class="column-section block-button__hover wrapper row-section">
       <a class="sr-button button-medium button-1 circled" href="./customers.html">
-        View our customers
-      </a>
+    View our customers
+  </a>
       <div class="logo serving-companies text-dark wrapper">
         <div class="column-section no-left-margin wrapper clearfix">
           <div class="column one-fourth">
@@ -905,206 +811,22 @@
           </div>
         </div>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg">
-          <defs>
-            <filter id="blur-filter">
-              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-            </filter>
-          </defs>
-        </svg>
+      <defs>
+        <filter id="blur-filter">
+          <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+        </filter>
+      </defs>
+    </svg>
         <div class="overlay"></div>
-      </div>
-    </div>
-    <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
-      <div class="wrapper">
-        <div class="column-section clearfix">
-          <div class="col-content" style="margin-top: 0px;">
-            <div class="align-center">
-              <h2><strong>Token sale</strong></h2>
-            </div>
-            <div class="spacer-medium"></div>
-            <div class="column one-third">
-              <div class="align-center">
-                <img src="./img/logo/icon-white.png"/><br>
-                <div class="spacer-small"></div>
-                <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
-                  Buy LTO Tokens
-                </a>
-              </div>
-            </div>
-            <div class="column two-third last-col">
-              <h3><strong>Pre-sale token distribution</strong></h3>
-              <div class="spacer-medium"></div>
-              <div class="progress-bar-item big-bar">
-                <div class="progress-bar">
-                  <div class="progress-active progress-bar__element" data-perc="">
-                    <span class="tooltip" style="">
-                      <span class="current-tokens-sold">
-
-                      </span> LTO sold
-                    </span>
-                  </div>
-                </div>
-                <h6 class="progress-name">
-                  <span class="progress-start">
-                    0
-                  </span>
-                  <span id="all-tokens" class="progress-end">
-
-                  </span>
-                </h6>
-              </div>
-              <div class="spacer-medium"></div>
-              <div class="column one-third">
-                <p class="sale-header">Price</p>
-                <p class="sale-focusText">$0.25 / LTO</p>
-              </div>
-              <div class="column one-third">
-                <p class="sale-header">Tokens</p>
-                <p class="sale-focusText">10,000,000 LTO</p>
-              </div>
-              <div class="column one-third last-col">
-                <div class="powered_by_waves">
-                  <p class="sale-header">Powered by</p>
-                  <div></div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="spacer-small"></div>
-              <div class="count-down-wrap">
-                  <h3><strong>Pre-sale ends in</strong></h3>
-                  <div class="spacer-small"></div>
-                  <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper row-section">
-      <h2 class="align-center">
-        <strong>Token usage</strong>
-      </h2>
-      <div class="spacer-medium"></div>
-      <div class="column one-half">
-        <table class="token-usage-table">
-          <thead>
-            <tr>
-              <th>Full node</th>
-              <th>Required license</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <i class="fa fa-building"></i>
-                <div class="tooltip">
-                  Full node with whitelabled environment
-                  <span class="tooltiptext">
-                    Run a single full node with a whitelabled LegalThings One environment
-                  </span>
-                </div>
-              </td>
-              <td>100,000 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-retweet"></i>
-                <div class="tooltip">
-                  Live Contract interactions (250 per week)
-                  <span class="tooltiptext">
-                    Perform up to 250 interactions with Live Contracts per week per 250 LTO
-                  </span>
-                </div>
-              </td>
-              <td>1,000 LTO</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <table class="token-usage-table">
-          <thead>
-            <tr>
-              <th>Lease to the LTO foundation</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <i class="fa fa-id-card-o"></i>
-                <div class="tooltip">
-                  User
-                  <span class="tooltiptext">
-                    1 user on a LegalThings One environment is allowed per 500 LTO
-                  </span>
-                </div>
-              </td>
-              <td>500 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-retweet"></i>
-                <div class="tooltip">
-                  Live Contract interactions (100 per week)
-                  <span class="tooltiptext">
-                    Perform up to 100 interactions with Live Contracts per week per 500 LTO
-                  </span>
-                </div>
-              </td>
-              <td>500 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-play-circle"></i>
-                <div class="tooltip">
-                  Create Live Contracts (5 per week)
-                  <span class="tooltiptext">
-                    Create up to 5 Live Contracts per week per 1000 LTO
-                  </span>
-                </div>
-              </td>
-              <td>1,000 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-file-text"></i>
-                <div class="tooltip">
-                  Live Contracts pre-package
-                  <span class="tooltiptext">
-                    Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
-                  </span>
-                </div>
-              </td>
-              <td>10,000 LTO</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="column one-half last-col">
-        <p>
-          <strong>Token distribution</strong>
-          <br> Tokens are immediately available upon purchase. Excess tokens may be sold on the Waves Decentralized Exchange (DEX). You never spend LTO tokens, only trade, lease or hold them.
-        </p>
-        <p>
-          <strong>Running a full node</strong>
-          <br> Organization you can host their own full node by HOLDing LTO tokens. As an enterprise, you can intergrate Live Contract with your existing software platform. As law firm or legaltech start-up,
-          you can offer Live Contracts in addition to static contracts and other legal services.
-        </p>
-        <p>
-          <strong>Leasing your tokens</strong>
-          <br> You may lease your tokens to any node, allowing them to increase their interaction limit. Organizations may reward you for this by paying (USD or crypto currency) or providing a free service.
-          Leasing tokens to the node of the LTO foundation allows you to view and interact with your Live Contracts through independent means, so not relying on
-          the system of the counter party.
-        </p>
       </div>
     </div>
     <div class="pie-chart-section text-light purpleSection row-section" id="token-info">
       <div class="wrapper column-section">
         <h2 class="align-center">
-          <strong>
-            Token distribution
-          </strong>
-        </h2>
+      <strong>
+        Token distribution
+      </strong>
+    </h2>
         <div class="spacer-small"></div>
         <div class="column one-half">
           <h3>LTO Token</h3>
@@ -1151,17 +873,175 @@
         </div>
       </div>
     </div>
+    <div class="wrapper row-section">
+      <h2 class="align-center">
+    <strong>Token usage</strong>
+  </h2>
+      <div class="spacer-medium"></div>
+      <div class="column one-half">
+        <table class="token-usage-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Required license</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="fa fa-id-card-o"></i>
+                <div class="tooltip">
+                  User
+                  <span class="tooltiptext">
+                    1 user on a LegalThings One environment is allowed per 500 LTO
+                  </span>
+                </div>
+              </td>
+              <td>500 LTO</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-play-circle"></i>
+                <div class="tooltip">
+                  Create Live Contracts (5 per week)
+                  <span class="tooltiptext">
+                    Create up to 5 Live Contracts per week per 1000 LTO
+                  </span>
+                </div>
+              </td>
+              <td>1,000 LTO</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-retweet"></i>
+                <div class="tooltip">
+                  Live Contract interactions (250 per week)
+                  <span class="tooltiptext">
+                    Perform up to 250 interactions with Live Contracts per week per 1000 LTO
+                  </span>
+                </div>
+              </td>
+              <td>1,000 LTO</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-file-text"></i>
+                <div class="tooltip">
+                  Live Contracts pre-package
+                  <span class="tooltiptext">
+                    Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
+                  </span>
+                </div>
+              </td>
+              <td>10,000 LTO</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-building"></i>
+                <div class="tooltip">
+                  Full node with whitelabled environment
+                  <span class="tooltiptext">
+                    Run a single full node with a whitelabled LegalThings One environment
+                  </span>
+                </div>
+              </td>
+              <td>100,000 LTO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="column one-half last-col">
+        <p>
+          <strong>Token distribution</strong>
+          <br> Tokens are immediately available upon purchase. Excess tokens may be sold on the Waves Decentralized Exchange (DEX).
+        </p>
+        <p>
+          <strong>License pricing</strong>
+          <br> License prices are based on fair market value. The LTO token supply is fixed and represents 100% of the capacity of LegalThings One. The capacity will scale up with the demand. As the capacity grows, less tokens are required for the same
+          usage.
+        </p>
+        <p>
+          <strong>Example</strong>
+          <br> Acme Inc buys 100,000 LTO to run its own whitelabled environment. When the popularity of the platform grows, the LTO price increases. LegalThings One will stabilize the price for the service by decreasing the required number of tokens needed
+          to run a service. In this example the price for a whitelabled environment is decreased to 80,000 LTO. In this case Acme Inc can sell its excess 20,000 LTO tokens and still run its platform at the same capacity.
+        </p>
+      </div>
+    </div>
+    <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
+      <div class="wrapper">
+        <div class="column-section clearfix">
+          <div class="col-content" style="margin-top: 0px;">
+            <div class="align-center">
+              <h2><strong>Token Sale</strong></h2>
+            </div>
+            <div class="spacer-medium"></div>
+            <div class="column one-half">
+              <h2><strong>Pre-sale</strong></h2>
+              <div class="spacer-small"></div>
+              <strong>Price:</strong> $0.25 / LTO
+              <br>
+              <strong>Tokens:</strong> 10,000,000 LTO
+              <br>
+              <strong>Start date:</strong> December 6th 2017 0:00 CET
+              <br>
+              <strong>End date:</strong> January 20th 2018 12:00 CET
+              <div class="spacer-small"></div>
+              <div class="progress-bar-item big-bar">
+                <div class="progress-bar">
+                  <div class="progress-active progress-bar__element" data-perc="">
+                    <span class="tooltip" style="">
+                      <span class="current-tokens-sold">
+
+                      </span> LTO sold
+                    </span>
+                  </div>
+                </div>
+                <h6 class="progress-name">
+                  <span class="progress-start">
+                    0
+                  </span>
+              <span id="all-tokens" class="progress-end">
+
+                  </span>
+            </h6>
+              </div>
+            </div>
+            <div class="column one-half last-col">
+              <h2><strong>Main sale</strong></h2>
+              <div class="spacer-small"></div>
+              <strong>Price:</strong> $0.50 / LTO
+              <br>
+              <strong>Tokens:</strong> 60,000,000 LTO
+              <br>
+              <strong>Start date:</strong> Q2 2018
+            </div>
+            <div class="clearfix"></div>
+            <br>
+            <strong>Exchanges:</strong> Waves DEX Platform (more coming in the future)
+            <div class="spacer-medium"></div>
+            <div class="align-center">
+              <a href="#" class="sr-button button-medium js-open-wizard button-1-ghost circled">
+            Buy LTO Tokens
+          </a>
+              <p><strong>Accepted currencies:</strong> USD, EUR
+                <br>
+                <strong>Accepted cryptocurrencies:</strong> BTC, BCH, LTC, XRP, ETH, XMR and DASH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row-section align-center">
       <h2>
-        <strong>In the press</strong>
-      </h2>
+    <strong>In the press</strong>
+  </h2>
       <div id="media-logos">
       </div>
     </div>
     <div id="faq" class="purpleSection row-section text-light">
       <h2 class="align-center">
-        <strong>FAQ</strong>
-      </h2>
+    <strong>FAQ</strong>
+  </h2>
       <div class="spacer-medium"></div>
       <div class="wrapper faq">
         <div class="column one-fourth">
@@ -1194,7 +1074,9 @@
             <div class="container">
               <div class="content">
                 <h3>3. What happens if all the LTO sell out?</h3>
-                <p>In that case the following scenario takes place: A company buys 100,000 LTO to run its own customizable install. When the popularity of the LTO platform grows, the LTO price will increase. The LTO Platform will stabilize the price for the service by decreasing the required number of tokens needed to run a service. In this case the price for a customizable install is decreased to 80,000 LTO. In this case, the Company can sell its excess 20,000 LTO tokens on the exchange and can still run its platform.
+                <p>In that case the following scenario takes place: A company buys 100,000 LTO to run its own customizable install. When the popularity of the LTO platform grows, the LTO price will increase. The LTO Platform will stabilize the price for
+                  the service by decreasing the required number of tokens needed to run a service. In this case the price for a customizable install is decreased to 80,000 LTO. In this case, the Company can sell its excess 20,000 LTO tokens on the exchange
+                  and can still run its platform.
                 </p>
               </div>
             </div>
@@ -1203,7 +1085,8 @@
             <div class="container">
               <div class="content">
                 <h3>4. What is the difference between a coin like Bitcoin and LTO?</h3>
-                <p>Bitcoin is just a digital coin. An LTO is a license that is going to be used to interact with Live Contracts.</p>
+                <p>Bitcoin is just a digital coin. An LTO is a license that is going to be used to interact with Live Contracts.
+                </p>
               </div>
             </div>
           </div>
@@ -1286,7 +1169,8 @@
                 <p>Yes you need a Waves wallet to store LTO in. However if you don't have one currently, you can create a wallet when purchasing LTO.
                   <br/>
                   <br/>
-                  <strong>Warning: Do not use an existing Waves wallet on an exchange. Waves wallets on exchanges do not support holding LTO.</strong></p>
+                  <strong>Warning: Do not use an existing Waves wallet on an exchange. Waves wallets on exchanges do not
+                support holding LTO.</strong></p>
               </div>
             </div>
           </div>
@@ -1347,10 +1231,13 @@
             <div class="container">
               <div class="content">
                 <h3>2. What is a Token-as-a-License (TaaL)?</h3>
-                <p>Contrary to traditional licensing, token based licensing allows you to use the same licenses for different products and when the need arises. As tokens are sold or purchased on exchanges, the license is also transfered, so more users can use the software for a limited time.
+                <p>Contrary to traditional licensing, token based licensing allows you to use the same licenses for different products and when the need arises. As tokens are sold or purchased on exchanges, the license is also transfered, so more users can
+                  use the software for a limited time.
                   <br/>
                   <br/>
-                  <i>For more information read the article on <a href="https://hackernoon.com/blockchain-token-as-a-license-taal-ba5d173e4ad6" target="_blank">Hackernoon</a>.</i></p>
+                  <i>For more information read the article on <a
+                  href="https://hackernoon.com/blockchain-token-as-a-license-taal-ba5d173e4ad6" target="_blank">Hackernoon</a>.</i>
+                </p>
               </div>
             </div>
           </div>
@@ -1365,7 +1252,9 @@
                   <li>Live Contract pre-package (10,000 LTO)</li>
                   <li>Full node with whitelabled environment (100,000 LTO)</li>
                 </ul>
-                <p><i>For more information read our article on <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i></p>
+                <p><i>For more information read our article on <a
+                href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i>
+                </p>
               </div>
             </div>
           </div>
@@ -1387,8 +1276,8 @@
     <div id="register" class="row-section subscribe-block">
       <div class="wrapper align-center">
         <h2>
-          <strong>Stay informed</strong>
-        </h2>
+      <strong>Stay informed</strong>
+    </h2>
         <p>Sign up for our newsletter to stay informed about the latest developments.</p>
         <form class="newsletter-form" novalidate="true">
           <input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Address">
@@ -1405,27 +1294,27 @@
     <div class="row-section align-center socialsBlock purpleSection text-light">
       <h2><strong>Social</strong></h2>
       <ul class="socialmedia-widget size-huge hover-fade-1">
-        <li class="telegram">
-          <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-        </li>
         <li class="github">
           <a href="https://github.com/legalthings" target="_blank"></a>
         </li>
         <!--                 <li class="reddit">
-          <a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
-        </li> -->
+      <a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
+    </li> -->
         <!--                 <li class="linkedin">
-          <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-        </li> -->
+      <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+    </li> -->
         <li class="twitter">
           <a href="https://twitter.com/livecontracts" target="_blank"></a>
         </li>
         <!--                 <li class="medium">
-          <a href="https://medium.com/legalthingsone" target="_blank"></a>
-        </li> -->
+      <a href="https://medium.com/legalthingsone" target="_blank"></a>
+    </li> -->
         <!--                 <li class="slack">
-          <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
-        </li> -->
+      <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
+    </li> -->
+        <li class="telegram">
+          <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+        </li>
       </ul>
     </div>
     <!-- PAGEBODY -->
@@ -1446,8 +1335,8 @@
     <div class="popup js-wishlist-popup popup-hide">
       <div class="overlay"></div>
       <a href="#" class="popup__close">
-        <i class="ion ion-3x ion-close-round"></i>
-      </a>
+    <i class="ion ion-3x ion-close-round"></i>
+  </a>
       <div class="popup__content">
         <p>The pre-sale will start December 6th at midnight (CET). You still have time to get whitelisted.</p>
         <p>
@@ -1475,21 +1364,21 @@
                 <div class="billing-details">
                   <div class="form-row column one-half">
                     <label for="billing-firstname">First Name
-                      <abbr title="required" class="required">*</abbr>
-                    </label>
+                  <abbr title="required" class="required">*</abbr>
+                </label>
                     <input type="text" id="billing-firstname" name="billing-firstname" required data-parsley-group="block0">
                   </div>
                   <div class="form-row column one-half last-col">
                     <label for="billing-lastname">Last Name
-                      <abbr title="required" class="required">*</abbr>
-                    </label>
+                  <abbr title="required" class="required">*</abbr>
+                </label>
                     <input type="text" id="billing-lastname" name="billing-lastname" required data-parsley-group="block0">
                   </div>
                   <div class="clear"></div>
                   <div class="form-row">
                     <label for="billing-email">Email Address
-                      <abbr title="required" class="required">*</abbr>
-                    </label>
+                  <abbr title="required" class="required">*</abbr>
+                </label>
                     <input type="email" id="billing-email" name="billing-email" required data-parsley-group="block0">
                   </div>
                   <div class="form-row">
@@ -1498,279 +1387,279 @@
                   </div>
                   <div class="form-row">
                     <label for="billing-address">Address
-                      <abbr title="required" class="required address-required-labels">*</abbr>
-                    </label>
+                  <abbr title="required" class="required address-required-labels">*</abbr>
+                </label>
                     <input type="text" id="billing-address" name="billing-address" value="" data-parsley-group="block0">
                   </div>
                   <div class="form-row column one-half">
                     <label for="billing-postcode">Postcode / Zip
-                      <abbr title="required" class="required address-required-labels">*</abbr>
-                    </label>
+                  <abbr title="required" class="required address-required-labels">*</abbr>
+                </label>
                     <input type="text" id="billing-postcode" name="billing-postcode" data-parsley-group="block0">
                   </div>
                   <div class="form-row column one-half last-col">
                     <label for="billing-city">City / Town
-                      <abbr title="required" class="required address-required-labels">*</abbr>
-                    </label>
+                  <abbr title="required" class="required address-required-labels">*</abbr>
+                </label>
                     <input type="text" id="billing-city" name="billing-city" data-parsley-group="block0">
                   </div>
                   <div class="clear"></div>
                   <div class="form-row column one-half">
                     <label for="billing-country">Country
-                      <abbr title="required" class="required address-required-labels">*</abbr>
-                    </label>
+                  <abbr title="required" class="required address-required-labels">*</abbr>
+                </label>
                     <select id="billing-country" name="billing-country" data-parsley-group="block0">
-                      <option value=""></option>
-                      <option value="AF">Afghanistan</option>
-                      <option value="AX">Åland Islands</option>
-                      <option value="AL">Albania</option>
-                      <option value="DZ">Algeria</option>
-                      <option value="AS">American Samoa</option>
-                      <option value="AD">Andorra</option>
-                      <option value="AO">Angola</option>
-                      <option value="AI">Anguilla</option>
-                      <option value="AQ">Antarctica</option>
-                      <option value="AG">Antigua and Barbuda</option>
-                      <option value="AR">Argentina</option>
-                      <option value="AM">Armenia</option>
-                      <option value="AW">Aruba</option>
-                      <option value="AU">Australia</option>
-                      <option value="AT">Austria</option>
-                      <option value="AZ">Azerbaijan</option>
-                      <option value="BS">Bahamas</option>
-                      <option value="BH">Bahrain</option>
-                      <option value="BD">Bangladesh</option>
-                      <option value="BB">Barbados</option>
-                      <option value="BY">Belarus</option>
-                      <option value="BE">Belgium</option>
-                      <option value="BZ">Belize</option>
-                      <option value="BJ">Benin</option>
-                      <option value="BM">Bermuda</option>
-                      <option value="BT">Bhutan</option>
-                      <option value="BO">Bolivia, Plurinational State of</option>
-                      <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                      <option value="BA">Bosnia and Herzegovina</option>
-                      <option value="BW">Botswana</option>
-                      <option value="BV">Bouvet Island</option>
-                      <option value="BR">Brazil</option>
-                      <option value="IO">British Indian Ocean Territory</option>
-                      <option value="BN">Brunei Darussalam</option>
-                      <option value="BG">Bulgaria</option>
-                      <option value="BF">Burkina Faso</option>
-                      <option value="BI">Burundi</option>
-                      <option value="KH">Cambodia</option>
-                      <option value="CM">Cameroon</option>
-                      <option value="CA">Canada</option>
-                      <option value="CV">Cape Verde</option>
-                      <option value="KY">Cayman Islands</option>
-                      <option value="CF">Central African Republic</option>
-                      <option value="TD">Chad</option>
-                      <option value="CL">Chile</option>
-                      <option value="CN">China</option>
-                      <option value="CX">Christmas Island</option>
-                      <option value="CC">Cocos (Keeling) Islands</option>
-                      <option value="CO">Colombia</option>
-                      <option value="KM">Comoros</option>
-                      <option value="CG">Congo</option>
-                      <option value="CD">Congo, the Democratic Republic of the</option>
-                      <option value="CK">Cook Islands</option>
-                      <option value="CR">Costa Rica</option>
-                      <option value="CI">Côte d'Ivoire</option>
-                      <option value="HR">Croatia</option>
-                      <option value="CU">Cuba</option>
-                      <option value="CW">Curaçao</option>
-                      <option value="CY">Cyprus</option>
-                      <option value="CZ">Czech Republic</option>
-                      <option value="DK">Denmark</option>
-                      <option value="DJ">Djibouti</option>
-                      <option value="DM">Dominica</option>
-                      <option value="DO">Dominican Republic</option>
-                      <option value="EC">Ecuador</option>
-                      <option value="EG">Egypt</option>
-                      <option value="SV">El Salvador</option>
-                      <option value="GQ">Equatorial Guinea</option>
-                      <option value="ER">Eritrea</option>
-                      <option value="EE">Estonia</option>
-                      <option value="ET">Ethiopia</option>
-                      <option value="FK">Falkland Islands (Malvinas)</option>
-                      <option value="FO">Faroe Islands</option>
-                      <option value="FJ">Fiji</option>
-                      <option value="FI">Finland</option>
-                      <option value="FR">France</option>
-                      <option value="GF">French Guiana</option>
-                      <option value="PF">French Polynesia</option>
-                      <option value="TF">French Southern Territories</option>
-                      <option value="GA">Gabon</option>
-                      <option value="GM">Gambia</option>
-                      <option value="GE">Georgia</option>
-                      <option value="DE">Germany</option>
-                      <option value="GH">Ghana</option>
-                      <option value="GI">Gibraltar</option>
-                      <option value="GR">Greece</option>
-                      <option value="GL">Greenland</option>
-                      <option value="GD">Grenada</option>
-                      <option value="GP">Guadeloupe</option>
-                      <option value="GU">Guam</option>
-                      <option value="GT">Guatemala</option>
-                      <option value="GG">Guernsey</option>
-                      <option value="GN">Guinea</option>
-                      <option value="GW">Guinea-Bissau</option>
-                      <option value="GY">Guyana</option>
-                      <option value="HT">Haiti</option>
-                      <option value="HM">Heard Island and McDonald Islands</option>
-                      <option value="VA">Holy See (Vatican City State)</option>
-                      <option value="HN">Honduras</option>
-                      <option value="HK">Hong Kong</option>
-                      <option value="HU">Hungary</option>
-                      <option value="IS">Iceland</option>
-                      <option value="IN">India</option>
-                      <option value="ID">Indonesia</option>
-                      <option value="IR">Iran, Islamic Republic of</option>
-                      <option value="IQ">Iraq</option>
-                      <option value="IE">Ireland</option>
-                      <option value="IM">Isle of Man</option>
-                      <option value="IL">Israel</option>
-                      <option value="IT">Italy</option>
-                      <option value="JM">Jamaica</option>
-                      <option value="JP">Japan</option>
-                      <option value="JE">Jersey</option>
-                      <option value="JO">Jordan</option>
-                      <option value="KZ">Kazakhstan</option>
-                      <option value="KE">Kenya</option>
-                      <option value="KI">Kiribati</option>
-                      <option value="KP">Korea, Democratic People's Republic of</option>
-                      <option value="KR">Korea, Republic of</option>
-                      <option value="KW">Kuwait</option>
-                      <option value="KG">Kyrgyzstan</option>
-                      <option value="LA">Lao People's Democratic Republic</option>
-                      <option value="LV">Latvia</option>
-                      <option value="LB">Lebanon</option>
-                      <option value="LS">Lesotho</option>
-                      <option value="LR">Liberia</option>
-                      <option value="LY">Libya</option>
-                      <option value="LI">Liechtenstein</option>
-                      <option value="LT">Lithuania</option>
-                      <option value="LU">Luxembourg</option>
-                      <option value="MO">Macao</option>
-                      <option value="MK">Macedonia, the former Yugoslav Republic of</option>
-                      <option value="MG">Madagascar</option>
-                      <option value="MW">Malawi</option>
-                      <option value="MY">Malaysia</option>
-                      <option value="MV">Maldives</option>
-                      <option value="ML">Mali</option>
-                      <option value="MT">Malta</option>
-                      <option value="MH">Marshall Islands</option>
-                      <option value="MQ">Martinique</option>
-                      <option value="MR">Mauritania</option>
-                      <option value="MU">Mauritius</option>
-                      <option value="YT">Mayotte</option>
-                      <option value="MX">Mexico</option>
-                      <option value="FM">Micronesia, Federated States of</option>
-                      <option value="MD">Moldova, Republic of</option>
-                      <option value="MC">Monaco</option>
-                      <option value="MN">Mongolia</option>
-                      <option value="ME">Montenegro</option>
-                      <option value="MS">Montserrat</option>
-                      <option value="MA">Morocco</option>
-                      <option value="MZ">Mozambique</option>
-                      <option value="MM">Myanmar</option>
-                      <option value="NA">Namibia</option>
-                      <option value="NR">Nauru</option>
-                      <option value="NP">Nepal</option>
-                      <option value="NL">Netherlands</option>
-                      <option value="NC">New Caledonia</option>
-                      <option value="NZ">New Zealand</option>
-                      <option value="NI">Nicaragua</option>
-                      <option value="NE">Niger</option>
-                      <option value="NG">Nigeria</option>
-                      <option value="NU">Niue</option>
-                      <option value="NF">Norfolk Island</option>
-                      <option value="MP">Northern Mariana Islands</option>
-                      <option value="NO">Norway</option>
-                      <option value="OM">Oman</option>
-                      <option value="PK">Pakistan</option>
-                      <option value="PW">Palau</option>
-                      <option value="PS">Palestinian Territory, Occupied</option>
-                      <option value="PA">Panama</option>
-                      <option value="PG">Papua New Guinea</option>
-                      <option value="PY">Paraguay</option>
-                      <option value="PE">Peru</option>
-                      <option value="PH">Philippines</option>
-                      <option value="PN">Pitcairn</option>
-                      <option value="PL">Poland</option>
-                      <option value="PT">Portugal</option>
-                      <option value="PR">Puerto Rico</option>
-                      <option value="QA">Qatar</option>
-                      <option value="RE">Réunion</option>
-                      <option value="RO">Romania</option>
-                      <option value="RU">Russian Federation</option>
-                      <option value="RW">Rwanda</option>
-                      <option value="BL">Saint Barthélemy</option>
-                      <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
-                      <option value="KN">Saint Kitts and Nevis</option>
-                      <option value="LC">Saint Lucia</option>
-                      <option value="MF">Saint Martin (French part)</option>
-                      <option value="PM">Saint Pierre and Miquelon</option>
-                      <option value="VC">Saint Vincent and the Grenadines</option>
-                      <option value="WS">Samoa</option>
-                      <option value="SM">San Marino</option>
-                      <option value="ST">Sao Tome and Principe</option>
-                      <option value="SA">Saudi Arabia</option>
-                      <option value="SN">Senegal</option>
-                      <option value="RS">Serbia</option>
-                      <option value="SC">Seychelles</option>
-                      <option value="SL">Sierra Leone</option>
-                      <option value="SG">Singapore</option>
-                      <option value="SX">Sint Maarten (Dutch part)</option>
-                      <option value="SK">Slovakia</option>
-                      <option value="SI">Slovenia</option>
-                      <option value="SB">Solomon Islands</option>
-                      <option value="SO">Somalia</option>
-                      <option value="ZA">South Africa</option>
-                      <option value="GS">South Georgia and the South Sandwich Islands</option>
-                      <option value="SS">South Sudan</option>
-                      <option value="ES">Spain</option>
-                      <option value="LK">Sri Lanka</option>
-                      <option value="SD">Sudan</option>
-                      <option value="SR">Suriname</option>
-                      <option value="SJ">Svalbard and Jan Mayen</option>
-                      <option value="SZ">Swaziland</option>
-                      <option value="SE">Sweden</option>
-                      <option value="CH">Switzerland</option>
-                      <option value="SY">Syrian Arab Republic</option>
-                      <option value="TW">Taiwan, Province of China</option>
-                      <option value="TJ">Tajikistan</option>
-                      <option value="TZ">Tanzania, United Republic of</option>
-                      <option value="TH">Thailand</option>
-                      <option value="TL">Timor-Leste</option>
-                      <option value="TG">Togo</option>
-                      <option value="TK">Tokelau</option>
-                      <option value="TO">Tonga</option>
-                      <option value="TT">Trinidad and Tobago</option>
-                      <option value="TN">Tunisia</option>
-                      <option value="TR">Turkey</option>
-                      <option value="TM">Turkmenistan</option>
-                      <option value="TC">Turks and Caicos Islands</option>
-                      <option value="TV">Tuvalu</option>
-                      <option value="UG">Uganda</option>
-                      <option value="UA">Ukraine</option>
-                      <option value="AE">United Arab Emirates</option>
-                      <option value="GB">United Kingdom</option>
-                      <option value="US">United States</option>
-                      <option value="UM">United States Minor Outlying Islands</option>
-                      <option value="UY">Uruguay</option>
-                      <option value="UZ">Uzbekistan</option>
-                      <option value="VU">Vanuatu</option>
-                      <option value="VE">Venezuela, Bolivarian Republic of</option>
-                      <option value="VN">Viet Nam</option>
-                      <option value="VG">Virgin Islands, British</option>
-                      <option value="VI">Virgin Islands, U.S.</option>
-                      <option value="WF">Wallis and Futuna</option>
-                      <option value="EH">Western Sahara</option>
-                      <option value="YE">Yemen</option>
-                      <option value="ZM">Zambia</option>
-                      <option value="ZW">Zimbabwe</option>
-                    </select>
+                  <option value=""></option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua and Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia, Plurinational State of</option>
+                  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                  <option value="BA">Bosnia and Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Island</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">British Indian Ocean Territory</option>
+                  <option value="BN">Brunei Darussalam</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CA">Canada</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Central African Republic</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CX">Christmas Island</option>
+                  <option value="CC">Cocos (Keeling) Islands</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, the Democratic Republic of the</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="CI">Côte d'Ivoire</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CU">Cuba</option>
+                  <option value="CW">Curaçao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica</option>
+                  <option value="DO">Dominican Republic</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equatorial Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands (Malvinas)</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="PF">French Polynesia</option>
+                  <option value="TF">French Southern Territories</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia</option>
+                  <option value="GE">Georgia</option>
+                  <option value="DE">Germany</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard Island and McDonald Islands</option>
+                  <option value="VA">Holy See (Vatican City State)</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IR">Iran, Islamic Republic of</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japan</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KP">Korea, Democratic People's Republic of</option>
+                  <option value="KR">Korea, Republic of</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Lao People's Democratic Republic</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macao</option>
+                  <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="MD">Moldova, Republic of</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Territory, Occupied</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="RE">Réunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russian Federation</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthélemy</option>
+                  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KN">Saint Kitts and Nevis</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin (French part)</option>
+                  <option value="PM">Saint Pierre and Miquelon</option>
+                  <option value="VC">Saint Vincent and the Grenadines</option>
+                  <option value="WS">Samoa</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome and Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SX">Sint Maarten (Dutch part)</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="GS">South Georgia and the South Sandwich Islands</option>
+                  <option value="SS">South Sudan</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="SD">Sudan</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard and Jan Mayen</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="SY">Syrian Arab Republic</option>
+                  <option value="TW">Taiwan, Province of China</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TL">Timor-Leste</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad and Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos Islands</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US">United States</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela, Bolivarian Republic of</option>
+                  <option value="VN">Viet Nam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, U.S.</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+                </select>
                   </div>
                   <div id="billing-vat-container" class="form-row column one-half last-col">
                     <label for="billing-city">VAT Number</label>
@@ -1786,7 +1675,7 @@
               <div class="row">
                 <h4>Select amount of tokens</h4>
                 <div class="lto-pricing">
-                  <input type="text" id="lto-amount" name="number-lto" data-parsley-group="block1" data-parsley-range="[1000, 5000000]">
+                  <input type="text" id="lto-amount" name="number-lto" data-parsley-group="block1" data-parsley-range="[500, 5000000]">
                   <span>LTO</span>
                 </div>
                 <div class="lto-pricing">
@@ -1848,45 +1737,44 @@
             </fieldset>
             <fieldset>
               <div id="faucet-container">
-                <h4>Waves wallet</h4>
                 <p>
-                  LTO tokens are Waves assets. Waves is a blockchain, similar to Bitcoin and Ethereum. To hold Waves assets, you need a <strong>wallet</strong> at <a href="https://waveswallet.io" target="_blank">waveswallet.io</a>. If you don't have a Waves wallet, you'll get the option to create one upon checking out. A Waves wallet on an exchanges like Tidex, Bittrex or Binance do not accept LTO tokens. In that case create a new Waves wallet.
+                  LTO tokens are Waves assets. Waves is a blockchain, similar to Bitcoin and Ethereum. To hold Waves assets, you need a <strong>wallet</strong> at <a href="https://waveswallet.io" target="_blank">waveswallet.io</a>. If you don't have a
+                  Waves wallet, you'll get the option to create one upon checking out.
                 </p>
                 <p>
                 </p>
                 <div id="wizard-form">
                   <div class="form-row">
-                    <label for="billing-adress">Do you have an existing Waves wallet?</label>
+                    <label for="billing-adress">Do you have an existing Waves Wallet?</label>
                     <select id="wallet-choice">
-                      <option value="no">No</option>
-                      <option value="yes">Yes</option>
-                      <option value="no">I'm not sure</option>
-                    </select>
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">I'm not sure</option>
+                </select>
                   </div>
                   <div class="form-row" id="enter-wallet">
                     <label for="wallet">Wallet Address
-                      <abbr title="required" class="required">*</abbr>
-                    </label>
+                  <abbr title="required" class="required">*</abbr>
+                </label>
                     <input type="text" id="wallet" name="wallet" required data-parsley-group="block2">
-                    <div class="waves-attention"><b>Attention:</b> Make sure the given Waves wallet address is not on an exchange like Tidex, Bittrex or Binance, this will cause your LTO tokens to become inaccessible.</div>
                   </div>
                   <div class="form-row" id="create-wallet">
                     <label for="wallet">Wallet Address
-                      <abbr title="required" class="required">*</abbr>
-                    </label>
+                  <abbr title="required" class="required">*</abbr>
+                </label>
                     <div id="generated-address">
                       <p>This feature involves the creation of a new account on Waves platform.</p>
-                      <p><b>This SEED is extremely important and must be kept in safe place, since it's the only way to recover your account in case of lost, corrupted data or hardware failure.</b></p>
+                      <p>This SEED is extremely important and must be kept in safe place, since it's the only way to recover your account in case of lost, corrupted data or hardware failure.</p>
                       <p>Your SEED will also allow you to IMPORT your account to other devices (therefore, allow no one to access it).</p>
                       <p>Download your SEED by clicking the download button below</p>
-                      <p><b>Waves wallet Address:</b> <span id="wallet-address"></span></p>
+                      <p><b>Waves Wallet Address:</b> <span id="wallet-address"></span></p>
                       <input type="hidden" id="wallet" name="wallet" value="">
                       <br/>
                       <b>Seed:</b>
                       <textarea id="seed" name="seed"></textarea>
                       <a id="download-seed" href="#">
-                        <input type="button" name="download-seed" value="Download Seed">
-                      </a>
+                    <input type="button" name="download-seed" value="Download Seed">
+                  </a>
                     </div>
                     <div id="generate-address">
                       <p>Click the button below to create a Waves wallet. You will receive a seed and wallet address.</p>
@@ -1899,7 +1787,7 @@
             <fieldset>
               <div id="checkout-container">
                 <h4>Checkout Summary</h4>
-                <p>Check if information you provided is correct. Please make sure have you filled in the right Waves wallet address, because we cannot refund once the payment has been completed.</p>
+                <p>Check if information you provided is correct. Please make sure have you filled in the right Waves Wallet address, because we cannot refund once the payment has been completed.</p>
                 <div id="error-payment">Test error</div>
                 <div id="progress-bar" class="progress-line"></div>
               </div>
@@ -1933,7 +1821,14 @@
                       </li>
                       <!-- <li>Your total amount of tokens: <div class="price-align-right" id="checkout-total-tokens"><strong>800.000</strong></div></li> -->
                       <li>Your total price:
-                        <div class="price-align-right" id="checkout-total-price"><strong>10.500.000</strong></div>
+                        <div class="price-align-right" id="checkout-total-price">
+                          <div id="checkout-total-price-value">
+
+                          </div>
+                          <select name="checkout-total-price-options" id="checkout-total-price-options">
+
+                          </select>
+                        </div>
                       </li>
                     </ul>
                   </div>
@@ -1981,4 +1876,5 @@
     <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
     <!-- SCRIPTS -->
 </body>
+
 </html>
