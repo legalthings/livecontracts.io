@@ -39,65 +39,65 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-function gtag() {
-  dataLayer.push(arguments);
-}
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
-gtag("js", new Date());
-gtag("config", "UA-62115237-2");
-</script>
+    gtag("js", new Date());
+    gtag("config", "UA-62115237-2");
+  </script>
 
   <!-- Intercom -->
   <script>
-  var alignment = "right";
+    var alignment = "right";
 
-if (window.innerWidth < 599) {
-  alignment = "left";
-} else {
-  alignment = "right";
-}
-
-window.intercomSettings = {
-  app_id: "g247sp2q",
-  alignment: alignment
-};
-
-(function() {
-  var w = window;
-  var ic = w.Intercom;
-  if (typeof ic === "function") {
-    ic("reattach_activator");
-    ic("update", intercomSettings);
-  } else {
-    var d = document;
-    var i = function() {
-      i.c(arguments);
-    };
-    i.q = [];
-    i.c = function(args) {
-      i.q.push(args);
-    };
-    w.Intercom = i;
-
-    function l() {
-      var s = d.createElement("script");
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://widget.intercom.io/widget/g247sp2q";
-      var x = d.getElementsByTagName("script")[0];
-      x.parentNode.insertBefore(s, x);
-    }
-
-    if (w.attachEvent) {
-      w.attachEvent("onload", l);
+    if (window.innerWidth < 599) {
+      alignment = "left";
     } else {
-      w.addEventListener("load", l, false);
+      alignment = "right";
     }
-  }
-})();
-</script>
+
+    window.intercomSettings = {
+      app_id: "g247sp2q",
+      alignment: alignment
+    };
+
+    (function () {
+      var w = window;
+      var ic = w.Intercom;
+      if (typeof ic === "function") {
+        ic("reattach_activator");
+        ic("update", intercomSettings);
+      } else {
+        var d = document;
+        var i = function () {
+          i.c(arguments);
+        };
+        i.q = [];
+        i.c = function (args) {
+          i.q.push(args);
+        };
+        w.Intercom = i;
+
+        function l() {
+          var s = d.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://widget.intercom.io/widget/g247sp2q";
+          var x = d.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+        }
+
+        if (w.attachEvent) {
+          w.attachEvent("onload", l);
+        } else {
+          w.addEventListener("load", l, false);
+        }
+      }
+    })();
+  </script>
 </head>
 
 <body>
@@ -131,20 +131,27 @@ window.intercomSettings = {
         <a href="#" class="responsive-nav-toggle">
           <span class="hamburger"></span>
         </a>
+        <div class="flag-section">
+          <a href="index.html"><img src="img/flags/usa.png"></nav></a>
+        </div>
         <div class="menu-inner">
           <nav id="main-nav">
             <ul>
-              <li>
-                <a href="#discover" class="js-scrollToBlock">Descobrir</a>
-              </li>
-              <!--                                     <li class="">
-                                      <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
-                                  </li> -->
               <li class="">
-                <a href="#lto-presale" class="js-open-wizard">Buy LTO Tokens</a>
+                <a href="#lto-presale" class="js-scrollToBlock">Informação Token</a>
+              </li>
+              <li class="">
+                <a href="#faq" class="js-scrollToBlock">Perguntas frequentes</a>
+              </li>
+              <!-- <li class="">
+                  <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
+                </li> -->
+              <li class="">
+                <a href="#lto-presale" class="js-open-wizard">Compre Tokens LTO</a>
               </li>
             </ul>
           </nav>
+
         </div>
         <!-- END .menu-inner -->
       </div>
@@ -169,22 +176,23 @@ window.intercomSettings = {
           <h5 class="">da Justiça e Segurança da Holanda</h5>
         </div>
       </div>
-      <div class="spacer-small"></div>
-      <div class="spacer-small"></div>
+      <div class="spacer-medium"></div>
       <p class="hero__buttons">
-        <a href="#discover" class="js-scrollToBlock sr-button button-1 button-medium circled">
-          Descubra
-        </a>
-        <!--                         <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-                          Demo
-                      </a> -->
-        <a class="sr-button button-1  button-medium circled js-open-wizard">
-          Compre tokens LTO
+        <a class="sr-button button-1 button-medium circled js-open-wizard">
+            Compre tokens LTO
+          </a>
+        <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
+            Informação de token
+          </a>
+        <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
+            Leia FAQ
         </a>
       </p>
-      <div class="count-down-wrap" style="width: 540px; margin-top: 50px;">
-        <h4 style="text-align: center">Pré Venda termina em</h4>
-        <div class="count-down pr-version p-t-b-15" data-end-date="Jan 20, 2018 12:00:00"></div>
+      <div class="spacer-medium"></div>
+      <div class="count-down-wrap">
+          <h3><strong>Pre-sale data final</strong></h3>
+          <div class="spacer-small"></div>
+          <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
       </div>
     </div>
     <!-- END #page-title -->
@@ -225,48 +233,51 @@ window.intercomSettings = {
       <!--</div>-->
       <!--<div class="spacer-big"></div>-->
       <!--</div>-->
-      <div class="main-ThreeColumnsBlock">
-        <div class="column-section wrapper clearfix">
-          <div class="column one-third testimonial">
-            <div class="testimonial-image"><img src="img/independence.png" alt="Independence"></div>
-            <h5 class="testimonial-name">Independência</h5>
-            <div class="testimonial-content">
-              Permitimos que as pessoas participem do sistema legal sem depender de advogados,
-              organizações fechadas ou governos.
-            </div>
+      <div class="purpleSection row-section text-light">
+        <div class="wrapper clearfix">
+          <div class="column one-third">
+              <div class="align-center">
+                <img style="width:80px" src="img/independence.png" alt="Independence">
+                <h5 class="testimonial-name">Independência</h5>
+                <div class="testimonial-content">
+                  Permitimos que as pessoas participem do sistema legal sem depender de advogados,
+                  organizações fechadas ou governos.
+                </div>
+              </div>
           </div>
           <div class="column one-third testimonial">
-            <div class="testimonial-image"><img src="img/efficiency.png" alt="Efficiency"></div>
-            <h5 class="testimonial-name">Eficiência</h5>
-            <div class="testimonial-content">
-              LiveContratcts permite a automação de acordos e entendimentos legais sem necessidade de
-              fornecer controle total à máquina
+            <div class="align-center">
+              <img style="width:80px" src="img/efficiency.png" alt="Efficiency">
+              <h5 class="testimonial-name">Eficiência</h5>
+              <div class="testimonial-content">
+                LiveContratcts permite a automação de acordos e entendimentos legais sem necessidade de
+                fornecer controle total à máquina
+              </div>
             </div>
-            <br/>
-            <a href="#lto-presale" class="sr-button button-8  button-medium circled js-open-wizard">
-              Compre Tokens LTO
-            </a>
           </div>
           <div class="column one-third last-col testimonial">
-            <div class="testimonial-image"><img src="img/mitigating-fraud.png" alt="Mitigating fraud"></div>
-            <h5 class="testimonial-name">Reduzindo Fraudes</h5>
-            <div class="testimonial-content">
-              Ao armazenar eventos e informações de forma verificável e imutável, mitigamos fraudes e
-              praticamente acabamos com a burocracia
+            <div class="align-center">
+              <img style="width:80px" src="img/mitigating-fraud.png" alt="Mitigating fraud">
+              <h5 class="testimonial-name">Reduzindo Fraudes</h5>
+              <div class="testimonial-content">
+                Ao armazenar eventos e informações de forma verificável e imutável, mitigamos fraudes e
+                praticamente acabamos com a burocracia
+              </div>
             </div>
           </div>
           <!-- END .column-section -->
         </div>
+          <div class="align-center clearfix" style="margin-top: 32px">
+            <a href="#lto-presale" class="sr-button button-1 button-medium circled js-open-wizard">Compre tokens LTO</a>
+          </div>
       </div>
-      <div class="spacer-medium"></div>
-      <div class="wrapper" id="discover">
+      <div class="wrapper row-section" id="discover">
         <h2 class="align-center">
           <strong>Descubra o LegalThings One</strong>
         </h2>
       </div>
       <!-- END .fullwidth-section -->
-      <div class="spacer-small"></div>
-      <div class="fullwidth-content populate-block wrapper align-center">
+      <div class="fullwidth-contenZ wrapper align-center">
         <!--<div class="loading">-->
         <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
         <!--</div>-->
@@ -283,15 +294,15 @@ window.intercomSettings = {
                 <h5 class="post-name">
                   <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
                      target="_blank">
-                    <strong>Live Contracts — What’s all the fuss about?</strong>
+                    <strong>Contratos em Vivo - Sobre o que é o problema?</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                Picture this. A contract or law visualized in such a way that it is understandable for
-                both computers and humans. Not only the rules that you are agreeing upon in a contract,
-                but also the consequences behind those rules. With Live Contracts, we enable
-                equality of rights for all parties involved.
+                Imagine isso. Um contrato ou lei é visualizado de forma que seja compreensível para tanto computadores
+                quanto humanos. Não apenas as regras que você está concordando em um
+                contrato, mas também as consequências por trás dessas regras. Com Contratos ao Vivo, nós
+                habilitamos igualdade de direitos para todas as partes envolvidas.
               </p>
             </div>
           </div>
@@ -305,16 +316,16 @@ window.intercomSettings = {
             <div class="blog-desc align-center">
               <div class="blog-headline">
                 <h5 class="post-name">
-                  <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+                  <a href="https://docs.google.com/document/d/1zfBiQ3LGEEAWNa0mNvorNC-4ey8Ed3aDBlDZZG6WYQ8"
                      target="_blank">
-                    <strong>LegalThings One &mdash; Technical Whitepaper</strong>
+                    <strong>LegalThings One &mdash; Livro Branco Técnico</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                The LegalThings One Whitepaper gives an indepth description of the technical concepts
-                behinds LegalThings One. Reading this paper requires some knowlegde of computer
-                engineering.
+                O Livro Branco LegalThings One fornece uma descrição aprofundada dos conceitos técnicos
+                atrás de LegalThings One. Ler este artigo requer algum conhecimento do computador
+                Engenharia.
               </p>
             </div>
           </div>
@@ -330,14 +341,14 @@ window.intercomSettings = {
                 <h5 class="post-name">
                   <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
                      target="_blank">
-                    <strong>Introducing Live Contracts @ Stanford CodeX</strong>
+                    <strong>Apresentando contratos ao vivo @ Stanford CodeX</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                A Live Contract is an agreement that is formalized as a Finite State Machine.
-                LegalThings One runs Live Contracts and stores information in a provable, immutable way
-                on a public decentralized storage.
+                Um contrato ao vivo é um contrato que é formalizado como uma máquina de estado finito. LegalThings One
+                executa Contratos em tempo real e armazena informações de uma maneira provável e imutável em um
+                armazenamento público descentralizado.
               </p>
             </div>
           </div>
@@ -355,15 +366,15 @@ window.intercomSettings = {
                 <h5 class="post-name">
                   <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
                      target="_blank">
-                    <strong>Buying tokens on the LegalThings One platform</strong>
+                    <strong>Comprar tokens na plataforma LegalThings One</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                For users that want to buy LTO we have set up a 4-step process. LegalThings One has
-                chosen the Waves platform for storing, trading, managing and issuing digital assets. You
-                can buy LTO by iDEAL, credit cards and different cryptocurrencies: Bitcoin, Bitcoin
-                Cash, Ether, Ripple, Litecoin, Monero and Dash.
+                Para usuários que desejam comprar o LTO, criamos um processo de 4 etapas. LegalThings One tem escolheu a
+                plataforma Waves para armazenar, comercializar, gerenciar e emitir ativos digitais. Você pode comprar o
+                LTO pela iDEAL, cartões de crédito e criptografia diferentes: Bitcoin, Bitcoin Cash, Ether, Ripple,
+                Litecoin, Monero e Dash.
               </p>
             </div>
           </div>
@@ -379,15 +390,15 @@ window.intercomSettings = {
                 <h5 class="post-name">
                   <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
                      target="_blank">
-                    <strong>3 limitations of a self-enforcing agreement</strong>
+                    <strong>3 limitações de um acordo de auto-execução</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                Since a smart contract is also self-executing, there is no possibility for any party to
-                breach the the agreement. This means that there is no need for a trusted third party, no
-                bankers, no lawyers, no judges. Right? Well yes, you can accomplish this,
-                but it does mean some serious limitations.
+                Uma vez que um contrato inteligente também é auto-executado, não há possibilidade de qualquer parte
+                violar o acordo. Isso significa que não há necessidade de um terceiro confiável, nenhum banqueiro,
+                nenhum advogado, nenhum juiz. Certo? Bem, sim, você pode realizar isso, mas isso significa algumas
+                limitações sérias.
               </p>
             </div>
           </div>
@@ -401,20 +412,20 @@ window.intercomSettings = {
               <div class="blog-headline">
                 <h5 class="post-name">
                   <a href="./documents/contract-as-automaton.pdf" target="_blank">
-                    <strong>Contract as Automaton</strong>
+                    <strong>Contrato como Autômato</strong>
                   </a>
                 </h5>
               </div>
               <p>
-                "We show that the fundamental legal structure of a well-written financial contract
-                follows a state-transition logic that can be formalized mathematically as a finite-state
-                machine (also known as a finitestate automaton)."
-                <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
+                "Mostramos que a estrutura jurídica fundamental de um contrato financeiro bem escrito segue uma lógica
+                de transição do estado que pode ser formalizada matematicamente como uma máquina de estados finitos
+                (também conhecido como um autômato finito)".
+                <br><em>— Mark D. Flood e Oliver R. Goodenough</em>
               </p>
             </div>
           </div>
         </div>
-        <a href="https://medium.com/legalthingsone" class="sr-button inline button-10 button-medium circled "
+        <a href="https://medium.com/legalthingsone" class="sr-button inline button-1-ghost button-medium circled "
            target="_blank">
           Mais artigos
         </a>
@@ -432,21 +443,22 @@ window.intercomSettings = {
     <div class="nav-light" data-dots="true">
       <div class="flex-row">
         <blockquote class="quote first-quote">
-          Aquele que controla o passado controla o futuro. Aquele que controla o presente controla o passado.
+          A maioria das pessoas pensa que a burocracia é uma coisa ruim, mas na verdade a burocracia é a nossa melhor
+          defesa contra fraude e favoritismo.
         </blockquote>
         <blockquote class="quote second-quote">
           A lei está ao lado daqueles com maior poder econômico e com amigos mais influentes
         </blockquote>
         <blockquote class="quote third-quote">
-          A maioria das pessoas pensa que a burocracia é uma coisa ruim, mas na verdade a burocracia é a nossa melhor
-          defesa contra fraude e favoritismo.
+          A maioria das pessoas pensa que a burocracia é ruim, mas a burocracia é a nossa melhor defesa contra a fraude
+          e o favoritismo.
         </blockquote>
       </div>
     </div>
   </div>
 </div>
-<div class="spacer-medium"></div>
-<div class="wrapper">
+
+<div class="wrapper row-section">
   <h2 class="align-center">
     <strong>Conheça a Equipe</strong>
   </h2>
@@ -454,13 +466,14 @@ window.intercomSettings = {
   <div class="column-section clearfix">
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-        <img src="img/team/arnold-daniels.png" alt="Arnold Daniels - LegalThings">
+        <img class="one" src="img/team/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
+        <img class="two" src="img/team/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
           <strong>Arnold Daniels</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e arquiteto de Software</h6>
+        <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
@@ -473,13 +486,14 @@ window.intercomSettings = {
     </div>
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-        <img src="img/team/rick-schmitz.png" alt="Rick Schmitz - LegalThings">
+        <img class="one" src="img/team/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
+        <img class="two" src="img/team/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
           <strong>Rick Schmitz</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e Head of Legal</h6>
+        <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
@@ -489,13 +503,14 @@ window.intercomSettings = {
     </div>
     <div class="column one-third last-col team-member align-center">
       <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-        <img src="img/team/martijn-migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+        <img class="one" src="img/team/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+        <img class="two" src="img/team/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
           <strong>Martijn Migchelsen</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e Head Financeiro</h6>
+        <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
@@ -506,8 +521,25 @@ window.intercomSettings = {
   </div>
   <div class="column-section clearfix">
     <div class="column one-third team-member align-center">
+      <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
+        <img src="img/team/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
+      </a>
+      <div class="team-content">
+        <h5 class="team-name uppercase">
+          <strong>Lisa Kate Palmer</strong>
+        </h5>
+        <h6 class="subtitle-2">Product Development Manager</h6>
+        <ul class="socialmedia-widget hover-fade-1">
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-        <img src="img/team/sven-stam.png" alt="Sven Stam - LegalThings">
+        <img class="one" src="img/team/sven_stam.png" alt="Sven Stam - LegalThings">
+        <img class="two" src="img/team/sven_stam_b.png" alt="Sven Stam - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -524,34 +556,18 @@ window.intercomSettings = {
         </ul>
       </div>
     </div>
-    <div class="column one-third team-member align-center">
-      <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
-        <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+    <div class="column one-third last-col team-member align-center">
+      <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
+        <img src="img/team/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
-          <strong>Pim Volkers</strong>
+          <strong>Sabine van Bilderbeek</strong>
         </h5>
-        <h6 class="subtitle-2 advisor">ADVISOR</h6>
+        <h6 class="subtitle-2">Manager Operations</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
-            <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="column one-third last-col team-member align-center">
-      <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
-        <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
-      </a>
-      <div class="team-content">
-        <h5 class="team-name uppercase">
-          <strong>Peter van Leersum</strong>
-        </h5>
-        <h6 class="subtitle-2 advisor">ADVISOR</h6>
-        <ul class="socialmedia-widget hover-fade-1">
-          <li class="link">
-            <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -560,14 +576,66 @@ window.intercomSettings = {
   <div class="show-more">
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+          <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Martijn Broersma</strong>
+          </h5>
+          <h6 class="subtitle-2">Head of Operations</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
+          <img src="img/team/rick_ross.png" alt="Rick Ros - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Rick Ros</strong>
+          </h5>
+          <h6 class="subtitle-2">Head of Sales</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="column one-third last-col team-member align-center">
+        <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
+          <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Diederick Cardon</strong>
+          </h5>
+          <h6 class="subtitle-2">Legal Chief</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
         <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-          <img src="img/team/moesjarraf-jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+          <img class="one" src="img/team/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+          <img class="two" src="img/team/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
         </div>
         <div class="team-content">
           <h5 class="team-name uppercase">
             <strong>Moesjarraf Jahangier</strong>
           </h5>
-          <h6 class="subtitle-2">Desenvolvedor Responsável</h6>
+          <h6 class="subtitle-2">Full-stack Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
@@ -578,23 +646,8 @@ window.intercomSettings = {
           </ul>
         </div>
       </div>
+
       <div class="column one-third team-member align-center">
-        <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-          <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
-        </a>
-        <div class="team-content">
-          <h5 class="team-name uppercase">
-            <strong>Diederick Cardon</strong>
-          </h5>
-          <h6 class="subtitle-2">Legal Expert</h6>
-          <ul class="socialmedia-widget hover-fade-1">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="column one-third last-col team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
           <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
         </a>
@@ -602,7 +655,7 @@ window.intercomSettings = {
           <h5 class="team-name uppercase">
             <strong>Yevhen Horbachov</strong>
           </h5>
-          <h6 class="subtitle-2">Desenvolvedor de FrontEnd</h6>
+          <h6 class="subtitle-2">Frontend Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
@@ -613,33 +666,58 @@ window.intercomSettings = {
           </ul>
         </div>
       </div>
-    </div>
-    <div class="column-section clearfix">
-      <div class="column one-third team-member align-center">
-        <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-          <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
+
+      <div class="column one-third last-col team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
+          <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
-            <strong>Martijn Broersma</strong>
+            <strong>Jurre Wolsink</strong>
           </h5>
-          <h6 class="subtitle-2">Head de Operações</h6>
+          <h6 class="subtitle-2">Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
-              <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
+              <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/jurrew27" target="_blank"></a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="column one-third last-col team-member align-center">
+    </div>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
+          <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Mitchel Kerckhaert</strong>
+          </h5>
+          <h6 class="subtitle-2">Developer</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-          <img src="img/team/sarfaraaz-jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+          <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
             <strong>Sarfaraaz Jahangier</strong>
           </h5>
-          <h6 class="subtitle-2">Desenvolvedor</h6>
+          <h6 class="subtitle-2">Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
@@ -650,22 +728,101 @@ window.intercomSettings = {
           </ul>
         </div>
       </div>
+
+      <div class="column one-third last-col team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
+          <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
+          <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Michael Nieveld</strong>
+          </h5>
+          <h6 class="subtitle-2">Legal & Tax</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-medium"></div>
+    <h2 class="align-center"><strong>Assessores</strong></h2>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
+        <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
+          <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Pim Volkers</strong>
+          </h5>
+          <h6 class="subtitle-2 advisor">ADVISOR</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column one-third last-col team-member align-center">
+        <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
+          <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Peter van Leersum</strong>
+          </h5>
+          <h6 class="subtitle-2 advisor">ADVISOR</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="link">
+              <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-medium"></div>
+    <h2 class="align-center"><strong>Parceiros</strong></h2>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
+          <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Marcus Camargo</strong>
+          </h5>
+          <h6 class="subtitle-2">Partner in Brazil</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
   <div class="spacer-medium"></div>
   <div class="align-center">
-    <a id="show-more" class="sr-button inline button-10 button-medium circled">Outros Membros da Equipe</a>
-    <a class="sr-button inline button-1 button-medium circled js-open-wizard">Adquira LTO tokens</a>
+    <a id="show-more" class="sr-button inline button-1-ghost button-medium circled">More team members</a>
+    <a class="sr-button inline button-1 button-medium circled js-open-wizard">Buy LTO Tokens</a>
   </div>
 </div>
+
 <!-- END .wrapper -->
-<div class="spacer-big"></div>
 <div class="custom-wrap timeline-block">
   <!--<h2 class="align-center title">-->
   <!--Timeline-->
   <!--</h2>-->
   <div id="timeline-background"></div>
-  <div class="timeline-container" id="timeline-1">
+  <div class="timeline-container text-light" id="timeline-1">
     <div class="timeline-header">
       <h2 class="align-center">
         <strong>Cronograma</strong>
@@ -705,7 +862,7 @@ window.intercomSettings = {
           <img class="timeline__img" src="img/timeline/legalflow.jpg" alt="Apresentamos o LegalFlow"/>
           <h2 class="timeline__content-title">Janeiro de 2016</h2>
           <p class="timeline__content-desc">
-            Para a FIRM24, criamos software para executar os procedimentos  de uma incorporação. Outros
+            Para a FIRM24, criamos software para executar os procedimentos  de uma incorporação. Outros
             clientes também estavam interessados nesses procedimentos digitalizados. Nós fizemos uma
             pivotagem, focando em digitalizar os contratos como máquina de estados
             finitos, em vez de apenas assinar.
@@ -720,7 +877,7 @@ window.intercomSettings = {
           <p class="timeline__content-desc">
             Nós exploramos diferentes métodos de provas de documentos assinados. Enquanto outras partes
             dependiam de confiança e certificações, queríamos uma solução melhor. Começamos a usar a cadeia
-            de blocos para provas de  existência.
+            de blocos para provas de  existência.
           </p>
         </div>
       </div>
@@ -856,7 +1013,177 @@ window.intercomSettings = {
     <div class="spacer-medium"></div>
   </div>
 </div>
-<div class="pie-chart-section text-light blackBackgroundBlock">
+
+<div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
+  <div class="wrapper">
+    <div class="column-section clearfix">
+      <div class="col-content" style="margin-top: 0px;">
+        <div class="align-center">
+          <h2><strong>Venda de Token</strong></h2>
+        </div>
+        <div class="spacer-medium"></div>
+        <div class="column one-third">
+          <div class="align-center">
+            <img src="./img/logo/icon-white.png"/><br>
+            <div class="spacer-small"></div>
+            <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
+              Compre tokens LTO
+            </a>
+          </div>
+        </div>
+        <div class="column two-third last-col">
+          <h3><strong>Distribuição de Tokens</strong></h3>
+          <div class="spacer-medium"></div>
+          <div class="progress-bar-item big-bar">
+            <div class="progress-bar">
+              <div class="progress-active progress-bar__element" data-perc="">
+                <span class="tooltip" style="">
+                  <span class="current-tokens-sold">
+
+                  </span> LTO vendido
+                </span>
+              </div>
+            </div>
+            <h6 class="progress-name">
+              <span class="progress-start">
+                0
+              </span>
+              <span id="all-tokens" class="progress-end">
+
+              </span>
+            </h6>
+          </div>
+          <div class="spacer-medium"></div>
+          <div class="column one-third">
+            <p class="sale-header">Preço</p>
+            <p class="sale-focusText">$0.25 / LTO</p>
+          </div>
+          <div class="column one-third">
+            <p class="sale-header">Tokens</p>
+            <p class="sale-focusText">10,000,000 LTO</p>
+          </div>
+          <div class="column one-third last-col">
+            <div class="powered_by_waves">
+              <p class="sale-header">Fornecido por</p>
+              <div></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="spacer-small"></div>
+          <div class="count-down-wrap">
+              <h3><strong>Pre-sale data final</strong></h3>
+              <div class="spacer-small"></div>
+              <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper row-section">
+  <h2 class="align-center">
+    <strong>Utilização do Token</strong>
+  </h2>
+  <div class="spacer-small"></div>
+  <div class="wrapper">
+    <div class="column one-half">
+      <table class="token-usage-table">
+        <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Quantidade necessária</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <i class="fa fa-id-card-o"></i>
+            <div class="tooltip">
+              Usuário
+              <span class="tooltiptext">
+                                          1 user on a LegalThings One environment is allowed per 500 LTO
+                                      </span>
+            </div>
+          </td>
+          <td>500 LTO</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-play-circle"></i>
+            <div class="tooltip">
+              Criação de Live Contracts (5 por semana)
+              <span class="tooltiptext">
+                                          Criação de Contratos ao vivo: 05 por semana
+                                      </span>
+            </div>
+          </td>
+          <td>1.000 LTO</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-retweet"></i>
+            <div class="tooltip">
+              nterações de Live Contracts (250 por semana)
+              <span class="tooltiptext">
+                                          Perform up to 250 interactions with Live Contracts per week per 1000 LTO
+                                      </span>
+            </div>
+          </td>
+          <td>1,000 LTO</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-file-text"></i>
+            <div class="tooltip">
+              Live Contracts pre-package
+              <span class="tooltiptext">
+                                          Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
+                                      </span>
+            </div>
+          </td>
+          <td>10,000 LTO</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="fa fa-building"></i>
+            <div class="tooltip">
+              Full node em ambiente whitelabel
+              <span class="tooltiptext">
+                                          Run a single full node with a whitelabled LegalThings One environment
+                                      </span>
+            </div>
+          </td>
+          <td>100.000 LTO</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="column one-half last-col">
+      <p>
+        <strong>Distribuição de Tokens</strong><br> Os tokens estão imediatamente disponíveis após a compra. Os
+        tokens excedentes podem ser vendidos no Waves Decentralized Exchange (DEX)
+      </p>
+      <p>
+        <strong>Preços de Licença</strong><br> Os preços das licenças são baseados no valor justo de mercado. O
+        fornecimento de token LTO é fixo e representa 100% da capacidade do LegalThings One. A capacidade aumentará
+        com a demanda. À medida que a capacidade
+        cresce, são necessários menos tokens para o mesmo uso.
+      </p>
+      <p>
+        <strong>Exemplo</strong><br> A empresa XYZ compra 100.000 LTO para executar o seu próprio ambiente
+        WhiteLabel. Quando a popularidade da plataforma cresce, o preço da LTO aumenta. LegalThings One irá
+        estabilizar o preço do serviço, diminuindo o
+        número necessário de tokens necessários para executar um serviço. Neste exemplo, o preço de um ambiente
+        branco é reduzido para 80 000 LTO. Neste caso, a Acme Inc pode vender seus excessos de 20.000 tokens LTO e
+        ainda executar sua plataforma na
+        mesma capacidade.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="pie-chart-section text-light purpleSection" id="token-info">
   <div class="spacer-medium"></div>
   <div class="wrapper column-section">
     <h2 class="align-center">
@@ -896,7 +1223,7 @@ window.intercomSettings = {
       <div id="pie"></div>
       <div id="pie-legend">
         <div class="legend-item">
-          <span class="color" style="background: #C424FD"></span> Pré-venda : 10,000,000
+          <span class="color" style="background: #C424FD"></span> Pré venda : 10,000,000
         </div>
         <div class="legend-item">
           <span class="color" style="background: #6e1b84"></span> Reserva de empresas : 10,000,000
@@ -913,201 +1240,296 @@ window.intercomSettings = {
       </div>
       <div class="text-light align-center">
         <div class="spacer-medium"></div>
-        <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">Buy LTO Tokens</a>
+        <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">Compre tokens LTO</a>
       </div>
     </div>
   </div>
   <div class="spacer-medium"></div>
 </div>
-<div class="spacer-big"></div>
-<h2 class="align-center">
-  <strong>Utilização do Token</strong>
-</h2>
-<div class="spacer-small"></div>
-<div class="wrapper">
-  <div class="column one-half">
-    <table class="token-usage-table">
-      <thead>
-      <tr>
-        <th>Serviço</th>
-        <th>Quantidade necessária</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>
-          <i class="fa fa-id-card-o"></i>
-          <div class="tooltip">
-            Usuário
-            <span class="tooltiptext">
-                                        1 user on a LegalThings One environment is allowed per 500 LTO
-                                    </span>
-          </div>
-        </td>
-        <td>500 LTO</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-play-circle"></i>
-          <div class="tooltip">
-            Criação de Live Contracts (5 por semana)
-            <span class="tooltiptext">
-                                        Criação de Contratos ao vivo: 05 por semana
-                                    </span>
-          </div>
-        </td>
-        <td>1.000 LTO</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-retweet"></i>
-          <div class="tooltip">
-            nterações de Live Contracts (250 por semana)
-            <span class="tooltiptext">
-                                        Perform up to 250 interactions with Live Contracts per week per 1000 LTO
-                                    </span>
-          </div>
-        </td>
-        <td>1,000 LTO</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-file-text"></i>
-          <div class="tooltip">
-            Live Contracts pre-package
-            <span class="tooltiptext">
-                                        Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
-                                    </span>
-          </div>
-        </td>
-        <td>10,000 LTO</td>
-      </tr>
-      <tr>
-        <td>
-          <i class="fa fa-building"></i>
-          <div class="tooltip">
-            Full node em ambiente whitelabel
-            <span class="tooltiptext">
-                                        Run a single full node with a whitelabled LegalThings One environment
-                                    </span>
-          </div>
-        </td>
-        <td>100.000 LTO</td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="column one-half last-col">
-    <p>
-      <strong>Distribuição de Tokens</strong><br> Os tokens estão imediatamente disponíveis após a compra. Os
-      tokens excedentes podem ser vendidos no Waves Decentralized Exchange (DEX)
-    </p>
-    <p>
-      <strong>Preços de Licença</strong><br> Os preços das licenças são baseados no valor justo de mercado. O
-      fornecimento de token LTO é fixo e representa 100% da capacidade do LegalThings One. A capacidade aumentará
-      com a demanda. À medida que a capacidade
-      cresce, são necessários menos tokens para o mesmo uso.
-    </p>
-    <p>
-      <strong>Exemplo</strong><br> A empresa XYZ compra 100.000 LTO para executar o seu próprio ambiente
-      WhiteLabel. Quando a popularidade da plataforma cresce, o preço da LTO aumenta. LegalThings One irá
-      estabilizar o preço do serviço, diminuindo o
-      número necessário de tokens necessários para executar um serviço. Neste exemplo, o preço de um ambiente
-      branco é reduzido para 80 000 LTO. Neste caso, a Acme Inc pode vender seus excessos de 20.000 tokens LTO e
-      ainda executar sua plataforma na
-      mesma capacidade.
-    </p>
+
+
+<div class="row-section align-center">
+  <h2>
+    <strong>Na imprensa</strong>
+  </h2>
+  <div id="media-logos">
   </div>
 </div>
-<div class="spacer-medium"></div>
-<div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section"
-     data-parallax-image="img/qubic-bg.jpg">
-  <div class="wrapper">
-    <div class="column-section fullwidth-content  adapt-height clearfix">
-      <div class="column one-third">
-        <div class="isotope-item blog-item">
-          <div class="blog-media align-center">
-            <img src="img/logo/icon-white.png">
-          </div>
-          <div class="spacer-mini"></div>
-          <div class="blog-desc align-center">
-            <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
-              Buy LTO Tokens
-            </a>
+<div id="faq" class="purpleSection row-section text-light">
+  <h2 class="align-center">
+    <strong>Perguntas frequentes</strong>
+  </h2>
+  <div class="spacer-medium"></div>
+  <div class="wrapper faq">
+    <div class="column one-fourth">
+      <h5 id="about-lto" class="faq-category active">Sobre LegalThings One</h5>
+      <h5 id="about-platform" class="faq-category">Sobre Contratos ao Vivo</h5>
+      <h5 id="buying-lto" class="faq-category">Comprar LTO</h5>
+      <h5 id="trading-lto" class="faq-category">Negociação LTO</h5>
+      <h5 id="managing-lto" class="faq-category">Armazenando LTO</h5>
+      <h5 id="legal" class="faq-category">Legal</h5>
+    </div>
+    <!-- about LTO section -->
+    <div id="about-lto-section" class="faq-content column three-fourth last-col visible">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. O que é um LTO?</h3>
+            <p>Um token LegalThings One (LTO) representa uma licença e dá ao titular um número limitado, não exclusivo,
+              licença revogável para interagir com os Contratos ao Vivo.</p>
           </div>
         </div>
       </div>
-      <div class="column two-third last-col" style="background: none; min-height: 635px;">
-        <div class="col-content" style="margin-top: 0px;">
-          <h2>
-            <strong>Pré venda LTO</strong>
-          </h2>
-          <div class="progress-bar-item big-bar">
-            <div class="progress-bar">
-              <div class="progress-active progress-bar__element" data-perc="">
-                  <span class="tooltip" style="">
-                                        <span id="current-tokens-sold">
-
-                                        </span> LTO vendid
-                  </span>
-              </div>
-            </div>
-            <h6 class="progress-name">
-                                <span class="progress-start">
-                                    0
-                                </span>
-              <span id="all-tokens" class="progress-end">
-
-                                </span>
-            </h6>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>2. Quantos LTO serão vendidos?</h3>
+            <p>Existe uma oferta total de <strong>100.000.000 LTO</strong> das quais <strong>70.000.000 LTO</strong>
+              estará disponível para o mercado.</p>
           </div>
-          <p>
-            <b>Preços</b>: USD$ 0,25/LTO
-            <br>
-            <b>Moedas aceitas</b>: USD, EUR, BTC, LTC and ETH
-            <br>
-            <b>Pré venda termina em</b>: 21 de janeiro 12:00 GMT
-          </p>
-          <div class="hidden align-center">
-            <a href="#" class="sr-button button-medium js-open-wizard button-1 circled">
-              Compre tokens LTO
-            </a>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>3. O que acontece se todo o LTO se vender?</h3>
+            <p>Nesse caso, ocorre o seguinte cenário: uma empresa compra 100.000 LTO para executar sua própria
+              personalização instalar. Quando a popularidade da plataforma LTO crescer, o preço LTO aumentará. A
+              plataforma LTO estabilize o preço do serviço, diminuindo o número necessário de tokens necessários para
+              executar um serviço. Neste caso, o preço de uma instalação personalizável é reduzido para 80 000 LTO.
+              Nesse caso, a Companhia pode vender seus excessos de 20 000 tokens LTO na troca e ainda pode executar sua
+              plataforma.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>4. Qual a diferença entre uma moeda como Bitcoin e LTO?</h3>
+            <p>Bitcoin é apenas uma moeda digital. Um LTO é uma licença que será usada para interagir com os Contratos
+              ao Vivo.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>5. Quem está por trás do projeto LegalThings One?</h3>
+            <p>A LegalThings foi fundada em 2014 pelo desenvolvedor de software e de blocos Arnold Daniels, advogado
+              fiscal Rick Schmitz e economista empresarial Martijn Migchelsen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- buying coins section -->
+    <div id="buying-lto-section" class="faq-content column three-fourth last-col">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. Quem pode comprar o LTO?</h3>
+            <p>Todo investidor privado, empresa ou órgão governamental pode comprar LTO.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>2. Qual é o preço de uma LTO?</h3>
+            <p>O preço pré-venda de um LTO é de US $ 0,25. Durante a venda principal, o preço aumentará para US $
+              0,50.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>3. Que moedas você aceita?</h3>
+            <p>Nós aceitamos:</p>
+            <ul>
+              <li>Euro (através do iDeal e cartão de crédito)</li>
+              <li>USD (através do cartão de crédito)</li>
+              <li>Bitcoin</li>
+              <li>Bitcoin Cash</li>
+              <li>Ripple</li>
+              <li>Monero</li>
+              <li>Dash</li>
+              <li>Litecoin</li>
+              <li>Ether</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>4. Como posso comprar o LTO?</h3>
+            <ol>
+              <li>Clique em Compre Tokens LTO</li>
+              <li>Preencha sua informação</li>
+              <li>Selecione seu metodo de pagamento</li>
+              <li>Defina seu endereço da carteira Waves
+                <br>
+                <i>*se você não tiver um endereço de carteira Waves, você pode criar um aqui</i></li>
+              <li>GUARDE SUAS SEMENTES Isto é muito importante</li>
+              <li>Concluir a transação</li>
+              <li>Vamos para <a href="https://waveswallet.io/">waveswallet.io</a></li>
+              <li>Clique em 'IMPORT ACCOUNT'</li>
+              <li>Insira sua semente</li>
+              <li>Finalize seu registro</li>
+              <li>Dependendo do seu método de pagamento, seus tokens devem chegar no prazo de 2 horas após a
+                importação<br>
+                <i>*nota: Bitcoin provavelmente levará mais tempo devido ao tempo de confirmação</i></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- managing-your-LTO-section -->
+    <div id="managing-lto-section" class="faq-content column three-fourth last-col">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. Preciso de uma carteira para o meu LTO?</h3>
+            <p>Sim, você precisa de uma carteira Waves para armazenar LTO. No entanto, se você não possui uma
+              atualmente, você pode criar uma carteira ao comprar o LTO.
+              <br>
+              <br>
+              <strong>Aviso: Não use uma carteira de Ondas existente em uma troca. As carteiras de ondas nas trocas não
+                suportam a manutenção da LTO.</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>2. Por que preciso de uma carteira Waves especificamente?</h3>
+            <p>
+              No momento, uma carteira Waves é a única carteira que pode conter o LTO. Isso mudará no futuro.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>3. Posso usar um livro-razão de hardware?</h3>
+            <p>A Waves ainda não suporta livros de hardware. Isso pode mudar no futuro.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trading-coins-section -->
+    <div id="trading-lto-section" class="faq-content column three-fourth last-col">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. Quando posso trocar meu LTO?</h3>
+            <p>Quando a venda de token principal (nosso objetivo é para o segundo trimestre de 2018), o LTO se tornará
+              negociável.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>2. Onde posso trocar meu LTO?</h3>
+            <p>Após o início da venda principal, você pode negociar LTO no Waving Disentralized Exchange. Outras trocas
+              seguirão pouco depois.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>3. Como a negociação de LTO se compara a outras criptografia como o Bitcoin?</h3>
+            <p>Não há diferença quando se trata de negociação. No início da venda principal, você está limitado a uma
+              troca de negociação no entanto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about-platform-section" class="faq-content column three-fourth last-col">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. O que é um contrato ao vivo?</h3>
+            <p>Um contrato ao vivo é um acordo formal que permite interações de humanos. É formalizado de uma forma que
+              é compreensível para humanos e computadores. O contrato apenas mostra as regras e apresenta as opções
+              disponíveis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>O que é um Token-as-a-License (TaaL)?</h3>
+            <p>Contrariamente ao licenciamento tradicional, o licenciamento baseado em token permite que você use as
+              mesmas licenças para produtos diferentes e, quando necessário. À medida que os tokens são vendidos ou
+              comprados em trocas, a licença também é transferida, de modo que mais usuários podem usar o software por
+              um tempo limitado.
+              <br>
+              <br>
+              <i>Para mais informações, leia o artigo sobre <a
+                  href="https://hackernoon.com/blockchain-token-as-a-license-taal-ba5d173e4ad6" target="_blank">Hackernoon</a>.</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>3. Quantos tokens eu preciso para um serviço?</h3>
+            <ul>
+              <li>Acesso à plataforma (500 LTO)</li>
+              <li>Criar contratos ao vivo : 5 por semana (1,000 LTO)</li>
+              <li>Interações com contratos ao vivo : 250 por semana (1,000 LTO)</li>
+              <li>Pré-pacote de contrato ao vivo (10,000 LTO)</li>
+              <li>Nó completo com ambiente branco (100,000 LTO)</li>
+            </ul>
+            <p><i>Para mais informações, leia nosso artigo sobre <a
+                href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- legal-section -->
+    <div id="legal-section" class="faq-content column three-fourth last-col">
+      <div class="collapsible">
+        <div class="container">
+          <div class="content">
+            <h3>1. Onde posso encontrar seus termos e condições?</h3>
+            <p>Você pode encontrar nossos termos e condições <a
+                href="https://www.livecontracts.io/documents/terms-and-conditions.pdf" target="_blank">aqui</a>.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div class="fullwidth-section press-block populate-block align-center">
-  <h2>
-    <strong>In the press</strong>
-  </h2>
-  <div id="media-logos">
-  </div>
-</div>
-<div id="register" class="blackBackgroundBlock subscribe-block">
-  <div class="spacer-big"></div>
+<div id="register" class="row-section subscribe-block">
   <div class="wrapper align-center">
     <h2>
       <strong>Fique Informado</strong>
     </h2>
     <div class="spacer-mini"></div>
-    <form class="newsletter-form text-light" novalidate="true">
+    <form class="newsletter-form" novalidate="true">
       <input type="email" class="newsletter-email" name="EMAIL" placeholder="Seu endereço de e-mail"><br>
       <div class="spacer-mini"></div>
       <input type="submit" class="sr-button button-1 button-medium circled" value="Receba nossa newsletter">
       <p class="newsletter-error"></p>
       <p class="newsletter-success">
-        You have successfully joined the token sale.
+        Você juntou-se com sucesso à venda de token.
       </p>
     </form>
   </div>
-  <div class="spacer-big"></div>
 </div>
-<div class="align-center socialsBlock">
-  <div class="spacer-big"></div>
+<div class="row-section align-center socialsBlock purpleSection text-light">
   <h2><strong>Social</strong></h2>
   <ul class="socialmedia-widget size-huge hover-fade-1">
+    <li class="telegram">
+      <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+    </li>
     <li class="github">
       <a href="https://github.com/legalthings" target="_blank"></a>
     </li>
@@ -1126,11 +1548,7 @@ window.intercomSettings = {
     <!--                 <li class="slack">
                   <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
               </li> -->
-    <li class="telegram">
-      <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-    </li>
   </ul>
-  <div class="spacer-big"></div>
 </div>
 <!--<div class="spacer-medium"></div>-->
 <!-- PAGEBODY -->
@@ -1141,7 +1559,7 @@ window.intercomSettings = {
       ©2017 LegalThings
     </div>
     <div class="footer-menu">
-      <a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
+      <a href="documents/terms-and-conditions.pdf" target="_blank">Termos e Condições</a>
     </div>
   </div>
 </footer>
@@ -1177,17 +1595,18 @@ window.intercomSettings = {
       <form id="wizard">
         <fieldset>
           <div id="wizard-form" class="wrapper-small">
-            <h4>Billing Details</h4>
+            <h4>Detalhes de faturamento</h4>
             <div class="billing-details">
               <div class="form-row column one-half">
-                <label for="billing-firstname">First Name <abbr title="required"
-                                                                class="required">*</abbr></label>
+                <label for="billing-firstname">Primeiro Nome <abbr title="required"
+                                                                   class="required">*</abbr></label>
                 <input type="text" id="billing-firstname" name="billing-firstname" required
                        data-parsley-group="block0">
               </div>
 
               <div class="form-row column one-half last-col">
-                <label for="billing-lastname">Last Name <abbr title="required" class="required">*</abbr></label>
+                <label for="billing-lastname">Último nome
+                  <abbr title="required" class="required">*</abbr></label>
                 <input type="text" id="billing-lastname" name="billing-lastname" required
                        data-parsley-group="block0">
               </div>
@@ -1195,43 +1614,43 @@ window.intercomSettings = {
               <div class="clear"></div>
 
               <div class="form-row">
-                <label for="billing-email">Email Address <abbr title="required"
-                                                               class="required">*</abbr></label>
+                <label for="billing-email">Endereço de e-mail<abbr title="required"
+                                                                   class="required">*</abbr></label>
                 <input type="email" id="billing-email" name="billing-email" required
                        data-parsley-group="block0">
               </div>
 
               <div class="form-row">
-                <label for="billing-company">Company Name <em>(optional)</em></label>
+                <label for="billing-company">Nome da empresa <em>(opcional)</em></label>
                 <input type="text" id="billing-company" name="billing-company"
                        data-parsley-group="block0">
               </div>
 
               <div class="form-row">
-                <label for="billing-address">Address <abbr title="required"
-                                                           class="required address-required-labels">*</abbr></label>
+                <label for="billing-address">Endereço <abbr title="required"
+                                                            class="required address-required-labels">*</abbr></label>
                 <input type="text" id="billing-address" name="billing-address" value=""
                        data-parsley-group="block0">
               </div>
 
               <div class="form-row column one-half">
-                <label for="billing-postcode">Postcode / Zip <abbr title="required"
-                                                                   class="required address-required-labels">*</abbr></label>
+                <label for="billing-postcode">Código de Endereçamento Postal / CEP <abbr title="required"
+                                                                                         class="required address-required-labels">*</abbr></label>
                 <input type="text" id="billing-postcode" name="billing-postcode"
                        data-parsley-group="block0">
               </div>
 
               <div class="form-row column one-half last-col">
-                <label for="billing-city">City / Town <abbr title="required"
-                                                            class="required address-required-labels">*</abbr></label>
+                <label for="billing-city">Cidade <abbr title="required"
+                                                       class="required address-required-labels">*</abbr></label>
                 <input type="text" id="billing-city" name="billing-city" data-parsley-group="block0">
               </div>
 
               <div class="clear"></div>
 
               <div class="form-row column one-half">
-                <label for="billing-country">Country <abbr title="required"
-                                                           class="required address-required-labels">*</abbr></label>
+                <label for="billing-country">País <abbr title="required"
+                                                        class="required address-required-labels">*</abbr></label>
                 <select id="billing-country" name="billing-country" data-parsley-group="block0">
                   <option value=""></option>
                   <option value="AF">Afghanistan</option>
@@ -1487,7 +1906,7 @@ window.intercomSettings = {
               </div>
 
               <div id="billing-vat-container" class="form-row column one-half last-col">
-                <label for="billing-city">VAT Number</label>
+                <label for="billing-city">Número de IVA</label>
                 <input type="text" id="billing-vat" name="billing-vat" data-parsley-group="block0">
               </div>
 
@@ -1499,10 +1918,10 @@ window.intercomSettings = {
         </fieldset>
         <fieldset>
           <div class="row">
-            <h4>Select amount of tokens</h4>
+            <h4>Selecione a quantidade de tokens</h4>
             <div class="lto-pricing">
               <input type="text" id="lto-amount" name="number-lto" data-parsley-group="block1"
-                     data-parsley-range="[500, 5000000]">
+                     data-parsley-range="[1000, 5000000]">
               <span>LTO</span>
             </div>
 
@@ -1516,10 +1935,10 @@ window.intercomSettings = {
 
             <div class="lto-pricing-total">
               <p class="bonus-tokens-msg">
-                60% bonus tokens: <span id="amount-bonus">0</span>
+                60% tokens de bônus: <span id="amount-bonus">0</span>
               </p>
               <p class="accent-color">
-                <strong>Total amount of tokens: <span id="amount-total">0</span></strong>
+                <strong>Quantidade total de tokens: <span id="amount-total">0</span></strong>
               </p>
 
             </div>
@@ -1529,38 +1948,38 @@ window.intercomSettings = {
           <table class="token-usage-table">
             <thead>
             <tr>
-              <th>Service</th>
+              <th>Serviço</th>
               <th></th>
             </tr>
             </thead>
             <tbody>
             <tr>
               <td>
-                <i class="fa fa-fw fa-id-card-o"></i> Users
+                <i class="fa fa-fw fa-id-card-o"></i> Comercial
               </td>
               <td><span id="amount-users"></span></td>
             </tr>
             <tr>
               <td>
-                <i class="fa fa-fw fa-play-circle"></i> Create Live Contracts
+                <i class="fa fa-fw fa-play-circle"></i> Criar contratos ao vivo
               </td>
-              <td><span id="amount-contracts"></span> per week</td>
+              <td><span id="amount-contracts"></span>por semana</td>
             </tr>
             <tr>
               <td>
-                <i class="fa fa-fw fa-retweet"></i> Live Contract interactions
+                <i class="fa fa-fw fa-retweet"></i> Interações do Vivo Contrato
               </td>
-              <td><span id="amount-interactions"></span> per week</td>
+              <td><span id="amount-interactions"></span> por semana</td>
             </tr>
             <tr>
               <td>
-                <i class="fa fa-fw fa-file-text"></i> Live Contracts pre-packages
+                <i class="fa fa-fw fa-file-text"></i> Pré-pacotes de contratos ao vivo
               </td>
               <td><span id="amount-packages"></span></td>
             </tr>
             <tr>
               <td>
-                <i class="fa fa-fw fa-building"></i> Full node with whitelabled environment
+                <i class="fa fa-fw fa-building"></i> Nó completo com ambiente branco
               </td>
               <td><span id="amount-nodes"></span></td>
             </tr>
@@ -1570,56 +1989,56 @@ window.intercomSettings = {
         <fieldset>
           <div id="faucet-container">
             <p>
-              LTO tokens are Waves assets. Waves is a blockchain, similar to Bitcoin and Ethereum. To hold
-              Waves assets, you need a <strong>wallet</strong> at <a href="https://waveswallet.io"
-                                                                     target="_blank">waveswallet.io</a>.
-              If you don't have a Waves
-              wallet, you'll get the option to create one upon checking out.
+              Os tokens do LTO são ativos da Waves. Waves é uma cadeia de blocos, semelhante a Bitcoin e Ethereum. Para
+              armazenar os recursos das Ondas, você precisa de uma <strong>carteira</strong> em <a
+                href="https://waveswallet.io"
+                target="_blank">waveswallet.io</a>.
+              Se você não tiver uma carteira Waves, você terá a opção de criar uma no momento do check-out.
             </p>
             <p>
 
             </p>
             <div id="wizard-form">
               <div class="form-row">
-                <label for="billing-adress">Do you have an existing Waves Wallet?</label>
+                <label for="billing-adress">Você tem uma carteira Waves existente?</label>
                 <select id="wallet-choice">
-                  <option value="no">No</option>
-                  <option value="yes">Yes</option>
-                  <option value="no">I'm not sure</option>
+                  <option value="no">Não</option>
+                  <option value="yes">Sim
+                  </option>
+                  <option value="no">Não tenho certeza
+                  </option>
                 </select>
               </div>
 
               <div class="form-row" id="enter-wallet">
-                <label for="wallet">Wallet Address <abbr title="required"
-                                                         class="required">*</abbr></label>
+                <label for="wallet">Endereço da carteira <abbr title="required"
+                                                               class="required">*</abbr></label>
                 <input type="text" id="wallet" name="wallet" required data-parsley-group="block2">
               </div>
 
               <div class="form-row" id="create-wallet">
-                <label for="wallet">Wallet Address <abbr title="required"
-                                                         class="required">*</abbr></label>
+                <label for="wallet">Endereço da carteira <abbr title="required"
+                                                               class="required">*</abbr></label>
                 <div id="generated-address">
-                  <p>This feature involves the creation of a new account on Waves platform.</p>
-                  <p>This SEED is extremely important and must be kept in safe place, since it's the
-                    only way to recover your account in case of lost, corrupted data or hardware
-                    failure.</p>
-                  <p>Your SEED will also allow you to IMPORT your account to other devices (therefore,
-                    allow no one to access it).</p>
-                  <p>Download your SEED by clicking the download button below</p>
-                  <p><b>Waves Wallet Address:</b> <span id="wallet-address"></span></p>
+                  <p>Esse recurso envolve a criação de uma nova conta na plataforma Waves.</p>
+                  <p>Este SEED é extremamente importante e deve ser mantido em local seguro, uma vez que é a única
+                    maneira de recuperar sua conta em caso de falha de dados ou hardware perdidos, corrompidos.</p>
+                  <p>O SEED também permitirá que você IMPORTe sua conta para outros dispositivos (portanto, não permita
+                    que ninguém a ele).</p>
+                  <p>Faça o download do SEED clicando no botão de download abaixo</p>
+                  <p><b>Waves Wallet Endereço:</b> <span id="wallet-address"></span></p>
                   <input type="hidden" id="wallet" name="wallet" value=""><br/>
-                  <b>Seed:</b>
+                  <b>Semente:</b>
                   <textarea id="seed" name="seed"></textarea>
                   <a id="download-seed" href="#">
-                    <input type="button" name="download-seed" value="Download Seed">
+                    <input type="button" name="download-seed" value="Baixar semente">
                   </a>
                 </div>
                 <div id="generate-address">
-                  <p>Click the button below to create a Waves wallet. You will receive a seed and
-                    wallet address.</p>
-
+                  <p>Clique no botão abaixo para criar uma carteira Waves. Você receberá um endereço de semente e
+                    carteira.</p>
                   <input type="button" id="create-waves-wallet" name="create-waves-wallet"
-                         value="Create wallet">
+                         value="Criar carteira">
                 </div>
               </div>
             </div>
@@ -1627,44 +2046,44 @@ window.intercomSettings = {
         </fieldset>
         <fieldset>
           <div id="checkout-container">
-            <h4>Checkout Summary</h4>
-            <p>Check if information you provided is correct. Please make sure have you filled in the right
-              Waves Wallet address, because we cannot refund once the payment has been completed.</p>
-            <div id="error-payment">Test error</div>
+            <h4>Resumo da compra</h4>
+            <p>Verifique se as informações fornecidas estão corretas. Certifique-se de ter preenchido o endereço Waves
+              Wallet direito, porque não podemos reembolsar uma vez que o pagamento foi concluído.</p>
+            <div id="error-payment">Erro de teste</div>
             <div id="progress-bar" class="progress-line"></div>
           </div>
           <div class="your-checkout-details">
             <div class="column one-half">
               <div class="your-billing-details">
                 <ul>
-                  <li><strong>Your billing address</strong></li>
+                  <li><strong>Seu endereço de cobrança</strong></li>
                   <li id="checkout-company">Johns Company</li>
                   <li id="checkout-name">John Doe</li>
                   <li id="checkout-email">john@doe.com</li>
                   <li id="checkout-address">Street 1B</li>
-                  <li id="checkout-city">1000 AA, Amsterdam</li>
-                  <li id="checkout-country">The Netherlands</li>
+                  <li id="checkout-city">1000 AA, Amsterdã</li>
+                  <li id="checkout-country">A Holanda</li>
                 </ul>
               </div>
             </div>
             <div class="column one-third last-col">
               <div class="your-token-details">
                 <ul>
-                  <li><strong>Your wallet address</strong></li>
+                  <li><strong>Seu endereço de carteira</strong></li>
                   <li id="checkout-wallet">p7RpViFJXXXFAKEADDRESSXXXZjNZ1NKd</li>
                 </ul>
                 <ul>
-                  <li><strong>Token amount</strong></li>
-                  <li>Your amount of tokens:
+                  <li><strong>Montante do token</strong></li>
+                  <li>Sua quantidade de tokens:
                     <div class="price-align-right" id="checkout-tokens"><strong>500.000</strong>
                     </div>
                   </li>
-                  <li class="bonus-tokens-msg">Whitelist bonus (60%):
+                  <li class="bonus-tokens-msg">Bônus Whitelist (60%):
                     <div class="price-align-right" id="checkout-bonus"><strong>300.000</strong>
                     </div>
                   </li>
                   <!-- <li>Your total amount of tokens: <div class="price-align-right" id="checkout-total-tokens"><strong>800.000</strong></div></li> -->
-                  <li>Your total price:
+                  <li>Seu preço total:
                     <div class="price-align-right" id="checkout-total-price">
                       <strong>10.500.000</strong></div>
                   </li>
@@ -1673,13 +2092,13 @@ window.intercomSettings = {
             </div>
             <div style="clear:both"></div>
 
-            <input type="checkbox" id="toc-agreement">I agree with the <a
-              href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
+            <input type="checkbox" id="toc-agreement">Eu concordo com o <a
+              href="documents/terms-and-conditions.pdf" target="_blank">Termos e Condições</a>
             <br>
             <select id="payment-choice"></select>
             <br>
-            <span id="payment-unavailable" class="parsley-required">Paying with a credit card is not possible at this moment.<br>Please choose another payment method or come back later.</span>
-            <input type="button" id="pay" class="sf-right sf-btn" name="pay" value="Buy LTO Tokens"
+            <span id="payment-unavailable" class="parsley-required">Pagar com um cartão de crédito não é possível neste momento. Por favor escolha outro método de pagamento ou volte mais tarde.</span>
+            <input type="button" id="pay" class="sf-right sf-btn" name="pay" value="Compre tokens LTO"
                    disabled="disabled">
           </div>
         </fieldset>
@@ -1691,6 +2110,22 @@ window.intercomSettings = {
 <script src="files/dist/compress.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
+
+<script>
+
+  $('.js-open-wizard').on('click', function (e) {
+    e.preventDefault();
+    $('.next-btn').text('Próximo');
+    $('.next-btn, .sf-nav-step').on('click', function (e) {
+      e.preventDefault();
+      setTimeout(function () {
+        $('.parsley-required').text('Esse valor é necessário.')
+      }, 1);
+    })
+  })
+
+</script>
+
 <!-- This needs to be loaded from their site, not locally -->
 <!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
 <!--<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>-->

@@ -20,7 +20,7 @@ gulp.task("minify-js", () =>
         }))
         .pipe(gulp.dest(".files/dist"))
 );
- 
+
 
 gulp.task('minify-css', function () {
   return gulp.src('./files/dist/*.css')
@@ -68,7 +68,7 @@ gulp.task('compress-js', function () {
         'files/js/jquery.easing.1.3.js',
         'files/js/jquery.visible.min.js',
         // 'files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0',
-        
+
         // 'files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0',
         // 'files/revolution/js/extensions/revolution.extension.slideanims.min.js',
         // 'files/revolution/js/extensions/revolution.extension.layeranimation.min.js',
@@ -106,7 +106,7 @@ gulp.task('clean:dist', function () {
 
 
 gulp.task('default', function (callback) {
-  runSequence('clean:dist', 'compress-js', 'compress-css', 'minify-css', 'minify-js',
+  runSequence('clean:dist', 'compress-js', 'compress-css', 'minify-css',
       callback
   )
 });

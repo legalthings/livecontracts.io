@@ -41,6 +41,8 @@ function collapseFaq(id) {
 $(document).ready(function () {
   var isShowingMore = false;
 
+  redirectUserToLocalSite();
+
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
     { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
@@ -161,6 +163,19 @@ $(document).ready(function () {
   handlePayment();
 });
 
+function redirectUserToLocalSite() {
+  var userLang = navigator.language || navigator.userLanguage;
+  var wasRedirected = localStorage.getItem('wasRedirectedToLocale');
+
+  var currentUrl = window.location.pathname.split('/');
+  var currentPage = currentUrl[currentUrl.length - 1];
+
+  if (currentPage === '' && userLang.indexOf('pt') > -1 && !wasRedirected) {
+    localStorage.setItem("wasRedirectedToLocale", true);
+    window.location.href = 'br';
+  }
+}
+
 function changeBillingAddress(required) {
   if (required) {
     $('#billing-address').attr('required', 'required');
@@ -189,6 +204,16 @@ function changeVAT(selectedCountry, required) {
 
 
 //init for pie chart
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 //opening Wishlist popup
 function openWishlistPopup() {
@@ -318,7 +343,7 @@ function calculateRate() {
   var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
 
   if (currentCurrency) {
-    var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR' ? 2 : 6;
+    var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR'|| currentCurrency.currency === 'BRL' ? 2 : 6;
     var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(decimals);
     $('#price').val(total);
     $('#amount-bonus').html(bonusTokens);
@@ -338,15 +363,21 @@ function handlePayment() {
     $('#pay').attr('disabled', 'disabled');
     var user = collectUserInfo();
     var organization = convertUserToOrg(user);
+    var ref = getParameterByName('ref');
     var amount = $('#lto-amount').val();
     var wallet = $('#wallet').val();
     var currency = $('#price-currency').val();
     var provider = getPaymentProvider($('#payment-choice').val(), currency);
     var price = $('#price').val();
 
+    if (currency == 'BRL') {
+      provider = 'creditcard';
+    }
+
 		var data = {};
 		data.user = user;
 		data.organization = organization;
+        data.ref = ref;
 		data.return_url = 'https://livecontracts.io/thankyou.html';
 		data.notify_url = waves_server + '/api/payment/notify';
 		data.quantity = parseInt(amount);
@@ -363,10 +394,11 @@ function handlePayment() {
 
   	  $('#error-payment').hide();
 
+
   	  if (provider === 'creditcard') {
     		stripeCheckout(data, price);
   	  } else if (provider == 'ideal') {
-        if (data.currency == "USD") {
+        if (data.currency == "USD" || data.currency == "BRL") {
           data.currency = "EUR";
         }
         startPayment(data);
@@ -800,7 +832,7 @@ function validateWavesAddress(address) {
 
   checkWalletAddress((address), function(err, valid){
     if (!valid) {
-      $('#wallet').parsley().addError('required', { message: 'Invalid Waves address', updateClass: true });
+      $('#wallet').parsley().addError('required', { message: 'Invalid Waves wallet address', updateClass: true });
     } else {
       $('#wallet').parsley().removeError('required');
     }
