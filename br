@@ -1650,8 +1650,8 @@
 
               <div class="form-row column one-half">
                 <label for="billing-country">País <abbr title="required"
-                                                        class="required address-required-labels">*</abbr></label>
-                <select id="billing-country" name="billing-country" data-parsley-group="block0">
+                                                        class="required">*</abbr></label>
+                <select id="billing-country" name="billing-country" required data-parsley-group="block0">
                   <option value=""></option>
                   <option value="AF">Afghanistan</option>
                   <option value="AX">Åland Islands</option>
