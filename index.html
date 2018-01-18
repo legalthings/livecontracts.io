@@ -1981,6 +1981,111 @@
     <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
     <!-- SCRIPTS -->
 
+ <script>
+    $(document).ready(function () {
+      gtag('config', 'UA-62115237-2', {
+         'custom_map': {
+           'dimension2': 'section',
+           'dimension3': 'country',
+           'dimension4': 'city',
+           'dimension5': 'ltoAmount',
+           'dimension6': 'currency',
+           'dimension7': 'price',
+           'dimension8': 'hasWavesWallet',
+           'dimension9': 'paymentOption'
+         }
+      });
+
+      $('.sf-btn-next').click(function(e) {
+        var currentStep = $('.sf-nav-step.sf-active').text().trim();
+        var params = {};
+
+        if (currentStep == 1) {
+          const country = $('#billing-country').val();
+          const city = $('#billing-city').val();
+
+          if (country === '') {
+            return;
+          }
+
+          params = {
+            'event_category': 'ecommerce',
+            'event_action': 'begin_checkout',
+            'checkout_step': currentStep,
+            country,
+            city
+          };
+        }
+
+        if (currentStep == 2) {
+          const ltoAmount = $('#lto-amount').val();
+          const currency = $('#price-currency').val();
+          const price = $('#price').val();
+
+          if (ltoAmount === '') {
+            return;
+          }
+
+          params = {
+            'event_category': 'ecommerce',
+            'event_action': 'add_to_cart',
+            'checkout_step': currentStep,
+            'ltoAmount': ltoAmount,
+            'currency': currency,
+            'price': price
+          };
+        }
+
+        if (currentStep == 3) {
+          const hasWavesWallet = $('#wallet-choice').val();
+
+          params = {
+            'event_category': 'ecommerce',
+            'event_action': 'set_checkout_option',
+            'checkout_step': currentStep,
+            'checkout_option': 'Has a Waves Wallet',
+            'hasWavesWallet': hasWavesWallet
+          };
+        }
+
+        gtag('event', 'Buy LTO Funnel', params);
+      });
+
+      $('#pay').click(function(e) {
+        const paymentOption = $('#payment-choice').val();
+
+        if (paymentOption === null || paymentOption === '') {
+          paymentOption = 'Cryptocurrency'
+        }
+
+        params = {
+          'event_category': 'ecommerce',
+          'event_action': 'set_checkout_option',
+          'checkout_step': 4,
+          'checkout_option': 'Payment Choice',
+          'paymentOption': paymentOption
+        };
+
+        gtag('event', 'Buy LTO Funnel', params);
+      });
+
+      $('.js-open-wizard').click(function(e) {
+        var sectionHeader = $(e.target).closest('.row-section').length ?
+                            $(e.target).closest('.row-section').find('h2 strong').length ?
+                                $(e.target).closest('.row-section').find('h2 strong')[0].innerHTML.trim() :
+                                'Features' :
+                            'Header';
+
+        var buttonLabel = e.target.innerHTML.trim();
+
+        gtag('event', buttonLabel, {
+          'event_category': 'engagement',
+          'section': sectionHeader
+        });
+      });
+    });
+  </script>
+
     <!-- Twitter universal website tag code -->
     <script>
         !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
