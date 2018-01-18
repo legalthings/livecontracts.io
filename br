@@ -176,8 +176,7 @@
           <h5 class="">da Justiça e Segurança da Holanda</h5>
         </div>
       </div>
-      <div class="spacer-small"></div>
-      <div class="spacer-small"></div>
+      <div class="spacer-medium"></div>
       <p class="hero__buttons">
         <a class="sr-button button-1 button-medium circled js-open-wizard">
             Compre tokens LTO
@@ -189,6 +188,12 @@
             Leia FAQ
         </a>
       </p>
+      <div class="spacer-medium"></div>
+      <div class="count-down-wrap">
+          <h3><strong>Pre-sale data final</strong></h3>
+          <div class="spacer-small"></div>
+          <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
+      </div>
     </div>
     <!-- END #page-title -->
   </section>
@@ -452,6 +457,7 @@
     </div>
   </div>
 </div>
+
 <div class="wrapper row-section">
   <h2 class="align-center">
     <strong>Conheça a Equipe</strong>
@@ -467,7 +473,7 @@
         <h5 class="team-name uppercase">
           <strong>Arnold Daniels</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e arquiteto de Software</h6>
+        <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
@@ -487,7 +493,7 @@
         <h5 class="team-name uppercase">
           <strong>Rick Schmitz</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e Head of Legal</h6>
+        <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
@@ -504,7 +510,7 @@
         <h5 class="team-name uppercase">
           <strong>Martijn Migchelsen</strong>
         </h5>
-        <h6 class="subtitle-2">Fundador e Head Financeiro</h6>
+        <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
@@ -514,6 +520,22 @@
     </div>
   </div>
   <div class="column-section clearfix">
+    <div class="column one-third team-member align-center">
+      <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
+        <img src="img/team/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
+      </a>
+      <div class="team-content">
+        <h5 class="team-name uppercase">
+          <strong>Lisa Kate Palmer</strong>
+        </h5>
+        <h6 class="subtitle-2">Product Development Manager</h6>
+        <ul class="socialmedia-widget hover-fade-1">
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
         <img class="one" src="img/team/sven_stam.png" alt="Sven Stam - LegalThings">
@@ -534,34 +556,18 @@
         </ul>
       </div>
     </div>
-    <div class="column one-third team-member align-center">
-      <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
-        <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+    <div class="column one-third last-col team-member align-center">
+      <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
+        <img src="img/team/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
-          <strong>Pim Volkers</strong>
+          <strong>Sabine van Bilderbeek</strong>
         </h5>
-        <h6 class="subtitle-2 advisor">ORIENTADOR</h6>
+        <h6 class="subtitle-2">Manager Operations</h6>
         <ul class="socialmedia-widget hover-fade-1">
           <li class="linkedin">
-            <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="column one-third last-col team-member align-center">
-      <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
-        <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
-      </a>
-      <div class="team-content">
-        <h5 class="team-name uppercase">
-          <strong>Peter van Leersum</strong>
-        </h5>
-        <h6 class="subtitle-2 advisor">ORIENTADOR</h6>
-        <ul class="socialmedia-widget hover-fade-1">
-          <li class="link">
-            <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
           </li>
         </ul>
       </div>
@@ -577,7 +583,7 @@
           <h5 class="team-name uppercase">
             <strong>Martijn Broersma</strong>
           </h5>
-          <h6 class="subtitle-2">Chefe de Operações</h6>
+          <h6 class="subtitle-2">Head of Operations</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
@@ -593,7 +599,7 @@
           <h5 class="team-name uppercase">
             <strong>Rick Ros</strong>
           </h5>
-          <h6 class="subtitle-2">Chefe de Vendas</h6>
+          <h6 class="subtitle-2">Head of Sales</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
@@ -609,7 +615,7 @@
           <h5 class="team-name uppercase">
             <strong>Diederick Cardon</strong>
           </h5>
-          <h6 class="subtitle-2">Legal Expert</h6>
+          <h6 class="subtitle-2">Legal Chief</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
@@ -629,7 +635,7 @@
           <h5 class="team-name uppercase">
             <strong>Moesjarraf Jahangier</strong>
           </h5>
-          <h6 class="subtitle-2">Desenvolvedor Responsável</h6>
+          <h6 class="subtitle-2">Full-stack Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
@@ -642,26 +648,6 @@
       </div>
 
       <div class="column one-third team-member align-center">
-        <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
-          <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
-        </a>
-        <div class="team-content">
-          <h5 class="team-name uppercase">
-            <strong>Jurre Wolsink</strong>
-          </h5>
-          <h6 class="subtitle-2">Desenvolvedor</h6>
-          <ul class="socialmedia-widget hover-fade-1">
-            <li class="linkedin">
-              <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
-            </li>
-            <li class="github">
-              <a href="https://github.com/jurrew27" target="_blank"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="column one-third last-col team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
           <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
         </a>
@@ -669,7 +655,7 @@
           <h5 class="team-name uppercase">
             <strong>Yevhen Horbachov</strong>
           </h5>
-          <h6 class="subtitle-2">Desenvolvedor de Frontend</h6>
+          <h6 class="subtitle-2">Frontend Developer</h6>
           <ul class="socialmedia-widget hover-fade-1">
             <li class="linkedin">
               <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
@@ -680,96 +666,156 @@
           </ul>
         </div>
       </div>
+
+      <div class="column one-third last-col team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
+          <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Jurre Wolsink</strong>
+          </h5>
+          <h6 class="subtitle-2">Developer</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/jurrew27" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="column-section clearfix">
-        <div class="column one-third team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
-            <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Mitchel Kerckhaert</strong>
-            </h5>
-            <h6 class="subtitle-2">Desenvolvedor</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
-              </li>
-              <li class="github">
-                <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="column one-third team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-            <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Sarfaraaz Jahangier</strong>
-            </h5>
-            <h6 class="subtitle-2">Desenvolvedor</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
-              </li>
-              <li class="github">
-                <a href="https://github.com/Sarfaraaz" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="column one-third last-col team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
-            <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
-            <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Michael Nieveld</strong>
-            </h5>
-            <h6 class="subtitle-2">Legal & Tax</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
+          <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Mitchel Kerckhaert</strong>
+          </h5>
+          <h6 class="subtitle-2">Developer</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <div class="spacer-medium"></div>
-      <h2 class="align-center"><strong>Parceiros</strong></h2>
-
-      <div class="column-section clearfix">
-        <div class="column one-third team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
-            <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Marcus Camargo</strong>
-            </h5>
-            <h6 class="subtitle-2">Parceiro no Brasil</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
+          <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Sarfaraaz Jahangier</strong>
+          </h5>
+          <h6 class="subtitle-2">Developer</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/Sarfaraaz" target="_blank"></a>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <div class="column one-third last-col team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
+          <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
+          <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Michael Nieveld</strong>
+          </h5>
+          <h6 class="subtitle-2">Legal & Tax</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-medium"></div>
+    <h2 class="align-center"><strong>Assessores</strong></h2>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
+        <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
+          <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Pim Volkers</strong>
+          </h5>
+          <h6 class="subtitle-2 advisor">ADVISOR</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="column one-third last-col team-member align-center">
+        <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
+          <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Peter van Leersum</strong>
+          </h5>
+          <h6 class="subtitle-2 advisor">ADVISOR</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="link">
+              <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-medium"></div>
+    <h2 class="align-center"><strong>Parceiros</strong></h2>
+
+    <div class="column-section clearfix">
+      <div class="column one-third team-member align-center">
+        <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
+          <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
+        </a>
+        <div class="team-content">
+          <h5 class="team-name uppercase">
+            <strong>Marcus Camargo</strong>
+          </h5>
+          <h6 class="subtitle-2">Partner in Brazil</h6>
+          <ul class="socialmedia-widget hover-fade-1">
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="spacer-medium"></div>
   <div class="align-center">
-    <a id="show-more" class="sr-button inline button-1-ghost button-medium circled">Outros Membros da Equipe</a>
-    <a class="sr-button inline button-1 button-medium circled js-open-wizard">Adquira LTO tokens</a>
+    <a id="show-more" class="sr-button inline button-1-ghost button-medium circled">More team members</a>
+    <a class="sr-button inline button-1 button-medium circled js-open-wizard">Buy LTO Tokens</a>
   </div>
 </div>
+
 <!-- END .wrapper -->
 <div class="custom-wrap timeline-block">
   <!--<h2 class="align-center title">-->
@@ -1008,20 +1054,26 @@
             </h6>
           </div>
           <div class="spacer-medium"></div>
-          <div class="column one-half">
+          <div class="column one-third">
             <p class="sale-header">Preço</p>
             <p class="sale-focusText">$0.25 / LTO</p>
-            <br>
+          </div>
+          <div class="column one-third">
             <p class="sale-header">Tokens</p>
             <p class="sale-focusText">10,000,000 LTO</p>
           </div>
-          <div class="column one-half last-col">
-            <p class="sale-header">Data de início</p>
-            <p class="sale-focusText">December 6th 2017 0:00 CET</p>
-            <br>
-            <p class="sale-header">Data final</p>
-            <p class="sale-focusText">January 20th 2018 12:00 CET</p>
-            <!-- <div class="count-down sale-focusText" data-end-date="Jan 20, 2018 12:00:00"></div> -->
+          <div class="column one-third last-col">
+            <div class="powered_by_waves">
+              <p class="sale-header">Fornecido por</p>
+              <div></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="spacer-small"></div>
+          <div class="count-down-wrap">
+              <h3><strong>Pre-sale data final</strong></h3>
+              <div class="spacer-small"></div>
+              <div class="count-down" data-end-date="Jan 20, 2018 12:00:00"></div>
           </div>
         </div>
       </div>
@@ -1598,8 +1650,8 @@
 
               <div class="form-row column one-half">
                 <label for="billing-country">País <abbr title="required"
-                                                        class="required address-required-labels">*</abbr></label>
-                <select id="billing-country" name="billing-country" data-parsley-group="block0">
+                                                        class="required">*</abbr></label>
+                <select id="billing-country" name="billing-country" required data-parsley-group="block0">
                   <option value=""></option>
                   <option value="AF">Afghanistan</option>
                   <option value="AX">Åland Islands</option>
@@ -2099,6 +2151,16 @@
 <!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
 <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
 <!-- SCRIPTS -->
-</body>
 
+<!-- Twitter universal website tag code -->
+<script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    // Insert Twitter Pixel ID and Standard Event data below
+    twq('init','nytjh');
+    twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+</body>
 </html>
