@@ -21914,7 +21914,6 @@ $(document).ready(function () {
   scrollToBlock();
   bindingWizardsTabs();
   initSubscribeMailChimp();
-  initTimer();
   timelineInit();
   initWalletChoice();
   createWavesWallet();
@@ -22052,6 +22051,9 @@ function getSaleDate() {
         endDate: new Date(result['end_date'])
       };
 
+      $('.count-down').attr('data-end-date', saleDate.endDate);
+      initTimer();
+
       if (today.getTime() > saleDate.startDate.getTime() &&
           today.getTime() < saleDate.endDate.getTime()) {
         enableBuyButton();
@@ -22084,6 +22086,7 @@ function enableSubscribeButton() {
 function enableBuyButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Compre tokens LTO' : 'Buy LTO Tokens';
   $('.lc-primary-action').text(btnText).addClass('js-open-wizard');
+  $('.count-down-wrap').removeClass('hidden');
 
   $(".js-open-wizard").on('click', function (e) {
     e.preventDefault();

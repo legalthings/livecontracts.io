@@ -10289,3 +10289,16 @@ html.lock {
   background-image: url(../../img/waves_white_logo.svg);
   display: block;
 }
+
+.count-down-wrap {
+  opacity: 1;
+  transform: translateX(0px);
+  height: auto;
+  transition: 333ms ease-in-out;
+}
+
+.count-down-wrap.hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  height: 0;
+}
