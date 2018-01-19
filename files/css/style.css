@@ -9675,7 +9675,7 @@ html.lock {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  max-width: 400px;
+  max-width: 545px;
   padding: 0 20px;
 }
 
@@ -9706,9 +9706,7 @@ html.lock {
 .newsletter-submit, .newsletter-form .newsletter-submit {
   position: relative;
   left: -6px;
-  padding-left: 0;
-  padding-right: 0;
-  width: 70px;
+  padding: 8px;
   margin: 0;
 }
 

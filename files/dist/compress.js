@@ -21751,6 +21751,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
+var userLang;
 var vatCountries = [];
 var wavesWallet = null;
 var ltoRates = {};
@@ -21759,6 +21760,9 @@ var paymentOptions = [
   { value: "creditcard", text: "Credit Card" },
   { value: "ideal", text: "iDeal" }
 ];
+
+var saleDate;
+var today;
 
 var currentCollapsedFaq = '';
 
@@ -21792,9 +21796,11 @@ function collapseFaq(id) {
 }
 
 $(document).ready(function () {
+  today = new Date();
   var isShowingMore = false;
 
   redirectUserToLocalSite();
+  getSaleDate();
 
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
@@ -21904,7 +21910,6 @@ $(document).ready(function () {
   manipulatingHeader();
   loadTokens();
   wizardInit();
-  openWishlistPopup();
   closePopup();
   scrollToBlock();
   bindingWizardsTabs();
@@ -21917,7 +21922,7 @@ $(document).ready(function () {
 });
 
 function redirectUserToLocalSite() {
-  var userLang = navigator.language || navigator.userLanguage;
+  userLang = navigator.language || navigator.userLanguage;
   var wasRedirected = localStorage.getItem('wasRedirectedToLocale');
 
   var currentUrl = window.location.pathname.split('/');
@@ -21966,20 +21971,6 @@ function getParameterByName(name, url) {
     if (!results) return null;
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
-}
-
-//opening Wishlist popup
-function openWishlistPopup() {
-  $('.js-open-wishlistPopup').on('click', function (e) {
-    e.preventDefault();
-    $('html').addClass('lock');
-    $('.popup.js-wishlist-popup').removeClass('popup-hide');
-    $('.popup__close').on('click', function (e) {
-      e.preventDefault();
-      $('html').removeClass('lock');
-      $('.popup.js-wishlist-popup').addClass('popup-hide')
-    })
-  })
 }
 
 // init add open wallet choice
@@ -22049,6 +22040,57 @@ function getVATCountries() {
     success: function (result) {
       vatCountries = result;
     }
+  });
+}
+
+function getSaleDate() {
+  $.ajax({
+    url: waves_server + "/api/sale",
+    success: function(result) {
+      saleDate = {
+        startDate: new Date(result['start_date']),
+        endDate: new Date(result['end_date'])
+      };
+
+      if (today.getTime() > saleDate.startDate.getTime() &&
+          today.getTime() < saleDate.endDate.getTime()) {
+        enableBuyButton();
+      } else {
+        enableSubscribeButton();
+      }
+    },
+    error: function() {
+      enableSubscribeButton();
+    }
+  });
+}
+
+function enableSubscribeButton() {
+  const btnText = userLang.indexOf('pt') > -1 ? 'Se inscrever' : 'Subscribe now';
+  $('.lc-primary-action').text(btnText).addClass('js-open-wishlistPopup');
+
+  $('.js-open-wishlistPopup').on('click', function (e) {
+    e.preventDefault();
+    $('html').addClass('lock');
+    $('.popup.js-wishlist-popup').removeClass('popup-hide');
+    $('.popup__close').on('click', function (e) {
+      e.preventDefault();
+      $('html').removeClass('lock');
+      $('.popup.js-wishlist-popup').addClass('popup-hide')
+    })
+  });
+}
+
+function enableBuyButton() {
+  const btnText = userLang.indexOf('pt') > -1 ? 'Compre tokens LTO' : 'Buy LTO Tokens';
+  $('.lc-primary-action').text(btnText).addClass('js-open-wizard');
+
+  $(".js-open-wizard").on('click', function (e) {
+    e.preventDefault();
+    $('html').addClass('lock')
+    $('.popup-container').removeClass('popup-hide')
+    $('.popup-backdrop').removeClass('popup-hide')
+    $('.popup').removeClass('popup-hide')
   });
 }
 
@@ -22683,14 +22725,6 @@ function wizardInit() {
   getVATCountries();
 
   $('#error-payment').hide();
-
-  $(".js-open-wizard").on('click', function (e) {
-    e.preventDefault();
-    $('html').addClass('lock')
-    $('.popup-container').removeClass('popup-hide')
-    $('.popup-backdrop').removeClass('popup-hide')
-    $('.popup').removeClass('popup-hide')
-  })
 
   $("#faucet-retrieve-btn").on('click', function (e) {
     e.preventDefault();
