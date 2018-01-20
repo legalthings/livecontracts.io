@@ -11404,8 +11404,9 @@ html.lock {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  width: 100%;
   align-items: center;
-  margin-top: -6px;
+  margin-top: 5px;
 }
 
 #checkout-total-price-options {
