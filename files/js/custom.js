@@ -65,7 +65,6 @@ $(document).ready(function () {
     { url: 'https://www.metronieuws.nl/xl/digitaal/2017/02/digitale-handtekening-dat-kan-veilig-met-blockchain', img: 'metro.png'},
     { url: 'https://www.nrc.nl/nieuws/2017/11/14/niet-alle-digitale-beursgangen-zijn-slecht-14017947-a1581143', img: 'nrc.png'},
     { url: 'https://www.publictechnology.net/articles/news/dutch-government-trial-blockchain-based-digital-law', img: 'public-technology.png'},
-    { url: 'http://www.quotenet.nl/Nieuws/Amsterdamse-startup-gaat-Ethereum-slopen-Ether-is-een-scam-208104', img: 'quote.png'},
     { url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
     { url: 'http://www.vastgoedmarkt.nl/data-en-technologie/nieuws/2017/12/merin-zet-stap-blockchain-101128261', img: 'vastgoedmarkt.png'},
     { url: 'https://fd.nl/morgen/1171136/legaltech-minder-maatpak-meer-confectie', img: 'fd.png'},
