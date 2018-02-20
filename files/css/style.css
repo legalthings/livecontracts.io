@@ -10314,8 +10314,6 @@ html.lock {
   background-size: contain;
 }
 
-
-
 .column-section.block-button__hover::before {
   position: absolute;
   content: '';
@@ -10336,11 +10334,9 @@ html.lock {
   opacity: 1;
 }
 @media screen and (max-width: 1200px) {
-
   .column-section.block-button__hover {
     height: 210px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -10351,3 +10347,22 @@ html.lock {
     background: url("../../img/elems_block_mobile.jpg") no-repeat scroll center center;
   }
 }
+
+#page-title .subtitle-1 a {
+  text-decoration: underline;
+}
+#page-title .subtitle-1 {
+  opacity: 1;
+}
+
+.sticky-bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
