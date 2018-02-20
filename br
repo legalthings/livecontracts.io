@@ -985,47 +985,47 @@
   <a class="sr-button button-medium button-1 circled" href="./customers.html">
     Conheça nossos Clientes
   </a>
-  <div class="logo serving-companies text-dark wrapper">
-    <div class="spacer-medium"></div>
-    <div class="column-section no-left-margin wrapper clearfix">
-      <div class="column one-fourth">
-        <img src="img/logo_1.jpg" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_2.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_3.png" alt="social">
-      </div>
-      <div class="column one-fourth last-col">
-        <img class="greyscaled-image" src="img/logo_4.png" alt="social">
-      </div>
-    </div>
-    <div class="column-section no-left-margin wrapper clearfix">
-      <div class="column one-fourth">
-        <img src="img/logo_5.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_6.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_7.png" alt="social">
-      </div>
-      <div class="column one-fourth last-col">
-        <img src="img/logo_8.png" alt="social">
-      </div>
-    </div>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         class="blur-svg">
-      <defs>
-        <filter id="blur-filter">
-          <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-        </filter>
-      </defs>
-    </svg>
-    <div class="overlay"></div>
-    <div class="spacer-medium"></div>
-  </div>
+  <!--<div class="logo serving-companies text-dark wrapper">-->
+    <!--<div class="spacer-medium"></div>-->
+    <!--<div class="column-section no-left-margin wrapper clearfix">-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_1.jpg" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_2.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_3.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth last-col">-->
+        <!--<img class="greyscaled-image" src="img/logo_4.png" alt="social">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="column-section no-left-margin wrapper clearfix">-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_5.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_6.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_7.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth last-col">-->
+        <!--<img src="img/logo_8.png" alt="social">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+         <!--class="blur-svg">-->
+      <!--<defs>-->
+        <!--<filter id="blur-filter">-->
+          <!--<feGaussianBlur stdDeviation="3"></feGaussianBlur>-->
+        <!--</filter>-->
+      <!--</defs>-->
+    <!--</svg>-->
+    <!--<div class="overlay"></div>-->
+    <!--<div class="spacer-medium"></div>-->
+  <!--</div>-->
 </div>
 
 <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
