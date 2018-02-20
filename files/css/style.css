@@ -6989,6 +6989,7 @@ div .toggle-item:first-child {
   transition: 123ms ease-in-out;
   display: block;
   transition: opacity 0.5s;
+  transform: translateZ(0);
 }
 
 .team-image img.one {
