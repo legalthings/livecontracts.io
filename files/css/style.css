@@ -10302,3 +10302,51 @@ html.lock {
   transform: translateX(-100px);
   height: 0;
 }
+
+/* 20.02 by nikulio */
+
+.column-section.block-button__hover {
+  display: block;
+  height: 418px;
+  width: 100%;
+  background: url("../../img/elems_block.jpg") no-repeat scroll center center;
+  background-size: contain;
+}
+
+
+
+.column-section.block-button__hover::before {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url("../../img/elems_block.jpg") no-repeat scroll center center;
+  background-size: contain;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.column-section.block-button__hover:hover::before {
+  opacity: 1;
+}
+@media screen and (max-width: 1200px) {
+
+  .column-section.block-button__hover {
+    height: 210px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .column-section.block-button__hover::before {
+    opacity: 1;
+  }
+  .column-section.block-button__hover::before , .column-section.block-button__hover {
+    background: url("../../img/elems_block_mobile.jpg") no-repeat scroll center center;
+  }
+}
