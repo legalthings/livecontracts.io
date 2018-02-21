@@ -24,6 +24,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-concat-css": "^2.3.0",
     "gulp-minify": "^2.1.0",
+    "jquery.countdown": "^1.2.8",
     "run-sequence": "^2.2.0"
   },
   "devDependencies": {

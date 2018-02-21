@@ -89,6 +89,7 @@ gulp.task('compress-js', function () {
         'files/js/jquery.countdown.min.js',
         'files/js/social.js',
         //
+          'node_modules/jquery.countdown/jquery.countdown.js',
         'files/js/step-form-wizard.min.js',
         'files/js/jquery.mCustomScrollbar.concat.min.js',
         'files/js/d3.js',

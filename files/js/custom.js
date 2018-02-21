@@ -164,7 +164,19 @@ $(document).ready(function () {
   initWalletChoice();
   createWavesWallet();
   handlePayment();
+  bottomCountdownInit();
 });
+// for bottom clock
+function bottomCountdownInit() {
+  $('#bottom_countdown').countdown('2018/15/04').on('update.countdown', function(event) {
+    var $this = $(this).html(event.strftime(''
+        + '<span>%-w</span> week%!w '
+        + '<span>%-d</span> day%!d '
+        + '<span>%H</span> hr '
+        + '<span>%M</span> min '
+        + '<span>%S</span> sec'));
+  });
+}
 
 function redirectUserToLocalSite() {
   userLang = navigator.language || navigator.userLanguage;

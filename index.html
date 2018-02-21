@@ -74,6 +74,7 @@
 
   window.intercomSettings = {
     app_id: 'g247sp2q',
+    vertical_padding: 90,
     alignment: alignment
   };
 
@@ -151,22 +152,27 @@
 
     <!-- STICKY BOTTOM BAR -->
       <div class="sticky-bottom">
-        <ul class="sticky-bottom__socials">
-          <li class="telegram">
-            <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-          </li>
-          <li class="github">
-            <a href="https://github.com/legalthings" target="_blank"></a>
-          </li>
-          <li class="linkedin">
-            <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-          </li>
-          <li class="twitter">
-            <a href="https://twitter.com/livecontracts" target="_blank"></a>
-          </li>
-        </ul>
-        <p>Public Sale - April 5th: <span>45days 9hours 20min 30sec</span></p>
+        <div class="wrapper">
+        <div class="socialsBlock purpleSection">
+          <ul class="sticky-bottom__socials socialmedia-widget size-huge">
+            <li class="telegram">
+              <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/legalthings" target="_blank"></a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/livecontracts" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <p>Public Sale - April 5th: <span id="bottom_countdown"> 45days 9hours 20min 30sec</span></p>
         <a class="sr-button inline button-1-ghost button-medium circled">Register now</a>
+        </div>
+
       </div>
     <!-- STICKY BOTTOM BAR END -->
 
