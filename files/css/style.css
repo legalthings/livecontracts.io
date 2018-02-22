@@ -10449,6 +10449,7 @@ html.lock {
   }
 
 }
-html body #intercom-container .intercom-launcher-discovery-frame, html body #intercom-container .intercom-launcher-frame {
-  bottom: 90px !important;
+html body #intercom-container .intercom-launcher-discovery-frame,
+html body #intercom-container .intercom-launcher-frame {
+  bottom: 120px!important;
 }
