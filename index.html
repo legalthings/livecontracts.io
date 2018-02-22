@@ -50,6 +50,8 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
   <script>
@@ -66,11 +68,11 @@
   <script>
   var alignment = 'right';
 
-  if (window.innerWidth < 599) {
-    alignment = 'left';
-  } else {
-    alignment = 'right';
-  }
+  // if (window.innerWidth < 599) {
+  //   alignment = 'left';
+  // } else {
+  //   alignment = 'right';
+  // }
 
   window.intercomSettings = {
     app_id: 'g247sp2q',
@@ -78,7 +80,7 @@
     alignment: alignment
   };
 
-  (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
+    (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
       ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
       i.q = [];
       i.c = function(args) { i.q.push(args) };
@@ -169,7 +171,7 @@
             </li>
           </ul>
         </div>
-        <p>Public Sale - April 5th: <span id="bottom_countdown"> 45days 9hours 20min 30sec</span></p>
+        <p>Public Sale - April 5th: <span id="bottom_countdown"></span></p>
         <a class="sr-button inline button-1-ghost button-medium circled">Register now</a>
         </div>
 
@@ -2146,5 +2148,7 @@
         twq('track','PageView');
     </script>
     <!-- End Twitter universal website tag code -->
+
+
 </body>
 </html>

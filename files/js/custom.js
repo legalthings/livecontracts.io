@@ -166,15 +166,15 @@ $(document).ready(function () {
   handlePayment();
   bottomCountdownInit();
 });
-// for bottom clock
+// for bottom countdown
 function bottomCountdownInit() {
-  $('#bottom_countdown').countdown('2018/15/04').on('update.countdown', function(event) {
+  $('#bottom_countdown').countdown('2018/04/05').on('update.countdown', function(event) {
     var $this = $(this).html(event.strftime(''
-        + '<span>%-w</span> week%!w '
-        + '<span>%-d</span> day%!d '
-        + '<span>%H</span> hr '
-        + '<span>%M</span> min '
-        + '<span>%S</span> sec'));
+        + '<span>%-w</span>week%!w '
+        + '<span>%-d</span>day%!d '
+        + '<span>%H</span>hours '
+        + '<span>%M</span>min '
+        + '<span>%S</span>sec'));
   });
 }
 

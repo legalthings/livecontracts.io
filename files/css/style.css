@@ -1,3 +1,4 @@
+
 /*-----------------------------------------------------------------------------------
 
 
@@ -10429,4 +10430,25 @@ html.lock {
   .sticky-bottom .socialsBlock {
     display: none;
   }
+}
+
+@media screen and (max-width: 640px) {
+  .sticky-bottom {
+    height: auto;
+  }
+  .sticky-bottom .wrapper {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+  .sticky-bottom .wrapper p {
+    width: 100%;
+    text-align: center;
+  }
+  .sticky-bottom .sr-button {
+    margin: 10px auto 0;
+  }
+
+}
+html body #intercom-container .intercom-launcher-discovery-frame, html body #intercom-container .intercom-launcher-frame {
+  bottom: 90px !important;
 }
