@@ -10453,3 +10453,141 @@ html body #intercom-container .intercom-launcher-discovery-frame,
 html body #intercom-container .intercom-launcher-frame {
   bottom: 120px!important;
 }
+
+/* NEW SALE STARTS SECTION */
+
+.sale-starts {
+  background: #231d39;
+  padding: 85px 0 60px;
+}
+
+.sale-starts .title {
+  font-weight: 200;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 160px;
+}
+.sale-progress {
+  width: 100%;
+  display: block;
+  background: transparent;
+}
+.sale-progress .sale-progress__bar {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  height: 50px;
+  border-radius: 30px;
+  border: solid 2px #9867cf;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element {
+  flex: 1;
+  position: relative;
+  transition: .3s all;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element
+ .sale-progress__bar-label.special-label-1 {
+   left: -22px;
+   top: -59px;
+ }
+.sale-progress .sale-progress__bar .sale-progress__bar-element
+ .sale-progress__bar-label.special-label {
+  left: auto;
+  right: 0;
+ }
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child
+ .sale-progress__bar-label {
+  top: -59px;
+  left: 0;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  left: -51px;
+  top: -85px;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element
+ .sale-progress__bar-bonus {
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element:not(:first-child)
+ .sale-progress__bar-bonus {
+   left: 50%;
+   transform: translateX(-50%);
+ }
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
+  font-size: 20px;
+  color: #231d39;
+  z-index: 5;
+  position: relative;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child:before {
+  border-radius: 0 30px 30px 0;
+  left: 0;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child:before {
+  border-radius: 30px 0 0 30px;
+  left: 5px;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child:hover:before {
+  width: calc(100% - 5px);
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child:hover:before,
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child.active:before
+ {
+  width: calc(100% - 5px);
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child {
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child {
+  border-right: 0;
+  border-radius: 30px 0 0 30px;
+}
+
+.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child:after {
+  display: none;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:after {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: -5px;
+  right: 0;
+  height: 69px;
+  width: 2px;
+  background: #fff;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:hover {
+  box-shadow: inset 0px 0px 0px 5px rgba(59,44,85,1);
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  display: block;
+  width: 0;
+  height: calc(100% - 10px);
+  background: #9867cf;
+  transition: .3s all;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:hover:before {
+  width: 100%;
+}

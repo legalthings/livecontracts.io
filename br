@@ -75,7 +75,8 @@
 
     window.intercomSettings = {
       app_id: "g247sp2q",
-      alignment: alignment
+      alignment: alignment,
+      vertical_padding: 110
     };
 
     (function () {
