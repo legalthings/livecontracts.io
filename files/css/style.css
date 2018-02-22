@@ -10479,6 +10479,7 @@ html body #intercom-container .intercom-launcher-frame {
   height: 50px;
   border-radius: 30px;
   border: solid 2px #9867cf;
+  margin-bottom: 80px;
 }
 
 .sale-progress .sale-progress__bar .sale-progress__bar-element {
@@ -10589,5 +10590,172 @@ html body #intercom-container .intercom-launcher-frame {
   transition: .3s all;
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:hover:before {
+  width: 100%;
+}
+
+.sale-starts .subtitle {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.sale-wizard {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  display: flex;
+  max-width: 1110px;
+  margin: 0 auto 35px;
+  justify-content: space-between;
+}
+
+.sale-wizard .line {
+  display: block;
+  height: 3px;
+  background: #fff;
+  width: 100%;
+  bottom: 7px;
+  position: absolute;
+}
+
+.sale-wizard .sale-wizard__step:not(:last-child) span {
+  display: block;
+  margin-left: -7px;
+}
+.sale-wizard .sale-wizard__step {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+.sale-wizard .sale-wizard__step:hover {
+  cursor: pointer;
+}
+.sale-wizard .sale-wizard__step.active:after,
+.sale-wizard .sale-wizard__step:hover:after {
+  font-size: 24px;
+  box-shadow: 0px 0px 0px 5px rgba(152,103,207,.5);
+}
+
+.sale-wizard .sale-wizard__step.active:before,
+.sale-wizard .sale-wizard__step:hover:before {
+  box-shadow: 0px 0px 0px 10px rgba(152,103,207,.3);
+}
+.sale-wizard .sale-wizard__step {
+  display: block;
+  justify-content: center;
+  position: relative;
+}
+
+.sale-wizard .sale-wizard__step:after {
+    transition: .2s font-size, .3s box-shadow;
+    font-size: 16px;
+    font-weight: 900;
+    display: block;
+    width: 36px;
+    height: 36px;
+    font-family: Montserrat;
+    bottom: -10px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    color: #231d39;
+    line-height: 35px;
+    z-index: 5;
+    background: #fff;
+}
+
+.sale-wizard .sale-wizard__step:before {
+  content: "";
+  transition: .4s box-shadow;
+  display: block;
+  width: 36px;
+  height: 36px;
+  bottom: -10px;
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+  background: transparent;
+}
+
+.sale-wizard .sale-wizard__step#sale-wizard-1:after {
+  content: "1"
+}
+.sale-wizard .sale-wizard__step#sale-wizard-2:after {
+  content: "2"
+}
+.sale-wizard .sale-wizard__step#sale-wizard-3:after {
+  content: "3"
+}
+.sale-wizard .sale-wizard__step#sale-wizard-4:after {
+  content: "4"
+}
+.sale-wizard .sale-wizard__step#sale-wizard-5:after {
+  content: ""
+}
+
+.sale-starts .wizard-guide {
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+  opacity: 0.18;
+}
+
+.wizard-descriptions {
+  width: 100%;
+  display: block;
+  max-width: 1110px;
+}
+.wizard-descriptions .wizard-descriptions__title:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: calc(100% + 15%);
+  height: 2px;
+  background: #9867cf;
+  content: "";
+}
+
+.wizard-descriptions .wizard-descriptions__list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.wizard-descriptions .wizard-descriptions__list li:before {
+  content: "•";
+  color: #9867cf;
+  position: absolute;
+  left: 0;
+}
+.wizard-descriptions .wizard-descriptions__list li {
+  padding-left: 20px;
+  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+  color: #fff;
+}
+.wizard-descriptions .wizard-descriptions__text {
+  font-size: 16px;
+  font-weight: 200;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.wizard-descriptions .wizard-descriptions__subheader {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.wizard-descriptions .wizard-descriptions__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px
+}
+.wizard-descriptions .wizard-descriptions__description {
   width: 100%;
 }
