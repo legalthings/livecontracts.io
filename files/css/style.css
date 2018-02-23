@@ -10599,7 +10599,7 @@ html body #intercom-container .intercom-launcher-frame {
   color: #fff;
   font-weight: 200;
   text-align: center;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 100px;
 }
 
@@ -10804,4 +10804,74 @@ html body #intercom-container .intercom-launcher-frame {
   overflow: hidden;
   opacity: 0;
   transition: .3s all;
+}
+
+.usecases {
+  padding: 60px 10px 120px;
+  background: #fff;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.usecases .title {
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+
+.usecases .usecases__wizard-step.active {
+  box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+}
+.usecases .usecases__wizard-step {
+  height: 175px;
+  font: 20px Montserrat;
+  transition: .3s all;
+  color: #000;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 225px;
+}
+.usecases .usecases__wizard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usecases .usecases__navigation {
+  margin-top: 50px;
+  width: 100%;
+  height: 3px;
+  display: block;
+  opacity: 0.2;
+	border-bottom: 1px solid #979797;
+  position: relative;
+  z-index: 3;
+}
+
+.usecases .usecases__navigation-pointer.usecases__navigation-1 {
+  left: 109px;
+}
+.usecases .usecases__navigation-pointer.usecases__navigation-2 {
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.usecases .usecases__navigation-pointer.usecases__navigation-3 {
+  right: 109px;
+}
+.usecases .usecases__navigation-pointer {
+  width: 20px;
+  box-sizing: border-box;
+  height: 20px;
+  background: #fff;
+  border: 1px solid  #979797;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  transition: .3s all;
+  top: -6px;
+  transform: rotate(45deg);
+  z-index: 5;
 }

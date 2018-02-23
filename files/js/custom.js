@@ -166,7 +166,32 @@ $(document).ready(function () {
   handlePayment();
   bottomCountdownInit();
   saleStartsWizard();
+  usecaseWizard();
 });
+
+
+
+// for wizard in usecases block
+
+function usecaseWizard() {
+  $(".usecases__wizard-step").on("click", function(e) {
+    $(".usecases__wizard-step").removeClass("active");
+    $(".usecases__navigation-pointer").removeClass("usecases__navigation-1 usecases__navigation-2 usecases__navigation-3")
+    var that = $(this);
+    console.log("hello");
+    that.addClass("active");
+    if (that.hasClass("step-1")) {
+      $(".usecases__navigation-pointer").addClass("usecases__navigation-1")
+    }
+    else if(that.hasClass("step-2")) {
+      $(".usecases__navigation-pointer").addClass("usecases__navigation-2")
+    }
+    else if(that.hasClass("step-3")) {
+      $(".usecases__navigation-pointer").addClass("usecases__navigation-3")
+    }
+  })
+}
+
 
 //for wizard in sale starts block
 
@@ -227,7 +252,7 @@ function bottomCountdownInit() {
         + '<span>%M</span>min '
         + '<span>%S</span>sec'));
   });
-} 
+}
 
 function redirectUserToLocalSite() {
   userLang = navigator.language || navigator.userLanguage;
