@@ -167,6 +167,11 @@ $(document).ready(function () {
   bottomCountdownInit();
   saleStartsWizard();
   usecaseWizard();
+  
+  //for animation fix
+  $(window).on("mousewheel", function(){
+    $('html,body').stop();
+  });
 });
 
 
@@ -174,21 +179,33 @@ $(document).ready(function () {
 // for wizard in usecases block
 
 function usecaseWizard() {
+  
   $(".usecases__wizard-step").on("click", function(e) {
+    
+    e.preventDefault();
+    
+    var id = $(this).attr("data-usecase-step");
+    var element = $('div[id="' + id + '"]');
+  
     $(".usecases__wizard-step").removeClass("active");
-    $(".usecases__navigation-pointer").removeClass("usecases__navigation-1 usecases__navigation-2 usecases__navigation-3")
+    $(".usecases__element").removeClass("active");
+    $(".usecases__navigation-pointer").removeClass("usecases__navigation-1 usecases__navigation-2 usecases__navigation-3");
+    
     var that = $(this);
-    console.log("hello");
     that.addClass("active");
-    if (that.hasClass("step-1")) {
+    
+    if (id === "usecase-step-1") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-1")
     }
-    else if(that.hasClass("step-2")) {
+    else if(id === "usecase-step-2") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-2")
     }
-    else if(that.hasClass("step-3")) {
+    else if(id === "usecase-step-3") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-3")
     }
+  
+    element.addClass("active");
+  
   })
 }
 
@@ -237,9 +254,7 @@ function saleStartsWizard() {
     }, 1000);
   })
 
-  $(window).on("mousewheel", function(){
-    $('html,body').stop();
-  });
+
 }
 
 // for bottom countdown
