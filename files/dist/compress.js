@@ -31973,7 +31973,58 @@ $(document).ready(function () {
   createWavesWallet();
   handlePayment();
   bottomCountdownInit();
+  saleStartsWizard();
 });
+
+//for wizard in sale starts block
+
+function saleStartsWizard() {
+  function closeSaleStartsWizardManually() {
+    $(".js-wizard-descriptions-close").on("click", function(e){
+      e.preventDefault();
+      $(".sale-wizard__step").removeClass("active");
+      $(".wizard-descriptions__description").removeClass("active");
+
+      var headerHeight = $("#header").height() + 15;
+      var saleWizardOffset = $(".sale-wizard").offset().top;
+
+      $('html, body').animate({
+        scrollTop: saleWizardOffset - headerHeight
+      }, 1000);
+
+
+    })
+  }
+
+  var blockOffset;
+  $('.sale-wizard__step').on('click', function(e) {
+
+    closeSaleStartsWizardManually();
+
+    var id = $(this).attr('data-wizard-id');
+    var element = $('div[id="' + id + '"]');
+    if (!($(".sale-wizard__step").hasClass("active"))) {
+      blockOffset = element.offset().top;
+    }
+
+    $(".sale-wizard__step").removeClass("active");
+    $(".wizard-descriptions__description").removeClass("active");
+
+    $(this).toggleClass("active");
+    element.toggleClass("active");
+
+    var headerHeight = $("#header").height() + 15;
+
+    $('html, body').animate({
+      scrollTop: blockOffset - headerHeight
+    }, 1000);
+  })
+
+  $(window).on("mousewheel", function(){
+    $('html,body').stop();
+  });
+}
+
 // for bottom countdown
 function bottomCountdownInit() {
   $('#bottom_countdown').countdown('2018/04/05').on('update.countdown', function(event) {
@@ -31984,7 +32035,7 @@ function bottomCountdownInit() {
         + '<span>%M</span>min '
         + '<span>%S</span>sec'));
   });
-}
+} 
 
 function redirectUserToLocalSite() {
   userLang = navigator.language || navigator.userLanguage;

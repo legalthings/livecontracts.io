@@ -10589,7 +10589,8 @@ html body #intercom-container .intercom-launcher-frame {
   background: #9867cf;
   transition: .3s all;
 }
-.sale-progress .sale-progress__bar .sale-progress__bar-element:hover:before {
+.sale-progress .sale-progress__bar .sale-progress__bar-element:hover:before,
+.sale-progress .sale-progress__bar .sale-progress__bar-element.active:before {
   width: 100%;
 }
 
@@ -10598,7 +10599,7 @@ html body #intercom-container .intercom-launcher-frame {
   color: #fff;
   font-weight: 200;
   text-align: center;
-  width: 100%;
+  width: 100%; 
   margin-bottom: 100px;
 }
 
@@ -10681,19 +10682,19 @@ html body #intercom-container .intercom-launcher-frame {
   background: transparent;
 }
 
-.sale-wizard .sale-wizard__step#sale-wizard-1:after {
+.sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-1"]:after {
   content: "1"
 }
-.sale-wizard .sale-wizard__step#sale-wizard-2:after {
+.sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-2"]:after {
   content: "2"
 }
-.sale-wizard .sale-wizard__step#sale-wizard-3:after {
+.sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-3"]:after {
   content: "3"
 }
-.sale-wizard .sale-wizard__step#sale-wizard-4:after {
+.sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-4"]:after {
   content: "4"
 }
-.sale-wizard .sale-wizard__step#sale-wizard-5:after {
+.sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-5"]:after {
   content: ""
 }
 
@@ -10754,8 +10755,53 @@ html body #intercom-container .intercom-launcher-frame {
   color: #fff;
   display: inline-block;
   position: relative;
-  margin-bottom: 45px
+  margin-bottom: 45px;
+}
+.wizard-descriptions .wizard-descriptions__description.active {
+  max-height: 100%;
+  opacity: 1;
+}
+.wizard-descriptions .wizard-descriptions__close-icon span:last-child {
+  transform: rotate(-45deg);
+  top: auto;
+  bottom: 11px;
+}
+.wizard-descriptions .wizard-descriptions__close-icon span {
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 14px;
+  position: absolute;
+  transition: .3s all;
+  left: 5px;
+  top: 11px;
+  transform: rotate(45deg);
+}
+.wizard-descriptions .wizard-descriptions__close:hover
+.wizard-descriptions__close-icon span {
+  transform: rotate(0) !important;
+}
+.wizard-descriptions .wizard-descriptions__close-icon {
+  display: block;
+  width: 24px;
+  border-radius: 50%;
+  height: 24px;
+  border: solid 1px #9867cf;
+  position: relative;
+}
+.wizard-descriptions .wizard-descriptions__close {
+  margin: 30px auto 0;
+  display: flex;
+  font-size: 20px;
+  width: 85px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
 .wizard-descriptions .wizard-descriptions__description {
   width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: .3s all;
 }
