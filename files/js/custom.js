@@ -212,33 +212,37 @@ function usecaseWizard() {
 
 //for wizard in sale starts block
 
+function closeSaleStartsWizardManually() {
+  $(".js-wizard-descriptions-close").on("click", function(e){
+    e.preventDefault();
+    $(".sale-wizard__step").removeClass("active");
+    $(".wizard-descriptions__description").removeClass("active");
+    
+    var headerHeight = $("#header").height() + 15;
+    var saleWizardOffset = $(".sale-wizard").offset().top;
+    
+    $('html, body').animate({
+      scrollTop: saleWizardOffset - headerHeight
+    }, 1000);
+  })
+}
+
 function saleStartsWizard() {
   
-  function closeSaleStartsWizardManually() {
-    $(".js-wizard-descriptions-close").on("click", function(e){
-      e.preventDefault();
-      $(".sale-wizard__step").removeClass("active");
-      $(".wizard-descriptions__description").removeClass("active");
-
-      var headerHeight = $("#header").height() + 15;
-      var saleWizardOffset = $(".sale-wizard").offset().top;
-
-      $('html, body').animate({
-        scrollTop: saleWizardOffset - headerHeight
-      }, 1000);
-
-
-    })
-  }
-
+  closeSaleStartsWizardManually();
+  
   var blockOffset = $(".wizard-descriptions").offset().top;
+  
+  $(window).resize(function () {
+    blockOffset = $(".wizard-descriptions").offset().top;
+  });
+  
   $('.sale-wizard__step').on('click', function(e) {
 
-    closeSaleStartsWizardManually();
-
+ 
     var id = $(this).attr('data-wizard-id');
     var element = $('div[id="' + id + '"]');
-
+ 
 
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");

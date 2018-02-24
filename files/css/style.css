@@ -10451,7 +10451,14 @@ html.lock {
 }
 html body #intercom-container .intercom-launcher-discovery-frame,
 html body #intercom-container .intercom-launcher-frame {
-  bottom: 120px!important;
+  bottom: 90px!important;
+}
+
+@media screen and (max-width: 640px) {
+  html body #intercom-container .intercom-launcher-discovery-frame,
+  html body #intercom-container .intercom-launcher-frame {
+    bottom: 120px!important;
+  }
 }
 
 /* NEW SALE STARTS SECTION */
