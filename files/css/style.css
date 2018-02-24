@@ -10878,7 +10878,7 @@ html body #intercom-container .intercom-launcher-frame {
 /*start for new sale usecases block */
 
 .usecases {
-  padding: 60px 10px 120px;
+  padding: 60px 10px;
   background: #fff;
   width: 100%;
   max-width: 900px;
@@ -10968,7 +10968,7 @@ html body #intercom-container .intercom-launcher-frame {
 
 .usecases__elements {
   position: relative;
-  height: 450px;
+  /*height: 450px;*/
 }
 
 .usecases__elements .usecases__element {
@@ -11051,8 +11051,8 @@ html body #intercom-container .intercom-launcher-frame {
   .usecases__elements .usecases__element-stats .title {
     left: 50%;
     font-size: 50px;
-    transform: translate(-50%, -50%);
-    top: 0;
+    transform: translateX(-50%);
+    top: -10px;
   }
   .usecases__elements .usecases__element-stats .content {
     padding: 20px;
@@ -11068,6 +11068,7 @@ html body #intercom-container .intercom-launcher-frame {
     height: 150px;
     justify-content: center;
     margin-bottom: 30px;
+    margin-right: 0;
   }
   .usecases__elements .usecases__element-desc {
     margin-top: 0;
@@ -11075,5 +11076,16 @@ html body #intercom-container .intercom-launcher-frame {
   .usecases .usecases__navigation-pointer {
     left: 50% !important;
     transform: translateX(-50%) rotate(45deg) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .usecases .usecases__wizard {
+    flex-wrap: wrap;
+    width: 50%;
+    flex-direction: row;
+  }
+  .usecases__elements .usecases__element-desc {
+    text-align: center;
   }
 }

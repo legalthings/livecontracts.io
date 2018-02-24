@@ -174,11 +174,19 @@ $(document).ready(function () {
   });
 });
 
-
+var globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
 
 // for wizard in usecases block
 
 function usecaseWizard() {
+  
+  var height = $(".usecases__element.active").height();
+  $(".usecases__elements").css("height", height)
+  
+  
+  $(window).resize(function () {
+    globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
+  });
   
   $(".usecases__wizard-step").on("click", function(e) {
     
@@ -205,7 +213,29 @@ function usecaseWizard() {
     }
   
     element.addClass("active");
+    height = $(".usecases__element.active").height();
+    $(".usecases__elements").css("height", height);
   
+    var width = $(window).width()
+    $(window).resize(function () {
+      width = $(window).width();
+    })
+    
+    if (width > 480) {
+      
+      var headerHeight = $("#header").height();
+  
+      $('html, body').animate({
+          scrollTop: globalTopOffsetForUsecasesWizard - headerHeight - 15
+        }, 1000);
+    }
+    else if (width <= 480) {
+
+      var headerHeight = $("#header").height() + 15;
+      $('html, body').animate({
+        scrollTop: globalTopOffsetForUsecasesWizard - 100
+      }, 1000);
+    }
   })
 }
 
@@ -215,6 +245,10 @@ function usecaseWizard() {
 function closeSaleStartsWizardManually() {
   $(".js-wizard-descriptions-close").on("click", function(e){
     e.preventDefault();
+  
+    globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top - $(".wizard-descriptions__description.active").height() - 30;
+  
+    $(this).addClass("js-was-clicked");
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
     
@@ -228,7 +262,6 @@ function closeSaleStartsWizardManually() {
 }
 
 function saleStartsWizard() {
-  
   closeSaleStartsWizardManually();
   
   var blockOffset = $(".wizard-descriptions").offset().top;
@@ -238,20 +271,27 @@ function saleStartsWizard() {
   });
   
   $('.sale-wizard__step').on('click', function(e) {
-
- 
+    var closeButton = $(".js-wizard-descriptions-close");
+  
     var id = $(this).attr('data-wizard-id');
     var element = $('div[id="' + id + '"]');
  
 
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
+  
+    if(closeButton.hasClass("js-was-clicked")) {
+      globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top + $(".wizard-descriptions__description.active").height() + 30;
+    }
+    else {
+      globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
+    }
 
     $(this).toggleClass("active");
     element.toggleClass("active");
-
+    
     var headerHeight = $("#header").height() + 15;
-
+    
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight
     }, 1000);
