@@ -213,6 +213,7 @@ function usecaseWizard() {
 //for wizard in sale starts block
 
 function saleStartsWizard() {
+  
   function closeSaleStartsWizardManually() {
     $(".js-wizard-descriptions-close").on("click", function(e){
       e.preventDefault();
@@ -230,16 +231,14 @@ function saleStartsWizard() {
     })
   }
 
-  var blockOffset;
+  var blockOffset = $(".wizard-descriptions").offset().top;
   $('.sale-wizard__step').on('click', function(e) {
 
     closeSaleStartsWizardManually();
 
     var id = $(this).attr('data-wizard-id');
     var element = $('div[id="' + id + '"]');
-    if (!($(".sale-wizard__step").hasClass("active"))) {
-      blockOffset = element.offset().top;
-    }
+
 
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
