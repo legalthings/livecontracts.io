@@ -10875,12 +10875,14 @@ html body #intercom-container .intercom-launcher-frame {
 }
 
 /*end of new sale starts block */
+/*start for new sale usecases block */
 
 .usecases {
   padding: 60px 10px 120px;
   background: #fff;
   width: 100%;
   max-width: 900px;
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -10998,14 +11000,14 @@ html body #intercom-container .intercom-launcher-frame {
 	letter-spacing: 1.2px;
 	color: #9867cf;
   position: absolute;
-  left: 75px;
+  left: 65px;
   top: -15px;
   z-index: 10;
+  padding: 0 10px;
   background: white;
 }
 .usecases__elements .usecases__element-desc .subtitle {
   font-weight: 600;
-
 }
 .usecases__elements .usecases__element-desc {
   margin-top: -25px;
@@ -11043,4 +11045,35 @@ html body #intercom-container .intercom-launcher-frame {
   z-index: 5;
   display: flex;
   align-items: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+  .usecases__elements .usecases__element-stats .title {
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    top: 0;
+  }
+  .usecases__elements .usecases__element-stats .content {
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .usecases__elements .usecases__element {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .usecases__elements .usecases__element-stats {
+    width: 300px;
+    height: 150px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .usecases__elements .usecases__element-desc {
+    margin-top: 0;
+  }
+  .usecases .usecases__navigation-pointer {
+    left: 50% !important;
+    transform: translateX(-50%) rotate(45deg) !important;
+  }
 }
