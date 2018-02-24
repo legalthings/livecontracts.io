@@ -10813,6 +10813,69 @@ html body #intercom-container .intercom-launcher-frame {
   transition: .3s all;
 }
 
+
+@media screen and (max-width: 768px) {
+  .sale-starts {
+    padding: 40px 0;
+  }
+  .sale-starts .title {
+    font-size: 36px;
+    margin-bottom: 120px;
+  }
+
+  .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
+    left: -37px;
+    font-size: 14px;
+  }
+  .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
+    font-size: 14px;
+  }
+  .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-bonus {
+    font-size: 14px;
+  }
+
+  .sale-progress .sale-progress__bar .sale-progress__bar-element:after {
+    height: 49px;
+  }
+  .sale-progress .sale-progress__bar {
+    height: 40px;
+  }
+  .sale-starts .subtitle {
+    margin-bottom: 60px;
+  }
+  .wizard-descriptions .wizard-descriptions__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .wizard-descriptions .wizard-descriptions__subheader,
+  .wizard-descriptions .wizard-descriptions__text
+  {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .wizard-descriptions .wizard-descriptions__list {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sale-starts .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
+    display: none;
+  }
+  .sale-starts .wizard-guide {
+    margin-bottom: 20px;
+  }
+  .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
+    font-size: 12px;
+  }
+}
+
+/*end of new sale starts block */
+
 .usecases {
   padding: 60px 10px 120px;
   background: #fff;
