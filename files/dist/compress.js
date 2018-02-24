@@ -31980,26 +31980,39 @@ $(document).ready(function () {
   $(window).on("mousewheel", function(){
     $('html,body').stop();
   });
+  
 });
 
-var globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
+
+var saleWizardStepHeight = 0;
+var elemOffset = $(".usecases__elements").offset().top;
 
 // for wizard in usecases block
 
+
+$(window).on("click", function () {
+  $(".sale-wizard__step").addClass("clicked-height");
+  if (!($(".sale-wizard__step").hasClass("clicked-height"))) {
+    elemOffset = $(".usecases__elements").offset().top;
+    console.log('---', elemOffset);
+  }
+})
+
 function usecaseWizard() {
   
-  var height = $(".usecases__element.active").height();
-  $(".usecases__elements").css("height", height)
-  
+  var headerHeight = $("#header").height();
   
   $(window).resize(function () {
-    globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
+    elemOffset = $(".usecases__elements").offset().top;
   });
   
+  var height = $(".usecases__element.active").height();
+  $(".usecases__elements").css("height", height);
+  
   $(".usecases__wizard-step").on("click", function(e) {
-    
     e.preventDefault();
-    
+  
+
     var id = $(this).attr("data-usecase-step");
     var element = $('div[id="' + id + '"]');
   
@@ -32019,42 +32032,24 @@ function usecaseWizard() {
     else if(id === "usecase-step-3") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-3")
     }
-  
     element.addClass("active");
+    
     height = $(".usecases__element.active").height();
     $(".usecases__elements").css("height", height);
   
-    var width = $(window).width()
-    $(window).resize(function () {
-      width = $(window).width();
-    })
-    
-    if (width > 480) {
-      
-      var headerHeight = $("#header").height();
+    $('html, body').animate({
+      scrollTop: elemOffset - headerHeight - 50
+    }, 1000);
   
-      $('html, body').animate({
-          scrollTop: globalTopOffsetForUsecasesWizard - headerHeight - 15
-        }, 1000);
-    }
-    else if (width <= 480) {
-
-      var headerHeight = $("#header").height() + 15;
-      $('html, body').animate({
-        scrollTop: globalTopOffsetForUsecasesWizard - 100
-      }, 1000);
-    }
   })
 }
 
 
-//for wizard in sale starts block
+// for wizard in sale starts block 
 
 function closeSaleStartsWizardManually() {
   $(".js-wizard-descriptions-close").on("click", function(e){
     e.preventDefault();
-  
-    globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top - $(".wizard-descriptions__description.active").height() - 30;
   
     $(this).addClass("js-was-clicked");
     $(".sale-wizard__step").removeClass("active");
@@ -32066,7 +32061,13 @@ function closeSaleStartsWizardManually() {
     $('html, body').animate({
       scrollTop: saleWizardOffset - headerHeight
     }, 1000);
+  
+    elemOffset -= $(".wizard-descriptions").height();
+    $(".sale-wizard__step").addClass("clicked-height");
+    console.log('---', elemOffset);
+  
   })
+  
 }
 
 function saleStartsWizard() {
@@ -32079,36 +32080,33 @@ function saleStartsWizard() {
   });
   
   $('.sale-wizard__step').on('click', function(e) {
+  
     var closeButton = $(".js-wizard-descriptions-close");
   
     var id = $(this).attr('data-wizard-id');
     var element = $('div[id="' + id + '"]');
- 
-
+  
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
-  
-    if(closeButton.hasClass("js-was-clicked")) {
-      globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top + $(".wizard-descriptions__description.active").height() + 30;
-    }
-    else {
-      globalTopOffsetForUsecasesWizard = $(".usecases__element.active").offset().top;
-    }
 
     $(this).toggleClass("active");
     element.toggleClass("active");
-  
-  
+    
     var headerHeight = $("#header").height() + 15;
-  
-  
-  
+    
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight
     }, 1000);
+   
+    // if (!($(".sale-wizard__step").hasClass("clicked-height"))) {
+    //   saleWizardStepHeight += $(".wizard-descriptions__description.active").height()
+    //   $(".sale-wizard__step").addClass("clicked-height");
+    // }
+    elemOffset = $(".usecases__elements").offset().top;
+    console.log('---', elemOffset);
+  
   })
-
-
+ 
 }
 
 // for bottom countdown
