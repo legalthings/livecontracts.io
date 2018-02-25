@@ -182,13 +182,13 @@ var elemOffset = $(".usecases__elements").offset().top;
 // for wizard in usecases block
 
 
-$(window).on("click", function () {
-  $(".sale-wizard__step").addClass("clicked-height");
-  if (!($(".sale-wizard__step").hasClass("clicked-height"))) {
-    elemOffset = $(".usecases__elements").offset().top;
-    console.log('---', elemOffset);
-  }
-})
+// $(window).on("click", function () {
+//   $(".sale-wizard__step").addClass("js-clicked-height");
+//   if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
+//     elemOffset = $(".usecases__elements").offset().top;
+//     console.log('---', elemOffset);
+//   }
+// })
 
 function usecaseWizard() {
   
@@ -203,8 +203,7 @@ function usecaseWizard() {
   
   $(".usecases__wizard-step").on("click", function(e) {
     e.preventDefault();
-  
-
+    
     var id = $(this).attr("data-usecase-step");
     var element = $('div[id="' + id + '"]');
   
@@ -224,7 +223,7 @@ function usecaseWizard() {
     else if(id === "usecase-step-3") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-3")
     }
-    element.addClass("active");
+    element.addClass("active js-clicked-height");
     
     height = $(".usecases__element.active").height();
     $(".usecases__elements").css("height", height);
@@ -255,8 +254,9 @@ function closeSaleStartsWizardManually() {
     }, 1000);
   
     elemOffset -= $(".wizard-descriptions").height();
-    $(".sale-wizard__step").addClass("clicked-height");
-    console.log('---', elemOffset);
+    $(".sale-wizard__step").removeClass("js-clicked-height");
+    console.log('---ondelete', elemOffset);
+    console.log('---ondelete', elemOffset);
   
   })
   
@@ -289,11 +289,17 @@ function saleStartsWizard() {
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight
     }, 1000);
-   
-    // if (!($(".sale-wizard__step").hasClass("clicked-height"))) {
-    //   saleWizardStepHeight += $(".wizard-descriptions__description.active").height()
-    //   $(".sale-wizard__step").addClass("clicked-height");
-    // }
+  
+  
+    if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
+      console.log('---', "fired");
+      setTimeout(function () {
+        elemOffset += $(".wizard-descriptions").height();
+        console.log('---asdfafsdfired', elemOffset);
+        $(".sale-wizard__step").addClass("js-clicked-height")
+      }, 300)
+    }
+    
     elemOffset = $(".usecases__elements").offset().top;
     console.log('---', elemOffset);
   
