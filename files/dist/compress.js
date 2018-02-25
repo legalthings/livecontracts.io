@@ -31976,38 +31976,32 @@ $(document).ready(function () {
   saleStartsWizard();
   usecaseWizard();
   
-  //for animation fix
+  //for animation fix after scrolling
   $(window).on("mousewheel", function(){
     $('html,body').stop();
   });
   
 });
 
-
-var saleWizardStepHeight = 0;
+//for usecases wirzard
 var elemOffset = $(".usecases__elements").offset().top;
 
 // for wizard in usecases block
 
-
-// $(window).on("click", function () {
-//   $(".sale-wizard__step").addClass("js-clicked-height");
-//   if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
-//     elemOffset = $(".usecases__elements").offset().top;
-//     console.log('---', elemOffset);
-//   }
-// })
-
 function usecaseWizard() {
   
   var headerHeight = $("#header").height();
+  var height = $(".usecases__element.active").height();
+  $(".usecases__elements").css("height", height);
   
   $(window).resize(function () {
     elemOffset = $(".usecases__elements").offset().top;
+    height = $(".usecases__element.active").height();
+    console.log('---', height);
+    $(".usecases__elements").css("height", height);
   });
   
-  var height = $(".usecases__element.active").height();
-  $(".usecases__elements").css("height", height);
+
   
   $(".usecases__wizard-step").on("click", function(e) {
     e.preventDefault();
@@ -32043,9 +32037,7 @@ function usecaseWizard() {
   })
 }
 
-
-// for wizard in sale starts block 
-
+// for manual wizard closing
 function closeSaleStartsWizardManually() {
   $(".js-wizard-descriptions-close").on("click", function(e){
     e.preventDefault();
@@ -32063,13 +32055,12 @@ function closeSaleStartsWizardManually() {
   
     elemOffset -= $(".wizard-descriptions").height();
     $(".sale-wizard__step").removeClass("js-clicked-height");
-    console.log('---ondelete', elemOffset);
-    console.log('---ondelete', elemOffset);
   
   })
   
 }
 
+// for wizard in sale starts block
 function saleStartsWizard() {
   closeSaleStartsWizardManually();
   
@@ -32097,19 +32088,16 @@ function saleStartsWizard() {
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight
     }, 1000);
-  
-  
+   
     if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
       console.log('---', "fired");
       setTimeout(function () {
         elemOffset += $(".wizard-descriptions").height();
-        console.log('---asdfafsdfired', elemOffset);
         $(".sale-wizard__step").addClass("js-clicked-height")
       }, 300)
     }
     
     elemOffset = $(".usecases__elements").offset().top;
-    console.log('---', elemOffset);
   
   })
  

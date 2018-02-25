@@ -10442,10 +10442,15 @@ html.lock {
   }
   .sticky-bottom .wrapper p {
     width: 100%;
+    font-size: 14px;
     text-align: center;
+  }
+  .sticky-bottom #bottom_countdown {
+    display: block;
   }
   .sticky-bottom .sr-button {
     margin: 10px auto 0;
+    padding: 5px 25px;
   }
 
 }
@@ -10465,7 +10470,7 @@ html body #intercom-container .intercom-launcher-frame {
 
 .sale-starts {
   background: #231d39;
-  padding: 85px 0 60px;
+  /*padding: 85px 0 60px;*/
 }
 
 .sale-starts .title {
@@ -10815,9 +10820,9 @@ html body #intercom-container .intercom-launcher-frame {
 
 
 @media screen and (max-width: 768px) {
-  .sale-starts {
-    padding: 40px 0;
-  }
+  /*.sale-starts {*/
+    /*padding: 40px 0;*/
+  /*}*/
   .sale-starts .title {
     font-size: 36px;
     margin-bottom: 120px;
@@ -10878,7 +10883,6 @@ html body #intercom-container .intercom-launcher-frame {
 /*start for new sale usecases block */
 
 .usecases {
-  padding: 60px 10px;
   background: #fff;
   width: 100%;
   max-width: 900px;
@@ -11082,10 +11086,23 @@ html body #intercom-container .intercom-launcher-frame {
 @media screen and (max-width: 480px) {
   .usecases .usecases__wizard {
     flex-wrap: wrap;
-    width: 50%;
+    width: 80%;
     flex-direction: row;
+    justify-content: center;
   }
   .usecases__elements .usecases__element-desc {
     text-align: center;
+  }
+  .usecases__elements .usecases__element-stats {
+    width: 230px;
+  }
+  .usecases__elements .usecases__element-desc p {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .usecases__elements .usecases__element-desc .subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 17px;
   }
 }
