@@ -64,7 +64,7 @@ gulp.task('compress-css', function () {
 gulp.task('compress-js', function () {
   return gulp.src(
       [
-        'files/js/jquery-2.1.4.min.js',
+        'files/js/jquery_2_2_4.js',
         'files/js/jquery.easing.1.3.js',
         'files/js/jquery.visible.min.js',
         // 'files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0',
@@ -89,12 +89,13 @@ gulp.task('compress-js', function () {
         'files/js/jquery.countdown.min.js',
         'files/js/social.js',
         //
+        'files/js/jquery.countdown.js',
         'files/js/step-form-wizard.min.js',
         'files/js/jquery.mCustomScrollbar.concat.min.js',
         'files/js/d3.js',
         'files/js/custom.js',
         'files/js/billboard.js',
-        'files/js/chart.js',
+        'files/js/chart.js'
       ])
       .pipe(concat('compress.js'))
       .pipe(gulp.dest('./files/dist'));

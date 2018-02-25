@@ -50,6 +50,8 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
   <script>
@@ -66,18 +68,19 @@
   <script>
   var alignment = 'right';
 
-  if (window.innerWidth < 599) {
-    alignment = 'left';
-  } else {
-    alignment = 'right';
-  }
+  // if (window.innerWidth < 599) {
+  //   alignment = 'left';
+  // } else {
+  //   alignment = 'right';
+  // }
 
   window.intercomSettings = {
     app_id: 'g247sp2q',
+    vertical_padding: 110,
     alignment: alignment
   };
 
-  (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
+    (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
       ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
       i.q = [];
       i.c = function(args) { i.q.push(args) };
@@ -147,6 +150,35 @@
       </div>
       <!-- END .header-inner -->
     </header>
+    <!-- HEADER END-->
+
+    <!-- STICKY BOTTOM BAR -->
+      <div class="sticky-bottom">
+        <div class="wrapper">
+        <div class="socialsBlock purpleSection">
+          <ul class="sticky-bottom__socials socialmedia-widget size-huge">
+            <li class="telegram">
+              <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/legalthings" target="_blank"></a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/livecontracts" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <p>Public Sale - April 5th: <span id="bottom_countdown"></span></p>
+        <a class="sr-button inline button-1-ghost button-medium circled">Register now</a>
+        </div>
+
+      </div>
+    <!-- STICKY BOTTOM BAR END -->
+
+
     <!-- HERO  -->
     <section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
       <div id="page-title" class="wrapper align-left">
@@ -154,6 +186,25 @@
         <h3 class="subtitle-1">
             A fair legal system for everyone
           </h3>
+        <div class="spacer-small"></div>
+
+        <p class="hero__buttons">
+          <a class="lc-primary-action sr-button button-1 button-medium circled">
+            Buy LTO Tokens
+          </a>
+          <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
+            Token info
+          </a>
+          <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
+            Read FAQ
+          </a>
+          <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
+              Demo
+            </a> -->
+        </p>
+        <h4 class="subtitle-1">
+          Get an intoduction to LegalThings One - <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch video</a>
+        </h4>
         <div class="spacer-small"></div>
         <div class="icon-box">
           <div class="icon-box-icon">
@@ -165,20 +216,6 @@
           </div>
         </div>
         <div class="spacer-medium"></div>
-        <p class="hero__buttons">
-          <a class="lc-primary-action sr-button button-1 button-medium circled">
-              Buy LTO Tokens
-            </a>
-          <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Token info
-            </a>
-          <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Read FAQ
-            </a>
-          <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-              Demo
-            </a> -->
-        </p>
         <div class="spacer-medium"></div>
         <div class="count-down-wrap hidden">
             <h3><strong>Pre-sale ends in</strong></h3>
@@ -186,13 +223,435 @@
             <div class="count-down" data-end-date=""></div>
         </div>
       </div>
-      </div>
+      <!--</div>-->
       <!-- END #page-title -->
     </section>
     <!-- HERO -->
     <!-- PAGEBODY -->
     <section id="page-body">
       <div>
+        <section class="sale-starts">
+          <div class="wrapper row-section">
+            <h1 class="align-center title">Sale starts April 5th</h1>
+            <div class="sale-progress">
+              <div class="sale-progress__bar">
+                <div class="sale-progress__bar-element sale-progress-1 active">
+                  <div class="sale-progress__bar-label">Funding</div>
+                  <div class="sale-progress__bar-text">Presale</div>
+                  <div class="sale-progress__bar-bonus">Bonus</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-2 active">
+                  <div class="sale-progress__bar-label special-label-1">0 LTO</div>
+                  <div class="sale-progress__bar-text">Stage 1</div>
+                  <div class="sale-progress__bar-bonus">20%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-3">
+                  <div class="sale-progress__bar-label">Level 1<br>16M LTO</div>
+                  <div class="sale-progress__bar-text">Stage 2</div>
+                  <div class="sale-progress__bar-bonus">10%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-4">
+                  <div class="sale-progress__bar-label">Level 2<br>32M LTO</div>
+                  <div class="sale-progress__bar-text">Stage 3</div>
+                  <div class="sale-progress__bar-bonus">5%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-5">
+                  <div class="sale-progress__bar-label">Level 3<br>48M LTO</div>
+                  <div class="sale-progress__bar-label special-label">Level 4<br>64M LTO</div>
+                  <div class="sale-progress__bar-text">Fenita</div>
+                  <div class="sale-progress__bar-bonus">0%</div>
+                </div>
+              </div>
+            </div>
+            <h3 class="align-center subtitle">*disclaimer with some text</h3>
+            <div class="sale-wizard">
+              <div class="line"></div>
+              <div data-wizard-id="sale-wizard-1" class="sale-wizard__step">
+                <span>Level</span>
+              </div>
+              <div data-wizard-id="sale-wizard-2" class="sale-wizard__step active js-clicked-height">
+                <span>Level</span>
+              </div>
+              <div data-wizard-id="sale-wizard-3" class="sale-wizard__step">
+                <span>Level</span>
+              </div>
+              <div data-wizard-id="sale-wizard-4" class="sale-wizard__step">
+                <span>Level</span>
+              </div>
+              <div data-wizard-id="sale-wizard-5" class="sale-wizard__step">
+                <span>End</span>
+              </div>
+            </div>
+            <h5 class="align-center wizard-guide">Click on the number</h5>
+            <div class="wizard-descriptions">
+              <div id="sale-wizard-1" class="wizard-descriptions__description">
+                <div class="wizard-descriptions__title">
+                  Level 1
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__list">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                  <li>item 5</li>
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                  Close
+                  <div class="wizard-descriptions__close-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div id="sale-wizard-2" class="wizard-descriptions__description active">
+                <div class="wizard-descriptions__title">
+                  Level 2
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__list">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                  <li>item 5</li>
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                  Close
+                  <div class="wizard-descriptions__close-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div id="sale-wizard-3" class="wizard-descriptions__description">
+                <div class="wizard-descriptions__title">
+                  Level 3
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__list">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                  <li>item 5</li>
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                  Close
+                  <div class="wizard-descriptions__close-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div id="sale-wizard-4" class="wizard-descriptions__description">
+                <div class="wizard-descriptions__title">
+                  Level 4
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__list">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                  <li>item 5</li>
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                  Close
+                  <div class="wizard-descriptions__close-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+              <div id="sale-wizard-5" class="wizard-descriptions__description">
+                <div class="wizard-descriptions__title">
+                  Level 5
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__list">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                  <li>item 5</li>
+                </div>
+                <div class="wizard-descriptions__subheader">
+                  Subheader
+                </div>
+                <div class="wizard-descriptions__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                   irure dolor in reprehenderit in voluptate velit esse cillum
+                   dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                   cupidatat non proident, sunt in culpa qui officia deserunt
+                   mollit anim id est laborum.
+                </div>
+                <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                  Close
+                  <div class="wizard-descriptions__close-icon">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="usecases">
+          <div class="row-section wrapper">
+          <h2 class="title align-center">Usecases</h2>
+          <div class="usecases__wizard">
+            <div class="usecases__wizard-step active" data-usecase-step="usecase-step-1">
+              <img src="./img/paper.jpg" alt="">
+              <span>Contracts</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-2" data-usecase-step="usecase-step-2">
+              <img src="./img/judge.jpg" alt="">
+              <span>Legislation</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-3" data-usecase-step="usecase-step-3">
+              <img src="./img/house.jpg" alt="">
+              <span>Organization</span>
+            </div> 
+          </div>
+          <div class="usecases__navigation">
+            <div class="usecases__navigation-pointer usecases__navigation-1"></div>
+          </div>
+          <div class="usecases__elements">
+            <div class="usecases__element active" id="usecase-step-1">
+              <div class="usecases__element-stats">
+                <div class="title">$2.5b</div>
+                <div class="content">
+                  Annual Spend on contracting
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   Duis aute irure dolor in reprehenderit in voluptate velit
+                   esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                   occaecat cupidatat non proident, sunt in culpa qui officia
+                   deserunt mollit anim id est laborum.
+                 </p>
+                 <div class="subtitle">Subheader</div>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna
+                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-2">
+              <div class="usecases__element-stats">
+                <div class="title">$3.5b</div>
+                <div class="content">
+                  Another text
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   Duis aute irure dolor in reprehenderit in voluptate velit
+                   esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                   occaecat cupidatat non proident, sunt in culpa qui officia
+                   deserunt mollit anim id est laborum.
+                 </p>
+                 <div class="subtitle">Subheader</div>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna
+                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-3">
+              <div class="usecases__element-stats">
+                <div class="title">$1.5b</div>
+                <div class="content">
+                 TITLE
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                   ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                   Duis aute irure dolor in reprehenderit in voluptate velit
+                   esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                   occaecat cupidatat non proident, sunt in culpa qui officia
+                   deserunt mollit anim id est laborum.
+                 </p>
+                 <div class="subtitle">Subheader</div>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                   sed do eiusmod tempor incididunt ut labore et dolore magna
+                   aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+              </div>
+            </div>
+
+          </div>
+          </div>
+
+        </section>
         <!--<div class="digitaze-block">-->
         <!--<div class="spacer-big"></div>-->
         <!--<div class="wrapper">-->
@@ -890,44 +1349,44 @@
       <a class="sr-button button-medium button-1 circled" href="./customers.html">
         View our customers
       </a>
-      <div class="logo serving-companies text-dark wrapper">
-        <div class="column-section no-left-margin wrapper clearfix">
-          <div class="column one-fourth">
-            <img src="img/logo_1.jpg" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/customers/merin-logo.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_3.png" alt="social">
-          </div>
-          <div class="column one-fourth last-col">
-            <img class="greyscaled-image" src="img/logo_4.png" alt="social">
-          </div>
-        </div>
-        <div class="column-section no-left-margin wrapper clearfix">
-          <div class="column one-fourth">
-            <img src="img/logo_5.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_6.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_7.png" alt="social">
-          </div>
-          <div class="column one-fourth last-col">
-            <img src="img/logo_8.png" alt="social">
-          </div>
-        </div>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg">
-          <defs>
-            <filter id="blur-filter">
-              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-            </filter>
-          </defs>
-        </svg>
-        <div class="overlay"></div>
-      </div>
+      <!--<div class="logo serving-companies text-dark wrapper">-->
+        <!--<div class="column-section no-left-margin wrapper clearfix">-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/logo_1.jpg" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/customers/merin-logo.png" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/logo_3.png" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth last-col">-->
+            <!--<img class="greyscaled-image" src="img/logo_4.png" alt="social">-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<div class="column-section no-left-margin wrapper clearfix">-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/logo_5.png" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/logo_6.png" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth">-->
+            <!--<img src="img/logo_7.png" alt="social">-->
+          <!--</div>-->
+          <!--<div class="column one-fourth last-col">-->
+            <!--<img src="img/logo_8.png" alt="social">-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg">-->
+          <!--<defs>-->
+            <!--<filter id="blur-filter">-->
+              <!--<feGaussianBlur stdDeviation="3"></feGaussianBlur>-->
+            <!--</filter>-->
+          <!--</defs>-->
+        <!--</svg>-->
+        <!--<div class="overlay"></div>-->
+      <!--</div>-->
     </div>
     <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
       <div class="wrapper">
@@ -2111,5 +2570,7 @@
         twq('track','PageView');
     </script>
     <!-- End Twitter universal website tag code -->
+
+
 </body>
 </html>
