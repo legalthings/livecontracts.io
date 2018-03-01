@@ -319,8 +319,8 @@
           <strong>Descubra o LegalThings One</strong>
         </h2>
       </div>
-      <!-- END .fullwidth-section -->
-      <div class="fullwidth-contenZ wrapper align-center">
+      <!-- END .fullwidth-section --> 
+      <div class="fullwidth-conten discover-section wrapper align-center">
         <!--<div class="loading">-->
         <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
         <!--</div>-->
@@ -329,7 +329,8 @@
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/power-to-the-people.jpg">
+                 <i class="blog-media__icon icon-intro"></i>
+                   <!-- <img src="./img/power-to-the-people.jpg"> -->
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -353,7 +354,8 @@
             <div class="blog-media">
               <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/livecontracts-whitepaper.png">
+                 <!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
+                 <i class="blog-media__icon icon-whitepaper"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -376,7 +378,8 @@
             <div class="blog-media">
               <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/presentation_stanford.png">
+                 <!-- <img src="./img/explore/presentation_stanford.jpg"> -->
+                 <i class="blog-media__icon icon-intro"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -395,13 +398,12 @@
               </p>
             </div>
           </div>
-        </div>
-        <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
           <div class="isotope-item blog-item">
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/checkout-summery.png">
+                 <!-- <img src="./img/explore/checkout-summery.png"> -->
+                 <i class="blog-media__icon icon-buying"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -425,7 +427,8 @@
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/smartorlivecontracts.png">
+                 <!-- <img src="./img/explore/smartorlivecontracts.png"> -->
+                 <i class="blog-media__icon icon-limit"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -448,7 +451,8 @@
           <div class="isotope-item blog-item">
             <div class="blog-media">
               <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                <img src="./img/explore/contract-as-automaton.png">
+                <!-- <img src="./img/explore/contract-as-automaton.png"> -->
+                <i class="blog-media__icon icon-contract"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -2150,7 +2154,7 @@
   </div>
 </div>
 <!-- SCRIPTS -->
-<script src="files/dist/compress.js"></script>
+<script src="files/dist/compress.min.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
 

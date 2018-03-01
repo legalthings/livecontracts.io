@@ -8405,6 +8405,27 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
   align-items: center;
 }
 
+.blog-media .blog-media__icon {
+  font-size: 60px;
+  color: #9067c6;
+  display: block;
+}
+
+
+
+.discover-section .blog-media {
+  display: flex;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+  .discover-section #blog-grid .blog-item:nth-of-type(3n) {
+    /* margin-right: 0; */
+  }
+}
+
 .portfolio-container .isotope-item .isotope-item__title {
   margin: 10px 0;
 }
@@ -9208,6 +9229,10 @@ html.lock {
   padding-bottom: 15px;
 }
 
+
+.tokensSale-section {
+  display: none;
+}
 /* New timeline */
 
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
@@ -9241,6 +9266,7 @@ html.lock {
 
 .timeline-block {
   position: relative;
+  display: none;
 }
 
 .timeline:before {
@@ -9257,12 +9283,13 @@ html.lock {
   padding: 40px 0;
   opacity: .3;
   filter: blur(2px);
-  transition: .5s;
+  transition: .3s ease margin-top, .3s ease opacity;
   box-sizing: border-box;
   width: calc(50% - 40px);
   display: flex;
   position: relative;
-  transform: translateY(-80px);
+  margin-top: -10px;
+  /*transform: translateY(-80px);*/
 }
 
 .timeline-item:before {
@@ -9297,7 +9324,8 @@ html.lock {
 
 .timeline-item--active {
   opacity: 1;
-  transform: translateY(0);
+  margin-top: 0;
+  /*transform: translateY(0);*/
   filter: blur(0px);
 }
 
@@ -9343,7 +9371,7 @@ html.lock {
   height: 100%;
   background-size: cover;
   background-attachment: fixed;
-  transition: .3s ease 0s;
+  transition: .2s ease 0s;
 }
 
 .timeline-header {
@@ -10137,6 +10165,7 @@ html.lock {
 
 .socialsBlock.purpleSection {
   background: transparent;
+  display: none;
 }
 
 @media only screen and (max-width: 649px) {
@@ -10620,7 +10649,7 @@ html body #intercom-container .intercom-launcher-frame {
   height: 70px;
   position: relative;
   display: flex;
-  max-width: 1110px;
+  max-width: 750px;
   margin: 0 auto 35px;
   justify-content: space-between;
 }

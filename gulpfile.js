@@ -9,17 +9,31 @@ var del = require('del');
 // var uglify = require('gulp-uglify');
 
 var pump = require('pump');
-const minify = require("gulp-babel-minify");
+// var minify = require("gulp-babel-minify");
+var minify = require('gulp-minify');
 
-gulp.task("minify-js", () =>
-    gulp.src("./files/dist/*.js")
-        .pipe(minify({
-          mangle: {
-            keepClassName: true
-          }
-        }))
-        .pipe(gulp.dest(".files/dist"))
-);
+gulp.task('minify-js', function() {
+  gulp.src('./files/js/compress.js')
+    .pipe(minify({
+        ext: {
+          min:'.min.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('./files/dist'))
+});
+
+//
+// gulp.task("minify-js", () =>
+//     gulp.src("./files/dist/*.js")
+//         .pipe(minify({
+//           mangle: {
+//             keepClassName: true
+//           }
+//         }))
+//         .pipe(gulp.dest(".files/dist"))
+// );
 
 
 gulp.task('minify-css', function () {
@@ -37,7 +51,7 @@ gulp.task('minify-css', function () {
 // 			},
 // 			exclude: ['tasks'],
 // 			ignoreFiles: ['.combo.js', '-min.js']
-// 		}))
+// 		})) 
 // 		.pipe(gulp.dest('./files/dist'))
 // });
 
@@ -47,6 +61,7 @@ gulp.task('compress-css', function () {
     'files/css/style.css',
     'files/css/font-awesome.min.css',
     'files/css/ionicons.css',
+    'files/css/icomoon.css',
     // 'files/revolution/css/settings.css',
     // 'files/revolution/css/layers.css',
     // 'files/revolution/css/navigation.css',
@@ -98,7 +113,7 @@ gulp.task('compress-js', function () {
         'files/js/chart.js'
       ])
       .pipe(concat('compress.js'))
-      .pipe(gulp.dest('./files/dist'));
+      .pipe(gulp.dest('./files/js'));
 });
 
 gulp.task('clean:dist', function () {
@@ -107,7 +122,7 @@ gulp.task('clean:dist', function () {
 
 
 gulp.task('default', function (callback) {
-  runSequence('clean:dist', 'compress-js', 'compress-css', 'minify-css',
+  runSequence('clean:dist', 'compress-css', 'minify-css', 'compress-js', 'minify-js',
       callback
   )
 });

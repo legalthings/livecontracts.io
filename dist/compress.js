@@ -32084,7 +32084,7 @@ function saleStartsWizard() {
     element.toggleClass("active");
 
     var headerHeight = $("#header").height() + 15;
-    var CONST_FOR_WIZARD_OFFSET = $(".sale-wizard").height() + 55
+    var CONST_FOR_WIZARD_OFFSET = $(".sale-wizard").height() + 35
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight - CONST_FOR_WIZARD_OFFSET
     }, 1000);
@@ -32095,7 +32095,7 @@ function saleStartsWizard() {
         $(".sale-wizard__step").addClass("js-clicked-height")
       }, 300)
     }
- 
+
     elemOffset = $(".usecases__elements").offset().top;
 
   })
