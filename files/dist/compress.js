@@ -31742,10 +31742,10 @@ $(document).ready(function () {
 var windowWidthForUsecase = $(window).width();
 
 if (windowWidthForUsecase > 480) {
-  var elemOffset = $(".usecases__wizard").offset().top;
+  var elemOffset = $(".usecases__wizard").offset().top - 15;
 }
 else if (windowWidthForUsecase <= 480) {
-  var elemOffset = $(".usecases__elements").offset().top ;
+  var elemOffset = $(".usecases__elements").offset().top - 50;
 }
 
 $(window).resize(function () {
@@ -31755,7 +31755,7 @@ $(window).resize(function () {
 
 function offsetForUsecaseSetter(width) {
   if (width > 480) {
-    elemOffset = $(".usecases__wizard").offset().top;
+    elemOffset = $(".usecases__wizard").offset().top - 15;
   }
   else if (width <= 480) {
     elemOffset = $(".usecases__elements").offset().top - 50;
