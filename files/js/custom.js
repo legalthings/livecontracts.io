@@ -172,11 +172,34 @@ $(document).ready(function () {
   $(window).on("mousewheel", function(){
     $('html,body').stop();
   });
+  
 
 });
 
 //for usecases wirzard
-var elemOffset = $(".usecases__elements").offset().top;
+var windowWidthForUsecase = $(window).width();
+
+if (windowWidthForUsecase > 480) {
+  var elemOffset = $(".usecases__wizard").offset().top;
+}
+else if (windowWidthForUsecase <= 480) {
+  var elemOffset = $(".usecases__elements").offset().top ;
+}
+
+$(window).resize(function () {
+  windowWidthForUsecase = $(window).width();
+  offsetForUsecaseSetter(windowWidthForUsecase)
+});
+
+function offsetForUsecaseSetter(width) {
+  if (width > 480) {
+    elemOffset = $(".usecases__wizard").offset().top;
+  }
+  else if (width <= 480) {
+    elemOffset = $(".usecases__elements").offset().top - 50;
+  }
+}
+
 
 // for wizard in usecases block
 
@@ -187,9 +210,7 @@ function usecaseWizard() {
   $(".usecases__elements").css("height", height);
 
   $(window).resize(function () {
-    elemOffset = $(".usecases__elements").offset().top;
     height = $(".usecases__element.active").height();
-    console.log('---', height);
     $(".usecases__elements").css("height", height);
   });
 
@@ -200,7 +221,7 @@ function usecaseWizard() {
 
     var id = $(this).attr("data-usecase-step");
     var element = $('div[id="' + id + '"]');
-
+ 
     $(".usecases__wizard-step").removeClass("active");
     $(".usecases__element").removeClass("active");
     $(".usecases__navigation-pointer").removeClass("usecases__navigation-1 usecases__navigation-2 usecases__navigation-3");
@@ -221,9 +242,8 @@ function usecaseWizard() {
 
     height = $(".usecases__element.active").height();
     $(".usecases__elements").css("height", height);
-
     $('html, body').animate({
-      scrollTop: elemOffset - headerHeight - 50
+      scrollTop: elemOffset - headerHeight
     }, 1000);
 
   })
@@ -287,8 +307,8 @@ function saleStartsWizard() {
         $(".sale-wizard__step").addClass("js-clicked-height")
       }, 300)
     }
- 
-    elemOffset = $(".usecases__elements").offset().top;
+  
+    offsetForUsecaseSetter(windowWidthForUsecase)
 
   })
 
@@ -296,7 +316,7 @@ function saleStartsWizard() {
 
 // for bottom countdown
 function bottomCountdownInit() {
-  $('#bottom_countdown').countdown('2018/04/05').on('update.countdown', function(event) {
+  $('#bottom_countdown').countdown('2018/04/05', function(event) {
     var $this = $(this).html(event.strftime(''
         + '<span>%-w</span>week%!w '
         + '<span>%-d</span>day%!d '

@@ -10490,8 +10490,12 @@ html body #intercom-container .intercom-launcher-frame {
 
 @media screen and (max-width: 640px) {
   html body #intercom-container .intercom-launcher-discovery-frame,
-  html body #intercom-container .intercom-launcher-frame {
+  html body #intercom-container .intercom-launcher-frame,
+  {
     bottom: 120px!important;
+  }
+  #intercom-container .intercom-launcher-badge-frame {
+    bottom: 165px !important;
   }
 }
 
