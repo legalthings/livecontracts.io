@@ -179,17 +179,26 @@ $(document).ready(function () {
 //for usecases wirzard
 var windowWidthForUsecase = $(window).width();
 
+
 if (windowWidthForUsecase > 480) {
-  var elemOffset = $(".usecases__wizard").offset().top - 15;
+  var CONST_INIT_HEIGHT = Number($(".wizard-descriptions__description.active").height())
+  var elemOffset = $(".usecases__wizard").offset().top - 15 + CONST_INIT_HEIGHT;
+  
 }
 else if (windowWidthForUsecase <= 480) {
-  var elemOffset = $(".usecases__elements").offset().top - 50;
+  var CONST_INIT_HEIGHT = Number($(".wizard-descriptions__description.active").height())
+  var elemOffset = $(".usecases__elements").offset().top - 50 + CONST_INIT_HEIGHT;
+  
 }
 
 $(window).resize(function () {
   windowWidthForUsecase = $(window).width();
   offsetForUsecaseSetter(windowWidthForUsecase)
 });
+
+$(window).click(function () {
+  console.log('---', elemOffset);
+})
 
 function offsetForUsecaseSetter(width) {
   if (width > 480) {
@@ -265,9 +274,9 @@ function closeSaleStartsWizardManually() {
       scrollTop: saleWizardOffset - headerHeight
     }, 1000);
 
-    elemOffset -= $(".wizard-descriptions").height();
+    elemOffset -= Number($(".wizard-descriptions").css('height').slice(0, -2));
     $(".sale-wizard__step").removeClass("js-clicked-height");
-    $(".sale-starts").css("padding-bottom", 0)
+    $(".wizard-descriptions").css("height", 0)
   })
 
 }
@@ -279,11 +288,11 @@ function saleStartsWizard() {
   var blockOffset = $(".wizard-descriptions").offset().top;
   
   var initPaddingBottom= $(".wizard-descriptions__description.active").height() + 64;
-  $(".sale-starts").css("padding-bottom", initPaddingBottom)
+  $(".wizard-descriptions").css("height", initPaddingBottom)
   
   $(window).resize(function () {
     initPaddingBottom = $(".wizard-descriptions__description.active").height();
-    $(".sale-starts").css("padding-bottom", initPaddingBottom);
+    $(".wizard-descriptions").css("height", initPaddingBottom);
     blockOffset = $(".wizard-descriptions").offset().top;
   });
   
@@ -302,7 +311,7 @@ function saleStartsWizard() {
     
     setTimeout(function () {
       var heightForPadd = $(".wizard-descriptions__description.active").height() + 64;
-      $(".sale-starts").css("padding-bottom", heightForPadd)
+      $(".wizard-descriptions").css("height", heightForPadd)
     }, 100)
     
     var headerHeight = $("#header").height() + 15;
@@ -313,9 +322,12 @@ function saleStartsWizard() {
 
     if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
       setTimeout(function () {
-        elemOffset += $(".wizard-descriptions").height();
+        console.log('---', elemOffset);
+        console.log('---', "fired");
+  
+        elemOffset += Number($(".wizard-descriptions").css('height').slice(0, -2));
         $(".sale-wizard__step").addClass("js-clicked-height")
-      }, 300)
+      }, 1000)
     }
   
     offsetForUsecaseSetter(windowWidthForUsecase)

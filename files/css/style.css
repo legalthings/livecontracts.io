@@ -10505,7 +10505,6 @@ html body #intercom-container .intercom-launcher-frame {
 
 .sale-starts {
   background: #231d39;
-  transition: .6s all;
   /*padding: 85px 0 60px;*/
 }
 
@@ -10757,6 +10756,7 @@ html body #intercom-container .intercom-launcher-frame {
   width: 100%;
   display: block;
   max-width: 1110px;
+  transition: .6s all;
 }
 .wizard-descriptions .wizard-descriptions__title:after {
   display: block;
