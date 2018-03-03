@@ -10505,6 +10505,7 @@ html body #intercom-container .intercom-launcher-frame {
 
 .sale-starts {
   background: #231d39;
+  transition: .6s all;
   /*padding: 85px 0 60px;*/
 }
 
@@ -10804,10 +10805,7 @@ html body #intercom-container .intercom-launcher-frame {
   position: relative;
   margin-bottom: 45px;
 }
-.wizard-descriptions .wizard-descriptions__description.active {
-  max-height: 100%;
-  opacity: 1;
-}
+
 .wizard-descriptions .wizard-descriptions__close-icon span:last-child {
   transform: rotate(-45deg);
   top: auto;
@@ -10846,13 +10844,19 @@ html body #intercom-container .intercom-launcher-frame {
   color: #fff;
 }
 .wizard-descriptions .wizard-descriptions__description {
-  width: 100%;
-  max-height: 0;
+  width: calc(100% - 80px);
   overflow: hidden;
+  max-width: 1200px;
+  left: -100%;
   opacity: 0;
-  transition: .3s all;
+  transition: .6s all;
+  position: absolute;
 }
-
+.wizard-descriptions .wizard-descriptions__description.active {
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 @media screen and (max-width: 768px) {
   /*.sale-starts {*/

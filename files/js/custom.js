@@ -267,7 +267,7 @@ function closeSaleStartsWizardManually() {
 
     elemOffset -= $(".wizard-descriptions").height();
     $(".sale-wizard__step").removeClass("js-clicked-height");
-
+    $(".sale-starts").css("padding-bottom", 0)
   })
 
 }
@@ -277,11 +277,16 @@ function saleStartsWizard() {
   closeSaleStartsWizardManually();
 
   var blockOffset = $(".wizard-descriptions").offset().top;
-
+  
+  var initPaddingBottom= $(".wizard-descriptions__description.active").height() + 64;
+  $(".sale-starts").css("padding-bottom", initPaddingBottom)
+  
   $(window).resize(function () {
+    initPaddingBottom = $(".wizard-descriptions__description.active").height();
+    $(".sale-starts").css("padding-bottom", initPaddingBottom);
     blockOffset = $(".wizard-descriptions").offset().top;
   });
-
+  
   $('.sale-wizard__step').on('click', function(e) {
 
     var closeButton = $(".js-wizard-descriptions-close");
@@ -292,11 +297,16 @@ function saleStartsWizard() {
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
 
-    $(this).toggleClass("active");
-    element.toggleClass("active");
-
+    $(this).addClass("active");
+    element.addClass("active");
+    
+    setTimeout(function () {
+      var heightForPadd = $(".wizard-descriptions__description.active").height() + 64;
+      $(".sale-starts").css("padding-bottom", heightForPadd)
+    }, 100)
+    
     var headerHeight = $("#header").height() + 15;
-    var CONST_FOR_WIZARD_OFFSET = $(".sale-wizard").height() + 55
+    var CONST_FOR_WIZARD_OFFSET = $(".sale-wizard").height() + 55;
     $('html, body').animate({
       scrollTop: blockOffset - headerHeight - CONST_FOR_WIZARD_OFFSET
     }, 1000);
