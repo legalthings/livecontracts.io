@@ -31729,7 +31729,7 @@ $(document).ready(function () {
   bottomCountdownInit();
   saleStartsWizard();
   usecaseWizard();
-
+  saleStartsProgressBar();
   //for animation fix after scrolling
   $(window).on("mousewheel", function(){
     $('html,body').stop();
@@ -31737,6 +31737,16 @@ $(document).ready(function () {
   
 
 });
+
+//for interaction with prrogress bar in Sale starts
+
+function saleStartsProgressBar() {
+  $(".sale-progress__bar-element").on('click', function () {
+    $(this).addClass("active")
+    $(this).nextAll().removeClass("active")
+    $(this).prevAll().addClass("active")
+  })
+}
 
 //for usecases wirzard
 var windowWidthForUsecase = $(window).width();

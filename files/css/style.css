@@ -10517,13 +10517,15 @@ html body #intercom-container .intercom-launcher-frame {
 .sale-progress {
   width: 100%;
   display: block;
+  max-width: 800px;
+  margin: 0 auto;
   background: transparent;
 }
 .sale-progress .sale-progress__bar {
   width: 100%;
   background: transparent;
   display: flex;
-  height: 50px;
+  height: 43px;
   border-radius: 30px;
   border: solid 2px #9867cf;
   margin-bottom: 80px;
@@ -10580,6 +10582,7 @@ html body #intercom-container .intercom-launcher-frame {
 .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
   font-size: 20px;
   color: #231d39;
+  transition: .3s all;
   z-index: 5;
   position: relative;
 }
@@ -10592,12 +10595,10 @@ html body #intercom-container .intercom-launcher-frame {
   border-radius: 30px 0 0 30px;
   left: 5px;
 }
-.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child:hover:before {
+.sale-progress .sale-progress__bar .sale-progress__bar-element:last-child.active:before {
   width: calc(100% - 5px);
 }
-.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child:hover:before,
-.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child.active:before
- {
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-child.active:before {
   width: calc(100% - 5px);
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:last-child {
@@ -10623,7 +10624,10 @@ html body #intercom-container .intercom-launcher-frame {
   background: #fff;
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:hover {
-  box-shadow: inset 0px 0px 0px 5px rgba(59,44,85,1);
+  cursor: pointer;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:not(.active):hover .sale-progress__bar-text {
+  color: #9867cf;
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:before {
   position: absolute;
@@ -10636,7 +10640,6 @@ html body #intercom-container .intercom-launcher-frame {
   background: #9867cf;
   transition: .3s all;
 }
-.sale-progress .sale-progress__bar .sale-progress__bar-element:hover:before,
 .sale-progress .sale-progress__bar .sale-progress__bar-element.active:before {
   width: 100%;
 }
@@ -10873,6 +10876,7 @@ html body #intercom-container .intercom-launcher-frame {
   }
   .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
     font-size: 14px;
+    transition: .3s all;
   }
   .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-bonus {
     font-size: 14px;
