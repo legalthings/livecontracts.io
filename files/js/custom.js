@@ -188,7 +188,6 @@ if (windowWidthForUsecase > 480) {
 else if (windowWidthForUsecase <= 480) {
   var CONST_INIT_HEIGHT = Number($(".wizard-descriptions__description.active").height())
   var elemOffset = $(".usecases__elements").offset().top - 50 + CONST_INIT_HEIGHT;
-  
 }
 
 $(window).resize(function () {
@@ -196,9 +195,8 @@ $(window).resize(function () {
   offsetForUsecaseSetter(windowWidthForUsecase)
 });
 
-$(window).click(function () {
-  console.log('---', elemOffset);
-})
+
+
 
 function offsetForUsecaseSetter(width) {
   if (width > 480) {
@@ -322,9 +320,6 @@ function saleStartsWizard() {
 
     if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
       setTimeout(function () {
-        console.log('---', elemOffset);
-        console.log('---', "fired");
-  
         elemOffset += Number($(".wizard-descriptions").css('height').slice(0, -2));
         $(".sale-wizard__step").addClass("js-clicked-height")
       }, 1000)
@@ -920,7 +915,6 @@ var waves_server = 'https://waves.legalthings.io';
 function scrollToBlock() {
   $('.js-scrollToBlock').on('click', function (e) {
     e.preventDefault();
-    // console.log($(this).attr('href'))
     var blockOffset = $($(this).attr('href')).offset().top;
 
     $('html, body').animate({
