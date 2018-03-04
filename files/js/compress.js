@@ -31743,11 +31743,18 @@ $(document).ready(function () {
 //function dedicated for bounty program section
 
 function bountyWizard() {
-  var initHeight = $(".bounty-elements__element.active").height();
+  var activeBlockHeight = $(".bounty-elements__element.active").height();
   var parentBlock = $(".bounty-elements");
-  parentBlock.height(initHeight)
+  parentBlock.height(activeBlockHeight)
+  
+  $(window).resize(function () {
+    activeBlockHeight = $(".bounty-elements__element.active").height();
+    parentBlock.height(activeBlockHeight)
+  })
   
   $('.bounty-wizard__step').on('click', function(e) {
+  
+  
     e.preventDefault();
     var id = $(this).attr('data-bounty-id');
     var element = $('div[id="' + id + '"]');
@@ -31757,7 +31764,11 @@ function bountyWizard() {
     
     $(this).addClass("active");
     element.addClass("active");
-    
+  
+    var activeBlockHeight = $(".bounty-elements__element.active").height();
+    parentBlock.height(activeBlockHeight)
+  
+  
   })
   
 }

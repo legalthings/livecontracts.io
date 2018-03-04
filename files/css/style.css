@@ -10533,18 +10533,17 @@ html.lock {
 }
 html body #intercom-container .intercom-launcher-discovery-frame,
 html body #intercom-container .intercom-launcher-frame {
-  bottom: 90px!important;
+  bottom: 90px !important;
 }
-#intercom-container .intercom-launcher-badge-frame {
+html body #intercom-container .intercom-launcher-badge-frame {
   bottom: 135px !important;
 }
 @media screen and (max-width: 640px) {
   html body #intercom-container .intercom-launcher-discovery-frame,
-  html body #intercom-container .intercom-launcher-frame,
-  {
-    bottom: 120px!important;
+  html body #intercom-container .intercom-launcher-frame {
+    bottom: 120px !important;
   }
-  #intercom-container .intercom-launcher-badge-frame {
+  html body #intercom-container .intercom-launcher-badge-frame {
     bottom: 165px !important;
   }
 }
@@ -11229,16 +11228,20 @@ html body #intercom-container .intercom-launcher-frame {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .bounty-elements {
   max-width: 860px;
-  padding: 0 20px;
   width: 100%;
   text-align: center;
   margin: 0 auto;
   position: relative;
+  transition: .3s height;
+}
+
+.bounty-elements__img {
+  margin-bottom: 60px;
 }
 
 .bounty-elements__element.active {
@@ -11262,6 +11265,26 @@ html body #intercom-container .intercom-launcher-frame {
   text-align: center;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 640px) {
+  .bounty-wizard .bounty-wizard__step:last-of-type {
+    margin-bottom: 0;
+  }
+  .bounty-wizard .bounty-wizard__step {
+    width: 100%;
+    margin: 0 0 15px 0;
+  }
+  .bounty-wizard {
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+  .bounty-elements__img {
+    margin-bottom: 20px;
+  }
+  .bounty-elements__text {
+    line-height: 1.2;
+  }
 }
 
 
