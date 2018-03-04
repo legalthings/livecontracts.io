@@ -150,6 +150,12 @@ $(document).ready(function () {
       $('#show-more').text('More team members');
     }
   });
+  
+  bottomCountdownInit();
+  saleStartsWizard();
+  usecaseWizard();
+  saleStartsProgressBar();
+  bountyWizard();
 
   eventForMobileTooltip();
   // populateExploreBlock();
@@ -164,11 +170,7 @@ $(document).ready(function () {
   initWalletChoice();
   createWavesWallet();
   handlePayment();
-  bottomCountdownInit();
-  saleStartsWizard();
-  usecaseWizard();
-  saleStartsProgressBar();
-  bountyWizard();
+
   //for animation fix after scrolling
   $(window).on("mousewheel", function(){
     $('html,body').stop();
@@ -181,11 +183,9 @@ $(document).ready(function () {
 //function dedicated for bounty program section
 
 function bountyWizard() {
-    var activeBlockHeight = $(".bounty-elements__element.active").height();
-    var parentBlock = $(".bounty-elements");
-    parentBlock.height(activeBlockHeight)
-
-  
+  var activeBlockHeight = $(".bounty-elements__element.active").height();
+  var parentBlock = $(".bounty-elements");
+  parentBlock.height(activeBlockHeight)
   $(window).resize(function () {
     activeBlockHeight = $(".bounty-elements__element.active").height();
     parentBlock.height(activeBlockHeight)

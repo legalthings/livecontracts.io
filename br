@@ -244,6 +244,428 @@
   <!-- PAGEBODY -->
   <section id="page-body">
     <div>
+      <section class="sale-starts">
+        <div class="wrapper row-section">
+          <h1 class="align-center title">Sale starts April 5th</h1>
+          <div class="sale-progress">
+            <div class="sale-progress__bar">
+              <div class="sale-progress__bar-element sale-progress-1 active">
+                <div class="sale-progress__bar-label">Funding</div>
+                <div class="sale-progress__bar-text">Presale</div>
+                <div class="sale-progress__bar-bonus">Bonus</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-2 active">
+                <div class="sale-progress__bar-label special-label-1">0 LTO</div>
+                <div class="sale-progress__bar-text">Stage 1</div>
+                <div class="sale-progress__bar-bonus">20%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-3">
+                <div class="sale-progress__bar-label">Level 1<br>16M LTO</div>
+                <div class="sale-progress__bar-text">Stage 2</div>
+                <div class="sale-progress__bar-bonus">10%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-4">
+                <div class="sale-progress__bar-label">Level 2<br>32M LTO</div>
+                <div class="sale-progress__bar-text">Stage 3</div>
+                <div class="sale-progress__bar-bonus">5%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-5">
+                <div class="sale-progress__bar-label">Level 3<br>48M LTO</div>
+                <div class="sale-progress__bar-label special-label">Level 4<br>64M LTO</div>
+                <div class="sale-progress__bar-text">Fenita</div>
+                <div class="sale-progress__bar-bonus">0%</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="align-center subtitle">*disclaimer with some text</h3>
+          <div class="sale-wizard">
+            <div class="line"></div>
+            <div data-wizard-id="sale-wizard-1" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-2" class="sale-wizard__step active js-clicked-height">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-3" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-4" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-5" class="sale-wizard__step">
+              <span>End</span>
+            </div>
+          </div>
+          <h5 class="align-center wizard-guide">Click on the number</h5>
+          <div class="wizard-descriptions">
+            <div id="sale-wizard-1" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 1
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-2" class="wizard-descriptions__description active">
+              <div class="wizard-descriptions__title">
+                Level 2
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-3" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 3
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-4" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 4
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-5" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 5
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="usecases">
+        <div class="row-section wrapper">
+          <h2 class="title align-center">Usecases</h2>
+          <div class="usecases__wizard">
+            <div class="usecases__wizard-step active" data-usecase-step="usecase-step-1">
+              <img src="./img/paper.jpg" alt="">
+              <span>Contracts</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-2" data-usecase-step="usecase-step-2">
+              <img src="./img/judge.jpg" alt="">
+              <span>Legislation</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-3" data-usecase-step="usecase-step-3">
+              <img src="./img/house.jpg" alt="">
+              <span>Organization</span>
+            </div>
+          </div>
+          <div class="usecases__navigation">
+            <div class="usecases__navigation-pointer usecases__navigation-1"></div>
+          </div>
+          <div class="usecases__elements">
+            <div class="usecases__element active" id="usecase-step-1">
+              <div class="usecases__element-stats">
+                <div class="title">$2.5b</div>
+                <div class="content">
+                  Annual Spend on contracting
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-2">
+              <div class="usecases__element-stats">
+                <div class="title">$3.5b</div>
+                <div class="content">
+                  Another text
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-3">
+              <div class="usecases__element-stats">
+                <div class="title">$1.5b</div>
+                <div class="content">
+                  TITLE
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
       <!--<div class="digitaze-block">-->
       <!--<div class="spacer-big"></div>-->
       <!--<div class="wrapper">-->
@@ -1230,7 +1652,73 @@
     </div>
   </div>
 </div>
+<div class="spacer-medium"></div>
+<section class="bounty-program">
+  <div class="wrapper row-section">
+    <div class="bounty-wizard">
+      <a href="#" data-bounty-id="bounty-wizard-1" class="bounty-wizard__step active">
+        Item 1
+      </a>
+      <a href="#" data-bounty-id="bounty-wizard-2" class="bounty-wizard__step">
+        Item 2
+      </a>
+      <a href="#" data-bounty-id="bounty-wizard-3" class="bounty-wizard__step">
+        Item 3
+      </a>
+    </div>
+    <div class="bounty-elements text-light">
+      <div id="bounty-wizard-1" class="bounty-elements__element active">
 
+        <img class="bounty-elements__img" src="img/win.gif" alt="">
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+      <div id="bounty-wizard-2" class="bounty-elements__element">
+        <img class="bounty-elements__img" src="img/win.gif" alt="">
+
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+      <div id="bounty-wizard-3" class="bounty-elements__element">
+        <img class="bounty-elements__img" src="img/win.gif" alt="">
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. <a href="">Excepteur</a> sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<div class="spacer-medium"></div>
 <div class="pie-chart-section text-light purpleSection" id="token-info">
   <div class="spacer-medium"></div>
   <div class="wrapper column-section">
