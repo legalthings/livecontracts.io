@@ -168,6 +168,7 @@ $(document).ready(function () {
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
+  bountyWizard();
   //for animation fix after scrolling
   $(window).on("mousewheel", function(){
     $('html,body').stop();
@@ -176,7 +177,30 @@ $(document).ready(function () {
 
 });
 
-//for interaction with prrogress bar in Sale starts
+
+//function dedicated for bounty program section
+
+function bountyWizard() {
+  var initHeight = $(".bounty-elements__element.active").height();
+  var parentBlock = $(".bounty-elements");
+  parentBlock.height(initHeight)
+  
+  $('.bounty-wizard__step').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('data-bounty-id');
+    var element = $('div[id="' + id + '"]');
+    
+    $(".bounty-wizard__step").removeClass("active");
+    $(".bounty-elements__element").removeClass("active");
+    
+    $(this).addClass("active");
+    element.addClass("active");
+    
+  })
+  
+}
+
+//for interaction with progress bar in Sale starts
 
 function saleStartsProgressBar() {
   $(".sale-progress__bar-element").on('click', function () {

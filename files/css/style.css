@@ -10396,12 +10396,12 @@ html.lock {
   height: 0;
 }
 
-/* 20.02 by nikulio */
+/* 20.02 by krivomazoff */
 
 .column-section.block-button__hover {
   display: block;
   height: 418px;
-  width: 100%;
+  /*width: 100%;*/
   background: url("../../img/elems_block.jpg") no-repeat scroll center center;
   background-size: contain;
 }
@@ -11197,3 +11197,71 @@ html body #intercom-container .intercom-launcher-frame {
     line-height: 17px;
   }
 }
+
+
+/* styles for Bounty programm section */
+
+.bounty-program {
+  background: url("../../img/qubic-bg.jpg") no-repeat scroll center center;
+  background-size: cover;
+  width: 100%;
+}
+
+.bounty-wizard .bounty-wizard__step:last-of-type {
+  margin-right: 0;
+}
+.bounty-wizard .bounty-wizard__step.active,
+.bounty-wizard .bounty-wizard__step:hover {
+  opacity: 1;
+}
+.bounty-wizard .bounty-wizard__step {
+  font-size: 21px;
+  font-weight: bold;
+  opacity: 0.2;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 140px;
+  transition: .3s opacity;
+}
+.bounty-wizard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.bounty-elements {
+  max-width: 860px;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.bounty-elements__element.active {
+  bottom: 0;
+  opacity: 1;
+}
+.bounty-elements__element {
+  bottom: -200%;
+  transition: .6s all;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+}
+.bounty-elements__button {
+  margin: 0 auto;
+}
+.bounty-elements__text  {
+  margin-bottom: 60px;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
