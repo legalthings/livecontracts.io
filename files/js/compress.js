@@ -28670,7 +28670,12 @@ $(document).ready(function () {
   });
   bottomCountdownInit();
   
-  
+  //Init settings for propper offset. It sets it on load and then tracks for changes
+  setTimeout(function() {
+    var windowWidthForUsecase = $(window).width();
+    offsetForUsecaseSetter(windowWidthForUsecase)
+  }, 200)
+
 });
 
 
@@ -28715,28 +28720,27 @@ function saleStartsProgressBar() {
   })
 }
 
-//for usecases wirzard
-var windowWidthForUsecase = $(window).width();
 
 
-if (windowWidthForUsecase > 480) {
-  var CONST_INIT_HEIGHT = Number($(".wizard-descriptions__description.active").height())
-  var elemOffset = $(".usecases__wizard").offset().top - 15 + CONST_INIT_HEIGHT;
-  
-}
-else if (windowWidthForUsecase <= 480) {
-  var CONST_INIT_HEIGHT = Number($(".wizard-descriptions__description.active").height())
-  var elemOffset = $(".usecases__elements").offset().top - 50 + CONST_INIT_HEIGHT;
-}
 
+// if (windowWidthForUsecase > 480) {
+//   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height();
+//   console.log('---', CONST_INIT_HEIGHT);
+//   var elemOffset = $(".usecases__wizard").offset().top - 15 + CONST_INIT_HEIGHT;
+// }
+// else if (windowWidthForUsecase <= 480) {
+//   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height()
+//   var elemOffset = $(".usecases__elements").offset().top - 50 + CONST_INIT_HEIGHT;
+// }
+
+// Tracking
 $(window).resize(function () {
-  windowWidthForUsecase = $(window).width();
+  var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height();
+  var windowWidthForUsecase = $(window).width();
   offsetForUsecaseSetter(windowWidthForUsecase)
 });
 
-
-
-
+// Global function
 function offsetForUsecaseSetter(width) {
   if (width > 480) {
     elemOffset = $(".usecases__wizard").offset().top - 15;
@@ -28748,7 +28752,6 @@ function offsetForUsecaseSetter(width) {
 
 
 // for wizard in usecases block
-
 function usecaseWizard() {
 
   var headerHeight = $("#header").height();
@@ -28759,9 +28762,7 @@ function usecaseWizard() {
     height = $(".usecases__element.active").height();
     $(".usecases__elements").css("height", height);
   });
-
-
-
+  
   $(".usecases__wizard-step").on("click", function(e) {
     e.preventDefault();
 
@@ -28787,11 +28788,10 @@ function usecaseWizard() {
     element.addClass("active js-clicked-height");
 
     height = $(".usecases__element.active").height();
-    $(".usecases__elements").css("height", height);
+    $(".usecases__elements").height(height);
     $('html, body').animate({
       scrollTop: elemOffset - headerHeight
     }, 1000);
-
   })
 }
 
@@ -28811,7 +28811,7 @@ function closeSaleStartsWizardManually() {
       scrollTop: saleWizardOffset - headerHeight
     }, 1000);
 
-    elemOffset -= Number($(".wizard-descriptions").css('height').slice(0, -2));
+    elemOffset -= $(".wizard-descriptions").height();
     $(".sale-wizard__step").removeClass("js-clicked-height");
     $(".wizard-descriptions").css("height", 0)
   })
@@ -28824,12 +28824,12 @@ function saleStartsWizard() {
 
   var blockOffset = $(".wizard-descriptions").offset().top;
   
-  var initPaddingBottom= $(".wizard-descriptions__description.active").height() + 64;
-  $(".wizard-descriptions").css("height", initPaddingBottom)
+  var initHeightForActive= $(".wizard-descriptions__description.active").height() + 64;
+  $(".wizard-descriptions").height(initHeightForActive)
   
   $(window).resize(function () {
     initPaddingBottom = $(".wizard-descriptions__description.active").height();
-    $(".wizard-descriptions").css("height", initPaddingBottom);
+    $(".wizard-descriptions").height(initPaddingBottom);
     blockOffset = $(".wizard-descriptions").offset().top;
   });
   
@@ -28848,7 +28848,7 @@ function saleStartsWizard() {
     
     setTimeout(function () {
       var heightForPadd = $(".wizard-descriptions__description.active").height() + 64;
-      $(".wizard-descriptions").css("height", heightForPadd)
+      $(".wizard-descriptions").height(heightForPadd)
     }, 100)
     
     var headerHeight = $("#header").height() + 15;
@@ -28859,7 +28859,7 @@ function saleStartsWizard() {
 
     if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
       setTimeout(function () {
-        elemOffset += Number($(".wizard-descriptions").css('height').slice(0, -2));
+        elemOffset += $(".wizard-descriptions").height();
         $(".sale-wizard__step").addClass("js-clicked-height")
       }, 1000)
     }
