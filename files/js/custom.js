@@ -151,7 +151,6 @@ $(document).ready(function () {
     }
   });
   
-  bottomCountdownInit();
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
@@ -168,15 +167,16 @@ $(document).ready(function () {
   initSubscribeMailChimp();
   timelineInit();
   initWalletChoice();
-  createWavesWallet();
+  createWavesWallet(); 
   handlePayment();
 
   //for animation fix after scrolling
   $(window).on("mousewheel", function(){
     $('html,body').stop();
   });
+  bottomCountdownInit();
   
-
+  
 });
 
 
@@ -378,7 +378,7 @@ function saleStartsWizard() {
 
 // for bottom countdown
 function bottomCountdownInit() {
-  $('#bottom_countdown').countdown('2018/04/05', function(event) {
+  $('#bottom_countdown').countdown('2018/04/05').on('update.countdown', function(event) {
     var $this = $(this).html(event.strftime(''
         + '<span>%-w</span>week%!w '
         + '<span>%-d</span>day%!d '

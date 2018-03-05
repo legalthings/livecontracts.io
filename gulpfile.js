@@ -101,10 +101,10 @@ gulp.task('compress-js', function () {
         //
         'files/js/script.js',
         'files/js/jquery.ajaxchimp.min.js',
-        'files/js/jquery.countdown.min.js',
+        // 'files/js/jquery.countdown.min.js',
         'files/js/social.js',
         //
-        // 'files/js/jquery.countdown.js',
+        'files/js/jquery.countdown.js',
         'files/js/step-form-wizard.min.js',
         'files/js/jquery.mCustomScrollbar.concat.min.js',
         'files/js/d3.js',
