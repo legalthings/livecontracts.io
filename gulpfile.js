@@ -93,12 +93,10 @@ gulp.task('compress-js', function () {
         // 'files/revolution/js/extensions/revolution.extension.actions.min.js',
         // 'files/js/tweenMax.js',
         'files/js/jquery.backgroundparallax.min.js',
-        //
         'files/js/jquery.isotope.min.js',
         'files/js/jquery.imagesloaded.min.js',
-        'files/js/jquery.owl.carousel.js',
+        // 'files/js/jquery.owl.carousel.js',
         // 'files/js/jquery.lightcase.min.js',
-        //
         'files/js/script.js',
         'files/js/jquery.ajaxchimp.min.js',
         // 'files/js/jquery.countdown.min.js',
@@ -107,7 +105,12 @@ gulp.task('compress-js', function () {
         'files/js/jquery.countdown.js',
         'files/js/step-form-wizard.min.js',
         'files/js/jquery.mCustomScrollbar.concat.min.js',
+        //newly commented 05.03
+  
         'files/js/d3.js',
+  
+        //newly commented 05.03 end
+  
         'files/js/custom.js',
         'files/js/billboard.js',
         'files/js/chart.js'

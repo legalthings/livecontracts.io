@@ -48,7 +48,9 @@ $(document).ready(function () {
 
   redirectUserToLocalSite();
   getSaleDate();
-
+  bountyWizard();
+  
+  
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
     { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
@@ -154,7 +156,6 @@ $(document).ready(function () {
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
-  bountyWizard();
 
   eventForMobileTooltip();
   // populateExploreBlock();
@@ -167,7 +168,7 @@ $(document).ready(function () {
   initSubscribeMailChimp();
   timelineInit();
   initWalletChoice();
-  createWavesWallet(); 
+  createWavesWallet();
   handlePayment();
 
   //for animation fix after scrolling

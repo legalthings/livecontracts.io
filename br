@@ -1669,7 +1669,7 @@
     <div class="bounty-elements text-light">
       <div id="bounty-wizard-1" class="bounty-elements__element active">
 
-        <img class="bounty-elements__img" src="img/win.gif" alt="">
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
         <div class="bounty-elements__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -1685,7 +1685,7 @@
         </a>
       </div>
       <div id="bounty-wizard-2" class="bounty-elements__element">
-        <img class="bounty-elements__img" src="img/win.gif" alt="">
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
 
         <div class="bounty-elements__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -1702,7 +1702,7 @@
         </a>
       </div>
       <div id="bounty-wizard-3" class="bounty-elements__element">
-        <img class="bounty-elements__img" src="img/win.gif" alt="">
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
         <div class="bounty-elements__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute
           irure dolor in reprehenderit in voluptate velit esse cillum
