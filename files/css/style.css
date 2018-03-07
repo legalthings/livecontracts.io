@@ -11080,7 +11080,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .usecases__elements .usecases__element-stats .content {
   font-family: Montserrat;
-  font-size: 33px;
+  font-size: 23px;
   font-weight: bold;
   line-height: 1.64;
   letter-spacing: 1.2px;
@@ -11123,6 +11123,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .usecases__elements .usecases__element-desc .title {
   font-family: Montserrat;
   font-size: 34px;
+  line-height: 1.25;
   font-weight: bold;
   letter-spacing: 0.1px;
   color: #000000;
@@ -11141,6 +11142,24 @@ html body #intercom-container .intercom-launcher-badge-frame {
   align-items: flex-end;
 }
 
+.usecases__elements .usecases__element-list {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.usecases__elements .usecases__element-list li:before {
+  content: "•";
+  color: #9867cf;
+  position: absolute;
+  left: 0;
+}
+.usecases__elements .usecases__element-list li {
+  padding-left: 20px;
+  font-size: 16px;
+  position: relative;
+  font-weight: 600;
+  color: #000;
+}
+
 @media screen and (max-width: 768px) {
   .usecases__elements .usecases__element-stats .title {
     left: 50%;
@@ -11148,6 +11167,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
     transform: translateX(-50%);
     top: -10px;
   }
+
   .usecases__elements .usecases__element-stats .content {
     padding: 20px;
     font-size: 26px;
@@ -11159,7 +11179,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   }
   .usecases__elements .usecases__element-stats {
     width: 300px;
-    height: 150px;
+    height: 250px;
     justify-content: center;
     margin-bottom: 30px;
     margin-right: 0;
@@ -11171,6 +11191,18 @@ html body #intercom-container .intercom-launcher-badge-frame {
     left: 50% !important;
     transform: translateX(-50%) rotate(45deg) !important;
   }
+
+  .usecases .usecases__wizard-step:last-of-type {
+    margin-right: 0;
+  }
+  .usecases .usecases__wizard-step {
+    margin-right: 20px;
+  }
+
+  .usecases .usecases__wizard-step span {
+    font-size: 14px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -11190,11 +11222,25 @@ html body #intercom-container .intercom-launcher-badge-frame {
     font-size: 12px;
     line-height: 17px;
   }
+  .usecases__elements .usecases__element-desc .title {
+    font-size: 26px;
+  }
   .usecases__elements .usecases__element-desc .subtitle {
     font-size: 16px;
     margin-bottom: 10px;
     line-height: 17px;
   }
+  .usecases .usecases__wizard-step {
+    margin:0 0 20px 0;
+  }
+  .usecases .usecases__wizard-step:last-of-type {
+    margin: 0;
+  }
+  .usecases .usecases__wizard-step span {
+    font-size: 16px;
+  }
+
+
 }
 
 
