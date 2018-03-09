@@ -10450,9 +10450,13 @@ html.lock {
   opacity: 1;
 }
 
+.sticky-bottom.visible {
+  bottom: 0;
+}
 .sticky-bottom {
   position: fixed;
-  bottom: 0;
+  bottom: -100%;
+  transition: 1s bottom ease-out;
   left: 0;
   background: white;
   height: 80px;
@@ -11076,6 +11080,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .usecases__elements .usecases__element.active {
   opacity: 1;
+  z-index: 5;
 }
 
 .usecases__elements .usecases__element-stats .content {
@@ -11114,7 +11119,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   font-family: Montserrat;
   font-size: 16px;
   color: #000000;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: 1.2px;
   opacity: 1;
   margin: 0;
@@ -11144,19 +11149,23 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .usecases__elements .usecases__element-list {
   list-style: none;
-  margin-bottom: 40px;
+  margin:0 0 40px 0;
 }
 .usecases__elements .usecases__element-list li:before {
   content: "•";
   color: #9867cf;
+  top: -1px;
+  font-size: 25px;
   position: absolute;
   left: 0;
 }
 .usecases__elements .usecases__element-list li {
   padding-left: 20px;
+  margin: 0;
   font-size: 16px;
+  font-family: Montserrat;
   position: relative;
-  font-weight: 600;
+  font-weight: 400;
   color: #000;
 }
 
@@ -11239,8 +11248,6 @@ html body #intercom-container .intercom-launcher-badge-frame {
   .usecases .usecases__wizard-step span {
     font-size: 16px;
   }
-
-
 }
 
 

@@ -156,7 +156,7 @@ $(document).ready(function () {
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
-
+  // showStickyBottom();
   eventForMobileTooltip();
   // populateExploreBlock();
   manipulatingHeader();
@@ -184,6 +184,18 @@ $(document).ready(function () {
   }, 200)
 
 });
+
+// function showStickyBottom() {
+//   $(window).scroll(function () {
+//     var scrollTop = $(document).scrollTop();
+//     if (scrollTop > 0) {
+//       $(".sticky-bottom").addClass("visible");
+//     }
+//     else {
+//       $(".sticky-bottom").removeClass("visible");
+//     }
+//   })
+// }
 
 
 //function dedicated for bounty program section
@@ -1044,9 +1056,11 @@ function manipulatingHeader() {
     var scrollFromTop = $(document).scrollTop();
 
     if (scrollFromTop > new_offset) {
-      header.addClass('custom-visible')
+      header.addClass('custom-visible');
+      $(".sticky-bottom").addClass('visible');
     } else {
-      header.removeClass('custom-visible')
+      header.removeClass('custom-visible');
+      $(".sticky-bottom").removeClass('visible');
     }
   })
 
