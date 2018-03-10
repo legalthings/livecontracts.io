@@ -10704,34 +10704,63 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin-bottom: 100px;
 }
 
-.sale-wizard {
-  width: 100%;
-  height: 70px;
-  position: relative;
+.sale-starts__wizard {
   display: flex;
+  position: relative;
+  min-height: 615px;
+  height: 100%;
+  margin-bottom: 80px;
+}
+
+.sale-wizard {
+  width: 70px;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  justify-content: center;
+  left: 30px;
   max-width: 750px;
-  margin: 0 auto 35px;
-  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sale-wizard .sale-wizard__brief.hidden {
+  right: 200px;
+}
+.sale-wizard .sale-wizard__brief {
+  position: absolute;
+  right: -200px;
+  min-width: 150px;
+  transition: .4s all;
 }
 
 .sale-wizard .line {
   display: block;
-  height: 3px;
+  width: 3px;
   background: #fff;
-  width: 100%;
-  bottom: 7px;
+  height: 100%;
+  /*bottom: 7px;*/
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
 }
 
-.sale-wizard .sale-wizard__step:not(:last-child) span {
+.sale-wizard .sale-wizard__step span {
   display: block;
-  margin-left: -7px;
+  left: -80px;
+  position: absolute;
+  top: 5px;
 }
 .sale-wizard .sale-wizard__step {
   color: #fff;
   font-size: 20px;
   display: flex;
   justify-content: center;
+  display: flex;
+  height: 40px;
+  transition: .3s all;
+  position: absolute;
 }
 .sale-wizard .sale-wizard__step:hover {
   cursor: pointer;
@@ -10746,11 +10775,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .sale-wizard .sale-wizard__step:hover:before {
   box-shadow: 0px 0px 0px 10px rgba(152,103,207,.3);
 }
-.sale-wizard .sale-wizard__step {
-  display: block;
-  justify-content: center;
-  position: relative;
-}
+
 
 .sale-wizard .sale-wizard__step:after {
     transition: .2s font-size, .3s box-shadow;
@@ -10760,7 +10785,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
     width: 36px;
     height: 36px;
     font-family: Montserrat;
-    bottom: -10px;
+    /*bottom: -10px;*/
     border-radius: 50%;
     text-align: center;
     position: absolute;
@@ -10776,7 +10801,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   display: block;
   width: 36px;
   height: 36px;
-  bottom: -10px;
+  /*bottom: -10px;*/
   border-radius: 50%;
   z-index: 1;
   position: absolute;
@@ -10901,6 +10926,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   width: calc(100% - 80px);
   overflow: hidden;
   max-width: 1200px;
+  padding-left: 160px;
   left: -100%;
   opacity: 0;
   transition: .6s all;
@@ -10954,6 +10980,20 @@ html body #intercom-container .intercom-launcher-badge-frame {
   }
   .wizard-descriptions .wizard-descriptions__list {
     margin-bottom: 20px;
+  }
+  .sale-wizard {
+    left: 0;
+  }
+  .sale-wizard .sale-wizard__step span {
+    display: none;
+  }
+  .wizard-descriptions .wizard-descriptions__description {
+    padding-left: 90px;
+  }
+  .sale-starts__wizard {
+    min-height: 315px;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
 
