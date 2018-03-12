@@ -28520,9 +28520,7 @@ function collapseFaq(id) {
   if (currentCollapsedFaq === id) {
     return;
   }
-  
   currentCollapsedFaq = id;
-  
   var collapseBlock = '#' + id + '-section';
   
   $('.faq-content').removeClass('visible');
@@ -28688,6 +28686,37 @@ $(document).ready(function () {
     }
   });
   
+  //Init settings for proper offset. It sets it on load and then tracks for changes
+  // setTimeout(function () {
+  //   var elemOffset = $(".usecases__wizard").offset().top;
+  // }, 200)
+    
+  // var elemOffset = $(".usecases__wizard").offset().top;
+  console.log('---', windowWidth);
+  console.log('---', elemOffset);
+  $(window).resize(function () {
+    windowWidth = $(window).width();
+    if (windowWidth > 480) {
+      elemOffset = $(".usecases__wizard").offset().top;
+    }
+    else if (windowWidth <= 480) {
+      elemOffset = $(".usecases__elements").offset().top - 30;
+    }
+  })
+  
+  $(window, document).click(function () {
+    if (windowWidth > 480) {
+      setTimeout(function () {
+        elemOffset = $(".usecases__wizard").offset().top;
+      }, 600)
+    }
+    else if (windowWidth <= 480) {
+      setTimeout(function () {
+        elemOffset = $(".usecases__elements").offset().top - 30;
+      }, 600)
+    }
+  })
+  
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
@@ -28711,28 +28740,15 @@ $(document).ready(function () {
     $('html,body').stop();
   });
   bottomCountdownInit();
-  
-  //Init settings for proper offset. It sets it on load and then tracks for changes
-  setTimeout(function () {
-    var windowWidthForUsecase = $(window).width();
-    offsetForUsecaseSetter(windowWidthForUsecase)
-  }, 300)
-  
 });
+var windowWidth = $(window).width();
 
-// function showStickyBottom() {
-//   $(window).scroll(function () {
-//     var scrollTop = $(document).scrollTop();
-//     if (scrollTop > 0) {
-//       $(".sticky-bottom").addClass("visible");
-//     }
-//     else {
-//       $(".sticky-bottom").removeClass("visible");
-//     }
-//   })
-// }
-
-
+if (windowWidth > 480) {
+  elemOffset = $(".usecases__wizard").offset().top;
+}
+else if (windowWidth <= 480) {
+  elemOffset = $(".usecases__elements").offset().top - 30;
+}
 //function dedicated for bounty program section
 
 function bountyWizard() {
@@ -28743,9 +28759,7 @@ function bountyWizard() {
     activeBlockHeight = $(".bounty-elements__element.active").height();
     parentBlock.height(activeBlockHeight)
   })
-  
   $('.bounty-wizard__step').on('click', function (e) {
-    
     e.preventDefault();
     var id = $(this).attr('data-bounty-id');
     var element = $('div[id="' + id + '"]');
@@ -28774,33 +28788,23 @@ function saleStartsProgressBar() {
   })
 }
 
-
-// if (windowWidthForUsecase > 480) {
-//   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height();
-//   console.log('---', CONST_INIT_HEIGHT);
-//   var elemOffset = $(".usecases__wizard").offset().top - 15 + CONST_INIT_HEIGHT;
-// }
-// else if (windowWidthForUsecase <= 480) {
-//   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height()
-//   var elemOffset = $(".usecases__elements").offset().top - 50 + CONST_INIT_HEIGHT;
-// }
-
 // Tracking
 $(window).resize(function () {
   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height();
   var windowWidthForUsecase = $(window).width();
-  offsetForUsecaseSetter(windowWidthForUsecase)
+  // offsetForUsecaseSetter(windowWidthForUsecase)
 });
 
 // Global function
-function offsetForUsecaseSetter(width) {
-  if (width > 480) {
-    elemOffset = $(".usecases__wizard").offset().top - 15;
-  }
-  else if (width <= 480) {
-    elemOffset = $(".usecases__elements").offset().top - 50;
-  }
-}
+// function offsetForUsecaseSetter(width) {
+//   if (width > 480) {
+//     elemOffset = $(".usecases__wizard").offset().top - 15;
+//   }
+//   else if (width <= 480) {
+//     elemOffset = $(".usecases__elements").offset().top - 50;
+//   }
+// }
+
 
 
 // for wizard in usecases block
@@ -28858,17 +28862,16 @@ function closeSaleStartsWizardManually() {
     
     var headerHeight = $("#header").height() + 15;
     var saleWizardOffset = $(".sale-starts__wizard").offset().top;
-    console.log('---', windowWidthForUsecase);
-    if (windowWidthForUsecase < 768) {
+    if (windowWidth <= 1024) {
       $('html, body').animate({
         scrollTop: saleWizardOffset - headerHeight
       }, 1000);
     }
 
-    elemOffset -= $(".wizard-descriptions").height();
+    // elemOffset -= $(".wizard-descriptions").height();
+    
     $(".sale-wizard__step").removeClass("js-clicked-height");
     $(".wizard-descriptions").css("height", 0);
-  
     $(".sale-wizard__brief").removeClass("hidden");
   
     var steps = $(".sale-wizard__step");
@@ -28879,6 +28882,9 @@ function closeSaleStartsWizardManually() {
       elem.css("top", "" + INC + "%");
       INC = INC + 25
     }
+    // setTimeout(function(){
+    //   elemOffset = $(".usecases__wizard").offset().top;
+    // }, 300)
   })
 }
 
@@ -28892,32 +28898,38 @@ function saleStartsWizardPosition() {
     INC = INC + 25
   }
   steps.on('click', function () {
-    var wrapHeight = $(".sale-starts__wizard").height();
-    var paddingTop = Number($(".wizard-descriptions").css("padding-top").slice(0, -2));
     var that = $(this);
-    $(".sale-wizard__brief").addClass("hidden");
-    steps.removeClass("floated-top floated-bottom");
-    $(this).css("top", 0);
-    $(this).addClass("floated-top").prevAll().addClass("floated-top");
-    $(this).nextAll().addClass("floated-bottom");
-    var height = $(this).height();
-    var TOP_INC = 0;
-    var BOT_INC = 0; 
-    var topSteps = $(".sale-wizard__step.floated-top");
-    var bottomSteps = $(".sale-wizard__step.floated-bottom");
-    for (var i = 1; i < topSteps.length + 1; i++) {
-      var name = "sale-wizard-" + i + "";
-      var elem = $(".sale-wizard__step[data-wizard-id=" + name + "]");
-      elem.css("top", "" + TOP_INC + "px");
-      TOP_INC = TOP_INC + height + 40;
-      // $(".wizard-descriptions").css("padding-top", TOP_INC - 80)
-    }
-    for (var t = topSteps.length + bottomSteps.length; t > topSteps.length; t--) {
-      var targ = "sale-wizard-" + t + "";
-      var targElem = $(".sale-wizard__step[data-wizard-id=" + targ + "]");
-      var offset = wrapHeight - BOT_INC;
-      targElem.css("top", "" + offset + "px");
-      BOT_INC = BOT_INC + height + 40;
+    if (!(that.hasClass('active'))) {
+      var wrapHeight = $(".sale-starts__wizard").height();
+      var paddingTop = Number($(".wizard-descriptions").css("padding-top").slice(0, -2));
+      $(".sale-wizard__brief").addClass("hidden");
+      steps.removeClass("floated-top floated-bottom");
+      $(this).css("top", 0);
+      $(this).addClass("floated-top").prevAll().addClass("floated-top");
+      $(this).nextAll().addClass("floated-bottom");
+      var height = $(this).height();
+      var TOP_INC = 0;
+      var BOT_INC = 0;
+      var topSteps = $(".sale-wizard__step.floated-top");
+      var bottomSteps = $(".sale-wizard__step.floated-bottom");
+      for (var i = 1; i < topSteps.length + 1; i++) {
+        var name = "sale-wizard-" + i + "";
+        var elem = $(".sale-wizard__step[data-wizard-id=" + name + "]");
+        elem.css("top", "" + TOP_INC + "px");
+        TOP_INC = TOP_INC + height + 40;
+      }
+      for (var t = topSteps.length + bottomSteps.length; t > topSteps.length; t--) {
+        var targ = "sale-wizard-" + t + "";
+        var targElem = $(".sale-wizard__step[data-wizard-id=" + targ + "]");
+        var offset = wrapHeight - BOT_INC;
+        targElem.css("top", "" + offset + "px");
+        BOT_INC = BOT_INC + height + 40;
+      }
+      // setTimeout(function(){
+      //   elemOffset = $(".usecases__wizard").offset().top;
+      //   console.log('---', );
+      // }, 500)
+  
     }
   })
 }
@@ -28927,10 +28939,10 @@ function saleStartsWizard() {
   closeSaleStartsWizardManually();
   saleStartsWizardPosition();
   var blockOffset = $(".wizard-descriptions").offset().top;
-  windowWidthForUsecase = $(window).width()
+  windowWidth = $(window).width()
   
   $(window).resize(function () {
-    windowWidthForUsecase = $(window).width()
+    windowWidth = $(window).width()
   })
   var initHeightForActive = $(".wizard-descriptions__description.active").height() + 64;
   $(".wizard-descriptions").height(initHeightForActive);
@@ -28961,20 +28973,21 @@ function saleStartsWizard() {
     
     var headerHeight = $("#header").height() + 15;
     var CONST_FOR_WIZARD_OFFSET = $(".sale-starts__wizard ").height() + 55;
-    if (windowWidthForUsecase < 768) {
+    if (windowWidth < 768) {
       $('html, body').animate({
         scrollTop: blockOffset - headerHeight
       }, 1000);
     }
- 
+  
     
-    if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
-      setTimeout(function () {
-        elemOffset += $(".wizard-descriptions").height();
-        $(".sale-wizard__step").addClass("js-clicked-height")
-      }, 1000)
-    }
-    offsetForUsecaseSetter(windowWidthForUsecase)
+    // if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
+    //   setTimeout(function () {
+    //     elemOffset += $(".wizard-descriptions").height();
+    //     $(".sale-wizard__step").addClass("js-clicked-height")
+    //   }, 1000)
+    // }
+    
+    // offsetForUsecaseSetter(windowWidthForUsecase)
   })
   
 }
