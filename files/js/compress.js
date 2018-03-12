@@ -28686,14 +28686,6 @@ $(document).ready(function () {
     }
   });
   
-  //Init settings for proper offset. It sets it on load and then tracks for changes
-  // setTimeout(function () {
-  //   var elemOffset = $(".usecases__wizard").offset().top;
-  // }, 200)
-    
-  // var elemOffset = $(".usecases__wizard").offset().top;
-  console.log('---', windowWidth);
-  console.log('---', elemOffset);
   $(window).resize(function () {
     windowWidth = $(window).width();
     if (windowWidth > 480) {
@@ -28720,7 +28712,6 @@ $(document).ready(function () {
   saleStartsWizard();
   usecaseWizard();
   saleStartsProgressBar();
-  // showStickyBottom();
   eventForMobileTooltip();
   // populateExploreBlock();
   manipulatingHeader();
@@ -28792,20 +28783,7 @@ function saleStartsProgressBar() {
 $(window).resize(function () {
   var CONST_INIT_HEIGHT = $(".wizard-descriptions__description.active").height();
   var windowWidthForUsecase = $(window).width();
-  // offsetForUsecaseSetter(windowWidthForUsecase)
 });
-
-// Global function
-// function offsetForUsecaseSetter(width) {
-//   if (width > 480) {
-//     elemOffset = $(".usecases__wizard").offset().top - 15;
-//   }
-//   else if (width <= 480) {
-//     elemOffset = $(".usecases__elements").offset().top - 50;
-//   }
-// }
-
-
 
 // for wizard in usecases block
 function usecaseWizard() {
@@ -28869,7 +28847,6 @@ function closeSaleStartsWizardManually() {
     }
 
     // elemOffset -= $(".wizard-descriptions").height();
-    
     $(".sale-wizard__step").removeClass("js-clicked-height");
     $(".wizard-descriptions").css("height", 0);
     $(".sale-wizard__brief").removeClass("hidden");
@@ -28882,9 +28859,6 @@ function closeSaleStartsWizardManually() {
       elem.css("top", "" + INC + "%");
       INC = INC + 25
     }
-    // setTimeout(function(){
-    //   elemOffset = $(".usecases__wizard").offset().top;
-    // }, 300)
   })
 }
 
@@ -28925,11 +28899,6 @@ function saleStartsWizardPosition() {
         targElem.css("top", "" + offset + "px");
         BOT_INC = BOT_INC + height + 40;
       }
-      // setTimeout(function(){
-      //   elemOffset = $(".usecases__wizard").offset().top;
-      //   console.log('---', );
-      // }, 500)
-  
     }
   })
 }
@@ -28980,14 +28949,6 @@ function saleStartsWizard() {
     }
   
     
-    // if (!($(".sale-wizard__step").hasClass("js-clicked-height"))) {
-    //   setTimeout(function () {
-    //     elemOffset += $(".wizard-descriptions").height();
-    //     $(".sale-wizard__step").addClass("js-clicked-height")
-    //   }, 1000)
-    // }
-    
-    // offsetForUsecaseSetter(windowWidthForUsecase)
   })
   
 }

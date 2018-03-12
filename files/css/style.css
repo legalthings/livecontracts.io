@@ -6962,6 +6962,13 @@ div .toggle-item:first-child {
 
 /*  Team members
 ------------------------------------------------*/
+@media screen and (max-width: 960px) {
+  .team-section {
+    max-width: 540px !important;
+  }
+}
+
+
 .team-content {
   padding-top: 20px;
   padding-bottom: 0;
@@ -10439,6 +10446,7 @@ html.lock {
 
   .column-section.block-button__hover::before, .column-section.block-button__hover {
     background: url("../../img/elems_block_mobile.jpg") no-repeat scroll center center;
+    background-size: cover;
   }
 }
 
@@ -11190,6 +11198,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .usecases__elements .usecases__element-list {
   list-style: none;
   margin:0 0 40px 0;
+  padding: 0 20px;
 }
 .usecases__elements .usecases__element-list li:before {
   content: "•";
@@ -11197,10 +11206,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
   top: -1px;
   font-size: 25px;
   position: absolute;
-  left: 0;
+  left: -20px;
 }
 .usecases__elements .usecases__element-list li {
-  padding-left: 20px;
+  /*padding-left: 20px;*/
   margin: 0;
   font-size: 16px;
   font-family: Montserrat;
