@@ -11351,6 +11351,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   background: url("../../img/qubic-bg.jpg") no-repeat scroll center center;
   background-size: cover;
   width: 100%;
+  min-height: 650px;
 }
 
 .bounty-wizard .bounty-wizard__step:last-of-type {
@@ -11387,16 +11388,44 @@ html body #intercom-container .intercom-launcher-badge-frame {
   transition: .3s height;
 }
 
+
+.bounty-elements .bounty-elements__icon:last-of-type {
+  margin-right: 0;
+}
+.bounty-elements .bounty-elements__icon:hover {
+  border: 2px solid #9067c6;
+  color: #9067c6;
+}
+.bounty-elements .bounty-elements__icons {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+  justify-content: center;
+}
+.bounty-elements .bounty-elements__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-right: 20px;
+  font-size: 26px;
+  transition: .3s all;
+}
+
+
 .bounty-elements__img {
   margin-bottom: 60px;
 }
 
 .bounty-elements__element.active {
-  bottom: 0;
   opacity: 1;
 }
 .bounty-elements__element {
-  bottom: -200%;
   transition: .6s all;
   position: absolute;
   opacity: 0;
@@ -11406,7 +11435,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin: 0 auto;
 }
 .bounty-elements__text  {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-size: 16px;
   letter-spacing: 1.4px;
   text-align: center;
