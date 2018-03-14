@@ -10855,6 +10855,25 @@ html body #intercom-container .intercom-launcher-badge-frame {
   opacity: 0.18;
 }
 
+.wizard-descriptions .wizard-descriptions__table table thead tr th:last-child,
+.wizard-descriptions .wizard-descriptions__table table tbody tr td:last-child {
+  color: #33bfd0;
+}
+
+.wizard-descriptions .wizard-descriptions__table table thead tr,
+.wizard-descriptions .wizard-descriptions__table table tr {
+  border-color: #fff;
+}
+.wizard-descriptions .wizard-descriptions__table {
+  padding: 15px 0 30px;
+}
+.wizard-descriptions .wizard-descriptions__table table a {
+  color: #9867cf;
+  text-decoration: underline;
+}
+.wizard-descriptions .wizard-descriptions__table table * {
+  color: #fff;
+}
 .wizard-descriptions {
   width: 100%;
   display: block;
