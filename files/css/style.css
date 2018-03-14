@@ -10746,14 +10746,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 .sale-wizard .sale-wizard__brief.hidden {
-  right: 200px;
   opacity: 0;
 }
+.sale-wizard .sale-wizard__brief p:last-child {
+  margin-top: 10px;
+}
+
 .sale-wizard .sale-wizard__brief {
   position: absolute;
-  right: -200px;
-  min-width: 150px;
+  width: 250px;
   transition: .4s all;
+  left: 35px;
 }
 
 .sale-wizard .line {
@@ -10960,6 +10963,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 @media screen and (max-width: 768px) {
+  .sale-wizard .sale-wizard__brief p:last-child {
+    margin-top: 0;
+  }
   /*.sale-starts {*/
     /*padding: 40px 0;*/
   /*}*/
