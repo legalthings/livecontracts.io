@@ -28711,7 +28711,7 @@ $(document).ready(function () {
   
   saleStartsWizard();
   usecaseWizard();
-  saleStartsProgressBar();
+  // saleStartsProgressBar();
   eventForMobileTooltip();
   // populateExploreBlock();
   manipulatingHeader();
@@ -28771,13 +28771,6 @@ function bountyWizard() {
 
 //for interaction with progress bar in Sale starts
 
-function saleStartsProgressBar() {
-  $(".sale-progress__bar-element").on('click', function () {
-    $(this).addClass("active")
-    $(this).nextAll().removeClass("active")
-    $(this).prevAll().addClass("active")
-  })
-}
 
 // Tracking
 $(window).resize(function () {
@@ -28850,7 +28843,8 @@ function closeSaleStartsWizardManually() {
     $(".sale-wizard__step").removeClass("js-clicked-height");
     $(".wizard-descriptions").css("height", 0);
     $(".sale-wizard__brief").removeClass("hidden");
-  
+    $(".sale-progress__bar-element").removeClass("active");
+
     var steps = $(".sale-wizard__step");
     var INC = 0;
     for (var i = 1; i < steps.length + 1; i++) {
@@ -28903,6 +28897,15 @@ function saleStartsWizardPosition() {
   })
 }
 
+function saleStartsProgressBar(id) {
+    var element = $('.sale-progress-' + id + '');
+    console.log('---', element);
+    element.addClass("active")
+    element.nextAll().removeClass("active")
+    element.prevAll().addClass("active")
+}
+
+
 // for wizard in sale starts block
 function saleStartsWizard() {
   closeSaleStartsWizardManually();
@@ -28921,12 +28924,21 @@ function saleStartsWizard() {
     $(".wizard-descriptions").height(initPaddingBottom);
     blockOffset = $(".sale-starts__wizard").offset().top;
   });
+
+  if ($('.sale-wizard__step').hasClass("active")) {
+      $(".sale-wizard__brief").addClass("hidden");
+  }
   
   $('.sale-wizard__step').on('click', function (e) {
     
     var closeButton = $(".js-wizard-descriptions-close");
     
     var id = $(this).attr('data-wizard-id');
+
+    var element = Number(id.slice(-1));
+    saleStartsProgressBar(element)
+    console.log('---', element);
+
     var element = $('div[id="' + id + '"]');
     
     $(".sale-wizard__step").removeClass("active");

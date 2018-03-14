@@ -10709,7 +10709,19 @@ html body #intercom-container .intercom-launcher-badge-frame {
   font-weight: 200;
   text-align: center;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom : 30px;
+}
+.sale-starts .title.roadmap-title {
+  margin-bottom : 60px;
+}
+.sale-starts .sale-starts__disclaimer .subtitle {
+  margin-bottom : 30px;
+}
+.sale-starts .sale-starts__disclaimer .sr-button.button-1:hover {
+  background: #fff;
+}
+.sale-starts .sale-starts__disclaimer {
+  margin: 30px 0 60px;
 }
 
 .sale-starts__wizard {
@@ -10735,6 +10747,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .sale-wizard .sale-wizard__brief.hidden {
   right: 200px;
+  opacity: 0;
 }
 .sale-wizard .sale-wizard__brief {
   position: absolute;
@@ -10955,6 +10968,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
     margin-bottom: 120px;
   }
 
+  .sale-starts .title.roadmap-title {
+    margin-bottom : 30px;
+  }
+  .sale-starts .sale-starts__disclaimer {
+    margin-bottom : 30px;
+  }
+
   .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
     left: -37px;
     font-size: 14px;
@@ -10973,7 +10993,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   .sale-progress .sale-progress__bar {
     height: 40px;
   }
-  .sale-starts .subtitle {
+  .sale-starts .sale-starts .sale-starts__disclaimer {
     margin-bottom: 60px;
   }
   .wizard-descriptions .wizard-descriptions__title {
