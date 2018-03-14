@@ -50,6 +50,7 @@ $(document).ready(function () {
   
   
   var files = [
+<<<<<<< HEAD
     {
       url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/',
       img: '4-traders.png'
@@ -113,6 +114,31 @@ $(document).ready(function () {
     {url: 'https://www.jinse.com/blockchain/116008.html', img: 'jinse.png'},
     {url: 'http://www.jpm.cn/article-48120-1.html', img: 'jpm.png'},
     {url: 'http://link.law.com/public/11641586', img: 'law.png'}
+=======
+    { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
+    { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
+    { url: 'https://www.businessinsider.com/legalflings-blockchain-based-app-for-sexual-consent-2018-1?international=true&r=US&IR=T', img: 'business_insider.png' },
+    { url: 'https://www.usatoday.com/story/tech/columnist/2018/02/20/sexual-consent-apps-set-rules-intimacy-come-their-own-risks/328635002/', img: 'usa_today.png'},
+    { url: 'https://www.blockchainadvisormag.com/2017/12/16/ethereum-competitor-legalthings-to-digitise-law-on-blockchain-for-the-dutch-district-attorneys-office/', img: 'blockchainadvisor.png'},
+    { url: 'https://nypost.com/2018/01/11/contracts-for-consensual-one-night-stands-theres-an-app-for-that/', img: 'new_york_post.png'},
+    { url: 'https://btcmanager.com/dutch-ministry-justice-commissions-digitizes-law-blockchain/', img: 'btc-manager.png' },
+    { url: 'https://fortune.com/2018/01/16/consent-app-me-too/', img: 'fortune.png' },
+    { url: 'https://headlines.yahoo.co.jp/hl?a=20180121-00010001-binsider-sci', img: 'yahoo_japan.png'},
+    { url: 'https://www.emerce.nl/wire/legalthings-lanceert-succesvolle-token-sale-nederland-nederlandse-ethereumconcurrent-digitaliseert-wet-regelgeving-via-blockchain', img: 'emerce.png'},
+    { url: 'https://www.independent.co.uk/life-style/consent-app-sexual-contracts-legalthings-phone-std-free-guarantee-a8154591.html', img: 'independent.png' },
+    { url: 'https://g1.globo.com/pop-arte/noticia/depois-de-metoo-aplicativo-permite-dar-consentimento-legal-a-sexo.ghtml', img: 'globo.png'},
+    { url: 'http://www.elektroniknet.de/markt-technik/kommunikation/legalthings-digitalisiert-hollaendisches-gesetzgebung-148902.html', img: 'markt-technik.png'},
+    { url: 'https://metro.co.uk/2018/01/10/app-creates-legally-binding-contracts-one-night-stands-prove-sex-consensual-7220206/', img: 'metro.png'},
+    { url: 'https://www.nrc.nl/nieuws/2018/02/20/seks-eerst-even-je-handtekening-a1592916', img: 'nrc.png'},
+    { url: 'https://thenextweb.com/apps/2018/01/11/seeking-consent-before-sex-theres-a-blockchain-based-app-for-that', img: 'the_next_web.png'},
+    { url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
+    { url: 'https://nos.nl/op3/artikel/2211488-nos-op-3-tech-podcast-appcontract-voor-je-seks-hebt.html', img: 'nos.png'},
+    { url: 'https://www.complex.com/life/2018/01/legalfling-app-consensual-sex', img: 'complex.png'},
+    { url: 'https://www.jinse.com/blockchain/116008.html', img: 'jinse.png' },
+    { url: 'https://www.vogue.nl/cultuur/nieuws/artikel/voor-seks-eerst-een-contract-tekenen-deze-nederlandse-app-maakt-het-mogelijk', img: 'vogue.png' },
+    { url: 'https://www.artificiallawyer.com/2018/01/10/legal-fling-blockchain-contracts-for-legally-binding-consensual-encounters/', img: 'artificial_lawyer.png' },
+    { url: 'http://link.law.com/public/11641586', img: 'law.png' }
+>>>>>>> 165d97554a04eabd945c987b3e469d987f2cab92
   ];
   
   $('#media-logos').append('<div class="media-slider">');
