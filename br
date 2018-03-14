@@ -75,7 +75,8 @@
 
     window.intercomSettings = {
       app_id: "g247sp2q",
-      alignment: alignment
+      alignment: alignment,
+      vertical_padding: 110
     };
 
     (function () {
@@ -173,6 +174,34 @@
     </div>
     <!-- END .header-inner -->
   </header>
+
+
+  <!-- STICKY BOTTOM BAR -->
+  <div class="sticky-bottom">
+    <div class="wrapper">
+      <div class="socialsBlock purpleSection">
+        <ul class="sticky-bottom__socials socialmedia-widget size-huge">
+          <li class="telegram">
+            <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/legalthings" target="_blank"></a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/livecontracts" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+      <p>Public Sale - April 5th: <span id="bottom_countdown"></span></p>
+      <a class="sr-button inline button-1-ghost button-medium circled">Register now</a>
+    </div>
+
+  </div>
+
+
   <!-- HERO  -->
   <section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
     <div id="page-title" class="wrapper align-left">
@@ -215,6 +244,428 @@
   <!-- PAGEBODY -->
   <section id="page-body">
     <div>
+      <section class="sale-starts">
+        <div class="wrapper row-section">
+          <h1 class="align-center title">Sale starts April 5th</h1>
+          <div class="sale-progress">
+            <div class="sale-progress__bar">
+              <div class="sale-progress__bar-element sale-progress-1 active">
+                <div class="sale-progress__bar-label">Funding</div>
+                <div class="sale-progress__bar-text">Presale</div>
+                <div class="sale-progress__bar-bonus">Bonus</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-2 active">
+                <div class="sale-progress__bar-label special-label-1">0 LTO</div>
+                <div class="sale-progress__bar-text">Stage 1</div>
+                <div class="sale-progress__bar-bonus">20%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-3">
+                <div class="sale-progress__bar-label">Level 1<br>16M LTO</div>
+                <div class="sale-progress__bar-text">Stage 2</div>
+                <div class="sale-progress__bar-bonus">10%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-4">
+                <div class="sale-progress__bar-label">Level 2<br>32M LTO</div>
+                <div class="sale-progress__bar-text">Stage 3</div>
+                <div class="sale-progress__bar-bonus">5%</div>
+              </div>
+              <div class="sale-progress__bar-element sale-progress-5">
+                <div class="sale-progress__bar-label">Level 3<br>48M LTO</div>
+                <div class="sale-progress__bar-label special-label">Level 4<br>64M LTO</div>
+                <div class="sale-progress__bar-text">Fenita</div>
+                <div class="sale-progress__bar-bonus">0%</div>
+              </div>
+            </div>
+          </div>
+          <h3 class="align-center subtitle">*disclaimer with some text</h3>
+          <div class="sale-wizard">
+            <div class="line"></div>
+            <div data-wizard-id="sale-wizard-1" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-2" class="sale-wizard__step active js-clicked-height">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-3" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-4" class="sale-wizard__step">
+              <span>Level</span>
+            </div>
+            <div data-wizard-id="sale-wizard-5" class="sale-wizard__step">
+              <span>End</span>
+            </div>
+          </div>
+          <h5 class="align-center wizard-guide">Click on the number</h5>
+          <div class="wizard-descriptions">
+            <div id="sale-wizard-1" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 1
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-2" class="wizard-descriptions__description active">
+              <div class="wizard-descriptions__title">
+                Level 2
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-3" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 3
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-4" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 4
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+            <div id="sale-wizard-5" class="wizard-descriptions__description">
+              <div class="wizard-descriptions__title">
+                Level 5
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__list">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+              </div>
+              <div class="wizard-descriptions__subheader">
+                Subheader
+              </div>
+              <div class="wizard-descriptions__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </div>
+              <a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">
+                Close
+                <div class="wizard-descriptions__close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="usecases">
+        <div class="row-section wrapper">
+          <h2 class="title align-center">Usecases</h2>
+          <div class="usecases__wizard">
+            <div class="usecases__wizard-step active" data-usecase-step="usecase-step-1">
+              <img src="./img/paper.jpg" alt="">
+              <span>Contracts</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-2" data-usecase-step="usecase-step-2">
+              <img src="./img/judge.jpg" alt="">
+              <span>Legislation</span>
+            </div>
+            <div class="usecases__wizard-step usecase-step-3" data-usecase-step="usecase-step-3">
+              <img src="./img/house.jpg" alt="">
+              <span>Organization</span>
+            </div>
+          </div>
+          <div class="usecases__navigation">
+            <div class="usecases__navigation-pointer usecases__navigation-1"></div>
+          </div>
+          <div class="usecases__elements">
+            <div class="usecases__element active" id="usecase-step-1">
+              <div class="usecases__element-stats">
+                <div class="title">$2.5b</div>
+                <div class="content">
+                  Annual Spend on contracting
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-2">
+              <div class="usecases__element-stats">
+                <div class="title">$3.5b</div>
+                <div class="content">
+                  Another text
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="usecases__element" id="usecase-step-3">
+              <div class="usecases__element-stats">
+                <div class="title">$1.5b</div>
+                <div class="content">
+                  TITLE
+                </div>
+              </div>
+              <div class="usecases__element-desc">
+                <div class="title">Contracts</div>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat <a href="#">nulla</a> pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+                <div class="subtitle">Subheader</div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia
+                  deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
       <!--<div class="digitaze-block">-->
       <!--<div class="spacer-big"></div>-->
       <!--<div class="wrapper">-->
@@ -290,17 +741,18 @@
           <strong>Descubra o LegalThings One</strong>
         </h2>
       </div>
-      <!-- END .fullwidth-section -->
-      <div class="fullwidth-contenZ wrapper align-center">
+      <!-- END .fullwidth-section --> 
+      <div class="fullwidth-conten discover-section wrapper align-center">
         <!--<div class="loading">-->
         <!--<i class="fa fa-cog" aria-hidden="true"></i>-->
         <!--</div>-->
-        <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
+        <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">
           <div class="isotope-item blog-item">
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/power-to-the-people.jpg">
+                 <i class="blog-media__icon icon-intro"></i>
+                   <!-- <img src="./img/power-to-the-people.jpg"> -->
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -324,7 +776,8 @@
             <div class="blog-media">
               <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/livecontracts-whitepaper.png">
+                 <!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
+                 <i class="blog-media__icon icon-whitepaper"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -347,7 +800,8 @@
             <div class="blog-media">
               <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/presentation_stanford.png">
+                 <!-- <img src="./img/explore/presentation_stanford.jpg"> -->
+                 <i class="blog-media__icon icon-intro"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -366,13 +820,12 @@
               </p>
             </div>
           </div>
-        </div>
-        <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
           <div class="isotope-item blog-item">
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/checkout-summery.png">
+                 <!-- <img src="./img/explore/checkout-summery.png"> -->
+                 <i class="blog-media__icon icon-buying"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -396,7 +849,8 @@
             <div class="blog-media">
               <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
                  target="_blank" class="text-light blog-image">
-                <img src="./img/explore/smartorlivecontracts.png">
+                 <!-- <img src="./img/explore/smartorlivecontracts.png"> -->
+                 <i class="blog-media__icon icon-limit"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -419,7 +873,8 @@
           <div class="isotope-item blog-item">
             <div class="blog-media">
               <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                <img src="./img/explore/contract-as-automaton.png">
+                <!-- <img src="./img/explore/contract-as-automaton.png"> -->
+                <i class="blog-media__icon icon-contract"></i>
               </a>
             </div>
             <div class="blog-desc align-center">
@@ -480,8 +935,8 @@
   <div class="column-section clearfix">
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-        <img class="one" src="img/team/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
-        <img class="two" src="img/team/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
+        <img class="one" src="img/team/round_version/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
+        <img class="two" src="img/team/round_version/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -500,8 +955,8 @@
     </div>
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-        <img class="one" src="img/team/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
-        <img class="two" src="img/team/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
+        <img class="one" src="img/team/round_version/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
+        <img class="two" src="img/team/round_version/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -517,8 +972,8 @@
     </div>
     <div class="column one-third last-col team-member align-center">
       <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-        <img class="one" src="img/team/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
-        <img class="two" src="img/team/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
+        <img class="one" src="img/team/round_version/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+        <img class="two" src="img/team/round_version/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -536,7 +991,7 @@
   <div class="column-section clearfix">
     <div class="column one-third team-member align-center">
       <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
-        <img src="img/team/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
+        <img src="img/team/round_version/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -552,8 +1007,8 @@
     </div>
     <div class="column one-third team-member align-center">
       <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-        <img class="one" src="img/team/sven_stam.png" alt="Sven Stam - LegalThings">
-        <img class="two" src="img/team/sven_stam_b.png" alt="Sven Stam - LegalThings">
+        <img class="one" src="img/team/round_version/sven_stam.png" alt="Sven Stam - LegalThings">
+        <img class="two" src="img/team/round_version/sven_stam_b.png" alt="Sven Stam - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -572,7 +1027,7 @@
     </div>
     <div class="column one-third last-col team-member align-center">
       <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
-        <img src="img/team/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
+        <img src="img/team/round_version/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
       </a>
       <div class="team-content">
         <h5 class="team-name uppercase">
@@ -591,7 +1046,7 @@
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-          <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
+          <img src="img/team/round_version/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -607,7 +1062,7 @@
       </div>
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
-          <img src="img/team/rick_ross.png" alt="Rick Ros - LegalThings">
+          <img src="img/team/round_version/rick_ross.png" alt="Rick Ros - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -623,7 +1078,7 @@
       </div>
       <div class="column one-third last-col team-member align-center">
         <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-          <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+          <img src="img/team/round_version/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -642,8 +1097,8 @@
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
         <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-          <img class="one" src="img/team/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
-          <img class="two" src="img/team/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
+          <img class="one" src="img/team/round_version/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+          <img class="two" src="img/team/round_version/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
         </div>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -663,7 +1118,7 @@
 
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
-          <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
+          <img src="img/team/round_version/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -683,7 +1138,7 @@
 
       <div class="column one-third last-col team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
-          <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
+          <img src="img/team/round_version/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -705,7 +1160,7 @@
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
-          <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
+          <img src="img/team/round_version/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -725,7 +1180,7 @@
 
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-          <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+          <img src="img/team/round_version/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -745,8 +1200,8 @@
 
       <div class="column one-third last-col team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
-          <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
-          <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
+          <img class="one" src="img/team/round_version/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
+          <img class="two" src="img/team/round_version/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -767,8 +1222,8 @@
 
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
-        <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
-          <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
+        <a href="https://www.linkedin.com/in/pim-volkers-0355511" class="team-image" target="_blank">
+          <img src="img/team/round_version/pim-volkers.png" alt="Pim Volkers - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -785,7 +1240,7 @@
 
       <div class="column one-third last-col team-member align-center">
         <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
-          <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+          <img src="img/team/round_version/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -807,7 +1262,7 @@
     <div class="column-section clearfix">
       <div class="column one-third team-member align-center">
         <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
-          <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
+          <img src="img/team/round_version/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
         </a>
         <div class="team-content">
           <h5 class="team-name uppercase">
@@ -985,47 +1440,47 @@
   <a class="sr-button button-medium button-1 circled" href="./customers.html">
     Conheça nossos Clientes
   </a>
-  <div class="logo serving-companies text-dark wrapper">
-    <div class="spacer-medium"></div>
-    <div class="column-section no-left-margin wrapper clearfix">
-      <div class="column one-fourth">
-        <img src="img/logo_1.jpg" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_2.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_3.png" alt="social">
-      </div>
-      <div class="column one-fourth last-col">
-        <img class="greyscaled-image" src="img/logo_4.png" alt="social">
-      </div>
-    </div>
-    <div class="column-section no-left-margin wrapper clearfix">
-      <div class="column one-fourth">
-        <img src="img/logo_5.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_6.png" alt="social">
-      </div>
-      <div class="column one-fourth">
-        <img src="img/logo_7.png" alt="social">
-      </div>
-      <div class="column one-fourth last-col">
-        <img src="img/logo_8.png" alt="social">
-      </div>
-    </div>
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         class="blur-svg">
-      <defs>
-        <filter id="blur-filter">
-          <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-        </filter>
-      </defs>
-    </svg>
-    <div class="overlay"></div>
-    <div class="spacer-medium"></div>
-  </div>
+  <!--<div class="logo serving-companies text-dark wrapper">-->
+    <!--<div class="spacer-medium"></div>-->
+    <!--<div class="column-section no-left-margin wrapper clearfix">-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_1.jpg" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_2.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_3.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth last-col">-->
+        <!--<img class="greyscaled-image" src="img/logo_4.png" alt="social">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<div class="column-section no-left-margin wrapper clearfix">-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_5.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_6.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth">-->
+        <!--<img src="img/logo_7.png" alt="social">-->
+      <!--</div>-->
+      <!--<div class="column one-fourth last-col">-->
+        <!--<img src="img/logo_8.png" alt="social">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
+         <!--class="blur-svg">-->
+      <!--<defs>-->
+        <!--<filter id="blur-filter">-->
+          <!--<feGaussianBlur stdDeviation="3"></feGaussianBlur>-->
+        <!--</filter>-->
+      <!--</defs>-->
+    <!--</svg>-->
+    <!--<div class="overlay"></div>-->
+    <!--<div class="spacer-medium"></div>-->
+  <!--</div>-->
 </div>
 
 <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
@@ -1197,7 +1652,73 @@
     </div>
   </div>
 </div>
+<div class="spacer-medium"></div>
+<section class="bounty-program">
+  <div class="wrapper row-section">
+    <div class="bounty-wizard">
+      <a href="#" data-bounty-id="bounty-wizard-1" class="bounty-wizard__step active">
+        Item 1
+      </a>
+      <a href="#" data-bounty-id="bounty-wizard-2" class="bounty-wizard__step">
+        Item 2
+      </a>
+      <a href="#" data-bounty-id="bounty-wizard-3" class="bounty-wizard__step">
+        Item 3
+      </a>
+    </div>
+    <div class="bounty-elements text-light">
+      <div id="bounty-wizard-1" class="bounty-elements__element active">
 
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+      <div id="bounty-wizard-2" class="bounty-elements__element">
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
+
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+      <div id="bounty-wizard-3" class="bounty-elements__element">
+        <!--<img class="bounty-elements__img" src="img/win.gif" alt="">-->
+        <div class="bounty-elements__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. <a href="">Excepteur</a> sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.
+        </div>
+        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+          Button
+        </a>
+      </div>
+    </div>
+  </div>
+
+</section>
+<div class="spacer-medium"></div>
 <div class="pie-chart-section text-light purpleSection" id="token-info">
   <div class="spacer-medium"></div>
   <div class="wrapper column-section">
@@ -2121,7 +2642,7 @@
   </div>
 </div>
 <!-- SCRIPTS -->
-<script src="files/dist/compress.js"></script>
+<script src="files/dist/compress.min.js"></script>
 <script src="https://checkout.stripe.com/checkout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
 
