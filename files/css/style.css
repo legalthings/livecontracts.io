@@ -11477,9 +11477,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin-bottom: 100px;
 }
 
+.bounty-elements .faq-content {
+  text-align: left;
+}
 .bounty-elements {
-  max-width: 860px;
+  /*max-width: 860px;*/
   width: 100%;
+  height: auto !important;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -11498,7 +11502,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   display: flex;
   align-items: center;
   margin: 40px 0;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 .bounty-elements .bounty-elements__icon {
   width: 48px;
@@ -11536,7 +11540,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin-bottom: 40px;
   font-size: 16px;
   letter-spacing: 1.4px;
-  text-align: center;
+  text-align: left;
   color: #ffffff;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }

@@ -86,6 +86,7 @@ $(document).ready(function () {
   }
   
   collapseFaq('about-lto');
+  collapseFaq('automated-bounties');
   
   $('.faq-category').click(function (e) {
     var id = e.target.id;
