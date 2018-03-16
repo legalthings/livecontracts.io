@@ -10408,6 +10408,7 @@ html.lock {
 .column-section.block-button__hover {
   display: block;
   height: 418px;
+  padding: 0;
   /*width: 100%;*/
   background: url("../../img/elems_block.jpg") no-repeat scroll center center;
   background-size: contain;
@@ -11088,7 +11089,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 /*end of new sale starts block */
 /*start for new sale usecases block */
 
-.usecases {
+.usecases, .core-vericals {
   background: #fff;
   width: 100%;
   max-width: 900px;
@@ -11096,9 +11097,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin: 0 auto;
 }
 
-.usecases .title {
+.usecases .sub-title {
+  margin: 0 0 60px 0;
   font-weight: 200;
-  margin-bottom: 40px;
+}
+.usecases .title, .core-vericals .title {
+  font-weight: 200;
+  margin-bottom: 20px;
 }
 .usecases .usecases__wizard-step:hover {
   box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
@@ -11204,7 +11209,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
   color: #9867cf;
   padding: 31px;
 }
-.usecases__elements .usecases__element-stats .title {
+.usecases__elements .usecases__element-stats .title,
+.core-verticals__icon span
+{
 	font-family: Montserrat;
 	font-size: 60px;
 	font-weight: bold;
@@ -11226,7 +11233,16 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .usecases__elements .usecases__element-desc p {
   margin-bottom: 25px !important;
 }
+
+.core-verticals {
+  max-width: 940px;
+  width: 100%;
+  padding: 64px 20px;
+  margin: 0 auto;
+}
 .usecases__elements .usecases__element-desc p,
+.core-verticals__text,
+.core-verticals__subtitle,
 .usecases__elements .usecases__element-desc .subtitle {
   font-family: Montserrat;
   font-size: 16px;
@@ -11236,8 +11252,48 @@ html body #intercom-container .intercom-launcher-badge-frame {
   opacity: 1;
   margin: 0;
 }
+.core-verticals__section-title {
+  font-family: Montserrat;
+  font-size: 26px;
+  line-height: 1.25;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #000000;
+  margin-bottom: 35px;
+}
 
-.usecases__elements .usecases__element-desc .title {
+
+.core-verticals__icon-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.core-verticals__icon {
+  position: relative;
+  width: 50%
+}
+
+.core-verticals__section:not(last-of-type) {
+  margin-bottom: 40px
+}
+
+.core-verticals__section-content .core-verticals__icon span {
+  /*display: block;*/
+  /*border: 2px solid #9867cf;*/
+  /*height: 90px;*/
+}
+.core-verticals__section-content .core-verticals__part {
+  width: 50%;
+}
+.core-verticals__section-content {
+  display: flex;
+}
+
+.usecases__elements .usecases__element-desc .title,
+{
   font-family: Montserrat;
   font-size: 34px;
   line-height: 1.25;
@@ -11259,12 +11315,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
   align-items: flex-end;
 }
 
-.usecases__elements .usecases__element-list {
+
+
+.usecases__elements .usecases__element-list,
+.core-verticals__list {
   list-style: none;
   margin:0 0 40px 0;
   padding: 0 20px;
 }
-.usecases__elements .usecases__element-list li:before {
+.usecases__elements .usecases__element-list li:before,
+.core-verticals__list li:before
+{
   content: "•";
   color: #9867cf;
   top: -1px;
@@ -11272,7 +11333,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
   position: absolute;
   left: -20px;
 }
-.usecases__elements .usecases__element-list li {
+.usecases__elements .usecases__element-list li,
+.core-verticals__list li
+{
   /*padding-left: 20px;*/
   margin: 0;
   font-size: 16px;
