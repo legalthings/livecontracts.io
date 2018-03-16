@@ -11390,6 +11390,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 }
 
+@media screen and (max-width: 640px) {
+  .core-verticals__section-content {
+    flex-wrap: wrap;
+  }
+  .core-verticals__section-content .core-verticals__part:first-of-type {
+    margin: 40px 0;
+  }
+  .core-verticals__section-content .core-verticals__part {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 480px) {
   .usecases .usecases__wizard {
     flex-wrap: wrap;
