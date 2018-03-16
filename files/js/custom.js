@@ -153,15 +153,15 @@ $(document).ready(function () {
     }
   });
   
-  $(window).resize(function () {
-    windowWidth = $(window).width();
-    if (windowWidth > 480) {
-      elemOffset = $(".usecases__wizard").offset().top;
-    }
-    else if (windowWidth <= 480) {
-      elemOffset = $(".usecases__elements").offset().top - 30;
-    }
-  })
+  // $(window).resize(function () {
+  //   windowWidth = $(window).width();
+  //   if (windowWidth > 480) {
+  //     elemOffset = $(".usecases__wizard").offset().top;
+  //   }
+  //   else if (windowWidth <= 480) {
+  //     elemOffset = $(".usecases__elements").offset().top - 30;
+  //   }
+  // })
   
   $(window, document).click(function () {
     if (windowWidth > 480) {
@@ -177,7 +177,7 @@ $(document).ready(function () {
   })
   
   saleStartsWizard();
-  usecaseWizard();
+  // usecaseWizard();
   // saleStartsProgressBar();
   eventForMobileTooltip();
   // populateExploreBlock();
@@ -377,8 +377,11 @@ function saleStartsProgressBar(id) {
 function saleStartsWizard() {
   closeSaleStartsWizardManually();
   saleStartsWizardPosition();
-  var blockOffset = $(".wizard-descriptions").offset().top;
-  windowWidth = $(window).width()
+	if ($(".wizard-descriptions").length) {
+		var blockOffset = $(".wizard-descriptions").offset().top;
+	}
+	
+	windowWidth = $(window).width()
   
   $(window).resize(function () {
     windowWidth = $(window).width()

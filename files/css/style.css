@@ -1285,6 +1285,8 @@ header #logo #scroll-logo ~ img {
 5. MENU / NAV / SMART NAV
 
 ------------------------------------------------*/
+
+
 #menu {
   position: static;
   z-index: 10;
@@ -11558,5 +11560,107 @@ html body #intercom-container .intercom-launcher-badge-frame {
     line-height: 1.2;
   }
 }
+
+
+/*custom 16.03 for menu on customer page*/
+
+@media screen and (max-width: 1320px) {
+	.customers-menu > nav#main-nav > ul > li > a {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.customers-menu > #main-nav ul {
+		flex-wrap: wrap;
+	}
+
+	header #menu.customer-menu .responsive-nav-toggle {
+		height: 30px;
+		line-height: 30px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		display: block;
+		z-index: 1;
+	}
+
+  #menu.menu-is-open .customers-menu #main-nav {
+    opacity: 1;
+    transition: opacity .3s ease .3s;
+  }
+
+	#menu.menu-is-open .menu-inner.customers-menu {
+		right: 0
+	}
+  #menu.menu-is-open .customers-menu nav#main-nav ul li a:not(.button-style):hover {
+    color: #fff!important;
+    background: #242038!important;
+  }
+  #menu.menu-is-open .customers-menu nav#main-nav ul li a:not(.button-style) {
+    width: 100%;
+  }
+	#menu .menu-inner.customers-menu {
+		position: fixed;
+		top: 0;
+		right: -302px;
+		max-height: unset;
+		height: 100%;
+		width: 300px;
+		-moz-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+		-webkit-box-shadow: 0 0 4x 0 rgba(0, 0, 0, .15);
+		box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
+		transition: right .5s ease;
+		background: #1a1a1a;
+		border-left: 1px solid #3d3d3d;
+	}
+
+  .customers-menu > nav#main-nav ul > li {
+    display: block;
+    margin: 0;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .customers-menu > nav#main-nav ul > li a {
+    height: 22px !important;
+    line-height: 22px !important;
+    padding: 4px 0 !important;
+    display: inline-block !important;
+  }
+
+  #menu.customer-menu .responsive-nav-toggle {
+    display: block;
+    z-index: 1;
+  }
+
+  header .customer-header-inner.header-inner {
+    padding: 0 30px !important;
+  }
+
+  #menu .customers-menu #main-nav {
+    margin: 0;
+    padding: 0 30px;
+    overflow-y: scroll;
+    width: calc(100% - 60px);
+    max-height: calc(100vh - 150px);
+    opacity: 0;
+    transition: opacity .3s ease;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+
+  #menu .customers-menu #main-nav {
+    padding: 0;
+    width: 100%;
+    overflow: visible;
+  }
+}
+
 
 
