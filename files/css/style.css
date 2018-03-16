@@ -10864,8 +10864,12 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .wizard-descriptions .wizard-descriptions__table table tr {
   border-color: #fff;
 }
+.wizard-descriptions .wizard-descriptions__table table thead th {
+	font-size: 16px;
+	line-height: 18px;
+}
 .wizard-descriptions .wizard-descriptions__table {
-  padding: 15px 0 30px;
+  padding: 20px 0 30px;
 }
 .wizard-descriptions .wizard-descriptions__table table a {
   color: #9867cf;
@@ -10915,7 +10919,8 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin-bottom: 20px;
 }
 .wizard-descriptions .wizard-descriptions__subheader {
-  font-size: 16px;
+  font-size: 18px;
+	line-height: 20px;
   font-weight: 600;
   color: #fff;
 }
@@ -11347,6 +11352,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 /* styles for Bounty programm section */
 
+.bounty-program  h2 {
+  color: #fff;
+}
 .bounty-program {
   background: url("../../img/qubic-bg.jpg") no-repeat scroll center center;
   background-size: cover;
