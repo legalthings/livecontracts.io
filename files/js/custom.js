@@ -365,11 +365,11 @@ function saleStartsWizardPosition() {
 }
 
 function saleStartsProgressBar(id) {
-    var element = $('.sale-progress-' + id + '');
-    console.log('---', element);
-    element.addClass("active")
-    element.nextAll().removeClass("active")
-    element.prevAll().addClass("active")
+	$(".sale-progress__bar-element").removeClass("current-progress")
+	var element = $('.sale-progress-' + id + '');
+	element.addClass("active current-progress");
+	element.nextAll().removeClass("active");
+	element.prevAll().addClass("active")
 }
 
 
@@ -401,8 +401,9 @@ function saleStartsWizard() {
     var closeButton = $(".js-wizard-descriptions-close");
     
     var id = $(this).attr('data-wizard-id');
-
-    var element = Number(id.slice(-1));
+	
+	
+	  var element = Number(id.slice(-1));
     saleStartsProgressBar(element)
     console.log('---', element);
 

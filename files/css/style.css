@@ -10612,7 +10612,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
  }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:first-child
  .sale-progress__bar-label {
-  top: -59px;
+  top: -68px;
   left: 0;
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
@@ -10620,16 +10620,30 @@ html body #intercom-container .intercom-launcher-badge-frame {
   color: #fff;
   position: absolute;
   left: -51px;
-  top: -85px;
+  top: -65px;
 }
 
+.sale-progress .sale-progress__bar .sale-progress__bar-element:not(:first-of-type).current-progress .sale-progress__bar-bonus {
+  background: #9867cf;
+}
+.sale-progress .sale-progress__bar .sale-progress__bar-element:first-of-type .sale-progress__bar-bonus {
+  font-size: 20px;
+}
 .sale-progress .sale-progress__bar .sale-progress__bar-element
  .sale-progress__bar-bonus {
-  font-size: 20px;
+  font-size: 16px;
   color: #fff;
   position: absolute;
-  bottom: -45px;
+  bottom: -55px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  transition: .3s all;
   left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sale-progress .sale-progress__bar .sale-progress__bar-element:not(:first-child)
