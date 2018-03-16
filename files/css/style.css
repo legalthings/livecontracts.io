@@ -8463,7 +8463,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 .blog-media .blog-media__icon {
-  font-size: 60px;
+  /*width: 60px;*/
   color: #9067c6;
   display: block;
 }
