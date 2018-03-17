@@ -362,6 +362,7 @@ function saleStartsWizardPosition() {
     var that = $(this);
       if (!(that.hasClass('active'))) {
         var wrapHeight = $(".sale-starts__wizard").height();
+        var test = $(".wizard-descriptions").height();
         var paddingTop = Number($(".wizard-descriptions").css("padding-top").slice(0, -2));
         $(".sale-wizard__brief").addClass("hidden");
         steps.removeClass("floated-top floated-bottom");
@@ -373,19 +374,23 @@ function saleStartsWizardPosition() {
         var BOT_INC = 0;
         var topSteps = $(".sale-wizard__step.floated-top");
         var bottomSteps = $(".sale-wizard__step.floated-bottom");
-        for (var i = 1; i < topSteps.length + 1; i++) {
-          var name = "sale-wizard-" + i + "";
-          var elem = $(".sale-wizard__step[data-wizard-id=" + name + "]");
-          elem.css("top", "" + TOP_INC + "px");
-          TOP_INC = TOP_INC + height + 40;
-        }
-        for (var t = topSteps.length + bottomSteps.length; t > topSteps.length; t--) {
-          var targ = "sale-wizard-" + t + "";
-          var targElem = $(".sale-wizard__step[data-wizard-id=" + targ + "]");
-          var offset = wrapHeight - BOT_INC;
-          targElem.css("top", "" + offset + "px");
-          BOT_INC = BOT_INC + height + 40;
-        }
+	      console.log(test)
+	      // setTimeout(function() {
+	        for (var i = 1; i < topSteps.length + 1; i++) {
+		        var name = "sale-wizard-" + i + "";
+		        var elem = $(".sale-wizard__step[data-wizard-id=" + name + "]");
+		        elem.css("top", "" + TOP_INC + "px");
+		        TOP_INC = TOP_INC + height + 40;
+	        }
+	        for (var t = topSteps.length + bottomSteps.length; t > topSteps.length; t--) {
+		        var targ = "sale-wizard-" + t + "";
+		        var targElem = $(".sale-wizard__step[data-wizard-id=" + targ + "]");
+		        console.log(offset)
+		        var offset = test - BOT_INC;
+		        targElem.css('top', 'calc(100% - ' + BOT_INC + 'px');
+		        BOT_INC = BOT_INC + height + 40;
+	        }
+        // }, 500)
       }
   })
 }
