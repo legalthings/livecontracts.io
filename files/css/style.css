@@ -10268,14 +10268,14 @@ html.lock {
   filter: grayscale(0%) !important;
 }
 
-/* FAQ */
+/* FAQ AND BOUNTY`*/
 
 .faq {
   margin: 0 auto;
   margin-top: 20px;
 }
 
-.faq-category {
+.faq-category, .bounty-category {
   user-select: none;
   text-transform: uppercase;
   font-family: 'lato';
@@ -10286,18 +10286,18 @@ html.lock {
   font-size: 20px;
 }
 
-.faq-category.active {
+.faq-category.active, .bounty-category.active {
   color: #9067c6;
 }
 
-.faq-category.active:after {
+.faq-category.active:after, .bounty-category.active:after {
   font-family: FontAwesome;
   margin-left: 16px;
   color: #9067c6;
   content: "\f0da";
 }
 
-.faq-content {
+.faq-content, .bounty-content {
   transition: 333ms ease-in-out;
   transform: translateX(-15px);
   height: 0px;
@@ -10310,18 +10310,18 @@ html.lock {
   line-height: 1.5;
 }
 
-.faq-content .collapsible {
+.faq-content .collapsible, .bounty-content .collapsible  {
   display: none;
   margin-bottom: 32px;
 }
 
-.faq-content.visible {
+.faq-content.visible, .bounty-content.visible {
   transform: translateX(0px);
   height: auto;
   opacity: 1;
 }
 
-.faq-content.visible .collapsible {
+.faq-content.visible .collapsible, .bounty-content.visible .collapsible {
   display: block;
 }
 
@@ -11058,12 +11058,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
   }
   .sale-wizard {
     left: 0;
+	  width: 40px;
   }
   .sale-wizard .sale-wizard__step span {
     display: none;
   }
   .wizard-descriptions .wizard-descriptions__description {
-    padding-left: 90px;
+    padding-left: 40px;
   }
   .sale-starts__wizard {
     min-height: 315px;
@@ -11402,6 +11403,47 @@ html body #intercom-container .intercom-launcher-badge-frame {
   .core-verticals__section-content .core-verticals__part {
     width: 100%;
   }
+  .core-verticals__section-title {
+	  margin-bottom: 0;
+  }
+  .core-verticals__icon {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  align-items: center;
+  }
+	.core-verticals__icon span {
+		position: static;
+		line-height: 1;
+		margin-bottom: 25px;
+	}
+
+	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content {
+		display: -webkit-box;
+		display: -webkit-box;
+		display: -moz-box;
+		display: box;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		box-orient: vertical;
+	}
+
+	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content .core-verticals__right {
+		-webkit-box-ordinal-group: 3;
+		-moz-box-ordinal-group: 3;
+		box-ordinal-group: 3;
+		margin: 0;
+	}
+
+	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content .core-verticals__left {
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		box-ordinal-group: 2;
+		margin: 40px 0;
+	}
+
+
+
 }
 @media screen and (max-width: 480px) {
   .usecases .usecases__wizard {
@@ -11665,6 +11707,3 @@ html body #intercom-container .intercom-launcher-badge-frame {
     overflow: visible;
   }
 }
-
-
-

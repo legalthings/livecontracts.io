@@ -23,6 +23,23 @@ $(window).load(function () {
   });
 });
 
+function collapseBounty(id) {
+	if (currentCollapsedFaq === id) {
+		return;
+	}
+	currentCollapsedFaq = id;
+	var collapseBlock = '#' + id + '-section';
+	
+	$('.bounty-content').removeClass('visible');
+	
+	setTimeout(function () {
+		$(collapseBlock).addClass('visible');
+	}, 500);
+	
+	$('.bounty-category').removeClass('active');
+	$('#' + id).addClass('active');
+}
+
 function collapseFaq(id) {
   if (currentCollapsedFaq === id) {
     return;
@@ -84,9 +101,14 @@ $(document).ready(function () {
     
     $('.media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
   }
-  
-  collapseFaq('about-lto');
-  collapseFaq('automated-bounties');
+	
+	collapseFaq('about-lto');
+  collapseBounty('automated-bounties');
+	
+	$('.bounty-category').click(function (e) {
+		var id = e.target.id;
+		collapseBounty(id);
+	});
   
   $('.faq-category').click(function (e) {
     var id = e.target.id;
@@ -164,18 +186,18 @@ $(document).ready(function () {
   //   }
   // })
   
-  $(window, document).click(function () {
-    if (windowWidth > 480) {
-      setTimeout(function () {
-        elemOffset = $(".usecases__wizard").offset().top;
-      }, 600)
-    }
-    else if (windowWidth <= 480) {
-      setTimeout(function () {
-        elemOffset = $(".usecases__elements").offset().top - 30;
-      }, 600)
-    }
-  })
+  // $(window, document).click(function () {
+  //   if (windowWidth > 480) {
+  //     setTimeout(function () {
+  //       elemOffset = $(".usecases__wizard").offset().top;
+  //     }, 600)
+  //   }
+  //   else if (windowWidth <= 480) {
+  //     setTimeout(function () {
+  //       elemOffset = $(".usecases__elements").offset().top - 30;
+  //     }, 600)
+  //   }
+  // })
   
   saleStartsWizard();
   // usecaseWizard();
@@ -201,13 +223,16 @@ $(document).ready(function () {
   bottomCountdownInit();
 });
 var windowWidth = $(window).width();
+//
+// if (windowWidth > 480) {
+//   elemOffset = $(".usecases__wizard").offset().top;
+// }
+// else if (windowWidth <= 480) {
+//   elemOffset = $(".usecases__elements").offset().top - 30;
+// }
 
-if (windowWidth > 480) {
-  elemOffset = $(".usecases__wizard").offset().top;
-}
-else if (windowWidth <= 480) {
-  elemOffset = $(".usecases__elements").offset().top - 30;
-}
+
+
 //function dedicated for bounty program section
 
 function bountyWizard() {
