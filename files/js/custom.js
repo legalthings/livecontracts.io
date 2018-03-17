@@ -374,7 +374,6 @@ function saleStartsWizardPosition() {
         var BOT_INC = 0;
         var topSteps = $(".sale-wizard__step.floated-top");
         var bottomSteps = $(".sale-wizard__step.floated-bottom");
-	      console.log(test)
 	      // setTimeout(function() {
 	        for (var i = 1; i < topSteps.length + 1; i++) {
 		        var name = "sale-wizard-" + i + "";
@@ -385,8 +384,6 @@ function saleStartsWizardPosition() {
 	        for (var t = topSteps.length + bottomSteps.length; t > topSteps.length; t--) {
 		        var targ = "sale-wizard-" + t + "";
 		        var targElem = $(".sale-wizard__step[data-wizard-id=" + targ + "]");
-		        console.log(offset)
-		        var offset = test - BOT_INC;
 		        targElem.css('top', 'calc(100% - ' + BOT_INC + 'px');
 		        BOT_INC = BOT_INC + height + 40;
 	        }
@@ -436,7 +433,6 @@ function saleStartsWizard() {
     
     var id = $(this).attr('data-wizard-id');
 	
-	
 	  var element = Number(id.slice(-1));
     saleStartsProgressBar(element)
     console.log('---', element);
@@ -461,8 +457,6 @@ function saleStartsWizard() {
         scrollTop: blockOffset - headerHeight
       }, 1000);
     }
-  
-    
   })
   
 }
