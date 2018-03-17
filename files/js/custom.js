@@ -257,7 +257,6 @@ function bountyWizard() {
     var activeBlockHeight = $(".bounty-elements__element.active").height();
     parentBlock.height(activeBlockHeight)
     
-    
   })
   
 }
