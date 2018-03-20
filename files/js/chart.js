@@ -1,11 +1,11 @@
 var chart = bb.generate({
 	"data": {
 		"columns": [
-			["Pre sale", 10000000],
+			["Pre sale", 6204614],
 			["Company reserve", 10000000],
 			["Team and advisors", 18000000],
 			["Bounty program", 2000000],
-			["Public sale", 60000000]
+			["Public sale", 63795386]
 		],
 		"type": "donut",
 		"onclick": function (d, i) {

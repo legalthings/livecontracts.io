@@ -9650,12 +9650,13 @@ html.lock {
 .serving-companies .column-section .column {
   width: auto !important;
   float: none !important;
-  margin: auto;
+  margin: 0 20px;
 }
 
 .serving-companies .column-section {
   display: flex;
-  justify-content: space-around;
+	padding: 10px 0;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -10874,7 +10875,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .wizard-descriptions .wizard-descriptions__table table thead tr th:last-child,
 .wizard-descriptions .wizard-descriptions__table table tbody tr td:last-child {
-  color: #33bfd0;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
 }
 
 .wizard-descriptions .wizard-descriptions__table table thead tr,

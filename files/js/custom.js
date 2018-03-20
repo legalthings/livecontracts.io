@@ -360,9 +360,6 @@ function saleStartsWizardPosition() {
   steps.on('click', function () {
     var that = $(this);
       if (!(that.hasClass('active'))) {
-        var wrapHeight = $(".sale-starts__wizard").height();
-        var test = $(".wizard-descriptions").height();
-        var paddingTop = Number($(".wizard-descriptions").css("padding-top").slice(0, -2));
         $(".sale-wizard__brief").addClass("hidden");
         steps.removeClass("floated-top floated-bottom");
         $(this).css("top", 0);
@@ -392,7 +389,7 @@ function saleStartsWizardPosition() {
 }
 
 function saleStartsProgressBar(id) {
-	$(".sale-progress__bar-element").removeClass("current-progress")
+	$(".sale-progress__bar-element").removeClass("current-progress");
 	var element = $('.sale-progress-' + id + '');
 	element.addClass("active current-progress");
 	element.nextAll().removeClass("active");
@@ -433,7 +430,7 @@ function saleStartsWizard() {
     var id = $(this).attr('data-wizard-id');
 	
 	  var element = Number(id.slice(-1));
-    saleStartsProgressBar(element)
+    // saleStartsProgressBar(element)
     console.log('---', element);
 
     var element = $('div[id="' + id + '"]');
