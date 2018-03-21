@@ -220,7 +220,7 @@ $(document).ready(function () {
   $(window).on("mousewheel", function () {
     $('html,body').stop();
   });
-  bottomCountdownInit();
+  // bottomCountdownInit(); //TODO: On it if we want bottom countdown work
 });
 var windowWidth = $(window).width();
 //
