@@ -11464,6 +11464,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
 		margin: 40px 0;
 	}
 
+	.core-verticals__text .sr-button {
+		margin: 0 auto;
+	}
+	.core-verticals__list {
+		width: 100%;
+	}
+	.core-verticals__text {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 }
 @media screen and (max-width: 480px) {
   .usecases .usecases__wizard {
