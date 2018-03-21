@@ -9656,6 +9656,7 @@ html.lock {
 .serving-companies .column-section {
   display: flex;
 	padding: 10px 0;
+	align-items: center;
   justify-content: center;
 }
 
@@ -10413,7 +10414,7 @@ html.lock {
   height: 418px;
   padding: 0;
   /*width: 100%;*/
-  background: url("../../img/elems_block.jpg") no-repeat scroll center center;
+  background: url("../../img/customers_block.jpg") no-repeat scroll center center;
   background-size: contain;
 }
 
@@ -10425,7 +10426,7 @@ html.lock {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url("../../img/elems_block.jpg") no-repeat scroll center center;
+	background: url("../../img/customers_block.jpg") no-repeat scroll center center;
   background-size: contain;
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -10438,9 +10439,9 @@ html.lock {
 }
 
 @media screen and (max-width: 1200px) {
-  .column-section.block-button__hover {
-    height: 210px;
-  }
+  /*.column-section.block-button__hover {*/
+    /*height: 210px;*/
+  /*}*/
 }
 
 @media screen and (max-width: 768px) {
@@ -10448,10 +10449,10 @@ html.lock {
     opacity: 1;
   }
 
-  .column-section.block-button__hover::before, .column-section.block-button__hover {
-    background: url("../../img/elems_block_mobile.jpg") no-repeat scroll center center;
-    background-size: cover;
-  }
+  /*.column-section.block-button__hover::before, .column-section.block-button__hover {*/
+    /*background: url("../../img/elems_block_mobile.jpg") no-repeat scroll center center;*/
+    /*background-size: cover;*/
+  /*}*/
 }
 
 #page-title .subtitle-1 a {
@@ -11286,7 +11287,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	box-sizing: border-box;
 }
 
-.core-verticals__section:not(last-of-type) {
+.core-verticals__section:not(:last-of-type) {
   margin-bottom: 80px
 }
 
@@ -11725,4 +11726,26 @@ html body #intercom-container .intercom-launcher-badge-frame {
     width: 100%;
     overflow: visible;
   }
+}
+
+
+/* 21.03 changes by @krivomazoff*/
+
+.general-advantages__element {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.general-advantages__title {
+	width: 100%;
+}
+.general-advantages__image img {
+	background: transparent;
+	width: 100px;
+}
+.general-advantages__image {
+	box-sizing: border-box;
+	padding: 20px;
+	border-radius: 50%;
+	background: #fff;
 }
