@@ -10414,7 +10414,7 @@ html.lock {
   height: 418px;
   padding: 0;
   /*width: 100%;*/
-  background: url("../../img/customers_section_3.jpg") no-repeat scroll center center;
+  background: url("../../img/customers_back_updated.jpg") no-repeat scroll center center;
   background-size: contain;
 }
 
@@ -10426,7 +10426,7 @@ html.lock {
   left: 0;
   bottom: 0;
   right: 0;
-	background: url("../../img/customers_section_3.jpg") no-repeat scroll center center;
+	background: url("../../img/customers_back_updated.jpg") no-repeat scroll center center;
   background-size: contain;
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -10450,7 +10450,7 @@ html.lock {
   }
 
   .column-section.block-button__hover::before, .column-section.block-button__hover {
-    background: url("../../img/customers_section_mobile_3.jpg") no-repeat scroll center center;
+    background: url("../../img/customers_back_updated_mobile.jpg") no-repeat scroll center center;
     background-size: contain;
   }
 }
@@ -10772,12 +10772,22 @@ html body #intercom-container .intercom-launcher-badge-frame {
   opacity: 0;
 }
 .sale-wizard .sale-wizard__brief p:last-child {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
+.sale-wizard .sale-wizard__brief p span {
+	color: #33bfd0;
+	transition: .3s all;
+	display: block;
+	position: static;
+}
+.sale-wizard .sale-wizard__brief p {
+	font-size: 20px;
+	min-width: 550px;
+}
 .sale-wizard .sale-wizard__brief {
   position: absolute;
-  width: 250px;
+  /*width: 250px;*/
   transition: .4s all;
   left: 35px;
 }
@@ -10808,6 +10818,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
   height: 40px;
   transition: .3s all;
   position: absolute;
+}
+.sale-wizard .sale-wizard__step:hover .sale-wizard__brief p span {
+	color: #fff;
 }
 .sale-wizard .sale-wizard__step:hover {
   cursor: pointer;
@@ -10868,7 +10881,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   content: "4"
 }
 .sale-wizard .sale-wizard__step[data-wizard-id="sale-wizard-5"]:after {
-  content: ""
+  content: "5"
 }
 
 .sale-starts .wizard-guide {
@@ -10891,7 +10904,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 .wizard-descriptions .wizard-descriptions__table table thead th {
 	font-size: 16px;
-	line-height: 18px;
+	line-height: 2;
 }
 .wizard-descriptions .wizard-descriptions__table {
   padding: 20px 0 30px;
@@ -10899,6 +10912,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .wizard-descriptions .wizard-descriptions__table table a {
   color: #9867cf;
   text-decoration: underline;
+}
+.wizard-descriptions .wizard-descriptions__table table thead+tbody tr:first-child td {
+	padding: 10px 10px 10px 0;
 }
 .wizard-descriptions .wizard-descriptions__table table * {
   color: #fff;
@@ -11075,9 +11091,15 @@ html body #intercom-container .intercom-launcher-badge-frame {
     padding-left: 40px;
   }
   .sale-starts__wizard {
-    min-height: 315px;
+    /*min-height: 315px;*/
     width: 100% !important;
+	  margin-bottom: 160px;
     max-width: 100% !important;
+  }
+	.sale-wizard .sale-wizard__brief p {
+		min-width: 400px;
+		font-size: 18px;
+		line-height: 1.6;
   }
 }
 
@@ -11095,6 +11117,12 @@ html body #intercom-container .intercom-launcher-badge-frame {
   .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-text {
     font-size: 12px;
   }
+	.sale-wizard .sale-wizard__brief p {
+		font-size: 14px;
+		min-width: 200px;
+		line-height: 1.6;
+	}
+
 }
 
 /*end of new sale starts block */
