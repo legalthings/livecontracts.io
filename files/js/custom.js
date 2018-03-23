@@ -400,6 +400,8 @@ function saleStartsProgressBar(id) {
 // for wizard in sale starts block
 function saleStartsWizard() {
   closeSaleStartsWizardManually();
+  
+
   saleStartsWizardPosition();
 	if ($(".wizard-descriptions").length) {
 		var blockOffset = $(".wizard-descriptions").offset().top;
@@ -454,7 +456,9 @@ function saleStartsWizard() {
       }, 1000);
     }
   })
-  
+	setTimeout(function () {
+		$(".sale-starts__wizard").addClass("visible");
+	}, 400)
 }
 
 // for bottom countdown

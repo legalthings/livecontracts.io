@@ -8462,9 +8462,26 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
   align-items: center;
 }
 
+.blog-media .blog-image  {
+	background: #fff;
+	padding: 20px;
+	display: block;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+.discover-special.inline.sr-button:hover {
+	background: #fff;
+	color: #1a1a1a;
+	border-color: #fff;
+}
+
+.discover-special.inline.sr-button {
+	background: #9067c6;
+	border: 2px solid #9067c6;
+	color: #fff;
+}
 .blog-media .blog-media__icon {
-  /*width: 60px;*/
-  color: #9067c6;
+  /*color: #9067c6;*/
   display: block;
 }
 
@@ -8477,6 +8494,9 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
   align-items: center;
 }
 
+.discover-section .post-name a {
+	color: #fff !important;
+}
 @media screen and (min-width: 960px) {
   .discover-section #blog-grid .blog-item:nth-of-type(3n) {
     /* margin-right: 0; */
@@ -10414,9 +10434,10 @@ html.lock {
   height: 418px;
   padding: 0;
   /*width: 100%;*/
-  background: url("../../img/customers_back_updated.jpg") no-repeat scroll center center;
+  background: url("../../img/cust.jpg") no-repeat scroll center center;
   background-size: contain;
 }
+
 
 .column-section.block-button__hover::before {
   position: absolute;
@@ -10426,7 +10447,7 @@ html.lock {
   left: 0;
   bottom: 0;
   right: 0;
-	background: url("../../img/customers_back_updated.jpg") no-repeat scroll center center;
+	background: url("../../img/cust.jpg") no-repeat scroll center center;
   background-size: contain;
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -10450,7 +10471,7 @@ html.lock {
   }
 
   .column-section.block-button__hover::before, .column-section.block-button__hover {
-    background: url("../../img/customers_back_updated_mobile.jpg") no-repeat scroll center center;
+    background: url("../../img/cust_mobile.jpg") no-repeat scroll center center;
     background-size: contain;
   }
 }
@@ -10750,11 +10771,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
   margin: 30px 0 60px;
 }
 
+.sale-starts__wizard.visible {
+	opacity: 1;
+}
+
 .sale-starts__wizard {
   display: flex;
+	transition: .3s all;
   position: relative;
   min-height: 615px;
   height: 100%;
+	opacity: 0;
   margin-bottom: 80px;
 }
 
@@ -11310,6 +11337,15 @@ html body #intercom-container .intercom-launcher-badge-frame {
   justify-content: center;
 }
 
+.core-verticals__right .core-verticals__icon-part .core-verticals__icon {
+	margin-left: auto;
+}
+.core-verticals__right .core-verticals__icon-part {
+	justify-content: initial;
+}
+.core-verticals__left .core-verticals__icon-part {
+	justify-content: left;
+}
 
 .core-verticals__icon {
   position: relative;
@@ -11448,6 +11484,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
   .core-verticals__section-content .core-verticals__part:first-of-type {
     margin: 40px 0;
   }
+  .core-verticals__section-content .core-verticals__icon-part {
+	  justify-content: center;
+  }
   .core-verticals__section-content .core-verticals__part {
     width: 100%;
   }
@@ -11459,6 +11498,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	  display: flex;
 	  flex-wrap: wrap;
 	  width: 45%;
+	  margin: 0 !important;
 	  justify-content: center;
 	  align-items: center;
   }
@@ -11474,26 +11514,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	}
 
 	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content {
-		display: -webkit-box;
-		display: -webkit-box;
-		display: -moz-box;
-		display: box;
-		-webkit-box-orient: vertical;
-		-moz-box-orient: vertical;
-		box-orient: vertical;
+		display: flex;
 	}
 
-	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content .core-verticals__right {
-		-webkit-box-ordinal-group: 3;
-		-moz-box-ordinal-group: 3;
-		box-ordinal-group: 3;
+	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content .core-verticals__part {
 		margin: 0;
+		order: 2;
 	}
 
-	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content .core-verticals__left {
-		-webkit-box-ordinal-group: 2;
-		-moz-box-ordinal-group: 2;
-		box-ordinal-group: 2;
+	.core-verticals .core-verticals__section:nth-of-type(3) .core-verticals__section-content
+	.core-verticals__part.core-verticals__icon-part  {
+		order: 1;
 		margin: 40px 0;
 	}
 
