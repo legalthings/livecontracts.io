@@ -10621,12 +10621,16 @@ html body #intercom-container .intercom-launcher-badge-frame {
  }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:first-child
  .sale-progress__bar-label {
-  top: -68px;
+  /*top: -68px;*/
   left: 0;
 }
 .sale-progress .sale-progress__bar .sale-progress__bar-element .sale-progress__bar-label {
   font-size: 20px;
   color: #fff;
+	line-height: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
   position: absolute;
   left: -51px;
   top: -65px;
@@ -10643,9 +10647,8 @@ html body #intercom-container .intercom-launcher-badge-frame {
   font-size: 16px;
   color: #fff;
   position: absolute;
-  bottom: -55px;
-  width: 40px;
-  height: 40px;
+  bottom: -65px;
+	line-height: 1;
   border-radius: 50%;
   background: transparent;
   transition: .3s all;
@@ -10787,7 +10790,6 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 .sale-wizard .sale-wizard__brief {
   position: absolute;
-  /*width: 250px;*/
   transition: .4s all;
   left: 35px;
 }
@@ -10913,9 +10915,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   color: #9867cf;
   text-decoration: underline;
 }
-.wizard-descriptions .wizard-descriptions__table table thead+tbody tr:first-child td {
-	padding: 10px 10px 10px 0;
-}
+
 .wizard-descriptions .wizard-descriptions__table table * {
   color: #fff;
 }
@@ -11294,13 +11294,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 .core-verticals__section-title {
   font-family: Montserrat;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 1.25;
   font-weight: bold;
   text-align: center;
   letter-spacing: 0.1px;
   color: #000000;
-  margin-bottom: 35px;
+  /*margin-bottom: 60px;*/
 }
 
 
@@ -11320,7 +11320,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 .core-verticals__section:not(:last-of-type) {
-  margin-bottom: 80px
+  margin-bottom: 40px
 }
 
 .core-verticals__section-content .core-verticals__icon span {
@@ -11453,6 +11453,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   }
   .core-verticals__section-title {
 	  margin-bottom: 0;
+	  font-size: 26px;
   }
   .core-verticals__icon {
 	  display: flex;
@@ -11643,6 +11644,8 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 .bounty-elements__button {
   margin: 0 auto 64px;
+	position: relative;
+	z-index: 10;
 
 }
 .bounty-elements__text  {
@@ -11795,4 +11798,14 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	padding: 20px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+.purple-divider {
+	height: 400px
+}
+
+@media screen and (max-width : 768px) {
+	.purple-divider {
+		height: 200px
+	}
 }
