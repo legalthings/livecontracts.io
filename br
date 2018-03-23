@@ -195,7 +195,7 @@
           </li>
         </ul>
       </div>
-      <p>Public Sale - April 5th: <span id="bottom_countdown"></span></p>
+      <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
       <a class="sr-button inline button-1-ghost button-medium circled">Register now</a>
     </div>
 
@@ -203,11 +203,12 @@
 
 
   <!-- HERO  -->
-  <section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
+  <section id="hero" class="hero-full">
+    <img class="hero_img" src="img/background_svg.svg"/>
     <div id="page-title" class="wrapper align-left">
       <h1>LegalThings One</h1>
       <h3 class="subtitle-1">
-        Um sistema legal justo para todos!
+        O blockchain para lei inteligente e regulação
       </h3>
       <div class="spacer-small"></div>
       <div class="icon-box">
@@ -223,12 +224,12 @@
       <p class="hero__buttons">
         <a class="sr-button button-1 button-medium circled lc-primary-action">
             Compre tokens LTO
-          </a>
-        <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
-            Informação de token
-          </a>
-        <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
-            Leia FAQ
+        </a>
+        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="sr-button button-1 button-medium circled">
+          Juntar Telegram
+        </a>
+        <a href="https://legalthings.github.io/livecontracts-specs/index.html" class="sr-button button-1 button-medium circled">
+          Visão Github
         </a>
       </p>
       <div class="spacer-small"></div>
@@ -236,6 +237,23 @@
           <h3><strong>Pre-sale data final</strong></h3>
           <div class="spacer-small"></div>
           <div class="count-down" data-end-date=""></div>
+      </div>
+    </div>
+    <div class="hero_customers">
+        <h5 style="text-align: center;">INTEGRAÇÕES SUPORTADAS</h5>
+        <div class="hero_customers_container">
+          <img src="img/blockchain/waves.png"/>
+          <img src="img/blockchain/hyperledger.png"/>
+          <img src="img/blockchain/ethereum.png"/>
+        </div>
+        <h5 class="hero_customers_clients">CLIENTES QUE JÁ UTILIZAM A PLATAFORMA</h5>
+      <div class="hero_customers_container">
+        <img src="img/customers/dekra_logo.png"/>
+        <img src="img/customers/albert_heijn_logo_gray.png"/>
+        <img src="img/customers/firm24-color.png"/>
+        <img src="img/customers/government_of_the_netherlands.jpg"/>
+        <img src="img/customers/Heineken_International_logo.png"/>
+        <img src="img/customers/quislex-color.png"/>
       </div>
     </div>
     <!-- END #page-title -->
