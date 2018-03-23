@@ -3363,6 +3363,61 @@ footer #backtotop:before {
   overflow: hidden;
 }
 
+#hero .hero_img {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+  width: 33%;
+}
+
+#hero .hero_customers {
+  position: absolute;
+  bottom: 5%;
+  margin-left: -400px;
+  left: 50%;
+}
+
+#hero .hero_customers_container {
+  display: block;
+  text-align: center;
+}
+
+#hero .hero_customers img {
+  max-width: 170px;
+  filter: grayscale(100%);
+  max-height: 45px;
+  margin: 10px;
+}
+
+#hero .hero_customers_clients {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#hero .hero_customers_clients:before {
+  width: 200px;
+  content: '';
+  background: black;
+  display: inline-block;
+  height: 3px;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+#hero .hero_customers_clients:after {
+  width: 200px;
+  content: '';
+  background: black;
+  display: inline-block;
+  height: 3px;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+#hero * {
+  color: #231d39;
+}
+
 #hero.text-light {
   background: #1a1a1a;
 }
@@ -3403,7 +3458,7 @@ header.header-style-floating + #hero #page-title {
 #hero.hero-full #page-title, #hero.hero-big #page-title {
   margin-top: 0px;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
   -moz-transform: translateY(-50%) translateX(-50%);
@@ -8763,8 +8818,8 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 #hero .sr-button:hover, .parallax-section .sr-button:hover {
-  color: white;
-  border-color: white;
+  color: black;
+  border-color: black;
 }
 
 #hero .sr-button:first-of-type {
@@ -8804,10 +8859,6 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 
 header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > ul > li:last-of-type > a {
   color: #fff !important;
-}
-
-#hero {
-  background-color: #120F16 !important;
 }
 
 .popup-backdrop {
