@@ -199,11 +199,13 @@ $(document).ready(function () {
   //   }
   // })
   
-  saleStartsWizard();
-  // usecaseWizard();
+  // saleStartsWizard();
+	// eventForMobileTooltip();
+	
+	// usecaseWizard();
   // saleStartsProgressBar();
-  eventForMobileTooltip();
   // populateExploreBlock();
+	salesAccordion();
   manipulatingHeader();
   loadTokens();
   wizardInit();
@@ -231,6 +233,13 @@ var windowWidth = $(window).width();
 //   elemOffset = $(".usecases__elements").offset().top - 30;
 // }
 
+function salesAccordion() {
+	$(".wizard-descriptions__description").on("click", function (e) {
+		e.preventDefault();
+		$(this).toggleClass('active')
+		$(this).find(".wizard-descriptions__content").toggleClass("visible")
+	})
+}
 
 
 //function dedicated for bounty program section

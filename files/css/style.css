@@ -9618,7 +9618,7 @@ html.lock {
 #blog-grid .post-name {
   display: flex;
   margin-bottom: 16px;
-  min-height: 52px;
+  /*min-height: 52px;*/
   justify-content: center;
   font-size: 18px;
   font-weight: 400;
@@ -9860,6 +9860,9 @@ html.lock {
   left: -6px;
   padding: 8px;
   margin: 0;
+	box-sizing: border-box;
+	top: 0;
+	height: 44px;
 }
 
 .newsletter-submit {
@@ -9871,6 +9874,30 @@ html.lock {
 
 .newsletter-form .newsletter-submit {
   border: 1px solid #1a1a1a;
+}
+
+.js-wishlist-popup .newsletter-email {
+	width: 100%;
+	max-width: 100%;
+	height: 44px;
+	box-sizing: border-box;
+}
+.js-wishlist-popup .newsletter-submit {
+	position: absolute;
+	right: 0;
+	left: auto;
+	top: 0;
+}
+.js-wishlist-popup .newsletter-form {
+	position: relative;
+	width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+	.js-wishlist-popup .newsletter-submit {
+		font-size: 12px;
+		line-height: 1;
+	}
 }
 
 .newsletter-success {
@@ -10373,9 +10400,19 @@ html.lock {
 .faq-content, .bounty-content {
   transition: 333ms ease-in-out;
   transform: translateX(-15px);
-  height: 0px;
+  height: 0;
   opacity: 0;
-  font-weight: 500;
+  font-weight: 200;
+}
+
+.bounty__button-wrap .bounty-elements__button {
+	margin: 0;
+}
+.bounty__button-wrap {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
 }
 
 .faq-content h3 {
@@ -10545,8 +10582,9 @@ html.lock {
   left: 0;
   background: white;
   height: 80px;
-  z-index: 100;
+  z-index: 1001;
   width: 100%;
+	border-top: 1px solid #eee;
   display: block;
 }
 .sticky-bottom .wrapper p span {
@@ -10875,7 +10913,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .sale-wizard .line {
   display: block;
   width: 3px;
-  background: #fff;
+  background: #9067c6;
   height: 100%;
   /*bottom: 7px;*/
   left: 50%;
@@ -10889,6 +10927,9 @@ html body #intercom-container .intercom-launcher-badge-frame {
   position: absolute;
   top: 5px;
 }
+.sale-wizard .sale-wizard__step * {
+	color: #000
+}
 .sale-wizard .sale-wizard__step {
   color: #fff;
   font-size: 20px;
@@ -10900,7 +10941,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   position: absolute;
 }
 .sale-wizard .sale-wizard__step:hover .sale-wizard__brief p span {
-	color: #fff;
+	color: #9067c6;
 }
 .sale-wizard .sale-wizard__step:hover {
   cursor: pointer;
@@ -10929,10 +10970,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
     border-radius: 50%;
     text-align: center;
     position: absolute;
-    color: #231d39;
+    color: #fff;
     line-height: 35px;
     z-index: 5;
-    background: #fff;
+    background: #9067c6;
 }
 
 .sale-wizard .sale-wizard__step:before {
@@ -10980,7 +11021,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
 .wizard-descriptions .wizard-descriptions__table table thead tr,
 .wizard-descriptions .wizard-descriptions__table table tr {
-  border-color: #fff;
+  border-color: #9867cf;
 }
 .wizard-descriptions .wizard-descriptions__table table thead th {
 	font-size: 16px;
@@ -10995,7 +11036,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 .wizard-descriptions .wizard-descriptions__table table * {
-  color: #fff;
+  color: #000;
 }
 .wizard-descriptions {
   width: 100%;
@@ -11011,6 +11052,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   width: calc(100% + 15%);
   height: 2px;
   background: #9867cf;
+	transition: .3s all;
   content: "";
 }
 
@@ -11059,7 +11101,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 .wizard-descriptions .wizard-descriptions__close-icon span {
   display: block;
-  background: #fff;
+  background: #9867cf;
   height: 2px;
   width: 14px;
   position: absolute;
@@ -11087,7 +11129,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
   width: 85px;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  color: #000;
+}
+.wizard-descriptions .wizard-descriptions__description * {
+	color: #000;
 }
 .wizard-descriptions .wizard-descriptions__description {
   width: calc(100% - 80px);
@@ -11889,5 +11934,92 @@ html body #intercom-container .intercom-launcher-badge-frame {
 @media screen and (max-width : 768px) {
 	.purple-divider {
 		height: 200px
+	}
+}
+
+
+/* making sales wizard as accord */
+
+.sale-starts__wizard {
+	opacity: 1;
+	min-height: auto;
+}
+
+.wizard-descriptions  {
+	max-width: 100%;
+}
+.wizard-descriptions .wizard-descriptions__content.visible {
+	max-height: 2000px;
+	visibility: visible;
+	opacity: 1;
+}
+.wizard-descriptions .wizard-descriptions__content {
+	max-height: 0;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s all;
+}
+.wizard-descriptions .wizard-descriptions__description.active {
+	opacity: 1;
+	left: auto;
+	transform: none;
+}
+.wizard-descriptions .wizard-descriptions__description {
+	position: relative;
+	left: auto;
+	width: 100%;
+	opacity: 1;
+	box-sizing: border-box;
+	padding: 20px;
+	transition: .3s all;
+	border-radius: 10px;
+}
+.wizard-descriptions .wizard-descriptions__description:hover {
+	cursor: pointer;
+	box-shadow: 0 0 30px 5px #9067c6;
+}
+.wizard-descriptions .wizard-descriptions__description:hover .wizard-descriptions__title:after {
+	width: 200%;
+
+}
+.wizard-descriptions__brief {
+	transition: .3s all;
+}
+
+.sale-wizard__divider:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #9067c6;
+	border-width: 10px;
+	margin-left: -10px;
+	/*border-radius: 5px;*/
+}
+.sale-wizard__divider {
+	width: 3px;
+	height: 40px;
+	display: block;
+	position: relative;
+	margin: 30px auto 35px;
+	background: #9067c6;
+	border-radius: 5px;
+}
+
+#hero.hero-big #page-title,
+#hero.hero-full #page-title {
+	position: static !important;
+	transform: none !important;
+	margin: 0 auto !important;
+}
+
+@media screen and (max-width: 480px) {
+	.sale-wizard__divider {
+		margin: 20px auto 25px
 	}
 }
