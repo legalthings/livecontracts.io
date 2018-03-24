@@ -4,7 +4,32 @@ Small desktop screens
 
 ------------------------ */
 
+@media only screen and (max-width: 1920px) {
+	#hero .hero_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+	}
+
+	#hero #page-title {
+		transform: translateY(-25%) translateX(-50%) !important;
+		top: 10% !important;
+	}
+}
+
 @media only screen and (max-width: 1280px) {
+	#hero .hero_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+	}
+
+	#hero #page-title {
+		top: 10% !important;
+	}
+
 	#page-content {
 		min-width: inherit;
 		max-width: 100%;
@@ -659,6 +684,10 @@ Small tablets / tablets portrait
 
 	footer .footer-inner {
 		padding: 80px 0;
+	}
+
+	#hero .hero_img {
+		display: none;
 	}
 
 	#hero #page-title {
@@ -1643,5 +1672,13 @@ Smartphones
 @media only screen and (max-width: 768px) {
 	.row-section {
 		padding: 32px 16px 32px 16px;
+	}
+
+	.hero_customers {
+		display: none;
+	}
+
+	#hero #page-title {
+		top: 25% !important;
 	}
 }
