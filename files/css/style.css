@@ -11943,21 +11943,22 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .sale-starts__wizard {
 	opacity: 1;
 	min-height: auto;
+	overflow: hidden;
 }
 
 .wizard-descriptions  {
 	max-width: 100%;
 }
 .wizard-descriptions .wizard-descriptions__content.visible {
-	max-height: 2000px;
+	height: 100%;
 	visibility: visible;
 	opacity: 1;
 }
 .wizard-descriptions .wizard-descriptions__content {
-	max-height: 0;
+	height: 0;
 	visibility: hidden;
 	opacity: 0;
-	transition: .3s all;
+	transition: .5s all ease-in-out;
 }
 .wizard-descriptions .wizard-descriptions__description.active {
 	opacity: 1;
@@ -11970,17 +11971,37 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	width: 100%;
 	opacity: 1;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 20px 0 0 80px;
 	transition: .3s all;
 	border-radius: 10px;
+	overflow: visible;
 }
+
+.wizard-descriptions .wizard-descriptions__description:hover .sale-wizard__step:hover:after {
+	font-size: 24px;
+	box-shadow: 0 0 0 5px rgba(152, 103, 207, .5);
+}
+
+.wizard-descriptions .wizard-descriptions__description:hover .sale-wizard__step:before {
+	box-shadow: 0 0 0 10px rgba(152, 103, 207, .3);
+}
+
 .wizard-descriptions .wizard-descriptions__description:hover {
 	cursor: pointer;
-	box-shadow: 0 0 30px 5px #9067c6;
+	/*box-shadow: 0 0 30px 5px #9067c6;*/
 }
-.wizard-descriptions .wizard-descriptions__description:hover .wizard-descriptions__title:after {
+.wizard-descriptions .wizard-descriptions__description:hover .wizard-descriptions__more,
+.wizard-descriptions .wizard-descriptions__description.active .wizard-descriptions__more {
+	color: #33bfd0;
+}
+.wizard-descriptions .wizard-descriptions__description:hover .wizard-descriptions__title:after,
+.wizard-descriptions .wizard-descriptions__description.active .wizard-descriptions__title:after {
 	width: 200%;
 
+}
+.wizard-descriptions__brief .wizard-descriptions__more  {
+	color: #9067c6;
+	transition: .3s all;
 }
 .wizard-descriptions__brief {
 	transition: .3s all;
@@ -12022,4 +12043,14 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	.sale-wizard__divider {
 		margin: 20px auto 25px
 	}
+}
+
+
+.sale-wizard {
+	left: 0;
+	top: 20px;
+}
+
+.wizard-descriptions .wizard-descriptions__description:not(:last-of-type) .sale-wizard {
+	height: 200%;
 }

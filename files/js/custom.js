@@ -236,7 +236,8 @@ var windowWidth = $(window).width();
 function salesAccordion() {
 	$(".wizard-descriptions__description").on("click", function (e) {
 		e.preventDefault();
-		$(this).toggleClass('active')
+		$(this).toggleClass('active');
+		$(this).find('.sale-wizard__step').toggleClass("active")
 		$(this).find(".wizard-descriptions__content").toggleClass("visible")
 	})
 }
