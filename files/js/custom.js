@@ -443,7 +443,6 @@ function saleStartsWizard() {
 
 	  var element = Number(id.slice(-1));
     // saleStartsProgressBar(element)
-    console.log('---', element);
 
     var element = $('div[id="' + id + '"]');
 

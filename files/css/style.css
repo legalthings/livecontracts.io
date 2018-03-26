@@ -3429,6 +3429,7 @@ footer #backtotop:before {
 	z-index: 10;
 	position: relative;
 	background: #fff;
+	text-transform: uppercase;
 	display: inline-block;
 	padding: 0 20px;
 	font-size: 10px;
@@ -8552,6 +8553,9 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
   align-items: center;
 }
 
+.blog-media .blog-image img  {
+	width: 100px;
+}
 .blog-media .blog-image  {
 	background: #fff;
 	padding: 20px;
