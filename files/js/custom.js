@@ -29,13 +29,13 @@ function collapseBounty(id) {
 	}
 	currentCollapsedFaq = id;
 	var collapseBlock = '#' + id + '-section';
-	
+
 	$('.bounty-content').removeClass('visible');
-	
+
 	setTimeout(function () {
 		$(collapseBlock).addClass('visible');
 	}, 500);
-	
+
 	$('.bounty-category').removeClass('active');
 	$('#' + id).addClass('active');
 }
@@ -46,13 +46,13 @@ function collapseFaq(id) {
   }
   currentCollapsedFaq = id;
   var collapseBlock = '#' + id + '-section';
-  
+
   $('.faq-content').removeClass('visible');
-  
+
   setTimeout(function () {
     $(collapseBlock).addClass('visible');
   }, 500);
-  
+
   $('.faq-category').removeClass('active');
   $('#' + id).addClass('active');
 }
@@ -60,12 +60,12 @@ function collapseFaq(id) {
 $(document).ready(function () {
   today = new Date();
   var isShowingMore = false;
-  
+
   redirectUserToLocalSite();
   getSaleDate();
   bountyWizard();
-  
-  
+
+
   var files = [
     { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
     { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
@@ -91,53 +91,53 @@ $(document).ready(function () {
     { url: 'https://www.artificiallawyer.com/2018/01/10/legal-fling-blockchain-contracts-for-legally-binding-consensual-encounters/', img: 'artificial_lawyer.png' },
     { url: 'http://link.law.com/public/11641586', img: 'law.png' }
   ];
-  
+
   $('#media-logos').append('<div class="media-slider">');
-  
+
   for (var i = 0; i < files.length; i++) {
     if (i % 5 === 0) {
       $('.media-slider').append('<br/>');
     }
-    
+
     $('.media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
   }
-	
+
 	collapseFaq('about-lto');
   collapseBounty('automated-bounties');
-	
+
 	$('.bounty-category').click(function (e) {
 		var id = e.target.id;
 		collapseBounty(id);
 	});
-  
+
   $('.faq-category').click(function (e) {
     var id = e.target.id;
     collapseFaq(id);
   });
-  
+
   if ($(".quote").length > 0) {
     quotesAnimation();
   }
-  
+
   $('#wallet').on('change', function (newValue) {
     validateWavesAddress(newValue.target.value);
   });
-  
+
   $("#lto-amount").on("keypress blur", function (event) {
     $(this).val($(this).val().replace(/[^0-9\.]/g, ''));
     if ((event.which != 8 || $(this).val().indexOf('.') != -1) && (event.which < 48 || event.which > 57)) {
       event.preventDefault();
     }
   });
-  
+
   $('#lto-amount').on('input', function (newValue) {
     calculateRate();
   });
-  
+
   $('#price-currency').on('change', function (newValue) {
     calculateRate();
   });
-  
+
   $('#toc-agreement').on('click', function (event) {
     if (event.target.checked) {
       $('#pay').removeAttr('disabled');
@@ -145,7 +145,7 @@ $(document).ready(function () {
       $('#pay').attr('disabled', 'disabled');
     }
   });
-  
+
   $('#billing-company').on('change', function (newValue) {
     if (newValue.target.value.length && newValue.target.value.length > 0) {
       changeBillingAddress(true);
@@ -153,7 +153,7 @@ $(document).ready(function () {
       changeBillingAddress(false);
     }
   });
-  
+
   $('#billing-country').on('change', function (newValue) {
     if (newValue.target.value) {
       changeVAT(newValue.target.value, true);
@@ -161,8 +161,8 @@ $(document).ready(function () {
       changeVAT(newValue.target.value, false);
     }
   });
-  
-  
+
+
   $('#show-more').click(function () {
     if (!isShowingMore) {
       isShowingMore = true;
@@ -175,7 +175,7 @@ $(document).ready(function () {
       $('#show-more').text('More team members');
     }
   });
-  
+
   // $(window).resize(function () {
   //   windowWidth = $(window).width();
   //   if (windowWidth > 480) {
@@ -185,7 +185,7 @@ $(document).ready(function () {
   //     elemOffset = $(".usecases__elements").offset().top - 30;
   //   }
   // })
-  
+
   // $(window, document).click(function () {
   //   if (windowWidth > 480) {
   //     setTimeout(function () {
@@ -198,10 +198,10 @@ $(document).ready(function () {
   //     }, 600)
   //   }
   // })
-  
+
   // saleStartsWizard();
 	// eventForMobileTooltip();
-	
+
 	// usecaseWizard();
   // saleStartsProgressBar();
   // populateExploreBlock();
@@ -217,7 +217,7 @@ $(document).ready(function () {
   initWalletChoice();
   createWavesWallet();
   handlePayment();
-  
+
   //for animation fix after scrolling
   $(window).on("mousewheel", function () {
     $('html,body').stop();
@@ -257,18 +257,18 @@ function bountyWizard() {
     e.preventDefault();
     var id = $(this).attr('data-bounty-id');
     var element = $('div[id="' + id + '"]');
-    
+
     $(".bounty-wizard__step").removeClass("active");
     $(".bounty-elements__element").removeClass("active");
-    
+
     $(this).addClass("active");
     element.addClass("active");
-    
+
     var activeBlockHeight = $(".bounty-elements__element.active").height();
     parentBlock.height(activeBlockHeight)
-    
+
   })
-  
+
 }
 
 //for interaction with progress bar in Sale starts
@@ -282,29 +282,29 @@ $(window).resize(function () {
 
 // for wizard in usecases block
 function usecaseWizard() {
-  
+
   var headerHeight = $("#header").height();
   var height = $(".usecases__element.active").height();
   $(".usecases__elements").css("height", height);
-  
+
   $(window).resize(function () {
     height = $(".usecases__element.active").height();
     $(".usecases__elements").css("height", height);
   });
-  
+
   $(".usecases__wizard-step").on("click", function (e) {
     e.preventDefault();
-    
+
     var id = $(this).attr("data-usecase-step");
     var element = $('div[id="' + id + '"]');
-    
+
     $(".usecases__wizard-step").removeClass("active");
     $(".usecases__element").removeClass("active");
     $(".usecases__navigation-pointer").removeClass("usecases__navigation-1 usecases__navigation-2 usecases__navigation-3");
-    
+
     var that = $(this);
     that.addClass("active");
-    
+
     if (id === "usecase-step-1") {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-1")
     }
@@ -315,7 +315,7 @@ function usecaseWizard() {
       $(".usecases__navigation-pointer").addClass("usecases__navigation-3")
     }
     element.addClass("active js-clicked-height");
-    
+
     height = $(".usecases__element.active").height();
     $(".usecases__elements").height(height);
     $('html, body').animate({
@@ -328,11 +328,11 @@ function usecaseWizard() {
 function closeSaleStartsWizardManually() {
   $(".js-wizard-descriptions-close").on("click", function (e) {
     e.preventDefault();
-    
+
     $(this).addClass("js-was-clicked");
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
-    
+
     var headerHeight = $("#header").height() + 15;
     var saleWizardOffset = $(".sale-starts__wizard").offset().top;
     if (windowWidth <= 1024) {
@@ -410,21 +410,21 @@ function saleStartsProgressBar(id) {
 // for wizard in sale starts block
 function saleStartsWizard() {
   closeSaleStartsWizardManually();
-  
+
 
   saleStartsWizardPosition();
 	if ($(".wizard-descriptions").length) {
 		var blockOffset = $(".wizard-descriptions").offset().top;
 	}
-	
+
 	windowWidth = $(window).width()
-  
+
   $(window).resize(function () {
     windowWidth = $(window).width()
   })
   var initHeightForActive = $(".wizard-descriptions__description.active").height() + 64;
   $(".wizard-descriptions").height(initHeightForActive);
-  
+
   $(window).resize(function () {
     initPaddingBottom = $(".wizard-descriptions__description.active").height();
     $(".wizard-descriptions").height(initPaddingBottom);
@@ -434,30 +434,30 @@ function saleStartsWizard() {
   if ($('.sale-wizard__step').hasClass("active")) {
       $(".sale-wizard__brief").addClass("hidden");
   }
-  
+
   $('.sale-wizard__step').on('click', function (e) {
-    
+
     var closeButton = $(".js-wizard-descriptions-close");
-    
+
     var id = $(this).attr('data-wizard-id');
-	
+
 	  var element = Number(id.slice(-1));
     // saleStartsProgressBar(element)
     console.log('---', element);
 
     var element = $('div[id="' + id + '"]');
-    
+
     $(".sale-wizard__step").removeClass("active");
     $(".wizard-descriptions__description").removeClass("active");
-    
+
     $(this).addClass("active");
     element.addClass("active");
-    
+
     setTimeout(function () {
       var heightForPadd = $(".wizard-descriptions__description.active").height() + 64;
       $(".wizard-descriptions").height(heightForPadd)
     }, 100)
-    
+
     var headerHeight = $("#header").height() + 15;
     var CONST_FOR_WIZARD_OFFSET = $(".sale-starts__wizard ").height() + 55;
     if (windowWidth < 768) {
@@ -486,10 +486,10 @@ function bottomCountdownInit() {
 function redirectUserToLocalSite() {
   userLang = navigator.language || navigator.userLanguage;
   var wasRedirected = localStorage.getItem('wasRedirectedToLocale');
-  
+
   var currentUrl = window.location.pathname.split('/');
   var currentPage = currentUrl[currentUrl.length - 1];
-  
+
   if (currentPage === '' && userLang.indexOf('pt') > -1 && !wasRedirected) {
     localStorage.setItem("wasRedirectedToLocale", true);
     window.location.href = 'br';
@@ -502,14 +502,14 @@ function changeBillingAddress(required) {
     $('#billing-postcode').attr('required', 'required');
     $('#billing-city').attr('required', 'required');
     $('#billing-country').attr('required', 'required');
-    
+
     $('.address-required-labels').css('display', 'inline-block');
   } else {
     $('#billing-address').removeAttr('required');
     $('#billing-postcode').removeAttr('required');
     $('#billing-city').removeAttr('required');
     $('#billing-country').removeAttr('required');
-    
+
     $('.address-required-labels').css('display', 'none');
   }
 }
@@ -541,12 +541,12 @@ function initWalletChoice() {
   $("#enter-wallet").hide();
   $('#generated-address').hide();
   $('#generate-address').show();
-  
+
   if (wavesWallet) {
     $('#generated-address').show();
     $('#generate-address').hide();
   }
-  
+
   $("#wallet-choice").change(function () {
     var value = $(this).val();
     if (value === 'yes') {
@@ -558,10 +558,10 @@ function initWalletChoice() {
 }
 
 function showCreateWallet() {
-  
+
   $("#create-wallet").show();
   $("#enter-wallet").hide();
-  
+
   if (wavesWallet) {
     $('#generated-address').show();
     $('#generate-address').hide();
@@ -597,7 +597,7 @@ function getVATCountries() {
   if (vatCountries && vatCountries.length > 0) {
     return;
   }
-  
+
   $.ajax({
     url: waves_server + "/api/countries",
     success: function (result) {
@@ -614,10 +614,10 @@ function getSaleDate() {
         startDate: new Date(result['start_date']),
         endDate: new Date(result['end_date'])
       };
-      
+
       $('.count-down').attr('data-end-date', saleDate.endDate);
-      initTimer();
-      
+      initTimer(saleDate.endDate);
+
       if (today.getTime() > saleDate.startDate.getTime() &&
           today.getTime() < saleDate.endDate.getTime()) {
         enableBuyButton();
@@ -634,7 +634,7 @@ function getSaleDate() {
 function enableSubscribeButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Se inscrever' : 'Subscribe now';
   $('.lc-primary-action').text(btnText).addClass('js-open-wishlistPopup');
-  
+
   $('.js-open-wishlistPopup').on('click', function (e) {
     e.preventDefault();
     $('html').addClass('lock');
@@ -651,7 +651,7 @@ function enableBuyButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Compre tokens LTO' : 'Buy LTO Tokens';
   $('.lc-primary-action').text(btnText).addClass('js-open-wizard');
   $('.count-down-wrap').removeClass('hidden');
-  
+
   $(".js-open-wizard").on('click', function (e) {
     e.preventDefault();
     $('html').addClass('lock')
@@ -664,19 +664,19 @@ function enableBuyButton() {
 function getRates() {
   $('#rates-message').text('Please wait while we fetch the current rates...');
   $('#rates-message').addClass('visible');
-  
+
   $.ajax({
     url: waves_server + "/api/rates",
     success: function (result) {
       ltoRates = result;
-      
+
       $.each(ltoRates, function (i, item) {
         $('#price-currency').append($('<option>', {
           value: item.currency,
           text: item.currency
         }));
       });
-      
+
       $('#rates-message').removeClass('visible');
       $('#rates-message').css('display', 'none');
       $('#price').val('0');
@@ -692,20 +692,20 @@ function calculateRate() {
   if (!ltoRates.length) {
     return;
   }
-  
+
   var selectedCurrency = $('#price-currency').val();
   var ltoAmount = $('#lto-amount').val();
-  
+
   if (ltoAmount === '') {
     return;
   }
-  
+
   var currentCurrency = ltoRates.find(r => r.currency === selectedCurrency
 )
   ;
   var bonusTokens = Math.ceil(parseFloat(ltoAmount * bonusRate));
   var totalLtos = parseInt(ltoAmount) + parseInt(bonusTokens);
-  
+
   if (currentCurrency) {
     var decimals = currentCurrency.currency === 'USD' || currentCurrency.currency === 'EUR' || currentCurrency.currency === 'BRL' ? 2 : 6;
     var total = parseFloat(parseInt(ltoAmount) * parseFloat(currentCurrency.rate)).toFixed(decimals);
@@ -713,7 +713,7 @@ function calculateRate() {
     $('#amount-bonus').html(bonusTokens);
     $('#amount-total').html(totalLtos);
   }
-  
+
   $('#amount-users').text(Math.floor(ltoAmount / 500));
   $('#amount-contracts').text(Math.floor(ltoAmount / 1000) * 5);
   $('#amount-interactions').text(Math.floor(ltoAmount / 1000) * 250);
@@ -733,11 +733,11 @@ function handlePayment() {
     var currency = $('#price-currency').val();
     var provider = getPaymentProvider($('#payment-choice').val(), currency);
     var price = $('#price').val();
-    
+
     if (currency == 'BRL') {
       provider = 'creditcard';
     }
-    
+
     var data = {};
     data.user = user;
     data.organization = organization;
@@ -748,17 +748,17 @@ function handlePayment() {
     data.wallet = wallet.trim();
     data.currency = currency;
     data.provider = provider;
-    
+
     var validWallet = checkWalletAddress(wallet, function (err, validWallet) {
       if (!validWallet) {
         $('#error-payment').html('Invalid waves wallet address entered please correct it in previous step');
         $('#error-payment').show();
         return;
       }
-      
+
       $('#error-payment').hide();
-      
-      
+
+
       if (provider === 'creditcard') {
         stripeCheckout(data, price);
       } else if (provider == 'ideal') {
@@ -775,7 +775,7 @@ function handlePayment() {
 
 function startPayment(data) {
   $('#progress-bar').addClass('visible');
-  
+
   $.ajax({
     url: waves_server + "/api/payment/start",
     type: "POST",
@@ -785,12 +785,12 @@ function startPayment(data) {
     success: function (result) {
       $('#pay').removeAttr('disabled');
       $('#progress-bar').removeClass('visible');
-      
+
       if (!result.transaction.id) {
         $('#error-payment').html('Failed to complete transaction, please contact us on one of our social channels.');
         $('#error-payment').show();
       }
-      
+
       if (result.transaction.external_payment_url) {
         window.location.href = result.transaction.external_payment_url;
       } else {
@@ -808,11 +808,11 @@ function startPayment(data) {
 function getPaymentProvider(provider, currency) {
   const prov = provider.toLowerCase().trim();
   const cur = currency.toLowerCase().trim();
-  
+
   if (['usd', 'eur'].indexOf(cur) === -1) {
     return 'crypto';
   }
-  
+
   return prov;
 }
 
@@ -827,56 +827,56 @@ function collectUserInfo() {
   user.city = $('#billing-city').val();
   user.country = $('#billing-country').val();
   user.vat_number = $('#billing-vat').val();
-  
+
   return user;
 }
 
 function convertUserToOrg(user) {
-  
+
   var address = {};
   address.street = user.address;
   address.postcode = user.postcode;
   address.city = user.city;
   address.country = user.country;
-  
+
   var organization = {};
   organization.id = user.email;
   organization.name = user.company == "" ? user.first_name + " " + user.last_name : user.company;
   organization.email = user.email;
   organization.address = address;
   organization.vat_number = user.vat_number;
-  
+
   return organization;
 }
 
 function loadCheckoutInformation() {
   var user = collectUserInfo();
-  
+
   if (user.company == "") {
     $('#checkout-company').hide();
   } else {
     $('#checkout-company').show();
     $('#checkout-company').html(user.company);
   }
-  
+
   $('#checkout-name').html(user.first_name + " " + user.last_name);
   $('#checkout-email').html(user.email);
   $('#checkout-address').html(user.address);
   $('#checkout-city').html(user.postcode + ", " + user.city);
   $('#checkout-country').html(user.country);
   $('#checkout-wallet').html($('#wallet').val());
-  
+
   var tokens = $('#lto-amount').val();
   var bonusTokens = $('#amount-bonus').text();
   var totalTokens = $('#amount-total').text();
   var price = $('#price').val();
   var currency = $('#price-currency').val();
-  
+
   $('#checkout-tokens').html("<strong>" + tokens + "</strong>");
   $('#checkout-bonus').html("<strong>" + bonusTokens + "</strong>");
   $('#checkout-total-tokens').html("<strong>" + totalTokens + "</strong>");
   $('#checkout-total-price').html("<strong>" + price + " " + currency + "</strong>");
-  
+
   if (currency === "EUR" || currency === "USD") {
     $('#payment-choice').show();
   } else {
@@ -887,16 +887,16 @@ function loadCheckoutInformation() {
 //function for animating quotes on scroll
 //function for animating quotes on scroll
 function quotesAnimation() {
-  
+
   var quote = document.getElementsByClassName('quote');
   quote[0].classList.add('quoteActive');
-  
+
   for (let i = 0; i < quote.length; i++) {
     window.addEventListener('scroll', function () {
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       var parent = $('.top-quotes-block');
       var main = parent.offset().top - (parent.height());
-      
+
       if (scrollTop <= main) {
         quote[i].classList.remove('quoteActive');
         quote[0].classList.add('quoteActive');
@@ -909,7 +909,7 @@ function quotesAnimation() {
       }
     })
   }
-  
+
 }
 
 
@@ -949,10 +949,10 @@ function timelineInit() {
               .attr("src") +
           ")"
       );
-      
+
       // var path = selectors.item.first().find(selectors.img).attr("src");
       // $("#timeline-background").attr("src", path);
-      
+
       // $("#timeline-background").attr(
       //   "src",
       //   "/" +
@@ -1002,9 +1002,9 @@ function timelineInit() {
       });
     };
   })(jQuery);
-  
+
   $("#timeline-1").timeline();
-  
+
 }
 
 
@@ -1021,30 +1021,30 @@ function eventForMobileTooltip() {
 //function for same tabs in Wizard on 4 and 5 steps
 
 function bindingWizardsTabs() {
-  
+
   var bitcoinTab = $('.bitcoin-tab')
   var bitcoinContent = $('.bitcoin-content')
-  
+
   var ethererumTab = $('.ethererum-tab')
   var ethererumContent = $('.ethererum-content')
-  
+
   $('.tab-nav li').on('click', function () {
     if ($(this).hasClass('bitcoin-tab')) {
       bitcoinTab.addClass('active')
       bitcoinContent.addClass('active')
-      
+
       ethererumTab.removeClass('active')
       ethererumContent.removeClass('active')
     }
     if ($(this).hasClass('ethererum-tab')) {
       bitcoinTab.removeClass('active')
       bitcoinContent.removeClass('active')
-      
+
       ethererumTab.addClass('active')
       ethererumContent.addClass('active')
     }
   })
-  
+
 }
 
 // Global variables leave here, pls
@@ -1059,12 +1059,12 @@ function scrollToBlock() {
   $('.js-scrollToBlock').on('click', function (e) {
     e.preventDefault();
     var blockOffset = $($(this).attr('href')).offset().top;
-    
+
     $('html, body').animate({
       scrollTop: blockOffset - 96
     }, 2000);
   })
-  
+
 }
 
 //Function that populate blocks in "Explore".
@@ -1095,12 +1095,12 @@ function populateExploreBlock() {
       " Live Contracts and stores information in a provable, immutable way on a public decentralized storage."
     }
   ];
-  
+
   $('.populate-block .loading .fa').addClass('spinning')
   var block = $('#blog-grid');
   var count = explore.length;
-  
-  
+
+
   $.each(explore, function (key, value) {
     block.append([
       '<div class="isotope-item blog-item" style="position: absolute; left: 0px; top: 0px;">',
@@ -1133,13 +1133,13 @@ function manipulatingHeader() {
   var header = $('#header');
   var topBlockHeight = $('#hero').height();
   var new_offset = 100;
-  
+
   $(window).resize(function () {
     topBlockHeight = $('#hero').height();
   });
   $(window).scroll(function () {
     var scrollFromTop = $(document).scrollTop();
-    
+
     if (scrollFromTop > new_offset) {
       header.addClass('custom-visible');
       $(".sticky-bottom").addClass('visible');
@@ -1148,7 +1148,7 @@ function manipulatingHeader() {
       $(".sticky-bottom").removeClass('visible');
     }
   })
-  
+
 }
 
 //loading data about tokens status
@@ -1179,7 +1179,7 @@ function manipulatingHeader() {
 function loadTokens() {
   var currentTokens = $('.current-tokens-sold');
   var allTokens = $('.progress-end');
-  
+
   $.ajax({
     url: waves_server + "/api/balance",
     success: function (result) {
@@ -1189,14 +1189,14 @@ function loadTokens() {
       // } else {
       //   $('.bonus-tokens-msg').css('display', 'none');
       // }
-      
+
       var cap = 10000000;
       var presaleLimit = parseFloat(result.phases.presale.limit / 1000000000, 10);
       var presaleAvailable = parseFloat(result.balance / 100000000, 10);
       var sold = presaleLimit - presaleAvailable;
-      
+
       $('.progress-active').attr('data-perc', (sold / presaleLimit) * 100);
-      
+
       currentTokens.html(sold.formatMoney(0, '.', ','));
       allTokens.html(cap.formatMoney(0, '.', ','));
     }
@@ -1207,11 +1207,11 @@ function loadTokens() {
 //loading data about tokens status
 function validateWavesAddress(address) {
   $('#wallet').parsley().removeError('required');
-  
+
   if (!address || !address.length) {
     return;
   }
-  
+
   checkWalletAddress((address), function (err, valid) {
     if (!valid) {
       $('#wallet').parsley().addError('required', {message: 'Invalid Waves wallet address', updateClass: true});
@@ -1235,11 +1235,11 @@ function checkWalletAddress(address, callback) {
 
 function disableNextToDownloadSeed() {
   if (!$('.next-btn').hasClass('disabled')) $('.next-btn').addClass('disabled');
-  
+
   if (!$('.sf-controls span').length) {
     $('.sf-controls').append('<span class="parsley-required span-seed-msg">Please download your seed to continue</span>');
   }
-  
+
   $('#download-seed').click(function () {
     $('.next-btn').removeClass('disabled');
     $('.sf-controls').find('span').remove();
@@ -1265,21 +1265,21 @@ function wizardInit() {
     },
     onSlideChanged: function (to, data) {
       $('.next-btn').removeClass('disabled');
-      
+
       if ($('.sf-controls').find('span').length) $('.sf-controls').find('span').remove();
-      
+
       // if we transition to token selection step, fetch the rates and start calculation
       if (to === 1) {
         var myOpts = document.getElementById('price-currency').options;
-        
+
         if (!myOpts.length) {
           getRates();
         }
       }
-      
+
       if (to === 2) {
         if ($('#wallet-choice').val() !== 'yes') disableNextToDownloadSeed();
-        
+
         $('#wallet-choice').on('change', function (event) {
           if (event.target.value !== 'yes') {
             disableNextToDownloadSeed();
@@ -1289,39 +1289,39 @@ function wizardInit() {
           }
         });
       }
-      
+
       if (to === 3) {
         var currency = $('#price-currency').val();
         $('#payment-choice').empty();
-        
+
         $.each(paymentOptions, function (i, item) {
           $('#payment-choice').append($('<option>', {
             value: item.value,
             text: item.text
           }));
         });
-        
+
         $("#pay").appendTo(".sf-controls").addClass('visible');
-        
+
         // if (currency === "USD") $("#payment-unavailable").css('display', 'block');
         // else $("#payment-unavailable").css('display', 'none');
       }
     }
   });
-  
+
   getVATCountries();
-  
+
   $('#error-payment').hide();
-  
+
   $("#faucet-retrieve-btn").on('click', function (e) {
     e.preventDefault();
     var $recipient = $('#faucet-recipient');
     var address = $recipient.val();
-    
+
     if (!address) {
       return;
     }
-    
+
     $.ajax({
       type: "POST",
       url: waves_server + "/api/faucet",
@@ -1335,7 +1335,7 @@ function wizardInit() {
           $('#faucet-success').hide();
           return;
         }
-        
+
         $('#faucet-failed').hide();
         $('#faucet-success').show();
         $('#faucet-success-link').attr('href', 'https://wavesexplorer.com/tx/' + result.id);
@@ -1390,20 +1390,20 @@ Number.prototype.formatMoney = function (c, d, t) {
 
 function initSubscribeMailChimp() {
   var $form = null;
-  
+
   $('.newsletter-form').submit(function (e) {
     e.preventDefault();
     $form = $(this);
   });
-  
+
   $('.newsletter-form').ajaxChimp({
     callback: function (resp) {
       var $error = $form.find('.newsletter-error');
       var $success = $form.find('.newsletter-success');
-      
+
       $error.hide();
       $success.hide();
-      
+
       if (resp.result === 'error') {
         $error.show().html(resp.msg);
         $success.hide();
@@ -1420,7 +1420,7 @@ function stripeCheckout(data, price) {
   if (!price || price <= 0 || isNaN(price)) {
     return;
   }
-  
+
   var handler = StripeCheckout.configure({
     name: 'LTO Pre-sale',
     key: 'pk_live_8R8FrtJRBHzJ6Fqet7pK4Fa1',
@@ -1433,7 +1433,7 @@ function stripeCheckout(data, price) {
     email: data.user.email,
     currency: data.currency || 'USD'
   });
-  
+
   handler.open({
     token: function (token) {
       data.user.creditcard = {token: token.id};
@@ -1442,26 +1442,15 @@ function stripeCheckout(data, price) {
   });
 }
 
-function initTimer() {
+function initTimer(endDate) {
   var time = $('.count-down');
-  
+
   if (!time || !time.length) {
     return;
   }
-  
-  var endDate = new Date(time.data("end-date"));
-  time.countdown({
-    date: endDate,
-    render: function (data) {
-      $(this.el).html('<div class="cd-row"><div><h1>' + data.days
-          + '</h1><p>days</p></div><div><h1>'
-          + this.leadingZeros(data.hours, 2)
-          + '</h1><p>hrs</p></div></div><div class="cd-row"><div><h1>'
-          + this.leadingZeros(data.min, 2)
-          + '</h1><p>min</p></div><div><h1>'
-          + this.leadingZeros(data.sec, 2)
-          + '</h1><p>sec</p></div></div>');
-    }
+
+  time.countdown(endDate, function(event) {
+    $(this).html(event.strftime('<h4>%D</h4> days <h4>%H</h4> hours <h4>%M</h4> minutes <h4>%S</h4> seconds'));
   });
 }
 
@@ -1473,7 +1462,7 @@ if ($('#checkout-presale').length) {
       description: 'Purchase LTO tokens',
       zipCode: false,
       currency: 'usd',
-      
+
       // this needs to be set dynamically: https://stripe.com/docs/recipes/variable-amount-checkout
       // based on <num_tokens> * $0.25
       amount: 2000,

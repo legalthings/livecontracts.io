@@ -9330,15 +9330,21 @@ html.lock {
   }
 }
 
-@media only screen and (min-width: 991px) {
-  .count-down {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
+.count-down {
+  margin: 0px;
 }
 
 .count-down h1 {
   line-height: 1;
+}
+
+.count-down h4 {
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.count-down h4:first-child {
+  margin-left: 0px;
 }
 
 .count-down p {
