@@ -3393,6 +3393,10 @@ footer #backtotop:before {
 	margin: 0 auto;
 }
 
+#hero .hero_customers_container:first-of-type {
+	width: 60%;
+	margin: 0 auto;
+}
 #hero .hero_customers_container {
   display: flex;
 	justify-content: center;
@@ -3402,6 +3406,7 @@ footer #backtotop:before {
 #hero .hero_customers img {
   filter: grayscale(100%);
   margin: 0;
+	opacity: 0.6;
 }
 
 .hero_customers_container .hero_customers_container__image:not(:last-of-type) {
@@ -3412,7 +3417,6 @@ footer #backtotop:before {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .hero_customers_clients__divider {
@@ -3420,6 +3424,7 @@ footer #backtotop:before {
 	top: 50%;
 	left: 0;
 	width: 100%;
+	opacity: .3;
 	z-index: 5;
 	background: #000;
 	height: 1px;
@@ -3432,11 +3437,13 @@ footer #backtotop:before {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 0 20px;
-	font-size: 10px;
+	font-size: 11px;
 	margin: 0;
+	line-height: 1;
+	letter-spacing: 2px;
 }
 #hero .hero_customers_clients {
-  margin: 10px 0;
+  margin: 15px 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
