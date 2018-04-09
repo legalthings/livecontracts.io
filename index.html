@@ -50,6 +50,8 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
   <script>
@@ -66,18 +68,19 @@
   <script>
   var alignment = 'right';
 
-  if (window.innerWidth < 599) {
-    alignment = 'left';
-  } else {
-    alignment = 'right';
-  }
+  // if (window.innerWidth < 599) {
+  //   alignment = 'left';
+  // } else {
+  //   alignment = 'right';
+  // }
 
   window.intercomSettings = {
     app_id: 'g247sp2q',
+    vertical_padding: 110,
     alignment: alignment
   };
 
-  (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
+    (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
       ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
       i.q = [];
       i.c = function(args) { i.q.push(args) };
@@ -121,13 +124,17 @@
               <span class="hamburger"></span>
           </a>
           <div class="flag-section">
-            <a href="br"><img src="img/flags/br.png"></nav></a>
+            <a href="br"><img src="img/flags/br.png">
+            </a>
           </div>
           <div class="menu-inner">
             <nav id="main-nav">
               <ul>
+	              <li class="">
+		              <a href="#bounty" class="js-scrollToBlock">Bounty program</a>
+	              </li>
                 <li class="">
-                  <a href="#lto-presale" class="js-scrollToBlock">Token info</a>
+                  <a href="#token-info" class="js-scrollToBlock">Token info</a>
                 </li>
                 <li class="">
                   <a href="#faq" class="js-scrollToBlock">FAQ</a>
@@ -147,52 +154,1747 @@
       </div>
       <!-- END .header-inner -->
     </header>
+    <!-- HEADER END-->
+
+    <!-- STICKY BOTTOM BAR -->
+      <div class="sticky-bottom">
+        <div class="wrapper">
+        <div class="socialsBlock purpleSection">
+          <ul class="sticky-bottom__socials socialmedia-widget size-huge">
+            <li class="telegram">
+              <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+            </li>
+            <li class="github">
+              <a href="https://github.com/legalthings" target="_blank"></a>
+            </li>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+            </li>
+            <li class="twitter">
+              <a href="https://twitter.com/livecontracts" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
+        <a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
+        </div>
+
+      </div>
+    <!-- STICKY BOTTOM BAR END -->
+
+
     <!-- HERO  -->
-    <section id="hero" class="hero-full text-light parallax-section" data-parallax-image="img/background-header.png">
-      <div id="page-title" class="wrapper align-left">
-        <h1>LegalThings One</h1>
-        <h3 class="subtitle-1">
-            A fair legal system for everyone
-          </h3>
-        <div class="spacer-small"></div>
-        <div class="icon-box">
-          <div class="icon-box-icon">
-            <i class="ion ion-5x ion-ribbon-b"></i>
-          </div>
-          <div class="icon-box-content">
-            <h5>Winner of the Blockathon by the</h5>
-            <h5>Dutch Ministry of Justice and Security</h5>
-          </div>
-        </div>
-        <div class="spacer-medium"></div>
-        <p class="hero__buttons">
-          <a class="lc-primary-action sr-button button-1 button-medium circled">
-              Buy LTO Tokens
-            </a>
-          <a href="#lto-presale" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Token info
-            </a>
-          <a href="#faq" class="js-scrollToBlock sr-button button-1 button-medium circled">
-              Read FAQ
-            </a>
-          <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-              Demo
-            </a> -->
-        </p>
-        <div class="spacer-medium"></div>
-        <div class="count-down-wrap hidden">
-            <h3><strong>Pre-sale ends in</strong></h3>
-            <div class="spacer-small"></div>
-            <div class="count-down" data-end-date=""></div>
+    <section id="hero"
+             class="hero-full text-light parallax-section"
+             data-parallax-image="img/back_final.jpg">
+		    <div id="page-title" class="wrapper align-left">
+			    <h1>LegalThings One</h1>
+			    <h3 class="subtitle-1">
+				    The blockchain for smart law & regulation
+			    </h3>
+			    <div class="spacer-small"></div>
+
+			    <p class="hero__buttons">
+				    <a class="lc-primary-action sr-button button-1 button-medium circled">
+					    Buy LTO Tokens
+				    </a>
+				    <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="sr-button button-1 button-medium circled">
+					    Join our Telegram
+				    </a>
+				    <a href="https://legalthings.github.io/livecontracts-specs/index.html" class="sr-button button-1 button-medium circled">
+					    View on Github
+				    </a>
+				    <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
+								Demo
+							</a> -->
+			    </p>
+			    <!--<h4 class="subtitle-1">-->
+			    <!--Get an intoduction to LegalThings One - <a href="#" target="_blank">Watch video</a>-->
+			    <!--</h4>-->
+			    <div class="spacer-small"></div>
+			    <div class="icon-box">
+				    <div class="icon-box-icon">
+					    <i class="ion ion-5x ion-ribbon-b"></i>
+				    </div>
+				    <div class="icon-box-content">
+					    <h5>Winner of the Blockathon by the</h5>
+					    <h5>Dutch Ministry of Justice and Security</h5>
+				    </div>
+			    </div>
+			    <div class="spacer-medium"></div>
+			    <div class="count-down-wrap hidden">
+				    <h3><strong>Sale ends in</strong></h3>
+				    <div class="count-down" data-end-date=""></div>
+			    </div>
+		    </div>
+
+      <!--</div>-->
+
+	    <div class="hero_customers">
+		    <!--<h5 style="text-align: center;">SUPPORTED INTEGRATIONS</h5>-->
+		    <div class="hero_customers_container">
+			    <div class="hero_customers_container__image">
+				    <img src="img/blockchain/waves.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/blockchain/hyperledger.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/blockchain/ethereum.png"/>
+			    </div>
+		    </div>
+		    <div class="hero_customers_clients">
+			    <div class="hero_customers_clients__divider"></div>
+			    <!--<h5>CLIENTS WHO ALREADY USE THE PLATFORM</h5>-->
+			    <h5>a selection of our clients</h5>
+		    </div>
+		    <div class="hero_customers_container">
+			    <div class="hero_customers_container__image">
+				    <img src="img/customers/dekra_logo.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img style="width: 50px" src="img/customers/albert_heijn_logo_gray.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/customers/firm24-color.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/customers/government_of_the_netherlands.jpg"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/customers/Heineken_International_logo.png"/>
+			    </div>
+			    <div class="hero_customers_container__image">
+				    <img src="img/customers/quislex-color.png"/>
+			    </div>
         </div>
       </div>
-      </div>
+
       <!-- END #page-title -->
     </section>
     <!-- HERO -->
     <!-- PAGEBODY -->
     <section id="page-body">
-      <div>
+        <section class="sale-starts">
+          <div class="wrapper row-section">
+            <h1 class="align-center title">Sale starts Q2 2018</h1>
+            <div class="sale-progress">
+              <div class="sale-progress__bar">
+                <div class="sale-progress__bar-element sale-progress-1 active current-progress">
+                  <div class="sale-progress__bar-label">Sales</div>
+                  <div class="sale-progress__bar-text">Level 1</div>
+                  <div class="sale-progress__bar-bonus">Bonus</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-2">
+                  <div class="sale-progress__bar-label">6M LTO</div>
+                  <div class="sale-progress__bar-text">Level 2</div>
+                  <div class="sale-progress__bar-bonus">20%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-3">
+                  <div class="sale-progress__bar-label">16M LTO</div>
+                  <div class="sale-progress__bar-text">Level 3</div>
+                  <div class="sale-progress__bar-bonus">10%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-4">
+                  <div class="sale-progress__bar-label">32M LTO</div>
+                  <div class="sale-progress__bar-text">Level 4</div>
+                  <div class="sale-progress__bar-bonus">5%</div>
+                </div>
+                <div class="sale-progress__bar-element sale-progress-5">
+                  <div class="sale-progress__bar-label">48M LTO</div>
+                  <div class="sale-progress__bar-label special-label">70M LTO</div>
+                  <div class="sale-progress__bar-text">Level 5</div>
+                  <div class="sale-progress__bar-bonus">0%</div>
+                </div>
+              </div>
+            </div>
+            <div class="sale-starts__disclaimer align-center">
+              <h3 class="subtitle">Bonus levels are based on USD value of total funds received</h3>
+              <a class="lc-primary-action sr-button button-1 button-medium circled">
+                Buy LTO Tokens
+              </a>
+            </div>
+          </div>
+        </section>
+	    <div class="roadmap-section">
+		    <div class="wrapper row-section">
+			    <h2 class="align-center title roadmap-title"><strong>Roadmap</strong></h2>
+			    <div class="spacer-small"></div>
+			    <div class="sale-starts__wizard">
+				    <div class="wizard-descriptions">
+					    <div id="sale-wizard-1" class="wizard-descriptions__description">
+						    <div class="sale-wizard">
+							    <div class="line"></div>
+							    <div data-wizard-id="sale-wizard-1" class="sale-wizard__step"></div>
+						    </div>
+						    <div class="wizard-descriptions__brief">
+							    <div class="wizard-descriptions__title">
+								    Presale
+							    </div>
+							    <!--<div class="wizard-descriptions__subheader">-->
+								    <!--Goal 1 objectives-->
+							    <!--</div>-->
+							    <div class="wizard-descriptions__text">
+								    Through goal 1 we focus on getting a first alpha version of the LegalThings One platform out for user
+								    testing. From a business development and marketing perspective we focus on showcases to get the
+								    world familiar with the concept of a legal blockchain solution.
+								    <div class="wizard-descriptions__more">More...</div>
+							    </div>
+						    </div>
+						    <div class="wizard-descriptions__content">
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Software Development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>Release employment contract example with clause violation and finite state machine
+											    demonstration on app.livecontracts.io
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Release Employment contract example with clause violation
+											    FSM on app.livecontracts.io
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Beta release Legal Fling: A Live Contract showcase to digitize
+											    Swedish law to get explicit sexual consent
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Blockchain signing integration</td>
+										    <td>Completed</td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Communication & marketing deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>Prepare & review marketing plan</td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>PR on Live Contract showcase LegalFling.io
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Feature LegalWeek New York
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Business development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>Partner with Brazilian company to enter Latin America region</td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Partner with Brazilian consulting firm to manage translations of marketing material and
+											    website
+										    </td>
+										    <td>Completed</td>
+									    </tr>
+									    <tr>
+										    <td>Partnership with Ministry of Justice to build legal flows for ‘low classification cases’
+										    </td>
+										    <td>
+											    Completed
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+							    <!--<span></span>-->
+							    <!--<span></span>-->
+							    <!--</div>-->
+							    <!--</a>-->
+						    </div>
+					    </div>
+					    <!--<div class="sale-wizard__divider"></div>-->
+					    <div id="sale-wizard-2" class="wizard-descriptions__description">
+						    <div class="sale-wizard">
+							    <div class="line"></div>
+							    <div data-wizard-id="sale-wizard-2" class="sale-wizard__step"></div>
+						    </div>
+						    <div class="wizard-descriptions__brief">
+							    <div class="wizard-descriptions__title">
+								    Goal 2
+							    </div>
+							    <!--<div class="wizard-descriptions__subheader">-->
+								    <!--Goal 2 objectives (Goal 2 includes all deliverable from Goal 1)-->
+							    <!--</div>-->
+							    <div class="wizard-descriptions__text">
+								    Through goal 2 we focus on the PaaS version that can be used by third parties to create their own
+								    Live
+								    Contract solution. From a business development- and marketing perspective we will release LTO
+								    showcases in our core verticales: Document Transaction Management, Regulatory & Compliance and
+								    Tokenization of illiquid assets.
+								    <div class="wizard-descriptions__more">More...</div>
+
+							    </div>
+						    </div>
+						    <div class="wizard-descriptions__content">
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Software Development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>Release Legal Fling in Apple App Store</td>
+										    <td>Expected - March 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release Legal Fling in Google Play Store
+										    </td>
+										    <td>Expected - March 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Publishing of Live Contracts protocol specifications
+										    </td>
+										    <td>Expected - March 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release fully automated bounty program to track referrals and manage payouts
+										    </td>
+										    <td>Expected - March 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Beta release of the LTO PaaS for 64 teams to work with during
+											    <a href="https://blockchaingers.org/p/2018-edition" target="_blank">biggest blockathon in the
+												    world</a>
+										    </td>
+										    <td>Expected - April 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Integration with <a href="https://www.blockcerts.org/" target="_blank">blockcert certification
+											    module</a>
+										    </td>
+										    <td>Expected - April 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release HR contract package
+										    </td>
+										    <td>Expected - April 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release Waves anchor (open source)
+										    </td>
+										    <td>Expected - April 2018</td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Business development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Partnership with blockchain partner for tokenization procedures of illiquid assets
+											    (art/shares/real estate/etc.)
+										    </td>
+										    <td>Expected - May 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Partnership with big law firm or legal process innovator in the USA
+										    </td>
+										    <td>Expected - April 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Hire representative in the USA
+										    </td>
+										    <td>
+											    Expected - April 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release updated livecontracts.io website
+										    </td>
+										    <td>
+											    Expected - March 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Publish updated roadmap
+										    </td>
+										    <td>
+											    Expected - March 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Start LTO main token sale
+										    </td>
+										    <td>
+											    Expected - May 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+								    <!--Close-->
+								    <!--<div class="wizard-descriptions__close-icon">-->
+									    <!--<span></span>-->
+									    <!--<span></span>-->
+								    <!--</div>-->
+							    <!--</a>-->
+						    </div>
+					    </div>
+					    <div id="sale-wizard-3" class="wizard-descriptions__description">
+						    <div class="sale-wizard">
+							    <div class="line"></div>
+							    <div data-wizard-id="sale-wizard-3" class="sale-wizard__step"></div>
+						    </div>
+						    <div class="wizard-descriptions__brief">
+							    <div class="wizard-descriptions__title">
+								    Goal 3
+							    </div>
+							    <!--<div class="wizard-descriptions__subheader">-->
+								    <!--Goal 3 objectives (Goal 3 includes all deliverable from goal 2)-->
+							    <!--</div>-->
+							    <div class="wizard-descriptions__text">
+								    Through goal 3 we focus on the production version (v1) of the LegalThings One PaaS. In this level we
+								    also focus on partnerships to develop production ready solutions on the LTO PaaS in our core
+								    verticales: Document Transaction Management, Regulatory & Compliance and Tokenization of illiquid
+								    assets.
+								    <div class="wizard-descriptions__more">More...</div>
+
+							    </div>
+						    </div>
+						    <div class="wizard-descriptions__content">
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Software Development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Release v1.0 LTO Paas
+										    </td>
+										    <td>Expected - July 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Proof on concept smart contracts escrow service
+										    </td>
+										    <td>
+											    Expected - July 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release real estate contract package
+										    </td>
+										    <td>
+											    Expected - August 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release rights shares procedure for music and movie industry on LTO PaaS
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release NDA-app in collaboration with Quislex, the world’s biggest Legal Process Outsourcer
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release open source LTO event viewer
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Communication & marketing deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Deep dive comparison between LegalThings One & competitors (Agrello, Blockcat, Etherparty,
+											    Accordproject)
+										    </td>
+										    <td>Expected June - 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Joining incubator programs of the world’s leading law firms
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Business development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Hiring junior & senior business development talents that specialize in the most popular LTO
+											    regions
+										    </td>
+										    <td>Expected - September 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Partner with Asian company to enter Asian region
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+
+
+									    <tr>
+										    <td>
+											    Develop technical and legal standard building blocks for the LTO platform
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Hire a dedicated English & Mandarin language community manager
+										    </td>
+										    <td>
+											    Expected - August 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    3 integrated enterprises on the LTO PaaS
+										    </td>
+										    <td>
+											    Expected - September 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+								    <!--Close-->
+								    <!--<div class="wizard-descriptions__close-icon">-->
+									    <!--<span></span>-->
+									    <!--<span></span>-->
+								    <!--</div>-->
+							    <!--</a>-->
+						    </div>
+					    </div>
+					    <div id="sale-wizard-4" class="wizard-descriptions__description">
+						    <div class="sale-wizard">
+							    <div class="line"></div>
+							    <div data-wizard-id="sale-wizard-4" class="sale-wizard__step"></div>
+						    </div>
+						    <div class="wizard-descriptions__brief">
+							    <div class="wizard-descriptions__title">
+								    Goal 4
+							    </div>
+							    <!--<div class="wizard-descriptions__subheader">-->
+								    <!--Goal 4 objectives (Goal 4 includes all deliverable from Goal 3)-->
+							    <!--</div>-->
+							    <div class="wizard-descriptions__text">
+								    In level 4 we have the platform ready to fork all our existing clients on. We will replace the SaaS
+								    with the PaaS core. This means that we need to deploy many integrations with existing software such
+								    as open source user management, deployment support, tokenization integrations, smart contract libary
+								    and IoT product integrations.
+								    <br>
+								    <br>
+								    From a business development perspective we are merely focussing on PaaS usage. Our goal is to have
+								    at least 50 integrations by businesses themselves or via third party integration partners.
+								    <div class="wizard-descriptions__more">More...</div>
+
+							    </div>
+						    </div>
+						    <div class="wizard-descriptions__content">
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Software Development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Release v2.0 LTO PaaS
+										    </td>
+										    <td>Expected - November 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Internet of Things integrations in Live Contracts
+										    </td>
+										    <td>
+											    Expected - December 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Integrations with LDAP and Active Directory (open source user management)
+										    </td>
+										    <td>
+											    Expected - October 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Integrate Waves platform smart contract library
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Deployment support for AWS, GCP and Azure
+										    </td>
+										    <td>
+											    Expected - October 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Allow external API’s on marketplace
+										    </td>
+										    <td>
+											    Expected - December 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release token leasing program
+										    </td>
+										    <td>
+											    Expected - October 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Business development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Creating a plug-and-play Live Contracts database in collaboration with lawyers worldwide
+										    </td>
+										    <td>Expected - December 2018</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Setting up the framework for cannabis regulation in the US
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    First ICO procedure via Live Contract Platform
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release sales contract package
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Regulated ICO’s on the LTO PaaS
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    50 integrated enterprises on the LTO PaaS
+										    </td>
+										    <td>
+											    Expected - November 2018
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+								    <!--Close-->
+								    <!--<div class="wizard-descriptions__close-icon">-->
+									    <!--<span></span>-->
+									    <!--<span></span>-->
+								    <!--</div>-->
+							    <!--</a>-->
+						    </div>
+					    </div>
+					    <div id="sale-wizard-5" class="wizard-descriptions__description">
+						    <div class="sale-wizard">
+							    <div class="line"></div>
+							    <div data-wizard-id="sale-wizard-5" class="sale-wizard__step"></div>
+						    </div>
+						    <div class="wizard-descriptions__brief">
+							    <div class="wizard-descriptions__title">
+								    Goal 5
+							    </div>
+							    <!--<div class="wizard-descriptions__subheader">-->
+								    <!--Goal 5 objectives (Goal 5 includes all deliverable from Goal 4)-->
+							    <!--</div>-->
+							    <div class="wizard-descriptions__text">
+								    Goal 5 will be the maturity phase of the LTO Platform. The new feature will be the marketplace.
+								    In order to scale the use to our maximum of 10.000 platforms we need to provide for add-on and
+								    integrations. LegalThings will provide for the necessary integrations to have a full solution.
+								    But other integrations can be offered by third parties.
+								    <br>
+								    <br>
+								    From a business development perspective we are merely focussing on PaaS usage.
+								    <div class="wizard-descriptions__more">More...</div>
+
+							    </div>
+						    </div>
+						    <div class="wizard-descriptions__content">
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Software Development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Release open marketplace for add ons and integrations on the LTO PaaS
+										    </td>
+										    <td>Expected - January 2019</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release drag-and-drop module for building Live Contracts as commercial add-on for the LTO PaaS
+										    </td>
+										    <td>
+											    Expected - January 2019
+										    </td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Release customer & identity management application as commercial add-on for the LTO PaaS
+										    </td>
+										    <td>
+											    Expected - January 2019
+										    </td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Communication & marketing deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Host an annual LTO conference, engaging with experts, ambassadors and officials
+										    </td>
+										    <td>Expected - March 2019</td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <div class="wizard-descriptions__table">
+								    <table>
+									    <thead>
+									    <th>Business development deliverable</th>
+									    <th>Status</th>
+									    </thead>
+									    <tbody>
+									    <tr>
+										    <td>
+											    Partnerships with PaaS integrators
+										    </td>
+										    <td>Expected - March 2019</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Partnerships with other blockchains
+										    </td>
+										    <td>Expected - March 2019</td>
+									    </tr>
+									    <tr>
+										    <td>
+											    Increase number of sales staff
+										    </td>
+										    <td>Expected - March 2019</td>
+									    </tr>
+									    </tbody>
+								    </table>
+							    </div>
+							    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+								    <!--Close-->
+								    <!--<div class="wizard-descriptions__close-icon">-->
+									    <!--<span></span>-->
+									    <!--<span></span>-->
+								    <!--</div>-->
+							    <!--</a>-->
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+
+			    <!--<div class="sale-starts__wizard ">-->
+				    <!--<div class="sale-wizard">-->
+					    <!--<div class="line"></div>-->
+					    <!--<div data-wizard-id="sale-wizard-1" class="sale-wizard__step">-->
+						    <!--<span>Goal</span>-->
+						    <!--<div class="sale-wizard__brief">-->
+							    <!--&lt;!&ndash;<p>Presale - Completed</p>&ndash;&gt;-->
+							    <!--<p>Through goal 1 we focus on getting a first alpha version of the LegalThings One platform out for user-->
+								    <!--testing.-->
+								    <!--<span>More...</span>-->
+							    <!--</p>-->
+						    <!--</div>-->
+					    <!--</div>-->
+					    <!--<div data-wizard-id="sale-wizard-2" class="sale-wizard__step">-->
+						    <!--<span>Goal</span>-->
+						    <!--<div class="sale-wizard__brief">-->
+							    <!--&lt;!&ndash;<p>Level 2 </p>&ndash;&gt;-->
+							    <!--<p>-->
+								    <!--Through goal 2 we focus on the PaaS version that can be used by third parties to create their own Live-->
+								    <!--Contract solution. <span>More...</span>-->
+							    <!--</p>-->
+						    <!--</div>-->
+					    <!--</div>-->
+					    <!--<div data-wizard-id="sale-wizard-3" class="sale-wizard__step">-->
+						    <!--<span>Goal</span>-->
+						    <!--<div class="sale-wizard__brief">-->
+							    <!--&lt;!&ndash;<p>Level 3</p>&ndash;&gt;-->
+							    <!--<p>-->
+								    <!--Through goal 3 we focus on the production version (v1) of the LegalThings One PaaS. <span>More...</span>-->
+							    <!--</p>-->
+						    <!--</div>-->
+					    <!--</div>-->
+					    <!--<div data-wizard-id="sale-wizard-4" class="sale-wizard__step">-->
+						    <!--<span>Goal</span>-->
+						    <!--<div class="sale-wizard__brief">-->
+							    <!--&lt;!&ndash;<p>Level 4</p>&ndash;&gt;-->
+							    <!--<p>-->
+								    <!--Through goal 4 we have the platform ready to fork all our existing clients on. We will replace the SaaS-->
+								    <!--with the PaaS core. <span>More...</span>-->
+							    <!--</p>-->
+						    <!--</div>-->
+					    <!--</div>-->
+					    <!--<div data-wizard-id="sale-wizard-5" class="sale-wizard__step">-->
+						    <!--<span>Goal</span>-->
+						    <!--<div class="sale-wizard__brief">-->
+							    <!--&lt;!&ndash;<p>Level 5</p>&ndash;&gt;-->
+							    <!--<p>-->
+								    <!--Through goal 5 will be the maturity phase of the LTO Platform. The new feature will be the marketplace.-->
+								    <!--<span>More...</span>-->
+							    <!--</p>-->
+						    <!--</div>-->
+					    <!--</div>-->
+				    <!--</div>-->
+				    <!--&lt;!&ndash;<h5 class="align-center wizard-guide">Click on the number</h5>&ndash;&gt;-->
+				    <!--<div class="wizard-descriptions">-->
+					    <!--<div id="sale-wizard-1" class="wizard-descriptions__description">-->
+						    <!--<div class="wizard-descriptions__title">-->
+							    <!--1 - Presale-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__subheader">-->
+							    <!--Goal 1 objectives-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__text">-->
+							    <!--Through goal 1 we focus on getting a first alpha version of the LegalThings One platform out for user-->
+							    <!--testing. From a business development and marketing perspective we focus on showcases to get the-->
+							    <!--world familiar with the concept of a legal blockchain solution.-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Software Development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>Release employment contract example with clause violation and finite state machine-->
+										    <!--demonstration on app.livecontracts.io-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Release Employment contract example with clause violation-->
+										    <!--FSM on app.livecontracts.io-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Beta release Legal Fling: A Live Contract showcase to digitize-->
+										    <!--Swedish law to get explicit sexual consent-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Blockchain signing integration</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Communication & marketing deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>Prepare & review marketing plan</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>PR on Live Contract showcase LegalFling.io-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Feature LegalWeek New York-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Business development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>Partner with Brazilian company to enter Latin America region</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Partner with Brazilian consulting firm to manage translations of marketing material and-->
+										    <!--website-->
+									    <!--</td>-->
+									    <!--<td>Completed</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>Partnership with Ministry of Justice to build legal flows for ‘low classification cases’-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Completed-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+
+						    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+								    <!--<span></span>-->
+								    <!--<span></span>-->
+							    <!--</div>-->
+						    <!--</a>-->
+					    <!--</div>-->
+					    <!--<div id="sale-wizard-2" class="wizard-descriptions__description">-->
+						    <!--<div class="wizard-descriptions__title">-->
+							    <!--Goal 2-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__subheader">-->
+							    <!--Goal 2 objectives (Goal 2 includes all deliverable from Goal 1)-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__text">-->
+							    <!--Through goal 2 we focus on the PaaS version that can be used by third parties to create their own Live-->
+							    <!--Contract solution. From a business development- and marketing perspective we will release LTO-->
+							    <!--showcases in our core verticales: Document Transaction Management, Regulatory & Compliance and-->
+							    <!--Tokenization of illiquid assets.-->
+						    <!--</div>-->
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Software Development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>Release Legal Fling in Apple App Store</td>-->
+									    <!--<td>Expected - March 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release Legal Fling in Google Play Store-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Publishing of Live Contracts protocol specifications-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release fully automated bounty program to track referrals and manage payouts-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Beta release of the LTO PaaS for 64 teams to work with during-->
+										    <!--<a href="https://blockchaingers.org/p/2018-edition" target="_blank">biggest blockathon in the-->
+											    <!--world</a>-->
+									    <!--</td>-->
+									    <!--<td>Expected - April 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Integration with <a href="https://www.blockcerts.org/" target="_blank">blockcert certification-->
+										    <!--module</a>-->
+									    <!--</td>-->
+									    <!--<td>Expected - April 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release HR contract package-->
+									    <!--</td>-->
+									    <!--<td>Expected - April 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release Waves anchor (open source)-->
+									    <!--</td>-->
+									    <!--<td>Expected - April 2018</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Business development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Partnership with blockchain partner for tokenization procedures of illiquid assets-->
+										    <!--(art/shares/real estate/etc.)-->
+									    <!--</td>-->
+									    <!--<td>Expected - May 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Partnership with big law firm or legal process innovator in the USA-->
+									    <!--</td>-->
+									    <!--<td>Expected - April 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Hire representative in the USA-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - April 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release updated livecontracts.io website-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - March 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Publish updated roadmap-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - March 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Start LTO main token sale-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - May 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+						    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+								    <!--<span></span>-->
+								    <!--<span></span>-->
+							    <!--</div>-->
+						    <!--</a>-->
+					    <!--</div>-->
+					    <!--<div id="sale-wizard-3" class="wizard-descriptions__description">-->
+						    <!--<div class="wizard-descriptions__title">-->
+							    <!--Goal 3-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__subheader">-->
+							    <!--Goal 3 objectives (Goal 3 includes all deliverable from goal 2)-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__text">-->
+							    <!--Through goal 3 we focus on the production version (v1) of the LegalThings One PaaS. In this level we-->
+							    <!--also focus on partnerships to develop production ready solutions on the LTO PaaS in our core-->
+							    <!--verticales: Document Transaction Management, Regulatory & Compliance and Tokenization of illiquid-->
+							    <!--assets.-->
+						    <!--</div>-->
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Software Development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release v1.0 LTO Paas-->
+									    <!--</td>-->
+									    <!--<td>Expected - July 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Proof on concept smart contracts escrow service-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - July 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release real estate contract package-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - August 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release rights shares procedure for music and movie industry on LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release NDA-app in collaboration with Quislex, the world’s biggest Legal Process Outsourcer-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release open source LTO event viewer-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Communication & marketing deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Deep dive comparison between LegalThings One & competitors (Agrello, Blockcat, Etherparty,-->
+										    <!--Accordproject)-->
+									    <!--</td>-->
+									    <!--<td>Expected June - 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Joining incubator programs of the world’s leading law firms-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Business development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Hiring junior & senior business development talents that specialize in the most popular LTO-->
+										    <!--regions-->
+									    <!--</td>-->
+									    <!--<td>Expected - September 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Partner with Asian company to enter Asian region-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+
+
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Develop technical and legal standard building blocks for the LTO platform-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Hire a dedicated English & Mandarin language community manager-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - August 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--3 integrated enterprises on the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - September 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+						    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+								    <!--<span></span>-->
+								    <!--<span></span>-->
+							    <!--</div>-->
+						    <!--</a>-->
+					    <!--</div>-->
+					    <!--<div id="sale-wizard-4" class="wizard-descriptions__description">-->
+						    <!--<div class="wizard-descriptions__title">-->
+							    <!--Goal 4-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__subheader">-->
+							    <!--Goal 4 objectives (Goal 4 includes all deliverable from Goal 3)-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__text">-->
+							    <!--In level 4 we have the platform ready to fork all our existing clients on. We will replace the SaaS-->
+							    <!--with the PaaS core. This means that we need to deploy many integrations with existing software such-->
+							    <!--as open source user management, deployment support, tokenization integrations, smart contract libary-->
+							    <!--and IoT product integrations.-->
+							    <!--<br>-->
+							    <!--<br>-->
+							    <!--From a business development perspective we are merely focussing on PaaS usage. Our goal is to have-->
+							    <!--at least 50 integrations by businesses themselves or via third party integration partners.-->
+						    <!--</div>-->
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Software Development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release v2.0 LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>Expected - November 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Internet of Things integrations in Live Contracts-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - December 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Integrations with LDAP and Active Directory (open source user management)-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - October 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Integrate Waves platform smart contract library-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Deployment support for AWS, GCP and Azure-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - October 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Allow external API’s on marketplace-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - December 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release token leasing program-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - October 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Business development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Creating a plug-and-play Live Contracts database in collaboration with lawyers worldwide-->
+									    <!--</td>-->
+									    <!--<td>Expected - December 2018</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Setting up the framework for cannabis regulation in the US-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--First ICO procedure via Live Contract Platform-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release sales contract package-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Regulated ICO’s on the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--50 integrated enterprises on the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - November 2018-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+						    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+								    <!--<span></span>-->
+								    <!--<span></span>-->
+							    <!--</div>-->
+						    <!--</a>-->
+					    <!--</div>-->
+					    <!--<div id="sale-wizard-5" class="wizard-descriptions__description">-->
+						    <!--<div class="wizard-descriptions__title">-->
+							    <!--Goal 5-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__subheader">-->
+							    <!--Goal 5 objectives (Goal 5 includes all deliverable from Goal 4)-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__text">-->
+							    <!--Goal 5 will be the maturity phase of the LTO Platform. The new feature will be the marketplace.-->
+							    <!--In order to scale the use to our maximum of 10.000 platforms we need to provide for add-on and-->
+							    <!--integrations. LegalThings will provide for the necessary integrations to have a full solution.-->
+							    <!--But other integrations can be offered by third parties.-->
+							    <!--<br>-->
+							    <!--<br>-->
+							    <!--From a business development perspective we are merely focussing on PaaS usage.-->
+						    <!--</div>-->
+						    <!--&lt;!&ndash;<div class="wizard-descriptions__subheader">&ndash;&gt;-->
+
+						    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Software Development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release open marketplace for add ons and integrations on the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>Expected - January 2019</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release drag-and-drop module for building Live Contracts as commercial add-on for the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - January 2019-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Release customer & identity management application as commercial add-on for the LTO PaaS-->
+									    <!--</td>-->
+									    <!--<td>-->
+										    <!--Expected - January 2019-->
+									    <!--</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Communication & marketing deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Host an annual LTO conference, engaging with experts, ambassadors and officials-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2019</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+						    <!--<div class="wizard-descriptions__table">-->
+							    <!--<table>-->
+								    <!--<thead>-->
+								    <!--<th>Business development deliverable</th>-->
+								    <!--<th>Status</th>-->
+								    <!--</thead>-->
+								    <!--<tbody>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Partnerships with PaaS integrators-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2019</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Partnerships with other blockchains-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2019</td>-->
+								    <!--</tr>-->
+								    <!--<tr>-->
+									    <!--<td>-->
+										    <!--Increase number of sales staff-->
+									    <!--</td>-->
+									    <!--<td>Expected - March 2019</td>-->
+								    <!--</tr>-->
+								    <!--</tbody>-->
+							    <!--</table>-->
+						    <!--</div>-->
+						    <!--<a href="#" class="wizard-descriptions__close js-wizard-descriptions-close">-->
+							    <!--Close-->
+							    <!--<div class="wizard-descriptions__close-icon">-->
+								    <!--<span></span>-->
+								    <!--<span></span>-->
+							    <!--</div>-->
+						    <!--</a>-->
+					    <!--</div>-->
+				    <!--</div>-->
+			    <!--</div>-->
+		    </div>
+	    </div>
+	    <div class="purpleSection general-advantages row-section text-light">
+		    <div class="wrapper clearfix">
+			    <div class="column one-third">
+				    <div class="align-center general-advantages__element">
+					    <div class="general-advantages__image">
+						    <img src="img/independence_new.png" alt="Independence">
+					    </div>
+					    <h5 class="general-advantages__title">Independence</h5>
+					    <p>
+						    We enable people to participate in the legal system without the need to rely on lawyers or blindly trusting organizations and governments.
+					    </p>
+				    </div>
+			    </div>
+			    <div class="column one-third">
+				    <div class="align-center general-advantages__element">
+					    <div class="general-advantages__image">
+
+						    <img  src="img/efficiency_new.png" alt="Efficiency">
+					    </div>
+					    <h5 class="general-advantages__title">Efficiency</h5>
+					    <p>Live Contracts allow automation of agreements and laws without giving full control to the machines.</p>
+				    </div>
+			    </div>
+			    <div class="column one-third last-col">
+				    <div class="align-center general-advantages__element">
+					    <div class="general-advantages__image">
+						    <img  src="img/mitigating_fraud_new.png" alt="Mitigating fraud">
+					    </div>
+					    <h5 class="general-advantages__title">Mitigating fraud</h5>
+					    <p>By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing bureaucracy.</p>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="align-center clearfix" style="margin-top: 32px">
+			    <a href="#lto-presale" class="lc-primary-action sr-button button-1 button-medium circled">Buy LTO Tokens</a>
+		    </div>
+	    </div>
+
+	    <section class="core-verticals row-section wrapper">
+          <h2 class="title align-center">
+          <strong>Core verticals</strong>
+          </h2>
+          <div class="spacer-small"></div>
+          <div class="core-verticals__section">
+            <div class="core-verticals__section-title">
+              Digital Transaction Management (DTM)
+            </div>
+	          <div class="spacer-small"></div>
+	          <div class="core-verticals__section-content core-verticals__left">
+              <div class="core-verticals__icon-part core-verticals__part">
+                <div class="core-verticals__icon">
+                  <span>$30b</span>
+                  <img src="img/dtm.png" alt="">
+                </div>
+              </div>
+              <div class="core-verticals__right core-verticals__part">
+                <div class="core-verticals__text">
+                  The end of the analog paper era is fast approaching and in an ever more digital world, expectations
+                  rise. Effective processes are crucial to keep up with these expectations. Digital Transaction
+                  Management accompanied with blockchain technology provides an opportunity to remove the frictions in
+                  transactions that are inherent to processes that involve people, data and documents. All of this while
+                  increasing security and audit-ability.
+                  <br>
+                  <br>
+
+                  <div class="core-verticals__subtitle">
+                    LegalThings One currently supplies:
+                  </div>
+
+                  <ul class="core-verticals__list">
+                    <li>Cradle-to-grave employment processes</li>
+                    <li>NDA Application</li>
+                    <li>The Netherlands biggest notary network</li>
+                  </ul>
+
+                  <a class="sr-button inline button-1 button-medium circled" href="customers.html#container_6">
+                    Read more
+                  </a>
+                </div>
+              </div>
+
+              </div>
+          </div>
+          <div class="core-verticals__section">
+            <div class="core-verticals__section-title">
+              Regulatory and Compliance
+            </div>
+	          <div class="spacer-small"></div>
+
+	          <div class="core-verticals__section-content core-verticals__right">
+              <div class=" core-verticals__part">
+                <div class="core-verticals__text">
+                  The world is becoming increasingly interconnected. But this globalization and digitization leads to
+                  increasingly complex regulatory and compliance requirements for (global) corporations. The governments
+                  who propose these regulations have to make sure their own processes are digitized in the right way as
+                  well.
+                  <br>
+                  <br>
+
+                  <div class="core-verticals__subtitle">
+                    LegalThings One currently supplies:
+                  </div>
+
+                  <ul class="core-verticals__list">
+                    <li>GDPR Compliance for insurance companies</li>
+                    <li>Automation of transfer pricing documentation</li>
+                    <li>Workload reduction on small- and petty crimes</li>
+                  </ul>
+
+                  <a class="sr-button inline button-1 button-medium circled" href="customers.html#container_7">
+                    Read more
+                  </a>
+                </div>
+              </div>
+              <div class="core-verticals__left core-verticals__icon-part core-verticals__part">
+                <div class="core-verticals__icon">
+                  <span>$25b</span>
+                  <img src="img/regulations.png" alt="">
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="core-verticals__section">
+            <div class="core-verticals__section-title">
+              Tokenization
+            </div>
+	          <div class="spacer-small"></div>
+
+	          <div class="core-verticals__section-content core-verticals__left">
+              <div class="core-verticals__left core-verticals__icon-part core-verticals__part">
+                <div class="core-verticals__icon">
+                  <span>$2.3b</span>
+                  <img src="img/tokenization.png" alt="">
+                </div>
+              </div>
+              <div class="core-verticals__right core-verticals__part">
+                <div class="core-verticals__text">
+                  There are a number of platforms, including Waves, that focus on tokenizing assets. These initiatives
+                  assume that these assets are publicly tradable, in other words liquid assets. There are big business
+                  opportunity in tokenizing non-liquid assets.LegalThings One provides you the infrastructure to make
+                  your tokenization ideas compliant with local laws and regulation.
+                  <br>
+                  <br>
+                  <div class="core-verticals__subtitle">
+                    LegalThings One currently supplies:
+                  </div>
+
+                  <ul class="core-verticals__list">
+                    <li>Regulatory frameworks for tokenizing illiquid assets</li>
+                    <li>Tokenizing the Dutch company shares</li>
+                  </ul>
+
+                  <a class="sr-button inline button-1 button-medium circled" href="customers.html#container_8">
+                    Read more
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
         <!--<div class="digitaze-block">-->
         <!--<div class="spacer-big"></div>-->
         <!--<div class="wrapper">-->
@@ -225,1248 +1927,1437 @@
         <!--</div>-->
         <!--<div class="spacer-big"></div>-->
         <!--</div>-->
-        <div class="purpleSection row-section text-light">
-          <div class="wrapper clearfix">
-            <div class="column one-third">
-              <div class="align-center">
-                <img style="width:80px" src="img/independence.png" alt="Independence">
-                <h5>Independence</h5>
-                <p>
-                  We enable people to participate in the legal system without the need to rely on lawyers or blindly trusting organizations and governments.
-                </p>
-              </div>
-            </div>
-            <div class="column one-third">
-              <div class="align-center">
-                <img style="width:80px" src="img/efficiency.png" alt="Efficiency">
-                <h5>Efficiency</h5>
-                <p>Live Contracts allow automation of agreements and laws without giving full control to the machines.</p>
-              </div>
-            </div>
-            <div class="column one-third last-col">
-              <div class="align-center">
-                <img style="width:80px" src="img/mitigating-fraud.png" alt="Mitigating fraud">
-                <h5>Mitigating fraud</h5>
-                <p>By storing events and information in a verifiable and immutable way, we mitigate fraud while reducing bureaucracy.</p>
-              </div>
-            </div>
-          </div>
-          <div class="align-center clearfix" style="margin-top: 32px">
-            <a href="#lto-presale" class="lc-primary-action sr-button button-1 button-medium circled">Buy LTO Tokens</a>
-          </div>
-        </div>
-        <div id="discover" class="wrapper row-section">
-          <h2 class="align-center">
-            <strong>Discover LegalThings One</strong>
-          </h2>
-          <div class="spacer-medium"></div>
-          <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157" target="_blank" class="text-light blog-image">
-                    <img src="./img/power-to-the-people.jpg">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
-                         target="_blank">
-                        <strong>Live Contracts — What's all the fuss about?</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  Picture this. A contract or law visualized in such a way that it is understandable for both computers and humans. Not only the rules that you are agreeing upon in a contract, but also the consequences behind those rules. With Live Contracts, we enable equality of rights for all parties involved.
-                </p>
-              </div>
-            </div>
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/livecontracts-whitepaper.png">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi" target="_blank">
-                        <strong>LegalThings One &mdash; Technical Whitepaper</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  The LegalThings One Whitepaper gives an indepth description of the technical concepts behinds LegalThings One. Reading this paper requires some knowledge of computer engineering.
-                </p>
-              </div>
-            </div>
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/presentation_stanford.jpg">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
-                         target="_blank">
-                        <strong>Introducing Live Contracts @ Stanford CodeX</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs Live Contracts and stores information in a provable, immutable way on a public decentralized storage.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows isotope-spaced">
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/checkout-summery.png">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371" target="_blank">
-                        <strong>Buying tokens on the LegalThings One platform</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  For users that want to buy LTO we have set up a 4-step process. LegalThings One has chosen the Waves platform for storing, trading, managing and issuing digital assets. You can buy LTO by iDEAL, credit cards and different cryptocurrencies: Bitcoin, Bitcoin Cash, Ether, Ripple, Litecoin, Monero and Dash.
-                </p>
-              </div>
-            </div>
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/smartorlivecontracts.png">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
-                         target="_blank">
-                        <strong>3 limitations of a self-enforcing agreement</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  Since a smart contract is also self-executing, there is no possibility for any party to breach the the agreement. This means that there is no need for a trusted third party, no bankers, no lawyers, no judges. Right? Well yes, you can accomplish this, but it does mean some serious limitations.
-                </p>
-              </div>
-            </div>
-            <div class="isotope-item blog-item">
-              <div class="blog-media">
-                <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                    <img src="./img/explore/contract-as-automaton.png">
-                  </a>
-              </div>
-              <div class="blog-desc align-center">
-                <div class="blog-headline">
-                  <h5 class="post-name">
-                      <a href="./documents/contract-as-automaton.pdf" target="_blank">
-                        <strong>Contract as Automaton</strong>
-                      </a>
-                    </h5>
-                </div>
-                <p>
-                  "We show that the fundamental legal structure of a well-written financial contract follows a state-transition logic that can be formalized mathematically as a finite-state machine (also known as a finitestate automaton)."
-                  <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="align-center">
-            <a href="https://medium.com/legalthingsone" class="sr-button inline button-1-ghost button-medium circled " target="_blank">
-                More articles
-              </a>
-            <a href="" class="lc-primary-action sr-button inline button-1 button-medium circled">Buy LTO Tokens</a>
-          </div>
-        </div>
-    </section>
-    </div>
-    <!-- END .wrapper -->
-    <div class="fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">
-      <div class="fullwidth-content wrapper-small align-center quotes-element">
-        <div class="nav-light" data-dots="true">
-          <div class="flex-row">
-            <blockquote class="quote first-quote">
-              He who controls the past controls the future. He who controls the present controls the past.
-            </blockquote>
-            <blockquote class="quote second-quote">
-              Law is on the side of those with the deepest pockets and with friends in the highest places.
-            </blockquote>
-            <blockquote class="quote third-quote">
-              Most people think bureaucracy is a bad thing, but in fact bureaucracy is our best defence against fraud and favoritism.
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="wrapper row-section">
-      <h2 class="align-center">
-        <strong>Meet the Team</strong>
-      </h2>
-      <div class="spacer-medium"></div>
-      <div class="column-section clearfix">
-        <div class="column one-third team-member align-center">
-          <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-            <img class="one" src="img/team/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
-            <img class="two" src="img/team/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Arnold Daniels</strong>
-            </h5>
-            <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
-              </li>
-              <li class="github">
-                <a href="https://github.com/jasny" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column one-third team-member align-center">
-          <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-            <img class="one" src="img/team/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
-            <img class="two" src="img/team/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Rick Schmitz</strong>
-            </h5>
-            <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column one-third last-col team-member align-center">
-          <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-            <img class="one" src="img/team/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
-            <img class="two" src="img/team/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Martijn Migchelsen</strong>
-            </h5>
-            <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="column-section clearfix">
-        <div class="column one-third team-member align-center">
-          <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
-            <img src="img/team/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Lisa Kate Palmer</strong>
-            </h5>
-            <h6 class="subtitle-2">Product Development Manager</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column one-third team-member align-center">
-          <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-            <img class="one" src="img/team/sven_stam.png" alt="Sven Stam - LegalThings">
-            <img class="two" src="img/team/sven_stam_b.png" alt="Sven Stam - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Sven Stam</strong>
-            </h5>
-            <h6 class="subtitle-2">CTO</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
-              </li>
-              <li class="github">
-                <a href="https://github.com/sven4ask" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="column one-third last-col team-member align-center">
-          <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
-            <img src="img/team/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
-          </a>
-          <div class="team-content">
-            <h5 class="team-name uppercase">
-              <strong>Sabine van Bilderbeek</strong>
-            </h5>
-            <h6 class="subtitle-2">Manager Operations</h6>
-            <ul class="socialmedia-widget hover-fade-1">
-              <li class="linkedin">
-                <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="show-more">
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-              <img src="img/team/martijn-broersma.png" alt="Martijn Broersma - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Martijn Broersma</strong>
-              </h5>
-              <h6 class="subtitle-2">Head of Operations</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
-              <img src="img/team/rick_ross.png" alt="Rick Ros - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Rick Ros</strong>
-              </h5>
-              <h6 class="subtitle-2">Head of Sales</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="column one-third last-col team-member align-center">
-            <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-              <img src="img/team/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Diederick Cardon</strong>
-              </h5>
-              <h6 class="subtitle-2">Legal Chief</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+	    <div id="discover" class="purpleSection text-light">
+		    <div class="wrapper discover-section  row-section">
+			    <h2 class="align-center">
+				    <strong>Discover LegalThings One</strong>
+			    </h2>
+			    <div class="spacer-medium"></div>
 
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-              <img class="one" src="img/team/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
-              <img class="two" src="img/team/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
-            </div>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Moesjarraf Jahangier</strong>
-              </h5>
-              <h6 class="subtitle-2">Full-stack Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/moesjarraf" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+			    <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
+						       target="_blank"
+						       class="text-light blog-image">
+							    <img src="img/live_contract.png" class="blog-media__icon" alt="">
+							    <!--<i class="blog-media__icon icon-fuss"></i>-->
+							    <!-- <img src="./img/power-to-the-people.jpg"> -->
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a href="https://medium.com/legalthingsone/live-contracts-whats-all-the-fuss-about-c4e4c0288157"
+								       target="_blank">
+									    Introduction to Live Contracts
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    Picture this. A contract or law visualized in such a way that it is understandable for both computers
+							    and humans. Not only the rules that you are agreeing upon in a contract, but also the consequences
+							    behind those rules. With Live Contracts, we enable equality of rights for all parties involved.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a
+							    href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+							    target="_blank" class="text-light blog-image">
+							    <!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
+							    <!--<i class="blog-media__icon icon-whitepaper"></i>-->
+							    <img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">
 
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
-              <img src="img/team/yevhen-horbachov.png" alt="Yevhen Horbachov - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Yevhen Horbachov</strong>
-              </h5>
-              <h6 class="subtitle-2">Frontend Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/KillaBee1985" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a
+									    href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+									    target="_blank">
+									    Technical Whitepaper
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    The LegalThings One Whitepaper gives an indepth description of the technical concepts behinds
+							    LegalThings One. Reading this paper requires some knowledge of computer engineering.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a
+							    href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
+							    target="_blank" class="text-light blog-image">
+							    <!-- <img src="./img/explore/presentation_stanford.jpg"> -->
+							    <!--<i class="blog-media__icon icon-intro"></i>-->
 
-          <div class="column one-third last-col team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
-              <img src="img/team/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Jurre Wolsink</strong>
-              </h5>
-              <h6 class="subtitle-2">Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/jurrew27" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+							    <img src="img/codex.png" class="blog-media__icon" alt="">
 
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
-              <img src="img/team/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Mitchel Kerckhaert</strong>
-              </h5>
-              <h6 class="subtitle-2">Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a
+									    href="https://docs.google.com/presentation/d/1AICdfIf1oi1rsYJhOh6oBoxFLDRo1ZHiOAqbJX5UtDY/edit#slide=id.g270c38a98b_0_5"
+									    target="_blank">
+									    Slide deck
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    A Live Contract is an agreement that is formalized as a Finite State Machine. LegalThings One runs
+							    Live Contracts and stores information in a provable, immutable way on a public decentralized storage.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
+						       target="_blank" class="text-light blog-image">
+							    <!-- <img src="./img/explore/checkout-summery.png"> -->
+							    <!--<i class="blog-media__icon icon-buying"></i>-->
+							    <img src="img/live_contract.png" class="blog-media__icon" alt="">
 
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
-              <img src="img/team/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Sarfaraaz Jahangier</strong>
-              </h5>
-              <h6 class="subtitle-2">Developer</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
-                </li>
-                <li class="github">
-                  <a href="https://github.com/Sarfaraaz" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+							    <!--<img src="img/buy_tokens.png" class="blog-media__icon" alt="">-->
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a
+									    href="https://medium.com/legalthingsone/buying-tokens-on-the-legalthings-one-platform-753d1139e371"
+									    target="_blank">
+									    Technical specifications
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    For users that want to buy LTO we have set up a 4-step process. LegalThings One has chosen the Waves
+							    platform for storing, trading, managing and issuing digital assets. You can buy LTO by iDEAL, credit
+							    cards and different cryptocurrencies: Bitcoin, Bitcoin Cash, Ether, Ripple, Litecoin, Monero and Dash.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a
+							    href="https://medium.com/legalthingsone/smart-contracts-3-limitations-of-a-self-enforcing-agreement-257cfbabeff5"
+							    target="_blank" class="text-light blog-image">
+							    <!-- <img src="./img/explore/smartorlivecontracts.png"> -->
+							    <!--<i class="blog-media__icon icon-limit"></i>-->
+							    <img src="img/codex.png" class="blog-media__icon" alt="">
 
-          <div class="column one-third last-col team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
-              <img class="one" src="img/team/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
-              <img class="two" src="img/team/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Michael Nieveld</strong>
-              </h5>
-              <h6 class="subtitle-2">Legal & Tax</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+							    <!--<img src="img/3_limitations.png" class="blog-media__icon" alt="">-->
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a
+									    href="https://medium.com/legalthingsone/ricardian-contracts-legally-binding-agreements-on-the-blockchain-4c103f120707"
+									    target="_blank">
+										    Legal perspective
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    Since a smart contract is also self-executing, there is no possibility for any party to breach the the
+							    agreement. This means that there is no need for a trusted third party, no bankers, no lawyers, no
+							    judges. Right? Well yes, you can accomplish this, but it does mean some serious limitations.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="isotope-item blog-item">
+					    <div class="blog-media">
+						    <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
+							    <!-- <img src="./img/explore/contract-as-automaton.png"> -->
+							    <!--<i class="blog-media__icon icon-contract"></i>-->
 
-        <div class="spacer-medium"></div>
-        <h2 class="align-center"><strong>Advisors</strong></h2>
+							    <img src="img/automation.png" class="blog-media__icon" alt="">
 
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a href="https://www.linkedin.com/in/pim-volkers-0355511" target="_blank">
-              <img src="img/team/pim-volkers.png" alt="Pim Volkers - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Pim Volkers</strong>
-              </h5>
-              <h6 class="subtitle-2 advisor">ADVISOR</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
+						    </a>
+					    </div>
+					    <div class="blog-desc align-center">
+						    <div class="blog-headline">
+							    <h5 class="post-name">
+								    <a href="./documents/contract-as-automaton.pdf" target="_blank">
+									    Research paper - Contract as automaton
+								    </a>
+							    </h5>
+						    </div>
+						    <p>
+							    "We show that the fundamental legal structure of a well-written financial contract follows a
+							    state-transition logic that can be formalized mathematically as a finite-state machine (also known as
+							    a finitestate automaton)."
+							    <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
+						    </p>
+					    </div>
+				    </div>
+			    </div>
 
-          <div class="column one-third last-col team-member align-center">
-            <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
-              <img src="img/team/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Peter van Leersum</strong>
-              </h5>
-              <h6 class="subtitle-2 advisor">ADVISOR</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="link">
-                  <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="spacer-medium"></div>
-        <h2 class="align-center"><strong>Partners</strong></h2>
+			    <div class="spacer-small"></div>
+			    <div class="align-center">
+				    <a href="https://medium.com/legalthingsone" class="sr-button discover-special inline button-1 button-medium circled"
+				       target="_blank">
+					    More articles
+				    </a>
+				    <a href="" class="lc-primary-action sr-button inline button-1 button-medium circled">Buy LTO Tokens</a>
+			    </div>
+		    </div>
+	    </div>
+	    <!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
+	    </div>
 
-        <div class="column-section clearfix">
-          <div class="column one-third team-member align-center">
-            <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
-              <img src="img/team/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
-            </a>
-            <div class="team-content">
-              <h5 class="team-name uppercase">
-                <strong>Marcus Camargo</strong>
-              </h5>
-              <h6 class="subtitle-2">Partner in Brazil</h6>
-              <ul class="socialmedia-widget hover-fade-1">
-                <li class="linkedin">
-                  <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="spacer-medium"></div>
-      <div class="align-center">
-        <a id="show-more" class="sr-button inline button-1-ghost button-medium circled">More team members</a>
-        <a class="lc-primary-action sr-button inline button-1 button-medium circled">Buy LTO Tokens</a>
-      </div>
-    </div>
-    <!-- END .wrapper -->
-    <div class="custom-wrap timeline-block">
-      <!--<h2 class="align-center title">-->
-      <!--Timeline-->
-      <!--</h2>-->
-      <div id="timeline-background"></div>
-      <div class="timeline-container text-light" id="timeline-1">
-        <div class="timeline-header">
-          <h2 class="align-center">
-            <strong>Timeline</strong>
-          </h2>
-          <h3 class="timeline-header__subtitle">Past, present and future</h3>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item" data-text="Launch of LegalThings">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/start-legalthings.jpg" alt="The launch &mdash; with salmon and champaign" />
-              <h2 class="timeline__content-title">May 2014</h2>
-              <p class="timeline__content-desc">
-                Started in 2014 as platform to create, share and sign contracts in a digital way. After the success of our first company FIRM24.com, we believed that DTM (Document Transaction Management) would be the next big thing after ERP and CRM-systems.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="LegalThings v1.0">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/legalthings-v1.jpg" alt="Pushing the last commits while driving to the client" />
-              <h2 class="timeline__content-title">May 2015</h2>
-              <p class="timeline__content-desc">
-                We released the first version of the LegalThings platform. This version introduced a document and form builder, a document management system, advanced user and permission management and digital signing.
-                <br>
-                <br>
-                <em>Pushing the last commits while driving to our first client.</em>
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Introduction of LegalFlow">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/legalflow.jpg" alt="Explaining how a process can be defined as Finite State Machine" />
-              <h2 class="timeline__content-title">Jan 2016</h2>
-              <p class="timeline__content-desc">
-                For FIRM24 we had created software to run the procedures behind an incorporation. Other customers were also interested in these digitized procedures. We did a small pivot, now focusing on digitizing the contracts as finite state machine, rather than just signing.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Use of Bitcoin blockchain">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/bitcoin.jpg" alt="Looking at a hash" />
-              <h2 class="timeline__content-title">Sep 2016</h2>
-              <p class="timeline__content-desc">
-                We have explored different methods of providing proof of signed documents. While other parties relied on trust and certifications, we wanted a better solution. We started using the blockchain for proof of existence.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Proof of concept on Ethereum">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/ethereum.jpg" alt="Working on registering states on Ethereum" />
-              <h2 class="timeline__content-title">May 2017</h2>
-              <p class="timeline__content-desc">
-                We experimented with Ethereum Smart Contracts and found out that it could only be used for self-enforcing agreements. Inherent constraints make them unusable for legally binding contracts.
-                <br>Instead, we found a much better solution in using our FSM in combination with the blockchain.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Winner hackaton Ministry of Justice">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/winner-blockaton.jpg" alt="Team with Dutch Minister of Justice, Stef Blok" />
-              <h2 class="timeline__content-title">Sep 2017</h2>
-              <p class="timeline__content-desc">
-                During the blockchain hackaton organized by the Dutch ministry of Justice and Security, we demonstrated that a whole law can be digitized as a FSM and stored on the blockchain. This won us the first prize in the event which included the assignment to create the first digitized Dutch law on the blockchain.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="LTO pre-sale">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/coins.jpg" />
-              <h2 class="timeline__content-title">6 Dec 2017</h2>
-              <p class="timeline__content-desc">
-                Our token pre-sale starts on the 6th of December. For 24 hours, the pre-sale is open only for members. You can register to be whitelisted and participate in this members-only pre-sale. After the whitelist pre-sale, we'll continue with a public pre-sale.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="LTO beta platform">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/beta-platform.jpg" />
-              <h2 class="timeline__content-title">Dec 2017</h2>
-              <p class="timeline__content-desc">
-                We'll launch the LegalThings One platform as beta. All token holders will be able to use the platform. New content, like (live) model contracts will be added in the coming months.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="LTO token sale">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/coins.jpg" />
-              <h2 class="timeline__content-title">Q2 2018</h2>
-              <p class="timeline__content-desc">
-                All tokens represent the full capacity of the LegalThings One platform. During this sale we'll sell licenses (represented by LTO tokens) for the platform.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Publication of open standards">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/opensource.jpg" />
-              <h2 class="timeline__content-title">Q4 2018</h2>
-              <p class="timeline__content-desc">
-                We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run Live Contracts will be available under the MIT license. This will allow third-parties to to create and run Live Contracts without relying on LegalThings One.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item" data-text="Start of test trials">
-            <div class="timeline__content">
-              <img class="timeline__img" src="img/timeline/testtrails.jpg" />
-              <h2 class="timeline__content-title">2019</h2>
-              <p class="timeline__content-desc">
-                To set precedence of the legality of data stored on the blockchain, we'll initiate trials in several countries. The following countries are candidates for these trials: United Kingdom, United States, India, Russia and the Netherlands.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="column-section block-button__hover wrapper row-section">
-      <a class="sr-button button-medium button-1 circled" href="./customers.html">
-        View our customers
-      </a>
-      <div class="logo serving-companies text-dark wrapper">
-        <div class="column-section no-left-margin wrapper clearfix">
-          <div class="column one-fourth">
-            <img src="img/logo_1.jpg" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/customers/merin-logo.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_3.png" alt="social">
-          </div>
-          <div class="column one-fourth last-col">
-            <img class="greyscaled-image" src="img/logo_4.png" alt="social">
-          </div>
-        </div>
-        <div class="column-section no-left-margin wrapper clearfix">
-          <div class="column one-fourth">
-            <img src="img/logo_5.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_6.png" alt="social">
-          </div>
-          <div class="column one-fourth">
-            <img src="img/logo_7.png" alt="social">
-          </div>
-          <div class="column one-fourth last-col">
-            <img src="img/logo_8.png" alt="social">
-          </div>
-        </div>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="blur-svg">
-          <defs>
-            <filter id="blur-filter">
-              <feGaussianBlur stdDeviation="3"></feGaussianBlur>
-            </filter>
-          </defs>
-        </svg>
-        <div class="overlay"></div>
-      </div>
-    </div>
-    <div id="lto-presale" class="fullwidth-section text-light parallax-section tokensSale-section row-section" data-parallax-image="img/qubic-bg.jpg">
-      <div class="wrapper">
-        <div class="column-section clearfix">
-          <div class="col-content" style="margin-top: 0px;">
-            <div class="align-center">
-              <h2><strong>Token sale</strong></h2>
-            </div>
-            <div class="spacer-medium"></div>
-            <div class="column one-third">
-              <div class="align-center">
-                <img src="./img/logo/icon-white.png"/><br>
-                <div class="spacer-small"></div>
-                <a href="#" class="lc-primary-action sr-button button-medium button-1 circled">
-                  Buy LTO Tokens
-                </a>
-              </div>
-            </div>
-            <div class="column two-third last-col">
-              <h3><strong>Pre-sale token distribution</strong></h3>
-              <div class="spacer-medium"></div>
-              <div class="progress-bar-item big-bar">
-                <div class="progress-bar">
-                  <div class="progress-active progress-bar__element" data-perc="">
+	    <div class="spacer-small"></div>
+	    <div class="column-section block-button__hover wrapper row-section">
+		      <a class="sr-button button-medium button-1 circled" href="./customers.html">
+			      View our business cases
+		      </a>
+		      <!--<div class="logo serving-companies text-dark wrapper">-->
+			      <!--&lt;!&ndash;<div class="column-section no-left-margin wrapper clearfix">&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_1.jpg" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/customers/merin-logo.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_3.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth last-col">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img class="greyscaled-image" src="img/logo_4.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+			      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+			      <!--&lt;!&ndash;<div class="column-section no-left-margin wrapper clearfix">&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_5.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_6.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_7.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+				      <!--&lt;!&ndash;<div class="column one-fourth last-col">&ndash;&gt;-->
+					      <!--&lt;!&ndash;<img src="img/logo_8.png" alt="social">&ndash;&gt;-->
+				      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+			      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+			      <!--<div class="column-section no-left-margin wrapper clearfix">-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="img/customers/albert_heijn_logo.png" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="img/customers/quislex-color.png" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="img/customers/firm24-color.png" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth last-col">-->
+					      <!--<img src="img/customers/dekra_logo.png" alt="social">-->
+				      <!--</div>-->
+			      <!--</div>-->
+			      <!--<div class="column-section no-left-margin wrapper clearfix">-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="img/customers/tytho-color.jpg" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="https://www.pum.nl/sites/default/files/images/partner/logo/government_of_the_netherlands.jpg" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth">-->
+					      <!--<img src="img/customers/waves-new.jpg" alt="social">-->
+				      <!--</div>-->
+				      <!--<div class="column one-fourth last-col">-->
+					      <!--<img src="img/customers/cms-color.png" alt="social">-->
+				      <!--</div>-->
+			      <!--</div>-->
+		      <!--</div>-->
+	      </div>
+	    <div class="spacer-big"></div>
+	    <div class="fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">
+		      <div class="fullwidth-content wrapper-small align-center quotes-element">
+			      <div class="nav-light" data-dots="true">
+				      <div class="flex-row">
+					      <blockquote class="quote first-quote">
+						      He who controls the past controls the future. He who controls the present controls the past.
+					      </blockquote>
+					      <blockquote class="quote second-quote">
+						      Law is on the side of those with the deepest pockets and with friends in the highest places.
+					      </blockquote>
+					      <blockquote class="quote third-quote">
+						      Most people think bureaucracy is a bad thing, but in fact bureaucracy is our best defence against fraud and favoritism.
+					      </blockquote>
+				      </div>
+			      </div>
+		      </div>
+	      </div>
+	      <div class="row-section align-center">
+		      <h2>
+			      <strong>In the press</strong>
+		      </h2>
+		      <div id="media-logos"></div>
+	      </div>
+				<!--<div class="spacer-medium"></div>-->
+	      <div id="bounty" class="purpleSection bounty-elements text-light">
+		      <div class="wrapper row-section">
+		      <h2 class="align-center">
+			      <strong>Bounty program</strong>
+		      </h2>
+		      <div class="spacer-small"></div>
+		      <div class="faq">
+			      <div class="column one-fourth">
+				      <h5 id="automated-bounties" class="bounty-category">Automated bounties</h5>
+				      <h5 id="content-bounties" class="bounty-category">Content bounties</h5>
+			      </div>
+			      <!-- about LTO section -->
+			      <div id="automated-bounties-section" class="bounty-content  column three-fourth last-col">
+				      <div class="bounty-elements__text">
+					      Do you want to help LegalThings One grow by spreading the word about the LegalThings One Platform, while
+					      receiving LTO’s?
+					      <br>
+					      <br>
+					      We developed a LiveContract to keep track of your social media posts and referrals. Just connect your
+					      Twitter, Facebook and Wallet ID to your profile in our portal, and the LiveContract will calculate and
+					      pay out your reward!
+				      </div>
+
+				      <div class="bounty-elements__icons">
+						      <i class="bounty-elements__icon icon-facebook"></i>
+						      <i class="bounty-elements__icon icon-twitter"></i>
+						      <i class="bounty-elements__icon icon-referral"></i>
+				      </div>
+				      <div class="bounty-elements__text">
+					      Want to become a LTO social media bounty hunter? Subscribe below!
+				      </div>
+				      <!--<a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">-->
+					      <!--Button-->
+				      <!--</a>-->
+			      </div>
+			      <!-- buying coins section -->
+			      <div id="content-bounties-section" class="bounty-content column three-fourth last-col">
+				      <div class="bounty-elements__text">
+					      Are you a content creator? You can earn LTO’s by letting the world know about LegalThings One through
+					      your channels. Earn rewards for creating content about LegalThings One or by translating our content in
+					      your native language.
+					      <br>
+					      <br>
+					      Through a LiveContract connected to automated workflows we’ll examine your submissions on a weekly
+					      basis, which can earn you big rewards.
+				      </div>
+
+				      <div class="bounty-elements__icons">
+						      <i class="bounty-elements__icon icon-article"></i>
+						      <i class="bounty-elements__icon icon-youtube"></i>
+						      <i class="bounty-elements__icon icon-bitcoin-talk"></i>
+						      <i class="bounty-elements__icon icon-google-trans"></i>
+				      </div>
+				      <div class="bounty-elements__text">
+					      Want to become a LTO content bounty hunter? Subscribe below!
+				      </div>
+
+			      </div>
+		      </div>
+		      <div class="align-center bounty__button-wrap">
+			      <a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">
+				      Button
+			      </a>
+		      </div>
+		      </div>
+
+	      </div>
+	    <div class="wrapper row-section" id="token-info">
+		    <h2 class="align-center">
+			    <strong>Token usage</strong>
+		    </h2>
+		    <div class="spacer-medium"></div>
+		    <div class="column one-half">
+			    <table class="token-usage-table">
+				    <thead>
+				    <tr>
+					    <th>Full node</th>
+					    <th>Required license</th>
+				    </tr>
+				    </thead>
+				    <tbody>
+				    <tr>
+					    <td>
+						    <i class="fa fa-building"></i>
+						    <div class="tooltip">
+							    Full node with whitelabled environment
+							    <span class="tooltiptext">
+                    Run a single full node with a whitelabled LegalThings One environment
+                  </span>
+						    </div>
+					    </td>
+					    <td>100,000 LTO</td>
+				    </tr>
+				    <tr>
+					    <td>
+						    <i class="fa fa-retweet"></i>
+						    <div class="tooltip">
+							    Live Contract interactions (250 per week)
+							    <span class="tooltiptext">
+                    Perform up to 250 interactions with Live Contracts per week per 250 LTO
+                  </span>
+						    </div>
+					    </td>
+					    <td>1,000 LTO</td>
+				    </tr>
+				    </tbody>
+			    </table>
+
+			    <table class="token-usage-table">
+				    <thead>
+				    <tr>
+					    <th>Lease to the LTO foundation</th>
+					    <th></th>
+				    </tr>
+				    </thead>
+				    <tbody>
+				    <!--<tr>-->
+					    <!--<td>-->
+						    <!--<i class="fa fa-id-card-o"></i>-->
+						    <!--<div class="tooltip">-->
+							    <!--User-->
+							    <!--<span class="tooltiptext">-->
+                    <!--1 user on a LegalThings One environment is allowed per 500 LTO-->
+                  <!--</span>-->
+						    <!--</div>-->
+					    <!--</td>-->
+					    <!--<td>500 LTO</td>-->
+				    <!--</tr>-->
+				    <!--<tr>-->
+					    <!--<td>-->
+						    <!--<i class="fa fa-retweet"></i>-->
+						    <!--<div class="tooltip">-->
+							    <!--Live Contract interactions (100 per week)-->
+							    <!--<span class="tooltiptext">-->
+                    <!--Perform up to 100 interactions with Live Contracts per week per 500 LTO-->
+                  <!--</span>-->
+						    <!--</div>-->
+					    <!--</td>-->
+					    <!--<td>500 LTO</td>-->
+				    <!--</tr>-->
+				    <!--<tr>-->
+					    <td>
+						    <i class="fa fa-play-circle"></i>
+						    <div class="tooltip">
+							    Create Live Contracts (5 per week)
+							    <span class="tooltiptext">
+                    Create up to 5 Live Contracts per week per 1000 LTO
+                  </span>
+						    </div>
+					    </td>
+					    <td>1,000 LTO</td>
+				    </tr>
+				    <tr>
+					    <td>
+						    <i class="fa fa-file-text"></i>
+						    <div class="tooltip">
+							    Live Contracts pre-package
+							    <span class="tooltiptext">
+                    Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
+                  </span>
+						    </div>
+					    </td>
+					    <td>10,000 LTO</td>
+				    </tr>
+				    </tbody>
+			    </table>
+		    </div>
+		    <div class="column one-half last-col">
+			    <p>
+				    <strong>Token distribution</strong>
+				    <br>
+				    Tokens are immediately available upon purchase. Excess tokens may be sold on the Waves Decentralized Exchange (DEX). You never spend LTO tokens. You only trade, lease or hold them.
+			    </p>
+			    <p>
+				    <strong>Running a full node</strong>
+				    <br>
+				    Organizations can host their own, full node by holding enough LTO tokens. As an enterprise, you can integrate
+				    Live Contracts within your existing software platform. As a law firm or legal tech start-up, you can offer
+				    Live Contracts in addition to static contracts and other legal services.
+			    </p>
+			    <p>
+				    <strong>Leasing your tokens</strong>
+				    <br>
+				    You may lease your tokens to any other node, allowing them to increase their interaction limit. Organizations
+				    may reward you for this by paying you (in USD or cryptocurrency) or by providing you free services. Leasing
+				    tokens to the node of the LTO foundation allows you to view and interact with your Live Contracts through
+				    independent means, so without relying on the system of the counterparty.
+			    </p>
+		    </div>
+	    </div>
+
+	    <div class="pie-chart-section text-light purpleSection row-section" id="token-info">
+		    <div class="wrapper column-section">
+			    <h2 class="align-center">
+				    <strong>
+					    Token distribution
+				    </strong>
+			    </h2>
+			    <div class="spacer-small"></div>
+			    <div class="column one-half">
+				    <h3>LTO Token</h3>
+				    <p>
+					    The LTO token represents a license. Companies and governments need these tokens to create, run and interact with Live Contracts.
+				    </p>
+				    <p>
+					    Token holders are able to use the platform and network as long as they hold the tokens. The license is transferable. LTO tokens may be resold to any interested party by any means.
+				    </p>
+				    <h5>Why are we releasing tokens for an existing project?</h5>
+				    <p>
+					    We believe that Live Contracts can have a positive change on the world. Accomplishing this requires mass adoption. By tokenizing our license, we want to create an incentive for early adopters and a reward for the community that helps us push this technology.
+				    </p>
+				    <p>
+					    In the long term, we envision Live Contracts becoming something bigger than our company. The project should grow to a self-sustaining crypto-economy for storing ownerless data. The LTO tokens are a first step towards this vision.
+				    </p>
+				    <p>
+					    Please read the full description of <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">LTO token and functionality</a>.
+				    </p>
+			    </div>
+			    <div class="column one-half last-col">
+				    <div id="pie"></div>
+				    <div id="pie-legend">
+					    <div class="legend-item">
+						    <span class="color" style="background: #C424FD"></span> Pre-sale : 6.000.000
+					    </div>
+					    <div class="legend-item">
+						    <span class="color" style="background: #6e1b84"></span> Company reserve : 10.000.000
+					    </div>
+					    <div class="legend-item">
+						    <span class="color" style="background: #9867cf"></span> Team and advisors : 18.000.000
+					    </div>
+					    <div class="legend-item">
+						    <span class="color" style="background: #9fbfff"></span> Bounty program : 2.000.000
+					    </div>
+					    <div class="legend-item">
+						    <span class="color" style="background: #507dec"></span> Public sale : 64.000.000
+					    </div>
+				    </div>
+				    <div class="text-light align-center">
+					    <div class="spacer-medium"></div>
+					    <a href="#" class="lc-primary-action sr-button button-medium button-1 circled">Buy LTO Tokens</a>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div class="wrapper row-section team-section">
+		    <h2 class="align-center">
+			    <strong>Meet the Team</strong>
+		    </h2>
+		    <div class="spacer-medium"></div>
+		    <div class="column-section clearfix">
+			    <div class="column one-fourth team-member align-center">
+				    <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
+					    <img class="one" src="img/team/round_version/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
+					    <img class="two" src="img/team/round_version/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Arnold Daniels</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Founder &amp; Software Architect</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
+						    </li>
+						    <li class="github">
+							    <a href="https://github.com/jasny" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth team-member align-center">
+				    <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
+					    <img class="one" src="img/team/round_version/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
+					    <img class="two" src="img/team/round_version/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Rick Schmitz</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Founder &amp; Head of Legal</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth  team-member align-center">
+				    <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
+					    <img class="one" src="img/team/round_version/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+					    <img class="two" src="img/team/round_version/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Martijn Migchelsen</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth last-col team-member align-center">
+				    <a class="team-image" href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank">
+					    <img src="img/team/round_version/lisakate.png" alt="Lisa Kate Palmer - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Lisa Kate Palmer</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Product Development Manager</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/lisa-kate-palmer-2732b681/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="column-section clearfix">
+			    <div class="column one-fourth team-member align-center">
+				    <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
+					    <img class="one" src="img/team/round_version/sven_stam.png" alt="Sven Stam - LegalThings">
+					    <img class="two" src="img/team/round_version/sven_stam_b.png" alt="Sven Stam - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Sven Stam</strong>
+					    </h5>
+					    <h6 class="subtitle-2">CTO</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
+						    </li>
+						    <li class="github">
+							    <a href="https://github.com/sven4ask" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth team-member align-center">
+				    <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
+					    <img class="one" src="img/team/round_version/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
+					    <img class="two" src="img/team/round_version/sabine_van_bilderbeek_b.png" alt="Sabine van Bilderbeek - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Sabine van Bilderbeek</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Manager Operations</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth team-member align-center">
+				    <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+					    <img src="img/team/round_version/martijn_broersma.png" alt="Martijn Broersma - LegalThings">
+					    <!--<img class="two" src="img/team/round_version/martijn_broersma_b.png" alt="Martijn Broersma - LegalThings">-->
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Martijn Broersma</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Head of Operations</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="column one-fourth team-member align-center last-col">
+				    <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
+					    <img class="one" src="img/team/round_version/rick_ross.png" alt="Rick Ros - LegalThings">
+					    <img class="two" src="img/team/round_version/rick_ross_b.png" alt="Rick Ros - LegalThings">
+				    </a>
+				    <div class="team-content">
+					    <h5 class="team-name uppercase">
+						    <strong>Rick Ros</strong>
+					    </h5>
+					    <h6 class="subtitle-2">Head of Sales</h6>
+					    <ul class="socialmedia-widget hover-fade-1">
+						    <li class="linkedin">
+							    <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
+						    </li>
+					    </ul>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="show-more">
+			    <div class="column-section clearfix">
+				    <div class="column one-fourth team-member align-center">
+					    <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
+						    <img src="img/team/round_version/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Diederick Cardon</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Legal Chief</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+				    <div class="column one-fourth team-member align-center">
+					    <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
+						    <img class="one" src="img/team/round_version/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+						    <img class="two" src="img/team/round_version/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
+					    </div>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Moesjarraf Jahangier</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Full-stack Developer</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
+							    </li>
+							    <li class="github">
+								    <a href="https://github.com/moesjarraf" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+				    <div class="column one-fourth team-member align-center">
+					    <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
+						    <img class="one" src="img/team/round_version/yevhen_horbachov.png" alt="Yevhen Horbachov - LegalThings">
+						    <img class="two" src="img/team/round_version/yevhen_horbachov_b.png" alt="Yevhen Horbachov - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Yevhen Horbachov</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Frontend Developer</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
+							    </li>
+							    <li class="github">
+								    <a href="https://github.com/KillaBee1985" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+				    <div class="column one-fourth team-member align-center last-col">
+					    <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
+						    <img src="img/team/round_version/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Jurre Wolsink</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Developer</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
+							    </li>
+							    <li class="github">
+								    <a href="https://github.com/jurrew27" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+
+			    <div class="column-section clearfix">
+				    <div class="column one-fourth team-member align-center">
+					    <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
+						    <img src="img/team/round_version/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Mitchel Kerckhaert</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Developer</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
+							    </li>
+							    <li class="github">
+								    <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+				    <div class="column one-fourth team-member align-center">
+					    <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
+						    <img src="img/team/round_version/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Sarfaraaz Jahangier</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Developer</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
+							    </li>
+							    <li class="github">
+								    <a href="https://github.com/Sarfaraaz" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+				    <div class="column one-fourth last-col team-member align-center">
+					    <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
+						    <img class="one" src="img/team/round_version/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
+						    <img class="two" src="img/team/round_version/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Michael Nieveld</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Legal & Tax</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+
+			    <div class="spacer-medium"></div>
+			    <h2 class="align-center"><strong>Advisors</strong></h2>
+
+			    <div class="column-section clearfix">
+				    <div class="column one-fourth team-member align-center">
+					    <a href="https://www.linkedin.com/in/pim-volkers-0355511" class="team-image" target="_blank">
+						    <img src="img/team/round_version/pim-volkers.png" alt="Pim Volkers - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Pim Volkers</strong>
+						    </h5>
+						    <h6 class="subtitle-2 advisor">ADVISOR</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/pim-volkers-0355511/" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+
+				    <div class="column one-fourth team-member align-center">
+					    <a href="https://mena.nl/profile/peter-van-leersum" class="team-image" target="_blank">
+						    <img src="img/team/round_version/peter-van-leersum.png" alt="Peter van Leersum - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Peter van Leersum</strong>
+						    </h5>
+						    <h6 class="subtitle-2 advisor">ADVISOR</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="link">
+								    <a href="https://mena.nl/profile/peter-van-leersum" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+
+			    <div class="spacer-medium"></div>
+			    <h2 class="align-center"><strong>Partners</strong></h2>
+
+			    <div class="column-section clearfix">
+				    <div class="column one-fourth team-member align-center">
+					    <a class="team-image" href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank">
+						    <img src="img/team/round_version/marcus_camargo.png" alt="Marcus Camargo - LegalThings">
+					    </a>
+					    <div class="team-content">
+						    <h5 class="team-name uppercase">
+							    <strong>Marcus Camargo</strong>
+						    </h5>
+						    <h6 class="subtitle-2">Partner in Brazil</h6>
+						    <ul class="socialmedia-widget hover-fade-1">
+							    <li class="linkedin">
+								    <a href="https://www.linkedin.com/in/marcus-camargo-36392a24/" target="_blank"></a>
+							    </li>
+						    </ul>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		    <div class="spacer-medium"></div>
+		    <div class="align-center">
+			    <a id="show-more" class="sr-button inline button-1-ghost button-medium circled">More team members</a>
+			    <a class="lc-primary-action sr-button inline button-1 button-medium circled">Buy LTO Tokens</a>
+		    </div>
+	    </div>
+	    <!-- END .wrapper -->
+	    <div class="custom-wrap timeline-block">
+		    <!--<h2 class="align-center title">-->
+		    <!--Timeline-->
+		    <!--</h2>-->
+
+		    <div id="timeline-background"></div>
+
+		    <!-- <img id="timeline-background" /> -->
+
+		    <div class="timeline-container text-light" id="timeline-1">
+			    <div class="timeline-header">
+				    <h2 class="align-center">
+					    <strong>Timeline</strong>
+				    </h2>
+				    <h3 class="timeline-header__subtitle">Past, present and future</h3>
+			    </div>
+			    <div class="timeline">
+				    <div class="timeline-item" data-text="Launch of LegalThings">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/start-legalthings.jpg" alt="The launch &mdash; with salmon and champaign" />
+						    <h2 class="timeline__content-title">May 2014</h2>
+						    <p class="timeline__content-desc">
+							    Started in 2014 as platform to create, share and sign contracts in a digital way. After the success of our first company FIRM24.com, we believed that DTM (Document Transaction Management) would be the next big thing after ERP and CRM-systems.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="LegalThings v1.0">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/legalthings-v1.jpg" alt="Pushing the last commits while driving to the client" />
+						    <h2 class="timeline__content-title">May 2015</h2>
+						    <p class="timeline__content-desc">
+							    We released the first version of the LegalThings platform. This version introduced a document and form builder, a document management system, advanced user and permission management and digital signing.
+							    <br>
+							    <br>
+							    <em>Pushing the last commits while driving to our first client.</em>
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Introduction of LegalFlow">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/legalflow.jpg" alt="Explaining how a process can be defined as Finite State Machine" />
+						    <h2 class="timeline__content-title">Jan 2016</h2>
+						    <p class="timeline__content-desc">
+							    For FIRM24 we had created software to run the procedures behind an incorporation. Other customers were also interested in these digitized procedures. We did a small pivot, now focusing on digitizing the contracts as finite state machine, rather than just signing.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Use of Bitcoin blockchain">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/bitcoin.jpg" alt="Looking at a hash" />
+						    <h2 class="timeline__content-title">Sep 2016</h2>
+						    <p class="timeline__content-desc">
+							    We have explored different methods of providing proof of signed documents. While other parties relied on trust and certifications, we wanted a better solution. We started using the blockchain for proof of existence.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Proof of concept on Ethereum">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/ethereum.jpg" alt="Working on registering states on Ethereum" />
+						    <h2 class="timeline__content-title">May 2017</h2>
+						    <p class="timeline__content-desc">
+							    We experimented with Ethereum Smart Contracts and found out that it could only be used for self-enforcing agreements. Inherent constraints make them unusable for legally binding contracts.
+							    <br>Instead, we found a much better solution in using our FSM in combination with the blockchain.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Winner hackaton Ministry of Justice">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/winner-blockaton.jpg" alt="Team with Dutch Minister of Justice, Stef Blok" />
+						    <h2 class="timeline__content-title">Sep 2017</h2>
+						    <p class="timeline__content-desc">
+							    During the blockchain hackaton organized by the Dutch ministry of Justice and Security, we demonstrated that a whole law can be digitized as a FSM and stored on the blockchain. This won us the first prize in the event which included the assignment to create the first digitized Dutch law on the blockchain.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="LTO pre-sale">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/coins.jpg" />
+						    <h2 class="timeline__content-title">6 Dec 2017</h2>
+						    <p class="timeline__content-desc">
+							    Our token pre-sale starts on the 6th of December. For 24 hours, the pre-sale is open only for members. You can register to be whitelisted and participate in this members-only pre-sale. After the whitelist pre-sale, we'll continue with a public pre-sale.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="LTO beta platform">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/beta-platform.jpg" />
+						    <h2 class="timeline__content-title">Dec 2017</h2>
+						    <p class="timeline__content-desc">
+							    We'll launch the LegalThings One platform as beta. All token holders will be able to use the platform. New content, like (live) model contracts will be added in the coming months.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="LTO token sale">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/coins.jpg" />
+						    <h2 class="timeline__content-title">Q2 2018</h2>
+						    <p class="timeline__content-desc">
+							    All tokens represent the full capacity of the LegalThings One platform. During this sale we'll sell licenses (represented by LTO tokens) for the platform.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Publication of open standards">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/opensource.jpg" />
+						    <h2 class="timeline__content-title">Q4 2018</h2>
+						    <p class="timeline__content-desc">
+							    We'll publish the Live Contract syntax as open standards under the CC-BY-SA license. Software to run Live Contracts will be available under the MIT license. This will allow third-parties to to create and run Live Contracts without relying on LegalThings One.
+						    </p>
+					    </div>
+				    </div>
+				    <div class="timeline-item" data-text="Start of test trials">
+					    <div class="timeline__content">
+						    <img class="timeline__img" src="img/timeline/testtrails.jpg" />
+						    <h2 class="timeline__content-title">2019</h2>
+						    <p class="timeline__content-desc">
+							    To set precedence of the legality of data stored on the blockchain, we'll initiate trials in several countries. The following countries are candidates for these trials: United Kingdom, United States, India, Russia and the Netherlands.
+						    </p>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div id="lto-presale"
+	         class="fullwidth-section text-light parallax-section tokensSale-section row-section"
+	         data-parallax-image="img/qubic-bg.jpg">
+		    <div class="wrapper">
+			    <div class="column-section clearfix">
+				    <div class="col-content" style="margin-top: 0px;">
+					    <div class="align-center">
+						    <h2><strong>Token sale</strong></h2>
+					    </div>
+					    <div class="spacer-medium"></div>
+					    <div class="column one-third">
+						    <div class="align-center">
+							    <img src="./img/logo/icon-white.png"/><br>
+							    <div class="spacer-small"></div>
+							    <a href="#" class="lc-primary-action sr-button button-medium button-1 circled">
+								    Buy LTO Tokens
+							    </a>
+						    </div>
+					    </div>
+					    <div class="column two-third last-col">
+						    <h3><strong>Pre-sale token distribution</strong></h3>
+						    <div class="spacer-medium"></div>
+						    <div class="progress-bar-item big-bar">
+							    <div class="progress-bar">
+								    <div class="progress-active progress-bar__element" data-perc="">
                     <span class="tooltip" style="">
                       <span class="current-tokens-sold">
 
                       </span> LTO sold
                     </span>
-                  </div>
-                </div>
-                <h6 class="progress-name">
+								    </div>
+							    </div>
+							    <h6 class="progress-name">
                   <span class="progress-start">
                     0
                   </span>
-                  <span id="all-tokens" class="progress-end">
+								    <span id="all-tokens" class="progress-end">
 
                   </span>
-                </h6>
-              </div>
-              <div class="spacer-medium"></div>
-              <div class="column one-third">
-                <p class="sale-header">Price</p>
-                <p class="sale-focusText">$0.25 / LTO</p>
-              </div>
-              <div class="column one-third">
-                <p class="sale-header">Tokens</p>
-                <p class="sale-focusText">10,000,000 LTO</p>
-              </div>
-              <div class="column one-third last-col">
-                <div class="powered_by_waves">
-                  <p class="sale-header">Powered by</p>
-                  <div></div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="spacer-small"></div>
-              <div class="count-down-wrap hidden">
-                  <h3><strong>Pre-sale ends in</strong></h3>
-                  <div class="spacer-small"></div>
-                  <div class="count-down" data-end-date=""></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+							    </h6>
+						    </div>
+						    <div class="spacer-medium"></div>
+						    <div class="column one-third">
+							    <p class="sale-header">Price</p>
+							    <p class="sale-focusText">$0.25 / LTO</p>
+						    </div>
+						    <div class="column one-third">
+							    <p class="sale-header">Tokens</p>
+							    <p class="sale-focusText">10,000,000 LTO</p>
+						    </div>
+						    <div class="column one-third last-col">
+							    <div class="powered_by_waves">
+								    <p class="sale-header">Powered by</p>
+								    <div></div>
+							    </div>
+						    </div>
+						    <div class="clearfix"></div>
+						    <div class="count-down-wrap hidden">
+							    <h3><strong>Sale ends in</strong></h3>
+							    <div class="count-down" data-end-date=""></div>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <div id="faq" class="purpleSection row-section text-light">
+		    <h2 class="align-center">
+			    <strong>FAQ</strong>
+		    </h2>
+		    <div class="spacer-medium"></div>
+		    <div class="wrapper faq">
+			    <div class="column one-fourth">
+				    <h5 id="about-lto" class="faq-category">About LegalThings One</h5>
+				    <h5 id="about-platform" class="faq-category">About Live Contracts</h5>
+				    <h5 id="buying-lto" class="faq-category">Buying LTO</h5>
+				    <h5 id="trading-lto" class="faq-category">Trading LTO</h5>
+				    <h5 id="managing-lto" class="faq-category">Storing LTO</h5>
+				    <h5 id="legal" class="faq-category">Legal</h5>
+			    </div>
+			    <!-- about LTO section -->
+			    <div id="about-lto-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. What is an LTO?</h3>
+							    <p>A LegalThings One (LTO) token represents a license and gives the holder a limited, non-exclusive, revocable license to interact with Live Contracts.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>2. How many LTO will be sold?</h3>
+							    <p>There is a total supply of <strong>100.000.000 LTO</strong> of which <strong>70.000.000 LTO</strong> will be available to the market.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>3. What happens if all the LTO sell out?</h3>
+							    <p>In that case the following scenario takes place: A company buys 100,000 LTO to run its own customizable install. When the popularity of the LTO platform grows, the LTO price will increase. The LTO Platform will stabilize the price for the service by decreasing the required number of tokens needed to run a service. In this case the price for a customizable install is decreased to 80,000 LTO. In this case, the Company can sell its excess 20,000 LTO tokens on the exchange and can still run its platform.
+							    </p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>4. What is the difference between a coin like Bitcoin and LTO?</h3>
+							    <p>Bitcoin is just a digital coin. An LTO is a license that is going to be used to interact with Live Contracts.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>5. Who are behind the LegalThings One project?</h3>
+							    <p>LegalThings was founded in 2014 by software and blockchain developer Arnold Daniels, tax lawyer Rick Schmitz and business economist Martijn Migchelsen.</p>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <!-- buying coins section -->
+			    <div id="buying-lto-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. Who can buy LTO?</h3>
+							    <p>Every private investor, company or government body can buy LTO.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>2. What is the price of an LTO?</h3>
+							    <p>The pre-sale price of an LTO is $0,25. During the main sale, the price will increase to $0,50.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>3. What currencies do you accept?</h3>
+							    <p>We accept:</p>
+							    <ul>
+								    <li>Euro's (through iDeal & Credit Card)</li>
+								    <li>USD (through Credit Card)</li>
+								    <li>Bitcoin</li>
+								    <li>Bitcoin Cash</li>
+								    <li>Ripple</li>
+								    <li>Monero</li>
+								    <li>Dash</li>
+								    <li>Litecoin</li>
+								    <li>Ether</li>
+							    </ul>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>4. How can I buy LTO?</h3>
+							    <ol>
+								    <li>Click on BUY LTO TOKENS</li>
+								    <li>Fill in your information</li>
+								    <li>Select your payment method</li>
+								    <li>Set your Waves wallet address
+									    <br/>
+									    <i>*if you don't have a Waves wallet address, you can create one here</i></li>
+								    <li>SAVE YOUR SEED. This is very important</li>
+								    <li>Finish the transaction</li>
+								    <li>Go to <a href="https://waveswallet.io/">waveswallet.io</a></li>
+								    <li>Click 'IMPORT ACCOUNT'</li>
+								    <li>Insert your seed</li>
+								    <li>Finalize your registration</li>
+								    <li>Depending on your payment method, your tokens should arrive within 2 hours after the import</br>
+									    <i>*note: Bitcoin will likely take longer due to the confirmation time</i></li>
+							    </ol>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <!-- managing-your-LTO-section -->
+			    <div id="managing-lto-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. Do I need a wallet for my LTO?</h3>
+							    <p>Yes you need a Waves wallet to store LTO in. However if you don't have one currently, you can create a wallet when purchasing LTO.
+								    <br/>
+								    <br/>
+								    <strong>Warning: Do not use an existing Waves wallet on an exchange. Waves wallets on exchanges do not support holding LTO.</strong></p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>2. Why do I need a Waves wallet specifically?</h3>
+							    <p>At the moment, a Waves wallet is the only wallet that can hold LTO. This will change in the future.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>3. Can I use a hardware ledger?</h3>
+							    <p>Waves doesn't support hardware ledgers yet. This may change in the future.</p>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <!-- trading-coins-section -->
+			    <div id="trading-lto-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. When can I trade my LTO?</h3>
+							    <p>When the main token sale (our aim is for Q2 2018) starts, the LTO will become tradeable.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>2. Where can I trade my LTO?</h3>
+							    <p>After the start of the main sale, you can trade LTO on the Waves Decentralized Exchange. Other exchanges will follow shortly after.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>3. How does trading LTO compare to other cryptocurrencies such as Bitcoin?</h3>
+							    <p>There is no difference when it comes to trading. At the start of the main sale, you're limited to one exchange for trading however.</p>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <div id="about-platform-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. What is a Live Contract?</h3>
+							    <p>A Live Contract is a formal agreement that allows interactions from humans. It is formalized in a way that is understandable for both humans and computers. The contract only shows the rules and presents the available options.</p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>2. What is a Token-as-a-License (TaaL)?</h3>
+							    <p>Contrary to traditional licensing, token based licensing allows you to use the same licenses for different products and when the need arises. As tokens are sold or purchased on exchanges, the license is also transfered, so more users can use the software for a limited time.
+								    <br/>
+								    <br/>
+								    <i>For more information read the article on <a href="https://hackernoon.com/blockchain-token-as-a-license-taal-ba5d173e4ad6" target="_blank">Hackernoon</a>.</i></p>
+						    </div>
+					    </div>
+				    </div>
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>3. How many tokens do I need for a service?</h3>
+							    <ul>
+								    <li>Platform access (500 LTO)</li>
+								    <li>Create Live Contracts : 5 per week (1,000 LTO)</li>
+								    <li>Interactions with Live Contracts : 250 per week (1,000 LTO)</li>
+								    <li>Live Contract pre-package (10,000 LTO)</li>
+								    <li>Full node with whitelabled environment (100,000 LTO)</li>
+							    </ul>
+							    <p><i>For more information read our article on <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i></p>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+			    <!-- legal-section -->
+			    <div id="legal-section" class="faq-content column three-fourth last-col">
+				    <div class="collapsible">
+					    <div class="container">
+						    <div class="content">
+							    <h3>1. Where can I find your terms and conditions?</h3>
+							    <p>You can find our terms and conditions <a href="https://www.livecontracts.io/documents/terms-and-conditions.pdf" target="_blank">here</a>.</p>
+						    </div>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+	    </div>
+	    <!-- FAQ - END -->
+	    <div id="register" class="row-section subscribe-block">
+		    <div class="wrapper align-center">
+			    <h2>
+				    <strong>Stay informed</strong>
+			    </h2>
+			    <p>Sign up for our newsletter to stay informed about the latest developments.</p>
+			    <form class="newsletter-form" novalidate="true">
+				    <input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Address">
+				    <br>
+				    <div class="spacer-mini"></div>
+				    <input type="submit" class="sr-button button-1 button-medium circled" value="Sign up">
+				    <p class="newsletter-error"></p>
+				    <p class="newsletter-success">
+					    You have successfully joined the token sale.
+				    </p>
+			    </form>
+		    </div>
+	    </div>
+	    <div class="row-section align-center socialsBlock purpleSection text-light">
+		    <h2><strong>Social</strong></h2>
+		    <ul class="socialmedia-widget size-huge hover-fade-1">
+			    <li class="telegram">
+				    <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+			    </li>
+			    <li class="github">
+				    <a href="https://github.com/legalthings" target="_blank"></a>
+			    </li>
+			    <!--                 <li class="reddit">
+						<a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
+					</li> -->
+			    <!--                 <li class="linkedin">
+						<a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+					</li> -->
+			    <li class="twitter">
+				    <a href="https://twitter.com/livecontracts" target="_blank"></a>
+			    </li>
+			    <!--                 <li class="medium">
+						<a href="https://medium.com/legalthingsone" target="_blank"></a>
+					</li> -->
+			    <!--                 <li class="slack">
+						<a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
+					</li> -->
+		    </ul>
+	    </div>
+    </section>
     </div>
-    <div class="wrapper row-section">
-      <h2 class="align-center">
-        <strong>Token usage</strong>
-      </h2>
-      <div class="spacer-medium"></div>
-      <div class="column one-half">
-        <table class="token-usage-table">
-          <thead>
-            <tr>
-              <th>Full node</th>
-              <th>Required license</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <i class="fa fa-building"></i>
-                <div class="tooltip">
-                  Full node with whitelabled environment
-                  <span class="tooltiptext">
-                    Run a single full node with a whitelabled LegalThings One environment
-                  </span>
-                </div>
-              </td>
-              <td>100,000 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-retweet"></i>
-                <div class="tooltip">
-                  Live Contract interactions (250 per week)
-                  <span class="tooltiptext">
-                    Perform up to 250 interactions with Live Contracts per week per 250 LTO
-                  </span>
-                </div>
-              </td>
-              <td>1,000 LTO</td>
-            </tr>
-          </tbody>
-        </table>
+    <!-- END .wrapper -->
 
-        <table class="token-usage-table">
-          <thead>
-            <tr>
-              <th>Lease to the LTO foundation</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <i class="fa fa-id-card-o"></i>
-                <div class="tooltip">
-                  User
-                  <span class="tooltiptext">
-                    1 user on a LegalThings One environment is allowed per 500 LTO
-                  </span>
-                </div>
-              </td>
-              <td>500 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-retweet"></i>
-                <div class="tooltip">
-                  Live Contract interactions (100 per week)
-                  <span class="tooltiptext">
-                    Perform up to 100 interactions with Live Contracts per week per 500 LTO
-                  </span>
-                </div>
-              </td>
-              <td>500 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-play-circle"></i>
-                <div class="tooltip">
-                  Create Live Contracts (5 per week)
-                  <span class="tooltiptext">
-                    Create up to 5 Live Contracts per week per 1000 LTO
-                  </span>
-                </div>
-              </td>
-              <td>1,000 LTO</td>
-            </tr>
-            <tr>
-              <td>
-                <i class="fa fa-file-text"></i>
-                <div class="tooltip">
-                  Live Contracts pre-package
-                  <span class="tooltiptext">
-                    Get access to one set of Live Contract templates (HR-, Sales-, Software- or Rental contracts) per 10,000 LTO
-                  </span>
-                </div>
-              </td>
-              <td>10,000 LTO</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="column one-half last-col">
-        <p>
-          <strong>Token distribution</strong>
-          <br> Tokens are immediately available upon purchase. Excess tokens may be sold on the Waves Decentralized Exchange (DEX). You never spend LTO tokens, only trade, lease or hold them.
-        </p>
-        <p>
-          <strong>Running a full node</strong>
-          <br> Organization you can host their own full node by HOLDing LTO tokens. As an enterprise, you can intergrate Live Contract with your existing software platform. As law firm or legaltech start-up,
-          you can offer Live Contracts in addition to static contracts and other legal services.
-        </p>
-        <p>
-          <strong>Leasing your tokens</strong>
-          <br> You may lease your tokens to any node, allowing them to increase their interaction limit. Organizations may reward you for this by paying (USD or crypto currency) or providing a free service.
-          Leasing tokens to the node of the LTO foundation allows you to view and interact with your Live Contracts through independent means, so not relying on
-          the system of the counter party.
-        </p>
-      </div>
-    </div>
-    <div class="pie-chart-section text-light purpleSection row-section" id="token-info">
-      <div class="wrapper column-section">
-        <h2 class="align-center">
-          <strong>
-            Token distribution
-          </strong>
-        </h2>
-        <div class="spacer-small"></div>
-        <div class="column one-half">
-          <h3>LTO Token</h3>
-          <p>
-            The LTO token represents a license. Companies and governments need these tokens to create, run and interact with Live Contracts.
-          </p>
-          <p>
-            Token holders are able to use the platform and network as long as they hold the tokens. The license is transferable. LTO tokens may be resold to any interested party by any means.
-          </p>
-          <h5>Why are we releasing tokens for an existing project?</h5>
-          <p>
-            We believe that Live Contracts can have a positive change on the world. Accomplishing this requires mass adoption. By tokenizing our license, we want to create an incentive for early adopters and a reward for the community that helps us push this technology.
-          </p>
-          <p>
-            In the long term, we envision Live Contracts becoming something bigger than our company. The project should grow to a self-sustaining crypto-economy for storing ownerless data. The LTO tokens are a first step towards this vision.
-          </p>
-          <p>
-            Please read the full description of <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36">LTO token and functionality</a>.
-          </p>
-        </div>
-        <div class="column one-half last-col">
-          <div id="pie"></div>
-          <div id="pie-legend">
-            <div class="legend-item">
-              <span class="color" style="background: #C424FD"></span> Pre-sale : 10,000,000
-            </div>
-            <div class="legend-item">
-              <span class="color" style="background: #6e1b84"></span> Company reserve : 10,000,000
-            </div>
-            <div class="legend-item">
-              <span class="color" style="background: #9867cf"></span> Team and advisors : 18,000,000
-            </div>
-            <div class="legend-item">
-              <span class="color" style="background: #9fbfff"></span> Bounty program : 2,000,000
-            </div>
-            <div class="legend-item">
-              <span class="color" style="background: #507dec"></span> Public sale : 60,000,000
-            </div>
-          </div>
-          <div class="text-light align-center">
-            <div class="spacer-medium"></div>
-            <a href="#" class="lc-primary-action sr-button button-medium button-1 circled">Buy LTO Tokens</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row-section align-center">
-      <h2>
-        <strong>In the press</strong>
-      </h2>
-      <div id="media-logos">
-      </div>
-    </div>
-    <div id="faq" class="purpleSection row-section text-light">
-      <h2 class="align-center">
-        <strong>FAQ</strong>
-      </h2>
-      <div class="spacer-medium"></div>
-      <div class="wrapper faq">
-        <div class="column one-fourth">
-          <h5 id="about-lto" class="faq-category">About LegalThings One</h5>
-          <h5 id="about-platform" class="faq-category">About Live Contracts</h5>
-          <h5 id="buying-lto" class="faq-category">Buying LTO</h5>
-          <h5 id="trading-lto" class="faq-category">Trading LTO</h5>
-          <h5 id="managing-lto" class="faq-category">Storing LTO</h5>
-          <h5 id="legal" class="faq-category">Legal</h5>
-        </div>
-        <!-- about LTO section -->
-        <div id="about-lto-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. What is an LTO?</h3>
-                <p>A LegalThings One (LTO) token represents a license and gives the holder a limited, non-exclusive, revocable license to interact with Live Contracts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. How many LTO will be sold?</h3>
-                <p>There is a total supply of <strong>100.000.000 LTO</strong> of which <strong>70.000.000 LTO</strong> will be available to the market.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>3. What happens if all the LTO sell out?</h3>
-                <p>The limited supply of LTO tokens favours early addopters of the platform. Organizations that want to run Live Contracts and do not have LTO tokens, need to purchase these from the secondary market, possibly at a higher price.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>4. What is the difference between a coin like Bitcoin and LTO?</h3>
-                <p>Bitcoin is a crypto currency, in other words digital money. LTO is a license that you need to hold (not spend) in order to run Live Contracts.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>5. Who are behind the LegalThings One project?</h3>
-                <p>LegalThings was founded in 2014 by software and blockchain developer Arnold Daniels, tax lawyer Rick Schmitz and business economist Martijn Migchelsen.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- buying coins section -->
-        <div id="buying-lto-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. Who can buy LTO?</h3>
-                <p>Every individual, company or government body can buy LTO license tokens.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. What is the price of an LTO?</h3>
-                <p>The pre-sale price of an LTO is $0,25. During the main sale, the price will increase upwards from $0,50.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>3. What currencies do you accept?</h3>
-                <p>We accept:</p>
-                <ul>
-                  <li>Euro's (through iDeal & Credit Card)</li>
-                  <li>USD (through Credit Card)</li>
-                  <li>Bitcoin</li>
-                  <li>Bitcoin Cash</li>
-                  <li>Ether</li>
-                  <li>Ripple</li>
-                  <li>Monero</li>
-                  <li>Dash</li>
-                  <li>Litecoin</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>4. How can I buy LTO?</h3>
-                <ol>
-                  <li>Click on BUY LTO TOKENS</li>
-                  <li>Fill in your information</li>
-                  <li>Select your payment method</li>
-                  <li>Set your Waves wallet address
-                    <br/>
-                    <i>*if you don't have a Waves wallet address, you can create one here</i></li>
-                  <li>SAVE YOUR SEED. This is very important</li>
-                  <li>Finish the transaction</li>
-                  <li>Go to <a href="https://beta.wavesplatform.com/">wavesplatform.com</a></li>
-                  <li>Click 'IMPORT ACCOUNT'</li>
-                  <li>Insert your seed</li>
-                  <li>Finalize your registration</li>
-                  <li>Depending on your payment method, your tokens should arrive within 2 hours after the import</br>
-                    <i>*note: Bitcoin will likely take longer due to the confirmation time</i></li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- managing-your-LTO-section -->
-        <div id="managing-lto-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. Do I need a wallet for my LTO?</h3>
-                <p>Yes you need a Waves wallet to store LTO in. However if you don't have one currently, you can create a wallet when purchasing LTO.
-                  <br/>
-                  <br/>
-                  <strong>Warning: Do not use an existing Waves wallet on an exchange. Waves wallets on exchanges do not support holding LTO.</strong></p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. Why do I need a Waves wallet specifically?</h3>
-                <p>Yes, a Waves wallet is the only wallet that can hold LTO.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>3. Can I use a hardware ledger?</h3>
-                <p>Waves doesn't support hardware ledgers yet. This may change in the future.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- trading-coins-section -->
-        <div id="trading-lto-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. When can I trade my LTO?</h3>
-                <p>When the main token sale (our aim is for Q2 2018) starts, the LTO will become tradeable.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. Where can I trade my LTO?</h3>
-                <p>After the start of the main sale, you can trade LTO on the Waves Decentralized Exchange. Other exchanges will follow shortly after.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>3. How does trading LTO compare to other cryptocurrencies such as Bitcoin?</h3>
-                <p>There is no difference when it comes to trading. At the start of the main sale, you're limited to one exchange for trading however.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="about-platform-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. What is a Live Contract?</h3>
-                <p>A Live Contract is a formal agreement that allows interactions from humans. It is formalized in a way that is understandable for both humans and computers. The contract only shows the rules and presents the available options.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. What is a Token-as-a-License (TaaL)?</h3>
-                <p>Contrary to traditional licensing, token based licensing allows you to use the same licenses for different products and when the need arises. As tokens are sold or purchased on exchanges, the license is also transfered, so more users can use the software for a limited time.
-                  <br/>
-                  <br/>
-                  <i>For more information read the article on <a href="https://hackernoon.com/blockchain-token-as-a-license-taal-ba5d173e4ad6" target="_blank">Hackernoon</a>.</i></p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>3. How many tokens do I need for a service?</h3>
-                <ul>
-                  <li>Create Live Contracts : 5 per week (1,000 LTO)</li>
-                  <li>Live Contract pre-package (10,000 LTO)</li>
-                </ul>
-                <p><i>For more information read our article on <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i></p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>4. How many tokens do I need for to run a node?</h3>
-                <ul>
-                  <li>Full node with whitelabled environment (100,000 LTO)</li>
-                  <li>Interactions with Live Contracts : 250 per week (1,000 LTO)</li>
-                </ul>
-                <p><i>For more information read our article on <a href="https://medium.com/legalthingsone/legalthings-one-token-6465f3423f36" target="_blank">Medium</a>.</i></p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>5. How do I run a node?</h3>
-                <p>The LegalThings One PaaS is supplied as set of docker containers. You need host the containers on a service like AWS or Azure. Detailed instruction will follow.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- legal-section -->
-        <div id="legal-section" class="faq-content column three-fourth last-col">
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>1. Where can I find your terms and conditions?</h3>
-                <p>You can find our terms and conditions <a href="https://www.livecontracts.io/documents/terms-and-conditions.pdf" target="_blank">here</a>.</p>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible">
-            <div class="container">
-              <div class="content">
-                <h3>2. What is the difference between the LTO token sale and an ICO?</h3>
-                <p>An Initial Coin Offering, commonly referred to as an ICO, is a fundraising mechanism. With the LTO token you're buying a license to an existing software platform.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FAQ - END -->
-    <div id="register" class="row-section subscribe-block">
-      <div class="wrapper align-center">
-        <h2>
-          <strong>Stay informed</strong>
-        </h2>
-        <p>Sign up for our newsletter to stay informed about the latest developments.</p>
-        <form class="newsletter-form" novalidate="true">
-          <input type="email" class="newsletter-email" name="EMAIL" placeholder="Your Email Address">
-          <br>
-          <div class="spacer-mini"></div>
-          <input type="submit" class="sr-button button-1 button-medium circled" value="Sign up">
-          <p class="newsletter-error"></p>
-          <p class="newsletter-success">
-            You have successfully joined the token sale.
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="row-section align-center socialsBlock purpleSection text-light">
-      <h2><strong>Social</strong></h2>
-      <ul class="socialmedia-widget size-huge hover-fade-1">
-        <li class="telegram">
-          <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-        </li>
-        <li class="github">
-          <a href="https://github.com/legalthings" target="_blank"></a>
-        </li>
-        <!--                 <li class="reddit">
-          <a href="https://www.reddit.com/r/livecontracts/" target="_blank"></a>
-        </li> -->
-        <!--                 <li class="linkedin">
-          <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-        </li> -->
-        <li class="twitter">
-          <a href="https://twitter.com/livecontracts" target="_blank"></a>
-        </li>
-        <!--                 <li class="medium">
-          <a href="https://medium.com/legalthingsone" target="_blank"></a>
-        </li> -->
-        <!--                 <li class="slack">
-          <a href="https://join.slack.com/t/legalthingsone/shared_invite/enQtMjY5NjgzNTQ0OTY0LWE4OTQ3OWUxNzE1OTVmOTA5Y2UxMTk3ZGQzMWJmMDc1MTdhM2Y3ZWJkNjdhMGU0OGYyNmYyYjZhNjFjZTU1YjQ" target="_blank"></a>
-        </li> -->
-      </ul>
-    </div>
+
+  <!--<section class="bounty-program">-->
+    <!--<div class="spacer-medium"></div>-->
+
+    <!--<h2 class="align-center">-->
+      <!--<strong>-->
+        <!--Bounty program-->
+      <!--</strong>-->
+    <!--</h2>-->
+    <!--<div class="wrapper row-section">-->
+      <!--<div class="bounty-wizard">-->
+        <!--<a href="#" data-bounty-id="bounty-wizard-1" class="bounty-wizard__step active">-->
+            <!--Automated bounties-->
+        <!--</a>-->
+        <!--<a href="#" data-bounty-id="bounty-wizard-2" class="bounty-wizard__step">-->
+            <!--Content bounties-->
+        <!--</a>-->
+      <!--</div>-->
+      <!--<div class="bounty-elements text-light">-->
+        <!--<div id="bounty-wizard-1" class="bounty-elements__element active">-->
+            <!--<div class="bounty-elements__text">-->
+                <!--Do you want to help LegalThings One grow by spreading the word about the LegalThings One Platform, while-->
+                <!--receiving LTO’s?-->
+                <!--<br>-->
+                <!--<br>-->
+                <!--We developed a LiveContract to keep track of your social media posts and referrals. Just connect your-->
+                <!--Twitter, Facebook and Wallet ID to your profile in our portal, and the LiveContract will calculate and-->
+                <!--pay out your reward!-->
+            <!--</div>-->
+
+            <!--<div class="bounty-elements__icons">-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-facebook"></i>-->
+                <!--</a>-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-twitter"></i>-->
+                <!--</a>-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-referral"></i>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="bounty-elements__text">-->
+                <!--Want to become a LTO social media bounty hunter? Subscribe below!-->
+            <!--</div>-->
+            <!--<a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">-->
+            <!--Button-->
+          <!--</a>-->
+        <!--</div>-->
+        <!--<div id="bounty-wizard-2" class="bounty-elements__element">-->
+
+            <!--<div class="bounty-elements__text">-->
+                <!--Are you a content creator? You can earn LTO’s by letting the world know about LegalThings One through-->
+                <!--your channels. Earn rewards for creating content about LegalThings One or by translating our content in-->
+                <!--your native language.-->
+                <!--<br>-->
+                <!--<br>-->
+                <!--Through a LiveContract connected to automated workflows we’ll examine your submissions on a weekly-->
+                <!--basis, which can earn you big rewards.-->
+            <!--</div>-->
+
+            <!--<div class="bounty-elements__icons">-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-article"></i>-->
+                <!--</a>-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-youtube"></i>-->
+                <!--</a>-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-bitcoin-talk"></i>-->
+                <!--</a>-->
+                <!--<a class="bounty-elements__icon" href="#">-->
+                    <!--<i class="icon-google-trans"></i>-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<div class="bounty-elements__text">-->
+                <!--Want to become a LTO content bounty hunter? Subscribe below!-->
+            <!--</div>-->
+            <!--<a href="#" class="lc-primary-action sr-button button-1 button-medium circled bounty-elements__button">-->
+            <!--Button-->
+          <!--</a>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</section>-->
+
+
+
+
+
+  <!-- FAQ - START -->
+
+
     <!-- PAGEBODY -->
     <!-- FOOTER -->
     <footer id="footer" class="footer-dark text-light">
@@ -2135,5 +4026,7 @@
         twq('track','PageView');
     </script>
     <!-- End Twitter universal website tag code -->
+
+
 </body>
 </html>
