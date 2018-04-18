@@ -3361,7 +3361,9 @@ footer #backtotop:before {
 #hero {
   position: relative;
   overflow: hidden;
+  background: #fff;
 }
+
 
 
 
