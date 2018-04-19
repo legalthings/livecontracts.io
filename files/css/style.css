@@ -3364,6 +3364,11 @@ footer #backtotop:before {
   background: #fff;
 }
 
+#hero.hero-full {
+  background-position: right bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important; 
+}
 
 
 
