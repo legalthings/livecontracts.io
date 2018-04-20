@@ -3364,7 +3364,7 @@ footer #backtotop:before {
   background: #fff;
 }
 
-#hero.svg-custom-hero {
+#hero.svg-custom-hero, #hero.svg-custom-hero .parallax-image {
   background: #fff;
   background-position: right bottom !important;
   background-repeat: no-repeat !important;
@@ -3372,7 +3372,7 @@ footer #backtotop:before {
 }
 
 @media screen and (max-width: 480px) {
-  #hero.svg-custom-hero {
+  #hero.svg-custom-hero, #hero.svg-custom-hero .parallax-image {
     background: none !important;
   }
 }
