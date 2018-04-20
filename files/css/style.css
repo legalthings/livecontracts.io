@@ -3364,10 +3364,17 @@ footer #backtotop:before {
   background: #fff;
 }
 
-#hero.hero-full, .parallax-image {
+#hero.svg-custom-hero {
+  background: #fff;
   background-position: right bottom !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
+}
+
+@media screen and (max-width: 480px) {
+  #hero.svg-custom-hero {
+    background: none !important;
+  }
 }
 
 #hero .hero_img {
