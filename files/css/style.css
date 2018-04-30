@@ -10788,10 +10788,15 @@ html body #intercom-container .intercom-launcher-badge-frame {
    left: -22px;
    top: -59px;
  }
+
+ .sale-progress .sale-progress__bar .sale-progress__bar-element
+  .sale-progress__bar-label.special-label.special-label-mobile {
+      display: none;
+  }
 .sale-progress .sale-progress__bar .sale-progress__bar-element
  .sale-progress__bar-label.special-label {
   left: auto;
-  right: 0;
+  right: -25px;
  }
 .sale-progress .sale-progress__bar .sale-progress__bar-element:first-child
  .sale-progress__bar-label {
@@ -11245,9 +11250,19 @@ html body #intercom-container .intercom-launcher-badge-frame {
     font-size: 14px;
   }
 
+  .sale-progress .sale-progress__bar .sale-progress__bar-element
+   .sale-progress__bar-label.special-label {
+       display: none;
+   }
+   .sale-progress .sale-progress__bar .sale-progress__bar-element
+    .sale-progress__bar-label.special-label.special-label-mobile {
+        display: block;
+        right: 0;
+    }
+
   .sale-progress .sale-progress__bar .sale-progress__bar-element:after {
     height: 49px;
-  }
+  } 
   .sale-progress .sale-progress__bar {
     height: 40px;
   }
