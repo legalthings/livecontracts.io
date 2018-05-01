@@ -10586,7 +10586,7 @@ html.lock {
   height: 418px;
   padding: 0;
   /*width: 100%;*/
-  background: url("../../img/cust.jpg") no-repeat scroll center center;
+  background: url("../../img/customers_background.jpg") no-repeat scroll center center;
   background-size: contain;
 }
 
@@ -10599,7 +10599,7 @@ html.lock {
   left: 0;
   bottom: 0;
   right: 0;
-	background: url("../../img/cust.jpg") no-repeat scroll center center;
+	background: url("../../img/customers_background.jpg") no-repeat scroll center center;
   background-size: contain;
   -webkit-filter: blur(5px);
   filter: blur(5px);
@@ -10623,7 +10623,7 @@ html.lock {
   }
 
   .column-section.block-button__hover::before, .column-section.block-button__hover {
-    background: url("../../img/cust_mobile.jpg") no-repeat scroll center center;
+    background: url("../../img/customers_background_mobile.jpg") no-repeat scroll center center;
     background-size: contain;
   }
 }
@@ -11262,7 +11262,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 
   .sale-progress .sale-progress__bar .sale-progress__bar-element:after {
     height: 49px;
-  } 
+  }
   .sale-progress .sale-progress__bar {
     height: 40px;
   }
