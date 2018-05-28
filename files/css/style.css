@@ -7081,10 +7081,12 @@ div .toggle-item:first-child {
 }
 
 
+.team-section .column-section {
+  margin-top: 15px;
+}
+
 .team-content {
-  padding-top: 20px;
-  padding-bottom: 0;
-  /*border-top: 1px solid rgba(0, 0, 0, 0.05);*/
+  padding: 8px 0 0 calc(20% + 10px);
 }
 
 .team-content * {
@@ -7095,8 +7097,6 @@ div .toggle-item:first-child {
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
   /*outline: 1px solid #eee;*/
   border-radius: 8px;
-  border: solid 1px #f7f7f7;
-  box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.05);
   padding: 15px 0;
   box-sizing: border-box;
 }
@@ -7106,7 +7106,7 @@ div .toggle-item:first-child {
   font-weight: bold;
 }
 .team-member .team-name {
-  font: bold 18px Montserrat;
+  font: bold 14px Montserrat;
   letter-spacing: 0.2px;
   color: #000000;
 }
@@ -7115,16 +7115,23 @@ div .toggle-item:first-child {
   color: #fff;
 }
 .team-member .subtitle-2 {
-  font: bold 14px Montserrat;
+  font: 12px Montserrat;
+  font-weight: 400;
   letter-spacing: 0.2px;
   text-align: center;
   color: #9b9b9b;
+  margin-top: 3px;
+}
+
+.team-member .socialmedia-widget {
+  display: none;
 }
 
 .team-image  {
   position: relative;
-  display: flex;
-  width: 90%;
+  display: inline-block;
+  float: left;
+  width: 20%;
   margin: 0 auto;
   border-radius: 50%;
   align-items: center;
@@ -7151,9 +7158,8 @@ div .toggle-item:first-child {
   transition: opacity 0.5s;
   transform: translateZ(0);
   border-radius: 50%;
-  border: solid 6px #fff;
-  width: calc(100% - 12px);
-
+  border: solid 3px #fff;
+  width: calc(100% - 6px);
 }
 
 .team-image img.one {
@@ -7177,6 +7183,39 @@ div .toggle-item:first-child {
 .show-more {
   margin-top: 40px !important;
   display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .founders .team-content {
+    padding: 20px 0 0 0;
+    /*border-top: 1px solid rgba(0, 0, 0, 0.05);*/
+  }
+
+  .founders .team-member .team-name {
+    font: bold 18px Montserrat;
+  }
+
+  .founders .team-member .subtitle-2 {
+    font: 14px Montserrat;
+    font-weight: bold;
+    margin-top: 6px;
+  }
+
+  .founders .team-member .socialmedia-widget {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .founders .team-image {
+    display: flex;
+    width: 65%;
+    float: none;
+  }
+
+  .founders .team-image img {
+    border: solid 6px #fff;
+    width: calc(100% - 12px);
+  }
 }
 
 /*  Alerts
@@ -9280,7 +9319,7 @@ header.small-header:not(.not-sticky):not(.header-style-vertical) nav#main-nav > 
 }
 
 footer.footer-dark {
-  background: #000;
+  background: #231d39;
   border: none;
   color: #fff;
 }
@@ -10583,7 +10622,7 @@ html.lock {
 
 .column-section.block-button__hover {
   display: block;
-  height: 418px;
+  height: 200px;
   padding: 0;
   /*width: 100%;*/
   background: url("../../img/customers_background.jpg") no-repeat scroll center center;
@@ -12178,3 +12217,116 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .wizard-descriptions .wizard-descriptions__description:not(:last-of-type) .sale-wizard {
 	height: 200%;
 }
+
+#hero h1:after {
+  display: block;
+  content: " ";
+  height: 2px;
+  background: url(../../img/gradient.png) no-repeat;
+  background-size: cover;
+  width: 8.3em;
+  margin-top: 12px;
+}
+@media (max-width: 450px) {
+  #hero h3 {
+    font-size: 6vw;
+    line-height: 140%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__buttons a {
+    display: block;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.button-medium.join-telegram {
+  padding-left: 25px;
+}
+
+.button-medium img {
+  height: 1.5em;
+  vertical-align: -7px;
+  margin-right: 15px;
+  transition: all 0.2s ease;
+}
+.button-medium:hover img {
+  filter: invert(1);
+}
+
+.general-advantages__image {
+  width: 120px;
+  float: left;
+  margin-right: 30px;
+}
+
+.general-advantages h4 {
+  margin-top: 0;
+}
+.general-advantages p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.block-button__hover:hover .sr-button:hover {
+  background-color: #fff;
+}
+
+.decentralized h3 {
+  color: #000;
+  text-align: center;
+}
+h5 {
+  color: #000;
+}
+.decentralized img {
+  display: block;
+  width: 90%;
+  margin: 30px 0;
+}
+.decentralized p {
+  font-size: 18px;
+}
+.decentralized p strong {
+  font-weight: inherit;
+  color: #9067C6;
+}
+
+.video-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+.media-slider {
+  text-align: center;
+}
+
+.pretty-hr {
+  opacity: 1;
+  display: block;
+  margin: 20px auto 0 auto;
+  content: " ";
+  height: 2px;
+  background: url(../../img/gradient.png) no-repeat;
+  background-size: cover;
+  visibility: visible;
+  max-width: 900px;
+}
+
+@media only screen and (max-width: 768px) {
+  .column.team-member {
+    margin-top: 20px !important;
+  }
+}
+

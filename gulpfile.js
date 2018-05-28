@@ -97,6 +97,9 @@ gulp.task('clean:dist', function () {
   return del.sync('files/dist');
 });
 
+gulp.task('css', function (callback) {
+  runSequence('compress-css', 'minify-css', callback);
+});
 
 gulp.task('default', function (callback) {
   runSequence('clean:dist', 'compress-css', 'minify-css', 'compress-js',
