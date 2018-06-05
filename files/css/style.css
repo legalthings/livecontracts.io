@@ -7208,6 +7208,10 @@ div .toggle-item:first-child {
   display: none;
 }
 
+.founders .team-bio {
+  display: block;
+}
+
 .show-more {
   margin-top: 40px !important;
   display: none;
@@ -7243,10 +7247,6 @@ div .toggle-item:first-child {
   .founders .team-image img {
     border: solid 6px #fff;
     width: calc(100% - 12px);
-  }
-
-  .founders .team-bio {
-    display: block;
   }
 }
 
