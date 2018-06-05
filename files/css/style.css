@@ -951,6 +951,13 @@ body.page-boxed #page-content {
   max-width: calc(100% - 80px);
 }
 
+@media only screen and (max-width: 768px) {
+  .general-advantages .wrapper {
+    width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
+  }
+}
+
 .main-content {
   width: calc(100% - 400px);
 }
@@ -3364,14 +3371,15 @@ footer #backtotop:before {
   background: #fff;
 }
 
+
 #hero.svg-custom-hero, #hero.svg-custom-hero .parallax-image {
   background: #fff;
-  background-position: right bottom !important;
-  background-repeat: no-repeat !important;
-  background-size: contain !important;
+  background-position: 125% 40%!important;
+  background-repeat: no-repeat!important;
+  background-size: 65vw!important;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1099px) {
   #hero.svg-custom-hero, #hero.svg-custom-hero .parallax-image {
     background: none !important;
   }
@@ -3545,6 +3553,18 @@ header.header-style-floating + #hero #page-title {
 
 .text-light #page-title h1 a, .text-light #page-title h2 a, .text-light #page-title h3 a, .text-light #page-title h4 a, .text-light #page-title h5 a, .text-light #page-title h6 a {
   color: #ffffff;
+}
+
+#hero #page-title {
+  padding-top: 40px!important;
+  padding-bottom: 40px!important;
+}
+
+@media only screen and (max-width: 768px) {
+  #hero #page-title {
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+  }
 }
 
 /* overlay-body */
@@ -10667,12 +10687,18 @@ html.lock {
   }
 }
 
+#page-title .info {
+  max-width: 600px;
+}
+
 #page-title .subtitle-1 a {
   text-decoration: underline;
 }
 
 #page-title .subtitle-1 {
-  opacity: 1;
+  opacity: 0.4;
+  font-size: 28px;
+  line-height: 120%;
 }
 
 .sticky-bottom.visible {
@@ -12218,6 +12244,12 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	height: 200%;
 }
 
+#hero h1 {
+  font-size: 36px;
+  line-height: 100%;
+  color: #000;
+}
+
 #hero h1:after {
   display: block;
   content: " ";
@@ -12227,10 +12259,18 @@ html body #intercom-container .intercom-launcher-badge-frame {
   width: 8.3em;
   margin-top: 12px;
 }
+#hero h2 {
+  color: #000;
+}
+
 @media (max-width: 450px) {
   #hero h3 {
-    font-size: 6vw;
+    font-size: 5vw;
     line-height: 140%;
+  }
+
+  #hero h3 + .spacer-big {
+    height: 20px;
   }
 }
 
@@ -12239,6 +12279,12 @@ html body #intercom-container .intercom-launcher-badge-frame {
     display: block;
     margin-right: 0;
     width: 100%;
+  }
+}
+
+@media (min-height: 650px) {
+  #hero h2 {
+    margin-top: calc(25vh - 150px);
   }
 }
 
@@ -12265,11 +12311,13 @@ html body #intercom-container .intercom-launcher-badge-frame {
 .general-advantages h4 {
   margin-top: 0;
 }
-.general-advantages p {
-  margin-top: 10px;
-  font-size: 18px;
-}
 
+@media (min-width: 769px) {
+  .general-advantages p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+}
 
 .block-button__hover:hover .sr-button:hover {
   background-color: #fff;

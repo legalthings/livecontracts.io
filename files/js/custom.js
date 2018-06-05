@@ -65,7 +65,6 @@ $(document).ready(function () {
   getSaleDate();
   bountyWizard();
 
-
   var files = [
 //    { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
 //    { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
@@ -96,10 +95,27 @@ $(document).ready(function () {
 
   for (var i = 0; i < files.length; i++) {
     if (i % 5 === 0) {
-      $('.media-slider').append('<br/>');
+      $('#media-logos .media-slider').append('<br/>');
     }
 
-    $('.media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
+    $('#media-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
+  }
+
+  var files = [
+    { url: 'https://merin.nl/en/', img: 'merin_logo_black.png' },
+    { url: 'https://www.dekra.com/en-us/home/', img: 'dekra_logo_2.png' },
+    { url: 'http://www.cloud9music.nl/', img: 'cloud9_logo_2.png' },
+    { url: 'https://www.ilent.nl/', img: 'government_of_the_netherlands_2.jpg' },
+  ];
+
+  $('#customer-logos').append('<div class="media-slider">');
+
+  for (var i = 0; i < files.length; i++) {
+    if (i % 5 === 0) {
+      $('#customer-logos .media-slider').append('<br/>');
+    }
+
+    $('#customer-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/customers/' + files[i].img + '"></a>');
   }
 
 	collapseFaq('about-lto');
