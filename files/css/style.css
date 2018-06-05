@@ -12256,10 +12256,12 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	height: 200%;
 }
 
-#hero h1 {
-  font-size: 36px;
-  line-height: 100%;
-  color: #000;
+@media (min-width: 451px) {
+  #hero h1 {
+    font-size: 36px;
+    line-height: 100%;
+    color: #000;
+  }
 }
 
 #hero h1:after {
