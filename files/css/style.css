@@ -7200,6 +7200,14 @@ div .toggle-item:first-child {
   opacity: 1;
 }
 
+.team-bio {
+  margin-top: 5px;
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 150%;
+  display: none;
+}
+
 .show-more {
   margin-top: 40px !important;
   display: none;
@@ -7235,6 +7243,10 @@ div .toggle-item:first-child {
   .founders .team-image img {
     border: solid 6px #fff;
     width: calc(100% - 12px);
+  }
+
+  .founders .team-bio {
+    display: block;
   }
 }
 
@@ -12264,7 +12276,8 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 @media (max-width: 450px) {
-  #hero h3 {
+  #hero h3,
+  #page-title .subtitle-1 {
     font-size: 5vw;
     line-height: 140%;
   }
@@ -12373,8 +12386,17 @@ h5 {
 }
 
 @media only screen and (max-width: 768px) {
+  .team-section .column-section {
+    margin-top: 0;
+  }
   .column.team-member {
-    margin-top: 20px !important;
+    margin-top: 0 !important;
+  }
+  .column.team-member:after {
+    content: " ";
+    display: table;
+    clear: both;
   }
 }
+
 
