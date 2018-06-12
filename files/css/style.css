@@ -7112,6 +7112,11 @@ div .toggle-item:first-child {
 
 /*  Team members
 ------------------------------------------------*/
+.team-container {
+    background: url("../../img/flow-bg4.png") no-repeat calc(-800px) 300px;
+    background-size: 54%;
+}
+
 @media screen and (max-width: 960px) {
   .team-section {
     max-width: 540px !important;
@@ -10606,6 +10611,12 @@ html.lock {
 #discover {
   background: url(../../img/flow-bg2b.png) no-repeat calc(80% - 100px) center;
   position: relative;
+}
+
+@media (max-width: 600px) {
+    #discover {
+        background-size: cover;
+    }
 }
 
 .serving-companies img {
