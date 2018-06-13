@@ -32,7 +32,9 @@
         <!-- nicer scroll in steps -->
         <!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
         <link rel="stylesheet" href="files/dist/compress.css">
-        <!-- FAVICON -->
+	    <link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>
+	
+	    <!-- FAVICON -->
         <link rel="shortcut icon" href="img/favicon.png" />
         <!-- DOCUMENT TITLE -->
         <title>LegalThings One &middot; Platform for Live Contracts</title>
@@ -67,26 +69,26 @@
         <script>
         /*
         var alignment = 'right';
-       
+
         // if (window.innerWidth < 599) {
         //   alignment = 'left';
         // } else {
         //   alignment = 'right';
         // }
-       
-       
+
+
         window.intercomSettings = {
         app_id: 'g247sp2q',
         vertical_padding: 110,
         alignment: alignment
         };
-       
+
         (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
         ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
         i.q = [];
         i.c = function(args) { i.q.push(args) };
         w.Intercom = i;
-       
+
         function l() { var s = d.createElement('script');
         s.type = 'text/javascript';
         s.async = true;
@@ -168,7 +170,7 @@
                     <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
                     <a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
                     </div>
-            
+
                   </div>
             -->
             <!-- STICKY BOTTOM BAR END -->
@@ -178,9 +180,35 @@
             <section id="hero"
                      class="hero-full parallax-section svg-custom-hero"
                      data-parallax-image="img/hero-solution.png" data-parallax-opacity="-0.5">
-                <div id="page-title" class="wrapper align-left">
+	            <div class="hero-nav">
+		            <div class="hero-nav__logo">
+			            <h1>LegalThings One</h1>
+		            </div>
+		            <div class="hero-nav__menu">
+			            <a href="#" class="hero-nav__menu-list">Home</a>
+			            <a href="#" class="hero-nav__menu-list">Documentation</a>
+			            <a href="#" class="hero-nav__menu-list">Playground</a>
+			            <a href="#" class="hero-nav__menu-list">Whitepaper</a>
+			            <a href="#" class="hero-nav__menu-list">Team</a>
+		            </div>
+		            <div class="hero-nav__socials">
+			            <a href="#" class="hero-nav__socials-icon">
+				            <i class="icon-twitter"></i>
+			            </a>
+			            <a href="#" class="hero-nav__socials-icon">
+				            <i class="icon-youtube-3"></i>
+			            </a>
+			            <a href="#" class="hero-nav__socials-icon">
+				            <i class="ion-social-github"></i>
+			            </a>
+			            <a href="#" class="hero-nav__socials-icon">
+				            <i class="fa fa-telegram"></i>
+			            </a>
+		            </div>
+	            </div>
+	
+	            <div id="page-title" class="wrapper align-left">
                   <div class="info">
-                    <h1>LegalThings One</h1>
                     <h2>Blockchain for decentralized workflows</h2>
                     <h3 class="subtitle-1">
                         LegalThings One allows enterprises and governments to orchestrate interorganizational workflows in a transparent way. Decentralization allows you to streamline your business processes while mitigating fraud.
@@ -252,7 +280,7 @@
                     <strong>Our Clients</strong>
                 </h2>
                 <div class="spacer-small"></div>
-                
+
                 <div class="column two-third">
                     <div class="video-responsive">
                         <iframe width="460" height="258,75" src="https://www.youtube.com/embed/Q6z8Czhodyo?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
@@ -265,7 +293,7 @@
                     <div id="customer-logos"></div>
                 </div>
             </div>
-            
+
             <div id="discover" class="text-light">
                 <div class="wrapper discover-section  row-section">
                     <h2 class="align-center">
@@ -375,7 +403,7 @@
                     <strong>In the Press</strong>
                 </h2>
                 <div class="spacer-small"></div>
-                
+
                 <div class="column two-third">
                     <div class="video-responsive">
                         <iframe width="460" height="258,75" src="https://www.youtube.com/embed/42xHgoNeZaY?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
@@ -733,7 +761,7 @@
                     </div>
                 </div>
             </footer>
-            <!-- FOOTER --> 
+            <!-- FOOTER -->
         </div>
         <!-- SCRIPTS -->
         <script src="files/dist/compress.js"></script>
