@@ -1145,16 +1145,30 @@ function populateExploreBlock() {
 }
 
 //Show/hide header
+
 function manipulatingHeader() {
-  var header = $('#header');
+
+  var header = $('.hero-nav');
+  var scrollFromTop = $(document).scrollTop();
   var topBlockHeight = $('#hero').height();
-  var new_offset = 100;
+  var new_offset = 1;
+
+  if (scrollFromTop > new_offset) {
+    header.addClass('custom-visible');
+    $(".sticky-bottom").addClass('visible');
+  } else {
+    header.removeClass('custom-visible');
+    $(".sticky-bottom").removeClass('visible');
+  }
 
   $(window).resize(function () {
     topBlockHeight = $('#hero').height();
   });
   $(window).scroll(function () {
-    var scrollFromTop = $(document).scrollTop();
+    scrollFromTop = $(document).scrollTop();
+
+    console.log(new_offset);
+    console.log(scrollFromTop);
 
     if (scrollFromTop > new_offset) {
       header.addClass('custom-visible');
@@ -1165,6 +1179,33 @@ function manipulatingHeader() {
     }
   })
 }
+
+
+
+
+
+//legacy header, commented on 13 June
+// function manipulatingHeader() {
+//
+//   var header = $('#header');
+//   var topBlockHeight = $('#hero').height();
+//   var new_offset = 100;
+//
+//   $(window).resize(function () {
+//     topBlockHeight = $('#hero').height();
+//   });
+//   $(window).scroll(function () {
+//     var scrollFromTop = $(document).scrollTop();
+//
+//     if (scrollFromTop > new_offset) {
+//       header.addClass('custom-visible');
+//       $(".sticky-bottom").addClass('visible');
+//     } else {
+//       header.removeClass('custom-visible');
+//       $(".sticky-bottom").removeClass('visible');
+//     }
+//   })
+// }
 
 /***
  * Function for handling menu activity in hero section
