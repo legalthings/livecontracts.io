@@ -233,6 +233,7 @@ $(document).ready(function () {
   initWalletChoice();
   createWavesWallet();
   handlePayment();
+  heroNavHandle();
 
   //for animation fix after scrolling
   $(window).on("mousewheel", function () {
@@ -637,11 +638,11 @@ function getSaleDate() {
           today.getTime() < saleDate.endDate.getTime()) {
         enableBuyButton();
       } else {
-        enableSubscribeButton();
+        // enableSubscribeButton();
       }
     },
     error: function () {
-      enableSubscribeButton();
+      // enableSubscribeButton();
     }
   });
 }
@@ -1163,8 +1164,21 @@ function manipulatingHeader() {
       $(".sticky-bottom").removeClass('visible');
     }
   })
-
 }
+
+/***
+ * Function for handling menu activity in hero section
+ */
+
+function heroNavHandle() {
+	$(".hero-nav__bars").on("click", function () {
+		$(".hero-nav__bars").toggleClass("active");
+		$(".hero-nav.hero-nav--mobile").toggleClass("active");
+		$("#page-content").toggleClass("moved-by-hero")
+	})
+}
+
+
 
 //loading data about tokens status
 // function loadTokens() {
