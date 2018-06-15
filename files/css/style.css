@@ -12525,6 +12525,17 @@ h5 {
 	left: 0;
 }
 
+#hero .hero-nav .hero-nav__menu .hero-nav__menu-list.hero-nav__menu-list--disabled:after {
+	content: none;
+}
+#hero .hero-nav .hero-nav__menu .hero-nav__menu-list.hero-nav__menu-list--disabled:hover {
+	cursor: default;
+	color: grey !important;
+}
+#hero .hero-nav .hero-nav__menu .hero-nav__menu-list.hero-nav__menu-list--disabled {
+	color: grey !important;
+	opacity: 1 !important;
+}
 #hero .hero-nav .hero-nav__menu .hero-nav__menu-list:hover {
 	color: #5c47e0;
 }
