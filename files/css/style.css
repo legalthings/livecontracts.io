@@ -902,14 +902,15 @@ body.page-boxed #page-content {
 	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-#page-content.moved-by-hero {
-	margin-left: -250px;
-}
+@media screen and (max-width: 1200px) {
+	#page-content.moved-by-hero {
+		margin-left: -250px;
+	}
 
-#page-content.moved-by-hero .hero-nav:not(.hero-nav--mobile) {
-	left: -250px;
+	#page-content.moved-by-hero .hero-nav:not(.hero-nav--mobile) {
+		left: -250px;
+	}
 }
-
 #page-content {
 	overflow: hidden;
 	margin: 0;
@@ -12648,6 +12649,9 @@ h5 {
 #hero .hero-nav .hero-nav__logo h1:after {
 	margin-top: 3px;
 }
+#hero .hero-nav.custom-visible .hero-nav__menu .hero-nav__menu-list:after {
+	content: none;
+}
 #hero .hero-nav.custom-visible {
 	position: fixed;
 	top: 0;
@@ -12829,6 +12833,19 @@ h5 {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	#hero .hero-nav.custom-visible:not(.hero-nav--mobile) {
+		top: 0;
+		height: 40px;
+	}
+	#hero .hero-nav:not(.hero-nav--mobile) {
+		top: 20px;
+		height: 50px;
+	}
+	#hero #page-title {
+		padding-top: 80px !important;
+	}
+}
 @media screen and (max-width: 480px) {
 	#hero .hero-nav .hero-nav__logo h1:after {
 		margin-top: 3px;
@@ -12836,5 +12853,16 @@ h5 {
 	#hero .hero-nav .hero-nav__logo h1 {
 		font-size: 20px;
 		line-height: 1;
+	}
+}
+
+/***
+ * Improvments for hero section
+ */
+
+@media screen and (max-width: 480px) {
+	#hero #page-title .info h2 {
+		font-size: 26px;
+		line-height: 1.5;
 	}
 }

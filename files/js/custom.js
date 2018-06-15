@@ -1148,7 +1148,7 @@ function populateExploreBlock() {
 
 function manipulatingHeader() {
 
-  var header = $('.hero-nav');
+  var header = $('.hero-nav:not(.hero-nav--mobile)');
   var scrollFromTop = $(document).scrollTop();
   var topBlockHeight = $('#hero').height();
   var new_offset = 1;
@@ -1167,8 +1167,8 @@ function manipulatingHeader() {
   $(window).scroll(function () {
     scrollFromTop = $(document).scrollTop();
 
-    console.log(new_offset);
-    console.log(scrollFromTop);
+    // console.log(new_offset);
+    // console.log(scrollFromTop);
 
     if (scrollFromTop > new_offset) {
       header.addClass('custom-visible');
@@ -1212,13 +1212,20 @@ function manipulatingHeader() {
  */
 
 function heroNavHandle() {
+  let windowWidth = $(window).width();
+  $(window).resize(function () {
+    windowWidth = $(window).width();
+  });
+  if (windowWidth >= 1200) {
+    $(".hero-nav__bars").removeClass("active");
+		$(".hero-nav.hero-nav--mobile").removeClass("active");
+  }
 	$(".hero-nav__bars").on("click", function () {
 		$(".hero-nav__bars").toggleClass("active");
 		$(".hero-nav.hero-nav--mobile").toggleClass("active");
 		$("#page-content").toggleClass("moved-by-hero")
 	})
 }
-
 
 
 //loading data about tokens status
