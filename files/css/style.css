@@ -3387,12 +3387,20 @@ footer #backtotop:before {
 
 #hero.svg-custom-hero,
 #hero.svg-custom-hero .parallax-image {
-  background-color: #fff;
-  /*background-position: 125% 40%!important;*/
-  background-repeat: no-repeat !important;
-  /*background-size: 65vw!important;*/
-  background-image: url("../../img/flow-bg1.png");
+	background-color: #fff;
+	/*background-position: 125% 40%!important;*/
+	background-repeat: no-repeat !important;
+	/*background-size: 65vw!important;*/
+	background-image: url("../../img/flow-bg1.png");
 }
+
+@media screen and (max-width: 1100px) {
+	#hero.svg-custom-hero,
+	#hero.svg-custom-hero .parallax-image {
+		background-image: url("../../img/flow-bg1.png") !important;
+	}
+}
+
 
 #hero.svg-custom-hero {
   background-size: 1000px auto !important;
@@ -3587,8 +3595,8 @@ header.header-style-floating + #hero #page-title {
 }
 
 #hero #page-title {
-  padding-top: 40px!important;
-  padding-bottom: 40px!important;
+	padding-top: 120px !important;
+	padding-bottom: 40px !important;
 }
 
 @media only screen and (max-width: 768px) {
