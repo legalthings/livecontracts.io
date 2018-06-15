@@ -1,910 +1,862 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 
-    <head>
-        <!-- DEFAULT META TAGS -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
-        <!-- CSS -->
-        <!--<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css"-->
-        <!--media="all"-->
-        <!--/>-->
-        <!--<link rel="stylesheet" id="revolution-slider-layer-css" href="files/revolution/css/layers.css" type="text/css"-->
-        <!--media="all"-->
-        <!--/>-->
-        <!--<link rel="stylesheet" id="revolution-slider-nav-css" href="files/revolution/css/navigation.css" type="text/css"-->
-        <!--media="all"-->
-        <!--/>-->
-        <!--<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>-->
-        <!--<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>-->
-        <!-- Step Form Wizard plugin -->
-        <!--<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">-->
-        <!-- nicer scroll in steps -->
-        <!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
-        <link rel="stylesheet" href="files/dist/compress.css">
-        <link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>
+<head>
+	<!-- DEFAULT META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lora:400italic,700italic" rel="stylesheet" type="text/css">
+	<!-- CSS -->
+	<!--<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css"-->
+	<!--media="all"-->
+	<!--/>-->
+	<!--<link rel="stylesheet" id="revolution-slider-layer-css" href="files/revolution/css/layers.css" type="text/css"-->
+	<!--media="all"-->
+	<!--/>-->
+	<!--<link rel="stylesheet" id="revolution-slider-nav-css" href="files/revolution/css/navigation.css" type="text/css"-->
+	<!--media="all"-->
+	<!--/>-->
+	<!--<link rel="stylesheet" id="owlcarousel-css" href="files/css/owl.carousel.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="lightcase-css" href="files/css/lightcase.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="isotope-style-css" href="files/css/isotope.css" type="text/css" media="all"/>-->
+	<!--<link rel="stylesheet" id="mqueries-style-css" href="files/css/mqueries.css" type="text/css" media="all"/>-->
+	<!-- Step Form Wizard plugin -->
+	<!--<link rel="stylesheet" href="files/css/step-form-wizard-all.css" type="text/css" media="screen, projection">-->
+	<!-- nicer scroll in steps -->
+	<!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
+	<link rel="stylesheet" href="files/dist/compress.css">
+	<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>
 
-        <!-- FAVICON -->
-        <link rel="shortcut icon" href="img/favicon.png"/>
-        <!-- DOCUMENT TITLE -->
-        <title>LegalThings One &middot; Platform for Live Contracts</title>
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<!-- DOCUMENT TITLE -->
+	<title>LegalThings One &middot; Platform for Live Contracts</title>
 
-        <!-- Google Tag Manager -->
-        <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-PBRZ65L');</script>
-        <!-- End Google Tag Manager -->
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-PBRZ65L');</script>
+	<!-- End Google Tag Manager -->
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-62115237-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+		function gtag() {
+			dataLayer.push(arguments);
+		}
 
-            gtag('js', new Date());
-            gtag('config', 'UA-62115237-2');
-        </script>
-        <!-- Intercom -->
-        <script>
-            /*
-            var alignment = 'right';
+		gtag('js', new Date());
+		gtag('config', 'UA-62115237-2');
+	</script>
+	<!-- Intercom -->
+	<script>
+		/*
+		var alignment = 'right';
 
-            // if (window.innerWidth < 599) {
-            //   alignment = 'left';
-            // } else {
-            //   alignment = 'right';
-            // }
-
-
-            window.intercomSettings = {
-            app_id: 'g247sp2q',
-            vertical_padding: 110,
-            alignment: alignment
-            };
-
-            (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
-            ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
-            i.q = [];
-            i.c = function(args) { i.q.push(args) };
-            w.Intercom = i;
-
-            function l() { var s = d.createElement('script');
-            s.type = 'text/javascript';
-            s.async = true;
-            s.src = 'https://widget.intercom.io/widget/g247sp2q'; var x = d.getElementsByTagName('script')[0];
-            x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
-            */
-        </script>
-    </head>
-
-    <body>
-    <!-- PAGE CONTENT -->
-        <div id="page-content">
-            <!-- HEADER -->
-            <header id="header" class="header-bordered header-transparent transparent-light">
-                <div class="header-inner clearfix">
-                    <!--LOGO-->
-                    <div id="logo" class="left-float">
-                        <a href="index.html">
-                            <img id="scroll-logo" src="img/logo/icon-purple.png"
-                                 srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
-                            <img id="dark-logo" src="img/logo/icon-dark-purple.png"
-                                 srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
-                                 alt="Logo Dark">
-                            <img id="light-logo" src="img/logo/icon-white.png"
-                                 srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
-                        </a>
-                    </div>
-                    <!-- MAIN NAVIGATION -->
-                    <div id="menu" class="right-float clearfix">
-                        <a href="#" class="responsive-nav-toggle">
-                            <span class="hamburger"></span>
-                        </a>
-                        <!-- <div class="flag-section">
-                            <a href="br"><img src="img/flags/br.png">
-                            </a>
-                        </div> -->
-                        <div class="menu-inner">
-                            <nav id="main-nav">
-                                <ul>
-                                    <!-- <li class="">
-                                            <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
-                                        </li> -->
-                                    <li class="">
-                                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ"
-                                           class="lc-primary-action join-telegram">
-                                            Join our Telegram
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- END .menu-inner -->
-                    </div>
-                    <!-- END #menu -->
-                </div>
-                <!-- END .header-inner -->
-            </header>
-            <!-- HEADER END-->
-
-            <!-- STICKY BOTTOM BAR -->
-            <!--
-                        <div class="sticky-bottom">
-                            <div class="wrapper">
-                            <div class="socialsBlock purpleSection">
-                                <ul class="sticky-bottom__socials socialmedia-widget size-huge">
-                                    <li class="telegram">
-                                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/legalthings" target="_blank"></a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="https://twitter.com/livecontracts" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
-                            <a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
-                            </div>
-
-                        </div>
-            -->
-            <!-- STICKY BOTTOM BAR END -->
+		// if (window.innerWidth < 599) {
+		//   alignment = 'left';
+		// } else {
+		//   alignment = 'right';
+		// }
 
 
-            <!-- HERO  -->
-            <section id="hero"
-                     class="hero-full parallax-section svg-custom-hero"
-                     data-parallax-image="img/hero-solution.png" data-parallax-opacity="-0.5">
-                <div class="hero-nav hero-nav--mobile">
-                    <div class="hero-nav__menu">
-                        <a href="#page-title" class="hero-nav__menu-list">Home</a>
-                        <a href="#what-is-legal" class="hero-nav__menu-list">Documentation</a>
-                        <a href="#our-clients" class="hero-nav__menu-list">Playground</a>
-                        <a href="#in-the-press" class="hero-nav__menu-list">Whitepaper</a>
-                        <a href="#meet-the-team" class="hero-nav__menu-list">Team</a>
-                    </div>
-                    <div class="hero-nav__socials">
-                        <a href="https://twitter.com/getlegalthings?lang=en" class="hero-nav__socials-icon" target="_blank">
-                            <i class="icon-twitter"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw" class="hero-nav__socials-icon"
-                           target="_blank">
-                            <i class="icon-youtube-3"></i>
-                        </a>
-                        <a href="https://github.com/legalthings" class="hero-nav__socials-icon" target="_blank">
-                            <i class="ion-social-github"></i>
-                        </a>
-                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="hero-nav__socials-icon"
-                           target="_blank">
-                            <i class="fa fa-telegram"></i>
-                        </a>
-                    </div>
-                </div>
+		window.intercomSettings = {
+		app_id: 'g247sp2q',
+		vertical_padding: 110,
+		alignment: alignment
+		};
 
-                <div class="hero-nav">
-                    <div class="wrapper">
-                        <div class="hero-nav__logo">
-                            <h1>LegalThings One</h1>
-                        </div>
-                        <div class="hero-nav__menu">
-                            <a href="#page-title" class="hero-nav__menu-list">Home</a>
-                            <a href="#what-is-legal" class="hero-nav__menu-list">Documentation</a>
-                            <a href="#our-clients" class="hero-nav__menu-list">Playground</a>
-                            <a href="#in-the-press" class="hero-nav__menu-list">Whitepaper</a>
-                            <a href="#meet-the-team" class="hero-nav__menu-list">Team</a>
-                        </div>
-                        <div class="hero-nav__socials">
-                            <a href="https://twitter.com/getlegalthings?lang=en" class="hero-nav__socials-icon" target="_blank">
-                                <i class="icon-twitter"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw" class="hero-nav__socials-icon"
-                               target="_blank">
-                                <i class="icon-youtube-3"></i>
-                            </a>
-                            <a href="https://github.com/legalthings" class="hero-nav__socials-icon" target="_blank">
-                                <i class="ion-social-github"></i>
-                            </a>
-                            <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="hero-nav__socials-icon"
-                               target="_blank">
-                                <i class="fa fa-telegram"></i>
-                            </a>
-                        </div>
-                        <div class="hero-nav__bars fa fa-bars"></div>
-                    </div>
+		(function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
+		ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
+		i.q = [];
+		i.c = function(args) { i.q.push(args) };
+		w.Intercom = i;
 
-                </div>
+		function l() { var s = d.createElement('script');
+		s.type = 'text/javascript';
+		s.async = true;
+		s.src = 'https://widget.intercom.io/widget/g247sp2q'; var x = d.getElementsByTagName('script')[0];
+		x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
+		*/
+	</script>
+</head>
 
-                <div id="page-title" class="wrapper align-left">
-                    <div class="info">
-                        <h2>Blockchain for decentralized workflows</h2>
-                        <h3 class="subtitle-1">
-                            LegalThings One allows enterprises and governments to orchestrate interorganizational workflows in a
-                            transparent way. Decentralization allows you to streamline your business processes while mitigating
-                            fraud.
-                        </h3>
-                        <div class="spacer-big"></div>
+<body>
+<!-- PAGE CONTENT -->
+<div id="page-content">
+	<!-- HEADER -->
+	<header id="header" class="header-bordered header-transparent transparent-light">
+		<div class="header-inner clearfix">
+			<!--LOGO-->
+			<div id="logo" class="left-float">
+				<a href="index.html">
+					<img id="scroll-logo" src="img/logo/icon-purple.png"
+					     srcset="img/logo/icon-purple.png 1x, img/logo/icon-purple.png 2x" alt="Logo Scroll">
+					<img id="dark-logo" src="img/logo/icon-dark-purple.png"
+					     srcset="img/logo/icon-dark-purple.png 1x, img/logo/icon-dark-purple.png 2x"
+					     alt="Logo Dark">
+					<img id="light-logo" src="img/logo/icon-white.png"
+					     srcset="img/logo/icon-white.png 1x, img/logo/icon-white.png 2x" alt="Logo Light">
+				</a>
+			</div>
+			<!-- MAIN NAVIGATION -->
+			<div id="menu" class="right-float clearfix">
+				<a href="#" class="responsive-nav-toggle">
+					<span class="hamburger"></span>
+				</a>
+				<!-- <div class="flag-section">
+					<a href="br"><img src="img/flags/br.png">
+					</a>
+				</div> -->
+				<div class="menu-inner">
+					<nav id="main-nav">
+						<ul>
+							<!-- <li class="">
+									<a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
+								</li> -->
+							<li class="">
+								<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="lc-primary-action join-telegram">
+									Join our Telegram
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- END .menu-inner -->
+			</div>
+			<!-- END #menu -->
+		</div>
+		<!-- END .header-inner -->
+	</header>
+	<!-- HEADER END-->
 
-                        <p class="hero__buttons">
-                            <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ"
-                               class="lc-primary-action sr-button button-1 button-medium circled join-telegram">
-                                <img src="img/telegram-logo.svg">
-                                Telegram
-                            </a>
-                            <a href="https://legalthings.github.io/livecontracts-specs/index.html"
-                               class="sr-button button-1 button-medium circled">
-                                View on Github
-                            </a>
-                            <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
-                                                                                    Demo
-                                                                    </a> -->
-                        </p>
-                        <!--<h4 class="subtitle-1">-->
-                        <!--Get an intoduction to LegalThings One - <a href="#" target="_blank">Watch video</a>-->
-                        <!--</h4>-->
-                        <div class="spacer-medium"></div>
-                        <div class="icon-box">
-                            <div class="icon-box-icon">
-                                <i class="ion ion-5x ion-ribbon-b"></i>
-                            </div>
-                            <div class="icon-box-content">
-                                <h5>Winner of the Blockathon by the</h5>
-                                <h5>Dutch Ministry of Justice and Security</h5>
-                            </div>
-                        </div>
-                        <div class="spacer-medium"></div>
-                        <div class="count-down-wrap hidden">
-                            <h3><strong>Sale ends in</strong></h3>
-                            <div class="count-down" data-end-date=""></div>
-                        </div>
-                    </div>
-                </div>
+	<!-- STICKY BOTTOM BAR -->
+	<!--
+				<div class="sticky-bottom">
+					<div class="wrapper">
+					<div class="socialsBlock purpleSection">
+						<ul class="sticky-bottom__socials socialmedia-widget size-huge">
+							<li class="telegram">
+								<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/legalthings" target="_blank"></a>
+							</li>
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/company/9269038/" target="_blank"></a>
+							</li>
+							<li class="twitter">
+								<a href="https://twitter.com/livecontracts" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+					<p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
+					<a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
+					</div>
 
-                <!-- END #page-title -->
-            </section>
-            <!-- HERO -->
-            <!-- PAGEBODY -->
-
-            <div class="purpleSectionBg general-advantages row-section text-light" id="what-is-legal">
-                <div class="wrapper clearfix">
-                    <div class="column one-half">
-                        <h3>What is LegalThings One?</h3>
-                        <p>
-                            LegalThings One is a platform for running digitized workflows called <strong>Live Contracts</strong>.
-                            A
-                            Live Contract instructs humans and systems on what to do. These instructions are executed off-chain
-                            either
-                            manually or automatically. Nodes only facilitate, validate and verify the results.
-                        </p>
-                        <p>
-                            Each Live Contract creates its own LEGALchain, a <strong>miniature private blockchain</strong> that
-                            is only
-                            shared with the participants involved. The platform has no master blockchain, instead LEGALchains
-                            anchor on public blockchains like <strong>Waves</strong> or Bitcoin. This approach make the platform
-                            horizontally scalable, sidestepping scalability issues seen in most blockchain technology.
-                        </p>
-                    </div>
-                    <div class="column one-half last-col">
-                        <img src="img/privatechains.png" alt="LEGALchains">
-                    </div>
-                </div>
-            </div>
-            <div class="spacer-small"></div>
-            <div class="row-section wrapper" id="our-clients">
-                <h2 class="align-center">
-                    <strong>Our Clients</strong>
-                </h2>
-                <div class="spacer-small"></div>
-
-                <div class="column two-third">
-                    <div class="video-responsive">
-                        <iframe width="460" height="258,75"
-                                src="https://www.youtube.com/embed/Q6z8Czhodyo?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light"
-                                frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="column one-third last-col">
-                    <p>
-                        <strong>Merin</strong>, one of the most innovative <strong>real estate</strong> parties in The
-                        Netherlands, uses
-                        LegalThings for end-to-end digitized real estate contract lifecycle management (CLM). By directly
-                        loading all
-                        static building data from LegalThings and linking other IT-systems, agreements are drafted in a matter
-                        of
-                        minutes.
-                    </p>
-                    <div id="customer-logos"></div>
-                </div>
-            </div>
-
-            <div id="discover" class="text-light">
-                <div class="wrapper discover-section  row-section">
-                    <h2 class="align-center">
-                        <strong>Discover LegalThings One</strong>
-                    </h2>
-                    <div class="spacer-medium"></div>
-
-                    <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a href="https://docs.livecontracts.io/"
-                                   target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/checkout-summery.png"> -->
-                                    <!--<i class="blog-media__icon icon-buying"></i>-->
-                                    <img src="img/live_contract.png" class="blog-media__icon" alt="">
-
-                                    <!--<img src="img/buy_tokens.png" class="blog-media__icon" alt="">-->
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a
-                                            href="https://docs.livecontracts.io/"
-                                            target="_blank">
-                                            Technical specifications
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    Ready to start building? The specifications contain the JSON schemas of all components of
-                                    Live
-                                    Contracts, as well as other implementation details like encryption.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a
-                                    href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
-                                    target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
-                                    <!--<i class="blog-media__icon icon-whitepaper"></i>-->
-                                    <img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">
-
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a
-                                            href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
-                                            target="_blank">
-                                            Technical Whitepaper (DRAFT)
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    The LegalThings One Whitepaper gives an in-depth description
-                                    of the technical concepts behinds LegalThings One. Reading this
-                                    paper requires some knowledge of computer engineering.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/contract-as-automaton.png"> -->
-                                    <!--<i class="blog-media__icon icon-contract"></i>-->
-
-                                    <img src="img/codex.png" class="blog-media__icon" alt="">
-
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a href="./documents/contract-as-automaton.pdf" target="_blank">
-                                            Research paper - OFR
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    "We show that the fundamental legal structure of a well-written
-                                    financial contract follows a state-transition logic that can
-                                    be formalized mathematically as a finite-state machine (also
-                                    known as a finite state automaton)."
-                                    <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+				</div>
+	-->
+	<!-- STICKY BOTTOM BAR END -->
 
 
-                    <div class="spacer-small"></div>
-                    <div class="align-center">
-                        <a href="https://medium.com/legalthingsone"
-                           class="sr-button discover-special inline button-1 button-medium circled"
-                           target="_blank">
-                            Read our articles
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
+	<!-- HERO  -->
+	<section id="hero"
+	         class="hero-full parallax-section svg-custom-hero"
+	         data-parallax-image="img/hero-solution.png" data-parallax-opacity="-0.5">
+		<div class="hero-nav hero-nav--mobile">
+			<div class="hero-nav__menu">
+				<a href="#page-title" class="hero-nav__menu-list">Home</a>
+				<a href="#what-is-legal" class="hero-nav__menu-list">Documentation</a>
+				<a href="#our-clients" class="hero-nav__menu-list">Playground</a>
+				<a href="#in-the-press" class="hero-nav__menu-list">Whitepaper</a>
+				<a href="#meet-the-team" class="hero-nav__menu-list">Team</a>
+			</div>
+			<div class="hero-nav__socials">
+				<a href="https://twitter.com/getlegalthings?lang=en" class="hero-nav__socials-icon" target="_blank">
+					<i class="icon-twitter"></i>
+				</a>
+				<a href="https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw" class="hero-nav__socials-icon"
+				   target="_blank">
+					<i class="icon-youtube-3"></i>
+				</a>
+				<a href="https://github.com/legalthings" class="hero-nav__socials-icon" target="_blank">
+					<i class="ion-social-github"></i>
+				</a>
+				<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="hero-nav__socials-icon"
+				   target="_blank">
+					<i class="fa fa-telegram"></i>
+				</a>
+			</div>
+		</div>
 
-            <div class="row-section wrapper" id="in-the-press">
-                <h2 class="align-center">
-                    <strong>In the Press</strong>
-                </h2>
-                <div class="spacer-small"></div>
+		<div class="hero-nav">
+			<div class="wrapper">
+				<div class="hero-nav__logo">
+					<h1>LegalThings One</h1>
+				</div>
+				<div class="hero-nav__menu">
+					<a href="#page-title" class="hero-nav__menu-list">Home</a>
+					<a href="#what-is-legal" class="hero-nav__menu-list">Documentation</a>
+					<a href="#our-clients" class="hero-nav__menu-list">Playground</a>
+					<a href="#in-the-press" class="hero-nav__menu-list">Whitepaper</a>
+					<a href="#meet-the-team" class="hero-nav__menu-list">Team</a>
+				</div>
+				<div class="hero-nav__socials">
+					<a href="https://twitter.com/getlegalthings?lang=en" class="hero-nav__socials-icon" target="_blank">
+						<i class="icon-twitter"></i>
+					</a>
+					<a href="https://www.youtube.com/channel/UCaHcF-xterKYTKSpY4xgKiw" class="hero-nav__socials-icon"
+					   target="_blank">
+						<i class="icon-youtube-3"></i>
+					</a>
+					<a href="https://github.com/legalthings" class="hero-nav__socials-icon" target="_blank">
+						<i class="ion-social-github"></i>
+					</a>
+					<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="hero-nav__socials-icon"
+					   target="_blank">
+						<i class="fa fa-telegram"></i>
+					</a>
+				</div>
+				<div class="hero-nav__bars fa fa-bars"></div>
+			</div>
 
-                <div class="column two-third">
-                    <div class="video-responsive">
-                        <iframe width="460" height="258,75"
-                                src="https://www.youtube.com/embed/42xHgoNeZaY?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light"
-                                frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="column one-third last-col">
-                    <p>
-                        <strong>LegalFling</strong> is a showcase for Live Contracts, demonstrating that an agreement doesn't
-                        have to be
-                        a 10 page document full of
-                        legal lingo that is drafted and enforced by lawyers.
-                    </p>
-                    <p>
-                        Our showcase reached a global audience in days on TV, radio, newspapers, magazines and all over the
-                        internet.
-                    </p>
-                    <div id="media-logos"></div>
-                </div>
-            </div>
-            <hr class="pretty-hr">
-            <div class="team-container" id="meet-the-team">
-                <div class="wrapper row-section team-section">
-                    <h2 class="align-center">
-                        <strong>Meet the Team</strong>
-                    </h2>
-                    <div class="spacer-medium"></div>
-                    <div class="column-section clearfix founders">
-                        <div class="column one-fourth team-member align-center">
-                            <a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
-                                <img class="one" src="img/team/round_version/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
-                                <img class="two" src="img/team/round_version/rick_schmitz_b.png"
-                                     alt="Rick Schmitz - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Rick Schmitz</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Founder &amp; CEO</h6>
-                                <div class="team-bio">
-                                    Rick has been a Private Equity and M&A Tax lawyer at both <strong>PwC</strong> and
-                                    <strong>Deloitte</strong>. Rick is also the founder of the successful Dutch startup Firm24.
-                                </div>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
-                                <img class="one" src="img/team/round_version/arnold_daniels.png"
-                                     alt="Arnold Daniels - LegalThings">
-                                <img class="two" src="img/team/round_version/arnold_daniels_b.png"
-                                     alt="Arnold Daniels - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Arnold Daniels</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Founder &amp; Lead Architect</h6>
-                                <div class="team-bio">
-                                    Arnold is a software engineer with <strong>20 years experience</strong> at 4 successful
-                                    Dutch startups. He
-                                    holds a computer engineering degree and is a certified AWS architect.
-                                </div>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/jasny" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
-                                <img src="img/team/round_version/martijn_broersma.png" alt="Martijn Broersma - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Martijn Broersma</strong>
-                                </h5>
-                                <h6 class="subtitle-2">COO</h6>
-                                <div class="team-bio">
-                                    Martijn holds a law degree and previously worked as a <strong>lawyer</strong> at Firm24. He
-                                    is specialized
-                                    in legal structures and legal processes.
-                                </div>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center last-col">
-                            <a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
-                                <img class="one" src="img/team/round_version/sven_stam.png" alt="Sven Stam - LegalThings">
-                                <img class="two" src="img/team/round_version/sven_stam_b.png" alt="Sven Stam - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Sven Stam</strong>
-                                </h5>
-                                <h6 class="subtitle-2">CTO</h6>
-                                <div class="team-bio">
-                                    Sven has 15+ years of experience. He holds a <strong>masters</strong> degree in Artificial
-                                    Intelligence
-                                    with a specialization in <strong>Distributed Systems</strong>.
-                                </div>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
-                                    </li>
-                                    <li classcolumn-section block-button__hover wrapper row-section="github">
-                                        <a href="https://github.com/sven4ask" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-section clearfix">
-                        <div class="column one-fourth  team-member align-center">
-                            <a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
-                                <img class="one" src="img/team/round_version/martijn_migchelsen.png"
-                                     alt="Martijn Migchelsen - LegalThings">
-                                <img class="two" src="img/team/round_version/martijn_migchelsen_b.png"
-                                     alt="Martijn Migchelsen - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Martijn Migchelsen</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
-                                <img src="img/team/round_version/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Diederick Cardon</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Head of Legal</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
-                                <img class="one" src="img/team/round_version/yevhen_horbachov.png"
-                                     alt="Yevhen Horbachov - LegalThings">
-                                <img class="two" src="img/team/round_version/yevhen_horbachov_b.png"
-                                     alt="Yevhen Horbachov - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Yevhen Horbachov</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Frontend Developer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/KillaBee1985" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center last-col">
-                            <a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
-                                <img class="one" src="img/team/round_version/rick_ross.png" alt="Rick Ros - LegalThings">
-                                <img class="two" src="img/team/round_version/rick_ross_b.png" alt="Rick Ros - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Rick Ros</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Head of Sales</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-section clearfix">
-                        <div class="column one-fourth team-member align-center">
-                            <div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
-                                <img class="one" src="img/team/round_version/moesjarraf_jahangier.png"
-                                     alt="Moesjarraf Jahangier - LegalThings">
-                                <img class="two" src="img/team/round_version/moesjarraf_jahangier_b.png"
-                                     alt="Moesjarraf Jahangier - LegalThings">
-                            </div>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Moesjarraf Jahangier</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Full-stack Developer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/moesjarraf" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image"
-                               target="_blank">
-                                <img class="one" src="img/team/round_version/sabine_van_bilderbeek.png"
-                                     alt="Sabine van Bilderbeek - LegalThings">
-                                <img class="two" src="img/team/round_version/sabine_van_bilderbeek_b.png"
-                                     alt="Sabine van Bilderbeek - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Sabine van Bilderbeek</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Manager Operations</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/"
-                                           target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/"
-                               target="_blank">
-                                <img src="img/team/round_version/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Mitchel Kerckhaert</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Developer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center last-col">
-                            <a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
-                                <img src="img/team/round_version/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Jurre Wolsink</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Developer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/jurrew27" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column-section clearfix">
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/"
-                               target="_blank">
-                                <img src="img/team/round_version/sarfaraaz_jahangier.png"
-                                     alt="Sarfaraaz Jahangier - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Sarfaraaz Jahangier</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Developer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/"
-                                           target="_blank"></a>
-                                    </li>
-                                    <li class="github">
-                                        <a href="https://github.com/Sarfaraaz" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
-                                <img class="one" src="img/team/round_version/michael_nieveld.png"
-                                     alt="Michael Nieveld - LegalThings">
-                                <img class="two" src="img/team/round_version/michael_nieveld_b.png"
-                                     alt="Michael Nieveld - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Michael Nieveld</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Legal & Tax</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/guy-hoeks-5309a85b/" target="_blank">
-                                <img src="img/team/round_version/Guy.png" alt="Guy Hoeks - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Guy Hoeks</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Public Relations</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/guy-hoeks-5309a85b/" target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="column one-fourth last-col team-member align-center">
-                            <a class="team-image" href="#" target="_blank">
-                                <img src="img/team/round_version/Maupie.png" alt="Maurits Wismeijer- LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Maurits Wismeijer</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Legal (Thesis)</h6>
-                            </div>
-                        </div>
-                        <div class="column one-fourth team-member align-center">
-                            <a class="team-image" href="https://www.linkedin.com/in/benjamin-roeloffs-valk-35ab70120/"
-                               target="_blank">
-                                <img src="img/team/round_version/Ben.png" alt="Benjamin Roeloffs Valk - LegalThings">
-                            </a>
-                            <div class="team-content">
-                                <h5 class="team-name uppercase">
-                                    <strong>Benjamin Roeloffs Valk</strong>
-                                </h5>
-                                <h6 class="subtitle-2">Marketeer</h6>
-                                <ul class="socialmedia-widget hover-fade-1">
-                                    <li class="linkedin">
-                                        <a href="https://www.linkedin.com/in/benjamin-roeloffs-valk-35ab70120/"
-                                           target="_blank"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+		</div>
 
-                    </div>
-                </div>
-            </div>
-            <!-- FOOTER -->
-            <footer id="footer" class="footer-dark text-light">
-                <div class="wrapper">
-                    <div class="copyright">
-                        ©2018 LegalThings
-                    </div>
-                    <div class="footer-menu">
-                        <a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
-                    </div>
-                    <div class="footer-menu">
-                        <a href="documents/privacy-policy.pdf" target="_blank">Privacy Policy</a>
-                    </div>
-                </div>
-            </footer>
-            <!-- FOOTER -->
-        </div>
-    <!-- SCRIPTS -->
-    <script src="files/dist/compress.js"></script>
-    <script src="https://checkout.stripe.com/checkout.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
-    <!-- This needs to be loaded from their site, not locally -->
-    <!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.visible.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/tweenMax.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/script.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.ajaxchimp.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/jquery.countdown.min.js"></script>-->
-    <!--<script src="files/js/social.js"></script>-->
-    <!--<script src="files/js/step-form-wizard.min.js"></script>-->
-    <!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
-    <!--<script type="text/javascript" src="files/js/custom.js"></script>-->
-    <!-- SCRIPTS -->
+		<div id="page-title" class="wrapper align-left">
+			<div class="info">
+				<h2>Blockchain for decentralized workflows</h2>
+				<h3 class="subtitle-1">
+					LegalThings One allows enterprises and governments to orchestrate interorganizational workflows in a
+					transparent way. Decentralization allows you to streamline your business processes while mitigating fraud.
+				</h3>
+				<div class="spacer-big"></div>
 
-    <script>
-        $(document).ready(function () {
-            $('.join-telegram').click(function (e) {
-                params = {
-                    'event_category': 'social',
-                    'event_action': 'join_telegram'
-                };
+				<p class="hero__buttons">
+					<a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ"
+					   class="lc-primary-action sr-button button-1 button-medium circled join-telegram">
+						<img src="img/telegram-logo.svg">
+						Telegram
+					</a>
+					<a href="https://legalthings.github.io/livecontracts-specs/index.html"
+					   class="sr-button button-1 button-medium circled">
+						View on Github
+					</a>
+					<!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
+																			Demo
+															</a> -->
+				</p>
+				<!--<h4 class="subtitle-1">-->
+				<!--Get an intoduction to LegalThings One - <a href="#" target="_blank">Watch video</a>-->
+				<!--</h4>-->
+				<div class="spacer-medium"></div>
+				<div class="icon-box">
+					<div class="icon-box-icon">
+						<i class="ion ion-5x ion-ribbon-b"></i>
+					</div>
+					<div class="icon-box-content">
+						<h5>Winner of the Blockathon by the</h5>
+						<h5>Dutch Ministry of Justice and Security</h5>
+					</div>
+				</div>
+				<div class="spacer-medium"></div>
+				<div class="count-down-wrap hidden">
+					<h3><strong>Sale ends in</strong></h3>
+					<div class="count-down" data-end-date=""></div>
+				</div>
+			</div>
+		</div>
 
-                gtag('event', 'Join Telegram', params);
-            });
-        });
-    </script>
+		<!-- END #page-title -->
+	</section>
+	<!-- HERO -->
+	<!-- PAGEBODY -->
 
-    <!-- Twitter universal website tag code -->
-    <script>
-        !function (e, t, n, s, u, a) {
-            e.twq || (s = e.twq = function () {
-                s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
-            }, s.version = '1.1', s.queue = [], u = t.createElement(n), u.async = !0, u.src = '//static.ads-twitter.com/uwt.js',
-                a = t.getElementsByTagName(n)[0], a.parentNode.insertBefore(u, a))
-        }(window, document, 'script');
-        // Insert Twitter Pixel ID and Standard Event data below
-        twq('init', 'nytjh');
-        twq('track', 'PageView');
-    </script>
-    <!-- End Twitter universal website tag code -->
+	<div class="purpleSectionBg general-advantages row-section text-light" id="what-is-legal">
+		<div class="wrapper clearfix">
+			<div class="column one-half">
+				<h3>What is LegalThings One?</h3>
+				<p>
+					LegalThings One is a platform for running digitized workflows called <strong>Live Contracts</strong>. A
+					Live Contract instructs humans and systems on what to do. These instructions are executed off-chain either
+					manually or automatically. Nodes only facilitate, validate and verify the results.
+				</p>
+				<p>
+					Each Live Contract creates its own LEGALchain, a <strong>miniature private blockchain</strong> that is only
+					shared with the participants involved. The platform has no master blockchain, instead LEGALchains
+					anchor on public blockchains like <strong>Waves</strong> or Bitcoin. This approach make the platform
+					horizontally scalable, sidestepping scalability issues seen in most blockchain technology.
+				</p>
+			</div>
+			<div class="column one-half last-col">
+				<img src="img/privatechains.png" alt="LEGALchains">
+			</div>
+		</div>
+	</div>
+	<div class="spacer-small"></div>
+	
+	<div class="row-section wrapper">
+		<h2 class="align-center">
+			<strong>Our Clients</strong>
+		</h2>
+		<div class="spacer-small"></div>
+		
+		<div class="column two-third">
+			<div class="video-responsive">
+				<iframe width="460" height="258,75" src="https://www.youtube.com/embed/Q6z8Czhodyo?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="column one-third last-col">
+			<p>
+				<strong>Merin</strong>, one of the most innovative <strong>real estate</strong> parties in The Netherlands, uses LegalThings for end-to-end digitized real estate contract lifecycle management (CLM). By directly loading all static building data from LegalThings and linking other IT-systems, agreements are drafted in a matter of minutes.
+			</p>
+			<div id="customer-logos"></div>
+		</div>
+	</div>
+	
+	<div id="discover" class="text-light">
+		<div class="wrapper discover-section  row-section">
+			<h2 class="align-center">
+				<strong>Discover LegalThings One</strong>
+			</h2>
+			<div class="spacer-medium"></div>
+			
+			<div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">
+				<div class="isotope-item blog-item">
+					<div class="blog-media">
+						<a href="https://docs.livecontracts.io/"
+						   target="_blank" class="text-light blog-image">
+							<!-- <img src="./img/explore/checkout-summery.png"> -->
+							<!--<i class="blog-media__icon icon-buying"></i>-->
+							<img src="img/live_contract.png" class="blog-media__icon" alt="">
+							
+							<!--<img src="img/buy_tokens.png" class="blog-media__icon" alt="">-->
+						</a>
+					</div>
+					<div class="blog-desc align-center">
+						<div class="blog-headline">
+							<h5 class="post-name">
+								<a
+										href="https://docs.livecontracts.io/"
+										target="_blank">
+									Technical specifications
+								</a>
+							</h5>
+						</div>
+						<p>
+							Ready to start building? The specifications contain the JSON schemas of all components of Live
+							Contracts, as well as other implementation details like encryption.
+						</p>
+					</div>
+				</div>
+				<div class="isotope-item blog-item">
+					<div class="blog-media">
+						<a
+								href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+								target="_blank" class="text-light blog-image">
+							<!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
+							<!--<i class="blog-media__icon icon-whitepaper"></i>-->
+							<img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">
+						
+						</a>
+					</div>
+					<div class="blog-desc align-center">
+						<div class="blog-headline">
+							<h5 class="post-name">
+								<a
+										href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+										target="_blank">
+									Technical Whitepaper (DRAFT)
+								</a>
+							</h5>
+						</div>
+						<p>
+							The LegalThings One Whitepaper gives an in-depth description
+							of the technical concepts behinds LegalThings One. Reading this
+							paper requires some knowledge of computer engineering.
+						</p>
+					</div>
+				</div>
+				<div class="isotope-item blog-item">
+					<div class="blog-media">
+						<a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
+							<!-- <img src="./img/explore/contract-as-automaton.png"> -->
+							<!--<i class="blog-media__icon icon-contract"></i>-->
+							
+							<img src="img/codex.png" class="blog-media__icon" alt="">
+						
+						</a>
+					</div>
+					<div class="blog-desc align-center">
+						<div class="blog-headline">
+							<h5 class="post-name">
+								<a href="./documents/contract-as-automaton.pdf" target="_blank">
+									Research paper - OFR
+								</a>
+							</h5>
+						</div>
+						<p>
+							"We show that the fundamental legal structure of a well-written
+							financial contract follows a state-transition logic that can
+							be formalized mathematically as a finite-state machine (also
+							known as a finite state automaton)."
+							<br><em>— Mark D. Flood and Oliver R. Goodenough</em>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="spacer-small"></div>
+			<div class="align-center">
+				<a href="https://medium.com/legalthingsone" class="sr-button discover-special inline button-1 button-medium circled"
+				   target="_blank">
+					Read our articles
+				</a>
+			</div>
+		</div>
+	</div>
+	<!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
+	
+	<div class="row-section wrapper">
+		<h2 class="align-center">
+			<strong>In the Press</strong>
+		</h2>
+		<div class="spacer-small"></div>
+		
+		<div class="column two-third">
+			<div class="video-responsive">
+				<iframe width="460" height="258,75" src="https://www.youtube.com/embed/42xHgoNeZaY?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="column one-third last-col">
+			<p>
+				<strong>LegalFling</strong> is a showcase for Live Contracts, demonstrating that an agreement doesn't have to be a 10 page document full of
+				legal lingo that is drafted and enforced by lawyers.
+			</p>
+			<p>
+				Our showcase reached a global audience in days on TV, radio, newspapers, magazines and all over the internet.
+			</p>
+			<div id="media-logos"></div>
+		</div>
+	</div>
+	<hr class="pretty-hr">
+	<div class="team-container">
+		<div class="wrapper row-section team-section">
+			<h2 class="align-center">
+				<strong>Meet the Team</strong>
+			</h2>
+			<div class="spacer-medium"></div>
+			<div class="column-section clearfix founders">
+				<div class="column one-fourth team-member align-center">
+					<a href="https://www.linkedin.com/in/rschmitz/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/rick_schmitz.png" alt="Rick Schmitz - LegalThings">
+						<img class="two" src="img/team/round_version/rick_schmitz_b.png" alt="Rick Schmitz - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Rick Schmitz</strong>
+						</h5>
+						<h6 class="subtitle-2">Founder &amp; CEO</h6>
+						<div class="team-bio">
+							Rick has been a Private Equity and M&A Tax lawyer at both <strong>PwC</strong> and <strong>Deloitte</strong>. Rick is also the founder of the successful Dutch startup Firm24.
+						</div>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/rschmitz/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a href="https://www.linkedin.com/in/arnolddaniels/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/arnold_daniels.png" alt="Arnold Daniels - LegalThings">
+						<img class="two" src="img/team/round_version/arnold_daniels_b.png" alt="Arnold Daniels - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Arnold Daniels</strong>
+						</h5>
+						<h6 class="subtitle-2">Founder &amp; Lead Architect</h6>
+						<div class="team-bio">
+							Arnold is a software engineer with <strong>20 years experience</strong> at 4 successful Dutch startups. He holds a computer engineering degree and is a certified AWS architect.
+						</div>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/arnolddaniels/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/jasny" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
+						<img class="one" src="img/team/round_version/martijn_broersma.png" alt="Martijn Broersma - LegalThings">
+						<img class="two" src="img/team/round_version/martijn_broersma_b.png" alt="Martijn Broersma - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Martijn Broersma</strong>
+						</h5>
+						<h6 class="subtitle-2">COO</h6>
+						<div class="team-bio">
+							Martijn holds a law degree and previously worked as a <strong>lawyer</strong> at Firm24. He is specialized in legal structures and legal processes.
+						</div>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/martijnbroersma/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center last-col">
+					<a href="https://www.linkedin.com/in/svenstam/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/sven_stam.png" alt="Sven Stam - LegalThings">
+						<img class="two" src="img/team/round_version/sven_stam_b.png" alt="Sven Stam - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Sven Stam</strong>
+						</h5>
+						<h6 class="subtitle-2">CTO</h6>
+						<div class="team-bio">
+							Sven has 15+ years of experience. He holds a <strong>masters</strong> degree in Artificial Intelligence with a specialization in <strong>Distributed Systems</strong>.
+						</div>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/svenstam/" target="_blank"></a>
+							</li>
+							<li classcolumn-section block-button__hover wrapper row-section="github">
+								<a href="https://github.com/sven4ask" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-section clearfix">
+				<div class="column one-fourth  team-member align-center">
+					<a href="https://www.linkedin.com/in/migchelsen/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/martijn_migchelsen.png" alt="Martijn Migchelsen - LegalThings">
+						<img class="two" src="img/team/round_version/martijn_migchelsen_b.png" alt="Martijn Migchelsen - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Martijn Migchelsen</strong>
+						</h5>
+						<h6 class="subtitle-2">Founder &amp; Head of Finance</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/migchelsen/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" class="team-image" target="_blank">
+						<img src="img/team/round_version/diederick-cardon.png" alt="Diederick Cardon - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Diederick Cardon</strong>
+						</h5>
+						<h6 class="subtitle-2">Head of Legal</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/diederick-cardon-18a85912/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank">
+						<img class="one" src="img/team/round_version/yevhen_horbachov.png" alt="Yevhen Horbachov - LegalThings">
+						<img class="two" src="img/team/round_version/yevhen_horbachov_b.png" alt="Yevhen Horbachov - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Yevhen Horbachov</strong>
+						</h5>
+						<h6 class="subtitle-2">Frontend Developer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/yevhen-horbachov-0b601756/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/KillaBee1985" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center last-col">
+					<a class="team-image" href="https://www.linkedin.com/in/rickros/" target="_blank">
+						<img class="one" src="img/team/round_version/rick_ross.png" alt="Rick Ros - LegalThings">
+						<img class="two" src="img/team/round_version/rick_ross_b.png" alt="Rick Ros - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Rick Ros</strong>
+						</h5>
+						<h6 class="subtitle-2">Head of Sales</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/rickros/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-section clearfix">
+				<div class="column one-fourth team-member align-center">
+					<div href="https://www.linkedin.com/in/moesjarraf/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/moesjarraf_jahangier.png" alt="Moesjarraf Jahangier - LegalThings">
+						<img class="two" src="img/team/round_version/moesjarraf_jahangier_b.png" alt="Moesjarraf Jahangier - LegalThings">
+					</div>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Moesjarraf Jahangier</strong>
+						</h5>
+						<h6 class="subtitle-2">Full-stack Developer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/moesjarraf/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/moesjarraf" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" class="team-image" target="_blank">
+						<img class="one" src="img/team/round_version/sabine_van_bilderbeek.png" alt="Sabine van Bilderbeek - LegalThings">
+						<img class="two" src="img/team/round_version/sabine_van_bilderbeek_b.png" alt="Sabine van Bilderbeek - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Sabine van Bilderbeek</strong>
+						</h5>
+						<h6 class="subtitle-2">Manager Operations</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/sabine-van-bilderbeek-67b69325/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank">
+						<img src="img/team/round_version/mitchel-kerckhaert.png" alt="Mitchel Kerckhaert - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Mitchel Kerckhaert</strong>
+						</h5>
+						<h6 class="subtitle-2">Developer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/mitchel-kerckhaert-b55400123/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/MitchelKerckhaert" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center last-col">
+					<a class="team-image" href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank">
+						<img src="img/team/round_version/jurre-wolsink.png" alt="Jurre Wolsink - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Jurre Wolsink</strong>
+						</h5>
+						<h6 class="subtitle-2">Developer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/jurre-wolsink-b12258a6/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/jurrew27" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column-section clearfix">
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank">
+						<img src="img/team/round_version/sarfaraaz_jahangier.png" alt="Sarfaraaz Jahangier - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Sarfaraaz Jahangier</strong>
+						</h5>
+						<h6 class="subtitle-2">Developer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/sarfaraaz-jahangier-442a38135/" target="_blank"></a>
+							</li>
+							<li class="github">
+								<a href="https://github.com/Sarfaraaz" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/michael-nieveld" target="_blank">
+						<img class="one" src="img/team/round_version/michael_nieveld.png" alt="Michael Nieveld - LegalThings">
+						<img class="two" src="img/team/round_version/michael_nieveld_b.png" alt="Michael Nieveld - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Michael Nieveld</strong>
+						</h5>
+						<h6 class="subtitle-2">Legal & Tax</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/michael-nieveld" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/guy-hoeks-5309a85b/" target="_blank">
+						<img src="img/team/round_version/Guy.png" alt="Guy Hoeks - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Guy Hoeks</strong>
+						</h5>
+						<h6 class="subtitle-2">Public Relations</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/guy-hoeks-5309a85b/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="column one-fourth last-col team-member align-center">
+					<a class="team-image" href="#" target="_blank">
+						<img src="img/team/round_version/Maupie.png" alt="Maurits Wismeijer- LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Maurits Wismeijer</strong>
+						</h5>
+						<h6 class="subtitle-2">Legal (Thesis)</h6>
+					</div>
+				</div>
+				<div class="column one-fourth team-member align-center">
+					<a class="team-image" href="https://www.linkedin.com/in/benjamin-roeloffs-valk-35ab70120/" target="_blank">
+						<img src="img/team/round_version/Ben.png" alt="Benjamin Roeloffs Valk - LegalThings">
+					</a>
+					<div class="team-content">
+						<h5 class="team-name uppercase">
+							<strong>Benjamin Roeloffs Valk</strong>
+						</h5>
+						<h6 class="subtitle-2">Marketeer</h6>
+						<ul class="socialmedia-widget hover-fade-1">
+							<li class="linkedin">
+								<a href="https://www.linkedin.com/in/benjamin-roeloffs-valk-35ab70120/" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer id="footer" class="footer-dark text-light">
+		<div class="wrapper">
+			<div class="copyright">
+				©2018 LegalThings
+			</div>
+			<div class="footer-menu">
+				<a href="documents/terms-and-conditions.pdf" target="_blank">Terms and Conditions</a>
+			</div>
+			<div class="footer-menu">
+				<a href="documents/privacy-policy.pdf" target="_blank">Privacy Policy</a>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER -->
+</div>
+<!-- SCRIPTS -->
+<script src="files/dist/compress.js"></script>
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
+<!-- This needs to be loaded from their site, not locally -->
+<!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.easing.1.3.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.visible.min.js"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.navigation.min.js"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+<!--<script type="text/javascript" src="files/revolution/js/extensions/revolution.extension.actions.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/tweenMax.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.backgroundparallax.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.isotope.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.imagesloaded.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.owl.carousel.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.lightcase.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/script.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.ajaxchimp.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/jquery.countdown.min.js"></script>-->
+<!--<script src="files/js/social.js"></script>-->
+<!--<script src="files/js/step-form-wizard.min.js"></script>-->
+<!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
+<!--<script type="text/javascript" src="files/js/custom.js"></script>-->
+<!-- SCRIPTS -->
+
+<script>
+	$(document).ready(function () {
+		$('.join-telegram').click(function(e) {
+			params = {
+				'event_category': 'social',
+				'event_action': 'join_telegram'
+			};
+			
+			gtag('event', 'Join Telegram', params);
+		});
+	});
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+	!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+	},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+		a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+	// Insert Twitter Pixel ID and Standard Event data below
+	twq('init','nytjh');
+	twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
 
 
-    </body>
+</body>
+
 </html>
