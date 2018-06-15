@@ -233,6 +233,7 @@ $(document).ready(function () {
   initWalletChoice();
   createWavesWallet();
   handlePayment();
+  heroNavHandle();
 
   //for animation fix after scrolling
   $(window).on("mousewheel", function () {
@@ -637,11 +638,11 @@ function getSaleDate() {
           today.getTime() < saleDate.endDate.getTime()) {
         enableBuyButton();
       } else {
-        enableSubscribeButton();
+        // enableSubscribeButton();
       }
     },
     error: function () {
-      enableSubscribeButton();
+      // enableSubscribeButton();
     }
   });
 }
@@ -1144,16 +1145,30 @@ function populateExploreBlock() {
 }
 
 //Show/hide header
+
 function manipulatingHeader() {
-  var header = $('#header');
+
+  var header = $('.hero-nav:not(.hero-nav--mobile)');
+  var scrollFromTop = $(document).scrollTop();
   var topBlockHeight = $('#hero').height();
-  var new_offset = 100;
+  var new_offset = 1;
+
+  if (scrollFromTop > new_offset) {
+    header.addClass('custom-visible');
+    $(".sticky-bottom").addClass('visible');
+  } else {
+    header.removeClass('custom-visible');
+    $(".sticky-bottom").removeClass('visible');
+  }
 
   $(window).resize(function () {
     topBlockHeight = $('#hero').height();
   });
   $(window).scroll(function () {
-    var scrollFromTop = $(document).scrollTop();
+    scrollFromTop = $(document).scrollTop();
+
+    // console.log(new_offset);
+    // console.log(scrollFromTop);
 
     if (scrollFromTop > new_offset) {
       header.addClass('custom-visible');
@@ -1163,8 +1178,55 @@ function manipulatingHeader() {
       $(".sticky-bottom").removeClass('visible');
     }
   })
-
 }
+
+
+
+
+
+//legacy header, commented on 13 June
+// function manipulatingHeader() {
+//
+//   var header = $('#header');
+//   var topBlockHeight = $('#hero').height();
+//   var new_offset = 100;
+//
+//   $(window).resize(function () {
+//     topBlockHeight = $('#hero').height();
+//   });
+//   $(window).scroll(function () {
+//     var scrollFromTop = $(document).scrollTop();
+//
+//     if (scrollFromTop > new_offset) {
+//       header.addClass('custom-visible');
+//       $(".sticky-bottom").addClass('visible');
+//     } else {
+//       header.removeClass('custom-visible');
+//       $(".sticky-bottom").removeClass('visible');
+//     }
+//   })
+// }
+
+/***
+ * Function for handling menu activity in hero section
+ */
+
+function heroNavHandle() {
+  let windowWidth = $(window).width();
+  $(window).resize(function () {
+    windowWidth = $(window).width();
+  });
+  if (windowWidth >= 1200) {
+    $(".hero-nav__bars").removeClass("active");
+		$(".hero-nav.hero-nav--mobile").removeClass("active");
+  }
+	$(".hero-nav__bars").on("click", function () {
+		$(".hero-nav__bars").toggleClass("active");
+		$(".hero-nav.hero-nav--mobile").toggleClass("active");
+		$("#page-content").toggleClass("moved-by-hero")
+	})
+}
+
 
 //loading data about tokens status
 // function loadTokens() {
