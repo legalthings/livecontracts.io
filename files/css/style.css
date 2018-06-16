@@ -12253,12 +12253,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	border-radius: 5px;
 }
 
-#hero.hero-big #page-title,
-#hero.hero-full #page-title {
-	position: static !important;
-	transform: none !important;
-	margin: 0 auto !important;
-}
+
 
 /* New for hero section */
 
@@ -12266,10 +12261,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
 #hero.hero-full #page-title {
 	position: absolute !important;
   top: 50% !important;
-	transform: translateY(-50%) !important;
+	transform: translate(-50%, -50%) !important;
 	margin: 0 !important;
 	padding: 0 !important;
-  left: 40px;
+  left: 50%;
 }
 
 .sale-wizard {
@@ -12278,11 +12273,15 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 @media screen and (max-width: 768px) {
+	/*#page-content #hero.hero-full {*/
+		/*height: auto !important;*/
+	/*}*/
 	.sale-wizard {
 		left: 20px;
 		top: 20px;
 	}
 }
+
 @media screen and (max-width: 480px) {
 	.sale-wizard {
 		left: 0;
