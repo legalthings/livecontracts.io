@@ -1153,11 +1153,16 @@ function manipulatingHeader() {
   var topBlockHeight = $('#hero').height();
   var new_offset = 1;
 
+  $(".hero-nav__menu-list--home").on("click" , function(e) {
+    e.preventDefault();
+    window.scrollTo(0, 0)
+  })
+
   if (scrollFromTop > new_offset) {
     header.addClass('custom-visible');
     $(".sticky-bottom").addClass('visible');
   } else {
-    header.removeClass('custom-visible');
+    header.removeClass('custom-visible'); 
     $(".sticky-bottom").removeClass('visible');
   }
 
