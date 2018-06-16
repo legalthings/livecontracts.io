@@ -12253,13 +12253,6 @@ html body #intercom-container .intercom-launcher-badge-frame {
 	border-radius: 5px;
 }
 
-#hero.hero-big #page-title,
-#hero.hero-full #page-title {
-	position: static !important;
-	transform: none !important;
-	margin: 0 auto !important;
-}
-
 /* New for hero section */
 
 #hero.hero-big #page-title,
@@ -12736,3 +12729,121 @@ h5 {
 		line-height: 1.5;
 	}
 }
+
+/***
+ * New styles for Discover section
+ */
+
+#discover {
+	padding: 40px 0;
+}
+
+.discover-block {
+	display: flex;
+	justify-content : space-around;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.discover-block .discover-block__element:last-of-type {
+	margin-top: 40px;
+}
+.discover-block .discover-block__element .discover-block__info {
+	padding-right: 25px;
+}
+.discover-block .discover-block__element .discover-block__image {
+	width: 120px;
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin-left: -60px;
+	position: absolute;
+	left: 0;
+}
+.discover-block .discover-block__element .discover-block__title {
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.discover-block .discover-block__element:hover {
+	box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+	top: -5px;
+}
+.discover-block .discover-block__element .discover-block__info * {
+	color: #fff;
+}
+.discover-block .discover-block__element {
+	display: flex;
+	align-items: center;
+	padding: 20px 0 20px 100px;
+	overflow: hidden;
+	width: 35%;
+	top: 0;
+	position: relative;
+	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+	transition: .3s all;
+}
+
+.discover-bottom .discover-bottom__buttons .sr-button {
+	padding: 15px 20px;
+}
+.discover-bottom .discover-bottom__buttons .secondary-button {
+	background: #1a1a1a;
+	color: #fff;
+}
+.discover-bottom .discover-bottom__subtitle {
+	font-size: 22px;
+}
+.discover-bottom .discover-bottom__title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.discover-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+	.discover-block .discover-block__element:last-of-type {
+		margin-top: 0 !important;
+	}
+	.discover-block .discover-block__element:not(:last-of-type) {
+		margin: 0 0 30px 0;
+	}
+	.discover-block .discover-block__element {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.discover-bottom {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+	.discover-bottom .discover-bottom__text {
+		margin-bottom: 20px !important;
+	}
+	.discover-bottom .discover-bottom__text, .discover-bottom .discover-bottom__buttons  {
+		margin: 0 auto;
+	}
+	.discover-bottom .discover-bottom__title {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.discover-block .discover-block__info {
+		width: 100%;
+	}
+	.discover-block .discover-block__element {
+		padding: 30px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.discover-block .discover-block__element .discover-block__image {
+		width: auto;
+		margin: 0 0 20px 0;
+		position: static;
+	}
+}
+
