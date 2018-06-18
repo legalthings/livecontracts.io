@@ -32,6 +32,7 @@
         <!-- nicer scroll in steps -->
         <!--<link rel="stylesheet" href="files/css/jquery.mCustomScrollbar.min.css">-->
         <link rel="stylesheet" href="files/dist/compress.css">
+        <!--<link rel="stylesheet" href="files/css/style.css">-->
         <!-- FAVICON -->
         <link rel="shortcut icon" href="img/favicon.png" />
         <!-- DOCUMENT TITLE -->
@@ -67,26 +68,26 @@
         <script>
         /*
         var alignment = 'right';
-       
+
         // if (window.innerWidth < 599) {
         //   alignment = 'left';
         // } else {
         //   alignment = 'right';
         // }
-       
-       
+
+
         window.intercomSettings = {
         app_id: 'g247sp2q',
         vertical_padding: 110,
         alignment: alignment
         };
-       
+
         (function() { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator');
         ic('update', intercomSettings); } else { var d = document; var i = function() { i.c(arguments) };
         i.q = [];
         i.c = function(args) { i.q.push(args) };
         w.Intercom = i;
-       
+
         function l() { var s = d.createElement('script');
         s.type = 'text/javascript';
         s.async = true;
@@ -168,7 +169,7 @@
                     <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
                     <a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
                     </div>
-            
+
                   </div>
             -->
             <!-- STICKY BOTTOM BAR END -->
@@ -178,10 +179,10 @@
             <section id="hero"
                      class="hero-full parallax-section svg-custom-hero"
                      data-parallax-image="img/hero-solution.png" data-parallax-opacity="-0.5">
-	
+
 	            <div class="hero-nav hero-nav--mobile">
 		            <div class="hero-nav__menu">
-			            <a href="#page-title" class="hero-nav__menu-list">Home</a>
+			            <a href="javascript:void" class="hero-nav__menu-list hero-nav__menu-list--home">Home</a>
 			            <a href="https://docs.livecontracts.io" class="hero-nav__menu-list">Documentation</a>
 			            <a href="javascript:void" class="hero-nav__menu-list hero-nav__menu-list--disabled">Playground</a>
 			            <a href="#discover" class="hero-nav__menu-list">Whitepaper</a>
@@ -210,7 +211,7 @@
 				            <h1>LegalThings One</h1>
 			            </div>
 			            <div class="hero-nav__menu">
-				            <a href="#page-title" class="hero-nav__menu-list">Home</a>
+				            <a href="javascript:void" class="hero-nav__menu-list hero-nav__menu-list--home">Home</a>
 				            <a href="https://docs.livecontracts.io" class="hero-nav__menu-list">Documentation</a>
 				            <a href="javascript:void" class="hero-nav__menu-list hero-nav__menu-list--disabled">Playground</a>
 				            <a href="#discover" class="hero-nav__menu-list">Whitepaper</a>
@@ -234,17 +235,17 @@
 			            </div>
 			            <div class="hero-nav__bars fa fa-bars"></div>
 		            </div>
-	
+
 	            </div>
                 <div id="page-title" class="wrapper align-left">
                   <div class="info">
+                    <!--<div class="spacer-medium"></div>-->
                     <!--<h1>LegalThings One</h1>-->
                     <h2>Blockchain for decentralized workflows</h2>
                     <h3 class="subtitle-1">
                         LegalThings One allows enterprises and governments to orchestrate interorganizational workflows in a transparent way. Decentralization allows you to streamline your business processes while mitigating fraud.
                     </h3>
                     <div class="spacer-big"></div>
-
                     <p class="hero__buttons">
                         <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="lc-primary-action sr-button button-1 button-medium circled join-telegram">
                             <img src="img/telegram-logo.svg">
@@ -310,7 +311,7 @@
                     <strong>Our Clients</strong>
                 </h2>
                 <div class="spacer-small"></div>
-                
+
                 <div class="column two-third">
                     <div class="video-responsive">
                         <iframe width="460" height="258,75" src="https://www.youtube.com/embed/Q6z8Czhodyo?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
@@ -323,117 +324,191 @@
                     <div id="customer-logos"></div>
                 </div>
             </div>
-            
-            <div id="discover" class="text-light">
-                <div class="wrapper discover-section  row-section">
-                    <h2 class="align-center">
-                        <strong>Discover LegalThings One</strong>
-                    </h2>
-                    <div class="spacer-medium"></div>
 
-                    <div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a href="https://docs.livecontracts.io/"
-                                   target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/checkout-summery.png"> -->
-                                    <!--<i class="blog-media__icon icon-buying"></i>-->
-                                    <img src="img/live_contract.png" class="blog-media__icon" alt="">
+            <!--<div id="discover" class="text-light">-->
+                <!--<div class="wrapper discover-section  row-section">-->
+                    <!--<h2 class="align-center">-->
+                        <!--<strong>Discover LegalThings One</strong>-->
+                    <!--</h2>-->
+                    <!--<div class="spacer-medium"></div>-->
 
-                                    <!--<img src="img/buy_tokens.png" class="blog-media__icon" alt="">-->
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a
-                                            href="https://docs.livecontracts.io/"
-                                            target="_blank">
-                                            Technical specifications
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    Ready to start building? The specifications contain the JSON schemas of all components of Live
-                                    Contracts, as well as other implementation details like encryption.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a
-                                    href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
-                                    target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/livecontracts-whitepaper.png"> -->
-                                    <!--<i class="blog-media__icon icon-whitepaper"></i>-->
-                                    <img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">
+                    <!--<div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">-->
+                        <!--<div class="isotope-item blog-item">-->
+                            <!--<div class="blog-media">-->
+                                <!--<a href="https://docs.livecontracts.io/"-->
+                                   <!--target="_blank" class="text-light blog-image">-->
+                                    <!--&lt;!&ndash; <img src="./img/explore/checkout-summery.png"> &ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-buying"></i>&ndash;&gt;-->
+                                    <!--<img src="img/live_contract.png" class="blog-media__icon" alt="">-->
 
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a
-                                            href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
-                                            target="_blank">
-                                            Technical Whitepaper (DRAFT)
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    The LegalThings One Whitepaper gives an in-depth description
-                                    of the technical concepts behinds LegalThings One. Reading this
-                                    paper requires some knowledge of computer engineering.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="isotope-item blog-item">
-                            <div class="blog-media">
-                                <a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">
-                                    <!-- <img src="./img/explore/contract-as-automaton.png"> -->
-                                    <!--<i class="blog-media__icon icon-contract"></i>-->
+                                    <!--&lt;!&ndash;<img src="img/buy_tokens.png" class="blog-media__icon" alt="">&ndash;&gt;-->
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="blog-desc align-center">-->
+                                <!--<div class="blog-headline">-->
+                                    <!--<h5 class="post-name">-->
+                                        <!--<a-->
+                                            <!--href="https://docs.livecontracts.io/"-->
+                                            <!--target="_blank">-->
+                                            <!--Technical specifications-->
+                                        <!--</a>-->
+                                    <!--</h5>-->
+                                <!--</div>-->
+                                <!--<p>-->
+                                    <!--Ready to start building? The specifications contain the JSON schemas of all components of Live-->
+                                    <!--Contracts, as well as other implementation details like encryption.-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="isotope-item blog-item">-->
+                            <!--<div class="blog-media">-->
+                                <!--<a-->
+                                    <!--href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"-->
+                                    <!--target="_blank" class="text-light blog-image">-->
+                                    <!--&lt;!&ndash; <img src="./img/explore/livecontracts-whitepaper.png"> &ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-whitepaper"></i>&ndash;&gt;-->
+                                    <!--<img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">-->
 
-                                    <img src="img/codex.png" class="blog-media__icon" alt="">
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="blog-desc align-center">-->
+                                <!--<div class="blog-headline">-->
+                                    <!--<h5 class="post-name">-->
+                                        <!--<a-->
+                                            <!--href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"-->
+                                            <!--target="_blank">-->
+                                            <!--Technical Whitepaper (DRAFT)-->
+                                        <!--</a>-->
+                                    <!--</h5>-->
+                                <!--</div>-->
+                                <!--<p>-->
+                                    <!--The LegalThings One Whitepaper gives an in-depth description-->
+                                    <!--of the technical concepts behinds LegalThings One. Reading this-->
+                                    <!--paper requires some knowledge of computer engineering.-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="isotope-item blog-item">-->
+                            <!--<div class="blog-media">-->
+                                <!--<a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">-->
+                                    <!--&lt;!&ndash; <img src="./img/explore/contract-as-automaton.png"> &ndash;&gt;-->
+                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-contract"></i>&ndash;&gt;-->
 
-                                </a>
-                            </div>
-                            <div class="blog-desc align-center">
-                                <div class="blog-headline">
-                                    <h5 class="post-name">
-                                        <a href="./documents/contract-as-automaton.pdf" target="_blank">
-                                            Research paper - OFR
-                                        </a>
-                                    </h5>
-                                </div>
-                                <p>
-                                    "We show that the fundamental legal structure of a well-written
-                                    financial contract follows a state-transition logic that can
-                                    be formalized mathematically as a finite-state machine (also
-                                    known as a finite state automaton)."
-                                    <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                                    <!--<img src="img/codex.png" class="blog-media__icon" alt="">-->
+
+                                <!--</a>-->
+                            <!--</div>-->
+                            <!--<div class="blog-desc align-center">-->
+                                <!--<div class="blog-headline">-->
+                                    <!--<h5 class="post-name">-->
+                                        <!--<a href="./documents/contract-as-automaton.pdf" target="_blank">-->
+                                            <!--Research paper - OFR-->
+                                        <!--</a>-->
+                                    <!--</h5>-->
+                                <!--</div>-->
+                                <!--<p>-->
+                                    <!--"We show that the fundamental legal structure of a well-written-->
+                                    <!--financial contract follows a state-transition logic that can-->
+                                    <!--be formalized mathematically as a finite-state machine (also-->
+                                    <!--known as a finite state automaton)."-->
+                                    <!--<br><em>— Mark D. Flood and Oliver R. Goodenough</em>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
 
-                    <div class="spacer-small"></div>
-                    <div class="align-center">
-                        <a href="https://medium.com/legalthingsone" class="sr-button discover-special inline button-1 button-medium circled"
-                           target="_blank">
-                            Read our articles
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
+                    <!--<div class="spacer-small"></div>-->
+                    <!--<div class="align-center">-->
+                        <!--<a href="https://medium.com/legalthingsone" class="sr-button discover-special inline button-1 button-medium circled"-->
+                           <!--target="_blank">-->
+                            <!--Read our articles-->
+                        <!--</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+	        <div id="discover" class="text-light">
+		        <div class="wrapper">
+			        <div class="discover-block">
+				        <a href="https://docs.livecontracts.io/" class="discover-block__element" target="_blank">
+					        <div class="discover-block__image">
+						        <img src="img/live_contract.png" class="blog-media__icon" alt="">
+					        </div>
+					        <div class="discover-block__info">
+						        <div class="discover-block__title">
+							        Technical specifications
+						        </div>
+						        <div class="discover-block__text">
+							        Ready to start building? The specifications contain the JSON schemas of all components of Live
+							        Contracts, as well as other implementation details like encryption.
+						        </div>
+					        </div>
+				        </a>
+				        <a class="discover-block__element"
+				        href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"
+				           target="_blank"
+				        >
+					        <div class="discover-block__image">
+						        <img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">
+					        </div>
+					        <div class="discover-block__info">
+						        <div class="discover-block__title">
+							        Technical Whitepaper (DRAFT)
+						        </div>
+						        <div class="discover-block__text">
+							        The LegalThings One Whitepaper gives an in-depth description
+							        of the technical concepts behinds LegalThings One. Reading this
+							        paper requires some knowledge of computer engineering.
+						        </div>
+					        </div>
+				        </a>
+				        <a class="discover-block__element" href="documents/contract-as-automaton.pdf" target="_blank">
+					        <div class="discover-block__image">
+						        <img src="img/codex.png" class="blog-media__icon" alt="">
+					        </div>
+					        <div class="discover-block__info">
+						        <div class="discover-block__title">
+							        Research paper - OFR
+						        </div>
+						        <div class="discover-block__text">
+							        "We show that the fundamental legal structure of a well-written
+							        financial contract follows a state-transition logic that can
+							        be formalized mathematically as a finite-state machine (also
+							        known as a finite state automaton)."
+							        <br><em>— Mark D. Flood and Oliver R. Goodenough</em>
+						        </div>
+					        </div>
+				        </a>
+		        </div>
+			        <div class="discover-bottom">
+				        <div class="discover-bottom__text">
+					        <div class="discover-bottom__title">
+						        Ready to get started?
+					        </div>
+					        <div class="discover-bottom__subtitle">
+						        Get in touch, or create an account.
+					        </div>
+				        </div>
+				        <div class="discover-bottom__buttons">
+					        <a href="#" class="lc-primary-action sr-button button-1 button-medium circled join-telegram">
+						        Create account
+					        </a>
+					        <a class="sr-button button-1 button-medium circled secondary-button">
+						        Contact sales
+					        </a>
+				        </div>
+			        </div>
+		        </div>
+	        </div>
+	
+	        <!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
 
             <div class="row-section wrapper" id="in-the-press">
                 <h2 class="align-center">
                     <strong>In the Press</strong>
                 </h2>
                 <div class="spacer-small"></div>
-                
+
                 <div class="column two-third">
                     <div class="video-responsive">
                         <iframe width="460" height="258,75" src="https://www.youtube.com/embed/42xHgoNeZaY?autoplay=0&controls=0&iv_load_policy=3&loop=1&rel=0&showinfo=0&showsearch=0&theme=light" frameborder="0" allowfullscreen></iframe>
@@ -504,7 +579,7 @@
                         <div class="column one-fourth team-member align-center">
                             <a class="team-image" href="https://www.linkedin.com/in/martijnbroersma/" target="_blank">
                                 <img class="one" src="img/team/round_version/martijn_broersma.png" alt="Martijn Broersma - LegalThings">
-				<img class="two" src="img/team/round_version/martijn_broersma_b.png" alt="Martijn Broersma - LegalThings">    
+				<img class="two" src="img/team/round_version/martijn_broersma_b.png" alt="Martijn Broersma - LegalThings">
                             </a>
                             <div class="team-content">
                                 <h5 class="team-name uppercase">
@@ -792,7 +867,7 @@
                     </div>
                 </div>
             </footer>
-            <!-- FOOTER --> 
+            <!-- FOOTER -->
         </div>
         <!-- SCRIPTS -->
         <script src="files/dist/compress.js"></script>
