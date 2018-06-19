@@ -7140,6 +7140,7 @@ div .toggle-item:first-child {
 
 @media screen and (max-width: 960px) {
   .team-section {
+	  width: 100%;
     max-width: 540px !important;
   }
 }
@@ -12259,10 +12260,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
 #hero.hero-full #page-title {
 	position: absolute !important;
   top: 50% !important;
-	transform: translateY(-50%) !important;
+	transform: translate(-50%, -50%) !important;
 	margin: 0 !important;
 	padding: 0 !important;
-  left: 40px;
+  left: 50% !important;
 }
 
 .sale-wizard {
@@ -12740,21 +12741,19 @@ h5 {
 
 .discover-block {
 	display: flex;
-	justify-content : space-around;
+	justify-content : space-between;
 	flex-wrap: wrap;
 	margin-bottom: 80px;
 }
-.discover-block .discover-block__element:last-of-type {
-	margin-top: 40px;
-}
-.discover-block .discover-block__element .discover-block__info {
-	padding-right: 25px;
-}
+/*.discover-block .discover-block__element:last-of-type {*/
+	/*margin-top: 40px;*/
+/*}*/
+
 .discover-block .discover-block__element .discover-block__image {
 	width: 120px;
 	flex-grow: 0;
 	flex-shrink: 0;
-	margin-left: -60px;
+	margin-left: -30px;
 	position: absolute;
 	left: 0;
 }
@@ -12768,27 +12767,49 @@ h5 {
 	top: -5px;
 }
 .discover-block .discover-block__element .discover-block__info * {
-	color: #fff;
+	color: #333;
 }
 .discover-block .discover-block__element {
 	display: flex;
 	align-items: center;
-	padding: 20px 0 20px 100px;
+	padding: 40px 25px 40px 100px;
 	overflow: hidden;
-	width: 35%;
+	width: 40%;
 	top: 0;
+	background: #fff;
 	position: relative;
 	box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
 	transition: .3s all;
 }
 
-.discover-bottom .discover-bottom__buttons .sr-button {
-	padding: 15px 20px;
+.discover-bottom .discover-bottom__buttons .sr-button, .parallax-section .sr-button {
+	margin-right: 15px;
+	background: transparent;
+	color: #623fe9;
+	border-color: #623fe9;
 }
-.discover-bottom .discover-bottom__buttons .secondary-button {
-	background: #1a1a1a;
-	color: #fff;
+
+.discover-bottom .discover-bottom__buttons .sr-button:hover, .parallax-section .sr-button:hover {
+	color: black;
+	border-color: black;
 }
+
+.discover-bottom .discover-bottom__buttons .sr-button:first-of-type {
+	background: #623fe9;
+	color: white;
+	box-shadow: 0 31px 29px -24px rgba(98,63,233,1);
+}
+
+.discover-bottom .discover-bottom__buttons .sr-button:first-of-type:hover {
+	background: white;
+	color: black;
+	box-shadow: 0 31px 29px -24px rgba(0,0,0,1);
+}
+
+.discover-bottom .discover-bottom__buttons .sr-button:last-of-type {
+	margin-right: 0;
+}
+
 .discover-bottom .discover-bottom__subtitle {
 	font-size: 22px;
 }
@@ -12803,6 +12824,11 @@ h5 {
 	align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+	.discover-block .discover-block__element {
+		width: 35%;
+	}
+}
 @media screen and (max-width: 1024px) {
 	.discover-block .discover-block__element:last-of-type {
 		margin-top: 0 !important;
@@ -12811,6 +12837,21 @@ h5 {
 		margin: 0 0 30px 0;
 	}
 	.discover-block .discover-block__element {
+		width: 100%;
+	}
+	.discover-bottom .discover-bottom__buttons {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		max-width: 220px;
+		width: 100%;
+		margin-left: auto;
+	}
+	.discover-bottom .discover-bottom__buttons .sr-button:first-of-type {
+		margin-bottom: 20px;
+	}
+	.discover-bottom .discover-bottom__buttons .sr-button {
+		margin: 0;
 		width: 100%;
 	}
 }
@@ -12832,6 +12873,14 @@ h5 {
 }
 
 @media screen and (max-width: 480px) {
+	#discover .wrapper {
+		/*max-width: calc(100% - 40px);*/
+	}
+	h2.align-center strong, .page-title {
+		display: block;
+		width: 100%;
+		font-size: 26px;
+	}
 	.discover-block .discover-block__info {
 		width: 100%;
 	}
@@ -12841,7 +12890,7 @@ h5 {
 		justify-content: center;
 	}
 	.discover-block .discover-block__element .discover-block__image {
-		width: auto;
+		width: 70%;
 		margin: 0 0 20px 0;
 		position: static;
 	}
