@@ -12381,7 +12381,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   transition: all 0.2s ease;
 }
 .button-medium:hover img {
-  filter: invert(1);
+  filter: invert(1) brightness(0);
 }
 
 .general-advantages__image {
