@@ -12774,7 +12774,7 @@ h5 {
 	align-items: center;
 	padding: 40px 25px 40px 100px;
 	overflow: hidden;
-	width: 40%;
+	width: (50% - 150px);
 	top: 0;
 	background: #fff;
 	position: relative;
