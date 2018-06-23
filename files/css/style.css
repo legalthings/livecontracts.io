@@ -12757,6 +12757,9 @@ h5 {
 	position: absolute;
 	left: 0;
 }
+.discover-block .discover-block__element.disabled .discover-block__image img {
+    filter: grayscale(1.0);
+}
 .discover-block .discover-block__element .discover-block__title {
 	text-transform: uppercase;
 	margin-bottom: 20px;
@@ -12774,7 +12777,7 @@ h5 {
 	align-items: center;
 	padding: 40px 25px 40px 100px;
 	overflow: hidden;
-	width: calc(50% - 150px);
+	width: calc(33.3% - 140px);
 	top: 0;
 	background: #fff;
 	position: relative;
