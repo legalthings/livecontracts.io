@@ -287,25 +287,89 @@
             <div id="what-is-legal" class="purpleSectionBg general-advantages row-section text-light">
                 <div class="wrapper clearfix">
                     <div class="column one-half">
-                        <h3 class="page-title">What is LegalThings One?</h3>
-                        <p>
-                            LegalThings One is a platform for running digitized workflows called <strong>Live Contracts</strong>. A
-                            Live Contract instructs humans and systems on what to do. These instructions are executed off-chain either
-                            manually or automatically. Nodes only facilitate, validate and verify the results.
-                        </p>
-                        <p>
-                            Each Live Contract creates its own LEGALchain, a <strong>miniature private blockchain</strong> that is only
-                            shared with the participants involved. The platform has no master blockchain, instead LEGALchains
-                            anchor on public blockchains like <strong>Waves</strong> or Bitcoin. This approach make the platform
-                            horizontally scalable, sidestepping scalability issues seen in most blockchain technology.
-                        </p>
+                        <h5 class="thin">The strength of trust is as weak as its weakest link</h5>
+
+                        <p>The story of LegalThings starts in 2014. Our document engine mvp progressed into a workflow engine. As time progressed our clients got biggers and the processes more important. Manipulating data we stored could potentially influence lives.</p>
+                        <p>As facilitators, <strong>we became the trusted third party</strong>. We realized that we shouldn't rely on trust alone. Adding layers of bureaucracy certainly might helped, but it would kill productivity.</p>
+                        <p>Cleary we should do better. By employing blockchain technology we could and would. This is how the LegalThings One platform came into existence.</p>
                     </div>
-                    <div class="column one-half last-col">
-                        <img src="img/privatechains.png" alt="LEGALchains">
+                    <div class="column one-third last-col">
+                        <img src="img/about-us.jpg" class="about-us">
                     </div>
+                </div>
+                <div class="wrapper clearfix">
+                    <blockquote class="mission">Our mission is to provide the technology to fight the bureaucracy, fraud and nepotism that plague so many organizations, industries and governments. We believe that privacy and transparency are not mutually exclusive and are willing to prove it.</blockquote>
                 </div>
             </div>
 			<div class="spacer-small"></div>
+            <div class="row-section wrapper"  id="how-workflows">
+                <h2 class="align-center">
+                    <strong>Decentralized Workflow Automation</strong>
+                </h2>
+                <div class="spacer-small"></div>
+
+                <div class="column one-fourth">
+                    <img src="img/workflow-3d.png">
+                </div>
+                <div class="column three-fourth last-col">
+                    <p>In workflow you can define rules and regulation by modeling them as business processes. The great thing about this is that our workflows are understandable by humans and computers.</p>
+                    <p>Instead of running processed through a centralized system, we use the blockchain so each party can participate on the process using their own node. This creates a level playing field, as each participant validates the actions of all others.</p>
+                </div>
+            </div>
+            <div id="architecture">
+                <div class="row-section wrapper">
+                    <div class="clearfix">
+                        <h2 class="align-center">
+                            <strong>Miniature private blockchains</strong>
+                        </h2>
+                        <h5 class="subtitle-2">We’ve studied high scalable distributed applications outside of the blockchain realm and ported that knowledge to the LTO blockchain.</h5>
+                        <div class="spacer-medium"></div>
+
+                        <div class="column two-third">
+                            <div class="column one-half">
+                                <h5>Horizontally scalable</h5>
+                                <p>Nodes hold and handle many workflows simultaneously. Since every workflow has an isolated chain, the node can spin up more VMs to handle bigger loads.</p>
+                            </div>
+                            <div class="column one-half last-col">
+                                <h5>Event validation</h5>
+                                <p>Each event is validated based on the rules and conditions defined in the workflow. Action that are not allowed will be rejected by all other participant.</p>
+                            </div>
+                            <div class="column one-half next-row">
+                                <h5>Peer-to-peer communication</h5>
+                                <p>Nodes will directly send event to each other, rahter than needing to broadcast it to the entire network. This reduces complexity and latency.</p>
+                            </div>
+                            <div class="column one-half next-row last-col">
+                                <h5>Data privacy</h5>
+                                <p>Only the nodes of the participant have access to the private chain. If required by law, the entire workflow with all related data can be destroyed.</p>
+                            </div>
+                        </div>
+                        <div class="column one-third last-col">
+                            <img src="img/lt-sketch-chains.png" class="sketch-chains">
+                        </div>
+                    </div>
+                    <div class="spacer-big"></div>
+
+                    <div class="clearfix">
+                        <h2 class="align-center">
+                            <strong>Inside a node</strong>
+                        </h2>
+                        <div class="spacer-small"></div>
+                        <div class="column one-half">
+                            <img src="img/lt-sketch-architecture.png" class="sketch-architecture">
+                        </div>
+                        <div class="column one-half last-col">
+                            <h5>Microservice architecture</h5>
+                            <p>A node consist of an orchestrated cluster of Docker containers, configured to scale to any size.</p>
+
+                            <h5>Blockchain dedicated to anchoring</h5>
+                            <p>The public chain is optimized for processing very simple transactions at high speed.</p>
+
+                            <h5>Extendable platform</h5>
+                            <p>The infrastructure allows you to extends the logic and integrate your own services. The sky's the limit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row-section wrapper"  id="our-clients">
                 <h2 class="align-center">
                     <strong>Our Clients</strong>
@@ -324,6 +388,7 @@
                     <div id="customer-logos"></div>
                 </div>
             </div>
+            <div class="spacer-small"></div>
 
             <!--<div id="discover" class="text-light">-->
                 <!--<div class="wrapper discover-section  row-section">-->

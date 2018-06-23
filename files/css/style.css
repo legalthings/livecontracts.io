@@ -304,6 +304,14 @@ h5 + h5, h5 + h6, h6 + h5, h6 + h6 {
   background: #9067c6;
 }
 
+h5.thin {
+  font-size: 28px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+  font-weight: 100;
+  line-height: 125%;
+}
+
 .error-404 {
   font-size: 124px;
   line-height: 140px;
@@ -10627,7 +10635,7 @@ html.lock {
 }
 
 .purpleSectionBg {
-  background: url(../../img/flow-bg3b.png) no-repeat 40% center;
+  background: url(../../img/flow-bg3b.png) no-repeat 40% bottom;
 }
 
 #discover {
@@ -10742,6 +10750,12 @@ html.lock {
 
 .column-section.block-button__hover:hover::before {
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .column.next-row {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -12729,6 +12743,72 @@ h5 {
 		font-size: 26px;
 		line-height: 1.5;
 	}
+}
+
+/**
+ * Story
+ */
+
+img.about-us {
+  border-radius: 50%;
+}
+
+blockquote.mission {
+  color: #333 !important;
+  padding: 24px 24px 24px 90px;
+  background: #fff url(../../img/independence_new.png) no-repeat -40px center;
+  background-size: 120px;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.07);
+  font-size: 20px;
+  line-height: 160%;
+  max-width: 700px;
+  margin: 65px auto 0 !important;
+}
+blockquote.mission:before {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  img.about-us {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .general-advantages h5 {
+    max-width: 320px;
+    font-size: 22px;
+  }
+
+  blockquote.mission {
+    font-size: 18px;
+    padding: 24px 24px 24px 55px;
+    background-position: -80px center;
+    line-height: 160%;
+    margin: 55px auto 0!important;
+  }
+}
+
+h2 + .subtitle-2 {
+  text-align: center;
+}
+
+img.sketch-chains {
+  transform: rotate(-5deg);
+  box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+}
+
+#architecture {
+  background: url(../../img/flow-bg4.png) no-repeat calc(100% + 1000px) bottom;
+  background-size: 50%;
+}
+
+#architecture .row-section:first-child {
+  padding-top: 16px;
+}
+
+#architecture .row-section:last-child {
+  padding-bottom: 16px;
 }
 
 /***
