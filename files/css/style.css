@@ -12796,6 +12796,7 @@ h2 + .subtitle-2 {
 img.sketch-chains {
   transform: rotate(-5deg);
   box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);
+  margin-top: -15px;
 }
 
 #architecture {
