@@ -12804,6 +12804,12 @@ img.sketch-chains {
   margin-top: -15px;
 }
 
+@media (min-width: 768px) {
+  img.sketch-architecture {
+    margin-top: 50px;
+  }
+}
+
 #architecture {
   background: url(../../img/flow-bg4.png) no-repeat calc(100% + 1000px) bottom;
   background-size: 50%;

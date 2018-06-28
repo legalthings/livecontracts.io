@@ -312,8 +312,19 @@
                     <img src="img/LT_doodle-2.png" class="sketch-workflows">
                 </div>
                 <div class="column two-third last-col">
-                    <p>In workflow you can define rules and regulation by modeling them as business processes. The great thing about this is that our workflows are understandable by humans and computers.</p>
-                    <p>Instead of running processed through a centralized system, we use the blockchain so each party can participate on the process using their own node. This creates a level playing field, as each participant validates the actions of all others.</p>
+                    <p>
+                      <strong>In workflow you can define rules and regulation by modeling them as business processes. These workflows are understandable by both humans and computers.
+                      Instead of running processes through a centralized system, we use the blockchain so each party can participate using their own node.</strong>
+                    </p>
+                    <p>
+                      Business process models are expressed as deterministic extended finite state machines. This elementry automation model predates the current method of
+                      computing and is far less prone to errors. Only the sequence of events are stored and shared via the blockchain. The deterministic nature of the finite state machine means that
+                      eventhough all parties independently process the events, they'll all come to the same result.
+                    </p>
+                    <p>
+                      The definitions of the workflows as well as related information form a Live Contract. Similar to Smart Contracts, Live Contracts provides a dynamic method for defining logic on the
+                      blockchain. However the purpose of a Live Contract is not to just determine state, but to actively instruct humans and computers about steps in a workflow.
+                    </p>
                 </div>
             </div>
             <div id="architecture">
@@ -336,7 +347,7 @@
                             </div>
                             <div class="column one-half next-row">
                                 <h5>Peer-to-peer communication</h5>
-                                <p>Nodes will directly send event to each other, rahter than needing to broadcast it to the entire network. This reduces complexity and latency.</p>
+                                <p>Nodes will directly send event to each other, rahter than needing to broadcast it to the entire network. This reduces complexity and latency. An additional global blockchain is only used for anchoring.</p>
                             </div>
                             <div class="column one-half next-row last-col">
                                 <h5>Data privacy</h5>
@@ -353,19 +364,33 @@
                         <h2 class="align-center">
                             <strong>Inside a node</strong>
                         </h2>
+                        <h5 class="subtitle-2">A node consist of an orchestrated cluster of Docker containers, configured to scale to any size.</h5>
                         <div class="spacer-small"></div>
                         <div class="column one-half">
                             <img src="img/lt-sketch-architecture.png" class="sketch-architecture">
                         </div>
                         <div class="column one-half last-col">
-                            <h5>Microservice architecture</h5>
-                            <p>A node consist of an orchestrated cluster of Docker containers, configured to scale to any size.</p>
+                            <h5>User Interface</h5>
+                            <p>
+                              LegalThings One makes it easy to connect your own application to the blockchain, as each node expose a JSON REST API.
+                            </p>
 
-                            <h5>Blockchain dedicated to anchoring</h5>
-                            <p>The public chain is optimized for processing very simple transactions at high speed.</p>
+                            <h5>Event Service</h5>
+                            <p>
+                              At the hearth of the application layer is the event service. It handles all incomming events, delegating further processing to
+                              the application services.
+                            </p>
 
-                            <h5>Extendable platform</h5>
-                            <p>The infrastructure allows you to extends the logic and integrate your own services. The sky's the limit.</p>
+                            <h5>Application Services</h5>
+                            <p>
+                              The application layer contains a number of services like the workflow manager designed to perform a specific task. Custom services may be added.
+                            </p>
+
+                            <h5>Message Queue for Private Blockchain</h5>
+                            <p>Decoupling ensures a stable system even in case of bad connectivity or a high load. The message queue is the communication layer for the private chain. Two simple services manage all inbound and outbound events.</p>
+
+                            <h5>Anchor on Public Blockchain</h5>
+                            <p>Our global public blockchain is optimized for storing hashes. Each node indexes all hashes, so they can be easily verified.</p>
                         </div>
                     </div>
                 </div>
