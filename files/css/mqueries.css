@@ -1292,6 +1292,17 @@ Smartphones
 	.purpleSectionBg {
     background: url(../../img/bg-test3.png) no-repeat 40% #8687e6;
 	}
+
+	.hero-img-hdr {
+		display: block;
+		position: relative;
+		height: 150px;
+		background-position: center center !important;
+	}
+
+	.mobile-h3 {
+			font-size: 0.9rem !important;
+	}
 }
 
 @media only screen and (max-width: 580px) {
