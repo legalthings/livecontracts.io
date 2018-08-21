@@ -13499,3 +13499,13 @@ img.sketch-architecture {
   width: 100%;
 }
 
+.hero-img-hdr {
+  position: absolute;
+  background-image: url('../../img/LT-2-FINAL.jpg');
+  background-size: 50% auto !important;
+  background-position: center right !important;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
