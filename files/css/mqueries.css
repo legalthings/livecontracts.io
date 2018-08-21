@@ -1294,11 +1294,12 @@ Smartphones
 	}
 
 	.hero-img-hdr {
-		display: block;
-		position: relative;
-		height: 150px;
-		background-position: center center !important;
-		left: 0;
+    display: block;
+    position: relative;
+    height: 150px;
+    background-position: center !important;
+    left: 0;
+    margin: 0 auto;
 	}
 
 	.mobile-h3 {
