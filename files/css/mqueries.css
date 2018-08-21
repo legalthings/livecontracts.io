@@ -1298,6 +1298,7 @@ Smartphones
 		position: relative;
 		height: 150px;
 		background-position: center center !important;
+		left: 0;
 	}
 
 	.mobile-h3 {
