@@ -15,12 +15,12 @@ var currentCollapsedFaq = '';
 
 $(window).load(function () {
   /* only if you want use mcustom scrollbar */
-  $(".sf-step").mCustomScrollbar({
-    theme: "dark-3",
-    scrollButtons: {
-      enable: true
-    }
-  });
+  // $(".sf-step").mCustomScrollbar({
+  //   theme: "dark-3",
+  //   scrollButtons: {
+  //     enable: true
+  //   }
+  // });
 });
 
 function collapseBounty(id) {
@@ -62,12 +62,13 @@ $(document).ready(function () {
   var isShowingMore = false;
 
   redirectUserToLocalSite();
-  getSaleDate();
+  // getSaleDate();
   bountyWizard();
 
   var files = [
 //    { url: 'http://www.4-traders.com/BLOCKCHAIN-GROUP-CO-LTD-6165838/news/Blockchain-LegalThings-to-digitise-law-on-Blockchain-25681815/', img: '4-traders.png' },
 //    { url: 'https://advocatenblad.nl/2017/10/19/legalthings-one-smart-contracts/', img: 'advocatenblad.png' },
+	{ url: 'https://fd.nl/morgen/1171136/legaltech-minder-maatpak-meer-confectie', img: 'fd.png' },
     { url: 'https://www.businessinsider.com/legalflings-blockchain-based-app-for-sexual-consent-2018-1?international=true&r=US&IR=T', img: 'business_insider.png' },
     { url: 'https://www.usatoday.com/story/tech/columnist/2018/02/20/sexual-consent-apps-set-rules-intimacy-come-their-own-risks/328635002/', img: 'usa_today.png'},
 //    { url: 'https://www.blockchainadvisormag.com/2017/12/16/ethereum-competitor-legalthings-to-digitise-law-on-blockchain-for-the-dutch-district-attorneys-office/', img: 'blockchainadvisor.png'},
@@ -82,13 +83,13 @@ $(document).ready(function () {
     { url: 'https://metro.co.uk/2018/01/10/app-creates-legally-binding-contracts-one-night-stands-prove-sex-consensual-7220206/', img: 'metro.png'},
 //    { url: 'https://www.nrc.nl/nieuws/2018/02/20/seks-eerst-even-je-handtekening-a1592916', img: 'nrc.png'},
 //    { url: 'https://thenextweb.com/apps/2018/01/11/seeking-consent-before-sex-theres-a-blockchain-based-app-for-that', img: 'the_next_web.png'},
-//    { url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
+	{ url: 'https://www.tahawultech.com/cnme/news/legalthings-digitise-law-blockchain/', img: 'tahawul-tech.png'},
 //    { url: 'https://nos.nl/op3/artikel/2211488-nos-op-3-tech-podcast-appcontract-voor-je-seks-hebt.html', img: 'nos.png'},
 //    { url: 'https://www.complex.com/life/2018/01/legalfling-app-consensual-sex', img: 'complex.png'},
-//    { url: 'https://www.jinse.com/blockchain/116008.html', img: 'jinse.png' },
+	{ url: 'https://www.jinse.com/blockchain/116008.html', img: 'jinse.png' },
 //    { url: 'https://www.vogue.nl/cultuur/nieuws/artikel/voor-seks-eerst-een-contract-tekenen-deze-nederlandse-app-maakt-het-mogelijk', img: 'vogue.png' },
     { url: 'https://www.artificiallawyer.com/2018/01/10/legal-fling-blockchain-contracts-for-legally-binding-consensual-encounters/', img: 'artificial_lawyer.png' },
-//    { url: 'http://link.law.com/public/11641586', img: 'law.png' }
+    { url: 'http://link.law.com/public/11641586', img: 'law.png' }
   ];
 
   $('#media-logos').append('<div class="media-slider">');
@@ -104,8 +105,21 @@ $(document).ready(function () {
   var files = [
     { url: 'https://merin.nl/en/', img: 'merin_logo_black.png' },
     { url: 'https://www.dekra.com/en-us/home/', img: 'dekra_logo_2.png' },
-    { url: 'http://www.cloud9music.nl/', img: 'cloud9_logo_2.png' },
+    { url: 'https://www.cloud9music.nl/', img: 'cloud9_logo_2.png' },
     { url: 'https://www.ilent.nl/', img: 'government_of_the_netherlands_2.jpg' },
+    { url: 'https://www.stenarealty.com', img: 'stena.png' },
+    { url: 'https://www.heineken.com', img: 'heineken.png' },
+    { url: 'https://www.cemex.com', img: 'cemex.png' },
+    { url: 'https://www.generali.com', img: 'generali.png' },
+    { url: 'https://www.ovam.be', img: 'ovam.jpg' },
+    { url: 'https://www.avr.nl', img: 'avr.jpg' },
+    { url: 'https://www.indaver.be/', img: 'indaver.jpg' },
+    { url: 'https://www.ah.nl/over-ah', img: 'ah.png' },
+    { url: 'https://cms.law', img: 'cms.png' },
+    { url: 'https://www.m7re.eu', img: 'mseven.jpg' },
+    { url: 'https://www2.deloitte.com/', img: 'deloitte.png' },
+    { url: 'https://houseafrica.io', img: 'houseafrica.jpg' },
+
   ];
 
   $('#customer-logos').append('<div class="media-slider">');
@@ -223,12 +237,12 @@ $(document).ready(function () {
   // populateExploreBlock();
 	salesAccordion();
   manipulatingHeader();
-  loadTokens();
-  wizardInit();
+  // loadTokens();
+  // wizardInit();
   closePopup();
   scrollToBlock();
   bindingWizardsTabs();
-  initSubscribeMailChimp();
+  // initSubscribeMailChimp();
   timelineInit();
   initWalletChoice();
   createWavesWallet();
@@ -1162,7 +1176,7 @@ function manipulatingHeader() {
     header.addClass('custom-visible');
     $(".sticky-bottom").addClass('visible');
   } else {
-    header.removeClass('custom-visible'); 
+    header.removeClass('custom-visible');
     $(".sticky-bottom").removeClass('visible');
   }
 
