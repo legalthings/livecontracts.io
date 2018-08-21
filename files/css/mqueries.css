@@ -1288,6 +1288,10 @@ Smartphones
 		width: calc(33.3% - 14px) !important;
 		margin: 7px !important;
 	}
+
+	.purpleSectionBg {
+    background: url(../../img/bg-test3.png) no-repeat 40% #8687e6;
+	}
 }
 
 @media only screen and (max-width: 580px) {
