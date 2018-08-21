@@ -83,11 +83,14 @@ gulp.task('compress-js', function () {
         
         'files/js/d3.js',
         
-        //newly commented 05.03 end
+        //newly commented 05.03 
         
         'files/js/custom.js',
         'files/js/billboard.js',
-        'files/js/chart.js'
+        'files/js/chart.js',
+        
+        //newly commented 05.03 end
+        'files/js/index.js'
       ])
       .pipe(concat('compress.js'))
       .pipe(gulp.dest('./files/js'));
