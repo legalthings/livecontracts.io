@@ -99,7 +99,7 @@ $(document).ready(function () {
       $('#media-logos .media-slider').append('<br/>');
     }
 
-    $('#media-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
+    $('#media-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 100px;filter: grayscale(100%)" src="img/media/' + files[i].img + '"></a>');
   }
 
   var files = [
@@ -118,7 +118,7 @@ $(document).ready(function () {
     { url: 'https://cms.law', img: 'cms.png' },
     { url: 'https://www.m7re.eu', img: 'mseven.jpg' },
     { url: 'https://www2.deloitte.com/', img: 'deloitte.png' },
-    { url: 'https://houseafrica.io', img: 'houseafrica.jpg' },
+    /*{ url: 'https://houseafrica.io', img: 'houseafrica.jpg' },*/
 
   ];
 
@@ -129,7 +129,7 @@ $(document).ready(function () {
       $('#customer-logos .media-slider').append('<br/>');
     }
 
-    $('#customer-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 16px;max-width: 150px;filter: grayscale(100%)" src="img/customers/' + files[i].img + '"></a>');
+    $('#customer-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 14px;max-width: 50px;filter: grayscale(100%)" src="img/customers/' + files[i].img + '"></a>');
   }
 
 	collapseFaq('about-lto');
@@ -652,16 +652,16 @@ function getSaleDate() {
           today.getTime() < saleDate.endDate.getTime()) {
         enableBuyButton();
       } else {
-        // enableSubscribeButton();
+        enableSubscribeButton();
       }
     },
     error: function () {
-      // enableSubscribeButton();
+      enableSubscribeButton();
     }
   });
 }
 
-/*function enableSubscribeButton() {
+function enableSubscribeButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Se inscrever' : 'Subscribe now';
   $('.lc-primary-action').text(btnText).addClass('js-open-wishlistPopup');
 
@@ -689,7 +689,7 @@ function enableBuyButton() {
     $('.popup-backdrop').removeClass('popup-hide')
     $('.popup').removeClass('popup-hide')
   });
-}*/
+}
 
 function getRates() {
   $('#rates-message').text('Please wait while we fetch the current rates...');
