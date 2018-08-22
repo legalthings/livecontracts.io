@@ -12601,6 +12601,10 @@ html body #intercom-container .intercom-launcher-badge-frame {
   padding-left: 25px;
 }
 
+.button-small.join-telegram {
+  padding-left: 25px;
+}
+
 .button-medium img {
   height: 1.5em;
   vertical-align: -7px;
@@ -12621,6 +12625,17 @@ html body #intercom-container .intercom-launcher-badge-frame {
 }
 
 .button-medium-hero:hover img {
+  filter: invert(0) brightness(1);
+}
+
+.button-small-hero img {
+  height: 1.5em;
+  vertical-align: -7px;
+  margin-right: 15px;
+  transition: all 0.2s ease;
+}
+
+.button-small-hero:hover img {
   filter: invert(0) brightness(1);
 }
 
@@ -13510,3 +13525,144 @@ img.sketch-architecture {
   top: 0;
   left: 50%;
 }
+
+/*** New Button Styles ***/
+.button-container {
+  display: inline-block;
+  margin: 10px 10px;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 2px;
+  height: 45px;
+  width: 200px;
+  -webkit-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+.button-container .flipper {
+  transition: all .5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.button-container .button-2 {
+  height: 45px;
+  width: 200px;
+  border-radius: 3px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+  box-shadow: 1px 2px 4px -1px rgba(60, 60, 60, 0.64);
+}
+.button-container .button-2 i.fa {
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  text-shadow: .5px 1px 2px #3c3c3c;
+}
+.button-container .button-2.front {
+  z-index: 10;
+}
+.button-container .button-2.back {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+/* -------------------------------- 
+			Slide button
+-------------------------------- */
+.slider i {
+  transition: all .3s ease-in-out;
+}
+.slider i:before {
+  transition: all .3s ease-in-out;
+}
+.slider i:after {
+  font-family: "Lato", sans-serif;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: none;
+  content: 'Github';
+  position: absolute;
+  opacity: 0;
+  top: 2.5px;
+  transition: all .3s ease-in-out;
+}
+
+/*** Horizontal Slide ***/
+.button-slide-horizontal .button-2 {
+  background-image: linear-gradient(90deg, #77a2f8, #9a69d1);
+}
+.button-slide-horizontal i {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease-in-out;
+}
+.button-slide-horizontal i:before {
+  transition: all .3s ease-in-out;
+}
+.button-slide-horizontal:hover i {
+  padding-right: 100px;
+}
+.button-slide-horizontal:hover i:before {
+  opacity: 0;
+}
+.button-slide-horizontal:hover i:after {
+  opacity: 1;
+}
+
+/*** Vertical Slide ***/
+.button-slide-vertical {
+  overflow: hidden;
+  height: 45px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.button-slide-vertical .button-2 {
+  background-image: linear-gradient(90deg, #77a2f8, #9a69d1);
+  overflow: hidden;
+  height: 45px;
+}
+
+.button-slide-vertical i {
+  position: relative;
+  margin: 0 !important;
+  top: 10px;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+  text-align: center;
+}
+
+.button-slide-vertical i.back {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: translateY(30px);
+  opacity: 0;
+  text-align: center;
+}
+
+.button-slide-vertical:hover i.front {
+  transform: translateY(-30px);
+  opacity: 0;
+  text-align: center;
+}
+.button-slide-vertical:hover i.back {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+

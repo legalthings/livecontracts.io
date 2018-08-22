@@ -13,8 +13,8 @@
         <!-- CSS -->
         <!--<link rel="stylesheet" id="default-style-css" href="files/css/style.css" type="text/css" media="all"/>-->
         <!--<link rel="stylesheet" id="fontawesome-style-css" href="files/css/font-awesome.min.css" type="text/css" media="all"/>-->
-        <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/>
-        <link rel="stylesheet" id="ionic-icons-style-css" href="files/css/icomoon.css" type="text/css" media="all"/>
+        <!--link rel="stylesheet" id="ionic-icons-style-css" href="files/css/ionicons.css" type="text/css" media="all"/-->
+        <!--link rel="stylesheet" id="ionic-icons-style-css" href="files/css/icomoon.css" type="text/css" media="all"/-->
         <!--<link rel="stylesheet" id="revolution-slider-main-css" href="files/revolution/css/settings.css" type="text/css"-->
         <!--media="all"-->
         <!--/>-->
@@ -69,8 +69,7 @@
             gtag('config', 'UA-62115237-2');
         </script>
         <!-- Intercom -->
-        <script>
-        /*
+        <!--script>
         var alignment = 'right';
 
         // if (window.innerWidth < 599) {
@@ -97,8 +96,7 @@
         s.async = true;
         s.src = 'https://widget.intercom.io/widget/g247sp2q'; var x = d.getElementsByTagName('script')[0];
         x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })()
-        */
-        </script>
+        </script!-->
     </head>
 
     <body>
@@ -135,7 +133,7 @@
                                         <a href="https://app.livecontracts.io" target="ltodemo">Demo</a>
                                       </li> -->
                                     <li class="">
-                                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="lc-primary-action join-telegram">
+                                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class=" join-telegram">
                                             Join our Telegram
                                         </a>
                                     </li>
@@ -251,13 +249,16 @@
                     <div class="hero-img-hdr"></div>
                     <div class="spacer-small"></div>
                     <p class="hero__buttons">
-                        <a href="https://playground.legalthings.one" class="lc-primary-action sr-button button-1 button-medium circled">
+                        <a href="https://playground.legalthings.one" class="sr-button button-1 button-small circled">
                             View our Playground
                         </a>
-                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="sr-button button-1 button-medium-hero circled join-telegram">
+                        <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="sr-button button-1 button-small button-small-hero circled join-telegram">
 	                        <img src="img/telegram-logo_purple.svg">
                             Join us
                         </a>
+                        <a class="sr-button button-1 button-small button-small-hero circled" id="open-popup">
+	                        Subscribe now
+	                     </a>
                         <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
                                                     Demo
                                             </a> -->
@@ -714,15 +715,40 @@ LegalThings One helps your organization drive transparency, efficiency and value
 					        </div>
 				        </div>
 				        <div class="discover-bottom__buttons">
-                  <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="lc-primary-action sr-button button-1 button-medium circled join-telegram"><img src="img/telegram-logo_purple.svg">
+                  <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" class="sr-button button-1 button-medium circled join-telegram"><img src="img/telegram-logo_purple.svg">
                       Join our Telegram
                   </a>
 				        </div>
 			        </div>
 		        </div>
 	        </div>
+	        
+            <div class="row-section wrapper"  id="clients">
+                <h2 class="align-center">
+                    <strong>Our Clients</strong>
+                </h2>
+                <div class="spacer-small"></div>
 
-	        <!--<div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg">-->
+                <div class="column one-half">
+                   
+                   <div id="customer-logos"></div>
+                   
+                </div>
+                <div class="column one-half last-col">
+	                <div class="spacer-mini"></div>
+                    <p>
+                    LegalThings has been servicing clients from various industries since 2014. For over a year our focus has been on real-world decentralized workflows on blockchain for multinationals, governments and standalone projects. 
+                    </p>
+                    <p>
+	               LegalThings One helps your organization drive transparency and efficiency, while maintaining legal compliance and cutting down operational costs.
+                    </p>
+                    <p><strong>
+	                Want to learn how we can help you kick-start your organizational blockchain journey?
+                    </strong></p>        
+                </div>
+            </div>	        
+
+	        <!--div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg"></div!-->
 
             <div class="row-section wrapper" id="in-the-press">
                 <h2 class="align-center">
@@ -741,16 +767,26 @@ LegalThings One helps your organization drive transparency, efficiency and value
         <!-- /#blogContent-->
 
         <div class="discover-bottom__buttons align-center">
-					        <a href="https://medium.com/legalthingsone" class="lc-primary-action sr-button button-1 button-medium circled join-telegram">
+					        <a href="https://medium.com/legalthingsone" class="sr-button button-1 button-medium circled join-telegram">
                       <img src="img/medium-logo_purple.svg">
                       Read more
                   </a>
+                  </div>
+				<!--div class="align-center">
+               	  <div class="button-container button-slide-vertical">
+				 	<div class="slider-vertical">
+		            <a href="https://medium.com/legalthingsone"  class="button">
+		              	<i class="fa fa-medium front"></i>
+		              	<i class="back">Read more</i>
+		            </a>
+					</div>
+	    		</div>
+		</div!-->
                   <div class="spacer-mini"></div>
             <div id="media-logos"></div>
                 <div class="media-slider"></div>
 
         <!--div class="align center text-center sr-button button-1 button-medium circled"><a class="btn btn-dark" id="loadBlogPosts" href="https://medium.com/legalthingsone">View All<span class="fa fa-angle-double-right"></span></a></div>!-->
-    </div>
     <!-- /.container-->
 </section>
 </div>
@@ -1320,12 +1356,15 @@ LegalThings One helps your organization drive transparency, efficiency and value
             </footer>
             <!-- FOOTER -->
         </div>
+        
+    <!-- END Subscribe now -->
+    
         <!-- SCRIPTS -->
         <script src="files/dist/compress.js"></script>
         <!--script src="files/js/index.js"></script!-->
         <script src="https://checkout.stripe.com/checkout.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.0/parsley.min.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
         <!-- This needs to be loaded from their site, not locally -->
         <!--<script src="files/js/jquery-2.1.4.min.js"></script>-->
@@ -1351,7 +1390,24 @@ LegalThings One helps your organization drive transparency, efficiency and value
         <!--<script src="files/js/step-form-wizard.min.js"></script>-->
         <!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
         <!-- SCRIPTS -->
+        
+<script>
+    var chimpPopupLoader = document.createElement("script");
+    chimpPopupLoader.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js';
+    chimpPopupLoader.setAttribute('data-dojo-config', 'usePlainJson: true, isDebug: false');
 
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1508bdb96b4379a9aeb07c6e8","lid":"a635ea68a1"}) })
+        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+        document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+    };
+
+        
+    jQuery(window).on("load", function() {
+        document.body.appendChild(chimpPopupLoader);
+        jQuery("#newsletter-signup--popup").click(function () { showMailingPopUp() });
+    });
+</script>
  <script>
     $(document).ready(function () {
       $('.join-telegram').click(function(e) {
@@ -1375,7 +1431,5 @@ LegalThings One helps your organization drive transparency, efficiency and value
         twq('track','PageView');
     </script>
     <!-- End Twitter universal website tag code -->
-
-
     </body>
 </html>
