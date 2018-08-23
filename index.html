@@ -44,19 +44,6 @@
         
         <!-- Popup script -->
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-<script type="text/javascript">
-  function showMailingPopUp() {
-    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1508bdb96b4379a9aeb07c6e8","lid":"a635ea68a1"})})
-        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-        document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';              
-  };
-
-  $(function() {
-    $(".open-popup").on('click', function() { 
-      showMailingPopUp();
-    });
-  });
-</script>
 		<!-- End popup script -->
 		
         <!-- Google Tag Manager -->
@@ -1367,6 +1354,20 @@ LegalThings One helps your organization drive transparency, efficiency and value
       });
     });
   </script>
+  
+  <script type="text/javascript">
+  function showMailingPopUp() {
+    require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1508bdb96b4379a9aeb07c6e8","lid":"a635ea68a1"})})
+        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
+        document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';              
+  };
+
+  $(function() {
+    $(".open-popup").on('click', function() { 
+      showMailingPopUp();
+    });
+  });
+</script>
 
     <!-- Twitter universal website tag code -->
     <script>
