@@ -90,7 +90,8 @@ gulp.task('compress-js', function () {
         'files/js/chart.js',
         
         //newly commented 05.03 end
-        'files/js/index.js'
+        'files/js/index.js',
+        'files/js/mailchimp.js'
       ])
       .pipe(concat('compress.js'))
       .pipe(gulp.dest('./files/js'));
