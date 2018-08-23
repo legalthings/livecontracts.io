@@ -663,7 +663,7 @@ function getSaleDate() {
 
 function enableSubscribeButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Se inscrever' : 'Subscribe now';
-  $('.lto-subscribe').text(btnText).addClass('js-open-wishlistPopup');
+  $('.lc-primary-action').text(btnText).addClass('js-open-wishlistPopup');
 
   $('.js-open-wishlistPopup').on('click', function (e) {
     e.preventDefault();
@@ -679,7 +679,7 @@ function enableSubscribeButton() {
 
 function enableBuyButton() {
   const btnText = userLang.indexOf('pt') > -1 ? 'Compre tokens LTO' : 'Buy LTO Tokens';
-  $('.lto-subscribe').text(btnText).addClass('js-open-wizard');
+  $('.lc-primary-action').text(btnText).addClass('js-open-wizard');
   $('.count-down-wrap').removeClass('hidden');
 
   $(".js-open-wizard").on('click', function (e) {
