@@ -64,7 +64,7 @@ gulp.task('compress-js', function () {
         // 'files/revolution/js/extensions/revolution.extension.navigation.min.js',
         //
         // 'files/revolution/js/extensions/revolution.extension.video.min.js',
-        // 'files/revolution/js/extensions/revolution.extension.actions.min.js',
+        // 'files/revolution/jss/extensions/revolution.extension.actions.min.js',
         // 'files/js/tweenMax.js',
         'files/js/jquery.backgroundparallax.min.js',
         'files/js/jquery.isotope.min.js',
