@@ -41,7 +41,18 @@
         <link rel="shortcut icon" href="img/favicon.png" />
         <!-- DOCUMENT TITLE -->
         <title>LegalThings One &middot; Blockchain for decentralized workflows</title>
-
+        
+        <!-- Popup script -->
+ <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+ <script>
+ function showMailingPopUp() {
+     require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1508bdb96b4379a9aeb07c6e8","lid":"a635ea68a1"}) })
+     document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+ };
+ document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+ </script>
+		<!-- End popup script -->
+		
         <!-- Google Tag Manager -->
         <script>(function (w, d, s, l, i) {
                 w[l] = w[l] || [];
@@ -68,6 +79,7 @@
             gtag('js', new Date());
             gtag('config', 'UA-62115237-2');
         </script>
+        
         <!-- Intercom -->
         <!--script>
         var alignment = 'right';
@@ -99,9 +111,16 @@
         </script!-->
     </head>
 
-    <body>
+    <body data-gr-c-s-loaded="true" class="page-is-loaded">
+	                                   
         <!-- PAGE CONTENT -->
         <div id="page-content">
+		<noscript>
+			<div class="noscript">
+				<p>This site requires Javascript to work, please enable Javascript in your browser or use a browser with Javascript support.
+      		    <br> See <a href="https://www.enable-javascript.com/">here</a> for help.</p>
+	  		</div>
+	  	</noscript>
             <!-- HEADER -->
             <header id="header" class="header-bordered header-transparent transparent-light">
                 <div class="header-inner clearfix">
@@ -169,7 +188,7 @@
                       </ul>
                     </div>
                     <p><span>Public Sale - Q2 2018</span><span id="bottom_countdown"></span></p>
-                    <a class="lc-primary-action sr-button inline button-1-ghost button-medium circled">Register now</a>
+                    <a class="lto-subscribe sr-button inline button-1-ghost button-medium circled">Register now</a>
                     </div>
 
                   </div>
@@ -256,9 +275,10 @@
 	                        <img src="img/telegram-logo_purple.svg">
                             Join us
                         </a>
-                        <!--a class="sr-button button-1 button-small button-small-hero circled" id="open-popup">
-	                        Subscribe now
-	                     </a!-->
+                        <a class="sr-button button-1 button-small button-small-hero circled" href="#" id="open-mc-popup"  onclick="showMailingPopUp(); return false;">
+Subscribe now
+</a>
+
                         <!-- <a href="https://app.livecontracts.io" target="ltodemo" class="sr-button button-1  button-medium circled">
                                                     Demo
                                             </a> -->
@@ -554,110 +574,31 @@ LegalThings One helps your organization drive transparency, efficiency and value
              <div id="customer-logos"></div>
                 </div>
             </div-->
+            <hr class="pretty-hr">
             <div class="spacer-small"></div>
+            <div class="row-section wrapper"  id="economics">
+                <h2 class="align-center">
+                    <strong>Economic model</strong>
+                </h2>
+                <div class="spacer-small"></div>
 
-            <!--<div id="discover" class="text-light">-->
-                <!--<div class="wrapper discover-section  row-section">-->
-                    <!--<h2 class="align-center">-->
-                        <!--<strong>Discover LegalThings One</strong>-->
-                    <!--</h2>-->
-                    <!--<div class="spacer-medium"></div>-->
-
-                    <!--<div id="blog-grid" class="isotope-grid blog-container style-column-3 fitrows">-->
-                        <!--<div class="isotope-item blog-item">-->
-                            <!--<div class="blog-media">-->
-                                <!--<a href="https://docs.livecontracts.io/"-->
-                                   <!--target="_blank" class="text-light blog-image">-->
-                                    <!--&lt;!&ndash; <img src="./img/explore/checkout-summery.png"> &ndash;&gt;-->
-                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-buying"></i>&ndash;&gt;-->
-                                    <!--<img src="img/live_contract.png" class="blog-media__icon" alt="">-->
-
-                                    <!--&lt;!&ndash;<img src="img/buy_tokens.png" class="blog-media__icon" alt="">&ndash;&gt;-->
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="blog-desc align-center">-->
-                                <!--<div class="blog-headline">-->
-                                    <!--<h5 class="post-name">-->
-                                        <!--<a-->
-                                            <!--href="https://docs.livecontracts.io/"-->
-                                            <!--target="_blank">-->
-                                            <!--Technical specifications-->
-                                        <!--</a>-->
-                                    <!--</h5>-->
-                                <!--</div>-->
-                                <!--<p>-->
-                                    <!--Ready to start building? The specifications contain the JSON schemas of all components of Live-->
-                                    <!--Contracts, as well as other implementation details like encryption.-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="isotope-item blog-item">-->
-                            <!--<div class="blog-media">-->
-                                <!--<a-->
-                                    <!--href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"-->
-                                    <!--target="_blank" class="text-light blog-image">-->
-                                    <!--&lt;!&ndash; <img src="./img/explore/livecontracts-whitepaper.png"> &ndash;&gt;-->
-                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-whitepaper"></i>&ndash;&gt;-->
-                                    <!--<img src="img/technical_whitepaper.png" class="blog-media__icon" alt="">-->
-
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="blog-desc align-center">-->
-                                <!--<div class="blog-headline">-->
-                                    <!--<h5 class="post-name">-->
-                                        <!--<a-->
-                                            <!--href="https://docs.google.com/document/d/1hQTYt5UdnZg5dGZ65C7wqor4Yj75DcZy65SfQOE4Ab8/edit#heading=h.k4gnv5l15uvi"-->
-                                            <!--target="_blank">-->
-                                            <!--Technical Whitepaper (DRAFT)-->
-                                        <!--</a>-->
-                                    <!--</h5>-->
-                                <!--</div>-->
-                                <!--<p>-->
-                                    <!--The LegalThings One Whitepaper gives an in-depth description-->
-                                    <!--of the technical concepts behinds LegalThings One. Reading this-->
-                                    <!--paper requires some knowledge of computer engineering.-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="isotope-item blog-item">-->
-                            <!--<div class="blog-media">-->
-                                <!--<a href="documents/contract-as-automaton.pdf" target="_blank" class="text-light blog-image">-->
-                                    <!--&lt;!&ndash; <img src="./img/explore/contract-as-automaton.png"> &ndash;&gt;-->
-                                    <!--&lt;!&ndash;<i class="blog-media__icon icon-contract"></i>&ndash;&gt;-->
-
-                                    <!--<img src="img/codex.png" class="blog-media__icon" alt="">-->
-
-                                <!--</a>-->
-                            <!--</div>-->
-                            <!--<div class="blog-desc align-center">-->
-                                <!--<div class="blog-headline">-->
-                                    <!--<h5 class="post-name">-->
-                                        <!--<a href="./documents/contract-as-automaton.pdf" target="_blank">-->
-                                            <!--Research paper - OFR-->
-                                        <!--</a>-->
-                                    <!--</h5>-->
-                                <!--</div>-->
-                                <!--<p>-->
-                                    <!--"We show that the fundamental legal structure of a well-written-->
-                                    <!--financial contract follows a state-transition logic that can-->
-                                    <!--be formalized mathematically as a finite-state machine (also-->
-                                    <!--known as a finite state automaton)."-->
-                                    <!--<br><em>— Mark D. Flood and Oliver R. Goodenough</em>-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-
-                    <!--<div class="spacer-small"></div>-->
-                    <!--<div class="align-center">-->
-                        <!--<a href="https://medium.com/legalthingsone" class="sr-button discover-special inline button-1 button-medium circled"-->
-                           <!--target="_blank">-->
-                            <!--Read our articles-->
-                        <!--</a>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+                <div class="column one-half align-center">
+	               <div class="resp-container">
+                  <iframe class="resp-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vT_dxnXk8Dgj2VHY2NKC5TqDYHSMoIH0D7T0pjAj7ygGGIxMJBQjagDOc_-adw8CW86Qp0miQ3c3blK/embed?start=false&loop=true&delayms=5000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+	            </div>
+                <div class="column one-half last-col">
+	                <div class="spacer-small"></div>
+                    <p>
+                      LegalThings One economic model allows clients and partners to run their solutions <strong>net zero</strong>, rather than constantly injecting money for services and paying monthly fees.
+                    </p>
+                    <p>
+                     We developed a new Leased Proof of Importance consensus algorithm, a reward model derived from NEM and Waves aimed toward improved decentralization. This variation on PoS introduces a raffle factor that skews the probability of validator rewards, favoring active <strong>‘important’</strong> network users. 
+                    </p>
+                </div>
+            </div>
+            
+            <div class="spacer-small"></div>
 	        <div id="discover" class="">
 		        <div class="wrapper">
 			        <h2 class="align-center">
@@ -725,7 +666,7 @@ LegalThings One helps your organization drive transparency, efficiency and value
 	        
             <div class="row-section wrapper"  id="clients">
                 <h2 class="align-center">
-                    <strong>Our Clients</strong>
+                    <strong>Our clients</strong>
                 </h2>
                 <div class="spacer-small"></div>
 
@@ -743,17 +684,20 @@ LegalThings One helps your organization drive transparency, efficiency and value
 	               LegalThings One helps your organization drive transparency and efficiency, while maintaining legal compliance and cutting down operational costs.
                     </p>
                     <p><strong>
-	                Want to learn how we can help you kick-start your organizational blockchain journey? <a href="https://t.me/joinchat/AJWQTUDKtDlsuGHVFb40eQ" target="_blank">Get in touch with us!</a>
+	                Want to learn how we can help you kick-start your organizational blockchain journey? <a href="mailto:support@legalthings.io" target="_blank">Get in touch with us!</a>
                     </strong></p>        
                 </div>
             </div>	        
-
+<hr class="pretty-hr">
 	        <!--div class="purple-divider fullwidth-section text-light top-quotes-block parallax-section" data-parallax-image="img/quote_pic.jpg"></div!-->
 
             <div class="row-section wrapper" id="in-the-press">
                 <h2 class="align-center">
-                    <strong>In the Press</strong>
+                    <strong>In the press</strong>
                 </h2>
+              <div class="spacer-mini"></div>
+            <div id="media-logos"></div>
+                <div class="media-slider"></div>
                 <div class="spacer-small"></div>
 
   <!-- Medium section-->
@@ -782,9 +726,6 @@ LegalThings One helps your organization drive transparency, efficiency and value
 					</div>
 	    		</div>
 		</div!-->
-                  <div class="spacer-mini"></div>
-            <div id="media-logos"></div>
-                <div class="media-slider"></div>
 
         <!--div class="align center text-center sr-button button-1 button-medium circled"><a class="btn btn-dark" id="loadBlogPosts" href="https://medium.com/legalthingsone">View All<span class="fa fa-angle-double-right"></span></a></div>!-->
     <!-- /.container-->
@@ -1406,24 +1347,8 @@ LegalThings One helps your organization drive transparency, efficiency and value
         <!--<script src="files/js/step-form-wizard.min.js"></script>-->
         <!--<script src="files/js/jquery.mCustomScrollbar.concat.min.js"></script>-->
         <!-- SCRIPTS -->
-        
-<script>
-    var chimpPopupLoader = document.createElement("script");
-    chimpPopupLoader.src = '//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js';
-    chimpPopupLoader.setAttribute('data-dojo-config', 'usePlainJson: true, isDebug: false');
 
-    function showMailingPopUp() {
-        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"1508bdb96b4379a9aeb07c6e8","lid":"a635ea68a1"}) })
-        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-        document.cookie = 'MCPopupSubscribed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
-    };
 
-        
-    jQuery(window).on("load", function() {
-        document.body.appendChild(chimpPopupLoader);
-        jQuery("#newsletter-signup--popup").click(function () { showMailingPopUp() });
-    });
-</script>
  <script>
     $(document).ready(function () {
       $('.join-telegram').click(function(e) {
