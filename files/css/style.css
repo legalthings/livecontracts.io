@@ -9196,7 +9196,7 @@ header:not(.header-transparent) + #page-body .fullwidth-section.fullheight:first
 }
 
 #hero .sr-button, .parallax-section .sr-button {
-  margin-right: 15px;
+  margin-right: 5px;
   background: transparent;
   color: #9867CF;
   border-color: #9867CF;
@@ -13056,18 +13056,25 @@ img.sketch-workflows {
 img.sketch-chains {
   /*box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.3);*/
   margin-top: -15px;
-  margin-left: 20px;
+  margin-left: 12%;
 
 }
+
+@media only screen and (max-width: 768px){
+  img.sketch-chains {
+	  margin-left: 0px;
+	  }
+ }
 
 img.sketch-architecture {
 	transform: rotate(-3deg);
     margin-left: 10%;
   }
 
-@media (min-width: 768px) {
+@media only screen and (max-width: 768px){
   img.sketch-architecture {
     margin-top: 50px;
+    margin-left: 0%;
   }
 }
 
