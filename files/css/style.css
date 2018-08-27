@@ -12973,6 +12973,7 @@ h5 {
   #hero #page-title .info h2 {
     font-size: 30px;
     line-height: 1.5;
+    padding-top: 0px;
   }
   #hero #page-title .info .subtitle-1 {
     font-size: 22px;
@@ -12984,6 +12985,7 @@ h5 {
 	#hero #page-title .info h2 {
 		font-size: 26px;
 		line-height: 1.5;
+		padding-top: 150px;
 	}
 }
 
@@ -13532,6 +13534,20 @@ img.sketch-architecture {
   height: 100%;
   top: 0;
   left: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+.hero-img-hdr {
+	display: none;
+	background-image: url('../../img/LT-2-FINAL.jpg');
+	background-size: 100% auto !important;
+	background-position: center left!important;
+	background-repeat: no-repeat;
+	width: 60%;
+	height: 100%;
+	top: 0;
+	left: 50%;
+}
 }
 
 /*** New Button Styles ***/
