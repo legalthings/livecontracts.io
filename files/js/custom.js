@@ -108,7 +108,7 @@ $(document).ready(function () {
     { url: 'https://www.cloud9music.nl/', img: 'cloud9_logo_2.png' },
     { url: 'https://www.ilent.nl/', img: 'government_of_the_netherlands_2.jpg' },
     { url: 'https://www.stenarealty.com', img: 'stena.png' },
-    { url: 'https://www.heineken.com', img: 'heineken.png' },
+    { url: 'https://www.taxtimbre.com', img: 'taxtimbre.png' },
     { url: 'https://www.cemex.com', img: 'cemex.png' },
     { url: 'https://www.generali.com', img: 'generali.png' },
     { url: 'https://www.ovam.be', img: 'ovam.jpg' },
