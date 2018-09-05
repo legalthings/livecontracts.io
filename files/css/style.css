@@ -10871,7 +10871,7 @@ background: -webkit-linear-gradient(left, #77a2f8 0%,#9867cf 100%); no-repeat ca
 background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(80% - 100px) center;
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
   position: relative;*/
-  background: url(../../img/bg-test4.png) no-repeat 50% top;
+  background: url(../../img/bg-test4.png) no-repeat 40% top;
   background-position-y: -60px;
   }
 
