@@ -117,7 +117,7 @@ $(document).ready(function () {
     { url: 'https://www.ah.nl/over-ah', img: 'ah.png' },
     { url: 'https://cms.law', img: 'cms.png' },
     { url: 'https://www.m7re.eu', img: 'mseven.jpg' },
-    { url: 'https://houseafrica.io', img: 'houseafrica.jpg' },
+    /*{ url: 'https://houseafrica.io', img: 'houseafrica.jpg' },*/
     /*{ url: 'https://www2.deloitte.com/', img: 'deloitte.png' },*/
 
   ];
