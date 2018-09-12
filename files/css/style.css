@@ -1316,7 +1316,7 @@ header #logo #scroll-logo ~ img {
 
 
 #menu {
-  position: static;
+  position: fixed;
   z-index: 10;
 }
 
@@ -1355,7 +1355,7 @@ nav#main-nav > ul > li > a {
   height: 30px;
   line-height: 30px;
   padding: 30px 1px;
-  position: relative;
+  position: fixed;
 }
 
 #menu.menu-is-open nav#main-nav ul li a:not(.button-style):hover, header.header-style-vertical #menu nav#main-nav ul li a:not(.button-style):hover {
@@ -10858,13 +10858,33 @@ html.lock {
   margin-left: 30px;
 }
 
-.purpleSection {
-  background: #231d39;
-}
 
 .purpleSectionBg {
 background: url(../../img/bg/Gradient-1.svg) no-repeat 40% bottom;
+background-size: 100% 100%;
 }
+
+@media only screen and (max-width: 768px){
+	.purpleSectionBg {
+	background: none;
+    background-color: #8688E7;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.purpleSectionBg {
+	background: none;
+    background-color: #8688E7;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.purpleSectionBg {
+	background: none;
+    background-color: #8688E7;
+	}
+}
+
 
 .whySection {
   /*background-image: linear-gradient(to right, #8092EE, #8D7CDF);*/
@@ -10872,8 +10892,9 @@ background: url(../../img/bg/Gradient-1.svg) no-repeat 40% bottom;
 }
 
 .whySectionBg {
-background: url(../../img/bg/gradient-1.svg) no-repeat 50% bottom;
+background: url(../../img/bg/Gradient-1.svg) no-repeat 50% bottom;
 min-height: 650px;
+background-size: 100% 100%;
 }
 
 /*@media (max-width: 600px) {
@@ -10886,8 +10907,8 @@ min-height: 650px;
 
 @media only screen and (max-width: 768px){
 	.whySectionBg {
-		background-color: #8688E7!important;
-		
+	background: none;
+    background-color: #8688E7;
 	}
 }
 
@@ -10904,14 +10925,15 @@ background: -webkit-linear-gradient(left, #77a2f8 0%,#9867cf 100%); no-repeat ca
 background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(80% - 100px) center;
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
   position: relative;*/
-  background: url(../../img/bg-test4.png) no-repeat 40% top;
-  background-position-y: -60px;
+  background: url(../../img/bg/Gradient-2.svg) no-repeat 40% top;
+  background-size: 100% 100%;
+  background-position-y: 265px;
   }
 
 @media (max-width: 600px) {
     #discover {
-    background-position-x: 50%;
-    min-height: 800px;  
+	background: none;
+    background-color: #8688E7;
       }
 }
 
@@ -10923,18 +10945,21 @@ background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(8
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
   position: relative;*/
   background: url(../../img/bg/Gradient-2.svg) no-repeat 50% top;
+  background-size: 100% 100%;
   /*background-position-y: -60px;*/
   padding-bottom: 40px!important;
   }
 
 @media (max-width: 600px) {
     #solutions {
-        background-size: cover;
+	background: none;
+    background-color: #8688E7;
     }
 }
 
 @media only screen and (max-width: 768px){
 	#solutions {
+		background: none;
 		background-color: #8688E7;
 		padding: 40px 0 20px 0!important;	
 		
@@ -10949,6 +10974,7 @@ background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(8
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
   position: relative;*/
   background: url(../../img/bg/Gradient-3.svg) no-repeat 50% top;
+  background-size: 100% 100%;
   background-position-y: -60px;
   min-height: 800px;
   }
@@ -10957,23 +10983,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', end
     #ready {
     background-position-x: 50%;
     min-height: 800px;  
+    background: none;
+    background-color: #8688E7;
       }
 }
 
 @media screen and (max-width: 768px) {
     #ready {
     background-color: #8688E7;
+    background: none;
+    background-color: #8688E7;
       }
 }
 
 .whySectionBg {
 background: url(../../img/bg/Gradient-1.svg) no-repeat 50% bottom;
+background-size: 100% 100%;
 min-height: 650px;
 }
 
 @media (max-width: 600px) {
     .whySectionBg {
     background-position-x: 50%;
+    background: none;
+    background-color: #8688E7;
     min-height: 1000px;
     margin-bottom: -200px; 
     }
@@ -12689,7 +12722,7 @@ html body #intercom-container .intercom-launcher-badge-frame {
   height: 2px;
   background: url(../../img/gradient.png) no-repeat;
   background-size: cover;
-  width: 6.5em;
+  width: 5.9em;
   margin-top: 12px;
 }
 #hero h2 {
@@ -13942,7 +13975,7 @@ img.sketch-architecture {
 	color: #333;
 }
 .solutions-block .solutions-block__element {
-	display: flex;
+	display: inline;
 	align-items: center;
 	padding: 20px 50px 20px;
 	overflow: hidden;
@@ -14073,8 +14106,8 @@ img.sketch-architecture {
   	/*filter: grayscale(100%);*/
   	margin: 0;
 	opacity: 0.9;
-	width: 150px;
-	margin-bottom: 40px;
+	vertical-align: middle;
+	margin-bottom: 10px;
 }
 
 .vertical-align {
@@ -14308,8 +14341,12 @@ transition: .3s all;
 
 
 .paperplane {
-padding-left: 47%;
-padding-right: 0;
+position: absolute;
+  background-image: url('../../img/bg/paperplane.svg');
+  background-size: 100% auto !important;
+  background-position: center right!important;
+  background-repeat: no-repeat;
+  right: 0;
 }
 
 .partner-logos {
@@ -14369,7 +14406,7 @@ padding-right: 0;
 @media only screen and (max-width: 480px){
 	#hero.hero-full {
 	padding-top: 0vh!important;
-    min-height: 100vh!important;
+    min-height: 126vh!important;
     }
 }
 
@@ -14383,7 +14420,7 @@ padding-right: 0;
       
 @media only screen and (max-width: 480px){
 	#stickThis {
-	/*margin-top: 4.5vh;*/
+	/* margin-top: 4.5vh; */
 	display: none;
     }
 }
