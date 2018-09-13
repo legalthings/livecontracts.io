@@ -10926,7 +10926,7 @@ background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(8
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
   position: relative;*/
   background: url(../../img/bg/Gradient-2.svg) no-repeat 40% top;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position-y: 265px;
   }
 
