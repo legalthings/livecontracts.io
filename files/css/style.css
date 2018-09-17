@@ -10861,7 +10861,7 @@ html.lock {
 
 .purpleSectionBg {
 background: url(../../img/bg/Gradient-1.svg) no-repeat 40% bottom;
-background-size: 100% 100%;
+background-size: 100%;
 }
 
 @media only screen and (max-width: 768px){
@@ -10927,7 +10927,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', end
   position: relative;*/
   background: url(../../img/bg/Gradient-2.svg) no-repeat 40% top;
   background-size: 100%;
-  background-position-y: 265px;
+  background-position-y: 160px!important;
   }
 
 @media (max-width: 600px) {
@@ -14341,12 +14341,10 @@ transition: .3s all;
 
 
 .paperplane {
-position: absolute;
-  background-image: url('../../img/bg/paperplane.svg');
-  background-size: 100% auto !important;
-  background-position: center right!important;
-  background-repeat: no-repeat;
-  right: 0;
+	background-image: url("../../img/bg/paperplane.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
 }
 
 .partner-logos {
@@ -14381,11 +14379,11 @@ position: absolute;
 }
 
 .row-section-2 {
-    padding: 0 0 64px 0;
+    padding: 100px 0 64px 0;
 }
 
 .row-section-3 {
-    padding: 64px 0 0px 0;
+    padding: 100px 0 64px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -14433,7 +14431,7 @@ position: absolute;
     
 #stickThis.stick {
 	text-align: center;
-    margin-top: 5.5vh;
+    margin-top: 50px;
     background: rgba(255,255,255,.9);
     border-top: 1px solid rgba(187,187,187,.6);
     border-bottom: 1px solid rgba(187,187,187,.6);
