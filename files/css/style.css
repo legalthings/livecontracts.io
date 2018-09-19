@@ -10894,7 +10894,7 @@ background-size: 100%;
 .whySectionBg {
 background: url(../../img/bg/Gradient-1.svg) no-repeat 50% bottom;
 min-height: 650px;
-background-size: 100% 100%;
+background-size: 100%;
 }
 
 /*@media (max-width: 600px) {
