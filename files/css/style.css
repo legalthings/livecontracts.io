@@ -3610,8 +3610,8 @@ footer #backtotop:before {
 
 @media only screen and (max-width: 768px){
 	#hero.hero-full {
-	/*min-height: 100vh!important;*/
-	padding-top: 25vh;		
+	min-height: 100vh!important;
+	padding-top: 25vh;	
 	}
 }
 
