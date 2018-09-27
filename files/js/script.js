@@ -127,11 +127,11 @@ function adaptHeight() {
 			jQuery("#hero #page-title").removeClass("title-adapt");
 		}
 		
-		if (pageTitle+addMargin >  jQuery("#hero").outerHeight()) {
+		/*if (pageTitle+addMargin >  jQuery("#hero").outerHeight()) {
 			jQuery("#hero").css('height',pageTitle+addMargin-2+'px'); // -2 is for prevend jumping
 		} else  {
 			jQuery("#hero").css('height','auto');
-		}
+		}*/
 	} 
 	
 }
