@@ -1294,7 +1294,7 @@ Smartphones
 	}
 
 	.hero-img-hdr {
-    display: none;
+    /*display: none;*/
     position: relative;
     height: 150px;
     background-position: center !important;
