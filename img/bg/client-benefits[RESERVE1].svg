@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="none" width="2000px" height="1134px" viewBox="0 0 2000 1134" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>client-benefits</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="38.7753238%" x2="100%" y2="38.7753238%" id="linearGradient-1">
+            <stop stop-color="#8092EE" offset="0%"></stop>
+            <stop stop-color="#8D7CDF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="client-benefits" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M2000,153.952843 L2000,1065.87276 C1772.78121,1111.21099 1603.10946,1133.63355 1490.98474,1133.14045 C1380.92305,1132.65642 1217.26147,1108.75443 1000,1061.43448 C781.049509,1015.3562 616.000965,992.563778 504.854369,993.057229 C393.777531,993.550372 225.492742,1017.82222 0,1065.87276 L0,153.952843 L0,67.2756416 C227.218795,21.9374194 396.890546,-0.485141827 509.015257,0.00795789851 C619.076947,0.491984922 782.738528,24.393973 1000,71.7139218 C1218.95049,117.79221 1383.99903,140.584627 1495.14563,140.091176 C1606.22247,139.598033 1774.50725,115.326189 2000,67.2756416 L2000,153.952843 Z" id="Rectangle-2"></path>
+        </g>
+    </g>
+</svg>
