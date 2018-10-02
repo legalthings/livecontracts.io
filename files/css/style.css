@@ -11050,7 +11050,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', end
   background: url(../../img/bg/Gradient-4.svg) no-repeat 50% top;
   background-size: 100% 100%;
   background-position-y: 0;
-  min-height: 500px;
+  min-height: 700px;
   }
 
 @media (max-width: 600px) {
@@ -11064,6 +11064,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', end
 
 @media screen and (max-width: 768px) {
     #ready {
+    background-color: #8688E7;
+    background: none;
+    background-color: #8688E7;
+      }
+}
+
+#ready-2 {
+/*background: #77a2f8; no-repeat calc(80% - 100px) center;
+background: -moz-linear-gradient(left, #77a2f8 0%, #9867cf 100%); no-repeat calc(80% - 100px) center;
+background: -webkit-linear-gradient(left, #77a2f8 0%,#9867cf 100%); no-repeat calc(80% - 100px) center;
+background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%); no-repeat calc(80% - 100px) center;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
+  position: relative;*/
+  background: url(../../img/bg/Gradient-4-2.svg) no-repeat 50% top;
+  background-size: 100% 100%;
+  background-position-y: 0;
+  min-height: 700px;
+  }
+
+@media (max-width: 600px) {
+    #ready-2 {
+    background-position-x: 50%;
+    min-height: 800px;  
+    background: none;
+    background-color: #8688E7;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    #ready-2 {
     background-color: #8688E7;
     background: none;
     background-color: #8688E7;
@@ -14656,7 +14686,8 @@ min-height: 290px;
 @media only screen and (max-width: 768px){
 	.industriesBg {
 	background: none;
-    background-color: #8688E7;
+  background-color: #8688E7;
+  min-height: auto!important;
 	}
 }
 
@@ -14899,8 +14930,17 @@ z-index: -1;
 }
 
 .benefits-plus img{
-  float:right;
+  float: right;
   height: 50vh;
+}
+
+@media screen and (max-width: 480px) {
+  .benefits-plus img {
+    display: none;
+  }
+  .benefits-plus {
+    display: none;
+  }
 }
 
 .roadmap {
@@ -14940,4 +14980,9 @@ z-index: -1;
   border-left: solid 0.3px #9272d6;
 }
 
-
+@media only screen and (max-width: 960px) {
+  .reverse-div {
+    display: flex!important;
+    flex-direction: column-reverse!important;
+  }
+}
