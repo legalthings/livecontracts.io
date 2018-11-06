@@ -13595,16 +13595,16 @@ img.sketch-architecture {
 	}
 }
 
-/* Medium section */
+* Medium section */
 @charset "UTF-8";
 .medium .medium-post {
   margin-bottom: 40px;
 }
 
 .medium .medium-post:hover {
-	box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
-	top: -20px;
-	transition: .3s all;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+  top: -20px;
+  transition: .3s all;
 }
 
 .medium .medium-post header {
@@ -13644,8 +13644,21 @@ img.sketch-architecture {
 }
 
 .medium-text {
-	font-size: 14px;
+  font-size: 14px!important;
+  line-height: 22px!important;
 }
+
+.medium-content {
+  position: relative;
+  height: 21rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .medium-content {
+    height: 26rem;
+  }
+}
+
 
 .medium .medium-post .medium-content .post-meta span {
   color: #CCC;
@@ -13695,6 +13708,13 @@ img.sketch-architecture {
   padding-left: 25px;
   padding-right: 0;
   text-transform: uppercase;
+}
+
+.read-more {
+  position: absolute!important;
+  line-height: 14px;
+  width: 100%;
+  bottom: 14px;
 }
 
 .medium .medium-post footer .read-more:hover,
@@ -14985,4 +15005,18 @@ z-index: -1;
     display: flex!important;
     flex-direction: column-reverse!important;
   }
+}
+
+.medium-img {
+  object-fit: scale-down!important;
+    height: 175px;
+}
+
+.bootstrap h3 {
+  font-size: 14px!important;
+  line-height: 22px!important;
+}
+
+.fa {
+  margin-right: 5px;
 }
