@@ -13644,21 +13644,20 @@ img.sketch-architecture {
 }
 
 .medium-text {
-  font-size: 14px!important;
-  line-height: 22px!important;
+	font-size: 14px!important;
+	line-height: 22px!important;
 }
 
 .medium-content {
-  position: relative;
-  height: 21rem;
+	position: relative;
+	height: 21rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .medium-content {
-    height: 26rem;
-  }
+	.medium-content {
+		height: 26rem;
+	}
 }
-
 
 .medium .medium-post .medium-content .post-meta span {
   color: #CCC;
@@ -15008,8 +15007,8 @@ z-index: -1;
 }
 
 .medium-img {
-  object-fit: scale-down!important;
-    height: 175px;
+	object-fit: scale-down!important;
+  height: 175px;
 }
 
 .bootstrap h3 {

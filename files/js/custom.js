@@ -1183,6 +1183,7 @@ function manipulatingHeader() {
   $(window).resize(function () {
     topBlockHeight = $('#hero').height();
   });
+  
   $(window).scroll(function () {
     scrollFromTop = $(document).scrollTop();
 
