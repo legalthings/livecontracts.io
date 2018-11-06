@@ -13602,9 +13602,9 @@ img.sketch-architecture {
 }
 
 .medium .medium-post:hover {
-	box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
-	top: -20px;
-	transition: .3s all;
+  box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+  top: -20px;
+  transition: .3s all;
 }
 
 .medium .medium-post header {
@@ -13659,7 +13659,6 @@ img.sketch-architecture {
 	}
 }
 
-
 .medium .medium-post .medium-content .post-meta span {
   color: #CCC;
 }
@@ -13711,10 +13710,10 @@ img.sketch-architecture {
 }
 
 .read-more {
-	position: absolute!important;
-	line-height: 14px;
-	width: 100%;
-	bottom: 14px;
+  position: absolute!important;
+  line-height: 14px;
+  width: 100%;
+  bottom: 14px;
 }
 
 .medium .medium-post footer .read-more:hover,
@@ -15009,10 +15008,14 @@ z-index: -1;
 
 .medium-img {
 	object-fit: scale-down!important;
-    height: 175px;
+  height: 175px;
 }
 
 .bootstrap h3 {
-	font-size: 14px!important;
-	line-height: 22px!important;
+  font-size: 14px!important;
+  line-height: 22px!important;
+}
+
+.fa {
+  margin-right: 5px;
 }
