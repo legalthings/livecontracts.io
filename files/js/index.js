@@ -40,6 +40,7 @@ $(function () {
 	});
 });
 
+$(document).ready(function() {
 function sticktothetop() {
     var window_top = $(window).scrollTop();
     var top = $('#stick-here').offset().top;
@@ -56,4 +57,4 @@ $(function() {
     $(window).scroll(sticktothetop);
     sticktothetop();
 });
-
+});
