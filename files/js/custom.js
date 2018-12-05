@@ -132,6 +132,28 @@ $(document).ready(function () {
     $('#customer-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 14px;max-width: 50px;filter: grayscale(100%)" src="img/customers/' + files[i].img + '"></a>');
   }
 
+    var files = [
+    { url: 'https://medium.com/torque-capital-partners/why-we-love-lto-network-combining-private-and-public-layers-bridge-troll-2ca205452d03', img: 'torque.png' },
+    { url: 'https://antler.vc', img: 'av.png' },
+    { url: 'https://bitmax.io', img: 'bitmax.png' },
+    { url: 'https://medium.com/distributed-fund/gdpr-blockchain-companies-24c6b204531e', img: 'distributed.png' },
+    { url: 'https://icodog.io/ico-review/lto-network/', img: 'dogvector.png' },
+    { url: 'https://icodrops.com/ltonetwork/', img: 'cropped.png'},
+    { url: 'https://www.icoventures.net/lto-network-eng/', img: 'ico_ventures.png' },
+    { url: 'https://www.monoico.com/legalthings', img: 'monoico.png' },
+  ];
+
+  $('#funds-logos').append('<div class="media-slider">');
+
+  for (var i = 0; i < files.length; i++) {
+    if (i % 4 === 0) {
+      $('#funds-logos .media-slider').append('<br/>');
+    }
+
+    $('#funds-logos .media-slider').append('<a href="' + files[i].url + '" target="_blank"><img style="margin: 20px;max-width: 100px;max-height: 100px;filter: grayscale(90%)" src="img/funds/' + files[i].img + '"></a>');
+  }
+
+
 	collapseFaq('about-lto');
   collapseBounty('automated-bounties');
 
