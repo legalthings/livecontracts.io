@@ -136,11 +136,11 @@ $(document).ready(function () {
     { url: 'https://medium.com/torque-capital-partners/why-we-love-lto-network-combining-private-and-public-layers-bridge-troll-2ca205452d03', img: 'torque.png' },
     { url: 'https://antler.vc', img: 'av.png' },
     { url: 'https://bitmax.io', img: 'bitmax.png' },
-    { url: 'https://medium.com/distributed-fund/gdpr-blockchain-companies-24c6b204531e', img: 'distributed.png' },
+    { url: 'https://www.monoico.com/legalthings', img: 'monoico.png' },
     { url: 'https://icodog.io/ico-review/lto-network/', img: 'dogvector.png' },
     { url: 'https://icodrops.com/ltonetwork/', img: 'cropped.png'},
     { url: 'https://www.icoventures.net/lto-network-eng/', img: 'ico_ventures.png' },
-    { url: 'https://www.monoico.com/legalthings', img: 'monoico.png' },
+    { url: 'https://medium.com/distributed-fund/gdpr-blockchain-companies-24c6b204531e', img: 'distributed.png' },
   ];
 
   $('#funds-logos').append('<div class="media-slider">');
