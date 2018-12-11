@@ -151,7 +151,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', ,'Montserrat', 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.02em;
   font-size: 16px !important;
@@ -10935,7 +10935,7 @@ html.lock {
 
 .purpleSectionBg {
 background: url(../../img/bg/Gradient-1.svg) no-repeat 40% bottom;
-background-size: 100%;
+background-size: 100% 100%
 }
 
 @media only screen and (max-width: 768px){
@@ -13426,6 +13426,8 @@ img.sketch-architecture {
 	justify-content : space-between;
 	flex-wrap: wrap;
 	margin-bottom: 80px;
+  font-family: "Lato";
+  font-weight: 300;
 }
 /*.discover-block .discover-block__element:last-of-type {*/
 	/*margin-top: 40px;*/
@@ -13458,7 +13460,7 @@ img.sketch-architecture {
 
 .discover-block .discover-block__element .discover-block__title {
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	font-weight: 600;
 }
 .discover-block .discover-block__element:hover {
@@ -13471,7 +13473,7 @@ img.sketch-architecture {
 .discover-block .discover-block__element {
 	display: flex;
 	align-items: center;
-	padding: 40px 15px 40px 100px;
+	padding: 30px 15px 30px 100px;
 	overflow: hidden;
 	width: calc(33.3% - 140px);
 	top: 0;
@@ -13626,6 +13628,7 @@ img.sketch-architecture {
   padding: 15px 28px;
   border: 1px solid #f5f5f5;
   box-shadow: 0 18px 35px rgba(50,50,93,.1), 0 8px 15px rgba(0,0,0,.07);
+  border-radius: 0px 0px 4px 4px;
 }
 .medium .medium-post .medium-content h4 {
   margin: 20px 0;
@@ -13865,6 +13868,7 @@ img.sketch-architecture {
 .medium-grid .medium-element {
   max-height: 290px;
   overflow: hidden;
+  border-radius: 4px 4px 0px 0px
 }
 .medium-grid .medium-element img {
   width: 100%;
@@ -15018,4 +15022,39 @@ z-index: -1;
 
 .fa {
   margin-right: 5px;
+}
+
+.flags {
+  width: 20px;
+}
+
+.flags-doc {
+  filter: grayscale(50%);
+  width: 28px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.flags-doc:hover {
+  filter: grayscale(0%);
+}
+
+.round-border {
+  border-radius: 4px;
+}
+
+.lang {
+  margin-top: 20px;
+}
+
+.lang a {
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.lang a:hover {
+  color: #9272d6!important;
+  transition: all 200ms ease!important;
 }
