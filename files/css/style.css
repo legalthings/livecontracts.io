@@ -13438,7 +13438,7 @@ img.sketch-architecture {
 	width: 120px;
 	flex-grow: 0;
 	flex-shrink: 0;
-	margin-left: -30px;
+	margin-left: -40px;
 	position: absolute;
 	left: 0;
 }
@@ -15059,3 +15059,61 @@ z-index: -1;
   color: #9272d6!important;
   transition: all 200ms ease!important;
 }
+
+
+.subscribeBg {
+background: #77a2f8;
+background: -moz-linear-gradient(left, #77a2f8 0%, #9867cf 100%);
+background: -webkit-linear-gradient(left, #77a2f8 0%,#9867cf 100%);
+background: linear-gradient(to right, #77a2f8 0%,#9867cf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77a2f8', endColorstr='#9867cf',GradientType=1 );
+  border: none;
+  color: #fff;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 75%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=tel], select, textarea{
+  width: 75%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea{
+  width: 75%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.fieldset-2 {
+  margin-bottom: 1rem;
+  border: none;
+  }
