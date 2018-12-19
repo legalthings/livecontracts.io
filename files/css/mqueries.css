@@ -1290,7 +1290,8 @@ Smartphones
 	}
 
 	.purpleSectionBg {
-    background: url(../../img/bg-test3.png) no-repeat 40% #8687e6;
+    background: none;
+    background: #8687e6;
 	}
 
 	.hero-img-hdr {
