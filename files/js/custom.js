@@ -60,6 +60,7 @@ function collapseFaq(id) {
 $(document).ready(function () {
   today = new Date();
   var isShowingMore = false;
+  var isReadMore = false;
 
   redirectUserToLocalSite();
   // getSaleDate();
@@ -225,6 +226,19 @@ $(document).ready(function () {
       isShowingMore = false;
       $('.show-more').slideUp(500);
       $('#show-more').text('More team members');
+    }
+  });
+
+   $('#read-more').click(function () {
+    if (!isReadMore) {
+      isReadMore = true;
+      $('.read-more').slideDown(1000);
+      $('#read-more').text('Read less');
+    }
+    else {
+      isReadMore = false;
+      $('.read-more').slideUp(1000);
+      $('#read-more').text('Read More');
     }
   });
 
