@@ -9875,7 +9875,6 @@ html.lock {
 }
 /* New timeline */
 
-@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 .timeline {
   display: flex;
   margin: 0 auto;
@@ -9902,6 +9901,10 @@ html.lock {
   color: rgba(255, 255, 255, 0.9);
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: normal;
+}
+
+.timeline__content-desc a{
+  color: #9867cf;
 }
 
 .timeline-block {
@@ -9981,7 +9984,7 @@ html.lock {
 }
 
 .timeline__img {
-  max-width: 100%;
+  max-width: 300px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -9992,6 +9995,11 @@ html.lock {
   transition: .3s ease 0s;
   background-attachment: fixed;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .timeline-container:before {
@@ -10010,7 +10018,11 @@ html.lock {
   filter: grayscale(.9);
   height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   transition: .2s ease 0s;
 }
 
