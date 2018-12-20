@@ -1007,27 +1007,14 @@ function timelineInit() {
       };
       selectors.item.eq(0).addClass(selectors.activeClass);
       $("#timeline-background").css(
-          "background-image",
-          "url(" +
-          selectors.item
-              .first()
-              .find(selectors.img)
-              .attr("src") +
-          ")"
-      );
-
-      // var path = selectors.item.first().find(selectors.img).attr("src");
-      // $("#timeline-background").attr("src", path);
-
-      // $("#timeline-background").attr(
-      //   "src",
-      //   "/" +
-      //   selectors.item
-      //   .first()
-      //   .find(selectors.img)
-      //   .attr("src"); +
-      //   ""
-      //   );
+        "background-image",
+        "url(" +
+        selectors.item
+        .first()
+        .find(selectors.img)
+        .attr("src") +
+        ")"
+        );
       var itemLength = selectors.item.length;
       $(window).scroll(function () {
         var max, min;
@@ -1039,28 +1026,24 @@ function timelineInit() {
           if (i == itemLength - 2 && pos > min + $(this).height() / 6) {
             selectors.item.removeClass(selectors.activeClass);
             $("#timeline-background").css(
-                "background-image",
-                "url(" +
-                selectors.item
-                    .last()
-                    .find(selectors.img)
-                    .attr("src") +
-                ")"
-            );
-            // var path = selectors.item.first().find(selectors.img).attr("src");
-            // $("#timeline-background").attr("src", path);
+              "background-image",
+              "url(" +
+              selectors.item
+              .last()
+              .find(selectors.img)
+              .attr("src") +
+              ")"
+              );
             selectors.item.last().addClass(selectors.activeClass);
           } else if (pos <= max && pos >= min) {
             $("#timeline-background").css(
-                "background-image",
-                "url(" +
-                $(this)
-                    .find(selectors.img)
-                    .attr("src") +
-                ")"
-            );
-            // var path = $(this).find(selectors.img).attr("src");
-            // $("#timeline-background").attr("src", path);
+              "background-image",
+              "url(" +
+              $(this)
+              .find(selectors.img)
+              .attr("src") +
+              ")"
+              );
             selectors.item.removeClass(selectors.activeClass);
             $(this).addClass(selectors.activeClass);
           }
