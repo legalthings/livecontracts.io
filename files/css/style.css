@@ -10991,6 +10991,31 @@ background-size: 100% 100%
 	}
 }
 
+.purpleSectionBgRU {
+background: url(../../img/bg/Gradient-1RU.svg) no-repeat 40% bottom;
+background-size: 100% 100%
+}
+
+@media only screen and (max-width: 768px){
+  .purpleSectionBgRU {
+  background: none;
+    background-color: #8688E7;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .purpleSectionBgRU {
+  background: none;
+    background-color: #8688E7;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .purpleSectionBgRU {
+  background: none;
+    background-color: #8688E7;
+  }
+}
 
 .whySection {
   /*background-image: linear-gradient(to right, #8092EE, #8D7CDF);*/
