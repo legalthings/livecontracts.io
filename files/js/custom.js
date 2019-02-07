@@ -229,16 +229,16 @@ $(document).ready(function () {
     }
   });
 
-   $('#read-more').click(function () {
+   $('#read-more-section').click(function () {
     if (!isReadMore) {
       isReadMore = true;
-      $('.read-more').slideDown(1000);
-      $('#read-more').text('Read less');
+      $('.read-more-section').slideDown(1000);
+      $('#read-more-section').text('Read less');
     }
     else {
       isReadMore = false;
-      $('.read-more').slideUp(1000);
-      $('#read-more').text('Read More');
+      $('.read-more-section').slideUp(1000);
+      $('#read-more-section').text('Read More');
     }
   });
 

@@ -823,6 +823,10 @@ Smartphones
 		line-height: 42px;
 	}
 
+	#discover h2 {
+		color: white;
+	}
+
 	h3 {
 		font-size: 27px;
 		line-height: 38px;
@@ -873,6 +877,10 @@ Smartphones
 
 	.uppercase {
 		letter-spacing: 0.04em;
+	}
+
+	.h2-line {
+	border: 2px solid #fff;
 	}
 
 	/* columns */
@@ -1251,6 +1259,10 @@ Smartphones
 		float: none;
 		width: 100%;
 		margin-top: 20px;
+	}
+
+	.discover-block .discover-block__element {
+    display: inline-block;
 	}
 
 	/* share */
