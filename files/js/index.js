@@ -25,22 +25,22 @@ $(function () {
 				output += '<div class="medium-content"><h4><a href="'+ item.link + ' " target="_blank">' + item.title + '</a></h4>';
 				output += '<span><hr></span>';
 				var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
-				var maxLength = 200 // maximum number of characters to extract
+				var maxLength = 280 // maximum number of characters to extract
 				//trim the string to the maximum length
 				var trimmedString = yourString.substr(0, maxLength);
 				//re-trim if we are in the middle of a word
 				trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")))
 				output += '<div class="medium-text"><p>' + trimmedString + '..</p></div>';
-				output += '<div class="read-more"><a href="'+ item.link + ' target="_blank" class="read-more"> Read the full article <i class="fa fa-arrow-right"></i></a></div>';
+				output += '<div class="read-more"><a href="'+ item.link + ' target="_blank" class="read-more"><i class="fa fa-arrow-right"></i> Read the full article </a></div>';
 				output += '</div></div></div></a>';
-				return k < 2;
+				return k < 5;
 			});
 			$content.html(output);
 		}
 	});
 });
 
-
+if(document.URL.indexOf("integrators.html") >= 0){ 
 function sticktothetop() {
     var window_top = $(window).scrollTop();
     var top = $('#stick-here').offset().top;
@@ -57,5 +57,6 @@ $(function() {
     $(window).scroll(sticktothetop);
     sticktothetop();
 });
+};
 
 
